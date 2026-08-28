@@ -351,7 +351,7 @@ def test_gpu():
         print("[SKIP] CUDA not available")
         return True
 
-    device = torch.device("cuda")
+    device = torch.device("cuda:0")
     print(f"  GPU: {torch.cuda.get_device_name(0)}")
 
     all_ok = True
@@ -362,9 +362,9 @@ def test_gpu():
         encoder = Encoder(base_channels=32).to(device)
         x = torch.rand(1, 3, 128, 128, device=device)
         out = encoder(x)
-        ok = out.device == device
+        ok = out.is_cuda  # 使用 is_cuda 检查是否在 GPU 上
         status = "[OK]" if ok else "[FAIL]"
-        print(f"    {status} Encoder on GPU")
+        print(f"    {status} Encoder on GPU (output device: {out.device})")
         if not ok:
             all_ok = False
     except Exception as e:
@@ -377,9 +377,9 @@ def test_gpu():
         multiscale = ParallelMultiScaleFeatureExtractor(channels=64).to(device)
         x = torch.rand(1, 64, 64, 64, device=device)
         out = multiscale(x)
-        ok = out.device == device
+        ok = out.is_cuda  # 使用 is_cuda 检查是否在 GPU 上
         status = "[OK]" if ok else "[FAIL]"
-        print(f"    {status} MultiScale on GPU")
+        print(f"    {status} MultiScale on GPU (output device: {out.device})")
         if not ok:
             all_ok = False
     except Exception as e:
