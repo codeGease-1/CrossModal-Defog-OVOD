@@ -358,24 +358,32 @@ def test_gpu():
 
     # 测试 Encoder
     print("  Testing Encoder on GPU")
-    encoder = Encoder(base_channels=32).to(device)
-    x = torch.rand(1, 3, 128, 128, device=device)
-    out = encoder(x)
-    ok = out.device == device
-    status = "[OK]" if ok else "[FAIL]"
-    print(f"    {status} Encoder on GPU")
-    if not ok:
+    try:
+        encoder = Encoder(base_channels=32).to(device)
+        x = torch.rand(1, 3, 128, 128, device=device)
+        out = encoder(x)
+        ok = out.device == device
+        status = "[OK]" if ok else "[FAIL]"
+        print(f"    {status} Encoder on GPU")
+        if not ok:
+            all_ok = False
+    except Exception as e:
+        print(f"    [FAIL] Encoder on GPU: {e}")
         all_ok = False
 
     # 测试 MultiScale
     print("  Testing MultiScale on GPU")
-    multiscale = ParallelMultiScaleFeatureExtractor(channels=64).to(device)
-    x = torch.rand(1, 64, 64, 64, device=device)
-    out = multiscale(x)
-    ok = out.device == device
-    status = "[OK]" if ok else "[FAIL]"
-    print(f"    {status} MultiScale on GPU")
-    if not ok:
+    try:
+        multiscale = ParallelMultiScaleFeatureExtractor(channels=64).to(device)
+        x = torch.rand(1, 64, 64, 64, device=device)
+        out = multiscale(x)
+        ok = out.device == device
+        status = "[OK]" if ok else "[FAIL]"
+        print(f"    {status} MultiScale on GPU")
+        if not ok:
+            all_ok = False
+    except Exception as e:
+        print(f"    [FAIL] MultiScale on GPU: {e}")
         all_ok = False
 
     if all_ok:
