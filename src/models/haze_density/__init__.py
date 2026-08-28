@@ -52,6 +52,9 @@ from .multiscale import (
     MultiScaleFeatureExtractor,
     ParallelMultiScaleFeatureExtractor,
 )
+from .fusion import FusionModule
+from .decoder import Decoder, DecoderV2
+from .haze_density_net import HazeDensityNet, get_model_summary
 
 __all__ = [
     # Physical Prior
@@ -87,4 +90,12 @@ __all__ = [
     "MultiScaleBranch",
     "MultiScaleFeatureExtractor",
     "ParallelMultiScaleFeatureExtractor",
+    # Fusion
+    "FusionModule",
+    # Decoder
+    "Decoder",
+    "DecoderV2",
+    # Full Network
+    "HazeDensityNet",
+    "get_model_summary",
 ]
