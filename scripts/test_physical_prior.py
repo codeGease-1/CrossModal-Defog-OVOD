@@ -72,6 +72,18 @@ def test_shapes():
 
         expected_shape = (B, 1, H, W)
 
+        # 创建变量映射字典
+        results = {
+            "dark_channel": d,
+            "local_contrast": c,
+            "color_shift": k,
+            "d_hat": d_hat,
+            "c_hat": c_hat,
+            "k_hat": k_hat,
+            "s_hat": s_hat,
+            "s_final": s_final,
+        }
+
         checks = [
             ("dark_channel", d.shape == expected_shape),
             ("local_contrast", c.shape == expected_shape),
@@ -85,7 +97,7 @@ def test_shapes():
 
         for name, passed in checks:
             status = "[OK]" if passed else "[FAIL]"
-            print(f"  {status} {name}: {list(image.shape)} -> {list(eval(name).shape)}")
+            print(f"  {status} {name}: {list(image.shape)} -> {list(results[name].shape)}")
             if not passed:
                 all_passed = False
 
@@ -108,6 +120,15 @@ def test_range():
 
     all_passed = True
 
+    # 创建变量映射字典
+    results = {
+        "d_hat": d_hat,
+        "c_hat": c_hat,
+        "k_hat": k_hat,
+        "s_hat": s_hat,
+        "s_final": s_final,
+    }
+
     # 检查范围 [0, 1]
     checks = [
         ("d_hat", d_hat.min() >= 0 and d_hat.max() <= 1),
@@ -118,7 +139,7 @@ def test_range():
     ]
 
     for name, passed in checks:
-        tensor = eval(name)
+        tensor = results[name]
         status = "[OK]" if passed else "[FAIL]"
         print(f"  {status} {name}: range [{tensor.min():.4f}, {tensor.max():.4f}]")
         if not passed:
