@@ -1,0 +1,23 @@
+# CrossModal-Defog-OVOD - 雾密度感知网络
+# 依赖列表：仅列运行时所需，本地开发无需安装
+# 在 Google Colab 中执行：pip install -r requirements.txt
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Image Processing
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.10.0
+Pillow>=10.0.0
+
+# Data Handling
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Experiment Tracking
+tensorboard>=2.13.0
+
+# Utilities
+python-dotenv>=1.0.0
