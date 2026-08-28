@@ -191,7 +191,7 @@ def test_gpu():
         print("[SKIP] CUDA not available")
         return True
 
-    device = torch.device("cuda")
+    device = torch.device("cuda:0")
     print(f"  GPU: {torch.cuda.get_device_name(0)}")
 
     model = HazeDensityNet(base_channels=32).to(device)
@@ -199,7 +199,7 @@ def test_gpu():
 
     try:
         out = model(x)
-        passed = out.device == device
+        passed = out.is_cuda  # 使用 is_cuda 检查是否在 GPU 上
         status = "[OK]" if passed else "[FAIL]"
         print(f"  {status} Output on GPU: {out.device}")
 
