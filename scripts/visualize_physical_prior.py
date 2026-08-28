@@ -117,29 +117,32 @@ def save_image(tensor: torch.Tensor, save_path: str):
     保存 tensor 为图像
 
     Args:
-        tensor: [1, 1, H, W] 或 [1, 3, H, W]
+        tensor: [1, 1, H, W] 或 [1, 3, H, W], 范围 [0, 1]
         save_path: 保存路径
     """
     import numpy as np
 
     # 移除 batch 维度
     if tensor.dim() == 4:
-        tensor = tensor[0]
+        tensor = tensor[0]  # [C, H, W]
 
     # 如果是单通道，复制为三通道
     if tensor.dim() == 2 or tensor.shape[0] == 1:
-        tensor = tensor.repeat(3, 1, 1)
+        tensor = tensor.repeat(3, 1, 1)  # [3, H, W]
 
     # 转置为 HWC
-    tensor = tensor.permute(1, 2, 0)
+    tensor = tensor.permute(1, 2, 0)  # [H, W, 3]
 
-    # 转换为 numpy
+    # 转换为 numpy (float32, 范围 [0, 1])
     np_img = tensor.cpu().clamp(0, 1).numpy()
+
+    # 转换为 uint8 (范围 [0, 255])
+    np_img_uint8 = (np_img * 255).astype(np.uint8)
 
     # 保存
     from PIL import Image
 
-    Image.fromarray(np_img).save(save_path)
+    Image.fromarray(np_img_uint8).save(save_path)
     print(f"  Saved: {save_path}")
 
 

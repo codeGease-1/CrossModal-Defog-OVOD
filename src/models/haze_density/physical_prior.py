@@ -103,14 +103,19 @@ def min_max_normalize(
     Min-Max 归一化到 [0, 1]
 
     Args:
-        x: 输入 tensor（任意形状）
+        x: 输入 tensor [B, C, H, W]
         eps: 小常数，防止除零
 
     Returns:
         归一化结果 [0, 1]
     """
-    x_min = x.min(dim=(2, 3), keepdim=True)[0]  # [B, C, 1, 1]
-    x_max = x.max(dim=(2, 3), keepdim=True)[0]  # [B, C, 1, 1]
+    # 先对 H 维度求 min/max，再对 W 维度求 min/max
+    # 这样可以兼容所有 PyTorch 版本
+    x_min_h = x.min(dim=2, keepdim=True)[0]  # [B, C, 1, W]
+    x_min = x_min_h.min(dim=2, keepdim=True)[0]  # [B, C, 1, 1]
+
+    x_max_h = x.max(dim=2, keepdim=True)[0]  # [B, C, 1, W]
+    x_max = x_max_h.max(dim=2, keepdim=True)[0]  # [B, C, 1, 1]
 
     x_range = x_max - x_min + eps
     x_norm = (x - x_min) / x_range
