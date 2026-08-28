@@ -7,11 +7,11 @@
     # 基本训练
     python scripts/train_haze_density.py --config configs/haze_density.yaml
 
-    # 自定义参数
+    # 自定义参数（使用下划线替代点号）
     python scripts/train_haze_density.py \
         --config configs/haze_density.yaml \
-        --data.batch_size 8 \
-        --train.lr 5e-4
+        --data_batch_size 8 \
+        --train_lr 5e-4
 
     # 断点续训
     python scripts/train_haze_density.py \
@@ -26,7 +26,10 @@ from pathlib import Path
 
 def parse_args():
     """解析命令行参数"""
-    parser = argparse.ArgumentParser(description="Haze Density Network Training")
+    parser = argparse.ArgumentParser(
+        description="Haze Density Network Training",
+        allow_abbrev=False,  # 禁用参数缩写，避免解析冲突
+    )
 
     parser.add_argument(
         "--config",
@@ -42,12 +45,17 @@ def parse_args():
         help="从 checkpoint 恢复训练",
     )
 
-    # 允许通过命令行覆盖配置
-    parser.add_argument("--data.batch_size", type=int, default=None)
-    parser.add_argument("--data.image_size", type=int, default=None)
-    parser.add_argument("--train.lr", type=float, default=None)
-    parser.add_argument("--train.epochs", type=int, default=None)
-    parser.add_argument("--model.base_channels", type=int, default=None)
+    # 允许通过命令行覆盖配置（使用下划线替代点号）
+    parser.add_argument("--data_batch_size", type=int, default=None,
+                        help="覆盖配置文件中的 data.batch_size")
+    parser.add_argument("--data_image_size", type=int, default=None,
+                        help="覆盖配置文件中的 data.image_size")
+    parser.add_argument("--train_lr", type=float, default=None,
+                        help="覆盖配置文件中的 train.lr")
+    parser.add_argument("--train_epochs", type=int, default=None,
+                        help="覆盖配置文件中的 train.epochs")
+    parser.add_argument("--model_base_channels", type=int, default=None,
+                        help="覆盖配置文件中的 model.base_channels")
 
     return parser.parse_args()
 
@@ -66,10 +74,10 @@ def load_config(config_path, args):
         config["data"]["image_size"] = args.data_image_size
     if args.train_lr is not None:
         config["train"]["lr"] = args.train_lr
-    if args_train_epochs is not None:
-        config["train"]["epochs"] = args_train_epochs
-    if args_model_base_channels is not None:
-        config["model"]["base_channels"] = args_model_base_channels
+    if args.train_epochs is not None:
+        config["train"]["epochs"] = args.train_epochs
+    if args.model_base_channels is not None:
+        config["model"]["base_channels"] = args.model_base_channels
 
     return config
 
