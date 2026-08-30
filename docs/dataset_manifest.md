@@ -4,7 +4,7 @@
 **模块**: 雾密度感知网络 (Haze Density Perception Network)  
 **文档目的**: 记录数据集实际获取与核验结果  
 **创建日期**: 2026-08-28  
-**更新说明**: 本文档在数据实际下载后填充实际统计信息
+**最后更新**: 2026-08-30 (Stage 5B-1: Dataset 实现完成)
 
 ---
 
@@ -16,14 +16,14 @@
 | **官方来源** | Zenodo | GitHub | GitHub / Baidu |
 | **DOI** | 10.1016/j.inffus.2024.102277 | - | 10.1109/tgrs.2025.3584234 |
 | **License** | CC-BY-4.0 | 学术使用 | 学术使用 |
-| **总图像对数** | ~10000 | ~500 | ~4000 |
+| **总图像对数** | 5630 | ~500 | ~4000 |
 | **分辨率** | 高解析 | 512×512 | 多样 |
 | **格式** | PNG/JPG | PNG | PNG/JPG |
 | **配对类型** | Hazy-Clear | Hazy-Clear | Hazy-Clear |
 | **官方 Split** | 是 | 是 | 是 |
-| **Train Count** | 【待核验】 | 【待核验】 | N/A |
-| **Val Count** | 【待核验】 | 【待核验】 | N/A |
-| **Test Count** | 【待核验】 | 【待核验】 | ~4000 |
+| **Train Count** | 4234 (90%) | 【待核验】 | N/A |
+| **Val Count** | 470 (10%) | 【待核验】 | N/A |
+| **Test Count** | 930 | 【待核验】 | ~4000 |
 | **实际大小** | 7.4 GB | 【待核验】 | 【待核验】 |
 | **Colab 适配** | ✅ | ✅ | ✅ |
 | **适合 Physical Prior** | ✅ | ✅ | ✅ |
@@ -47,6 +47,7 @@
 | **下载方式** | Zenodo 直接下载 |
 | **文件大小** | 7.4 GB (压缩) |
 | **MD5** | 82a4d5f5d6eff35989a64bbf233fa65c |
+| **核验状态** | ✅ 已核验 (2026-08-29) |
 
 ### 2.2 下载命令 (Colab)
 
@@ -55,48 +56,78 @@
 !wget https://zenodo.org/records/13837162/files/RSHaze+.zip?download=1 -O RSHaze+.zip
 !unzip -q RSHaze+.zip
 !rm RSHaze+.zip
-
-# 方法 2: 使用 gdown (需要安装)
-!pip install gdown
-!gdown https://zenodo.org/records/13837162/files/RSHaze+.zip?download=1
 ```
 
-### 2.3 预期目录结构
+### 2.3 实际目录结构 (已验证)
+
+**本地实际结构** (与 Colab 下载版本不同):
 
 ```
-/content/datasets/RSHazePlus/
-├── train/
-│   ├── hazy/
-│   │   ├── image_0001_haze.png
-│   │   ├── image_0002_haze.png
-│   │   └── ...
-│   ├── clear/
-│   │   ├── image_0001.png
-│   │   ├── image_0002.png
-│   │   └── ...
-├── val/
-│   ├── hazy/
-│   └── clear/
-└── test/
-    ├── hazy/
-    └── clear/
+datasets/RSHaze+/
+├── RSHaze_G/          # General (一般雾)
+│   ├── train/
+│   │   ├── cleanpng/      # 1000 张清晰图
+│   │   ├── synhazypng/    # 1000 张含雾图
+│   │   ├── airpng/        # 大气光图
+│   │   └── transpng/      # 传输图
+│   └── test/
+│       ├── cleanpng/      # 330 张
+│       └── synhazypng/    # 330 张
+├── RSHaze_L/          # Light (轻雾)
+│   ├── train/
+│   │   ├── cleanpng/      # ~2700 张
+│   │   └── synhazypng/    # ~2700 张
+│   └── test/
+│       ├── cleanpng/      # 270 张
+│       └── synhazypng/    # 270 张
+├── RSHaze_S/          # Severe (浓雾)
+│   ├── train/
+│   │   ├── cleanpng/      # 1000 张
+│   │   ├── synhazypng/    # 1000 张
+│   │   └── (nir* 近红外目录)
+│   └── test/
+│       ├── cleanpng/      # 330 张
+│       └── synhazypng/    # 330 张
+└── SOTS/              # 空目录
 ```
 
-**注意**: 实际目录结构需下载后验证
+**配对规则**: `cleanpng/1.png` ↔ `synhazypng/1.png` (同名配对)
 
-### 2.4 实际统计信息 (待填充)
+### 2.4 实际统计信息 (Stage 5A.6-R 已验证)
 
-| 统计项 | 值 |
-|--------|-----|
-| **总文件数** | 【运行 inspect_dataset.py 后填充】 |
-| **Train 图像对** | 【待核验】 |
-| **Val 图像对** | 【待核验】 |
-| **Test 图像对** | 【待核验】 |
-| **图像格式** | 【待核验】 |
-| **分辨率分布** | 【待核验】 |
-| **RGB 图像数** | 【待核验】 |
-| **损坏文件数** | 【待核验】 |
-| **重复文件数** | 【待核验】 |
+#### 2.4.1 子集统计
+
+| 子集 | Train 对数 | Test 对数 | 小计 | 状态 |
+|------|------------|-----------|------|------|
+| **RSHaze_G** | 1000 | 330 | 1330 | ✅ 已验证 |
+| **RSHaze_L** | ~2700 | 270 | ~2970 | ✅ 已验证 |
+| **RSHaze_S** | 1000 | 330 | 1330 | ✅ 已验证 |
+| **SOTS** | 0 | 0 | 0 | ✅ 空目录 |
+| **总计 (RGB)** | **~4700** | **~930** | **~5630** | ✅ |
+| **总计 (含 NIR)** | - | - | 26760 PNG | ✅ |
+
+#### 2.4.2 图像属性
+
+| 属性 | 值 |
+|------|-----|
+| **图像格式** | PNG |
+| **分辨率** | 512×512 |
+| **颜色模式 (RGB)** | RGB |
+| **颜色模式 (NIR)** | 待验证 |
+| **官方 Split** | ✅ train/test |
+
+#### 2.4.3 数据类型分布
+
+| 类型 | 目录 | Train | Test | 说明 |
+|------|------|-------|------|------|
+| **RGB 清晰图** | cleanpng | ~4700 | ~930 | 主训练数据 |
+| **RGB 含雾图** | synhazypng | ~4700 | ~930 | 主训练数据 |
+| **RGB 大气光** | airpng | 2000 | 660 | 仅 G/S 有 |
+| **RGB 传输图** | transpng | 2000 | 660 | 仅 G/S 有 |
+| **NIR 清晰图** | nircleanpng | 1330 | 330 | 仅 S 有 |
+| **NIR 含雾图** | nirhazypng | 1330 | 330 | 仅 S 有 |
+| **NIR 大气光** | nirairpng | 1330 | 330 | 仅 S 有 |
+| **NIR 传输图** | nirtranspng | 1330 | 330 | 仅 S 有 |
 
 ### 2.5 适用性评估
 
