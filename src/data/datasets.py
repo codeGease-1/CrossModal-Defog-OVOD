@@ -207,21 +207,40 @@ class RSHazePlusDataset:
             if self.split_file:
                 # 尝试加载保存的 split
                 split_file = Path(self.split_file)
-                if split_file.exists() and self.split == 'val':
+                if split_file.exists():
                     with open(split_file, 'r', encoding='utf-8') as f:
                         split_data = json.load(f)
-                    val_ids = set(split_data.get('val', []))
-                    self.image_list = [
-                        item for item in train_items
-                        if item['id'] in val_ids
-                    ]
-                    return
+
+                    # 新 schema: [{"subset": "...", "filename": "..."}]
+                    if isinstance(split_data.get('val'), list) and len(split_data['val']) > 0:
+                        if isinstance(split_data['val'][0], dict):
+                            # 新格式
+                            if self.split == 'val':
+                                val_keys = set(
+                                    (item['subset'], item['filename'])
+                                    for item in split_data['val']
+                                )
+                                self.image_list = [
+                                    item for item in train_items
+                                    if (item['subset'], item['filename']) in val_keys
+                                ]
+                                return
+                            elif self.split == 'train':
+                                val_keys = set(
+                                    (item['subset'], item['filename'])
+                                    for item in split_data['val']
+                                )
+                                self.image_list = [
+                                    item for item in train_items
+                                    if (item['subset'], item['filename']) not in val_keys
+                                ]
+                                return
 
             # 按 subset 分别划分，保持分布
             random.seed(42)
 
             if self.split == 'val':
-                val_ids = set()
+                val_keys = set()  # 使用 (subset, filename) 作为键
                 for subset in self.subsets:
                     subset_items = [
                         item for item in train_items
@@ -230,29 +249,37 @@ class RSHazePlusDataset:
                     random.shuffle(subset_items)
                     n_val = max(1, int(len(subset_items) * self.val_ratio))
                     for item in subset_items[:n_val]:
-                        val_ids.add(item['id'])
+                        val_keys.add((item['subset'], item['filename']))
 
                 self.image_list = [
                     item for item in train_items
-                    if item['id'] in val_ids
+                    if (item['subset'], item['filename']) in val_keys
                 ]
 
                 # 保存 split (如果是 val 且指定了 split_file)
                 if self.split_file:
-                    train_ids = [
-                        item['id'] for item in train_items
-                        if item['id'] not in val_ids
+                    val_list = [
+                        {'subset': item['subset'], 'filename': item['filename']}
+                        for item in self.image_list
                     ]
-                    test_ids = [
-                        item['id'] for item in self._all_pairs
+                    train_list = [
+                        {'subset': item['subset'], 'filename': item['filename']}
+                        for item in train_items
+                        if (item['subset'], item['filename']) not in val_keys
+                    ]
+                    test_list = [
+                        {'subset': item['subset'], 'filename': item['filename']}
+                        for item in self._all_pairs
                         if item['official_split'] == 'test'
                     ]
                     split_data = {
-                        'train': sorted(train_ids),
-                        'val': sorted(list(val_ids)),
-                        'test': sorted(test_ids),
-                        'val_ratio': self.val_ratio,
-                        'seed': 42,
+                        'train': train_list,
+                        'val': val_list,
+                        'test': test_list,
+                        'metadata': {
+                            'val_ratio': self.val_ratio,
+                            'seed': 42,
+                        }
                     }
                     split_file.parent.mkdir(parents=True, exist_ok=True)
                     with open(split_file, 'w', encoding='utf-8') as f:

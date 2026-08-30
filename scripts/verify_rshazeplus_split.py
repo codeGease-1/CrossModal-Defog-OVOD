@@ -1,25 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-RSHaze+ Split 验证脚本 (Stage 5B-1)
+RSHaze+ Split 验证脚本 (修复版)
 
 检查:
 1. train ∩ val = ∅
 2. train ∩ test = ∅
 3. val ∩ test = ∅
 
-基于原始图像 ID 检查，不是 patch filename。
+基于 (subset, filename) 唯一键检查。
 """
 
 import sys
 from pathlib import Path
-
-# 设置路径
-project_root = Path(__file__).parent.parent
-if str(project_root) not in sys.path:
-    sys.path.insert(0, str(project_root))
-
-from src.data import HazeDensityDataset
+import json
 
 
 def print_separator(title: str):
@@ -28,109 +22,138 @@ def print_separator(title: str):
     print("=" * 60)
 
 
-def get_all_ids(dataset):
-    """获取数据集所有 ID"""
-    return set(dataset.get_all_ids())
+def verify_split_json(split_file: str = 'experiments/haze_density/rshazeplus_split.json'):
+    """直接验证 JSON split 文件"""
+    print_separator("Split JSON 验证")
 
-
-def check_split_integrity():
-    """检查 split 完整性"""
-    print_separator("Split 完整性检查")
+    split_path = Path(split_file)
+    if not split_path.exists():
+        print(f"[FAIL] Split file not found: {split_file}")
+        print("请先运行 generate_rshazeplus_split.py")
+        return False
 
     try:
-        # 加载数据集
-        print("\n加载数据集...")
+        with open(split_path, 'r', encoding='utf-8') as f:
+            split_data = json.load(f)
 
-        train_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='train',
-            image_size=256,
-            split_file='experiments/haze_density/rshazeplus_split.json',
-        )
+        # 检查 schema
+        print("\n检查 JSON schema...")
+        required_keys = {'train', 'val', 'test'}
+        if not required_keys.issubset(split_data.keys()):
+            print(f"[FAIL] Missing keys: {required_keys - set(split_data.keys())}")
+            return False
 
-        val_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='val',
-            image_size=256,
-            split_file='experiments/haze_density/rshazeplus_split.json',
-        )
+        # 检查格式
+        train_list = split_data['train']
+        val_list = split_data['val']
+        test_list = split_data['test']
 
-        test_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='test',
-            image_size=256,
-        )
+        print(f"Train entries: {len(train_list)}")
+        print(f"Val entries: {len(val_list)}")
+        print(f"Test entries: {len(test_list)}")
 
-        print(f"Train: {len(train_ds)} samples")
-        print(f"Val: {len(val_ds)} samples")
-        print(f"Test: {len(test_ds)} samples")
+        # 检查是否为新格式
+        if len(train_list) > 0 and isinstance(train_list[0], dict):
+            print("\n[OK] 使用新格式：[{subset, filename}]")
+            required_item_keys = {'subset', 'filename'}
+            if not required_item_keys.issubset(train_list[0].keys()):
+                print(f"[FAIL] Missing item keys: {required_item_keys - set(train_list[0].keys())}")
+                return False
+        else:
+            print("\n[WARN] 使用旧格式：[id1, id2, ...]")
 
-        # 获取 ID 集合
-        print("\n提取 ID 集合...")
-        train_ids = get_all_ids(train_ds)
-        val_ids = get_all_ids(val_ds)
-        test_ids = get_all_ids(test_ds)
+        # 提取唯一键 (subset, filename)
+        def extract_keys(item_list):
+            keys = set()
+            for item in item_list:
+                if isinstance(item, dict):
+                    keys.add((item['subset'], item['filename']))
+                else:
+                    # 旧格式
+                    keys.add(item)
+            return keys
 
-        print(f"Train unique IDs: {len(train_ids)}")
-        print(f"Val unique IDs: {len(val_ids)}")
-        print(f"Test unique IDs: {len(test_ids)}")
+        train_keys = extract_keys(train_list)
+        val_keys = extract_keys(val_list)
+        test_keys = extract_keys(test_list)
+
+        print(f"\nTrain unique keys: {len(train_keys)}")
+        print(f"Val unique keys: {len(val_keys)}")
+        print(f"Test unique keys: {len(test_keys)}")
 
         # 检查重叠
         errors = []
 
-        # train ∩ val
-        train_val_overlap = train_ids & val_ids
-        if len(train_val_overlap) > 0:
-            errors.append(f"Train/Val overlap: {len(train_val_overlap)} samples")
-            print(f"\n[FAIL] Train/Val overlap: {len(train_val_overlap)} samples")
-            for id_ in list(train_val_overlap)[:5]:
-                print(f"  - {id_}")
-        else:
+        train_val_overlap = train_keys & val_keys
+        if len(train_val_overlap) == 0:
             print("\n[OK] Train/Val: No overlap")
-
-        # train ∩ test
-        train_test_overlap = train_ids & test_ids
-        if len(train_test_overlap) > 0:
-            errors.append(f"Train/Test overlap: {len(train_test_overlap)} samples")
-            print(f"[FAIL] Train/Test overlap: {len(train_test_overlap)} samples")
-            for id_ in list(train_test_overlap)[:5]:
-                print(f"  - {id_}")
         else:
+            print(f"\n[FAIL] Train/Val overlap: {len(train_val_overlap)}")
+            for key in list(train_val_overlap)[:5]:
+                print(f"  - {key}")
+            errors.append(f"Train/Val overlap: {len(train_val_overlap)}")
+
+        train_test_overlap = train_keys & test_keys
+        if len(train_test_overlap) == 0:
             print("[OK] Train/Test: No overlap")
-
-        # val ∩ test
-        val_test_overlap = val_ids & test_ids
-        if len(val_test_overlap) > 0:
-            errors.append(f"Val/Test overlap: {len(val_test_overlap)} samples")
-            print(f"[FAIL] Val/Test overlap: {len(val_test_overlap)} samples")
-            for id_ in list(val_test_overlap)[:5]:
-                print(f"  - {id_}")
         else:
+            print(f"[FAIL] Train/Test overlap: {len(train_test_overlap)}")
+            for key in list(train_test_overlap)[:5]:
+                print(f"  - {key}")
+            errors.append(f"Train/Test overlap: {len(train_test_overlap)}")
+
+        val_test_overlap = val_keys & test_keys
+        if len(val_test_overlap) == 0:
             print("[OK] Val/Test: No overlap")
+        else:
+            print(f"[FAIL] Val/Test overlap: {len(val_test_overlap)}")
+            for key in list(val_test_overlap)[:5]:
+                print(f"  - {key}")
+            errors.append(f"Val/Test overlap: {len(val_test_overlap)}")
 
         # 检查内部重复
-        print("\n检查内部重复...")
-        if len(train_ds) != len(train_ids):
-            errors.append(f"Train internal duplicates: {len(train_ds) - len(train_ids)}")
-            print(f"[WARN] Train internal duplicates: {len(train_ds) - len(train_ids)}")
-        else:
+        print("\n内部重复检查:")
+        if len(train_list) == len(train_keys):
             print("[OK] Train: No internal duplicates")
-
-        if len(val_ds) != len(val_ids):
-            errors.append(f"Val internal duplicates: {len(val_ds) - len(val_ids)}")
-            print(f"[WARN] Val internal duplicates: {len(val_ds) - len(val_ids)}")
         else:
+            print(f"[FAIL] Train internal duplicates: {len(train_list) - len(train_keys)}")
+            errors.append(f"Train internal duplicates: {len(train_list) - len(train_keys)}")
+
+        if len(val_list) == len(val_keys):
             print("[OK] Val: No internal duplicates")
-
-        if len(test_ds) != len(test_ids):
-            errors.append(f"Test internal duplicates: {len(test_ds) - len(test_ids)}")
-            print(f"[WARN] Test internal duplicates: {len(test_ds) - len(test_ids)}")
         else:
+            print(f"[FAIL] Val internal duplicates: {len(val_list) - len(val_keys)}")
+            errors.append(f"Val internal duplicates: {len(val_list) - len(val_keys)}")
+
+        if len(test_list) == len(test_keys):
             print("[OK] Test: No internal duplicates")
+        else:
+            print(f"[FAIL] Test internal duplicates: {len(test_list) - len(test_keys)}")
+            errors.append(f"Test internal duplicates: {len(test_list) - len(test_keys)}")
+
+        # Subset 分布
+        print_separator("Subset 分布")
+
+        def count_subsets(item_list):
+            counts = {}
+            for item in item_list:
+                if isinstance(item, dict):
+                    subset = item['subset']
+                else:
+                    # 旧格式：从 ID 解析
+                    subset = item.split('_')[0] if '_' in item else 'unknown'
+                counts[subset] = counts.get(subset, 0) + 1
+            return counts
+
+        for split_name, item_list in [('Train', train_list), ('Val', val_list), ('Test', test_list)]:
+            counts = count_subsets(item_list)
+            print(f"\n{split_name}:")
+            for subset in ['RSHaze_G', 'RSHaze_L', 'RSHaze_S']:
+                print(f"  {subset}: {counts.get(subset, 0)}")
 
         # 汇总
         if len(errors) == 0:
-            print("\n[OK] Split 完整性检查通过！")
+            print("\n[OK] Split JSON 验证通过！")
             return True
         else:
             print(f"\n[FAIL] 发现 {len(errors)} 个问题:")
@@ -145,81 +168,52 @@ def check_split_integrity():
         return False
 
 
-def check_subset_distribution():
-    """检查各 subset 分布"""
-    print_separator("Subset 分布检查")
+def print_json_schema(split_file: str = 'experiments/haze_density/rshazeplus_split.json'):
+    """打印 JSON schema"""
+    print_separator("JSON Schema")
+
+    split_path = Path(split_file)
+    if not split_path.exists():
+        print(f"[FAIL] Split file not found: {split_file}")
+        return
 
     try:
-        train_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='train',
-            image_size=256,
-            split_file='experiments/haze_density/rshazeplus_split.json',
-        )
+        with open(split_path, 'r', encoding='utf-8') as f:
+            split_data = json.load(f)
 
-        val_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='val',
-            image_size=256,
-            split_file='experiments/haze_density/rshazeplus_split.json',
-        )
-
-        test_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='test',
-            image_size=256,
-        )
-
-        # 统计各 split 的 subset 分布
-        for name, ds in [('Train', train_ds), ('Val', val_ds), ('Test', test_ds)]:
-            subset_counts = {}
-            for i in range(len(ds)):
-                sample = ds[i]
-                subset = sample['subset']
-                subset_counts[subset] = subset_counts.get(subset, 0) + 1
-
-            print(f"\n{name}:")
-            for subset in ['RSHaze_G', 'RSHaze_L', 'RSHaze_S']:
-                count = subset_counts.get(subset, 0)
-                print(f"  {subset}: {count}")
-
-        return True
+        print("\n顶层 keys:")
+        for key in split_data.keys():
+            val = split_data[key]
+            if isinstance(val, list):
+                print(f"  {key}: list[{len(val)}]")
+                if len(val) > 0:
+                    print(f"    样本示例：{val[0]}")
+            elif isinstance(val, dict):
+                print(f"  {key}: dict")
+                for subkey, subval in val.items():
+                    print(f"    {subkey}: {subval}")
+            else:
+                print(f"  {key}: {val}")
 
     except Exception as e:
         print(f"[FAIL] {e}")
-        import traceback
-        traceback.print_exc()
-        return False
 
 
 def main():
     """主函数"""
     print("\n" + "=" * 60)
-    print("RSHaze+ Split 验证 (Stage 5B-1)")
+    print("RSHaze+ Split 验证 (修复版)")
     print("=" * 60)
 
-    results = []
+    # 打印 schema
+    print_json_schema()
 
-    results.append(("Split 完整性", check_split_integrity()))
-    results.append(("Subset 分布", check_subset_distribution()))
+    # 验证
+    success = verify_split_json()
 
-    # 汇总
-    print_separator("验证结果汇总")
+    print_separator("验证完成")
 
-    for name, passed in results:
-        status = "[OK]" if passed else "[FAIL]"
-        print(f"{status} {name}")
-
-    all_passed = all(r[1] for r in results)
-
-    if all_passed:
-        print("\n[OK] 所有验证通过！")
-    else:
-        print("\n[FAIL] 部分验证失败")
-
-    print("=" * 60)
-
-    return all_passed
+    return success
 
 
 if __name__ == "__main__":
