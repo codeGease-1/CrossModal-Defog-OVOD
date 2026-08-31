@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-RSHaze+ Dataset 测试脚本 (Stage 5B-1)
+RSHaze+ Dataset 测试脚本 (Stage 5B-1 Final)
+
+最终 Split:
+- Train: 6174 (G=900, L=4374, S=900)
+- Val: 686 (G=100, L=486, S=100)
+- Test: 930 (G=330, L=270, S=330)
 
 测试项目:
 1. dataset length
@@ -13,7 +18,7 @@ RSHaze+ Dataset 测试脚本 (Stage 5B-1)
 7. image range
 8. path
 9. subset
-10. ID
+10. filename
 11. train/val/test
 12. 每个 subset 的样本数
 13. pair integrity
@@ -35,6 +40,15 @@ from src.data import (
     build_rshazeplus_dataloader,
 )
 
+# 最终 split 数量
+EXPECTED = {
+    'train': {'total': 6174, 'RSHaze_G': 900, 'RSHaze_L': 4374, 'RSHaze_S': 900},
+    'val': {'total': 686, 'RSHaze_G': 100, 'RSHaze_L': 486, 'RSHaze_S': 100},
+    'test': {'total': 930, 'RSHaze_G': 330, 'RSHaze_L': 270, 'RSHaze_S': 330},
+}
+
+SPLIT_FILE = 'experiments/haze_density/rshazeplus_split.json'
+
 
 def print_separator(title: str):
     print("\n" + "=" * 60)
@@ -51,12 +65,13 @@ def test_dataset_length():
             root='datasets/RSHaze+',
             split='train',
             image_size=256,
+            split_file=SPLIT_FILE,
         )
         val_ds = HazeDensityDataset(
             root='datasets/RSHaze+',
             split='val',
             image_size=256,
-            split_file='experiments/haze_density/rshazeplus_split.json',
+            split_file=SPLIT_FILE,
         )
         test_ds = HazeDensityDataset(
             root='datasets/RSHaze+',
@@ -64,15 +79,20 @@ def test_dataset_length():
             image_size=256,
         )
 
-        print(f"Train: {len(train_ds)} samples")
-        print(f"Val: {len(val_ds)} samples")
-        print(f"Test: {len(test_ds)} samples")
+        train_len = len(train_ds)
+        val_len = len(val_ds)
+        test_len = len(test_ds)
 
-        # 检查 val 比例
-        total_train_val = len(train_ds) + len(val_ds)
-        val_ratio = len(val_ds) / total_train_val * 100
-        print(f"Val ratio: {val_ratio:.2f}% (expected ~10%)")
+        print(f"Train: {train_len} samples (expected: {EXPECTED['train']['total']})")
+        print(f"Val: {val_len} samples (expected: {EXPECTED['val']['total']})")
+        print(f"Test: {test_len} samples (expected: {EXPECTED['test']['total']})")
 
+        # 验证
+        assert train_len == EXPECTED['train']['total'], f"Train length mismatch: {train_len} != {EXPECTED['train']['total']}"
+        assert val_len == EXPECTED['val']['total'], f"Val length mismatch: {val_len} != {EXPECTED['val']['total']}"
+        assert test_len == EXPECTED['test']['total'], f"Test length mismatch: {test_len} != {EXPECTED['test']['total']}"
+
+        print("[OK] Dataset lengths match expected values")
         return True
     except Exception as e:
         print(f"[FAIL] {e}")
@@ -90,6 +110,7 @@ def test_first_sample():
             root='datasets/RSHaze+',
             split='train',
             image_size=256,
+            split_file=SPLIT_FILE,
             return_clean=True,
         )
 
@@ -100,7 +121,7 @@ def test_first_sample():
         print(f"Image dtype: {sample['image'].dtype}")
         print(f"Image range: [{sample['image'].min():.4f}, {sample['image'].max():.4f}]")
         print(f"Subset: {sample['subset']}")
-        print(f"ID: {sample['id']}")
+        print(f"Filename: {sample['filename']}")
         print(f"Path: {sample['path'][:80]}...")
 
         if 'clean' in sample:
@@ -112,6 +133,7 @@ def test_first_sample():
         assert 0 <= sample['image'].min() <= 1, "Image values should be in [0,1]"
         assert 0 <= sample['image'].max() <= 1, "Image values should be in [0,1]"
         assert sample['subset'] in ['RSHaze_G', 'RSHaze_L', 'RSHaze_S'], f"Unknown subset: {sample['subset']}"
+        assert 'filename' in sample, "Missing 'filename' key"
 
         print("[OK] First sample valid")
         return True
@@ -131,6 +153,7 @@ def test_random_sample():
             root='datasets/RSHaze+',
             split='train',
             image_size=256,
+            split_file=SPLIT_FILE,
         )
 
         import random
@@ -140,7 +163,7 @@ def test_random_sample():
         print(f"Random index: {idx}")
         print(f"Image shape: {sample['image'].shape}")
         print(f"Subset: {sample['subset']}")
-        print(f"ID: {sample['id']}")
+        print(f"Filename: {sample['filename']}")
 
         assert sample['image'].shape == (3, 256, 256)
 
@@ -160,6 +183,7 @@ def test_batch():
             root='datasets/RSHaze+',
             split='train',
             image_size=256,
+            split_file=SPLIT_FILE,
         )
 
         loader = DataLoader(
@@ -174,7 +198,7 @@ def test_batch():
         print(f"Batch image shape: {batch['image'].shape}")
         print(f"Expected: [4, 3, 256, 256]")
         print(f"Subsets: {batch['subset']}")
-        print(f"IDs: {batch['id'][:3]}...")
+        print(f"Filenames: {batch['filename'][:3]}...")
 
         assert batch['image'].shape == (4, 3, 256, 256), f"Expected [4,3,256,256], got {batch['image'].shape}"
 
@@ -196,6 +220,7 @@ def test_image_range():
             root='datasets/RSHaze+',
             split='train',
             image_size=256,
+            split_file=SPLIT_FILE,
         )
 
         # 采样 100 个样本
@@ -228,26 +253,36 @@ def test_subset_distribution():
     print_separator("测试 6: Subset Distribution")
 
     try:
-        train_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='train',
-            image_size=256,
-        )
+        for split_name in ['train', 'val', 'test']:
+            if split_name == 'test':
+                ds = HazeDensityDataset(
+                    root='datasets/RSHaze+',
+                    split=split_name,
+                    image_size=256,
+                )
+            else:
+                ds = HazeDensityDataset(
+                    root='datasets/RSHaze+',
+                    split=split_name,
+                    image_size=256,
+                    split_file=SPLIT_FILE,
+                )
 
-        stats = train_ds.get_stats()
+            stats = ds.get_stats()
 
-        print(f"Total samples: {stats['total_samples']}")
-        print(f"Subsets: {stats['subsets']}")
-        print(f"Subset counts: {stats['subset_counts']}")
-        print(f"Current subset counts: {stats['current_subset_counts']}")
+            print(f"\n{split_name.capitalize()}:")
+            print(f"  Total: {stats['total_samples']} (expected: {EXPECTED[split_name]['total']})")
 
-        # 验证各 subset 都有数据
-        for subset in ['RSHaze_G', 'RSHaze_L', 'RSHaze_S']:
-            count = stats['current_subset_counts'].get(subset, 0)
-            assert count > 0, f"No samples from {subset}"
-            print(f"  {subset}: {count} samples")
+            current_counts = stats['current_subset_counts']
+            for subset in ['RSHaze_G', 'RSHaze_L', 'RSHaze_S']:
+                count = current_counts.get(subset, 0)
+                expected = EXPECTED[split_name][subset]
+                match = "✓" if count == expected else "✗"
+                print(f"  {subset}: {count} (expected: {expected}) {match}")
 
-        print("[OK] Subset distribution valid")
+                assert count == expected, f"{split_name} {subset} count mismatch: {count} != {expected}"
+
+        print("\n[OK] Subset distribution valid")
         return True
     except Exception as e:
         print(f"[FAIL] {e}")
@@ -265,6 +300,7 @@ def test_pair_integrity():
             root='datasets/RSHaze+',
             split='train',
             image_size=256,
+            split_file=SPLIT_FILE,
             return_clean=True,
         )
 
@@ -318,9 +354,43 @@ def test_512_mode():
         return False
 
 
+def test_batch_512():
+    """测试 9: 512 batch"""
+    print_separator("测试 9: 512 Batch")
+
+    try:
+        ds = HazeDensityDataset(
+            root='datasets/RSHaze+',
+            split='test',
+            image_size=512,
+        )
+
+        loader = DataLoader(
+            ds,
+            batch_size=2,
+            shuffle=False,
+            num_workers=0,
+        )
+
+        batch = next(iter(loader))
+
+        print(f"Batch image shape: {batch['image'].shape}")
+        print(f"Expected: [2, 3, 512, 512]")
+
+        assert batch['image'].shape == (2, 3, 512, 512), f"Expected [2,3,512,512], got {batch['image'].shape}"
+
+        print("[OK] 512 batch valid")
+        return True
+    except Exception as e:
+        print(f"[FAIL] {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+
+
 def test_dataloader_builder():
-    """测试 9: DataLoader builder"""
-    print_separator("测试 9: DataLoader Builder")
+    """测试 10: DataLoader builder"""
+    print_separator("测试 10: DataLoader Builder")
 
     try:
         train_loader = build_rshazeplus_dataloader(
@@ -329,6 +399,7 @@ def test_dataloader_builder():
             image_size=256,
             batch_size=4,
             num_workers=0,
+            split_file=SPLIT_FILE,
         )
 
         val_loader = build_rshazeplus_dataloader(
@@ -337,7 +408,7 @@ def test_dataloader_builder():
             image_size=256,
             batch_size=4,
             num_workers=0,
-            split_file='experiments/haze_density/rshazeplus_split.json',
+            split_file=SPLIT_FILE,
         )
 
         test_loader = build_rshazeplus_dataloader(
@@ -370,18 +441,23 @@ def test_dataloader_builder():
 def main():
     """主函数"""
     print("\n" + "=" * 60)
-    print("RSHaze+ Dataset 测试 (Stage 5B-1)")
+    print("RSHaze+ Dataset 测试 (Stage 5B-1 Final)")
     print("=" * 60)
+    print(f"\nExpected Split:")
+    print(f"  Train: {EXPECTED['train']['total']} (G={EXPECTED['train']['RSHaze_G']}, L={EXPECTED['train']['RSHaze_L']}, S={EXPECTED['train']['RSHaze_S']})")
+    print(f"  Val: {EXPECTED['val']['total']} (G={EXPECTED['val']['RSHaze_G']}, L={EXPECTED['val']['RSHaze_L']}, S={EXPECTED['val']['RSHaze_S']})")
+    print(f"  Test: {EXPECTED['test']['total']} (G={EXPECTED['test']['RSHaze_G']}, L={EXPECTED['test']['RSHaze_L']}, S={EXPECTED['test']['RSHaze_S']})")
 
     tests = [
         ("Dataset Length", test_dataset_length),
         ("First Sample", test_first_sample),
         ("Random Sample", test_random_sample),
-        ("Batch", test_batch),
+        ("Batch (256)", test_batch),
         ("Image Range", test_image_range),
         ("Subset Distribution", test_subset_distribution),
         ("Pair Integrity", test_pair_integrity),
         ("512 Mode", test_512_mode),
+        ("512 Batch", test_batch_512),
         ("DataLoader Builder", test_dataloader_builder),
     ]
 

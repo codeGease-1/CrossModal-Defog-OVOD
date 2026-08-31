@@ -88,6 +88,7 @@ def visualize_dataset(
         split='train',
         image_size=image_size,
         return_clean=True,
+        split_file='experiments/haze_density/rshazeplus_split.json',
     )
 
     test_ds = HazeDensityDataset(

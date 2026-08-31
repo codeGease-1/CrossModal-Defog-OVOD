@@ -61,13 +61,13 @@ class RSHazePlusDataset:
     """
     RSHaze+ 数据集
 
-    统计:
-        | Subset   | Train | Test | Total |
-        |----------|-------|------|-------|
-        | RSHaze_G | 1000  | 330  | 1330  |
-        | RSHaze_L | ~2700 | 270  | ~2970 |
-        | RSHaze_S | 1000  | 330  | 1330  |
-        | Total    | ~4700 | 930  | ~5630 |
+    最终 Split (Stage 5B-1):
+        | Subset   | Train | Val  | Test | Total |
+        |----------|-------|------|------|-------|
+        | RSHaze_G | 900   | 100  | 330  | 1330  |
+        | RSHaze_L | 4374  | 486  | 270  | 5130  |
+        | RSHaze_S | 900   | 100  | 330  | 1330  |
+        | Total    | 6174  | 686  | 930  | 7790  |
 
     Args:
         root: 数据集根目录
@@ -333,7 +333,7 @@ class RSHazePlusDataset:
         result = {
             'image': hazy_tensor,
             'subset': item['subset'],
-            'id': item['id'],
+            'filename': item['filename'],
             'path': str(item['hazy_path']),
         }
 
