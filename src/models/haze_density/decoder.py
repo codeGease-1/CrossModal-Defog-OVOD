@@ -91,7 +91,8 @@ class Decoder(nn.Module):
             bias=False,
         )
         self.norm3 = nn.InstanceNorm2d(1)
-        self.relu3 = nn.ReLU(inplace=True)
+        # 【修复】移除 ReLU，避免 ReLU → Sigmoid 导致输出范围 [0.5, 1)
+        self.relu3 = nn.Identity()  # 原为 nn.ReLU(inplace=True)
 
         # Sigmoid activation (工程实现决策，保证输出在 [0,1])
         self.sigmoid = nn.Sigmoid() if use_sigmoid else nn.Identity()
@@ -192,7 +193,8 @@ class DecoderV2(nn.Module):
                 bias=False,
             ),
             nn.InstanceNorm2d(1),
-            nn.ReLU(inplace=True),
+            # 【修复】移除 ReLU，避免 ReLU → Sigmoid 导致输出范围 [0.5, 1)
+            nn.Identity(),  # 原为 nn.ReLU(inplace=True)
         )
 
         # Sigmoid
