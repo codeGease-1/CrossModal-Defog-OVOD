@@ -2,7 +2,7 @@
 
 **项目名称**: CrossModal-Defog-OVOD - 跨模态语义恢复引导的含雾低质遥感影像开放词汇目标检测  
 **当前模块**: 雾密度感知网络 (Haze Density Perception Network)  
-**当前阶段**: Stage 5B-2: Dataset + Physical Prior Integration  
+**当前阶段**: Stage 5C: HazeDensityNet 8-Image Overfit Test  
 **最后更新**: 2026-08-31
 
 ---
@@ -62,29 +62,44 @@
 | val | 100 | 486 | 100 | **686** |
 | test | 330 | 270 | 330 | **930** |
 
-#### Stage 5B-2: Dataset + Physical Prior Integration [IN PROGRESS]
+#### Stage 5B-2: Dataset + Physical Prior Integration [OK] 已完成
 
 | 任务 | 状态 | 说明 |
 |------|------|------|
 | Integration Test Script | [OK] | `test_rshazeplus_physical_prior.py` |
 | Visualization Script | [OK] | `visualize_physical_prior_on_rshazeplus.py` |
-| 256 forward test | [WAIT] | 【待 Colab】 |
-| 512 forward test | [WAIT] | 【待 Colab】 |
-| CUDA test | [WAIT] | 【待 Colab】 |
-| G/L/S subset test | [WAIT] | 【待 Colab】 |
+| Colab 验证 | [OK] | 所有测试通过 |
+
+#### Stage 5C: HazeDensityNet 8-Image Overfit Test [IN PROGRESS]
+
+| 任务 | 状态 | 说明 |
+|------|------|------|
+| Training Script | [OK] | `train_overfit_8.py` |
+| Sample Selection | [OK] | G=2, L=4, S=2, seed=42 |
+| Colab Training | [WAIT] | 【待 Colab】 |
+| 50 epochs | [WAIT] | 【待 Colab】 |
+| Checkpoint | [WAIT] | 【待 Colab】 |
 | Visualization | [WAIT] | 【待 Colab】 |
-| Timing profile | [WAIT] | 【待 Colab】 |
+| Report | [WAIT] | 【待 Colab】 |
+
+**配置**:
+- image_size: 256
+- batch_size: 2
+- epochs: 50
+- optimizer: Adam
+- lr: 1e-4
+- loss: MSELoss
+- AMP: True
 
 **验收标准**:
-- [ ] Dataset + Physical Prior 联调
-- [ ] 256 forward PASS: [4,3,256,256] → [4,1,256,256]
-- [ ] 512 forward PASS: [2,3,512,512] → [2,1,512,512]
-- [ ] output range [0,1]
-- [ ] finite = True
-- [ ] CUDA PASS
-- [ ] G/L/S subset PASS
-- [ ] visualization PASS
-- [ ] timing 完成
+- [ ] No NaN
+- [ ] No Inf
+- [ ] Loss overall decreases
+- [ ] Prediction changes
+- [ ] Checkpoint saved
+- [ ] Visualization saved
+- [ ] Peak GPU memory recorded
+- [ ] Report generated
 
 ### Phase 5: Colab Smoke Test [WAIT] 待开始
 
