@@ -128,9 +128,16 @@ def generate_split(
         train_files = subset_data['train']
         test_files = subset_data['test']
 
+        # 【关键修复】从 train 中排除与 test 重名的样本
+        test_file_set = set(test_files)
+        train_files = [f for f in train_files if f not in test_file_set]
+        excluded_count = len(subset_data['train']) - len(train_files)
+
         print(f"\n{subset}:")
-        print(f"  官方 train: {len(train_files)}")
+        print(f"  官方 train: {len(subset_data['train'])}")
         print(f"  官方 test: {len(test_files)}")
+        if excluded_count > 0:
+            print(f"  排除与 test 重名：{excluded_count}")
 
         # 打乱 train files
         random.shuffle(train_files)
