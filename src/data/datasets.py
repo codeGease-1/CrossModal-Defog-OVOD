@@ -215,26 +215,32 @@ class RSHazePlusDataset:
                     if isinstance(split_data.get('val'), list) and len(split_data['val']) > 0:
                         if isinstance(split_data['val'][0], dict):
                             # 新格式
+                            val_keys = set(
+                                (item['subset'], item['filename'])
+                                for item in split_data['val']
+                            )
+                            train_keys = set(
+                                (item['subset'], item['filename'])
+                                for item in split_data['train']
+                            )
+
                             if self.split == 'val':
-                                val_keys = set(
-                                    (item['subset'], item['filename'])
-                                    for item in split_data['val']
-                                )
                                 self.image_list = [
                                     item for item in train_items
                                     if (item['subset'], item['filename']) in val_keys
                                 ]
                                 return
                             elif self.split == 'train':
-                                val_keys = set(
-                                    (item['subset'], item['filename'])
-                                    for item in split_data['val']
-                                )
                                 self.image_list = [
                                     item for item in train_items
-                                    if (item['subset'], item['filename']) not in val_keys
+                                    if (item['subset'], item['filename']) in train_keys
                                 ]
                                 return
+                    else:
+                        # 旧格式或其他格式，打印警告
+                        print(f"[WARN] Split file {split_file} has unexpected format, using default split")
+                else:
+                    print(f"[WARN] Split file {split_file} not found, using default split")
 
             # 按 subset 分别划分，保持分布
             random.seed(42)
@@ -334,6 +340,7 @@ class RSHazePlusDataset:
             'image': hazy_tensor,
             'subset': item['subset'],
             'filename': item['filename'],
+            'id': item['id'],
             'path': str(item['hazy_path']),
         }
 
