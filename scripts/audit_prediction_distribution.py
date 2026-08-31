@@ -57,13 +57,12 @@ def parse_args():
 
 
 def compute_percentile(tensor: torch.Tensor, percentiles: list) -> dict:
-    """计算百分位数"""
-    # 转换为 float 并移到 CPU（避免 GPU 内存限制）
-    tensor_flat = tensor.flatten().float().cpu()
+    """计算百分位数 - 使用 numpy 避免 torch.quantile 大小限制"""
+    # 转换为 numpy 数组
+    tensor_np = tensor.cpu().float().numpy()
     result = {}
     for p in percentiles:
-        # 使用 torch.quantile 替代已废弃的 torch.percentile
-        result[f'p{int(p*100)}'] = float(torch.quantile(tensor_flat, p).item())
+        result[f'p{int(p*100)}'] = float(np.percentile(tensor_np, p * 100))
     return result
 
 
