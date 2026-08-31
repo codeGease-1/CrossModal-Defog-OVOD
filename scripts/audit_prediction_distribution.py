@@ -273,11 +273,9 @@ def audit_prediction_distribution(args):
     selected_indices = random.sample(val_indices, min(args.num_samples, len(val_indices)))
 
     # 重新加载选中的样本
-    from torch.utils.data import Subset
+    from torch.utils.data import Subset, DataLoader
     subset = Subset(val_loader.dataset, selected_indices)
     vis_loader = DataLoader(subset, batch_size=1, shuffle=False)
-
-    from torch.utils.data import DataLoader
 
     vis_count = 0
     for batch in vis_loader:
