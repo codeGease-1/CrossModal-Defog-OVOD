@@ -134,7 +134,7 @@ def parse_args():
     parser.add_argument('--no_amp', action='store_true',
                         help='禁用 AMP 混合精度训练')
 
-    return parser
+    return parser.parse_args()
 
 
 def load_checkpoint(model, optimizer, checkpoint_path):
