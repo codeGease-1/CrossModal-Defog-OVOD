@@ -2,7 +2,7 @@
 
 **项目名称**: CrossModal-Defog-OVOD - 跨模态语义恢复引导的含雾低质遥感影像开放词汇目标检测  
 **当前模块**: 雾密度感知网络 (Haze Density Perception Network)  
-**当前阶段**: Stage 5C: HazeDensityNet 8-Image Overfit Test  
+**当前阶段**: Stage 5D-0: Formal Training Preflight Audit  
 **最后更新**: 2026-08-31
 
 ---
@@ -70,36 +70,47 @@
 | Visualization Script | [OK] | `visualize_physical_prior_on_rshazeplus.py` |
 | Colab 验证 | [OK] | 所有测试通过 |
 
-#### Stage 5C: HazeDensityNet 8-Image Overfit Test [IN PROGRESS]
+#### Stage 5C: HazeDensityNet 8-Image Overfit Test [OK] 已完成
 
 | 任务 | 状态 | 说明 |
 |------|------|------|
 | Training Script | [OK] | `train_overfit_8.py` |
 | Sample Selection | [OK] | G=2, L=4, S=2, seed=42 |
-| Colab Training | [WAIT] | 【待 Colab】 |
-| 50 epochs | [WAIT] | 【待 Colab】 |
-| Checkpoint | [WAIT] | 【待 Colab】 |
-| Visualization | [WAIT] | 【待 Colab】 |
-| Report | [WAIT] | 【待 Colab】 |
+| Colab Training | [OK] | 50 epochs 完成 |
+| Overfit Test | [OK] | PASS |
+
+#### Stage 5D-0: Formal Training Preflight Audit [IN PROGRESS]
+
+| 任务 | 状态 | 说明 |
+|------|------|------|
+| Formal Training Script | [OK] | `train_haze_density.py` |
+| Transform Verification | [OK] | Train=Random, Val=Deterministic |
+| Resume Test Script | [OK] | 支持断点续训 |
+| 5-Epoch Smoke Test | [WAIT] | 【待 Colab】 |
+| Resume Verification | [WAIT] | 【待 Colab】 |
+| Audit Report | [WAIT] | 【待 Colab】 |
 
 **配置**:
 - image_size: 256
-- batch_size: 2
-- epochs: 50
+- batch_size: 4
+- epochs: 5 (smoke test)
 - optimizer: Adam
 - lr: 1e-4
 - loss: MSELoss
 - AMP: True
+- num_workers: 2
 
 **验收标准**:
-- [ ] No NaN
-- [ ] No Inf
-- [ ] Loss overall decreases
-- [ ] Prediction changes
-- [ ] Checkpoint saved
-- [ ] Visualization saved
-- [ ] Peak GPU memory recorded
-- [ ] Report generated
+- [ ] 6174 train 能跑
+- [ ] 686 val 能跑
+- [ ] 5 epochs 完成
+- [ ] train/val loss 正常
+- [ ] No NaN/Inf
+- [ ] Prediction range [0,1]
+- [ ] Target range [0,1]
+- [ ] Checkpoint 正常
+- [ ] Resume 正常
+- [ ] Test 未使用
 
 ### Phase 5: Colab Smoke Test [WAIT] 待开始
 
