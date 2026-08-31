@@ -61,7 +61,8 @@ def compute_percentile(tensor: torch.Tensor, percentiles: list) -> dict:
     tensor_flat = tensor.flatten()
     result = {}
     for p in percentiles:
-        result[f'p{int(p*100)}'] = float(torch.percentile(tensor_flat, p*100).item())
+        # 使用 torch.quantile 替代已废弃的 torch.percentile
+        result[f'p{int(p*100)}'] = float(torch.quantile(tensor_flat, p).item())
     return result
 
 
