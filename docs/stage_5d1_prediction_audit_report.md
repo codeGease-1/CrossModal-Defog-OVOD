@@ -3,7 +3,7 @@
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5D-1: Prediction Distribution Audit  
 **创建日期**: 2026-08-31  
-**状态**: ⏸️ 待 Colab 验证
+**状态**: ✅ 已修复，待 Colab 验证效果
 
 ---
 
