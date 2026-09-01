@@ -322,15 +322,26 @@ def audit_prediction_distribution(args):
     print("\nDecoder structure:")
     print(f"  use_sigmoid: {decoder.use_sigmoid}")
 
-    # 检查是否有 ReLU before Sigmoid
-    has_relu_before_sigmoid = hasattr(decoder, 'relu3')
-    print(f"  Has relu3 (ReLU before Sigmoid): {has_relu_before_sigmoid}")
+    # 检查 relu3 的类型（修复后的诊断逻辑）
+    has_relu3 = hasattr(decoder, 'relu3')
+    relu3_is_relu = has_relu3 and isinstance(decoder.relu3, nn.ReLU)
+    relu3_is_identity = has_relu3 and isinstance(decoder.relu3, nn.Identity)
 
-    if has_relu_before_sigmoid and decoder.use_sigmoid:
+    print(f"  Has relu3 attribute: {has_relu3}")
+    print(f"  relu3 type: {type(decoder.relu3).__name__ if has_relu3 else 'N/A'}")
+    print(f"  relu3 is ReLU: {relu3_is_relu}")
+    print(f"  relu3 is Identity: {relu3_is_identity}")
+
+    if relu3_is_relu and decoder.use_sigmoid:
         print("\n[CRITICAL] Found ReLU → Sigmoid pattern!")
         print("  ReLU output range: [0, ∞)")
         print("  Sigmoid([0, ∞)) range: [0.5, 1)")
         print("  This explains why prediction.min() = 0.5000")
+    elif relu3_is_identity and decoder.use_sigmoid:
+        print("\n[OK] Decoder uses Identity → Sigmoid (correct)")
+        print("  Identity output range: (-∞, ∞)")
+        print("  Sigmoid((-∞, ∞)) range: [0, 1]")
+        print("  Output range is correct")
 
     # ========== 结论 ==========
     print_separator("Conclusion")
@@ -341,7 +352,7 @@ def audit_prediction_distribution(args):
     print(f"\nPrediction range: [{pred_min:.4f}, {pred_max:.4f}]")
     print(f"Target range: [{target_stats['min']:.4f}, {target_stats['max']:.4f}]")
 
-    if pred_min >= 0.49 and has_relu_before_sigmoid:
+    if pred_min >= 0.49 and relu3_is_relu:
         print("\n[CONCLUSION C] Prediction distribution 明显异常")
         print("  原因：Decoder 中存在 ReLU → Sigmoid 结构")
         print("  影响：Prediction 全部 >= 0.5，无法预测低雾密度区域")
