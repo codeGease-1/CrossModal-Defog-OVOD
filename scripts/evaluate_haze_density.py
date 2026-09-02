@@ -299,6 +299,10 @@ def evaluate_test_set(args):
                     image = batch['image'][img_idx:img_idx+1].to(device)
                     break
 
+            # 【修复】将 pred 和 target 移到与 image 相同的设备
+            pred = pred.to(device)
+            target = target.to(device)
+
             # Compute error
             error = torch.abs(target - pred)
             error_max = error.max().item()
