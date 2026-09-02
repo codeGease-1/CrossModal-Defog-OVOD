@@ -35,6 +35,7 @@ from collections import defaultdict
 from src.data import build_rshazeplus_dataloader
 from src.models.haze_density import HazeDensityNet
 from src.models.haze_density.physical_prior import PhysicalPriorModule
+from src.utils.path_utils import get_dataset_root, get_split_file_path, get_checkpoint_dir
 
 
 def print_separator(title: str):
@@ -45,15 +46,16 @@ def print_separator(title: str):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="HazeDensityNet Test Evaluation")
-    parser.add_argument('--checkpoint', type=str,
-                        default='experiments/haze_density/checkpoints/formal/best.pth',
-                        help='Checkpoint 路径')
+    parser.add_argument('--checkpoint', type=str, default=None,
+                        help='Checkpoint 路径 (默认：从 checkpoint_dir 加载 best.pth)')
     parser.add_argument('--image_size', type=int, default=256,
                         help='图像尺寸')
     parser.add_argument('--batch_size', type=int, default=4,
                         help='batch size')
     parser.add_argument('--num_samples_per_subset', type=int, default=16,
                         help='每个 subset 可视化样本数')
+    parser.add_argument('--force_env', type=str, default=None,
+                        help='强制指定环境 (colab/kaggle/local)')
     return parser.parse_args()
 
 
@@ -117,9 +119,15 @@ def evaluate_test_set(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"\nDevice: {device}")
 
+    # 自动检测路径
+    dataset_root = get_dataset_root(force_env=args.force_env)
+    split_file = get_split_file_path()
+    checkpoint_dir = get_checkpoint_dir()
+
     # 加载 checkpoint
-    print(f"\nLoading checkpoint: {args.checkpoint}")
-    checkpoint = torch.load(args.checkpoint, map_location='cpu')
+    checkpoint_path = args.checkpoint if args.checkpoint else os.path.join(checkpoint_dir, 'best.pth')
+    print(f"\nLoading checkpoint: {checkpoint_path}")
+    checkpoint = torch.load(checkpoint_path, map_location='cpu')
 
     config = checkpoint.get('config', {})
     checkpoint_epoch = checkpoint.get('epoch', 'unknown')
@@ -148,13 +156,13 @@ def evaluate_test_set(args):
     # 加载 test 数据集
     print("\nLoading test dataset...")
     test_loader = build_rshazeplus_dataloader(
-        root=config.get('dataset_root', 'datasets/RSHaze+'),
+        root=dataset_root,
         split='test',
         image_size=args.image_size,
         batch_size=args.batch_size,
         num_workers=0,
         pin_memory=False,
-        split_file=config.get('split_file', 'experiments/haze_density/rshazeplus_split.json'),
+        split_file=split_file,
     )
     print(f"Test loader: {len(test_loader)} batches ({len(test_loader.dataset)} samples)")
 
@@ -279,53 +287,58 @@ def evaluate_test_set(args):
 
     random.seed(42)
 
+    # 重新运行一次以获取图像（用于可视化）
+    with torch.no_grad():
+        for batch in test_loader:
+            images = batch['image'].to(device, non_blocking=True)
+            filenames = batch['filename']
+            subsets = batch['subset']
+
+            # Target
+            targets = physical_prior(images)
+
+            # Prediction
+            predictions = model(images)
+
+            # 可视化
+            for i, subset in enumerate(subsets):
+                filename = filenames[i]
+
+                # 检查是否已保存足够样本
+                existing_files = list(output_dir.glob(f'{subset}_*.png'))
+                if len(existing_files) >= args.num_samples_per_subset:
+                    continue
+
+                image = images[i:i+1]
+                pred = predictions[i:i+1]
+                target = targets[i:i+1]
+
+                # Compute error
+                error = torch.abs(target - pred)
+                error_max = error.max().item()
+                if error_max > 0:
+                    error = error / error_max
+
+                # Convert to 3-channel
+                image_3ch = image[0]
+                target_3ch = target.repeat(1, 3, 1, 1)[0]
+                pred_3ch = pred.repeat(1, 3, 1, 1)[0]
+                error_3ch = error.repeat(1, 3, 1, 1)[0]
+
+                # Create grid: [Hazy, Target, Prediction, Error]
+                row = torch.cat([image_3ch, target_3ch, pred_3ch, error_3ch], dim=1)
+
+                # Save
+                numpy_image = row.permute(1, 2, 0).mul(255).clamp(0, 255).byte().cpu().numpy()
+                pil_image = Image.fromarray(numpy_image.astype('uint8'), mode='RGB')
+
+                output_file = output_dir / f'{subset}_{Path(filename).stem}.png'
+                pil_image.save(output_file, quality=95)
+
+    # 统计保存的可视化数量
     for subset in ['RSHaze_G', 'RSHaze_L', 'RSHaze_S']:
-        if subset not in subset_filenames or len(subset_filenames[subset]) == 0:
-            continue
-
-        # 随机选择样本
-        num_samples = min(args.num_samples_per_subset, len(subset_filenames[subset]))
-        indices = random.sample(range(len(subset_filenames[subset])), num_samples)
-
-        for idx in indices:
-            filename = subset_filenames[subset][idx]
-            pred = subset_predictions[subset][idx]
-            target = subset_targets[subset][idx]
-
-            # 从 test_loader 重新加载图像
-            for batch in test_loader:
-                if filename in batch['filename']:
-                    img_idx = list(batch['filename']).index(filename)
-                    image = batch['image'][img_idx:img_idx+1].to(device)
-                    break
-
-            # 【修复】将 pred 和 target 移到与 image 相同的设备
-            pred = pred.to(device)
-            target = target.to(device)
-
-            # Compute error
-            error = torch.abs(target - pred)
-            error_max = error.max().item()
-            if error_max > 0:
-                error = error / error_max
-
-            # Convert to 3-channel
-            image_3ch = image[0]
-            target_3ch = target.repeat(1, 3, 1, 1)[0]
-            pred_3ch = pred.repeat(1, 3, 1, 1)[0]
-            error_3ch = error.repeat(1, 3, 1, 1)[0]
-
-            # Create grid: [Hazy, Target, Prediction, Error]
-            row = torch.cat([image_3ch, target_3ch, pred_3ch, error_3ch], dim=1)
-
-            # Save
-            numpy_image = row.permute(1, 2, 0).mul(255).clamp(0, 255).byte().cpu().numpy()
-            pil_image = Image.fromarray(numpy_image.astype('uint8'), mode='RGB')
-
-            output_file = output_dir / f'{subset}_{Path(filename).stem}.png'
-            pil_image.save(output_file, quality=95)
-
-        print(f"  {subset}: Saved {num_samples} visualizations")
+        count = len(list(output_dir.glob(f'{subset}_*.png')))
+        print(f"  {subset}: Saved {count} visualizations")
 
     # ========== 保存报告 ==========
     print_separator("Saving Report")

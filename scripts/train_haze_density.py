@@ -51,6 +51,7 @@ from torch.cuda.amp import autocast, GradScaler
 from src.data import HazeDensityDataset, build_rshazeplus_dataloader
 from src.models.haze_density import HazeDensityNet
 from src.models.haze_density.physical_prior import PhysicalPriorModule
+from src.utils.path_utils import get_dataset_root, get_split_file_path, get_checkpoint_dir, get_result_dir
 
 
 # ============================================================================
@@ -119,14 +120,16 @@ def parse_args():
                         help='图像尺寸 (默认：256)')
 
     # 路径参数
-    parser.add_argument('--dataset_root', type=str, default=DEFAULT_CONFIG['dataset_root'],
-                        help='数据集根目录')
+    parser.add_argument('--dataset_root', type=str, default=None,
+                        help='数据集根目录 (默认：自动检测)')
     parser.add_argument('--resume', type=str, default=None,
                         help='从 checkpoint 恢复训练')
-    parser.add_argument('--checkpoint_dir', type=str, default=DEFAULT_CONFIG['checkpoint_dir'],
-                        help='checkpoint 保存目录')
-    parser.add_argument('--result_dir', type=str, default=DEFAULT_CONFIG['result_dir'],
-                        help='结果保存目录')
+    parser.add_argument('--checkpoint_dir', type=str, default=None,
+                        help='checkpoint 保存目录 (默认：自动检测)')
+    parser.add_argument('--result_dir', type=str, default=None,
+                        help='结果保存目录 (默认：自动检测)')
+    parser.add_argument('--force_env', type=str, default=None,
+                        help='强制指定环境 (colab/kaggle/local)')
 
     # 其他参数
     parser.add_argument('--num_workers', type=int, default=DEFAULT_CONFIG['num_workers'],
@@ -244,7 +247,7 @@ def validate(model, val_loader, physical_prior, criterion, device, config):
     return avg_loss, pred_stats, target_stats
 
 
-def train_formal(config):
+def train_formal(args, config):
     """正式训练主函数"""
     print_separator("Stage 5D: HazeDensityNet Formal Training")
 
@@ -257,11 +260,19 @@ def train_formal(config):
     if device.type == "cuda":
         print(f"CUDA device: {torch.cuda.get_device_name(0)}")
 
-    # 创建输出目录
-    checkpoint_dir = Path(config['checkpoint_dir'])
-    result_dir = Path(config['result_dir'])
+    # 自动检测路径
+    dataset_root = get_dataset_root(force_env=args.force_env)
+    split_file = get_split_file_path()
+    checkpoint_dir = Path(args.checkpoint_dir if args.checkpoint_dir else get_checkpoint_dir())
+    result_dir = Path(args.result_dir if args.result_dir else get_result_dir())
+
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     result_dir.mkdir(parents=True, exist_ok=True)
+
+    print(f"\nDataset root: {dataset_root}")
+    print(f"Split file: {split_file}")
+    print(f"Checkpoint dir: {checkpoint_dir}")
+    print(f"Result dir: {result_dir}")
 
     # 创建模型
     print("\nCreating model...")
@@ -293,23 +304,23 @@ def train_formal(config):
     print("\nLoading datasets...")
 
     train_loader = build_rshazeplus_dataloader(
-        root=config['dataset_root'],
+        root=dataset_root,
         split='train',
         image_size=config['image_size'],
         batch_size=config['batch_size'],
         num_workers=config['num_workers'],
         pin_memory=config['pin_memory'] and device.type == "cuda",
-        split_file=config['split_file'],
+        split_file=split_file,
     )
 
     val_loader = build_rshazeplus_dataloader(
-        root=config['dataset_root'],
+        root=dataset_root,
         split='val',
         image_size=config['image_size'],
         batch_size=config['batch_size'],
         num_workers=config['num_workers'],
         pin_memory=config['pin_memory'] and device.type == "cuda",
-        split_file=config['split_file'],
+        split_file=split_file,
     )
 
     print(f"Train loader: {len(train_loader)} batches ({len(train_loader.dataset)} samples)")
@@ -547,15 +558,12 @@ def main():
     config['batch_size'] = args.batch_size
     config['lr'] = args.lr
     config['image_size'] = args.image_size
-    config['dataset_root'] = args.dataset_root
-    config['checkpoint_dir'] = args.checkpoint_dir
-    config['result_dir'] = args.result_dir
     config['num_workers'] = args.num_workers
     config['amp'] = not args.no_amp
     config['resume'] = args.resume
 
     try:
-        success = train_formal(config)
+        success = train_formal(args, config)
         return success
     except Exception as e:
         print(f"\n[ERROR] Training failed: {e}")
