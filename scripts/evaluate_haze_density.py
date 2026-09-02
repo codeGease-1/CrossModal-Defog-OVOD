@@ -77,8 +77,9 @@ def compute_metrics(predictions, targets):
     # MAE
     mae = torch.mean(torch.abs(pred_flat - target_flat)).item()
 
-    # RMSE
-    rmse = torch.sqrt(mse)
+    # RMSE (使用 math.sqrt 因为 mse 已经是 float)
+    import math
+    rmse = math.sqrt(mse)
 
     # Pearson correlation
     corr = torch.corrcoef(torch.stack([pred_flat, target_flat]))[0, 1].item()
