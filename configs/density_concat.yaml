@@ -1,0 +1,49 @@
+# Stage 6-2: Density Concatenation Baseline Configuration
+
+# Density Map Configuration
+density:
+  enabled: true
+  mode: concat  # concat | guidance (guidance for Stage 6-3)
+  checkpoint: experiments/haze_density/checkpoints/formal/best.pth
+  freeze: true  # 冻结密度网络，不反向传播
+  base_channels: 32  # HazeDensityNet base_channels
+
+# Backbone Configuration
+backbone:
+  input_channels: 4  # 3 (RGB) + 1 (Density)
+  type: simple  # simple | resnet | swin (待扩展)
+
+# Training Configuration (待实现)
+train:
+  batch_size: 4
+  image_size: 256
+  epochs: 50
+  lr: 1e-4
+  optimizer: adam
+
+# Dataset Configuration (待实现)
+data:
+  dataset_root: datasets/RSHaze+
+  split_file: experiments/haze_density/rshazeplus_split.json
+  num_workers: 2
+
+# Ablation Study Configuration
+ablation:
+  # Baseline: No density map
+  baseline_no_density:
+    density_enabled: false
+    backbone_input_channels: 3
+
+  # Concat: RGB + Density concatenation
+  concat_baseline:
+    density_enabled: true
+    density_mode: concat
+    density_freeze: true
+    backbone_input_channels: 4
+
+  # Concat (Unfrozen): Train density network jointly
+  concat_unfrozen:
+    density_enabled: true
+    density_mode: concat
+    density_freeze: false
+    backbone_input_channels: 4
