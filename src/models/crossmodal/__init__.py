@@ -5,12 +5,15 @@ CrossModal 模块
 
 子模块:
     - density_concat_model: Density Concatenation Baseline (Stage 6-2)
-    - density_guidance_model: Density Guidance Model (Stage 6-3, 待实现)
+    - density_guided_backbone: Density Guided Backbone (Stage 6-3)
 """
 
 from .density_concat_model import DensityConcatModel, get_density_concat_model
+from .density_guided_backbone import DensityGuidedBackbone, get_density_guided_backbone
 
 __all__ = [
     "DensityConcatModel",
     "get_density_concat_model",
+    "DensityGuidedBackbone",
+    "get_density_guided_backbone",
 ]
