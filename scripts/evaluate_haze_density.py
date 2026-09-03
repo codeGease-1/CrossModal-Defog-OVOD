@@ -35,7 +35,6 @@ from collections import defaultdict
 from src.data import build_rshazeplus_dataloader
 from src.models.haze_density import HazeDensityNet
 from src.models.haze_density.physical_prior import PhysicalPriorModule
-from src.utils.path_utils import get_dataset_root, get_split_file_path, get_checkpoint_dir
 
 
 def print_separator(title: str):
@@ -46,16 +45,19 @@ def print_separator(title: str):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="HazeDensityNet Test Evaluation")
-    parser.add_argument('--checkpoint', type=str, default=None,
-                        help='Checkpoint 路径 (默认：从 checkpoint_dir 加载 best.pth)')
+    parser.add_argument('--checkpoint', type=str,
+                        default='experiments/haze_density/checkpoints/formal/best.pth',
+                        help='Checkpoint 路径')
+    parser.add_argument('--dataset_root', type=str, default='datasets/RSHaze+',
+                        help='数据集根目录')
+    parser.add_argument('--split_file', type=str, default='experiments/haze_density/rshazeplus_split.json',
+                        help='split 文件路径')
     parser.add_argument('--image_size', type=int, default=256,
                         help='图像尺寸')
     parser.add_argument('--batch_size', type=int, default=4,
                         help='batch size')
     parser.add_argument('--num_samples_per_subset', type=int, default=16,
                         help='每个 subset 可视化样本数')
-    parser.add_argument('--force_env', type=str, default=None,
-                        help='强制指定环境 (colab/kaggle/local)')
     return parser.parse_args()
 
 
@@ -119,15 +121,9 @@ def evaluate_test_set(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"\nDevice: {device}")
 
-    # 自动检测路径
-    dataset_root = get_dataset_root(force_env=args.force_env)
-    split_file = get_split_file_path()
-    checkpoint_dir = get_checkpoint_dir()
-
     # 加载 checkpoint
-    checkpoint_path = args.checkpoint if args.checkpoint else os.path.join(checkpoint_dir, 'best.pth')
-    print(f"\nLoading checkpoint: {checkpoint_path}")
-    checkpoint = torch.load(checkpoint_path, map_location='cpu')
+    print(f"\nLoading checkpoint: {args.checkpoint}")
+    checkpoint = torch.load(args.checkpoint, map_location='cpu')
 
     config = checkpoint.get('config', {})
     checkpoint_epoch = checkpoint.get('epoch', 'unknown')
@@ -156,13 +152,13 @@ def evaluate_test_set(args):
     # 加载 test 数据集
     print("\nLoading test dataset...")
     test_loader = build_rshazeplus_dataloader(
-        root=dataset_root,
+        root=args.dataset_root,
         split='test',
         image_size=args.image_size,
         batch_size=args.batch_size,
         num_workers=0,
         pin_memory=False,
-        split_file=split_file,
+        split_file=args.split_file,
     )
     print(f"Test loader: {len(test_loader)} batches ({len(test_loader.dataset)} samples)")
 
