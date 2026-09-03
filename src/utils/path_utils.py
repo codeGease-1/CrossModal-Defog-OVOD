@@ -34,15 +34,25 @@ def detect_environment() -> str:
     """
     自动检测当前运行环境
 
+    检测优先级：
+    1. Colab (通过 google.colab 模块)
+    2. Kaggle (通过 kaggle 模块或环境变量)
+    3. 本地
+
     Returns:
         环境标识：'colab' | 'kaggle' | 'local'
     """
-    # 检测 Colab
+    # 优先检测 Colab (通过 google.colab 模块)
     if 'google.colab' in sys.modules:
         return 'colab'
 
-    # 检测 Kaggle (通过检查 kaggle 目录是否存在)
-    if os.path.exists('/kaggle'):
+    # 检测 Kaggle (通过 kaggle 模块或环境变量)
+    # 注意：Colab 中也可能存在 /kaggle 目录，所以不能仅靠目录判断
+    if 'kaggle' in sys.modules:
+        return 'kaggle'
+
+    # 检查 Kaggle 特有的环境变量
+    if os.environ.get('KAGGLE_KERNEL_RUN_TYPE'):
         return 'kaggle'
 
     # 默认本地
