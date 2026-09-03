@@ -35,27 +35,55 @@ def detect_environment() -> str:
     自动检测当前运行环境
 
     检测优先级：
-    1. Colab (通过 google.colab 模块)
+    1. Colab (通过多种检测方式)
     2. Kaggle (通过 kaggle 模块或环境变量)
     3. 本地
 
     Returns:
         环境标识：'colab' | 'kaggle' | 'local'
     """
-    # 优先检测 Colab (通过 google.colab 模块)
+    # ========== 检测 Colab ==========
+    # 方式 1: 检查 google.colab 模块
     if 'google.colab' in sys.modules:
+        print("[DEBUG] Detected Colab via google.colab module")
         return 'colab'
 
-    # 检测 Kaggle (通过 kaggle 模块或环境变量)
-    # 注意：Colab 中也可能存在 /kaggle 目录，所以不能仅靠目录判断
+    # 方式 2: 尝试导入 google.colab.runtime
+    try:
+        import google.colab.runtime
+        print("[DEBUG] Detected Colab via google.colab.runtime")
+        return 'colab'
+    except ImportError:
+        pass
+
+    # 方式 3: 检查 /content 目录（Colab 特有）
+    if os.path.exists('/content') and not os.path.exists('/kaggle'):
+        print("[DEBUG] Detected Colab via /content directory")
+        return 'colab'
+
+    # 方式 4: 检查 COLAB_RELEASE 环境变量
+    if os.environ.get('COLAB_RELEASE'):
+        print("[DEBUG] Detected Colab via COLAB_RELEASE env")
+        return 'colab'
+
+    # ========== 检测 Kaggle ==========
+    # 方式 1: 检查 kaggle 模块
     if 'kaggle' in sys.modules:
+        print("[DEBUG] Detected Kaggle via kaggle module")
         return 'kaggle'
 
-    # 检查 Kaggle 特有的环境变量
+    # 方式 2: 检查 Kaggle 特有的环境变量
     if os.environ.get('KAGGLE_KERNEL_RUN_TYPE'):
+        print("[DEBUG] Detected Kaggle via KAGGLE_KERNEL_RUN_TYPE env")
         return 'kaggle'
 
-    # 默认本地
+    # 方式 3: 检查 /kaggle 目录（Kaggle 特有）
+    if os.path.exists('/kaggle'):
+        print("[DEBUG] Detected Kaggle via /kaggle directory")
+        return 'kaggle'
+
+    # ========== 默认本地 ==========
+    print("[DEBUG] Detected local environment")
     return 'local'
 
 
