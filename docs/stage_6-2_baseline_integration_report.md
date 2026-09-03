@@ -162,7 +162,7 @@ Test 1: Forward Shape Test
     RGB:        (1, 3, 256, 256)
     Density:    (1, 1, 256, 256)
     Concat:     (1, 4, 256, 256)
-    Features:   [(1, 128, 64, 64), (1, 256, 32, 32), (1, 512, 16, 16), (1, 1024, 8, 8)]
+    Features:   [(1, 128, 128, 128), (1, 256, 64, 64), (1, 512, 32, 32), (1, 1024, 16, 16)]
 
 Test 2: CUDA Test
   Average latency: XX.XX ms

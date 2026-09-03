@@ -102,17 +102,17 @@ class SimpleBackbone(nn.Module):
 
         Returns:
             List of features at different scales:
-            - features[0]: [B, 128, H/4, W/4]
-            - features[1]: [B, 256, H/8, W/8]
-            - features[2]: [B, 512, H/16, W/16]
-            - features[3]: [B, 1024, H/32, W/32]
+            - features[0]: [B, 128, H/2, W/2]  (after stem + stage1)
+            - features[1]: [B, 256, H/4, W/4]  (after stage2 with MaxPool)
+            - features[2]: [B, 512, H/8, W/8]  (after stage3 with MaxPool)
+            - features[3]: [B, 1024, H/16, W/16]  (after stage4 with MaxPool)
         """
         x = self.stem(x)  # [B, 64, H/2, W/2]
 
-        f1 = self.stage1(x)  # [B, 128, H/4, W/4]
-        f2 = self.stage2(f1)  # [B, 256, H/8, W/8]
-        f3 = self.stage3(f2)  # [B, 512, H/16, W/16]
-        f4 = self.stage4(f3)  # [B, 1024, H/32, W/32]
+        f1 = self.stage1(x)  # [B, 128, H/2, W/2] (stride=1, no downsampling)
+        f2 = self.stage2(f1)  # [B, 256, H/4, W/4] (MaxPool stride=2)
+        f3 = self.stage3(f2)  # [B, 512, H/8, W/8] (MaxPool stride=2)
+        f4 = self.stage4(f3)  # [B, 1024, H/16, W/16] (MaxPool stride=2)
 
         return [f1, f2, f3, f4]
 

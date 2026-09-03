@@ -75,11 +75,17 @@ def test_forward_shape():
 
         expected_density_shape = (batch_size, 1, image_size, image_size)
         expected_concat_shape = (batch_size, 4, image_size, image_size)
+        # SimpleBackbone 实际输出尺寸:
+        # Stem: 7x7 conv, stride=2 → H/2
+        # Stage 1: 3x3 conv, stride=1 → H/2 (no downsampling)
+        # Stage 2: MaxPool stride=2 + conv → H/4
+        # Stage 3: MaxPool stride=2 + conv → H/8
+        # Stage 4: MaxPool stride=2 + conv → H/16
         expected_feature_shapes = [
-            (batch_size, 128, image_size // 4, image_size // 4),
-            (batch_size, 256, image_size // 8, image_size // 8),
-            (batch_size, 512, image_size // 16, image_size // 16),
-            (batch_size, 1024, image_size // 32, image_size // 32),
+            (batch_size, 128, image_size // 2, image_size // 2),  # f1: H/2
+            (batch_size, 256, image_size // 4, image_size // 4),  # f2: H/4
+            (batch_size, 512, image_size // 8, image_size // 8),  # f3: H/8
+            (batch_size, 1024, image_size // 16, image_size // 16),  # f4: H/16
         ]
 
         assert density_map.shape == expected_density_shape, \
