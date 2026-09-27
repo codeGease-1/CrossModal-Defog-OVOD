@@ -34,8 +34,8 @@ import time
 import random
 import csv
 
-# 设置路径
-project_root = Path(__file__).parent.parent
+# 设置路径：src 目录的父目录需要加入 sys.path
+project_root = Path(__file__).parent.parent.parent  # scripts/train/ -> scripts/ -> ../ = src 的兄弟目录
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 

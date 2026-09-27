@@ -19,7 +19,7 @@ from pathlib import Path
 
 def setup_paths():
     """设置项目路径：将项目根目录添加到 sys.path"""
-    project_root = Path(__file__).parent.parent
+    project_root = Path(__file__).parent.parent.parent  # scripts/utils/ -> 项目根
     if str(project_root) not in sys.path:
         sys.path.insert(0, str(project_root))
     return project_root

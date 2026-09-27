@@ -23,8 +23,8 @@ def setup_paths():
         # Colab 环境：假设项目在 /content/CrossModal-Defog-OVOD
         project_root = Path("/content/CrossModal-Defog-OVOD")
     else:
-        # 本地环境：使用脚本所在目录的父目录
-        project_root = Path(__file__).parent.parent
+        # 本地环境：使用脚本所在目录的祖父目录（scripts/utils/ -> 项目根）
+        project_root = Path(__file__).parent.parent.parent
 
     # 将项目根目录添加到 sys.path，以便使用 from src.xxx import 导入
     if str(project_root) not in sys.path:

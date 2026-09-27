@@ -210,7 +210,7 @@ def main():
     print("=" * 60 + "\n")
 
     # 项目根目录
-    project_root = Path(__file__).parent.parent
+    project_root = Path(__file__).parent.parent.parent  # scripts/utils/ -> 项目根
 
     # 运行检查
     results = {}

@@ -27,7 +27,7 @@ from pathlib import Path
 from typing import Optional
 
 # 设置路径：将项目根目录添加到 sys.path
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).parent.parent.parent  # scripts/data/ -> 项目根
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 

@@ -39,7 +39,7 @@ import csv
 import argparse
 
 # 设置路径
-project_root = Path(__file__).parent.parent
+project_root = Path(__file__).parent.parent.parent  # scripts/train/ -> 项目根
 if str(project_root) not in sys.path:
     sys.path.insert(0, str(project_root))
 
