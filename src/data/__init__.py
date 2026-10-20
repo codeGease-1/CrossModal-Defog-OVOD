@@ -8,16 +8,16 @@
     - transforms: 数据增强变换
 """
 
-import torch
-from torch.utils.data import DataLoader
-
 from .datasets import HazeDensityDataset, RSHazePlusDataset
-from .transforms import (
-    HazeTrainTransform,
-    HazeValTransform,
-    create_train_transform,
-    create_val_transform,
-)
+
+
+def __getattr__(name):
+    # Directory/split inspection works without importing the training runtime.
+    if name in ('HazeTrainTransform', 'HazeValTransform',
+                'create_train_transform', 'create_val_transform'):
+        from . import transforms
+        return getattr(transforms, name)
+    raise AttributeError(name)
 
 
 def build_rshazeplus_dataloader(
@@ -52,6 +52,8 @@ def build_rshazeplus_dataloader(
     Returns:
         DataLoader
     """
+    from torch.utils.data import DataLoader
+
     if subsets is None:
         subsets = ('RSHaze_G', 'RSHaze_L', 'RSHaze_S')
 

@@ -1,0 +1,22 @@
+# Local environments and Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Datasets and generated experiments; keep split manifests reproducible
+/datasets/
+/experiments/**
+!/experiments/haze_density/
+!/experiments/haze_density/rshazeplus_split.json
+
+# Credentials / local settings
+.env
+.env.*
+!.env.example
+
+# Notebook / editor temporary files
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

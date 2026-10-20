@@ -1,5 +1,7 @@
 # Stage 5B-1 Final Report: RSHaze+ Dataset Implementation
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5B-1 Final: RSHaze+ Dataset Implementation  
 **完成日期**: 2026-08-31  
@@ -44,10 +46,10 @@
 
 | 文件 | 说明 | 状态 |
 |------|------|------|
-| `scripts/generate_rshazeplus_split.py` | 生成 split (含重名排除) | ✅ 完成 |
-| `scripts/test_rshazeplus_dataset.py` | 完整测试脚本 | ✅ 完成 |
-| `scripts/verify_rshazeplus_split.py` | Split 验证脚本 | ✅ 完成 |
-| `scripts/visualize_rshazeplus_dataset.py` | 可视化脚本 | ✅ 完成 |
+| `scripts/data/generate_rshazeplus_split.py` | 生成 split (含重名排除) | ✅ 完成 |
+| `scripts/test/test_rshazeplus_dataset.py` | 完整测试脚本 | ✅ 完成 |
+| `scripts/data/verify_rshazeplus_split.py` | Split 验证脚本 | ✅ 完成 |
+| `scripts/data/visualize_rshazeplus_dataset.py` | 可视化脚本 | ✅ 完成 |
 
 ### 2.3 配置文件
 
@@ -117,7 +119,7 @@ sys.path.insert(0, '/content/CrossModal-Defog-OVOD')
 
 ```bash
 # 验证 JSON split 文件
-python scripts/verify_rshazeplus_split.py
+python scripts/data/verify_rshazeplus_split.py
 ```
 
 **预期输出**:
@@ -150,7 +152,7 @@ Test subset 分布:
 
 ```bash
 # 运行 Dataset 测试
-python scripts/test_rshazeplus_dataset.py
+python scripts/test/test_rshazeplus_dataset.py
 ```
 
 **预期输出**:
@@ -177,7 +179,7 @@ Test: 930 samples (expected: 930)
 
 ```bash
 # 生成数据集预览
-python scripts/visualize_rshazeplus_dataset.py
+python scripts/data/visualize_rshazeplus_dataset.py
 ```
 
 **输出文件**:

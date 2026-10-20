@@ -19,7 +19,7 @@ Stage 6-3B: Density Guidance Integration Test
 12. Parameter Statistics
 
 使用方法:
-    python scripts/test_stage_6_3b.py
+    python scripts/test/test_stage_6_3b.py
 """
 
 import sys

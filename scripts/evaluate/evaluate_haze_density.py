@@ -13,7 +13,7 @@ Stage 5E: HazeDensityNet Test Evaluation
     5. 生成可视化
 
 使用方法:
-    python scripts/evaluate_haze_density.py
+    python scripts/evaluate/evaluate_haze_density.py
 """
 
 import sys
@@ -34,7 +34,9 @@ from collections import defaultdict
 
 from src.data import build_rshazeplus_dataloader
 from src.models.haze_density import HazeDensityNet
-from src.models.haze_density.physical_prior import PhysicalPriorModule
+from src.models.haze_density.physical_prior import (
+    PhysicalPriorModule, PRIOR_VERSION, warn_on_prior_mismatch,
+)
 
 
 def print_separator(title: str):
@@ -58,6 +60,9 @@ def parse_args():
                         help='batch size')
     parser.add_argument('--num_samples_per_subset', type=int, default=16,
                         help='每个 subset 可视化样本数')
+    parser.add_argument('--output_dir', type=str,
+                        default='experiments/haze_density/results/test_evaluation',
+                        help='独立评估输出目录，避免混用不同实验的图像')
     return parser.parse_args()
 
 
@@ -116,6 +121,9 @@ def compute_distribution_stats(tensor: torch.Tensor) -> dict:
 def evaluate_test_set(args):
     """主评估函数"""
     print_separator("Stage 5E: HazeDensityNet Test Evaluation")
+    output_dir = Path(args.output_dir)
+    if output_dir.exists() and any(output_dir.iterdir()):
+        raise FileExistsError(f'Output directory is not empty: {output_dir}; choose a new --output_dir')
 
     # 设备
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -126,11 +134,12 @@ def evaluate_test_set(args):
     checkpoint = torch.load(args.checkpoint, map_location='cpu')
 
     config = checkpoint.get('config', {})
+    warn_on_prior_mismatch(config)
     checkpoint_epoch = checkpoint.get('epoch', 'unknown')
     checkpoint_val_loss = checkpoint.get('val_loss', 'unknown')
 
     print(f"  Epoch: {checkpoint_epoch}")
-    print(f"  Val Loss: {checkpoint_val_loss:.6f}")
+    print(f"  Val Loss: {checkpoint_val_loss}")
 
     # 创建模型
     print("\nCreating model...")
@@ -146,7 +155,11 @@ def evaluate_test_set(args):
 
     # 创建 Physical Prior
     print("\nCreating Physical Prior...")
-    physical_prior = PhysicalPriorModule().to(device)
+    physical_prior = PhysicalPriorModule(
+        window_size=config.get('window_size', 15),
+        guided_radius=config.get('guided_radius', 15),
+        guided_eps=config.get('guided_eps', 0.01),
+    ).to(device)
     physical_prior.eval()
 
     # 加载 test 数据集
@@ -213,11 +226,11 @@ def evaluate_test_set(args):
     print(f"Shape per sample: {predictions_all.shape[1:]}")
 
     # 检查 NaN
-    if torch.isnan(predictions_all).any():
-        print("[ERROR] NaN detected in predictions!")
+    if not torch.isfinite(predictions_all).all():
+        print("[ERROR] Non-finite predictions!")
         return
-    if torch.isnan(targets_all).any():
-        print("[ERROR] NaN detected in targets!")
+    if not torch.isfinite(targets_all).all():
+        print("[ERROR] Non-finite targets!")
         return
     print("[OK] No NaN detected")
 
@@ -278,7 +291,6 @@ def evaluate_test_set(args):
     # ========== Visualization ==========
     print_separator("Generating Visualization")
 
-    output_dir = Path('experiments/haze_density/results/test_evaluation')
     output_dir.mkdir(parents=True, exist_ok=True)
 
     random.seed(42)
@@ -347,7 +359,12 @@ def evaluate_test_set(args):
         f.write("Checkpoint Information:\n")
         f.write(f"  Path: {args.checkpoint}\n")
         f.write(f"  Epoch: {checkpoint_epoch}\n")
-        f.write(f"  Val Loss: {checkpoint_val_loss:.6f}\n\n")
+        f.write(f"  Val Loss: {checkpoint_val_loss}\n")
+        f.write(f"  Checkpoint prior version: {config.get('prior_version', 'unrecorded')}\n")
+        f.write(f"  Evaluation prior version: {PRIOR_VERSION}\n")
+        f.write(f"  Physical prior: {physical_prior}\n")
+        f.write(f"  Image size: {args.image_size}\n")
+        f.write("  Metrics measure agreement with pseudo labels, not physical density.\n\n")
 
         f.write("Dataset Information:\n")
         f.write(f"  Total test samples: {len(test_loader.dataset)}\n")

@@ -17,8 +17,8 @@ RSHaze+ 数据集模块 (Stage 5B-1)
     │       └── synhazypng/    # 330
     ├── RSHaze_L/
     │   ├── train/
-    │   │   ├── cleanpng/      # ~2700
-    │   │   └── synhazypng/    # ~2700
+    │   │   ├── cleanpng/      # 历史记录 4860，以实际扫描为准
+    │   │   └── synhazypng/    # 历史记录 4860，以实际扫描为准
     │   └── test/
     │       ├── cleanpng/      # 270
     │       └── synhazypng/    # 270
@@ -45,13 +45,9 @@ RSHaze+ 数据集模块 (Stage 5B-1)
 
 from pathlib import Path
 from typing import Optional, Dict, List, Any, Tuple
-from PIL import Image
 import json
 import hashlib
 import random
-
-from .transforms import create_train_transform, create_val_transform
-
 
 # ============================================================================
 # RSHaze+ Dataset
@@ -112,6 +108,8 @@ class RSHazePlusDataset:
         self.return_clean = return_clean
         self.val_ratio = val_ratio
         self.split_file = split_file
+        if not 0 < val_ratio < 1:
+            raise ValueError('val_ratio must be between 0 and 1')
 
         # 加载图像列表
         self._load_image_list()
@@ -122,10 +120,12 @@ class RSHazePlusDataset:
         # 设置变换
         if transform is not None:
             self.transform = transform
-        elif split == 'train':
-            self.transform = create_train_transform(image_size)
         else:
-            self.transform = create_val_transform(image_size)
+            from .transforms import create_train_transform, create_val_transform
+            self.transform = (
+                create_train_transform(image_size) if split == 'train'
+                else create_val_transform(image_size)
+            )
 
         # 验证
         self._validate()
@@ -203,6 +203,8 @@ class RSHazePlusDataset:
                 item for item in self._all_pairs
                 if item['official_split'] == 'train'
             ]
+            if not train_items:
+                raise ValueError(f'No official training images found in {self.root}')
 
             if self.split_file:
                 # 尝试加载保存的 split
@@ -210,6 +212,20 @@ class RSHazePlusDataset:
                 if split_file.exists():
                     with open(split_file, 'r', encoding='utf-8') as f:
                         split_data = json.load(f)
+                    if not isinstance(split_data, dict):
+                        raise ValueError(f'Unexpected split format in {split_file}')
+                    for name in ('train', 'val'):
+                        entries = split_data.get(name)
+                        if not isinstance(entries, list) or not entries or not all(
+                            isinstance(item, dict)
+                            and isinstance(item.get('subset'), str)
+                            and isinstance(item.get('filename'), str)
+                            for item in entries
+                        ):
+                            raise ValueError(f'Unexpected split format in {split_file}')
+                        keys = {(item['subset'], item['filename']) for item in entries}
+                        if len(keys) != len(entries):
+                            raise ValueError(f'Duplicate entries in {name} in {split_file}')
 
                     # 新 schema: [{"subset": "...", "filename": "..."}]
                     if isinstance(split_data.get('val'), list) and len(split_data['val']) > 0:
@@ -223,6 +239,20 @@ class RSHazePlusDataset:
                                 (item['subset'], item['filename'])
                                 for item in split_data['train']
                             )
+                            if train_keys & val_keys:
+                                raise ValueError(f'Train/val overlap in {split_file}')
+                            available_keys = {
+                                (item['subset'], item['filename']) for item in train_items
+                            }
+                            selected_keys = {
+                                key for key in train_keys | val_keys
+                                if key[0] in self.subsets
+                            }
+                            if selected_keys != available_keys:
+                                raise ValueError(
+                                    f'Split file {split_file} does not match the dataset; '
+                                    'regenerate it explicitly for this dataset version.'
+                                )
 
                             if self.split == 'val':
                                 self.image_list = [
@@ -238,35 +268,40 @@ class RSHazePlusDataset:
                                 return
                     else:
                         # 旧格式或其他格式，打印警告
-                        print(f"[WARN] Split file {split_file} has unexpected format, using default split")
+                        raise ValueError(f'Unexpected split format in {split_file}')
                 else:
                     print(f"[WARN] Split file {split_file} not found, using default split")
 
             # 按 subset 分别划分，保持分布
-            random.seed(42)
+            rng = random.Random(42)
 
-            if self.split == 'val':
+            if self.split in ('train', 'val'):
                 val_keys = set()  # 使用 (subset, filename) 作为键
                 for subset in self.subsets:
                     subset_items = [
                         item for item in train_items
                         if item['subset'] == subset
                     ]
-                    random.shuffle(subset_items)
+                    rng.shuffle(subset_items)
                     n_val = max(1, int(len(subset_items) * self.val_ratio))
                     for item in subset_items[:n_val]:
                         val_keys.add((item['subset'], item['filename']))
 
+                if not val_keys or len(val_keys) >= len(train_items):
+                    raise ValueError('Not enough images for nonempty train/val partitions')
+
                 self.image_list = [
                     item for item in train_items
-                    if (item['subset'], item['filename']) in val_keys
+                    if ((item['subset'], item['filename']) in val_keys)
+                    == (self.split == 'val')
                 ]
 
-                # 保存 split (如果是 val 且指定了 split_file)
+                # 任一 split 首次加载时保存同一份划分，避免 train 先包含全部样本。
                 if self.split_file:
                     val_list = [
                         {'subset': item['subset'], 'filename': item['filename']}
-                        for item in self.image_list
+                        for item in train_items
+                        if (item['subset'], item['filename']) in val_keys
                     ]
                     train_list = [
                         {'subset': item['subset'], 'filename': item['filename']}
@@ -290,9 +325,6 @@ class RSHazePlusDataset:
                     split_file.parent.mkdir(parents=True, exist_ok=True)
                     with open(split_file, 'w', encoding='utf-8') as f:
                         json.dump(split_data, f, indent=2, ensure_ascii=False)
-            else:
-                # train
-                self.image_list = train_items
         else:
             raise ValueError(f"Unknown split: {self.split}")
 
@@ -330,6 +362,8 @@ class RSHazePlusDataset:
                 - path: 图像路径
                 - clean: clear image tensor (如果 return_clean=True)
         """
+        from PIL import Image
+
         item = self.image_list[idx]
 
         # 加载 hazy 图像

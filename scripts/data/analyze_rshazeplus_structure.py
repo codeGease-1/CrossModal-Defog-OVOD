@@ -14,7 +14,7 @@ RSHaze+ 数据集结构分析脚本
 6. 文件名规律分析
 
 使用方法:
-    python scripts/analyze_rshazeplus_structure.py --root datasets/RSHaze+
+    python scripts/data/analyze_rshazeplus_structure.py --root datasets/RSHaze+
 """
 
 import argparse

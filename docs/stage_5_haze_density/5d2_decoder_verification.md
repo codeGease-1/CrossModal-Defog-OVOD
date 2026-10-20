@@ -1,5 +1,7 @@
 # Stage 5D-2 Report: Decoder Activation Verification & Full Training Validation
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5D-2: Decoder Activation Verification  
 **创建日期**: 2026-09-01  
@@ -127,13 +129,13 @@ print(f"  relu3 is Identity: {relu3_is_identity}")
 !rm -rf experiments/haze_density/checkpoints/formal/
 
 # 重新训练 5 epochs
-!python scripts/train_haze_density.py --epochs 5
+!python scripts/train/train_haze_density.py --epochs 5
 ```
 
 ### 5.2 运行 Audit 脚本
 
 ```bash
-!python scripts/audit_prediction_distribution.py \
+!python scripts/evaluate/audit_prediction_distribution.py \
     --checkpoint experiments/haze_density/checkpoints/formal/best.pth
 ```
 
@@ -173,10 +175,10 @@ print(f"  relu3 is Identity: {relu3_is_identity}")
 
 ```bash
 # 步骤 1: 重新训练 5 epochs
-!python scripts/train_haze_density.py --epochs 5
+!python scripts/train/train_haze_density.py --epochs 5
 
 # 步骤 2: 运行 audit 脚本
-!python scripts/audit_prediction_distribution.py \
+!python scripts/evaluate/audit_prediction_distribution.py \
     --checkpoint experiments/haze_density/checkpoints/formal/best.pth
 
 # 步骤 3: 检查输出

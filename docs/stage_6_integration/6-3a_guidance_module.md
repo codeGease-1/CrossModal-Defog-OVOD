@@ -1,5 +1,7 @@
 # Stage 6-3A: Density Attention Guidance Module
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 ## 1. Overview
 
 本阶段实现 **DensityGuidanceModule**，使用冻结的 HazeDensityNet 输出的 density map 对视觉 backbone feature 进行空间引导。
@@ -221,7 +223,7 @@ guided_feature = visual_feature + self.gamma * visual_feature * attention
 | Parameter Stats | ⏳ Pending | Verify parameter counts |
 | Multi-scale Integration | ⏳ Pending | Full multi-scale forward |
 
-> **Note**: 测试脚本已创建 (`scripts/test_density_guidance.py`)，待运行验证。
+> **Note**: 测试脚本已创建 (`scripts/test/test_density_guidance.py`)，待运行验证。
 
 ### 6.2 Expected Results
 

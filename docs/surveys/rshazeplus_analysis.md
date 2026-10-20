@@ -1,8 +1,8 @@
 # RSHaze+ 数据集结构分析报告
 
-**项目**: CrossModal-Defog-OVOD  
-**阶段**: Stage 5A.6-R: RSHaze+ Dataset Structure & Semantic Verification  
-**分析日期**: 2026-08-29  
+**项目**: CrossModal-Defog-OVOD
+**阶段**: Stage 5A.6-R: RSHaze+ Dataset Structure & Semantic Verification
+**分析日期**: 2026-08-29
 **数据来源**: 本地 datasets/RSHaze+/ (与 Zenodo 官方下载一致)
 
 ---
@@ -210,6 +210,6 @@ datasets/RSHaze+/
 
 ---
 
-**分析完成日期**: 2026-08-29  
-**分析工具**: `scripts/analyze_rshazeplus_structure.py`  
+**分析完成日期**: 2026-08-29
+**分析工具**: `scripts/data/analyze_rshazeplus_structure.py`
 **作者**: 遥感智研助手

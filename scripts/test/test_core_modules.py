@@ -20,7 +20,7 @@
 - backward (梯度)
 
 使用方法:
-    !python scripts/test_core_modules.py
+    !python scripts/test/test_core_modules.py
 """
 
 import sys

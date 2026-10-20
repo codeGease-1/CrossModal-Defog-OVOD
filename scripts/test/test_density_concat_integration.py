@@ -13,7 +13,7 @@ Stage 6-2: Density Concatenation Integration Test
 5. No NaN/Inf test
 
 使用方法:
-    python scripts/test_density_concat_integration.py
+    python scripts/test/test_density_concat_integration.py
 """
 
 import sys

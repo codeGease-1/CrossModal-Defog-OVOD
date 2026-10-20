@@ -1,5 +1,7 @@
 # Stage 6-2 Report: HazeDensityNet Baseline Integration
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 6-2: Density Concatenation Baseline  
 **创建日期**: 2026-09-01  
@@ -17,7 +19,7 @@
 | `src/models/backbone/__init__.py` | backbone 模块初始化 |
 | `src/models/crossmodal/density_concat_model.py` | DensityConcatModel |
 | `src/models/crossmodal/__init__.py` | crossmodal 模块初始化 |
-| `scripts/test_density_concat_integration.py` | integration test 脚本 |
+| `scripts/test/test_density_concat_integration.py` | integration test 脚本 |
 | `configs/density_concat.yaml` | 消融实验配置 |
 
 ### 1.2 修改文件
@@ -136,7 +138,7 @@ stem_4ch[:, 3, :, :] = stem_3ch.mean(dim=1, keepdim=True)
 ### 4.3 Colab 测试命令
 
 ```bash
-!python scripts/test_density_concat_integration.py
+!python scripts/test/test_density_concat_integration.py
 ```
 
 ---
@@ -248,7 +250,7 @@ ablation:
 !pip install torch torchvision Pillow
 
 # 运行测试
-!python scripts/test_density_concat_integration.py
+!python scripts/test/test_density_concat_integration.py
 ```
 
 ### 8.2 预期输出

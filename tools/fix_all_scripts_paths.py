@@ -27,23 +27,19 @@ def fix_script_path(script_path: Path) -> bool:
         return False
 
     # 检查目录深度
-    parts = script_path.relative_to(script_path.parent.parent.parent).parts
-    depth = len(parts)  # scripts/train/ = 2, scripts/ = 1
+    project_root = Path(__file__).resolve().parents[1]
+    relative_path = script_path.resolve().relative_to(project_root)
 
     # 计算需要向上几层才能到达 src 的父目录
     # scripts/ -> parent.parent = 项目根 (2 层)
     # scripts/train/ -> parent.parent.parent = 项目根 (3 层)
     # scripts/utils/ -> parent.parent.parent = 项目根 (3 层)
 
-    parent_count = len(script_path.parts) - len(script_path.parent.parent.parent.parts) + 2
-    if depth == 1:  # scripts/ 直接子目录
-        parent_needed = "parent.parent"
-    else:  # scripts/子目录/
-        parent_needed = "parent.parent.parent"
+    parent_needed = '.'.join(['parent'] * len(relative_path.parts))
 
     # Pattern to match the path setup code
     old_pattern = r"project_root = Path\(__file__\)\.parent\.parent(?:\.parent)?"
-    new_code = f"project_root = Path(__file__}.{parent_needed}  # {script_path.relative_to(script_path.parent.parent.parent)}"
+    new_code = f"project_root = Path(__file__).{parent_needed}  # {relative_path}"
 
     new_content = re.sub(old_pattern, new_code, content)
 

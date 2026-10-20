@@ -10,7 +10,7 @@ Fix Decoder ReLU → Sigmoid Issue
     移除最后的 ReLU，改为 Identity
 
 使用方法:
-    python scripts/fix_decoder_relu.py
+    python scripts/utils/fix_decoder_relu.py
 """
 
 import sys

@@ -18,7 +18,7 @@
 10. DataLoader 迭代
 
 使用方法:
-    !python scripts/test_dataset.py
+    !python scripts/test/test_dataset.py
 """
 
 import sys

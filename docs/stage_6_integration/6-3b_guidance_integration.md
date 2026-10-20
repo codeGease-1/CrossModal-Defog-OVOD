@@ -1,5 +1,7 @@
 # Stage 6-3B: Density Guidance Integration
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 ## 1. Overview
 
 本阶段将 **DensityGuidanceModule** 正式集成到 Backbone 的多尺度特征金字塔中，实现完整的 **DensityGuidedBackbone**。
@@ -223,7 +225,7 @@ if self.freeze_density:
 
 ## 6. Test Results
 
-> **Note**: 测试脚本已创建 (`scripts/test_stage_6_3b.py`)，待 Bash 工具恢复后执行验证。
+> **Note**: 测试脚本已创建 (`scripts/test/test_stage_6_3b.py`)，待 Bash 工具恢复后执行验证。
 
 ### 6.1 Expected Results
 
@@ -245,7 +247,7 @@ if self.freeze_density:
 ### 6.2 Run Tests
 
 ```bash
-python scripts/test_stage_6_3b.py
+python scripts/test/test_stage_6_3b.py
 ```
 
 ## 7. Gradient Flow Design
@@ -302,7 +304,7 @@ guided = guidance_module(feature, density)  # density is detached
 | File | Type | Description |
 |------|------|-------------|
 | `src/models/crossmodal/density_guided_backbone.py` | New | DensityGuidedBackbone implementation |
-| `scripts/test_stage_6_3b.py` | New | 12-test validation suite |
+| `scripts/test/test_stage_6_3b.py` | New | 12-test validation suite |
 | `docs/stage_6_3b_guidance_integration.md` | New | This document |
 
 ## 11. Checkpoint Path

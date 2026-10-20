@@ -34,6 +34,7 @@
 import torch
 import torch.nn.functional as F
 from typing import Tuple, Optional, Dict
+import warnings
 
 from .guided_filter import guided_filter
 
@@ -49,6 +50,23 @@ WEIGHT_COLOR = 0.2
 
 # 非线性指数
 EXPONENT_MU = 1.5
+
+# v1 accidentally normalized each column independently. New experiments must
+# record this version because the correction changes the supervision targets.
+PRIOR_VERSION = "spatial_minmax_v2"
+
+
+def warn_on_prior_mismatch(config: dict):
+    """Keep exploratory evaluation of older weights explicit about its targets."""
+    if config.get('prior_version') != PRIOR_VERSION:
+        warnings.warn(
+            f"Checkpoint prior_version={config.get('prior_version', 'unrecorded')!r}; "
+            f"evaluation uses {PRIOR_VERSION!r}. These scores cannot reproduce "
+            "historical scores from the old column-wise targets. Retrain for "
+            "a comparable corrected experiment.",
+            UserWarning,
+            stacklevel=2,
+        )
 
 
 # ============================================================================
@@ -112,10 +130,10 @@ def min_max_normalize(
     # 先对 H 维度求 min/max，再对 W 维度求 min/max
     # 这样可以兼容所有 PyTorch 版本
     x_min_h = x.min(dim=2, keepdim=True)[0]  # [B, C, 1, W]
-    x_min = x_min_h.min(dim=2, keepdim=True)[0]  # [B, C, 1, 1]
+    x_min = x_min_h.min(dim=3, keepdim=True)[0]  # [B, C, 1, 1]
 
     x_max_h = x.max(dim=2, keepdim=True)[0]  # [B, C, 1, W]
-    x_max = x_max_h.max(dim=2, keepdim=True)[0]  # [B, C, 1, 1]
+    x_max = x_max_h.max(dim=3, keepdim=True)[0]  # [B, C, 1, 1]
 
     x_range = x_max - x_min + eps
     x_norm = (x - x_min) / x_range

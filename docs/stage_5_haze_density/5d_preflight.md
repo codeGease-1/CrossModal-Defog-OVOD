@@ -1,5 +1,7 @@
 # Stage 5D-0 Report: Formal Training Preflight Audit
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5D-0: Formal Training Preflight Audit  
 **创建日期**: 2026-08-31  
@@ -178,17 +180,17 @@ experiments/haze_density/checkpoints/formal/
 !pip install torch torchvision Pillow pyyaml
 
 # 运行 5 epochs
-!python scripts/train_haze_density.py --epochs 5
+!python scripts/train/train_haze_density.py --epochs 5
 ```
 
 ### 8.2 Resume 测试
 
 ```bash
 # 训练 2 epochs
-!python scripts/train_haze_density.py --epochs 2
+!python scripts/train/train_haze_density.py --epochs 2
 
 # 恢复训练 (再训练 3 epochs)
-!python scripts/train_haze_density.py --epochs 5 --resume experiments/haze_density/checkpoints/formal/latest.pth
+!python scripts/train/train_haze_density.py --epochs 5 --resume experiments/haze_density/checkpoints/formal/latest.pth
 ```
 
 ---

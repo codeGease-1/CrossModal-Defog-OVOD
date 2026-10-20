@@ -468,13 +468,13 @@ print(f"S_final finite: {torch.isfinite(s_final).all()}")
 
 ```bash
 # RSHaze+
-!python scripts/inspect_dataset.py --dataset RSHazePlus --data_dir /content/datasets/RSHazePlus
+!python scripts/data/inspect_dataset.py --dataset RSHazePlus --data_dir /content/datasets/RSHazePlus
 
 # RS-Haze
-!python scripts/inspect_dataset.py --dataset RSHaze --data_dir /content/datasets/RSHaze
+!python scripts/data/inspect_dataset.py --dataset RSHaze --data_dir /content/datasets/RSHaze
 
 # RRSHID
-!python scripts/inspect_dataset.py --dataset RRSHID --data_dir /content/datasets/RRSHID
+!python scripts/data/inspect_dataset.py --dataset RRSHID --data_dir /content/datasets/RRSHID
 ```
 
 ---

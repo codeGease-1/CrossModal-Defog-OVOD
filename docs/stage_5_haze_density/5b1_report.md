@@ -1,5 +1,7 @@
 # Stage 5B-1 完成报告：RSHaze+ Dataset Implementation
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5B-1: RSHaze+ Dataset Implementation  
 **完成日期**: 2026-08-30  
@@ -21,10 +23,10 @@
 
 | 文件 | 说明 | 状态 |
 |------|------|------|
-| `scripts/generate_rshazeplus_split.py` | 生成 train/val/test split | ✅ 完成 |
-| `scripts/test_rshazeplus_dataset.py` | 完整测试脚本 | ✅ 完成 |
-| `scripts/verify_rshazeplus_split.py` | Split 验证脚本 | ✅ 完成 |
-| `scripts/visualize_rshazeplus_dataset.py` | 可视化脚本 | ✅ 完成 |
+| `scripts/data/generate_rshazeplus_split.py` | 生成 train/val/test split | ✅ 完成 |
+| `scripts/test/test_rshazeplus_dataset.py` | 完整测试脚本 | ✅ 完成 |
+| `scripts/data/verify_rshazeplus_split.py` | Split 验证脚本 | ✅ 完成 |
+| `scripts/data/visualize_rshazeplus_dataset.py` | 可视化脚本 | ✅ 完成 |
 | `scripts/colab_test_dataset.ipynb` | Colab 测试 Notebook | ✅ 完成 |
 
 ### 3. 文档
@@ -228,22 +230,22 @@ test_loader = build_rshazeplus_dataloader(
 
 1. **生成 Split**:
    ```bash
-   python scripts/generate_rshazeplus_split.py
+   python scripts/data/generate_rshazeplus_split.py
    ```
 
 2. **运行测试**:
    ```bash
-   python scripts/test_rshazeplus_dataset.py
+   python scripts/test/test_rshazeplus_dataset.py
    ```
 
 3. **验证 Split**:
    ```bash
-   python scripts/verify_rshazeplus_split.py
+   python scripts/data/verify_rshazeplus_split.py
    ```
 
 4. **生成可视化**:
    ```bash
-   python scripts/visualize_rshazeplus_dataset.py
+   python scripts/data/visualize_rshazeplus_dataset.py
    ```
 
 ### 7.3 预期输出

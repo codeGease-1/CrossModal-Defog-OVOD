@@ -6,7 +6,7 @@ Colab 环境初始化脚本
 在 Google Colab 中运行此脚本，自动完成环境配置和检查。
 
 使用方法:
-    !python scripts/setup_colab.py
+    !python scripts/utils/setup_colab.py
 """
 
 import os
@@ -111,7 +111,7 @@ def print_config_summary():
     try:
         import yaml
 
-        config_path = Path(__file__).parent.parent / "configs" / "haze_density.yaml"
+        config_path = Path(__file__).resolve().parents[2] / "configs" / "haze_density.yaml"
         if config_path.exists():
             with open(config_path, "r", encoding="utf-8") as f:
                 config = yaml.safe_load(f)
@@ -119,15 +119,9 @@ def print_config_summary():
             print("\n" + "=" * 60)
             print("配置摘要")
             print("=" * 60)
-            print(f"项目：{config['project']['name']}")
-            print(f"任务：{config['project']['task']}")
-            print(f"设备：{config['runtime']['device']}")
-            print(f"AMP: {config['runtime']['amp']}")
-            print(f"图像尺寸：{config['data']['image_size']}")
-            print(f"Batch Size: {config['data']['batch_size']}")
-            print(f"基础通道数：{config['model']['base_channels']}")
-            print(f"学习率：{config['train']['lr']}")
-            print(f"训练轮数：{config['train']['epochs']}")
+            for key in ('amp', 'image_size', 'batch_size', 'base_channels',
+                        'lr', 'epochs', 'checkpoint_dir', 'result_dir'):
+                print(f"{key}: {config[key]}")
     except Exception as e:
         print(f"\n配置读取失败：{e}")
 
@@ -162,8 +156,8 @@ def main():
     print("✓ 环境初始化完成！")
     print("=" * 60)
     print("\n下一步:")
-    print("  1. 运行 smoke test: !python scripts/smoke_test.py")
-    print("  2. 开始训练：!python scripts/train_haze_density.py")
+    print("  1. 运行 smoke test: !python scripts/utils/smoke_test.py")
+    print("  2. 开始训练：!python scripts/train/train_haze_density.py --config configs/haze_density.yaml")
     print()
 
     return True

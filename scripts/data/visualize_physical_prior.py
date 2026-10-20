@@ -15,10 +15,10 @@
 
 使用方法:
     # 使用示例图像
-    !python scripts/visualize_physical_prior.py --image path/to/image.jpg
+    !python scripts/data/visualize_physical_prior.py --image path/to/image.jpg
 
     # 如果没有图像，会生成一个测试图像
-    !python scripts/visualize_physical_prior.py --generate-test
+    !python scripts/data/visualize_physical_prior.py --generate-test
 """
 
 import sys

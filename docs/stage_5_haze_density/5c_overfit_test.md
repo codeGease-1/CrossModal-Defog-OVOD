@@ -1,5 +1,7 @@
 # Stage 5C Report: HazeDensityNet 8-Image Overfit Test
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5C: 8-Image Overfit Test  
 **创建日期**: 2026-08-31  
@@ -103,7 +105,7 @@
 !pip install torch torchvision Pillow
 
 # 2. 运行训练
-!python scripts/train_overfit_8.py
+!python scripts/train/train_overfit_8.py
 ```
 
 ---

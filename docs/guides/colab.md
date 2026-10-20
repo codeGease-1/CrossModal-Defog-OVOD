@@ -1,272 +1,121 @@
-# Google Colab 使用说明
+# 在 Colab 运行项目
 
-本文档说明如何在 Google Colab 免费 T4 GPU 上运行本项目。
+更新于 2026-10-20。建议先看 [操作指南](haze_density_user_guide.md)。本地负责改代码，Colab 用于模型动态检查和 GPU 实验；Colab 的资源与会话时长以实际运行时为准。
 
----
+## 1. 获取本次修改后的代码
 
-## 一、准备工作
+本次审查只修改本地文件，没有提交或推送远端。请使用包含本次修改的项目副本：可以手动上传到 Colab，或自行提交到仓库后再克隆。单独克隆旧远端不会自动带上本次修正。
 
-### 1. Google 账号
-
-确保你有一个 Google 账号，用于访问 Colab 和 Google Drive。
-
-### 2. GitHub 账号（可选）
-
-如果项目已推送到 GitHub，可以直接 clone；否则需要上传 ZIP 文件。
-
----
-
-## 二、Colab 初始化步骤
-
-### 方式 A：从 GitHub Clone（推荐）
+远端已更新后，在新 Colab 会话执行：
 
 ```python
-# ========================
-# Step 1: 挂载 Google Drive
-# ========================
-from google.colab import drive
-drive.mount('/content/drive')
-
-# ========================
-# Step 2: 克隆项目
-# ========================
-# 替换为你的 GitHub 仓库地址
-!git clone https://github.com/your-username/CrossModal-Defog-OVOD.git
-
-# 或者从 Google Drive 复制（如果已上传）
-# !cp -r /content/drive/MyDrive/CrossModal-Defog-OVOD /content/
-
-# ========================
-# Step 3: 进入项目目录
-# ========================
+!git clone https://github.com/codeGease-1/CrossModal-Defog-OVOD.git /content/CrossModal-Defog-OVOD
 %cd /content/CrossModal-Defog-OVOD
-
-# ========================
-# Step 4: 安装依赖
-# ========================
-!pip install -r requirements.txt
-
-# ========================
-# Step 5: 设置 PYTHONPATH
-# ========================
-import sys
-sys.path.insert(0, '/content/CrossModal-Defog-OVOD')
-
-# ========================
-# Step 6: 检查 GPU 环境
-# ========================
-!nvidia-smi
-
-# 检查 PyTorch GPU 支持
-import torch
-print(f"PyTorch version: {torch.__version__}")
-print(f"CUDA available: {torch.cuda.is_available()}")
-print(f"CUDA version: {torch.version.cuda}")
-print(f"GPU name: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A'}")
-print(f"GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.2f} GB" 
-      if torch.cuda.is_available() else "No GPU")
+%pip install -r requirements.txt
 ```
 
----
-
-### 方式 B：上传 ZIP 文件
+已存在项目目录时直接进入该目录，并确认代码版本，不要反复 clone 或覆盖自己的实验。检查版本标记与环境：
 
 ```python
-# ========================
-# Step 1: 挂载 Google Drive
-# ========================
+import torch
+from src.models.haze_density.physical_prior import PRIOR_VERSION
+print('torch:', torch.__version__)
+print('CUDA:', torch.cuda.is_available())
+print('prior:', PRIOR_VERSION)  # spatial_minmax_v2
+```
+
+## 2. 挂载 Drive，准备数据
+
+```python
 from google.colab import drive
 drive.mount('/content/drive')
-
-# ========================
-# Step 2: 上传 ZIP 文件
-# ========================
-from google.colab import files
-uploaded = files.upload()
-
-# ========================
-# Step 3: 解压
-# ========================
-!unzip CrossModal-Defog-OVOD.zip
-%cd CrossModal-Defog-OVOD
-
-# ========================
-# Step 4: 安装依赖
-# ========================
-!pip install -r requirements.txt
-
-# ========================
-# Step 5: 设置 PYTHONPATH
-# ========================
-import sys
-sys.path.insert(0, '/content/CrossModal-Defog-OVOD')
 ```
 
----
-
-## 三、运行训练
-
-### 基本训练
+把 RSHaze+ 解压成操作指南中的目录。若压缩包已放在 Drive，可使用：
 
 ```python
-# 使用默认配置训练
-!python scripts/train_haze_density.py --config configs/haze_density.yaml
+from pathlib import Path
+import shutil
+
+archive = Path('/content/drive/MyDrive/dataset/RSHaze+.zip')
+destination = Path('/content/CrossModal-Defog-OVOD/datasets')
+if not (destination / 'RSHaze+').exists():
+    destination.mkdir(parents=True, exist_ok=True)
+    shutil.unpack_archive(archive, destination)
+assert (destination / 'RSHaze+' / 'RSHaze_G').exists(), '检查压缩包解压后的层级'
 ```
 
-### 自定义参数训练
+压缩包可能多包一层目录，按实际结构确认路径；不要因为断言失败就删除整份数据。
+
+## 3. 把输出直接写到 Drive
+
+`/content` 是临时运行时。自动保存到这里的 checkpoint 不能保证在运行时销毁后还在；把输出指向 Drive 才能在下次会话继续使用。
 
 ```python
-# 修改 batch_size 和 learning_rate
-!python scripts/train_haze_density.py \
-    --config configs/haze_density.yaml \
-    --data.batch_size 8 \
-    --train.lr 5e-4
+from pathlib import Path
+import yaml
+
+run_dir = Path('/content/drive/MyDrive/CrossModal-Defog-OVOD/spatial_v2_run01')
+run_dir.mkdir(parents=True, exist_ok=True)
+config = yaml.safe_load(Path('configs/haze_density.yaml').read_text())
+config['checkpoint_dir'] = str(run_dir / 'checkpoints')
+config['result_dir'] = str(run_dir / 'results')
+# 使用绝对路径指向持久化的 manifest；数据本身仍可存 /content。
+config['split_file'] = str(run_dir / 'rshazeplus_split.json')
+config_path = run_dir / 'train_config.yaml'
+if not config_path.exists():
+    config_path.write_text(yaml.safe_dump(config, allow_unicode=True), encoding='utf-8')
+config = yaml.safe_load(config_path.read_text(encoding='utf-8'))
+print(config_path)
 ```
 
-### 断点续训
+新会话恢复同一实验时使用已保存的配置，不要悄悄改写它。要改关键数据/先验设置，应开新实验目录。
+
+## 4. 固定划分并运行检查
 
 ```python
-# 从 checkpoint 继续训练
-!python scripts/train_haze_density.py \
-    --config configs/haze_density.yaml \
-    --resume experiments/haze_density/checkpoints/latest.pt
+from scripts.data.generate_rshazeplus_split import generate_split
+if not Path(config['split_file']).exists():
+    generate_split(root=config['dataset_root'], val_ratio=0.1, seed=42,
+                   output_file=config['split_file'])
 ```
-
----
-
-## 四、保存实验结果
-
-### 自动保存
-
-训练过程中，checkpoint 会自动保存到：
-- `experiments/haze_density/checkpoints/` - 模型权重
-- `experiments/haze_density/logs/` - TensorBoard 日志
-
-### 同步到 Google Drive
 
 ```python
-# 训练完成后，同步到 Google Drive
-!cp -r /content/CrossModal-Defog-OVOD/experiments /content/drive/MyDrive/CrossModal-Defog-OVOD-experiments/
+!python scripts/utils/static_check.py
+!python -m unittest discover -s scripts/test -p test_review_regressions.py -v
+!python scripts/test/test_physical_prior.py
+!python scripts/utils/smoke_test.py
 ```
 
-### 下载 Checkpoint
+本次本地未执行的 4 项 PyTorch 回归应在此处真实运行，不能仍显示为 skipped。
+
+## 5. 短训练、恢复与正式评估
 
 ```python
-from google.colab import files
-
-# 压缩 checkpoints
-!tar -czf checkpoints.tar.gz experiments/haze_density/checkpoints/
-
-# 下载
-files.download('checkpoints.tar.gz')
+import subprocess
+subprocess.run(['python', 'scripts/train/train_haze_density.py',
+                '--config', str(config_path), '--epochs', '5'], check=True)
 ```
 
----
-
-## 五、TensorBoard 可视化
+确认日志与可视化正常后，继续到总共 50 轮：
 
 ```python
-# 启动 TensorBoard
-%load_ext tensorboard
-%tensorboard --logdir experiments/haze_density/logs
+subprocess.run(['python', 'scripts/train/train_haze_density.py',
+                '--config', str(config_path), '--epochs', '50',
+                '--resume', str(run_dir / 'checkpoints/latest.pth')], check=True)
 ```
 
-或在 Colab 菜单中选择：Tools → TensorBoard
-
----
-
-## 六、GPU 资源管理
-
-### T4 GPU 显存限制
-
-- **总显存**: ~16 GB
-- **推荐 batch_size**: 4-8 (image_size=256)
-- **最大 batch_size**: 视模型复杂度而定
-
-### 显存监控
+方案确定后做测试评估，每次使用新的空输出目录：
 
 ```python
-import torch
-
-print(f"Allocated memory: {torch.cuda.memory_allocated(0) / 1024**2:.2f} MB")
-print(f"Reserved memory: {torch.cuda.memory_reserved(0) / 1024**2:.2f} MB")
+subprocess.run(['python', 'scripts/evaluate/evaluate_haze_density.py',
+                '--checkpoint', str(run_dir / 'checkpoints/best.pth'),
+                '--dataset_root', config['dataset_root'],
+                '--output_dir', str(run_dir / 'test_evaluation')], check=True)
 ```
 
-### 显存清理
+显存不足时，减小 `batch_size`；加载进程出问题时，先尝试 `num_workers: 0`。CPU 能做小规模检查，完整实验建议使用可用的 GPU。当前训练脚本没有 TensorBoard 事件写入，不要使用空的 `logs/` 目录来判断训练是否正常。
 
-```python
-import torch
-import gc
+## 6. 一次实验要留下什么？
 
-torch.cuda.empty_cache()
-gc.collect()
-```
-
----
-
-## 七、常见问题
-
-### Q1: CUDA out of memory
-
-**解决**: 减小 batch_size
-
-```yaml
-# 在 configs/haze_density.yaml 中修改
-data:
-  batch_size: 2  # 从 4 降到 2
-```
-
-### Q2: 依赖安装失败
-
-**解决**: 重新运行安装命令，或检查网络连接
-
-```bash
-!pip install -r requirements.txt --upgrade
-```
-
-### Q3: Colab 会话断开
-
-**解决**: 
-- Checkpoint 已自动保存，重新挂载 Drive 后继续
-- 使用断点续训命令恢复训练
-
-### Q4: GPU 超时释放
-
-**解决**: 
-- Colab 免费 tier 最长运行约 12 小时
-- 定期保存 checkpoint
-- 考虑使用 Colab Pro 或本地 GPU
-
----
-
-## 八、脚本说明
-
-### `scripts/setup_colab.py`
-
-一键初始化 Colab 环境：
-
-```python
-# 在 Colab 中运行
-!python scripts/setup_colab.py
-```
-
-该脚本自动执行：
-1. 检查 GPU 可用性
-2. 验证 PyTorch 版本
-3. 打印环境信息
-4. 创建必要的输出目录
-
----
-
-## 九、下一步
-
-完成初始化后，运行以下命令进行 smoke test：
-
-```python
-# 形状测试（不训练，仅验证 forward/backward）
-!python scripts/smoke_test.py
-```
-
----
-
-**最后更新**: 2026-08-28
+保存代码提交号或源代码快照、配置、split manifest、`best/latest.pth`、`train_log.csv`、测试指标与示例图。报告时注明标签为伪标签、先验版本、图像尺寸与是否使用独立验证证据。历史 notebook 的新旧命令差异见 [Notebook 使用说明](../notebook_update_guide.md)。

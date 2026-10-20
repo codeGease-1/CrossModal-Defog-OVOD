@@ -12,13 +12,15 @@
 4. Import 路径检查
 
 使用方法:
-    python scripts/static_check.py
+    python scripts/utils/static_check.py
 """
 
 import ast
 import os
 import sys
+import re
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 
 def check_python_syntax(file_path):
@@ -38,14 +40,14 @@ def check_yaml_syntax(file_path):
     """检查 YAML 文件语法"""
     try:
         import yaml
-
+    except ImportError:
+        return None, "pyyaml 未安装"
+    try:
         with open(file_path, "r", encoding="utf-8") as f:
             yaml.safe_load(f)
         return True, None
     except yaml.YAMLError as e:
         return False, str(e)
-    except ImportError:
-        return None, "pyyaml 未安装"
     except Exception as e:
         return False, str(e)
 
@@ -55,8 +57,6 @@ def check_directory_structure(project_root):
     required_dirs = [
         "configs",
         "docs",
-        "experiments/haze_density/checkpoints",
-        "experiments/haze_density/logs",
         "scripts",
         "src/data",
         "src/models/haze_density",
@@ -85,7 +85,10 @@ def check_python_files(project_root):
     print("Python 语法检查")
     print("=" * 60)
 
-    python_files = list(project_root.rglob("*.py"))
+    python_files = [
+        file_path for folder in ('src', 'scripts', 'tools')
+        for file_path in (project_root / folder).rglob('*.py')
+    ]
 
     all_ok = True
     errors = []
@@ -203,6 +206,26 @@ def check_requirements(project_root):
     return True
 
 
+def check_markdown_links(project_root):
+    """Validate local Markdown file targets without requiring model libraries."""
+    print("\nMarkdown local links")
+    errors = []
+    markdown_files = [project_root / 'README.md', *(project_root / 'docs').rglob('*.md')]
+    for path in markdown_files:
+        content = re.sub(r'```.*?```', '', path.read_text(encoding='utf-8'), flags=re.S)
+        for target in re.findall(r'(?<!!)\[[^\]]*\]\(([^\s)]+)\)', content):
+            parts = urlsplit(target.strip('<>'))
+            if parts.scheme or parts.netloc or not parts.path:
+                continue
+            if not (path.parent / unquote(parts.path)).exists():
+                errors.append((str(path.relative_to(project_root)), target))
+    for path, target in errors:
+        print(f'[FAIL] {path}: {target}')
+    if not errors:
+        print(f'[OK] Local file targets in {len(markdown_files)} Markdown files')
+    return not errors
+
+
 def main():
     """主函数"""
     print("\n" + "=" * 60)
@@ -231,6 +254,7 @@ def main():
     # YAML 语法
     yaml_ok, yaml_errors = check_yaml_files(project_root)
     results["YAML 语法"] = yaml_ok
+    results["Markdown links"] = check_markdown_links(project_root)
 
     # 汇总
     print("\n" + "=" * 60)

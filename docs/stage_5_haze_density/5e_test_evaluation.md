@@ -1,5 +1,7 @@
 # Stage 5E Report: HazeDensityNet Test Evaluation
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5E: Test Evaluation on RSHaze+  
 **创建日期**: 2026-09-01  
@@ -181,7 +183,7 @@ experiments/haze_density/results/test_evaluation/
 
 ```bash
 # 运行测试评估
-!python scripts/evaluate_haze_density.py \
+!python scripts/evaluate/evaluate_haze_density.py \
     --checkpoint experiments/haze_density/checkpoints/formal/best.pth \
     --image_size 256 \
     --batch_size 4 \

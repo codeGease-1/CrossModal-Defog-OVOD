@@ -1,78 +1,38 @@
 # 文档索引
 
-**项目**: CrossModal-Defog-OVOD  
-**最后更新**: 2026-09-03
+更新于 2026-10-20。当前实现、运行命令和进度以本页列出的“当前文档”为准。
 
----
+## 当前文档
 
-## 📚 用户指南
+| 文档 | 适合解决的问题 |
+|---|---|
+| [项目首页](../README.md) | 这个仓库目前能做什么？ |
+| [雾密度入门解释](guides/haze_density_explained.md) | 原理是什么，模型到底在学什么？ |
+| [操作指南](guides/haze_density_user_guide.md) | 数据怎么放，训练、恢复、评估怎么跑？ |
+| [Colab 指南](guides/colab.md) | 环境和 Drive 持久化怎么配置？ |
+| [项目状态](project_status.md) | 哪些有代码，哪些有本次验证证据？ |
+| [审查记录](project_review.md) | 发现了哪些错误，修了什么，还有什么限制？ |
+| [Notebook 使用说明](notebook_update_guide.md) | 两个现有 notebook 如何与新流程配合？ |
 
-| 文档 | 说明 |
-|------|------|
-| [haze_density_user_guide.md](guides/haze_density_user_guide.md) | 雾密度感知网络完整使用指南 |
-| [colab.md](guides/colab.md) | Google Colab 使用说明 |
+## 历史阶段记录
 
----
+以下保留当时的设计、排错和结果记录，包含待填项与未复核数值。历史文档的“已完成”不表示本次重新完成了该实验。特别是旧先验生成的指标，不可直接用于修正后的流程。
 
-## 📊 Stage 5: 雾密度感知网络
+| 阶段 | 资料 |
+|---|---|
+| 数据实现 | [5B 数据实现](stage_5_haze_density/5b_dataset_implementation.md)、[5B-1 报告](stage_5_haze_density/5b1_report.md)、[5B-2 集成](stage_5_haze_density/5b2_report.md) |
+| 过拟合与训练前检查 | [5C 8 图过拟合](stage_5_haze_density/5c_overfit_test.md)、[5D 训练前检查](stage_5_haze_density/5d_preflight.md) |
+| 预测范围排错 | [5D-1 分布审计](stage_5_haze_density/5d1_prediction_audit.md)、[5D-2 Decoder 修复](stage_5_haze_density/5d2_decoder_verification.md) |
+| 测试评估模板 | [5E 测试评估](stage_5_haze_density/5e_test_evaluation.md) |
+| 集成原型 | [6-1 规划](stage_6_integration/6-1_integration_plan.md)、[6-2 拼接基线](stage_6_integration/6-2_baseline.md)、[6-3A 引导模块](stage_6_integration/6-3a_guidance_module.md)、[6-3B 集成](stage_6_integration/6-3b_guidance_integration.md) |
 
-| 文档 | 说明 |
-|------|------|
-| [5b1_report.md](stage_5_haze_density/5b1_report.md) | Stage 5B-1 数据集实现报告 |
-| [5b2_report.md](stage_5_haze_density/5b2_report.md) | Stage 5B-2 数据集与物理先验集成 |
-| [5c_overfit_test.md](stage_5_haze_density/5c_overfit_test.md) | Stage 5C 8 图像过拟合测试 |
-| [5d_preflight.md](stage_5_haze_density/5d_preflight.md) | Stage 5D-0 训练前审计 |
-| [5d1_prediction_audit.md](stage_5_haze_density/5d1_prediction_audit.md) | Stage 5D-1 预测分布审计 |
-| [5d2_decoder_verification.md](stage_5_haze_density/5d2_decoder_verification.md) | Stage 5D-2 Decoder 验证 |
-| [5e_test_evaluation.md](stage_5_haze_density/5e_test_evaluation.md) | Stage 5E 测试集评估 |
+## 调研资料
 
----
+[数据集调研](surveys/dataset_survey.md)、[数据获取清单](surveys/dataset_manifest.md)、[RSHaze+ 分析](surveys/rshazeplus_analysis.md)、[开放词汇分割可行性](surveys/ovs_feasibility.md)。这些是历史调研，下载方式、第三方模型和论文结论应在实际采用时再次核对。
 
-## 🔗 Stage 6: 集成模块
+## 日常入口
 
-| 文档 | 说明 |
-|------|------|
-| [6-1_integration_plan.md](stage_6_integration/6-1_integration_plan.md) | 集成方案规划 |
-| [6-2_baseline.md](stage_6_integration/6-2_baseline.md) | Baseline 集成 |
-| [6-3a_guidance_module.md](stage_6_integration/6-3a_guidance_module.md) | 密度引导模块 |
-| [6-3b_guidance_integration.md](stage_6_integration/6-3b_guidance_integration.md) | 引导集成验证 |
-
----
-
-## 📋 调研报告
-
-| 文档 | 说明 |
-|------|------|
-| [rshazeplus_analysis.md](surveys/rshazeplus_analysis.md) | RSHaze+ 数据集分析 |
-| [ovs_feasibility.md](surveys/ovs_feasibility.md) | 直接含雾 OVS 路径可行性评估 |
-
----
-
-## 📝 项目状态
-
-| 文档 | 说明 |
-|------|------|
-| [project_status.md](project_status.md) | 项目进度跟踪 |
-
----
-
-## 🚀 快速导航
-
-### 新手入门
-1. 阅读 [haze_density_user_guide.md](guides/haze_density_user_guide.md)
-2. 配置环境 ([colab.md](guides/colab.md))
-3. 运行训练脚本
-
-### 查看实验结果
-- 训练日志：`experiments/haze_density/results/formal/train_log.csv`
-- 测试指标：`experiments/haze_density/results/test_evaluation/test_metrics.txt`
-- 可视化：`experiments/haze_density/results/test_evaluation/`
-
-### 脚本使用
-- 训练：`scripts/train/train_haze_density.py`
-- 评估：`scripts/evaluate/evaluate_haze_density.py`
-- 测试：`scripts/test/test_*.py`
-
----
-
-**文档维护**: 遥感智研助手
+- 代码：`scripts/train/train_haze_density.py`、`scripts/evaluate/evaluate_haze_density.py`。
+- 当前训练配置：`configs/haze_density.yaml`，使用 `--config` 读取。
+- 实验文件：保存在各次运行指定的 `checkpoint_dir`、`result_dir` 和评估 `--output_dir`。
+- 数据划分：`experiments/haze_density/rshazeplus_split.json`，随实验备份。

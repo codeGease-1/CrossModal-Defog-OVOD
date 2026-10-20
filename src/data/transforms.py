@@ -13,11 +13,9 @@
 Transform 流程:
     读取 RGB [H, W, 3] [0, 255]
         ↓
-    ToTensor [3, H, W] [0, 1]
+    几何增强 (RandomCrop, Flip，在 PIL 图像上执行)
         ↓
-    几何增强 (RandomCrop, Flip)
-        ↓
-    输出 [3, 256, 256] [0, 1]
+    ToTensor → 输出 [3, image_size, image_size] [0, 1]
 """
 
 import torch

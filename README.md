@@ -1,180 +1,76 @@
 # CrossModal-Defog-OVOD
 
-跨模态语义恢复引导的含雾低质遥感影像开放词汇目标检测
+跨模态语义恢复引导的含雾低质遥感影像开放词汇目标检测。大学生创新训练项目，北京师范大学人工智能学院。
 
-> **大学生创新训练项目** | 北京师范大学人工智能学院
+**当前可用的核心是雾密度感知模块及其训练、评估代码。完整的去雾、超分辨率和开放词汇检测链路尚未实现。** 当前输出是物理先验生成的伪标签所定义的相对雾感评分，不是实测雾浓度。
 
----
+最近审查：2026-10-20。详见 [项目状态](docs/project_status.md) 与 [审查记录](docs/project_review.md)。
 
-## 项目概述
+## 建议阅读顺序
 
-本项目旨在研究含雾低质遥感影像的开放词汇目标检测（Open-Vocabulary Object Detection, OVOD）方法。通过跨模态语义恢复技术，提升在雾霾等恶劣天气条件下的遥感影像解译能力。
+1. [从零理解雾密度分析](docs/guides/haze_density_explained.md)：先理解输入、标签、训练和结果的含义。
+2. [操作指南](docs/guides/haze_density_user_guide.md)：准备数据、训练、恢复和评估。
+3. [Colab 指南](docs/guides/colab.md)：在云端准备环境并持久保存实验。
+4. [完整文档索引](docs/INDEX.md)：历史记录与调研资料。
 
-### 当前阶段：雾密度感知网络
+## 目前的处理流程
 
-当前开发聚焦于**雾密度感知网络**模块，该模块用于生成精确的雾密度图，为后续的超分辨率和开放词汇分割提供基础。
-
----
-
-## 开发模式
-
-### 🖥️ 本地开发 + ☁️ Colab 执行
-
-本项目采用**分离式开发模式**：
-
-| 环境 | 职责 | 要求 |
-|------|------|------|
-| **本地 (Windows/Linux/Mac)** | 代码开发、Git 管理、静态检查 | 仅需 Python 环境（可选） |
-| **Google Colab** | 模型训练、实验验证、GPU 推理 | NVIDIA GPU (T4 免费 tier) |
-
-**重要**: 本地电脑**不需要**安装 PyTorch、CUDA 或任何 GPU 相关依赖。
-
----
-
-## 项目结构
-
-```
-CrossModal-Defog-OVOD/
-├── configs/                    # 配置文件
-│   └── haze_density.yaml       # 雾密度网络配置
-├── docs/                       # 文档
-│   ├── colab.md                # Colab 使用说明
-│   └── project_status.md       # 项目状态跟踪
-├── experiments/                # 实验输出
-│   └── haze_density/
-│       ├── checkpoints/        # 模型检查点
-│       └── logs/               # 训练日志
-├── scripts/                    # 脚本
-│   └── setup_colab.py          # Colab 环境设置
-├── src/                        # 源代码
-│   ├── data/                   # 数据模块
-│   ├── models/                 # 模型模块
-│   │   └── haze_density/       # 雾密度网络
-│   └── utils/                  # 工具函数
-├── requirements.txt            # Python 依赖
-└── README.md                   # 本文件
+```mermaid
+flowchart LR
+    I[含雾 RGB 图像] --> P[暗通道 / 局部对比度 / 颜色差异]
+    P --> S[归一化、加权、幂变换、引导滤波]
+    S --> T[伪标签 S_final]
+    I --> N[HazeDensityNet]
+    N --> D[预测雾感评分图]
+    T --> L[MSE 损失]
+    D --> L
+    L -.训练时更新参数.-> N
 ```
 
----
+训练时先验规则充当“出题并给参考答案的老师”，网络学习逼近这些参考答案。推理时只需网络和 RGB 图像。物理先验分支不在网络 `forward()` 内。评分在 0～1 之间，数值高表示更符合当前规则定义的雾特征。
+
+## 目录与职责
+
+```text
+configs/                    正式训练配置、集成原型配置
+src/data/                   图像读取、固定划分、裁剪与翻转
+src/models/haze_density/    先验、引导滤波、雾密度网络
+src/models/backbone/        SimpleBackbone 集成原型
+src/models/density_guidance/ 密度引导注意力
+src/models/crossmodal/      密度拼接、特征引导原型
+scripts/data/               数据核验、划分、可视化
+scripts/train/              8 图过拟合、正式训练
+scripts/evaluate/           测试评估、预测分布审计
+scripts/test/               模块与回归检查
+scripts/utils/              静态检查、环境检查
+experiments/                本机/Colab 生成的实验，默认不提交权重
+docs/                       指南、状态与历史阶段记录
+tools/                      历史迁移辅助工具，日常训练无需运行
+```
 
 ## 快速开始
 
-### 在 Google Colab 中运行
+只看代码和检查语法无需安装 PyTorch。运行网络需要安装 [运行依赖](requirements.txt)，可在 Colab 中进行。
 
-详见 [docs/colab.md](docs/colab.md)
-
-简要步骤：
-
-```python
-# 1. 挂载 Google Drive
-from google.colab import drive
-drive.mount('/content/drive')
-
-# 2. 克隆项目
-!git clone https://github.com/your-username/CrossModal-Defog-OVOD.git
-
-# 3. 安装依赖
-%cd /content/CrossModal-Defog-OVOD
-!pip install -r requirements.txt
-
-# 4. 运行训练
-!python scripts/train_haze_density.py
+```bash
+python -m pip install -r requirements.txt
+python scripts/utils/static_check.py
+python -m unittest discover -s scripts/test -p test_review_regressions.py -v
 ```
 
----
+先按 [操作指南](docs/guides/haze_density_user_guide.md) 将 RSHaze+ 放入 `datasets/RSHaze+/`，在项目根目录执行：
 
-## 技术路线
-
-### 雾密度感知网络架构
-
-```
-输入：含雾 RGB 图像 I (B, 3, H, W)
-    ↓
-[物理先验分支]
-    ↓ Dark Channel Prior (DCP)
-    ↓ Local Contrast Prior (LCP)
-    ↓ Color Shift Prior (CSP)
-    ↓ 加权融合：S = 0.5×DCP + 0.3×LCP + 0.2×CSP
-    ↓ 非线性变换：S_final = S^1.5
-    ↓ Guided Filtering
-    ↓ S_final (监督信号)
-
-[深度网络分支]
-    ↓ Encoder (下采样)
-    ↓ 3 路并行多尺度 SDRB (dilation=2,3,4)
-       → 每路：SDRB → RB → RB → ECA
-    ↓ Concat + 3×3 Conv + ECA
-    ↓ Decoder (上采样)
-    ↓ 输出：I_h (B, 1, H, W)
-
-Loss: MSE(I_h, S_final)
+```bash
+python scripts/data/generate_rshazeplus_split.py
+python scripts/train/train_haze_density.py --config configs/haze_density.yaml --epochs 5
 ```
 
-### 核心创新点
+`--epochs 5` 是短流程检查。正式训练用新的输出目录或从此次 `latest.pth` 恢复；同一输出目录不会被新训练覆盖。配置现在会真正被训练脚本读取，命令行显式参数优先。
 
-1. **物理先验耦合残差注意力**：暗通道/对比度/颜色偏移先验生成雾密度图
-2. **多尺度残差分支**：dilation=2/3/4 捕获不同尺度雾密度特征
-3. **ECA 通道注意力**：增强关键通道响应
+## 版本与实验结论
 
----
+2026-10-20 修正了先验归一化和首次划分时的训练/验证重叠问题。新 checkpoint 记录 `prior_version=spatial_minmax_v2`。旧 checkpoint 保留为历史产物；旧指标不能当作修正后流程的成绩，也不能据此认定已达到真实雾密度估计或检测提升。
 
-## 配置说明
+本次本地验证不含完整训练：本机缺少 PyTorch 和 RSHaze+ 数据。7 项数据划分回归通过，4 项 PyTorch 检查明确跳过。下一步应在 Colab 完成这些检查和一次独立实验。
 
-主要配置文件：`configs/haze_density.yaml`
-
-### 申报书规定参数（不可修改）
-
-```yaml
-physical_prior:
-  weight_dark: 0.5          # Dark Channel 权重
-  weight_contrast: 0.3      # Local Contrast 权重
-  weight_color: 0.2         # Color Shift 权重
-  exponent_mu: 1.5          # 非线性指数
-```
-
-### 工程实现参数（可调整）
-
-```yaml
-data:
-  image_size: 256           # 输入尺寸
-  batch_size: 4             # 批量大小
-
-model:
-  base_channels: 32         # 基础通道数
-
-train:
-  lr: 1e-4                  # 学习率
-  epochs: 100               # 训练轮数
-```
-
----
-
-## 依赖
-
-见 [requirements.txt](requirements.txt)
-
-主要依赖：
-- PyTorch >= 2.0.0
-- torchvision >= 0.15.0
-- opencv-python >= 4.8.0
-- numpy >= 1.24.0
-- pyyaml >= 6.0
-
----
-
-## 项目状态
-
-当前进度详见 [docs/project_status.md](docs/project_status.md)
-
----
-
-## 团队
-
-**北京师范大学人工智能学院**  
-跨模态语义恢复引导的含雾低质遥感影像开放词汇目标检测项目组
-
----
-
-## 许可
-
-本项目为大学生创新训练项目，仅供学术研究使用。
+项目供学术研究使用；代码、数据和未来引用模型的许可需分别核对。

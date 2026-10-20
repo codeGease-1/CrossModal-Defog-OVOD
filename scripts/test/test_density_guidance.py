@@ -14,7 +14,7 @@ Stage 6-3A: Density Guidance Module Test
 7. Parameter Statistics
 
 使用方法:
-    python scripts/test_density_guidance.py
+    python scripts/test/test_density_guidance.py
 """
 
 import sys

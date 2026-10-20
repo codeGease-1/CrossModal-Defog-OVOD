@@ -82,7 +82,7 @@ def guided_filter(
     参考公式:
         q = a_k * I + b_k
         其中:
-            a_k = (cov_Ip(I, p) / (var_Ik(I) + eps^2))
+            a_k = (cov_Ip(I, p) / (var_Ik(I) + eps))
             b_k = E(p) - a_k * E(I)
     """
     # 检查输入形状

@@ -11,7 +11,7 @@ Stage 5D-1: Prediction Distribution Audit
 5. 给出明确结论和修复方案
 
 使用方法:
-    python scripts/audit_prediction_distribution.py \
+    python scripts/evaluate/audit_prediction_distribution.py \
         --checkpoint experiments/haze_density/checkpoints/formal/best.pth
 """
 
@@ -33,7 +33,9 @@ import torchvision.utils as vutils
 
 from src.data import build_rshazeplus_dataloader
 from src.models.haze_density import HazeDensityNet
-from src.models.haze_density.physical_prior import PhysicalPriorModule
+from src.models.haze_density.physical_prior import (
+    PhysicalPriorModule, PRIOR_VERSION, warn_on_prior_mismatch,
+)
 
 
 def print_separator(title: str):
@@ -90,11 +92,12 @@ def audit_prediction_distribution(args):
     checkpoint = torch.load(args.checkpoint, map_location='cpu')
 
     config = checkpoint.get('config', {})
+    warn_on_prior_mismatch(config)
     checkpoint_epoch = checkpoint.get('epoch', 'unknown')
     checkpoint_val_loss = checkpoint.get('val_loss', 'unknown')
 
     print(f"  Epoch: {checkpoint_epoch}")
-    print(f"  Val Loss: {checkpoint_val_loss:.6f}")
+    print(f"  Val Loss: {checkpoint_val_loss}")
 
     # 创建模型
     print("\nCreating model...")
@@ -110,7 +113,11 @@ def audit_prediction_distribution(args):
 
     # 创建 Physical Prior
     print("\nCreating Physical Prior...")
-    physical_prior = PhysicalPriorModule().to(device)
+    physical_prior = PhysicalPriorModule(
+        window_size=config.get('window_size', 15),
+        guided_radius=config.get('guided_radius', 15),
+        guided_eps=config.get('guided_eps', 0.01),
+    ).to(device)
     physical_prior.eval()
 
     # 加载 val 数据集
@@ -378,8 +385,10 @@ def audit_prediction_distribution(args):
         f.write("Stage 5D-1: Prediction Distribution Audit Report\n")
         f.write("=" * 60 + "\n\n")
         f.write(f"Checkpoint: {args.checkpoint}\n")
+        f.write(f"Evaluation prior version: {PRIOR_VERSION}\n")
+        f.write(f"Checkpoint prior version: {config.get('prior_version', 'unrecorded')}\n")
         f.write(f"Epoch: {checkpoint_epoch}\n")
-        f.write(f"Val Loss: {checkpoint_val_loss:.6f}\n\n")
+        f.write(f"Val Loss: {checkpoint_val_loss}\n\n")
 
         f.write("Prediction Statistics:\n")
         for k, v in pred_stats.items():

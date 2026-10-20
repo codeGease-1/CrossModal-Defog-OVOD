@@ -1,575 +1,167 @@
-# 雾密度感知网络用户指南
+# 雾密度模块操作指南
 
-**项目**: CrossModal-Defog-OVOD  
-**模块**: HazeDensityNet (雾密度感知网络)  
-**版本**: v1.0  
-**最后更新**: 2026-09-03
+更新于 2026-10-20。所有终端命令从项目根目录执行；在 Colab 中可用 `!python ...`，环境准备见 [Colab 指南](colab.md)。先阅读 [入门原理](haze_density_explained.md)，理解伪标签的含义。
 
----
+## 1. 环境与检查
 
-## 目录
-
-1. [快速开始](#1-快速开始)
-2. [项目结构](#2-项目结构)
-3. [环境配置](#3-环境配置)
-4. [数据准备](#4-数据准备)
-5. [模型训练](#5-模型训练)
-6. [模型评估](#6-模型评估)
-7. [可视化生成](#7-可视化生成)
-8. [集成使用](#8-集成使用)
-9. [常见问题](#9-常见问题)
-
----
-
-## 1. 快速开始
-
-### 1.1 最小可运行示例
+本地阅读和纯 Python 划分检查不需要 PyTorch；模型运行需要：
 
 ```bash
-# 训练 (5 epochs smoke test)
-python scripts/train_haze_density.py --epochs 5
-
-# 评估测试集
-python scripts/evaluate_haze_density.py \
-    --checkpoint experiments/haze_density/checkpoints/formal/best.pth
-
-# 运行单元测试
-python scripts/test_density_guidance.py
+python -m pip install -r requirements.txt
+python scripts/utils/static_check.py
+python -m unittest discover -s scripts/test -p test_review_regressions.py -v
+python scripts/test/test_physical_prior.py
+python scripts/utils/smoke_test.py
 ```
 
-### 1.2 核心文件路径
+回归检查会明确跳过缺少 PyTorch 的项；跳过不是通过。不要直接对全部历史 `test_*.py` 使用 pytest，它们大多是需要真实数据/权重、手动运行的验证脚本。
 
-| 文件 | 路径 |
-|------|------|
-| 训练脚本 | `scripts/train_haze_density.py` |
-| 评估脚本 | `scripts/evaluate_haze_density.py` |
-| 模型定义 | `src/models/haze_density/haze_density_net.py` |
-| 数据集 | `src/data/datasets.py` |
-| 默认 checkpoint | `experiments/haze_density/checkpoints/formal/best.pth` |
+`smoke_test.py` 现在执行真实的小尺寸前向、反向传播和优化步骤；它使用较小的基础通道数，不能替代正式配置训练。需要完整模型的更多历史检查时，可另行运行 `scripts/test/test_model.py`，注意其中包含较大的 CPU 张量。
 
----
+## 2. 数据准备
 
-## 2. 项目结构
+数据来源：[RSHaze+ 官方发布页](https://zenodo.org/records/13837162)。解压后应包含：
 
-```
-CrossModal-Defog-OVOD/
-├── configs/                          # 配置文件
-│   └── haze_density.yaml             # 雾密度网络配置
-├── datasets/                         # 数据集目录
-│   └── RSHaze+/                      # RSHaze+ 数据集
-│       ├── RSHaze_G/
-│       ├── RSHaze_L/
-│       └── RSHaze_S/
-├── docs/                             # 文档
-│   ├── haze_density_user_guide.md    # 本文档
-│   ├── stage_5d2_decoder_verification.md
-│   └── stage_5e_test_evaluation.md
-├── experiments/                       # 实验输出
-│   └── haze_density/
-│       ├── checkpoints/formal/       # 模型检查点
-│       │   ├── best.pth              # 最佳模型
-│       │   └── latest.pth            # 最新模型
-│       ├── results/                  # 实验结果
-│       │   ├── formal/              # 训练结果
-│       │   └── test_evaluation/     # 测试评估
-│       └── rshazeplus_split.json    # 数据划分
-├── scripts/                          # 脚本
-│   ├── train_haze_density.py        # 训练脚本
-│   ├── evaluate_haze_density.py     # 评估脚本
-│   ├── audit_prediction_distribution.py  # 分布审计
-│   ├── test_density_guidance.py     # 单元测试
-│   └── test_stage_6_3b.py           # 集成测试
-├── src/                              # 源代码
-│   ├── data/
-│   │   ├── __init__.py
-│   │   ├── datasets.py              # 数据集定义
-│   │   └── transforms.py            # 数据变换
-│   └── models/
-│       ├── haze_density/            # 雾密度网络
-│       │   ├── __init__.py
-│       │   ├── haze_density_net.py  # 主模型
-│       │   ├── encoder.py           # 编码器
-│       │   ├── decoder.py           # 解码器
-│       │   ├── multiscale.py        # 多尺度模块
-│       │   ├── fusion.py            # 融合模块
-│       │   ├── physical_prior.py    # 物理先验
-│       │   └── guided_filter.py     # 导向滤波
-│       ├── backbone/                # Backbone
-│       ├── crossmodal/              # 跨模态模块
-│       └── density_guidance/        # 密度引导
-├── requirements.txt                  # 依赖
-└── README.md                         # 项目说明
+```text
+datasets/RSHaze+/
+  RSHaze_G/train/{synhazypng,cleanpng}/
+  RSHaze_G/test/{synhazypng,cleanpng}/
+  RSHaze_L/train/{synhazypng,cleanpng}/
+  RSHaze_L/test/{synhazypng,cleanpng}/
+  RSHaze_S/train/{synhazypng,cleanpng}/
+  RSHaze_S/test/{synhazypng,cleanpng}/
 ```
 
----
+含雾与清晰图按同名文件配对。当前雾密度损失只使用 `synhazypng`；清晰图、透射率、大气光、NIR 不参与该损失。
 
-## 3. 环境配置
-
-### 3.1 本地开发环境
+使用默认目录时生成并核验固定划分：
 
 ```bash
-# 创建虚拟环境
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# 或
-venv\Scripts\activate     # Windows
-
-# 安装依赖
-pip install -r requirements.txt
+python scripts/data/generate_rshazeplus_split.py
+python scripts/data/verify_rshazeplus_split.py
+python scripts/test/test_rshazeplus_dataset.py
 ```
 
-### 3.2 Google Colab 环境
+这些历史核验脚本按默认路径和历史规模编写。若数据存放位置不同，先修改配置；需要自定义位置生成 manifest 时可以在 Python 中调用：
 
 ```python
-# 1. 挂载 Google Drive
-from google.colab import drive
-drive.mount('/content/drive')
+from scripts.data.generate_rshazeplus_split import generate_split
 
-# 2. 克隆项目
-!git clone https://github.com/your-username/CrossModal-Defog-OVOD.git
-%cd /content/CrossModal-Defog-OVOD
-
-# 3. 安装依赖
-!pip install -r requirements.txt
-
-# 4. 验证安装
-!python -c "import torch; print(f'PyTorch {torch.__version__}, CUDA: {torch.cuda.is_available()}')"
+generate_split(
+    root='/your/path/RSHaze+', val_ratio=0.1, seed=42,
+    output_file='experiments/haze_density/rshazeplus_split.json',
+)
 ```
 
-### 3.3 依赖列表
+保存 manifest 后不要在同一实验中重新随机划分。缺少 manifest 时，Dataset 会用固定种子生成互补 train/val，并在指定路径保存；已有 manifest 与数据不符或 train/val 重叠时应排查原因，不能用删文件来掩盖问题。
 
-```txt
-torch>=2.0.0
-torchvision>=0.15.0
-opencv-python>=4.8.0
-numpy>=1.24.0
-pyyaml>=6.0
-Pillow>=9.0.0
-tqdm>=4.65.0
-```
+历史规模是 6174/686/930，以实际扫描为准。训练随机裁剪，原图需不小于 `image_size`；验证/测试按双线性插值缩放。训练 DataLoader 使用 `drop_last=True`，会丢弃当轮最后不足一批的样本。
 
----
+## 3. 运行 5 轮短训练
 
-## 4. 数据准备
-
-### 4.1 RSHaze+ 数据集结构
-
-```
-datasets/RSHaze+/
-├── RSHaze_G/
-│   ├── train/
-│   │   ├── cleanpng/      # 1000 张清晰图像
-│   │   └── synhazypng/    # 1000 张含雾图像
-│   └── test/
-│       ├── cleanpng/      # 330 张
-│       └── synhazypng/    # 330 张
-├── RSHaze_L/
-│   ├── train/
-│   │   ├── cleanpng/      # ~2700 张
-│   │   └── synhazypng/    # ~2700 张
-│   └── test/
-│       ├── cleanpng/      # 270 张
-│       └── synhazypng/    # 270 张
-└── RSHaze_S/
-    ├── train/
-    │   ├── cleanpng/      # 1000 张
-    │   └── synhazypng/    # 1000 张
-    └── test/
-        ├── cleanpng/      # 330 张
-        └── synhazypng/    # 330 张
-```
-
-### 4.2 数据划分
-
-| Split | RSHaze_G | RSHaze_L | RSHaze_S | Total |
-|-------|----------|----------|----------|-------|
-| Train | 900 | 4374 | 900 | 6174 |
-| Val | 100 | 486 | 100 | 686 |
-| Test | 330 | 270 | 330 | 930 |
-
-### 4.3 配置数据集路径
-
-在 `configs/haze_density.yaml` 中修改:
-
-```yaml
-data:
-  dataset_root: 'datasets/RSHaze+'
-  split_file: 'experiments/haze_density/rshazeplus_split.json'
-```
-
----
-
-## 5. 模型训练
-
-### 5.1 基本训练
+先看 `configs/haze_density.yaml`。这是本次整理后实际可读取的平铺配置；旧版嵌套 YAML 不再适用。
 
 ```bash
-# 5 epochs smoke test
-python scripts/train_haze_density.py --epochs 5
-
-# 完整训练 50 epochs
-python scripts/train_haze_density.py --epochs 50
+python scripts/train/train_haze_density.py --config configs/haze_density.yaml --epochs 5
 ```
 
-### 5.2 自定义参数训练
+这份配置默认输出到：
+
+```text
+experiments/haze_density/checkpoints/spatial_v2/best.pth
+experiments/haze_density/checkpoints/spatial_v2/latest.pth
+experiments/haze_density/results/spatial_v2/train_log.csv
+experiments/haze_density/results/spatial_v2/training_summary.txt
+experiments/haze_density/results/spatial_v2/model_info.txt
+```
+
+`best.pth` 按验证集 MSE 最低选择；`latest.pth` 用于断点恢复。日志每个 epoch 结束后追加保存。训练脚本目前使用固定学习率 Adam 与 MSE，没有实现学习率调度器或 TensorBoard 写入。
+
+通过 `--config` 才读取 YAML；不传时使用脚本 `DEFAULT_CONFIG`，其输出路径仍为 `formal/`。命令行显式选项覆盖 YAML，例如：
 
 ```bash
-python scripts/train_haze_density.py \
-    --epochs 100 \
-    --batch_size 8 \
-    --lr 5e-4 \
-    --image_size 256 \
-    --dataset_root datasets/RSHaze+
+python scripts/train/train_haze_density.py --config configs/haze_density.yaml --epochs 5 --batch_size 2 --num_workers 0
 ```
 
-### 5.3 断点续训
+## 4. 正式训练与恢复
+
+若短训练正常，可以继续到总共 50 轮：
 
 ```bash
-# 从 latest checkpoint 继续
-python scripts/train_haze_density.py \
-    --resume experiments/haze_density/checkpoints/formal/latest.pth
+python scripts/train/train_haze_density.py --config configs/haze_density.yaml --epochs 50 --resume experiments/haze_density/checkpoints/spatial_v2/latest.pth
 ```
 
-### 5.4 训练输出
+`--epochs 50` 表示目标总轮数，必须大于已保存轮数。恢复时会检查关键数据和先验配置，恢复优化器、最佳验证值和 AMP scaler；它不是逐位复现随机过程的恢复，随机数/DataLoader 状态尚未保存。
 
-训练完成后生成以下文件:
-
-```
-experiments/haze_density/checkpoints/formal/
-├── best.pth              # 最佳验证 loss 的模型
-└── latest.pth            # 最后一个 epoch 的模型
-
-experiments/haze_density/results/formal/
-├── train_log.csv         # 训练日志 (每 epoch 指标)
-├── training_summary.txt  # 训练总结
-└── model_info.txt        # 模型信息
-```
-
-### 5.5 训练日志示例
-
-```
-Epoch  1/50: train_loss=0.023456, val_loss=0.018234, best=0.018234, time=12.3s
-Epoch  2/50: train_loss=0.019876, val_loss=0.015432, best=0.015432, time=12.1s
-...
-```
-
----
-
-## 6. 模型评估
-
-### 6.1 测试集评估
+若要重新开始一次独立实验，使用新的两个输出目录：
 
 ```bash
-python scripts/evaluate_haze_density.py \
-    --checkpoint experiments/haze_density/checkpoints/formal/best.pth \
-    --image_size 256 \
-    --batch_size 4 \
-    --num_samples_per_subset 16
+python scripts/train/train_haze_density.py --config configs/haze_density.yaml --epochs 50 --checkpoint_dir experiments/haze_density/checkpoints/run02 --result_dir experiments/haze_density/results/run02
 ```
 
-### 6.2 评估指标
+已有 checkpoint 或已有新训练日志的目录不会被新训练覆盖。请保留每次使用的代码版本、配置、manifest 和随机种子。
 
-| 指标 | 说明 |
-|------|------|
-| MSE | 均方误差 |
-| MAE | 平均绝对误差 |
-| RMSE | 均方根误差 |
-| Pearson | 皮尔逊相关系数 |
+## 5. 看哪些现象？
 
-### 6.3 评估输出
+- `train_loss` 和 `val_loss` 是相对伪标签的 MSE；关注趋势和两者差距。
+- 预测/标签应有限且在 0～1 之间；不要求每批都恰好出现 0 和 1。
+- 看含雾原图、先验图、预测图、误差图，尤其检查白屋顶、平坦地面、水体与图像边缘。
+- 灰度显示应固定范围 0～1。逐图自动拉伸对比度会让很小的差异显得很明显。
+- 旧的 `ReLU → Sigmoid` 输出下限 0.5 问题已在现有 Decoder 中修过，不要重复运行历史修复脚本。
 
-```
-experiments/haze_density/results/test_evaluation/
-├── RSHaze_G_*.png        # RSHaze_G 可视化 (16 张)
-├── RSHaze_L_*.png        # RSHaze_L 可视化 (16 张)
-├── RSHaze_S_*.png        # RSHaze_S 可视化 (16 张)
-└── test_metrics.txt      # 评估指标
-```
-
-### 6.4 查看评估结果
+## 6. 方案确定后评估测试集
 
 ```bash
-cat experiments/haze_density/results/test_evaluation/test_metrics.txt
+python scripts/evaluate/evaluate_haze_density.py --checkpoint experiments/haze_density/checkpoints/spatial_v2/best.pth --dataset_root datasets/RSHaze+ --output_dir experiments/haze_density/results/spatial_v2_test
 ```
 
-输出示例:
-```
-Stage 5E: HazeDensityNet Test Evaluation Report
-============================================================
+输出包含 `test_metrics.txt` 和各子集拼图，顺序是含雾图、先验、预测、误差。误差图会按每幅图的最大误差放大显示；亮度不能用于跨图比较绝对误差，应看数值指标。
 
-Overall Metrics:
-  MSE:     0.008234
-  MAE:     0.071234
-  RMSE:    0.090742
-  Pearson: 0.876543
+每次评估用新的空目录。默认每子集最多 16 张，是遍历时最先遇到的样本，不是随机代表性抽样。评估目前会在 CPU 内存中汇总所有预测/标签，内存不足可先使用默认 256 尺寸；流式评估尚待实现。
 
-Metrics by Subset:
+报告中的 MAE、RMSE、Pearson 只衡量对当前伪标签的拟合。测试集不要反复用于挑选超参数。先验参数来自 checkpoint 配置；报告记录评分版本与分辨率。
 
-RSHaze_G:
-  MAE:     0.068234
-  RMSE:    0.088123
-  Pearson: 0.881234
-
-RSHaze_L:
-  MAE:     0.072345
-  RMSE:    0.091234
-  Pearson: 0.875678
-
-RSHaze_S:
-  MAE:     0.073456
-  RMSE:    0.092345
-  Pearson: 0.872345
-```
-
----
-
-## 7. 可视化生成
-
-### 7.1 预测分布审计
+可选：验证集预测分布审计，从 checkpoint 配置读取数据路径和先验参数：
 
 ```bash
-python scripts/audit_prediction_distribution.py \
-    --checkpoint experiments/haze_density/checkpoints/formal/best.pth
+python scripts/evaluate/audit_prediction_distribution.py --checkpoint experiments/haze_density/checkpoints/spatial_v2/best.pth
 ```
 
-输出:
-```
-experiments/haze_density/results/formal_prediction_audit/
-├── audit_report.txt      # 审计报告
-└── distribution_plot.png # 分布图
-```
+该历史审计脚本仍写入固定审计目录，运行前自行备份旧审计产物；不能把多次输出当作独立保留的实验。
 
-### 7.2 测试集可视化
+## 7. 单张图推理示例
 
-评估脚本自动生成可视化，每个样本包含 4 列:
-
-| 列 | 内容 |
-|---|------|
-| 1 | Hazy Image (输入含雾图像) |
-| 2 | Ground Truth (Physical Prior S_final) |
-| 3 | Prediction (模型预测雾密度) |
-| 4 | Error Map (绝对误差，归一化) |
-
-### 7.3 自定义可视化
+在已安装依赖的 Python 或 Colab 中执行；将 `hazy.png` 改为自己的图片路径：
 
 ```python
 import torch
 from PIL import Image
-import numpy as np
+from torchvision.transforms import functional as TF
 from src.models.haze_density import HazeDensityNet
-from src.models.haze_density.physical_prior import PhysicalPriorModule
 
-# 加载模型
+checkpoint_path = 'experiments/haze_density/checkpoints/spatial_v2/best.pth'
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = HazeDensityNet(base_channels=32, use_sigmoid=True)
-model.load_state_dict(torch.load('experiments/haze_density/checkpoints/formal/best.pth')['model_state_dict'])
-model.to(device)
-model.eval()
-
-# 加载物理先验
-physical_prior = PhysicalPriorModule().to(device)
-physical_prior.eval()
-
-# 处理单张图像
-image = Image.open('path/to/hazy_image.png').convert('RGB')
-image_tensor = transforms(image).unsqueeze(0).to(device)
-
-# 预测
-with torch.no_grad():
-    prediction = model(image_tensor)
-    target = physical_prior(image_tensor)
-
-# 可视化
-def tensor_to_image(tensor):
-    return tensor.squeeze().permute(1, 2, 0).cpu().numpy()
-
-pred_img = tensor_to_image(prediction)
-target_img = tensor_to_image(target)
-error_img = np.abs(target_img - pred_img)
-```
-
----
-
-## 8. 集成使用
-
-### 8.1 作为独立模块
-
-```python
-from src.models.haze_density import HazeDensityNet
-
-# 创建模型
-model = HazeDensityNet(base_channels=32, use_sigmoid=True)
-
-# 加载 checkpoint
-checkpoint = torch.load('experiments/haze_density/checkpoints/formal/best.pth')
+checkpoint = torch.load(checkpoint_path, map_location='cpu')
+config = checkpoint.get('config', {})
+model = HazeDensityNet(
+    base_channels=config.get('base_channels', 32),
+    use_sigmoid=config.get('use_sigmoid', True),
+).to(device)
 model.load_state_dict(checkpoint['model_state_dict'])
 model.eval()
 
-# 推理
+size = config.get('image_size', 256)
+image = Image.open('hazy.png').convert('RGB').resize((size, size), Image.Resampling.BILINEAR)
+x = TF.to_tensor(image).unsqueeze(0).to(device)
 with torch.no_grad():
-    density_map = model(hazy_image)  # [B, 1, H, W]
+    density = model(x)[0, 0].cpu()
+Image.fromarray((density.numpy() * 255).clip(0, 255).astype('uint8')).save('density.png')
 ```
 
-### 8.2 与 Backbone 集成 (Stage 6-3B)
+输入保持 0～1，不使用 ImageNet 均值方差标准化。此示例统一缩放，不能声称保持了任意原图分辨率的细节。单张评分均值只能作探索性统计，尚不能跨场景直接分为轻雾、中雾、重雾。
 
-```python
-from src.models.crossmodal import DensityGuidedBackbone
+## 8. 旧模型怎么办？
 
-# 创建集成模型
-model = DensityGuidedBackbone(
-    density_checkpoint='experiments/haze_density/checkpoints/formal/best.pth',
-    freeze_density=True,
-)
+先验归一化已修正，新 checkpoint 标记为 `spatial_minmax_v2`。没有这一标记的旧模型不会被当作同一实验继续训练；可以保留作历史对照。评估旧权重会提示版本差异，得到的是相对新标签的探索性结果，不能复现旧表格。
 
-# 前向传播
-guided_features, density = model(rgb_image)
-# guided_features: [G0, G1, G2, G3] (4 尺度)
-# density: [B, 1, H, W]
-```
-
-### 8.3 冻结密度网络
-
-```python
-# 设置冻结
-model.set_freeze_density(True)
-
-# 验证
-for p in model.density_net.parameters():
-    assert p.requires_grad == False
-```
-
----
-
-## 9. 常见问题
-
-### 9.1 Checkpoint 加载失败
-
-**问题**: `Missing keys in checkpoint`
-
-**原因**: 代码版本与 checkpoint 不匹配
-
-**解决**:
-```bash
-# 检查 checkpoint 信息
-python -c "import torch; ckpt = torch.load('path/to/checkpoint.pth'); print(ckpt.keys())"
-
-# 重新训练或使用匹配版本的代码
-```
-
-### 9.2 Prediction 范围异常
-
-**问题**: Prediction 范围在 [0.5, 1) 而非 [0, 1]
-
-**原因**: Decoder 中 `relu3 = nn.ReLU()` 导致 ReLU → Sigmoid 范围限制
-
-**解决**: 已修复，确认 `decoder.py` 第 95 行为:
-```python
-self.relu3 = nn.Identity()  # 不是 nn.ReLU
-```
-
-### 9.3 CUDA Out of Memory
-
-**问题**: GPU 显存不足
-
-**解决**:
-```bash
-# 减小 batch size
-python scripts/train_haze_density.py --batch_size 2
-
-# 或使用 CPU (慢)
-python scripts/train_haze_density.py --no_amp
-```
-
-### 9.4 数据集路径错误
-
-**问题**: `FileNotFoundError: datasets/RSHaze+`
-
-**解决**:
-```bash
-# 检查数据集目录
-ls -la datasets/RSHaze+/
-
-# 或修改配置
-python scripts/train_haze_density.py --dataset_root /path/to/your/dataset
-```
-
-### 9.5 梯度消失/爆炸
-
-**问题**: Loss 为 NaN 或 Inf
-
-**解决**:
-```bash
-# 检查学习率
-python scripts/train_haze_density.py --lr 1e-4  # 降低学习率
-
-# 使用 AMP 混合精度
-python scripts/train_haze_density.py --amp
-```
-
----
-
-## 附录 A: 模型架构
-
-### A.1 HazeDensityNet 结构
-
-```
-输入：含雾 RGB 图像 [B, 3, H, W]
-    ↓
-Encoder (下采样 2x) → [B, 64, H/2, W/2]
-    ↓
-MultiScale (3 路并行，dilation=2/3/4)
-    ↓
-Fusion (Concat + Conv + ECA) → [B, 64, H/2, W/2]
-    ↓
-Decoder (上采样 2x) → [B, 1, H, W]
-    ↓
-Sigmoid → 雾密度图 [B, 1, H, W]
-```
-
-### A.2 Physical Prior 计算
-
-```
-Dark Channel Prior (DCP): 0.5 权重
-Local Contrast Prior (LCP): 0.3 权重
-Color Shift Prior (CSP): 0.2 权重
-    ↓
-加权融合：S = 0.5×DCP + 0.3×LCP + 0.2×CSP
-    ↓
-非线性变换：S_final = S^1.5
-    ↓
-Guided Filtering (平滑)
-    ↓
-监督信号 S_final [B, 1, H, W]
-```
-
----
-
-## 附录 B: 参数量统计
-
-| 组件 | 参数量 | 占比 |
-|------|--------|------|
-| Encoder | ~100K | 20% |
-| MultiScale | ~150K | 30% |
-| Fusion | ~50K | 10% |
-| Decoder | ~200K | 40% |
-| **总计** | **~500K** | **100%** |
-
----
-
-## 附录 C: 训练超参数
-
-| 参数 | 默认值 | 说明 |
-|------|--------|------|
-| base_channels | 32 | 基础通道数 |
-| batch_size | 4 | 批量大小 |
-| image_size | 256 | 输入尺寸 |
-| lr | 1e-4 | 学习率 |
-| epochs | 50 | 训练轮数 |
-| weight_decay | 0 | L2 正则化 |
-| amp | True | 混合精度训练 |
-
----
-
-**文档维护**: 遥感智研助手  
-**更新日期**: 2026-09-03  
-**版本**: v1.0
+本机现有权重实际在 `experiments/haze_density/checkpoints/best.pth`，来源未核实。本次没有重命名、覆盖或训练它。两个已有 notebook 也未改动，见 [Notebook 使用说明](../notebook_update_guide.md)。

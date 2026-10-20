@@ -1,5 +1,7 @@
 # Stage 5B-2 Report: Dataset + Physical Prior Integration
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5B-2: RSHaze+ Dataset + Physical Prior Integration  
 **创建日期**: 2026-08-31  
@@ -29,8 +31,8 @@ S_final [B,1,H,W]
 
 | 文件 | 说明 | 状态 |
 |------|------|------|
-| `scripts/test_rshazeplus_physical_prior.py` | Integration 测试脚本 | ✅ 完成 |
-| `scripts/visualize_physical_prior_on_rshazeplus.py` | Physical Prior 可视化 | ✅ 完成 |
+| `scripts/test/test_rshazeplus_physical_prior.py` | Integration 测试脚本 | ✅ 完成 |
+| `scripts/data/visualize_physical_prior_on_rshazeplus.py` | Physical Prior 可视化 | ✅ 完成 |
 
 ---
 
@@ -90,7 +92,7 @@ print(f"CUDA device: {torch.cuda.get_device_name(0) if torch.cuda.is_available()
 ### 4.2 运行 Integration Test
 
 ```bash
-python scripts/test_rshazeplus_physical_prior.py
+python scripts/test/test_rshazeplus_physical_prior.py
 ```
 
 **测试内容**:
@@ -134,7 +136,7 @@ Timing Statistics (ms):
 ### 4.3 生成可视化
 
 ```bash
-python scripts/visualize_physical_prior_on_rshazeplus.py
+python scripts/data/visualize_physical_prior_on_rshazeplus.py
 ```
 
 **输出文件**:

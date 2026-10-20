@@ -15,7 +15,7 @@
 7. Performance Test - 参数量、显存、时间
 
 使用方法:
-    !python scripts/test_model.py
+    !python scripts/test/test_model.py
 """
 
 import sys

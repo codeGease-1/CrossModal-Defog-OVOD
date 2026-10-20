@@ -6,7 +6,7 @@
 检查 train/val/test split 之间是否存在重复的原始图像。
 
 使用方法:
-    !python scripts/check_data_leakage.py
+    !python scripts/data/check_data_leakage.py
 """
 
 import sys

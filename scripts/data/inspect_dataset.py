@@ -16,9 +16,9 @@
 8. 输出数据集统计信息
 
 使用方法:
-    !python scripts/inspect_dataset.py --dataset RSHazePlus --data_dir /content/datasets/RSHazePlus
-    !python scripts/inspect_dataset.py --dataset RRSHID --data_dir /content/datasets/RRSHID
-    !python scripts/inspect_dataset.py --dataset RSHaze --data_dir /content/datasets/RSHaze
+    !python scripts/data/inspect_dataset.py --dataset RSHazePlus --data_dir /content/datasets/RSHazePlus
+    !python scripts/data/inspect_dataset.py --dataset RRSHID --data_dir /content/datasets/RRSHID
+    !python scripts/data/inspect_dataset.py --dataset RSHaze --data_dir /content/datasets/RSHaze
 """
 
 import sys

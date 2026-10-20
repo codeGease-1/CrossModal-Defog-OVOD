@@ -18,21 +18,21 @@
 
 使用方法:
     # 基本训练 (5 epochs smoke test)
-    python scripts/train_haze_density.py --epochs 5
+    python scripts/train/train_haze_density.py --epochs 5
 
     # 完整训练 (50 epochs)
-    python scripts/train_haze_density.py --epochs 50
+    python scripts/train/train_haze_density.py --epochs 50
 
     # 断点续训
-    python scripts/train_haze_density.py --resume experiments/haze_density/checkpoints/latest.pth
+    python scripts/train/train_haze_density.py --resume experiments/haze_density/checkpoints/latest.pth
 
     # 自定义参数
-    python scripts/train_haze_density.py --batch_size 8 --lr 5e-4
+    python scripts/train/train_haze_density.py --batch_size 8 --lr 5e-4
 """
 
 import sys
-import os
 from pathlib import Path
+import math
 import time
 import random
 import csv
@@ -45,12 +45,11 @@ if str(project_root) not in sys.path:
 
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
 from torch.cuda.amp import autocast, GradScaler
 
-from src.data import HazeDensityDataset, build_rshazeplus_dataloader
+from src.data import build_rshazeplus_dataloader
 from src.models.haze_density import HazeDensityNet
-from src.models.haze_density.physical_prior import PhysicalPriorModule
+from src.models.haze_density.physical_prior import PhysicalPriorModule, PRIOR_VERSION
 
 
 # ============================================================================
@@ -107,6 +106,7 @@ def print_separator(title: str):
 def parse_args():
     """解析命令行参数"""
     parser = argparse.ArgumentParser(description="HazeDensityNet Formal Training")
+    parser.add_argument('--config', type=str, help='平铺 YAML 配置；显式命令行参数优先')
 
     # 训练参数
     parser.add_argument('--epochs', type=int, default=DEFAULT_CONFIG['epochs'],
@@ -121,6 +121,8 @@ def parse_args():
     # 路径参数
     parser.add_argument('--dataset_root', type=str, default=DEFAULT_CONFIG['dataset_root'],
                         help='数据集根目录')
+    parser.add_argument('--split_file', type=str, default=DEFAULT_CONFIG['split_file'],
+                        help='固定 train/val 划分文件')
     parser.add_argument('--resume', type=str, default=None,
                         help='从 checkpoint 恢复训练')
     parser.add_argument('--checkpoint_dir', type=str, default=DEFAULT_CONFIG['checkpoint_dir'],
@@ -134,10 +136,40 @@ def parse_args():
     parser.add_argument('--no_amp', action='store_true',
                         help='禁用 AMP 混合精度训练')
 
+    # Load YAML as parser defaults, so explicit CLI options always take priority.
+    preliminary, _ = parser.parse_known_args()
+    if preliminary.config:
+        import yaml
+        with open(preliminary.config, encoding='utf-8') as handle:
+            overrides = yaml.safe_load(handle)
+        if not isinstance(overrides, dict):
+            parser.error('--config must contain a flat YAML mapping')
+        unknown = set(overrides) - set(DEFAULT_CONFIG)
+        if unknown:
+            parser.error(f'Unknown config keys: {sorted(unknown)}')
+        parser.set_defaults(**overrides)
     return parser.parse_args()
 
 
-def load_checkpoint(model, optimizer, checkpoint_path):
+def build_config(args):
+    """Merge validated file defaults and explicit CLI overrides."""
+    config = DEFAULT_CONFIG.copy()
+    config.update({key: getattr(args, key) for key in config if hasattr(args, key)})
+    config['amp'] = config['amp'] and not args.no_amp
+    config['resume'] = args.resume
+    config['prior_version'] = PRIOR_VERSION
+    for key in ('epochs', 'batch_size', 'image_size', 'base_channels', 'window_size'):
+        if not isinstance(config[key], int) or config[key] <= 0:
+            raise ValueError(f'{key} must be a positive integer')
+    config['lr'] = float(config['lr'])
+    if config['lr'] <= 0:
+        raise ValueError('lr must be positive')
+    if config['image_size'] % 2 or config['window_size'] % 2 == 0:
+        raise ValueError('image_size must be even and window_size must be odd')
+    return config
+
+
+def load_checkpoint(model, optimizer, checkpoint_path, scaler=None, config=None):
     """
     加载 checkpoint
 
@@ -147,12 +179,27 @@ def load_checkpoint(model, optimizer, checkpoint_path):
     """
     print(f"\nLoading checkpoint: {checkpoint_path}")
     checkpoint = torch.load(checkpoint_path, map_location='cpu')
+    saved_config = checkpoint.get('config', {})
+    if saved_config.get('prior_version') != PRIOR_VERSION:
+        raise ValueError(
+            'This checkpoint predates the spatial normalization fix or uses '
+            'different targets. Start a new experiment instead of resuming it.'
+        )
+    if config is not None:
+        for key in ('dataset_root', 'split_file', 'image_size', 'base_channels',
+                    'use_sigmoid', 'window_size', 'guided_radius', 'guided_eps'):
+            if saved_config.get(key) != config[key]:
+                raise ValueError(f'Resume config mismatch for {key}')
 
     model.load_state_dict(checkpoint['model_state_dict'])
     optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
 
     start_epoch = checkpoint['epoch'] + 1
-    best_val_loss = checkpoint.get('best_val_loss', float('inf'))
+    best_val_loss = checkpoint.get('best_val_loss')
+    if best_val_loss is None:
+        best_val_loss = checkpoint.get('val_loss', float('inf'))
+    if scaler is not None and checkpoint.get('scaler_state_dict'):
+        scaler.load_state_dict(checkpoint['scaler_state_dict'])
 
     print(f"  Epoch: {checkpoint['epoch']}")
     print(f"  Best val loss: {best_val_loss:.6f}")
@@ -161,14 +208,16 @@ def load_checkpoint(model, optimizer, checkpoint_path):
     return start_epoch, best_val_loss
 
 
-def save_checkpoint(model, optimizer, epoch, val_loss, is_best, config, checkpoint_dir):
+def save_checkpoint(model, optimizer, epoch, val_loss, is_best, config, checkpoint_dir,
+                    best_val_loss, scaler=None):
     """保存 checkpoint"""
     checkpoint = {
         'epoch': epoch,
         'model_state_dict': model.state_dict(),
         'optimizer_state_dict': optimizer.state_dict(),
         'val_loss': val_loss,
-        'best_val_loss': val_loss if is_best else None,
+        'best_val_loss': best_val_loss,
+        'scaler_state_dict': scaler.state_dict() if scaler is not None else None,
         'config': config,
     }
 
@@ -260,6 +309,10 @@ def train_formal(config):
     # 创建输出目录
     checkpoint_dir = Path(config['checkpoint_dir'])
     result_dir = Path(config['result_dir'])
+    if not config.get('resume') and any(
+        (checkpoint_dir / name).exists() for name in ('best.pth', 'latest.pth')
+    ):
+        raise FileExistsError('Checkpoint directory already contains weights; choose a new directory')
     checkpoint_dir.mkdir(parents=True, exist_ok=True)
     result_dir.mkdir(parents=True, exist_ok=True)
 
@@ -292,9 +345,6 @@ def train_formal(config):
     # 创建 DataLoader
     print("\nLoading datasets...")
 
-    # 创建 DataLoader
-    print("\nLoading datasets...")
-
     train_loader = build_rshazeplus_dataloader(
         root=config['dataset_root'],
         split='train',
@@ -317,6 +367,12 @@ def train_formal(config):
 
     print(f"Train loader: {len(train_loader)} batches ({len(train_loader.dataset)} samples)")
     print(f"Val loader: {len(val_loader)} batches ({len(val_loader.dataset)} samples)")
+    if len(train_loader) == 0:
+        raise ValueError('Training loader is empty; reduce batch_size or add samples')
+    train_ids = set(train_loader.dataset.get_all_ids())
+    val_ids = set(val_loader.dataset.get_all_ids())
+    if train_ids & val_ids:
+        raise ValueError('Training and validation datasets overlap')
 
     # 优化器
     optimizer = torch.optim.Adam(model.parameters(), lr=config['lr'])
@@ -336,8 +392,10 @@ def train_formal(config):
     # 尝试恢复训练
     if config.get('resume'):
         start_epoch, best_val_loss = load_checkpoint(
-            model, optimizer, config['resume']
+            model, optimizer, config['resume'], scaler=scaler, config=config
         )
+    if start_epoch > config['epochs']:
+        raise ValueError('--epochs is the total target epoch; it must exceed the saved epoch')
 
     # 重置 GPU 内存统计
     if device.type == "cuda":
@@ -345,6 +403,14 @@ def train_formal(config):
 
     # 训练日志
     train_log = []
+    log_file = result_dir / 'train_log.csv'
+    if config.get('resume') and log_file.exists():
+        with open(log_file, newline='', encoding='utf-8') as handle:
+            history = list(csv.DictReader(handle))
+        if history and int(history[-1]['epoch']) != start_epoch - 1:
+            raise ValueError('Existing training log does not end at the resumed epoch')
+    elif not config.get('resume') and log_file.exists():
+        raise FileExistsError(f'Existing log: {log_file}; use a new result_dir or --resume')
 
     print_separator("Training Start")
 
@@ -368,6 +434,8 @@ def train_formal(config):
                 with autocast():
                     predictions = model(images)
                     loss = criterion(predictions, targets)
+                if not torch.isfinite(loss):
+                    raise FloatingPointError(f'Non-finite training loss at epoch {epoch}')
 
                 optimizer.zero_grad()
                 scaler.scale(loss).backward()
@@ -376,6 +444,8 @@ def train_formal(config):
             else:
                 predictions = model(images)
                 loss = criterion(predictions, targets)
+                if not torch.isfinite(loss):
+                    raise FloatingPointError(f'Non-finite training loss at epoch {epoch}')
 
                 optimizer.zero_grad()
                 loss.backward()
@@ -390,6 +460,8 @@ def train_formal(config):
         val_loss, pred_stats, target_stats = validate(
             model, val_loader, physical_prior, criterion, device, config
         )
+        if not math.isfinite(val_loss):
+            raise FloatingPointError(f'Non-finite validation loss at epoch {epoch}')
 
         # ========== 更新 best ==========
         is_best = val_loss < best_val_loss
@@ -398,7 +470,8 @@ def train_formal(config):
 
         # ========== 保存 checkpoint ==========
         save_checkpoint(
-            model, optimizer, epoch, val_loss, is_best, config, checkpoint_dir
+            model, optimizer, epoch, val_loss, is_best, config, checkpoint_dir,
+            best_val_loss=best_val_loss, scaler=scaler
         )
 
         # ========== 计算时间 ==========
@@ -426,9 +499,15 @@ def train_formal(config):
             'target_mean': target_stats['mean'],
         }
         train_log.append(log_entry)
+        write_header = not log_file.exists() or log_file.stat().st_size == 0
+        with open(log_file, 'a', newline='', encoding='utf-8') as handle:
+            writer = csv.DictWriter(handle, fieldnames=log_entry.keys())
+            if write_header:
+                writer.writeheader()
+            writer.writerow(log_entry)
 
     # ========== 训练结束 ==========
-    total_time = train_log[-1]['epoch_time'] * config['epochs'] if train_log else 0
+    total_time = sum(entry['epoch_time'] for entry in train_log)
 
     # GPU 内存
     peak_memory = 0
@@ -436,11 +515,6 @@ def train_formal(config):
         peak_memory = torch.cuda.max_memory_allocated() / (1024 * 1024)
 
     # 保存训练日志
-    log_file = result_dir / 'train_log.csv'
-    with open(log_file, 'w', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=log_entry.keys())
-        writer.writeheader()
-        writer.writerows(train_log)
     print(f"\nSaved training log: {log_file}")
 
     # 保存总结
@@ -455,9 +529,9 @@ def train_formal(config):
             f.write(f"Initial val loss: {train_log[0]['val_loss']:.6f}\n")
             f.write(f"Final val loss: {train_log[-1]['val_loss']:.6f}\n")
             f.write(f"Best val loss: {best_val_loss:.6f}\n")
-            f.write(f"Total epochs: {config['epochs']}\n")
+            f.write(f"Epochs in this invocation: {len(train_log)}\n")
             f.write(f"Total time: {total_time:.1f}s\n")
-            f.write(f"Time per epoch: {total_time/config['epochs']:.2f}s\n")
+            f.write(f"Time per epoch: {total_time/len(train_log):.2f}s\n")
 
         f.write(f"Peak GPU memory: {peak_memory:.1f} MB\n")
         f.write(f"Device: {device}\n")
@@ -545,17 +619,7 @@ def main():
     args = parse_args()
 
     # 构建配置
-    config = DEFAULT_CONFIG.copy()
-    config['epochs'] = args.epochs
-    config['batch_size'] = args.batch_size
-    config['lr'] = args.lr
-    config['image_size'] = args.image_size
-    config['dataset_root'] = args.dataset_root
-    config['checkpoint_dir'] = args.checkpoint_dir
-    config['result_dir'] = args.result_dir
-    config['num_workers'] = args.num_workers
-    config['amp'] = not args.no_amp
-    config['resume'] = args.resume
+    config = build_config(args)
 
     try:
         success = train_formal(config)

@@ -1,5 +1,7 @@
 # Stage 5D-1 Report: Prediction Distribution Audit
 
+> 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
+
 **项目**: CrossModal-Defog-OVOD  
 **阶段**: Stage 5D-1: Prediction Distribution Audit  
 **创建日期**: 2026-08-31  
@@ -183,7 +185,7 @@ self.relu3 = nn.Identity()  # 或完全删除
 
 ```bash
 # 运行 audit 脚本
-!python scripts/audit_prediction_distribution.py \
+!python scripts/evaluate/audit_prediction_distribution.py \
     --checkpoint experiments/haze_density/checkpoints/formal/best.pth
 ```
 

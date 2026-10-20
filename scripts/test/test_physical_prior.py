@@ -14,7 +14,7 @@
 6. Constructive Test - 构造性测试（常数图、渐变图、局部雾图）
 
 使用方法:
-    !python scripts/test_physical_prior.py
+    !python scripts/test/test_physical_prior.py
 """
 
 import sys
@@ -400,7 +400,7 @@ def main():
     if all_passed:
         print("\n[OK] 所有测试通过！")
         print("\n下一步:")
-        print("  1. 运行可视化脚本：python scripts/visualize_physical_prior.py")
+        print("  1. 运行可视化脚本：python scripts/data/visualize_physical_prior.py")
         print("  2. 进入下一阶段：Encoder + 基础模块实现")
     else:
         print("\n[FAIL] 部分测试未通过，请修复后重试")
