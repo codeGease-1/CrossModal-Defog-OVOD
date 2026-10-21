@@ -18,7 +18,7 @@
 
 ## 本地实际拥有的资料
 
-- 两个已有 notebook：`docs/雾密度网络_更新后.ipynb` 和 `docs/雾密度网络_最简实验流程.ipynb`。本次保留原文件和已有改动。
+- 两个 notebook：`docs/雾密度网络_最简实验流程.ipynb` 已同步 `codex-v1` / v3，使用 Drive 保存配置、划分与实验产物；`docs/雾密度网络_更新后.ipynb` 保留为历史资料。使用方式见 [Notebook 说明](notebook_update_guide.md)。
 - 一份约 10.4 MB 的权重：`experiments/haze_density/checkpoints/best.pth`。安全读取 ZIP/pickle 字面元数据（不执行反序列化）可见 epoch=5、val_loss≈0.00974765、配置图像尺寸 256、训练目标轮数 5，且没有 `prior_version`。这只能证明文件内记录了这些字段，不能核实训练数据和流程。
 - 本地没有 `datasets/RSHaze+/`，也没有可复核的完整训练日志、测试报告和固定 split 文件。
 - 本机 Python 为 3.14.6；项目内新增被 Git 忽略的 `.venv`，安装 CPU PyTorch 2.14.1 与 torchvision 0.29.1。40 项单元测试全部通过、无跳过；静态检查通过。未验证 GPU。

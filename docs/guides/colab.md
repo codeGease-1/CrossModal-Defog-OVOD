@@ -4,12 +4,12 @@
 
 ## 1. 获取本次修改后的代码
 
-本次审查只修改本地文件，没有提交或推送远端。请使用包含本次修改的项目副本：可以手动上传到 Colab，或自行提交到仓库后再克隆。单独克隆旧远端不会自动带上本次修正。
+请确认远端 `codex-v1` 已包含需要运行的修改，再克隆该分支。单独上传 notebook 不会更新训练源码。也可以直接使用已同步的 [最简 notebook](../雾密度网络_最简实验流程.ipynb)，其中包含分支与先验版本检查。
 
 远端已更新后，在新 Colab 会话执行：
 
 ```python
-!git clone https://github.com/codeGease-1/CrossModal-Defog-OVOD.git /content/CrossModal-Defog-OVOD
+!git clone --branch codex-v1 --single-branch https://github.com/codeGease-1/CrossModal-Defog-OVOD.git /content/CrossModal-Defog-OVOD
 %cd /content/CrossModal-Defog-OVOD
 %pip install -r requirements.txt
 ```

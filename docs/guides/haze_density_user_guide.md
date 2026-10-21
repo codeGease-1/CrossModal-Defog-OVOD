@@ -169,4 +169,4 @@ Image.fromarray((density.numpy() * 255).clip(0, 255).astype('uint8')).save('dens
 
 先验的空间归一化、边界和数值实现已修正，新 checkpoint 标记为 `spatial_minmax_valid_boundary_v3`。v2 或无版本标记的旧模型不能作为同一 v3 实验继续训练；可以保留作历史对照。评估旧权重会提示版本差异，得到的是相对新标签的探索性结果，不能复现旧表格。网络结构和 MSE 不变，详见 [阶段 1 报告](../stage_1_bugfix_report.md)。
 
-本机现有权重实际在 `experiments/haze_density/checkpoints/best.pth`，来源未核实。本次没有重命名、覆盖或训练它。两个已有 notebook 也未改动，见 [Notebook 使用说明](../notebook_update_guide.md)。
+本机现有权重实际在 `experiments/haze_density/checkpoints/best.pth`，来源未核实。本次没有重命名、覆盖或训练它。最简 notebook 已同步 `codex-v1` / v3，并使用 Drive 保存独立实验；较长的“更新后” notebook 保留为历史资料，见 [Notebook 使用说明](../notebook_update_guide.md)。
