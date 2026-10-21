@@ -3,7 +3,8 @@
 """
 数据泄漏检查脚本
 
-检查 train/val/test split 之间是否存在重复的原始图像。
+检查 train/val/test 是否复用了同一原始路径，以及各集合内部重复。
+路径不同不能证明内容或场景独立；内容/场景泄漏需另行核查。
 
 使用方法:
     !python scripts/data/check_data_leakage.py
@@ -28,80 +29,30 @@ def print_separator(title: str):
 
 
 def get_image_identifiers(dataset):
-    """
-    获取数据集的所有图像标识符
-
-    使用 (雾级别目录，文件名) 作为唯一标识
-    """
-    identifiers = set()
-
-    for i in range(len(dataset)):
-        sample = dataset[i]
-        if 'path' in sample:
-            path = Path(sample['path'])
-            # 使用父目录名 (如 RSHaze_G/train/synhazypng) + 文件名
-            parent_parts = path.parent.parts
-            # 获取最后三个部分：RSHaze_G, train, synhazypng
-            if len(parent_parts) >= 3:
-                fog_level = parent_parts[-3] if len(parent_parts) >= 3 else 'unknown'
-                split_name = parent_parts[-2] if len(parent_parts) >= 2 else 'unknown'
-                identifier = (fog_level, split_name, path.name)
-            else:
-                identifier = (str(path.parent), path.name)
-            identifiers.add(identifier)
-
-    return identifiers
+    """只读样本元数据，不解码图片或触发随机增强。"""
+    return {str(Path(item['hazy_path']).resolve()) for item in dataset.image_list}
 
 
-def check_leakage():
-    """检查数据泄漏"""
-    print_separator("数据泄漏检查")
+def check_leakage(root='datasets/RSHaze+', split_file=None):
+    """检查集合之间的原始路径复用。"""
+    print_separator("原始路径重叠检查")
 
     try:
         # 加载数据集
         print("\n加载数据集...")
 
-        train_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='train',
-            image_size=256,
-            return_path=True,
-        )
-
-        test_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='test',
-            image_size=256,
-            return_path=True,
-        )
-
-        print(f"  Train dataset: {len(train_ds)} images")
-        print(f"  Test dataset: {len(test_ds)} images")
-
-        # 获取标识符
-        print("\n提取图像标识符...")
-        train_ids = get_image_identifiers(train_ds)
-        test_ids = get_image_identifiers(test_ds)
-
-        print(f"  Train unique identifiers: {len(train_ids)}")
-        print(f"  Test unique identifiers: {len(test_ids)}")
-
-        # 检查重叠
-        print("\n检查重叠...")
-        overlap = train_ids & test_ids
-
-        if len(overlap) == 0:
-            print("\n[OK] 未发现数据泄漏!")
-            print("    Train 和 Test 集合完全独立。")
-            return True
-        else:
-            print(f"\n[FAIL] 发现 {len(overlap)} 个重复图像!")
-            print("\n重复图像列表:")
-            for i, identifier in enumerate(list(overlap)[:20]):
-                print(f"    {i+1}. {identifier}")
-            if len(overlap) > 20:
-                print(f"    ... 还有 {len(overlap) - 20} 个重复图像")
-            return False
+        datasets = {
+            split: HazeDensityDataset(root=root, split=split, split_file=split_file)
+            for split in ('train', 'val', 'test')
+        }
+        identifiers = {split: get_image_identifiers(ds) for split, ds in datasets.items()}
+        success = True
+        for left, right in (('train', 'val'), ('train', 'test'), ('val', 'test')):
+            overlap = identifiers[left] & identifiers[right]
+            print(f"  {left}/{right}: {len(overlap)} shared source paths")
+            success = success and not overlap
+        print("仅检查原始路径；内容重复和同场景泄漏尚未核查。")
+        return success
 
     except Exception as e:
         print(f"\n[FAIL] 错误：{e}")
@@ -110,58 +61,18 @@ def check_leakage():
         return False
 
 
-def check_internal_duplicates():
+def check_internal_duplicates(root='datasets/RSHaze+', split_file=None):
     """检查数据集内部的重复"""
     print_separator("内部重复检查")
 
     try:
-        # 检查 train 集内部
-        train_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='train',
-            image_size=256,
-            return_path=True,
-        )
-
-        train_ids = get_image_identifiers(train_ds)
-
-        print(f"\nTrain 集:")
-        print(f"  总样本数：{len(train_ds)}")
-        print(f"  唯一标识符：{len(train_ids)}")
-
-        if len(train_ds) != len(train_ids):
-            print(f"  [WARN] 发现 {len(train_ds) - len(train_ids)} 个内部重复")
-        else:
-            print(f"  [OK] 无内部重复")
-
-        # 检查 test 集内部
-        test_ds = HazeDensityDataset(
-            root='datasets/RSHaze+',
-            split='test',
-            image_size=256,
-            return_path=True,
-        )
-
-        test_ids = get_image_identifiers(test_ds)
-
-        print(f"\nTest 集:")
-        print(f"  总样本数：{len(test_ds)}")
-        print(f"  唯一标识符：{len(test_ids)}")
-
-        if len(test_ds) != len(test_ids):
-            print(f"  [WARN] 发现 {len(test_ds) - len(test_ids)} 个内部重复")
-        else:
-            print(f"  [OK] 无内部重复")
-
-        # 总结
-        no_duplicates = (len(train_ds) == len(train_ids)) and (len(test_ds) == len(test_ids))
-
-        if no_duplicates:
-            print("\n[OK] 所有数据集内部无重复!")
-        else:
-            print("\n[WARN] 部分数据集存在内部重复")
-
-        return no_duplicates
+        success = True
+        for split in ('train', 'val', 'test'):
+            dataset = HazeDensityDataset(root=root, split=split, split_file=split_file)
+            duplicate_count = len(dataset) - len(get_image_identifiers(dataset))
+            print(f"  {split}: {duplicate_count} duplicate source paths")
+            success = success and duplicate_count == 0
+        return success
 
     except Exception as e:
         print(f"\n[FAIL] 错误：{e}")
@@ -179,7 +90,7 @@ def main():
     # 运行检查
     results = []
 
-    results.append(("Train/Test 泄漏", check_leakage()))
+    results.append(("Train/Val/Test 原始路径重叠", check_leakage()))
     results.append(("内部重复", check_internal_duplicates()))
 
     # 汇总
@@ -192,7 +103,7 @@ def main():
     all_passed = all(r[1] for r in results)
 
     if all_passed:
-        print("\n[OK] 所有检查通过！数据无泄漏。")
+        print("\n[OK] 原始路径检查通过；内容/场景是否泄漏尚待核查。")
     else:
         print("\n[FAIL] 发现数据问题，请检查")
 

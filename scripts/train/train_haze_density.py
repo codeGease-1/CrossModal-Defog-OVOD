@@ -182,8 +182,8 @@ def load_checkpoint(model, optimizer, checkpoint_path, scaler=None, config=None)
     saved_config = checkpoint.get('config', {})
     if saved_config.get('prior_version') != PRIOR_VERSION:
         raise ValueError(
-            'This checkpoint predates the spatial normalization fix or uses '
-            'different targets. Start a new experiment instead of resuming it.'
+            'This checkpoint uses a different or unrecorded physical-prior version '
+            f'(current: {PRIOR_VERSION}). Start a new experiment instead of resuming it.'
         )
     if config is not None:
         for key in ('dataset_root', 'split_file', 'image_size', 'base_channels',

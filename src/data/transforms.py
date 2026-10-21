@@ -20,6 +20,7 @@ Transform 流程:
 
 import torch
 from torchvision import transforms
+from torchvision.transforms import functional as TF
 from typing import Optional, Tuple
 
 
@@ -72,6 +73,25 @@ class HazeTrainTransform:
         """
         return self.transform(img)
 
+    def apply_pair(self, img, clean):
+        """Sample crop/flips once and apply identical geometry to both images."""
+        if img.size != clean.size:
+            raise ValueError('Paired images must have identical native sizes')
+        top, left, height, width = transforms.RandomCrop.get_params(
+            img, (self.image_size, self.image_size),
+        )
+        flip_horizontal = torch.rand(1).item() < self.hflip_prob
+        flip_vertical = torch.rand(1).item() < self.vflip_prob
+        outputs = []
+        for image in (img, clean):
+            image = TF.crop(image, top, left, height, width)
+            if flip_horizontal:
+                image = TF.hflip(image)
+            if flip_vertical:
+                image = TF.vflip(image)
+            outputs.append(TF.to_tensor(image))
+        return tuple(outputs)
+
 
 class HazeValTransform:
     """
@@ -79,7 +99,6 @@ class HazeValTransform:
 
     包含:
     - Resize: 调整到指定尺寸 (双线性插值)
-    - CenterCrop: 中心裁剪 (如果图像大于目标尺寸)
     - ToTensor: 转换为 tensor 并归一化到 [0, 1]
 
     注意:
@@ -112,6 +131,12 @@ class HazeValTransform:
             tensor: [3, image_size, image_size] [0, 1]
         """
         return self.transform(img)
+
+    def apply_pair(self, img, clean):
+        """Validation transforms are deterministic and share the output geometry."""
+        if img.size != clean.size:
+            raise ValueError('Paired images must have identical native sizes')
+        return self.transform(img), self.transform(clean)
 
 
 def create_train_transform(

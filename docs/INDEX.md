@@ -1,6 +1,6 @@
 # 文档索引
 
-更新于 2026-10-20。当前实现、运行命令和进度以本页列出的“当前文档”为准。
+更新于 2026-10-21。当前实现、运行命令和进度以本页列出的“当前文档”为准。
 
 ## 当前文档
 
@@ -11,6 +11,7 @@
 | [操作指南](guides/haze_density_user_guide.md) | 数据怎么放，训练、恢复、评估怎么跑？ |
 | [Colab 指南](guides/colab.md) | 环境和 Drive 持久化怎么配置？ |
 | [项目状态](project_status.md) | 哪些有代码，哪些有本次验证证据？ |
+| [阶段 1 必要修复报告](stage_1_bugfix_report.md) | 确认了哪些 Bug、实际测试结果、旧权重影响、阶段 2 前是否阻塞？ |
 | [审查记录](project_review.md) | 发现了哪些错误，修了什么，还有什么限制？ |
 | [Notebook 使用说明](notebook_update_guide.md) | 两个现有 notebook 如何与新流程配合？ |
 

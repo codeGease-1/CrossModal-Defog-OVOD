@@ -35,8 +35,9 @@ import torch
 import torch.nn.functional as F
 from typing import Tuple, Optional, Dict
 import warnings
+import math
 
-from .guided_filter import guided_filter
+from .guided_filter import guided_filter, _mean_filter
 
 
 # ============================================================================
@@ -51,9 +52,9 @@ WEIGHT_COLOR = 0.2
 # 非线性指数
 EXPONENT_MU = 1.5
 
-# v1 accidentally normalized each column independently. New experiments must
-# record this version because the correction changes the supervision targets.
-PRIOR_VERSION = "spatial_minmax_v2"
+# v2 fixed column-wise normalization. v3 also fixes the local-mean denominator
+# at image boundaries and stabilizes constant/half-precision statistics.
+PRIOR_VERSION = "spatial_minmax_valid_boundary_v3"
 
 
 def warn_on_prior_mismatch(config: dict):
@@ -62,7 +63,7 @@ def warn_on_prior_mismatch(config: dict):
         warnings.warn(
             f"Checkpoint prior_version={config.get('prior_version', 'unrecorded')!r}; "
             f"evaluation uses {PRIOR_VERSION!r}. These scores cannot reproduce "
-            "historical scores from the old column-wise targets. Retrain for "
+            "historical scores using different normalization/boundary targets. Retrain for "
             "a comparable corrected experiment.",
             UserWarning,
             stacklevel=2,
@@ -89,6 +90,8 @@ def _local_min(
         局部最小值 [B, C, H, W]
     """
     # 使用 max_pool2d 的负值技巧实现 min_pool
+    if not isinstance(window_size, int) or window_size <= 0 or window_size % 2 == 0:
+        raise ValueError('window_size must be a positive odd integer')
     pad = window_size // 2
     x_neg = -x
     min_val = -F.max_pool2d(x_neg, kernel_size=window_size, stride=1, padding=pad)
@@ -109,8 +112,7 @@ def _local_mean(
     Returns:
         局部均值 [B, C, H, W]
     """
-    pad = window_size // 2
-    return F.avg_pool2d(x, kernel_size=window_size, stride=1, padding=pad)
+    return _mean_filter(x, window_size)
 
 
 def min_max_normalize(
@@ -127,6 +129,16 @@ def min_max_normalize(
     Returns:
         归一化结果 [0, 1]
     """
+    if x.dim() != 4 or x.numel() == 0 or not x.is_floating_point():
+        raise ValueError('x must be a nonempty 4D floating-point tensor')
+    if not math.isfinite(eps) or eps <= 0:
+        raise ValueError('eps must be finite and positive')
+    if not torch.isfinite(x).all():
+        raise ValueError('x contains NaN/Inf')
+    # 1e-8 rounds to zero in float16: a constant map would otherwise give 0/0.
+    if x.dtype in (torch.float16, torch.bfloat16):
+        x = x.float()
+
     # 先对 H 维度求 min/max，再对 W 维度求 min/max
     # 这样可以兼容所有 PyTorch 版本
     x_min_h = x.min(dim=2, keepdim=True)[0]  # [B, C, 1, W]
@@ -135,7 +147,7 @@ def min_max_normalize(
     x_max_h = x.max(dim=2, keepdim=True)[0]  # [B, C, 1, W]
     x_max = x_max_h.max(dim=3, keepdim=True)[0]  # [B, C, 1, 1]
 
-    x_range = x_max - x_min + eps
+    x_range = x_max - x_min + max(eps, torch.finfo(x.dtype).tiny)
     x_norm = (x - x_min) / x_range
 
     # 裁剪到 [0, 1]
@@ -375,10 +387,14 @@ def generate_s_final(
     if image.shape[1] != 3:
         raise ValueError(f"image must have 3 channels, got {image.shape[1]}")
 
-    # 检查输入范围
+    if image.numel() == 0 or not image.is_floating_point():
+        raise ValueError('image must be a nonempty floating-point tensor')
+    if not torch.isfinite(image).all():
+        raise ValueError('image contains NaN/Inf')
     if image.min() < 0 or image.max() > 1:
-        # 警告但不强制，因为用户可能已经处理过
-        pass
+        raise ValueError('image must be in [0, 1]')
+    if image.dtype in (torch.float16, torch.bfloat16):
+        image = image.float()
 
     # 计算物理先验
     d_hat, c_hat, k_hat, s_hat = compute_physical_prior(image, window_size)

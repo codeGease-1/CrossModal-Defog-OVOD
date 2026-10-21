@@ -1,6 +1,6 @@
 # 在 Colab 运行项目
 
-更新于 2026-10-20。建议先看 [操作指南](haze_density_user_guide.md)。本地负责改代码，Colab 用于模型动态检查和 GPU 实验；Colab 的资源与会话时长以实际运行时为准。
+更新于 2026-10-21。建议先看 [操作指南](haze_density_user_guide.md)。本地负责改代码，Colab 用于模型动态检查和 GPU 实验；Colab 的资源与会话时长以实际运行时为准。
 
 ## 1. 获取本次修改后的代码
 
@@ -21,7 +21,7 @@ import torch
 from src.models.haze_density.physical_prior import PRIOR_VERSION
 print('torch:', torch.__version__)
 print('CUDA:', torch.cuda.is_available())
-print('prior:', PRIOR_VERSION)  # spatial_minmax_v2
+print('prior:', PRIOR_VERSION)  # spatial_minmax_valid_boundary_v3
 ```
 
 ## 2. 挂载 Drive，准备数据
@@ -55,7 +55,7 @@ assert (destination / 'RSHaze+' / 'RSHaze_G').exists(), '检查压缩包解压�
 from pathlib import Path
 import yaml
 
-run_dir = Path('/content/drive/MyDrive/CrossModal-Defog-OVOD/spatial_v2_run01')
+run_dir = Path('/content/drive/MyDrive/CrossModal-Defog-OVOD/spatial_v3_run01')
 run_dir.mkdir(parents=True, exist_ok=True)
 config = yaml.safe_load(Path('configs/haze_density.yaml').read_text())
 config['checkpoint_dir'] = str(run_dir / 'checkpoints')
@@ -83,11 +83,12 @@ if not Path(config['split_file']).exists():
 ```python
 !python scripts/utils/static_check.py
 !python -m unittest discover -s scripts/test -p test_review_regressions.py -v
+!python -m unittest discover -s scripts/test -p test_stage1_bugfixes.py -v
 !python scripts/test/test_physical_prior.py
 !python scripts/utils/smoke_test.py
 ```
 
-本次本地未执行的 4 项 PyTorch 回归应在此处真实运行，不能仍显示为 skipped。
+本地 CPU 已通过 40 项单元测试和小张量流程；在 Colab 仍应确认这些检查通过且不显示 skipped。GPU 行为和真实数据未在本地验证，详见 [阶段 1 报告](../stage_1_bugfix_report.md)。
 
 ## 5. 短训练、恢复与正式评估
 

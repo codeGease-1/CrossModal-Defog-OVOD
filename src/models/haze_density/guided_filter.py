@@ -25,6 +25,7 @@ Guided Filtering (引导滤波)
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import math
 
 
 def _mean_filter(x: torch.Tensor, kernel_size: int) -> torch.Tensor:
@@ -38,10 +39,19 @@ def _mean_filter(x: torch.Tensor, kernel_size: int) -> torch.Tensor:
     Returns:
         均值滤波结果 [B, C, H, W]
     """
-    # 使用 padding 保持尺寸不变
+    if not isinstance(kernel_size, int) or kernel_size <= 0 or kernel_size % 2 == 0:
+        raise ValueError('kernel_size must be a positive odd integer')
+    # Padding only preserves the output size. Nonexistent border pixels must
+    # not enter the denominator of the mean over the actual image window.
     pad = kernel_size // 2
-    # 使用 avg_pool2d 进行均值滤波
-    return F.avg_pool2d(x, kernel_size=kernel_size, stride=1, padding=pad)
+    # mean(x - reference) + reference == mean(x). Centering avoids roundoff
+    # turning a constant image (e.g. float32 0.3) into artificial contrast,
+    # which would be amplified by the subsequent spatial min-max operation.
+    reference = x[:, :, :1, :1]
+    return F.avg_pool2d(
+        x - reference, kernel_size=kernel_size, stride=1, padding=pad,
+        count_include_pad=False,
+    ) + reference
 
 
 def _get_box_filter(kernel_size: int, device: torch.device) -> torch.Tensor:
@@ -92,17 +102,30 @@ def guided_filter(
     if guide.dim() != 4:
         raise ValueError(f"guide must be 4D tensor, got {guide.dim()}D")
 
+    if not isinstance(radius, int) or radius < 0:
+        raise ValueError('radius must be a nonnegative integer')
+    if not math.isfinite(eps) or eps <= 0:
+        raise ValueError('eps must be finite and positive')
+    for name, tensor in (('guide', guide), ('src', src)):
+        if tensor.numel() == 0 or not tensor.is_floating_point():
+            raise ValueError(f'{name} must be a nonempty floating-point tensor')
+        if not torch.isfinite(tensor).all():
+            raise ValueError(f'{name} contains NaN/Inf')
+    if guide.device != src.device:
+        raise ValueError('guide and src must be on the same device')
+
     if src.shape[0] != guide.shape[0]:
         raise ValueError(f"batch size mismatch: src={src.shape[0]}, guide={guide.shape[0]}")
 
     if src.shape[2:] != guide.shape[2:]:
         raise ValueError(f"spatial size mismatch: src={src.shape[2:]}, guide={guide.shape[2:]}")
 
-    # 获取设备
-    device = src.device
-    dtype = src.dtype
-
-    B, _, H, W = src.shape
+    # Accumulate half-precision image statistics in float32. This preserves the
+    # formula while avoiding underflow/cancellation in the regularized ratio.
+    if guide.dtype in (torch.float16, torch.bfloat16):
+        guide = guide.float()
+    if src.dtype in (torch.float16, torch.bfloat16):
+        src = src.float()
 
     # 如果引导图是多通道，转换为灰度（取均值）
     if guide.shape[1] > 1:
@@ -121,7 +144,7 @@ def guided_filter(
     # E(I^2): 引导图平方均值
     mean_guide_sq = _mean_filter(guide * guide, kernel_size)
     # var(I): 引导图方差 = E(I^2) - E(I)^2
-    var_guide = mean_guide_sq - mean_guide * mean_guide
+    var_guide = (mean_guide_sq - mean_guide * mean_guide).clamp_min(0)
 
     # 计算 src 的局部均值
     # E(p): src 均值
@@ -133,7 +156,8 @@ def guided_filter(
 
     # 计算 a 和 b
     # a = cov(I, p) / (var(I) + eps)
-    a = cov_guide_src / (var_guide + eps)
+    safe_eps = max(eps, torch.finfo(var_guide.dtype).tiny)
+    a = cov_guide_src / (var_guide + safe_eps)
     # b = E(p) - a * E(I)
     b = mean_src - a * mean_guide
 

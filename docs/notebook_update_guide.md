@@ -1,6 +1,6 @@
 # Notebook 使用与迁移说明
 
-更新于 2026-10-20。仓库目前有两份 notebook：
+更新于 2026-10-21。仓库目前有两份 notebook：
 
 | 文件 | 定位 |
 |---|---|
@@ -11,7 +11,7 @@
 
 ## 和当前代码配合时注意什么？
 
-1. 确认 Colab 加载的是本次修正后的代码，`PRIOR_VERSION` 应为 `spatial_minmax_v2`。
+1. 确认 Colab 加载的是本次修正后的代码，`PRIOR_VERSION` 应为 `spatial_minmax_valid_boundary_v3`。
 2. 现有 notebook 可能仍使用 `formal/` 输出目录。新实验建议调用 `--config configs/haze_density.yaml`，并把后续可视化读取路径改为本次实际 checkpoint 路径。
 3. 训练脚本新增防覆盖检查，同一个目录再次从头训练会拒绝；应恢复 `latest.pth` 或使用新目录。
 4. 旧权重没有当前先验版本标记，不能直接继续为同一新实验；保留为历史资料。

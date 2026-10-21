@@ -15,8 +15,8 @@ lr: 0.0001
 amp: true
 seed: 42
 # 独立目录保留旧实验。训练不会覆盖已有的 best/latest。
-checkpoint_dir: experiments/haze_density/checkpoints/spatial_v2
-result_dir: experiments/haze_density/results/spatial_v2
+checkpoint_dir: experiments/haze_density/checkpoints/spatial_v3
+result_dir: experiments/haze_density/results/spatial_v3
 window_size: 15
 guided_radius: 15
 guided_eps: 0.01

@@ -161,7 +161,7 @@ class RSHazePlusDataset:
                     clear_path = None
                     if clean_dir.exists():
                         candidate = clean_dir / hazy_path.name
-                        if candidate.exists():
+                        if candidate.is_file():
                             clear_path = candidate
 
                     # 生成唯一 ID
@@ -339,6 +339,8 @@ class RSHazePlusDataset:
         # 检查配对
         missing_clear = sum(1 for item in self.image_list if item['clear_path'] is None)
         if missing_clear > 0:
+            if self.return_clean:
+                raise ValueError(f'{missing_clear} samples missing required clean image')
             print(f"[WARN] {missing_clear} samples missing clear image")
 
         # 检查文件存在性
@@ -367,8 +369,19 @@ class RSHazePlusDataset:
         item = self.image_list[idx]
 
         # 加载 hazy 图像
-        hazy_img = Image.open(item['hazy_path']).convert('RGB')
-        hazy_tensor = self.transform(hazy_img)
+        with Image.open(item['hazy_path']) as image:
+            hazy_img = image.convert('RGB')
+        if self.return_clean:
+            with Image.open(item['clear_path']) as image:
+                clear_img = image.convert('RGB')
+            if hazy_img.size != clear_img.size:
+                raise ValueError(f'Paired image sizes differ: {item["hazy_path"]}')
+            apply_pair = getattr(self.transform, 'apply_pair', None)
+            if not callable(apply_pair):
+                raise TypeError('Paired loading requires a transform with apply_pair(image, clean)')
+            hazy_tensor, clear_tensor = apply_pair(hazy_img, clear_img)
+        else:
+            hazy_tensor = self.transform(hazy_img)
 
         result = {
             'image': hazy_tensor,
@@ -378,9 +391,7 @@ class RSHazePlusDataset:
             'path': str(item['hazy_path']),
         }
 
-        if self.return_clean and item['clear_path'] is not None:
-            clear_img = Image.open(item['clear_path']).convert('RGB')
-            clear_tensor = self.transform(clear_img)
+        if self.return_clean:
             result['clean'] = clear_tensor
 
         return result

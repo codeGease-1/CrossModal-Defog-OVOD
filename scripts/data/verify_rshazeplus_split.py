@@ -8,7 +8,9 @@ RSHaze+ Split 验证脚本 (修复版)
 2. train ∩ test = ∅
 3. val ∩ test = ∅
 
-基于 (subset, filename) 唯一键检查。
+基于 (subset, official_split, filename) 原始路径键检查。
+train/val 来自官方 train，test 来自官方 test。
+仅检查清单结构和路径复用，不能证明不存在内容重复或同场景泄漏。
 """
 
 import sys
@@ -39,6 +41,9 @@ def verify_split_json(split_file: str = 'experiments/haze_density/rshazeplus_spl
         # 检查 schema
         print("\n检查 JSON schema...")
         required_keys = {'train', 'val', 'test'}
+        if not isinstance(split_data, dict):
+            print('[FAIL] Split must be a JSON object')
+            return False
         if not required_keys.issubset(split_data.keys()):
             print(f"[FAIL] Missing keys: {required_keys - set(split_data.keys())}")
             return False
@@ -48,34 +53,31 @@ def verify_split_json(split_file: str = 'experiments/haze_density/rshazeplus_spl
         val_list = split_data['val']
         test_list = split_data['test']
 
-        print(f"Train entries: {len(train_list)}")
-        print(f"Val entries: {len(val_list)}")
-        print(f"Test entries: {len(test_list)}")
-
-        # 检查是否为新格式
-        if len(train_list) > 0 and isinstance(train_list[0], dict):
-            print("\n[OK] 使用新格式：[{subset, filename}]")
-            required_item_keys = {'subset', 'filename'}
-            if not required_item_keys.issubset(train_list[0].keys()):
-                print(f"[FAIL] Missing item keys: {required_item_keys - set(train_list[0].keys())}")
+        for name, entries in (('train', train_list), ('val', val_list), ('test', test_list)):
+            if not isinstance(entries, list) or not entries or not all(
+                isinstance(item, dict)
+                and isinstance(item.get('subset'), str)
+                and isinstance(item.get('filename'), str)
+                for item in entries
+            ):
+                print(f'[FAIL] {name} must be a nonempty list of {{subset, filename}} entries')
                 return False
-        else:
-            print("\n[WARN] 使用旧格式：[id1, id2, ...]")
+            print(f'{name} entries: {len(entries)}')
 
-        # 提取唯一键 (subset, filename)
-        def extract_keys(item_list):
+        # 不把不同官方目录中的同名文件误判为同一原始路径。
+        def extract_keys(item_list, official_split):
             keys = set()
             for item in item_list:
                 if isinstance(item, dict):
-                    keys.add((item['subset'], item['filename']))
+                    keys.add((item['subset'], official_split, item['filename']))
                 else:
                     # 旧格式
-                    keys.add(item)
+                    keys.add((official_split, item))
             return keys
 
-        train_keys = extract_keys(train_list)
-        val_keys = extract_keys(val_list)
-        test_keys = extract_keys(test_list)
+        train_keys = extract_keys(train_list, 'train')
+        val_keys = extract_keys(val_list, 'train')
+        test_keys = extract_keys(test_list, 'test')
 
         print(f"\nTrain unique keys: {len(train_keys)}")
         print(f"Val unique keys: {len(val_keys)}")
@@ -154,6 +156,7 @@ def verify_split_json(split_file: str = 'experiments/haze_density/rshazeplus_spl
         # 汇总
         if len(errors) == 0:
             print("\n[OK] Split JSON 验证通过！")
+            print("仅通过清单结构/原始路径检查；内容重复和同场景泄漏尚未核查。")
             return True
         else:
             print(f"\n[FAIL] 发现 {len(errors)} 个问题:")

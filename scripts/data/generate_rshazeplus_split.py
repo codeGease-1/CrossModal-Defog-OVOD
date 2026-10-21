@@ -9,7 +9,8 @@ RSHaze+ Split 生成脚本 (修复版)
 1. test: 使用官方 test
 2. train/val: 从官方 train 中按 90/10 划分 (seed=42)
 3. 按 subset 分别划分，保持分布
-4. 唯一键使用 (subset, filename)
+4. 原始样本键使用 (subset, official_split, filename)
+   不同官方目录中的同名文件不能仅凭文件名判定为重复内容。
 
 JSON Schema:
 {
@@ -26,6 +27,7 @@ import sys
 from pathlib import Path
 import json
 import random
+import math
 
 
 def print_separator(title: str):
@@ -97,8 +99,10 @@ def generate_split(
     """
     print_separator("RSHaze+ Split 生成")
 
-    # 固定随机种子
-    random.seed(seed)
+    if not math.isfinite(val_ratio) or not 0 < val_ratio < 1:
+        raise ValueError('val_ratio must be between 0 and 1')
+    # 不改变训练进程的全局随机状态。
+    rng = random.Random(seed)
 
     # 扫描数据集
     print("\n扫描数据集...")
@@ -125,25 +129,17 @@ def generate_split(
 
     for subset in subsets:
         subset_data = manifest[subset]
-        train_files = subset_data['train']
+        train_files = list(subset_data['train'])
         test_files = subset_data['test']
-
-        # 【关键修复】从 train 中排除与 test 重名的样本
-        test_file_set = set(test_files)
-        train_files = [f for f in train_files if f not in test_file_set]
-        excluded_count = len(subset_data['train']) - len(train_files)
 
         print(f"\n{subset}:")
         print(f"  官方 train: {len(subset_data['train'])}")
         print(f"  官方 test: {len(test_files)}")
-        if excluded_count > 0:
-            print(f"  排除与 test 重名：{excluded_count}")
-
         # 打乱 train files
-        random.shuffle(train_files)
+        rng.shuffle(train_files)
 
         # 划分 train/val
-        n_val = max(1, int(len(train_files) * val_ratio))
+        n_val = max(1, int(len(train_files) * val_ratio)) if train_files else 0
         n_train = len(train_files) - n_val
 
         val_files = train_files[:n_val]
@@ -186,6 +182,9 @@ def generate_split(
     for subset in subsets:
         print(f"  {subset}: {subset_test_counts[subset]}")
 
+    if not train_list or not val_list:
+        raise ValueError('Cannot generate nonempty train/val splits from the available images')
+
     # 保存
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -215,12 +214,12 @@ def generate_split(
 
     print(f"\n保存 split 到：{output_path}")
 
-    # 验证无重叠 - 使用 (subset, filename) 作为唯一键
+    # 仅检查原始路径是否重用；不能证明内容/场景没有泄漏。
     print_separator("重叠检查")
 
-    train_keys = set((item['subset'], item['filename']) for item in train_list)
-    val_keys = set((item['subset'], item['filename']) for item in val_list)
-    test_keys = set((item['subset'], item['filename']) for item in test_list)
+    train_keys = set((item['subset'], 'train', item['filename']) for item in train_list)
+    val_keys = set((item['subset'], 'train', item['filename']) for item in val_list)
+    test_keys = set((item['subset'], 'test', item['filename']) for item in test_list)
 
     train_val_overlap = train_keys & val_keys
     train_test_overlap = train_keys & test_keys
@@ -267,6 +266,7 @@ def generate_split(
         all_ok = False
 
     print_separator("Split 生成完成")
+    print("以上仅为原始路径检查；内容重复和同场景泄漏尚未核查。")
 
     return split_data, all_ok
 
