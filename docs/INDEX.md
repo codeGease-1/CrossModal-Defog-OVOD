@@ -11,6 +11,11 @@
 | [操作指南](guides/haze_density_user_guide.md) | 数据怎么放，训练、恢复、评估怎么跑？ |
 | [Colab 指南](guides/colab.md) | 环境和 Drive 持久化怎么配置？ |
 | [项目状态](project_status.md) | 哪些有代码，哪些有本次验证证据？ |
+| [阶段 2 科研审查](stage_2_research_review.md) | 独立真值评价发现了什么、哪些还未证明？ |
+| [Benchmark 使用说明](guides/haze_density_benchmark.md) | 合成、排序、空间评价、性能和复现命令 |
+| [独立 Colab notebook](haze_density_benchmark_colab.ipynb) | 在 VS Code 的 Colab 内核运行，无需远程获取本地代码 |
+| [最简实验流程 notebook](雾密度网络_最简实验流程.ipynb) | 第 8 节在训练实验里直接运行独立 Benchmark |
+| [阶段 2 方案](benchmark_plan.md) / [人工盲评协议](benchmark_human_protocol.md) | 评价定义、真实标签独立性与待开展盲评 |
 | [阶段 1 必要修复报告](stage_1_bugfix_report.md) | 确认了哪些 Bug、实际测试结果、旧权重影响、阶段 2 前是否阻塞？ |
 | [审查记录](project_review.md) | 发现了哪些错误，修了什么，还有什么限制？ |
 | [Notebook 使用说明](notebook_update_guide.md) | 两个现有 notebook 如何与新流程配合？ |

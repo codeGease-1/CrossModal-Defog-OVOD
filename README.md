@@ -6,6 +6,8 @@
 
 最近更新：2026-10-21。阶段 1 必要修复已完成，详见 [修复报告](docs/stage_1_bugfix_report.md)、[项目状态](docs/project_status.md) 与 [首次审查记录](docs/project_review.md)。
 
+阶段 2 已新增独立雾密度 Benchmark，并实际完成 128 个受控合成样本的 CPU 评价。三先验在本次单地理区域试验中，均匀雾排序准确率为 21.88%，空间区域相关为 0.956；这两种能力不能混为一谈。学生正确性及 GPU 结果尚未评测。**最简实验流程 notebook 第 8 节可直接运行此 Benchmark**。见 [科研审查报告](docs/stage_2_research_review.md)、[复现说明](docs/guides/haze_density_benchmark.md) 与 [单独运行的 Colab notebook](docs/haze_density_benchmark_colab.ipynb)。
+
 ## 建议阅读顺序
 
 1. [从零理解雾密度分析](docs/guides/haze_density_explained.md)：先理解输入、标签、训练和结果的含义。
