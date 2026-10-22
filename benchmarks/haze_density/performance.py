@@ -93,6 +93,10 @@ def benchmark_performance(output, config, devices=None):
                           'threads': config.get('threads', 1)}
                 try:
                     device = resolve_device(device_name)
+                    # Reserved memory from the previous method must not inflate
+                    # this method's allocator peak. Includes prior validation.
+                    if device.type == 'cuda':
+                        torch.cuda.empty_cache()
                     try:
                         model, info = build_method(name, device, config)
                     except NotAvailable:

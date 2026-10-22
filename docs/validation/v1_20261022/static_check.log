@@ -1,0 +1,133 @@
+
+============================================================
+CrossModal-Defog-OVOD - 静态检查
+============================================================
+
+============================================================
+目录结构检查
+============================================================
+[OK] configs
+[OK] docs
+[OK] scripts
+[OK] src/data
+[OK] src/models/haze_density
+[OK] src/utils
+
+============================================================
+__init__.py 检查
+============================================================
+[OK] src/__init__.py
+[OK] src/data/__init__.py
+[OK] src/models/__init__.py
+[OK] src/models/haze_density/__init__.py
+[OK] src/utils/__init__.py
+
+============================================================
+requirements.txt 检查
+============================================================
+[OK] requirements.txt 存在
+  包含 11 个依赖项
+  [OK] torch
+  [OK] torchvision
+  [OK] opencv-python
+  [OK] numpy
+  [OK] pyyaml
+
+============================================================
+Python 语法检查
+============================================================
+[OK] src\__init__.py
+[OK] src\data\datasets.py
+[OK] src\data\transforms.py
+[OK] src\data\__init__.py
+[OK] src\models\__init__.py
+[OK] src\utils\__init__.py
+[OK] src\models\backbone\simple_backbone.py
+[OK] src\models\backbone\__init__.py
+[OK] src\models\crossmodal\density_concat_model.py
+[OK] src\models\crossmodal\density_guided_backbone.py
+[OK] src\models\crossmodal\__init__.py
+[OK] src\models\density_guidance\density_guidance.py
+[OK] src\models\density_guidance\__init__.py
+[OK] src\models\haze_density\basic_blocks.py
+[OK] src\models\haze_density\decoder.py
+[OK] src\models\haze_density\eca.py
+[OK] src\models\haze_density\encoder.py
+[OK] src\models\haze_density\fusion.py
+[OK] src\models\haze_density\guided_filter.py
+[OK] src\models\haze_density\haze_density_net.py
+[OK] src\models\haze_density\multiscale.py
+[OK] src\models\haze_density\physical_prior.py
+[OK] src\models\haze_density\residual_blocks.py
+[OK] src\models\haze_density\__init__.py
+[OK] scripts\benchmark\accept_v1.py
+[OK] scripts\benchmark\build_colab_notebook.py
+[OK] scripts\benchmark\run_colab_benchmark.py
+[OK] scripts\benchmark\sync_minimal_notebook.py
+[OK] scripts\data\analyze_rshazeplus_structure.py
+[OK] scripts\data\check_data_leakage.py
+[OK] scripts\data\fetch_benchmark_samples.py
+[OK] scripts\data\generate_rshazeplus_split.py
+[OK] scripts\data\inspect_dataset.py
+[OK] scripts\data\verify_rshazeplus_split.py
+[OK] scripts\data\visualize_physical_prior.py
+[OK] scripts\data\visualize_physical_prior_on_rshazeplus.py
+[OK] scripts\data\visualize_rshazeplus_dataset.py
+[OK] scripts\evaluate\audit_prediction_distribution.py
+[OK] scripts\evaluate\evaluate_haze_density.py
+[OK] scripts\test\test_core_modules.py
+[OK] scripts\test\test_dataset.py
+[OK] scripts\test\test_density_concat_integration.py
+[OK] scripts\test\test_density_guidance.py
+[OK] scripts\test\test_haze_benchmark.py
+[OK] scripts\test\test_minimal_notebook_benchmark.py
+[OK] scripts\test\test_model.py
+[OK] scripts\test\test_physical_prior.py
+[OK] scripts\test\test_review_regressions.py
+[OK] scripts\test\test_rshazeplus_dataset.py
+[OK] scripts\test\test_rshazeplus_physical_prior.py
+[OK] scripts\test\test_stage1_bugfixes.py
+[OK] scripts\test\test_stage_6_3b.py
+[OK] scripts\test\test_v1_acceptance.py
+[OK] scripts\train\train_haze_density.py
+[OK] scripts\train\train_overfit_8.py
+[OK] scripts\utils\debug_gpu.py
+[OK] scripts\utils\fix_decoder_relu.py
+[OK] scripts\utils\setup_colab.py
+[OK] scripts\utils\smoke_test.py
+[OK] scripts\utils\static_check.py
+[OK] tools\fix_all_scripts_paths.py
+[OK] tools\update_notebook_paths.py
+
+============================================================
+YAML 语法检查
+============================================================
+[OK] configs\density_concat.yaml
+[OK] configs\haze_benchmark.yaml
+[OK] configs\haze_density.yaml
+[OK] .venv\Lib\site-packages\torchgen\packaged\autograd\deprecated.yaml
+[OK] .venv\Lib\site-packages\torchgen\packaged\autograd\derivatives.yaml
+[OK] .venv\Lib\site-packages\torchgen\packaged\ATen\native\native_functions.yaml
+[OK] .venv\Lib\site-packages\torchgen\packaged\ATen\native\tags.yaml
+[OK] .venv\Lib\site-packages\torch\_export\serde\schema.yaml
+
+Markdown local links
+[OK] Local file targets in 29 Markdown files
+
+============================================================
+检查结果汇总
+============================================================
+[OK] 目录结构
+[OK] __init__.py
+[OK] requirements.txt
+[OK] Python 语法
+[OK] YAML 语法
+[OK] Markdown links
+
+[OK] 所有静态检查通过！
+
+下一步:
+  1. 将项目推送到 GitHub 或导出为 ZIP
+  2. 在 Google Colab 中运行 setup_colab.py
+  3. 运行 smoke_test.py 进行动态测试
+============================================================

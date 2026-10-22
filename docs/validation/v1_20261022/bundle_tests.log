@@ -1,0 +1,99 @@
+test_constant_spatial_truth_is_not_applicable (scripts.test.test_haze_benchmark.MetricTests.test_constant_spatial_truth_is_not_applicable) ... ok
+test_invalid_metrics_rejected (scripts.test.test_haze_benchmark.MetricTests.test_invalid_metrics_rejected) ... ok
+test_perfect_and_reversed_order (scripts.test.test_haze_benchmark.MetricTests.test_perfect_and_reversed_order) ... ok
+test_prediction_ties_are_not_success (scripts.test.test_haze_benchmark.MetricTests.test_prediction_ties_are_not_success) ... ok
+test_scale_invariance (scripts.test.test_haze_benchmark.MetricTests.test_scale_invariance) ... ok
+test_spatial_direction_and_rank_residual (scripts.test.test_haze_benchmark.MetricTests.test_spatial_direction_and_rank_residual) ... ok
+test_spearman_ties_match_known_value (scripts.test.test_haze_benchmark.MetricTests.test_spearman_ties_match_known_value) ... ok
+test_tied_truth_pairs_excluded (scripts.test.test_haze_benchmark.MetricTests.test_tied_truth_pairs_excluded) ... ok
+test_gpu_timer_synchronizes_before_and_after_each_sample (scripts.test.test_haze_benchmark.PerformanceTests.test_gpu_timer_synchronizes_before_and_after_each_sample) ... ok
+test_latency_statistics_and_throughput (scripts.test.test_haze_benchmark.PerformanceTests.test_latency_statistics_and_throughput) ... ok
+test_partial_macs_for_known_convolution (scripts.test.test_haze_benchmark.PerformanceTests.test_partial_macs_for_known_convolution) ... ok
+test_unavailable_gpu_is_not_cpu_fallback (scripts.test.test_haze_benchmark.PerformanceTests.test_unavailable_gpu_is_not_cpu_fallback) ... ok
+test_warmup_and_cpu_memory_status (scripts.test.test_haze_benchmark.PerformanceTests.test_warmup_and_cpu_memory_status) ... ok
+test_generation_saves_independent_truth_and_repeatable_values (scripts.test.test_haze_benchmark.ProvenanceTests.test_generation_saves_independent_truth_and_repeatable_values) ... ok
+test_group_leakage_rejected (scripts.test.test_haze_benchmark.ProvenanceTests.test_group_leakage_rejected) ... ok
+test_json_never_silently_serializes_nan (scripts.test.test_haze_benchmark.ProvenanceTests.test_json_never_silently_serializes_nan) ... ok
+test_old_checkpoint_is_not_a_v1_accuracy_result (scripts.test.test_haze_benchmark.ProvenanceTests.test_old_checkpoint_is_not_a_v1_accuracy_result) ... ok
+test_same_content_under_different_group_rejected (scripts.test.test_haze_benchmark.ProvenanceTests.test_same_content_under_different_group_rejected) ... ok
+test_small_pipeline_records_missing_student (scripts.test.test_haze_benchmark.ProvenanceTests.test_small_pipeline_records_missing_student) ... dcp: 1/2 cases
+prior: 1/2 cases
+ok
+test_invalid_physics_inputs (scripts.test.test_haze_benchmark.SynthesisTests.test_invalid_physics_inputs) ... ok
+test_known_linear_mixture (scripts.test.test_haze_benchmark.SynthesisTests.test_known_linear_mixture) ... ok
+test_no_haze_preserves_scene (scripts.test.test_haze_benchmark.SynthesisTests.test_no_haze_preserves_scene) ... ok
+test_srgb_roundtrip (scripts.test.test_haze_benchmark.SynthesisTests.test_srgb_roundtrip) ... ok
+test_uniform_and_spatial_maps_are_reproducible (scripts.test.test_haze_benchmark.SynthesisTests.test_uniform_and_spatial_maps_are_reproducible) ... ok
+test_clean_pair_loader_collates_consistent_keys (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_clean_pair_loader_collates_consistent_keys) ... ok
+test_custom_unpaired_transform_is_rejected_for_pairs (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_custom_unpaired_transform_is_rejected_for_pairs) ... ok
+test_generated_manifest_loads_without_dropping_same_named_test_files (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_generated_manifest_loads_without_dropping_same_named_test_files) ... ok
+test_manifest_verifier_still_rejects_train_val_overlap_and_duplicates (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_manifest_verifier_still_rejects_train_val_overlap_and_duplicates) ... ok
+test_manifest_verifier_uses_official_source_directory (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_manifest_verifier_uses_official_source_directory) ... ok
+test_mismatched_native_pair_sizes_are_rejected (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_mismatched_native_pair_sizes_are_rejected) ... ok
+test_missing_clean_is_rejected_when_pair_is_requested (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_missing_clean_is_rejected_when_pair_is_requested) ... ok
+test_pair_augmentation_consumes_one_set_of_random_parameters (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_pair_augmentation_consumes_one_set_of_random_parameters) ... ok
+test_path_checker_uses_metadata_without_decoding_or_random_augmentation (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_path_checker_uses_metadata_without_decoding_or_random_augmentation) ... ok
+test_random_training_augmentation_is_shared_by_pair (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_random_training_augmentation_is_shared_by_pair) ... ok
+test_split_generator_rejects_invalid_or_missing_data_without_writing (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_split_generator_rejects_invalid_or_missing_data_without_writing) ... ok
+test_validation_pair_alignment (scripts.test.test_stage1_bugfixes.DataPipelineImplementationTests.test_validation_pair_alignment) ... ok
+test_checkpoint_from_previous_target_version_cannot_resume_silently (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_checkpoint_from_previous_target_version_cannot_resume_silently) ... ok
+test_constant_minmax_is_zero_for_supported_float_types (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_constant_minmax_is_zero_for_supported_float_types) ... ok
+test_extreme_images_are_finite_and_keep_shape (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_extreme_images_are_finite_and_keep_shape) ... ok
+test_guided_filter_preserves_constant_source_with_nonconstant_guide (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_guided_filter_preserves_constant_source_with_nonconstant_guide) ... ok
+test_guided_filter_preserves_constant_source_with_zero_guide (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_guided_filter_preserves_constant_source_with_zero_guide) ... ok
+test_horizontal_gradient_is_not_erased (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_horizontal_gradient_is_not_erased) ... ok
+test_invalid_shapes_are_rejected (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_invalid_shapes_are_rejected) ... ok
+test_invalid_windows_and_regularizers_are_rejected (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_invalid_windows_and_regularizers_are_rejected) ... ok
+test_local_means_match_existing_pixel_window_mean (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_local_means_match_existing_pixel_window_mean) ... ok
+test_local_means_preserve_constants_including_corners (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_local_means_preserve_constants_including_corners) ... ok
+test_min_pool_does_not_invent_dark_border_pixels (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_min_pool_does_not_invent_dark_border_pixels) ... ok
+test_nonbinary_constant_does_not_become_false_contrast_after_minmax (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_nonbinary_constant_does_not_become_false_contrast_after_minmax) ... ok
+test_noncontiguous_input (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_noncontiguous_input) ... ok
+test_nonfinite_or_out_of_range_images_are_rejected (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_nonfinite_or_out_of_range_images_are_rejected) ... ok
+test_prior_constants_remain_unchanged (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_prior_constants_remain_unchanged) ... ok
+test_radius_zero_is_identity (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_radius_zero_is_identity) ... ok
+test_spatial_minmax_matches_full_image_reduction (scripts.test.test_stage1_bugfixes.PriorImplementationTests.test_spatial_minmax_matches_full_image_reduction) ... ok
+test_incomplete_manifest_is_rejected (scripts.test.test_review_regressions.SplitRegressionTests.test_incomplete_manifest_is_rejected) ... ok
+test_official_test_is_unchanged (scripts.test.test_review_regressions.SplitRegressionTests.test_official_test_is_unchanged) ... ok
+test_overlapping_manifest_is_rejected (scripts.test.test_review_regressions.SplitRegressionTests.test_overlapping_manifest_is_rejected) ... ok
+test_partition_does_not_reset_global_random_state (scripts.test.test_review_regressions.SplitRegressionTests.test_partition_does_not_reset_global_random_state) ... ok
+test_train_first_creates_manifest_and_excludes_validation (scripts.test.test_review_regressions.SplitRegressionTests.test_train_first_creates_manifest_and_excludes_validation) ... ok
+test_train_first_without_manifest (scripts.test.test_review_regressions.SplitRegressionTests.test_train_first_without_manifest) ... ok
+test_validation_first_gives_same_partition (scripts.test.test_review_regressions.SplitRegressionTests.test_validation_first_gives_same_partition) ... ok
+test_config_file_is_read_and_cli_wins (scripts.test.test_review_regressions.TensorRegressionTests.test_config_file_is_read_and_cli_wins) ... ok
+test_latest_checkpoint_retains_best_loss_and_can_resume (scripts.test.test_review_regressions.TensorRegressionTests.test_latest_checkpoint_retains_best_loss_and_can_resume) ... ok
+test_normalization_is_independent_per_image_and_channel (scripts.test.test_review_regressions.TensorRegressionTests.test_normalization_is_independent_per_image_and_channel) ... ok
+test_normalization_preserves_horizontal_gradient (scripts.test.test_review_regressions.TensorRegressionTests.test_normalization_preserves_horizontal_gradient) ... ok
+test_constant_prediction_is_not_spatial_success (scripts.test.test_v1_acceptance.AcceptanceTests.test_constant_prediction_is_not_spatial_success) ... ok
+test_evaluation_rejects_config_mismatch (scripts.test.test_v1_acceptance.AcceptanceTests.test_evaluation_rejects_config_mismatch) ... ok
+test_evaluation_rejects_leakage_before_predictor (scripts.test.test_v1_acceptance.AcceptanceTests.test_evaluation_rejects_leakage_before_predictor) ... ok
+test_nonfinite_weights_rejected (scripts.test.test_v1_acceptance.AcceptanceTests.test_nonfinite_weights_rejected) ... ok
+test_spearman_matches_independent_scipy_with_ties (scripts.test.test_v1_acceptance.AcceptanceTests.test_spearman_matches_independent_scipy_with_ties) ... ok
+test_student_adapter_preserves_raw_prediction (scripts.test.test_v1_acceptance.AcceptanceTests.test_student_adapter_preserves_raw_prediction) ... ok
+test_student_fixture_uses_independent_truth_and_fair_inputs (scripts.test.test_v1_acceptance.AcceptanceTests.test_student_fixture_uses_independent_truth_and_fair_inputs) ... [WARN] Split file C:\Users\35017\AppData\Local\Temp\tmp2n0jal00\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmptb8c8wte\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmpt3_bju3d\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmpfmex_0z9\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmp3dc454em\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmplsc9u4yd\split.json not found, using default split
+[WARN] 27 samples missing clear image
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmph3h1g_g2\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmp2hb0x98p\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmp5zz4klkm\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmp6qf24f85\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmp0zm6em31\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmpq_ifr9v2\split.json not found, using default split
+[WARN] Split file C:\Users\35017\AppData\Local\Temp\tmp7lk5cxj8\split.json not found, using default split
+
+Loading checkpoint: C:\Users\35017\AppData\Local\Temp\tmparnb6qxp\latest.pth
+  Epoch: 2
+  Best val loss: 0.100000
+  Resuming from epoch 3
+student: 1/32 cases
+student: 21/32 cases
+ok
+
+----------------------------------------------------------------------
+Ran 71 tests in 6.534s
+
+OK

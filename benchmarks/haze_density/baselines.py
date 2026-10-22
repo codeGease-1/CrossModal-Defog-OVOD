@@ -53,7 +53,7 @@ def build_method(name, device, config, architecture_only=False):
                 raise ValueError('This benchmark requires the documented [0,1] student output')
             model = HazeDensityNet(base_channels=saved.get('base_channels', 32), use_sigmoid=True)
             model.load_state_dict(checkpoint['model_state_dict'], strict=True)
-            if not all(torch.isfinite(p).all() for p in model.parameters()):
+            if not all(torch.isfinite(p).all() for p in model.state_dict().values()):
                 raise ValueError('Checkpoint contains nonfinite weights')
             info.update({'checkpoint_sha256': sha256_file(checkpoint_path),
                          'checkpoint_config': saved, 'epoch': checkpoint['epoch'],

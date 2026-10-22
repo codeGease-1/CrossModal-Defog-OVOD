@@ -1,0 +1,7 @@
+﻿method,device,input_size,batch_size,warmup,repeats,precision,threads,status,reason,phase
+dcp,cuda,256,1,3,20,float32,1,NOT RUN,Requested GPU unavailable: cuda,all
+prior,cuda,256,1,3,20,float32,1,NOT RUN,Requested GPU unavailable: cuda,all
+student,cuda,256,1,3,20,float32,1,NOT RUN,Requested GPU unavailable: cuda,all
+dcp,cuda,512,1,3,20,float32,1,NOT RUN,Requested GPU unavailable: cuda,all
+prior,cuda,512,1,3,20,float32,1,NOT RUN,Requested GPU unavailable: cuda,all
+student,cuda,512,1,3,20,float32,1,NOT RUN,Requested GPU unavailable: cuda,all

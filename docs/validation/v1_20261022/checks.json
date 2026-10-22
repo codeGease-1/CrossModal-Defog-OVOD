@@ -1,0 +1,31 @@
+[
+  {
+    "name": "unit_tests_clean",
+    "command": [
+      "D:\\Desktop\\project\\CrossModal-Defog-OVOD\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "-m",
+      "unittest",
+      "scripts.test.test_haze_benchmark",
+      "scripts.test.test_stage1_bugfixes",
+      "scripts.test.test_review_regressions",
+      "scripts.test.test_v1_acceptance",
+      "scripts.test.test_minimal_notebook_benchmark",
+      "-v"
+    ],
+    "returncode": 0
+  },
+  {
+    "name": "static_check",
+    "command": [
+      "D:\\Desktop\\project\\CrossModal-Defog-OVOD\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "scripts/utils/static_check.py"
+    ],
+    "returncode": 0
+  }
+]

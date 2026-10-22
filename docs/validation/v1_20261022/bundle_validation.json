@@ -1,0 +1,20 @@
+{
+  "returncode": 0,
+  "command": [
+    "D:\\Desktop\\project\\CrossModal-Defog-OVOD\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "-m",
+    "unittest",
+    "scripts.test.test_haze_benchmark",
+    "scripts.test.test_stage1_bugfixes",
+    "scripts.test.test_review_regressions",
+    "scripts.test.test_v1_acceptance",
+    "-v"
+  ],
+  "bundle_sha256": "3701c1652a57c3a2ee2e25c66b4f22f53fb8c05abb5d59af2913a25c218fde73",
+  "file_count": 67,
+  "expected_tests": 71,
+  "scope": "Detached source package, CPU; NOT a Colab/GPU execution"
+}

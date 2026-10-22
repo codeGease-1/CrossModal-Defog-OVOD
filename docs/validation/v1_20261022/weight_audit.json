@@ -1,0 +1,28 @@
+{
+  "status": "NOT RUN",
+  "reason": "Checkpoint has missing/older prior version or no completed training epoch; NOT EVALUATED",
+  "path": "D:\\Desktop\\project\\CrossModal-Defog-OVOD\\experiments\\haze_density\\checkpoints\\best.pth",
+  "sha256": "37db90c8871e354b6fbafda790a8b33de0e0eeee46c80086e94a950f23d9ca32",
+  "epoch": 5,
+  "config": {
+    "dataset_root": "datasets/RSHaze+",
+    "split_file": "experiments/haze_density/rshazeplus_split.json",
+    "image_size": 256,
+    "batch_size": 4,
+    "num_workers": 2,
+    "pin_memory": true,
+    "base_channels": 32,
+    "use_sigmoid": true,
+    "epochs": 5,
+    "lr": 0.0001,
+    "amp": true,
+    "seed": 42,
+    "checkpoint_dir": "experiments/haze_density/checkpoints/formal",
+    "result_dir": "experiments/haze_density/results/formal",
+    "window_size": 15,
+    "guided_radius": 15,
+    "guided_eps": 0.01,
+    "resume": null
+  },
+  "training_scene_isolation": "UNVERIFIED"
+}

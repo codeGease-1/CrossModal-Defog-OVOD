@@ -33,7 +33,7 @@ def build():
 import base64, hashlib, io, pathlib, tempfile, zipfile, importlib.util
 if not pathlib.Path('/content').is_dir():
     raise RuntimeError('NOT RUN: 当前不是 Colab /content 环境，请选择 Colab 内核。')
-missing = [m for m in ['torch', 'numpy', 'PIL', 'yaml', 'matplotlib'] if importlib.util.find_spec(m) is None]
+missing = [m for m in ['torch', 'numpy', 'PIL', 'yaml', 'matplotlib', 'scipy'] if importlib.util.find_spec(m) is None]
 if missing:
     raise RuntimeError('NOT RUN: 缺少依赖 ' + ', '.join(missing) + '；安装 torch numpy pillow pyyaml matplotlib 后重试。')
 payload = base64.b64decode({encoded!r})

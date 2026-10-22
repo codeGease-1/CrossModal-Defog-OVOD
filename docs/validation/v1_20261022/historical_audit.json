@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_cases": 128,
+  "checked_predictions": 256,
+  "source_result_sha256": "b0b68f6f53bd4177e9c1f07beba040a21136cfe4dd15657f93f2475f6c33d589",
+  "max_synthesis_reconstruction_error": 0.0,
+  "max_saved_response_mean_error": 0.0,
+  "max_region_spearman_difference_vs_scipy": 1.1102230246251565e-16,
+  "methods": [
+    {
+      "method": "dcp",
+      "correct_pairs": 160,
+      "comparable_pairs": 160,
+      "pairwise_accuracy": 1.0,
+      "spearman": 0.9999999999999999,
+      "region_spearman": 0.9593153980364947,
+      "shuffled_region_spearman_mean": 0.006471957168238265
+    },
+    {
+      "method": "prior",
+      "correct_pairs": 35,
+      "comparable_pairs": 160,
+      "pairwise_accuracy": 0.21875,
+      "spearman": -0.5562499999999999,
+      "region_spearman": 0.9558001212670796,
+      "shuffled_region_spearman_mean": 0.0015674031039614872
+    }
+  ],
+  "spatial_controls": {
+    "constant_prediction_correlation": null,
+    "constant_prediction_reason": "undefined variance, not zero/perfect",
+    "known_template_spearman": 1.0,
+    "known_template_reason": "same spatial map per group/pattern; a template oracle ignoring RGB scores 1. This is a protocol limitation, not an image method.",
+    "permutations_per_image": 100,
+    "seed": 42
+  },
+  "splits": [
+    "test"
+  ],
+  "geographic_groups": [
+    "RSHaze_G_test_overlapping_area_01"
+  ]
+}

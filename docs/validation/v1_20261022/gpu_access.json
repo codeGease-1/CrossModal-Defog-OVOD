@@ -1,0 +1,10 @@
+{
+  "status": "NOT RUN",
+  "local_cuda_available": false,
+  "local_torch_build": "2.14.1+cpu",
+  "connection": "User confirmed VS Code ipynb Colab kernel selector, not SSH",
+  "ssh_inspection": "Real user config includes AtomGit only; explicit ssh -F user_config -G colab resolves literal hostname colab, port22; no Colab alias configured",
+  "remote_execution": "No callable connector to VS Code notebook kernel in this session; no remote command executed",
+  "environment_change": "none; no dependencies installed",
+  "gpu_measurement_count": 0
+}

@@ -1,5 +1,28 @@
 # 独立雾密度 Benchmark 使用说明
 
+2026-10-22 复核与限制见 [V1 验收报告](../v1_acceptance_report.md)。当前正式验收 NO-GO，学生和 GPU 保留 NOT RUN。原算法参数未调整。
+
+补充验收实验（复用本地 `experiments/haze_benchmark/source_samples`，输出必须是新目录）：
+
+```bash
+python scripts/benchmark/accept_v1.py --output experiments/my_v1_acceptance --prepare-only
+# 先检查生成的 scenes.json / screened_rois.png；助理暂定地物标签需人工确认。
+python scripts/benchmark/accept_v1.py --output experiments/my_v1_acceptance --run-prepared
+python -m benchmarks.haze_density report --output experiments/my_v1_acceptance/results --max-figures 16
+python -m unittest scripts.test.test_v1_acceptance -v
+```
+
+该实验明确分开历史独立复算与新增 256 样本旋转敏感性试验；`scenes_portable.json` 可从本地输出目录复用，原始文件 SHA256 必须匹配。SciPy 统计在独立子进程运行，避免本机与 torch 的 OpenMP 冲突。评测入口现在再次拒绝同组跨划分、重复 case ID、场景元数据不一致，以及合成配置不匹配；checkpoint/methods 可以独立选择。
+
+VS Code 选择 Colab notebook 内核不会建立可供本轮命令工具使用的 SSH 连接。需在该内核运行更新后的独立 notebook；已有修复后权重可传 `--checkpoint`，否则学生正确性 NOT RUN。GPU 单独运行可用下列命令（无 GPU 时明确 NOT RUN，绝不回退 CPU）：
+
+```bash
+python -m benchmarks.haze_density performance --output experiments/new_gpu_run --devices cuda
+# 有有效权重时追加 --checkpoint /path/to/current_v3_best.pth
+```
+
+随机学生只统计结构成本。GPU 前向包含先验内部输入校验带来的同步开销，不能冒称纯 kernel 时间。峰值为 PyTorch allocator 范围，CPU/GPU 数字不可混算。训练方案及冻结条件见验收报告。
+
 阶段 2 只评价雾密度模块，不训练、不去雾、不做目标检测。先阅读 [方案](../benchmark_plan.md) 和 [实际科研审查报告](../stage_2_research_review.md)。
 
 ## 给初学者的解释

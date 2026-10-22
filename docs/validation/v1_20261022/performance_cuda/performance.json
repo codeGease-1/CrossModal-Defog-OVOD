@@ -1,0 +1,189 @@
+{
+  "status": "NOT RUN",
+  "environment": {
+    "timestamp_utc": "2026-10-21T16:38:14.649017+00:00",
+    "benchmark_version": "haze_benchmark_v1",
+    "seed": 42,
+    "config": {
+      "seed": 42,
+      "image_size": 256,
+      "domain": "linear_srgb",
+      "uniform_t": [
+        1.0,
+        0.9,
+        0.75,
+        0.6,
+        0.4
+      ],
+      "airlights": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.75,
+          0.8,
+          0.9
+        ]
+      ],
+      "brightness": [
+        1.0,
+        0.7
+      ],
+      "spatial_patterns": [
+        "gradient",
+        "blob",
+        "regions"
+      ],
+      "methods": [
+        "dcp",
+        "prior",
+        "student"
+      ],
+      "checkpoint": null,
+      "prior": {
+        "window_size": 15,
+        "guided_radius": 15,
+        "guided_eps": 0.01
+      },
+      "region_grid": 4,
+      "tie_tolerance": 1e-06,
+      "response_reference_threshold": 0.7,
+      "threads": 1,
+      "performance": {
+        "sizes": [
+          256,
+          512
+        ],
+        "batch_size": 1,
+        "warmup": 3,
+        "repeats": 20,
+        "devices": [
+          "cpu",
+          "cuda"
+        ],
+        "architecture_only_when_untrained": true
+      }
+    },
+    "git_commit": "03d7de9dc7e0b45dbcc7de29f0d6416062bb0694",
+    "git_status": "M benchmarks/haze_density/baselines.py\n M benchmarks/haze_density/evaluate.py\n M benchmarks/haze_density/performance.py\n M \"docs/\\351\\233\\276\\345\\257\\206\\345\\272\\246\\347\\275\\221\\347\\273\\234_\\346\\234\\200\\347\\256\\200\\345\\256\\236\\351\\252\\214\\346\\265\\201\\347\\250\\213.ipynb\"\n?? scripts/benchmark/accept_v1.py\n?? scripts/test/test_v1_acceptance.py",
+    "bundle_origin": null,
+    "source_sha256": {
+      "benchmarks\\haze_density\\__init__.py": "278896646221126a1e4fbb58c8f1b661998490701fbd96da1fd1415d9f900663",
+      "benchmarks\\haze_density\\__main__.py": "6d9fea9c388f1c61c627776d122f7ebd082f614bcf4eca972fc7eff4a0ce0739",
+      "benchmarks\\haze_density\\audit.py": "6750f0ef7c17d6da67e15d0a24e22724cb59ed1f1ff03c2073434a775f2a0d41",
+      "benchmarks\\haze_density\\baselines.py": "51b08b54a507bf3fba05185066898e2d3c81c8062c2aacff35fc1a12c81ff64a",
+      "benchmarks\\haze_density\\common.py": "a3a017f8cb7ecf915e640840a8bb9f875f997dfab2b6eb6b5148f6c3cbb38e4b",
+      "benchmarks\\haze_density\\evaluate.py": "593f541a1a01928f1fe15edd784ba38682ad5a67e2730b24115395cb8af23ef0",
+      "benchmarks\\haze_density\\metrics.py": "514f8360d1517b98a51983db234ca6981e3303840ee9a782f3c338f3115770e0",
+      "benchmarks\\haze_density\\performance.py": "de96b9ba6383a7cd45e74095a62834f908cf85c61db36b70193547db26571e73",
+      "benchmarks\\haze_density\\report.py": "d8a19554c2bb98547d7d55dad60edc073068f9d56ec608ec9c92890b5008e2cb",
+      "benchmarks\\haze_density\\synthetic.py": "713ae32c5a73d74d474c5a90f822fb2819dd43c3d15ab50d068451e0992b969a",
+      "src\\models\\haze_density\\__init__.py": "fefb238da0193dfd6557a8fad729c53d25e6845a6220a10f7cd370221f90c8db",
+      "src\\models\\haze_density\\basic_blocks.py": "d512f111d3248d577430f0b58f63860fadf7b591b5ab6775067d7d277a796c66",
+      "src\\models\\haze_density\\decoder.py": "462400cdc247a8dc737392429b591cb560ecdec950a2e15b551938b15ceecd5f",
+      "src\\models\\haze_density\\eca.py": "b14312bfaae56c9ccace456936bacbe0f631535863bb01635098c3f46d3f9e54",
+      "src\\models\\haze_density\\encoder.py": "8d2e236c34ea55a12ef1d0f07d38d1c858987a7cfc03d967638452509a9f9f2c",
+      "src\\models\\haze_density\\fusion.py": "668c724ecc7b1c1250cfc8975f64914ded9e3d5f4a24f854f3c0b81cf485a7ec",
+      "src\\models\\haze_density\\guided_filter.py": "cb91992f5e9729bf0e5b9b7f2e1e5cd7327f593e1f1858054c3ee308efc276cd",
+      "src\\models\\haze_density\\haze_density_net.py": "42f953fa6035b28d705fbb357791e35b29f475fd3d433cd17858be7a2f322e07",
+      "src\\models\\haze_density\\multiscale.py": "d22ee816746f2b57b2c9e7f7bf591a7fcf1ac2ea84b3b7f612757afa027258aa",
+      "src\\models\\haze_density\\physical_prior.py": "d9ab2afa31fe96e0083872ca99a25dc53d3843e453dbe2d64316b2d701ab49eb",
+      "src\\models\\haze_density\\residual_blocks.py": "ae21c346aad165d3e964bc80f84e601ac24ed53b923ff678f5dfdf90119f5283"
+    },
+    "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:29:05) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "logical_cpu_count": 32,
+    "numpy": "2.4.6",
+    "torch": "2.14.1+cpu",
+    "cuda_build": null,
+    "cuda_available": false,
+    "cudnn": null,
+    "torch_threads": 1,
+    "gpu": [],
+    "deterministic_algorithms": true
+  },
+  "measurements": [
+    {
+      "method": "dcp",
+      "device": "cuda",
+      "input_size": 256,
+      "batch_size": 1,
+      "warmup": 3,
+      "repeats": 20,
+      "precision": "float32",
+      "threads": 1,
+      "status": "NOT RUN",
+      "reason": "Requested GPU unavailable: cuda",
+      "phase": "all"
+    },
+    {
+      "method": "prior",
+      "device": "cuda",
+      "input_size": 256,
+      "batch_size": 1,
+      "warmup": 3,
+      "repeats": 20,
+      "precision": "float32",
+      "threads": 1,
+      "status": "NOT RUN",
+      "reason": "Requested GPU unavailable: cuda",
+      "phase": "all"
+    },
+    {
+      "method": "student",
+      "device": "cuda",
+      "input_size": 256,
+      "batch_size": 1,
+      "warmup": 3,
+      "repeats": 20,
+      "precision": "float32",
+      "threads": 1,
+      "status": "NOT RUN",
+      "reason": "Requested GPU unavailable: cuda",
+      "phase": "all"
+    },
+    {
+      "method": "dcp",
+      "device": "cuda",
+      "input_size": 512,
+      "batch_size": 1,
+      "warmup": 3,
+      "repeats": 20,
+      "precision": "float32",
+      "threads": 1,
+      "status": "NOT RUN",
+      "reason": "Requested GPU unavailable: cuda",
+      "phase": "all"
+    },
+    {
+      "method": "prior",
+      "device": "cuda",
+      "input_size": 512,
+      "batch_size": 1,
+      "warmup": 3,
+      "repeats": 20,
+      "precision": "float32",
+      "threads": 1,
+      "status": "NOT RUN",
+      "reason": "Requested GPU unavailable: cuda",
+      "phase": "all"
+    },
+    {
+      "method": "student",
+      "device": "cuda",
+      "input_size": 512,
+      "batch_size": 1,
+      "warmup": 3,
+      "repeats": 20,
+      "precision": "float32",
+      "threads": 1,
+      "status": "NOT RUN",
+      "reason": "Requested GPU unavailable: cuda",
+      "phase": "all"
+    }
+  ],
+  "warning": "Device-specific descriptive measurements. Random-weight student is architecture-only, not an accuracy baseline."
+}

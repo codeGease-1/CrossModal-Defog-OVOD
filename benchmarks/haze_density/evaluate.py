@@ -41,9 +41,30 @@ def summarize(image_rows, rankings):
     return summaries
 
 
+def validate_dataset(data, config):
+    """Recheck split isolation at evaluation, including externally supplied manifests."""
+    groups, scenes, identities = {}, {}, set()
+    for case in data['cases']:
+        if case['case_id'] in identities:
+            raise ValueError('Duplicate benchmark case ID')
+        identities.add(case['case_id'])
+        if case['split'] not in ('train', 'calibration', 'test'):
+            raise ValueError('Invalid benchmark split')
+        if groups.setdefault(case['group_id'], case['split']) != case['split']:
+            raise ValueError('Scene-group leakage across splits')
+        identity = (case['group_id'], case['split'], case['land_cover'])
+        if scenes.setdefault(case['scene_id'], identity) != identity:
+            raise ValueError('Inconsistent source-scene metadata')
+    # Runtime method/checkpoint choices may differ; synthesis must remain frozen.
+    for key in ('seed', 'image_size', 'domain', 'uniform_t', 'airlights', 'brightness', 'spatial_patterns'):
+        if data['config'].get(key) != config.get(key):
+            raise ValueError(f'Dataset/config mismatch: {key}')
+
+
 def evaluate(dataset_directory, output, config, device='cpu', split='test', methods=None):
     dataset_directory = Path(dataset_directory)
     data = read_json(dataset_directory / 'dataset.json')
+    validate_dataset(data, config)
     output = fresh_directory(output)
     cases = [r for r in data['cases'] if r['split'] == split]
     if not cases:
@@ -66,6 +87,8 @@ def evaluate(dataset_directory, output, config, device='cpu', split='test', meth
                 for index, case in enumerate(cases):
                     with np.load(dataset_directory / case['path'], allow_pickle=False) as arrays:
                         rgb, t, clear = arrays['hazy_rgb'], arrays['transmission'], arrays['clear_rgb']
+                    if not np.isfinite(t).all() or t.ndim != 2 or t.min() < 0 or t.max() > 1:
+                        raise ValueError('Invalid saved transmission truth')
                     if not np.isfinite(rgb).all() or rgb.min() < 0 or rgb.max() > 1:
                         raise ValueError('Invalid saved RGB input')
                     tensor = torch.from_numpy(np.ascontiguousarray(rgb.transpose(2, 0, 1))).unsqueeze(0).to(device)

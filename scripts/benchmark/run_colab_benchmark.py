@@ -37,7 +37,8 @@ def main():
             raise RuntimeError(f'{name}: see {output / (name + ".log")}')
 
     run('unit_tests', ['-m', 'unittest', 'scripts.test.test_haze_benchmark',
-                      'scripts.test.test_stage1_bugfixes', 'scripts.test.test_review_regressions'])
+                      'scripts.test.test_stage1_bugfixes', 'scripts.test.test_review_regressions',
+                      'scripts.test.test_v1_acceptance'])
     spec = json.loads((ROOT / 'configs/haze_benchmark_pilot_scenes.json').read_text(encoding='utf-8'))
     sources = output / 'source_samples'
     sources.mkdir()
