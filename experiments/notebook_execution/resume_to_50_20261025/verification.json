@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "starting_epoch": 5,
+  "target_epoch": 50,
+  "added_epochs": 45,
+  "log_rows": 50,
+  "first_five_log_rows_unchanged": true,
+  "split_and_training_config_unchanged": true,
+  "best_epoch": 48,
+  "best_val_loss": 0.006716976755365291,
+  "latest_epoch": 50,
+  "optimizer_step_min": 80173.0,
+  "optimizer_step_max": 80173.0,
+  "best_checkpoint_sha256": "4d4d09d6e7c584658757bc1c35f1579c85a209b3af78395da1b4cd3abda72651",
+  "notebook_code_cells": 10,
+  "notebook_error_outputs": 0,
+  "test_images_evaluated": 930,
+  "validation_images": 6,
+  "test_visualizations": 48,
+  "benchmark": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z",
+  "benchmark_stages": [
+    {
+      "stage": "unit_tests",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "minimal_generate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "minimal_evaluate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "minimal_report",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "full_generate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "full_evaluate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "full_report",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "performance",
+      "status": "PASS",
+      "exit_code": 0
+    }
+  ],
+  "performance_measurements": 24,
+  "benchmark_ranking_accuracy_epoch5": 0.98125,
+  "benchmark_ranking_accuracy_final": 0.775
+}

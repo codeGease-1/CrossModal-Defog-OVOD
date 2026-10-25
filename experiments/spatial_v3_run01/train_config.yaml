@@ -1,0 +1,17 @@
+dataset_root: /mnt/RSHaze+
+split_file: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/rshazeplus_split.json
+image_size: 256
+batch_size: 4
+num_workers: 2
+pin_memory: true
+base_channels: 32
+use_sigmoid: true
+epochs: 50
+lr: 0.0001
+amp: true
+seed: 42
+checkpoint_dir: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints
+result_dir: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/results
+window_size: 15
+guided_radius: 15
+guided_eps: 0.01

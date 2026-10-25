@@ -1,0 +1,17 @@
+{
+  "checkpoint": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth",
+  "epoch": 5,
+  "prior_version": "spatial_minmax_valid_boundary_v3",
+  "split": "val",
+  "image_size": 256,
+  "prior_parameters": {
+    "window_size": 15,
+    "guided_radius": 15,
+    "guided_eps": 0.01
+  },
+  "saved_per_subset": {
+    "RSHaze_G": 2,
+    "RSHaze_L": 2,
+    "RSHaze_S": 2
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "data_kind": "real_clear_remote_sensing",
+  "selection_seed": 42,
+  "source_record": "https://zenodo.org/records/13837162",
+  "scenes": [
+    {
+      "scene_id": "G_test_1053",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1053.png",
+      "split": "test",
+      "land_cover": "vegetation",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1053.png",
+      "source_sha256": "d1c2d1a564046633fcf532fce09287cb00135573536368d27d3d57569a3ffd3f",
+      "roi": [
+        285,
+        250,
+        512,
+        512
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group."
+    },
+    {
+      "scene_id": "G_test_1072",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1072.png",
+      "split": "test",
+      "land_cover": "water",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1072.png",
+      "source_sha256": "190072204faeafe0a8279635b0c2bef2e742a82d1db54ee2089c523134e832ee",
+      "roi": [
+        70,
+        220,
+        420,
+        360
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group."
+    },
+    {
+      "scene_id": "G_test_1126",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1126.png",
+      "split": "test",
+      "land_cover": "bare_soil",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1126.png",
+      "source_sha256": "440200b9c98a44b5bdd688da4a83bedb47c5d7e3bafb5bf0022f91412c7a5714",
+      "roi": [
+        35,
+        120,
+        305,
+        360
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group."
+    },
+    {
+      "scene_id": "G_test_1328",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1328.png",
+      "split": "test",
+      "land_cover": "urban",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1328.png",
+      "source_sha256": "32f7d841b4d6c689f79d0fb943673478b839d00d7241b3a1065a247ed1b26bb2",
+      "roi": [
+        150,
+        0,
+        500,
+        240
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group."
+    }
+  ],
+  "sampling_note": "Four land-cover ROIs selected from eight seeded official clean samples BEFORE inference. All one conservatively grouped geographic area; not four independent areas."
+}

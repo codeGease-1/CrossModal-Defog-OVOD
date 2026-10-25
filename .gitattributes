@@ -1,0 +1,7 @@
+# Preserve experiment bytes so recorded SHA256 hashes verify on every platform.
+/experiments/** -text
+
+# Original CSV line endings and captured log/report spacing are archival data.
+/experiments/**/*.csv whitespace=cr-at-eol
+/experiments/**/*.log whitespace=-blank-at-eol,-blank-at-eof
+/experiments/**/*.txt whitespace=-blank-at-eof

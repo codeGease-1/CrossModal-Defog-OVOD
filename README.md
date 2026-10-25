@@ -6,7 +6,7 @@
 
 最近更新：2026-10-25。`v1-nocolab` 已切换为通用 GPU 服务器流程，支持恒源云等平台，数据和输出路径可配置。阶段 1 必要修复已完成，详见 [修复报告](docs/stage_1_bugfix_report.md)、[项目状态](docs/project_status.md) 与 [首次审查记录](docs/project_review.md)。
 
-阶段 2 已新增独立雾密度 Benchmark，并实际完成 128 个受控合成样本的 CPU 评价。三先验在本次单地理区域试验中，均匀雾排序准确率为 21.88%，空间区域相关为 0.956；这两种能力不能混为一谈。学生正确性及 GPU 结果尚未评测。**最简实验流程 notebook 第 8 节可直接运行此 Benchmark**。见 [科研审查报告](docs/stage_2_research_review.md)、[复现说明](docs/guides/haze_density_benchmark.md) 与 [独立 Benchmark notebook](docs/haze_density_benchmark.ipynb)。
+阶段 2 已新增独立雾密度 Benchmark，并实际完成 128 个受控合成样本的评价。三先验在本次单地理区域试验中，均匀雾排序准确率为 21.88%，空间区域相关为 0.956；这两种能力不能混为一谈。后续已在 V100 上完成 5 轮训练、续训至累计 50 轮及 CPU/GPU 评测：伪标签拟合误差下降，学生网络的独立排序准确率由 98.125% 降至 77.500%。两版权重和完整数值结果见 [精选实验归档](experiments/README.md)。**最简实验流程 notebook 第 8 节可直接运行此 Benchmark**。见 [科研审查报告](docs/stage_2_research_review.md)、[复现说明](docs/guides/haze_density_benchmark.md) 与 [独立 Benchmark notebook](docs/haze_density_benchmark.ipynb)。
 
 ## 建议阅读顺序
 
@@ -46,7 +46,7 @@ scripts/train/              8 图过拟合、正式训练
 scripts/evaluate/           测试评估、预测分布审计
 scripts/test/               模块与回归检查
 scripts/utils/              静态检查、环境检查
-experiments/                本机/GPU 服务器生成的实验，默认不提交权重
+experiments/                精选实验报告、指标与权重；其余产物默认忽略
 docs/                       指南、状态与历史阶段记录
 tools/                      历史迁移辅助工具，日常训练无需运行
 ```

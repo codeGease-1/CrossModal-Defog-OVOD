@@ -1,0 +1,258 @@
+>>> RESTORE KERNEL VARIABLES FROM CELL 2
+
+============================================================
+CrossModal-Defog-OVOD - 通用环境初始化
+============================================================
+
+项目根目录：/mnt/CrossModal-Defog-OVOD
+
+============================================================
+PyTorch 环境检查
+============================================================
+✓ PyTorch version: 2.4.1+cu124
+✓ CUDA available: True
+✓ CUDA version: 12.4
+✓ GPU count: 1
+  GPU 0: Tesla V100-SXM2-16GB
+    Memory: 15.77 GB
+    Compute Capability: 7.0
+
+============================================================
+依赖检查
+============================================================
+✓ torchvision
+✓ opencv
+✓ numpy
+✓ yaml
+✓ tqdm
+✓ Pillow
+✓ matplotlib
+✓ scipy
+
+============================================================
+目录检查
+============================================================
+✓ experiments/haze_density/checkpoints
+✓ experiments/haze_density/logs
+✓ experiments/haze_density/output
+
+============================================================
+配置摘要
+============================================================
+amp: True
+image_size: 256
+batch_size: 4
+base_channels: 32
+lr: 0.0001
+epochs: 50
+checkpoint_dir: experiments/haze_density/checkpoints/spatial_v3
+result_dir: experiments/haze_density/results/spatial_v3
+
+============================================================
+✓ 环境初始化完成！
+============================================================
+
+下一步:
+  1. 运行 smoke test: python scripts/utils/smoke_test.py
+  2. 按 docs/雾密度网络_最简实验流程.md 准备数据、持久化实验配置并训练
+
+Branch: v1-nocolab
+Commit: 2b549204e679ede504b25d623bd3199397d5814f
+Prior: spatial_minmax_valid_boundary_v3
+Python: /usr/bin/python
+PyTorch: 2.4.1+cu124; CUDA: True
+GPU: Tesla V100-SXM2-16GB
+>>> RESTORE KERNEL VARIABLES FROM CELL 6
+RSHaze_G: 官方 train/test 目录检查通过
+RSHaze_L: 官方 train/test 目录检查通过
+RSHaze_S: 官方 train/test 目录检查通过
+数据目录： /mnt/RSHaze+
+>>> RESTORE KERNEL VARIABLES FROM CELL 8
+
+============================================================
+Split JSON 验证
+============================================================
+
+检查 JSON schema...
+train entries: 6417
+val entries: 713
+test entries: 930
+
+Train unique keys: 6417
+Val unique keys: 713
+Test unique keys: 930
+
+[OK] Train/Val: No overlap
+[OK] Train/Test: No overlap
+[OK] Val/Test: No overlap
+
+内部重复检查:
+[OK] Train: No internal duplicates
+[OK] Val: No internal duplicates
+[OK] Test: No internal duplicates
+
+============================================================
+Subset 分布
+============================================================
+
+Train:
+  RSHaze_G: 900
+  RSHaze_L: 4617
+  RSHaze_S: 900
+
+Val:
+  RSHaze_G: 100
+  RSHaze_L: 513
+  RSHaze_S: 100
+
+Test:
+  RSHaze_G: 330
+  RSHaze_L: 270
+  RSHaze_S: 330
+
+[OK] Split JSON 验证通过！
+仅通过清单结构/原始路径检查；内容重复和同场景泄漏尚未核查。
+train: 6417 images
+val: 713 images
+test: 930 images
+Experiment: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01
+Config: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/train_config.yaml
+请确认持久化存储：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01
+>>> RESTORE KERNEL VARIABLES FROM CELL 16
+项目代码已解包： /tmp/stage2_haze_p5po5v9c
+独立评测代码： /tmp/stage2_haze_p5po5v9c
+
+>>> CELL 17 START 2026-10-25T11:43:06.364556+00:00
+学生网络将使用本实验当前版本权重： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+独立评测结果将保存在： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z
+
+RUN: unit_tests
+..................dcp: 1/2 cases
+prior: 1/2 cases
+......[WARN] Split file /tmp/tmpqrn7tnqg/split.json not found, using default split
+.[WARN] Split file /tmp/tmpnjpn2xwk/split.json not found, using default split
+..[WARN] Split file /tmp/tmp22t0qjl4/split.json not found, using default split
+.[WARN] Split file /tmp/tmprzlh8tw5/split.json not found, using default split
+.[WARN] Split file /tmp/tmp20jqk9l4/split.json not found, using default split
+.[WARN] Split file /tmp/tmpntq4vjos/split.json not found, using default split
+[WARN] 27 samples missing clear image
+..[WARN] Split file /tmp/tmpr175k936/split.json not found, using default split
+.[WARN] Split file /tmp/tmpq1n6cmq3/split.json not found, using default split
+..[WARN] Split file /tmp/tmpqdksta65/split.json not found, using default split
+./tmp/stage2_haze_p5po5v9c/scripts/train/train_haze_density.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location='cpu')
+.................[WARN] Split file /tmp/tmp9bqft632/split.json not found, using default split
+..[WARN] Split file /tmp/tmp3t1aqqoq/split.json not found, using default split
+..[WARN] Split file /tmp/tmp9_mnrbui/split.json not found, using default split
+..[WARN] Split file /tmp/tmp3rsz2l1m/split.json not found, using default split
+..
+Loading checkpoint: /tmp/tmpg037szq5/latest.pth
+  Epoch: 2
+  Best val loss: 0.100000
+  Resuming from epoch 3
+.........student: 1/32 cases
+student: 21/32 cases
+.
+----------------------------------------------------------------------
+Ran 71 tests in 2.477s
+
+OK
+
+
+RUN: minimal_generate
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: minimal_evaluate
+dcp: 1/20 cases
+prior: 1/20 cases
+student: 1/20 cases
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: minimal_report
+/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/minimal_results/report.md
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: full_generate
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: full_evaluate
+dcp: 1/128 cases
+dcp: 21/128 cases
+dcp: 41/128 cases
+dcp: 61/128 cases
+dcp: 81/128 cases
+dcp: 101/128 cases
+dcp: 121/128 cases
+prior: 1/128 cases
+prior: 21/128 cases
+prior: 41/128 cases
+prior: 61/128 cases
+prior: 81/128 cases
+prior: 101/128 cases
+prior: 121/128 cases
+student: 1/128 cases
+student: 21/128 cases
+student: 41/128 cases
+student: 61/128 cases
+student: 81/128 cases
+student: 101/128 cases
+student: 121/128 cases
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: full_report
+/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/report.md
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: performance
+PASS performance: dcp cpu 256
+PASS performance: prior cpu 256
+PASS performance: student cpu 256
+PASS performance: dcp cpu 512
+PASS performance: prior cpu 512
+PASS performance: student cpu 512
+PASS performance: dcp cuda 256
+PASS performance: prior cuda 256
+PASS performance: student cuda 256
+PASS performance: dcp cuda 512
+PASS performance: prior cuda 512
+PASS performance: student cuda 512
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+Completed. Read method-level statuses; PASS does not mean the algorithm is accurate. Results: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z
+>>> CELL 17 OK
+
+>>> CELL 18 START 2026-10-25T11:49:07.733573+00:00
+各阶段执行状态： [{'stage': 'unit_tests', 'status': 'PASS', 'exit_code': 0}, {'stage': 'minimal_generate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'minimal_evaluate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'minimal_report', 'status': 'PASS', 'exit_code': 0}, {'stage': 'full_generate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'full_evaluate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'full_report', 'status': 'PASS', 'exit_code': 0}, {'stage': 'performance', 'status': 'PASS', 'exit_code': 0}]
+完整 CSV、逐图结果、真值和固定尺度可视化： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z
+>>> CELL 18 OK
+{
+  "notebook": "/mnt/CrossModal-Defog-OVOD/docs/雾密度网络_最简实验流程.ipynb",
+  "python": "/usr/bin/python",
+  "dataset": "/mnt/RSHaze+",
+  "completed_cells": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    17,
+    18
+  ],
+  "status": "completed",
+  "started_at": "2026-10-25T11:26:23.637553+00:00",
+  "recovery": {
+    "started_at": "2026-10-25T11:42:42.623511+00:00",
+    "reason": "CUDA deterministic CuBLAS requires CUBLAS_WORKSPACE_CONFIG",
+    "action": "Set :4096:8 before child startup; reuse completed training and test evaluation"
+  },
+  "finished_at": "2026-10-25T11:49:09.718794+00:00"
+}

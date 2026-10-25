@@ -1,0 +1,42 @@
+[
+  {
+    "stage": "unit_tests",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "stage": "minimal_generate",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "stage": "minimal_evaluate",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "stage": "minimal_report",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "stage": "full_generate",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "stage": "full_evaluate",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "stage": "full_report",
+    "status": "PASS",
+    "exit_code": 0
+  },
+  {
+    "stage": "performance",
+    "status": "PASS",
+    "exit_code": 0
+  }
+]

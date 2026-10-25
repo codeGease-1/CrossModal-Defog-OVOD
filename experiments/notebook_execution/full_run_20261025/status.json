@@ -1,0 +1,25 @@
+{
+  "notebook": "/mnt/CrossModal-Defog-OVOD/docs/雾密度网络_最简实验流程.ipynb",
+  "python": "/usr/bin/python",
+  "dataset": "/mnt/RSHaze+",
+  "completed_cells": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    17,
+    18
+  ],
+  "status": "completed",
+  "started_at": "2026-10-25T11:26:23.637553+00:00",
+  "recovery": {
+    "started_at": "2026-10-25T11:42:42.623511+00:00",
+    "reason": "CUDA deterministic CuBLAS requires CUBLAS_WORKSPACE_CONFIG",
+    "action": "Set :4096:8 before child startup; reuse completed training and test evaluation"
+  },
+  "finished_at": "2026-10-25T11:49:09.718794+00:00"
+}

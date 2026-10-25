@@ -1,0 +1,64 @@
+Stage 5E: HazeDensityNet Test Evaluation Report
+============================================================
+
+Checkpoint Information:
+  Path: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+  Epoch: 48
+  Val Loss: 0.006716976755365291
+  Checkpoint prior version: spatial_minmax_valid_boundary_v3
+  Evaluation prior version: spatial_minmax_valid_boundary_v3
+  Physical prior: PhysicalPriorModule(window_size=15, guided_radius=15, guided_eps=0.01)
+  Image size: 256
+  Metrics measure agreement with pseudo labels, not physical density.
+
+Dataset Information:
+  Total test samples: 930
+  Subset counts: {'RSHaze_G': 330, 'RSHaze_L': 270, 'RSHaze_S': 330}
+
+Overall Metrics:
+  MSE: 0.006246
+  MAE: 0.060457
+  RMSE: 0.079034
+  Pearson: 0.856893
+
+Metrics by Subset:
+
+RSHaze_G:
+  MSE: 0.006192
+  MAE: 0.059823
+  RMSE: 0.078687
+  Pearson: 0.851949
+
+RSHaze_L:
+  MSE: 0.008295
+  MAE: 0.071206
+  RMSE: 0.091079
+  Pearson: 0.854329
+
+RSHaze_S:
+  MSE: 0.004625
+  MAE: 0.052297
+  RMSE: 0.068004
+  Pearson: 0.867046
+
+Prediction Distribution:
+  mean: 0.493237
+  std: 0.130173
+  min: 0.000000
+  max: 1.000000
+  p5: 0.313761
+  p25: 0.409576
+  p50: 0.471885
+  p75: 0.571627
+  p95: 0.720709
+
+Target Distribution:
+  mean: 0.481251
+  std: 0.151495
+  min: 0.107890
+  max: 0.979805
+  p5: 0.280742
+  p25: 0.365199
+  p50: 0.447665
+  p75: 0.579955
+  p95: 0.774369

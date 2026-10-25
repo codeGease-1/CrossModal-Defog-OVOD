@@ -1,0 +1,821 @@
+{
+  "status": "PASS",
+  "data_kind": "real_clear_remote_sensing",
+  "profile": "minimal",
+  "source_manifest_sha256": "b90196c9d85c3400092547ce46f61629da6826d5ef224ce90bab35845ffa682d",
+  "sources": [
+    {
+      "scene_id": "G_test_1053",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1053.png",
+      "split": "test",
+      "land_cover": "vegetation",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1053.png",
+      "source_sha256": "d1c2d1a564046633fcf532fce09287cb00135573536368d27d3d57569a3ffd3f",
+      "roi": [
+        285,
+        250,
+        512,
+        512
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group.",
+      "resolved_path": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/source_samples/G_test_1053.png",
+      "pixel_sha256": "f76f8be9c1b5aca6d1a17c16dc57e360590400ed612215e126558745394ac28c",
+      "native_shape": [
+        512,
+        512,
+        3
+      ]
+    },
+    {
+      "scene_id": "G_test_1072",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1072.png",
+      "split": "test",
+      "land_cover": "water",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1072.png",
+      "source_sha256": "190072204faeafe0a8279635b0c2bef2e742a82d1db54ee2089c523134e832ee",
+      "roi": [
+        70,
+        220,
+        420,
+        360
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group.",
+      "resolved_path": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/source_samples/G_test_1072.png",
+      "pixel_sha256": "6596bf3852af38608a0d17f942ab3158e7a1b69288c57aaaf467a851a1615e86",
+      "native_shape": [
+        512,
+        512,
+        3
+      ]
+    },
+    {
+      "scene_id": "G_test_1126",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1126.png",
+      "split": "test",
+      "land_cover": "bare_soil",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1126.png",
+      "source_sha256": "440200b9c98a44b5bdd688da4a83bedb47c5d7e3bafb5bf0022f91412c7a5714",
+      "roi": [
+        35,
+        120,
+        305,
+        360
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group.",
+      "resolved_path": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/source_samples/G_test_1126.png",
+      "pixel_sha256": "a828d3afdf43da3eb499496936e4e8a4d9a8146e9ddb2487dad6d2b130ff4e20",
+      "native_shape": [
+        512,
+        512,
+        3
+      ]
+    },
+    {
+      "scene_id": "G_test_1328",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "path": "G_test_1328.png",
+      "split": "test",
+      "land_cover": "urban",
+      "label_source": "assistant visual inspection before inference; mixed ROIs, human confirmation pending",
+      "source": "https://zenodo.org/records/13837162/files/RSHaze%2B.zip?download=1",
+      "archive_member": "RSHaze+/RSHaze_G/test/cleanpng/1328.png",
+      "source_sha256": "32f7d841b4d6c689f79d0fb943673478b839d00d7241b3a1065a247ed1b26bb2",
+      "roi": [
+        150,
+        0,
+        500,
+        240
+      ],
+      "label_notes": "Dominant-cover diagnostic ROI; nearby/overlapping tiles conservatively share ONE geographic group.",
+      "resolved_path": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/source_samples/G_test_1328.png",
+      "pixel_sha256": "da10e6df8a589150bf9d72b9fb33b341582376145811b69fd5006f8f2541d147",
+      "native_shape": [
+        512,
+        512,
+        3
+      ]
+    }
+  ],
+  "config": {
+    "seed": 42,
+    "image_size": 256,
+    "domain": "linear_srgb",
+    "uniform_t": [
+      1.0,
+      0.9,
+      0.75,
+      0.6,
+      0.4
+    ],
+    "airlights": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.75,
+        0.8,
+        0.9
+      ]
+    ],
+    "brightness": [
+      1.0,
+      0.7
+    ],
+    "spatial_patterns": [
+      "gradient",
+      "blob",
+      "regions"
+    ],
+    "methods": [
+      "dcp",
+      "prior",
+      "student"
+    ],
+    "checkpoint": null,
+    "prior": {
+      "window_size": 15,
+      "guided_radius": 15,
+      "guided_eps": 0.01
+    },
+    "region_grid": 4,
+    "tie_tolerance": 1e-06,
+    "response_reference_threshold": 0.7,
+    "threads": 1,
+    "performance": {
+      "sizes": [
+        256,
+        512
+      ],
+      "batch_size": 1,
+      "warmup": 3,
+      "repeats": 20,
+      "devices": [
+        "cpu",
+        "cuda"
+      ],
+      "architecture_only_when_untrained": true
+    }
+  },
+  "cases": [
+    {
+      "case_id": "G_test_1053__a0_b0__uniform_t1",
+      "scene_id": "G_test_1053",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "vegetation",
+      "pattern": "uniform",
+      "uniform_t": 1.0,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 1.0
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1053__a0_b0__uniform_t1.npz",
+      "sha256": "18928b9273f05e7f31e040199046dbb7c55bc4e93c8c7ce1de71c829a8e97ee1"
+    },
+    {
+      "case_id": "G_test_1053__a0_b0__uniform_t0.9",
+      "scene_id": "G_test_1053",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "vegetation",
+      "pattern": "uniform",
+      "uniform_t": 0.9,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.9
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1053__a0_b0__uniform_t0.9.npz",
+      "sha256": "fed844d49ba516457323ac5fb702ba53f2ce84d9c478660f2e72a5da77618da6"
+    },
+    {
+      "case_id": "G_test_1053__a0_b0__uniform_t0.75",
+      "scene_id": "G_test_1053",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "vegetation",
+      "pattern": "uniform",
+      "uniform_t": 0.75,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.75
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1053__a0_b0__uniform_t0.75.npz",
+      "sha256": "c29a8493bf9dc7e4a064e6a4680d67da6d1031d74f409e6f9e56bc5bc37e6c65"
+    },
+    {
+      "case_id": "G_test_1053__a0_b0__uniform_t0.6",
+      "scene_id": "G_test_1053",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "vegetation",
+      "pattern": "uniform",
+      "uniform_t": 0.6,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.6
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1053__a0_b0__uniform_t0.6.npz",
+      "sha256": "a1382548ace38cbf5fff01aa64be83c610f84ae606a200106e6f076e965bd56d"
+    },
+    {
+      "case_id": "G_test_1053__a0_b0__uniform_t0.4",
+      "scene_id": "G_test_1053",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "vegetation",
+      "pattern": "uniform",
+      "uniform_t": 0.4,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.4
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1053__a0_b0__uniform_t0.4.npz",
+      "sha256": "b7dd3c0d56cc064ce38d90c19584b19583d35fa48e2f068fca9bc56882af8ed7"
+    },
+    {
+      "case_id": "G_test_1072__a0_b0__uniform_t1",
+      "scene_id": "G_test_1072",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "water",
+      "pattern": "uniform",
+      "uniform_t": 1.0,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 1.0
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1072__a0_b0__uniform_t1.npz",
+      "sha256": "874ceeb6563e83f908d6eb0b076c112c766d114ab0653e8041655b92b8c8cd13"
+    },
+    {
+      "case_id": "G_test_1072__a0_b0__uniform_t0.9",
+      "scene_id": "G_test_1072",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "water",
+      "pattern": "uniform",
+      "uniform_t": 0.9,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.9
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1072__a0_b0__uniform_t0.9.npz",
+      "sha256": "a5ffbf0c603d7c7419bc78a5aa0b481a7dff28bd31e337bd41f45b75daa0d47a"
+    },
+    {
+      "case_id": "G_test_1072__a0_b0__uniform_t0.75",
+      "scene_id": "G_test_1072",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "water",
+      "pattern": "uniform",
+      "uniform_t": 0.75,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.75
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1072__a0_b0__uniform_t0.75.npz",
+      "sha256": "c5daf7bb2004393e9ff8b60ec90a83dfa5968e4a702d5a4c144ce9fc800929c8"
+    },
+    {
+      "case_id": "G_test_1072__a0_b0__uniform_t0.6",
+      "scene_id": "G_test_1072",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "water",
+      "pattern": "uniform",
+      "uniform_t": 0.6,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.6
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1072__a0_b0__uniform_t0.6.npz",
+      "sha256": "329b053f50303bf338a11423bddcda472753e7976813b528f04a5ac00a780f8d"
+    },
+    {
+      "case_id": "G_test_1072__a0_b0__uniform_t0.4",
+      "scene_id": "G_test_1072",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "water",
+      "pattern": "uniform",
+      "uniform_t": 0.4,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.4
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1072__a0_b0__uniform_t0.4.npz",
+      "sha256": "03c217ca4d8b3d81bb541fc463721dc6729b4e7b98a81ead16ecd332d4bb9b8a"
+    },
+    {
+      "case_id": "G_test_1126__a0_b0__uniform_t1",
+      "scene_id": "G_test_1126",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "bare_soil",
+      "pattern": "uniform",
+      "uniform_t": 1.0,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 1.0
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1126__a0_b0__uniform_t1.npz",
+      "sha256": "bc53b59da19665ffb685389d80252b87cef69bb9afbe817a88f04fe741797160"
+    },
+    {
+      "case_id": "G_test_1126__a0_b0__uniform_t0.9",
+      "scene_id": "G_test_1126",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "bare_soil",
+      "pattern": "uniform",
+      "uniform_t": 0.9,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.9
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1126__a0_b0__uniform_t0.9.npz",
+      "sha256": "ccfe34bd328b514e726bc0d150f994190a320fce89f38ffaad460055a329b5d5"
+    },
+    {
+      "case_id": "G_test_1126__a0_b0__uniform_t0.75",
+      "scene_id": "G_test_1126",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "bare_soil",
+      "pattern": "uniform",
+      "uniform_t": 0.75,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.75
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1126__a0_b0__uniform_t0.75.npz",
+      "sha256": "d70a5d56d3f91a4618cb0490530e0b22ba3cc19b134270275412bfb7e172a2fc"
+    },
+    {
+      "case_id": "G_test_1126__a0_b0__uniform_t0.6",
+      "scene_id": "G_test_1126",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "bare_soil",
+      "pattern": "uniform",
+      "uniform_t": 0.6,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.6
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1126__a0_b0__uniform_t0.6.npz",
+      "sha256": "dc2e261b0a2a030e96cfdc8cfdddb4fdee84e74c486032f2002e6ce9ee0ff324"
+    },
+    {
+      "case_id": "G_test_1126__a0_b0__uniform_t0.4",
+      "scene_id": "G_test_1126",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "bare_soil",
+      "pattern": "uniform",
+      "uniform_t": 0.4,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.4
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1126__a0_b0__uniform_t0.4.npz",
+      "sha256": "eba6b7f84b96ccc033ecd5340c30c675342482fa6d4b34f243463a0adb76d08e"
+    },
+    {
+      "case_id": "G_test_1328__a0_b0__uniform_t1",
+      "scene_id": "G_test_1328",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "urban",
+      "pattern": "uniform",
+      "uniform_t": 1.0,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 1.0
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1328__a0_b0__uniform_t1.npz",
+      "sha256": "3936090ff82c7df0d6e7417be6d15fb91e06c80aaa8b49b2d2f9f6831bee7da7"
+    },
+    {
+      "case_id": "G_test_1328__a0_b0__uniform_t0.9",
+      "scene_id": "G_test_1328",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "urban",
+      "pattern": "uniform",
+      "uniform_t": 0.9,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.9
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1328__a0_b0__uniform_t0.9.npz",
+      "sha256": "84e129393c92ae36a4135d081dc901ae33354fd0c5188e434a38cb77a213a5b3"
+    },
+    {
+      "case_id": "G_test_1328__a0_b0__uniform_t0.75",
+      "scene_id": "G_test_1328",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "urban",
+      "pattern": "uniform",
+      "uniform_t": 0.75,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.75
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1328__a0_b0__uniform_t0.75.npz",
+      "sha256": "4e1d0b8b4a2552f22c4f6bce85e3c274f2fe584f36ec1f85412ac07c39015b1b"
+    },
+    {
+      "case_id": "G_test_1328__a0_b0__uniform_t0.6",
+      "scene_id": "G_test_1328",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "urban",
+      "pattern": "uniform",
+      "uniform_t": 0.6,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.6
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1328__a0_b0__uniform_t0.6.npz",
+      "sha256": "fc6d44d71d626e400ffada4dd519bdce3cb0aae9bb1ed9ca257fe6b07aa842a2"
+    },
+    {
+      "case_id": "G_test_1328__a0_b0__uniform_t0.4",
+      "scene_id": "G_test_1328",
+      "group_id": "RSHaze_G_test_overlapping_area_01",
+      "split": "test",
+      "land_cover": "urban",
+      "pattern": "uniform",
+      "uniform_t": 0.4,
+      "airlight": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "brightness": 1.0,
+      "domain": "linear_srgb",
+      "case_seed": 102596690,
+      "pattern_parameters": {
+        "t": 0.4
+      },
+      "brightness_clipped_fraction": 0.0,
+      "path": "cases/G_test_1328__a0_b0__uniform_t0.4.npz",
+      "sha256": "23e5f2fc9ea1561373f6757514ad3fabcbaec809240f80db9ce05b102908df8e"
+    }
+  ],
+  "truth_definition": "transmission t; degradation strength 1-t, not extinction beta",
+  "environment": {
+    "timestamp_utc": "2026-10-25T11:43:21.243438+00:00",
+    "benchmark_version": "haze_benchmark_v1",
+    "seed": 42,
+    "config": {
+      "seed": 42,
+      "image_size": 256,
+      "domain": "linear_srgb",
+      "uniform_t": [
+        1.0,
+        0.9,
+        0.75,
+        0.6,
+        0.4
+      ],
+      "airlights": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.75,
+          0.8,
+          0.9
+        ]
+      ],
+      "brightness": [
+        1.0,
+        0.7
+      ],
+      "spatial_patterns": [
+        "gradient",
+        "blob",
+        "regions"
+      ],
+      "methods": [
+        "dcp",
+        "prior",
+        "student"
+      ],
+      "checkpoint": null,
+      "prior": {
+        "window_size": 15,
+        "guided_radius": 15,
+        "guided_eps": 0.01
+      },
+      "region_grid": 4,
+      "tie_tolerance": 1e-06,
+      "response_reference_threshold": 0.7,
+      "threads": 1,
+      "performance": {
+        "sizes": [
+          256,
+          512
+        ],
+        "batch_size": 1,
+        "warmup": 3,
+        "repeats": 20,
+        "devices": [
+          "cpu",
+          "cuda"
+        ],
+        "architecture_only_when_untrained": true
+      }
+    },
+    "git_commit": null,
+    "git_status": null,
+    "bundle_origin": {
+      "git_commit": "be0c7ebea3d9a51bb58dfdb617de70b8e057e46c",
+      "git_status": " M README.md\n M docs/INDEX.md\n M docs/benchmark_plan.md\n D docs/guides/colab.md\n M docs/guides/haze_density_benchmark.md\n M docs/guides/haze_density_user_guide.md\n D docs/haze_density_benchmark_colab.ipynb\n M docs/notebook_update_guide.md\n M docs/project_review.md\n M docs/project_status.md\n M docs/stage_2_research_review.md\n M docs/stage_5_haze_density/5b1_report.md\n M docs/stage_5_haze_density/5b2_report.md\n M docs/stage_5_haze_density/5b_dataset_implementation.md\n M docs/stage_5_haze_density/5c_overfit_test.md\n M docs/stage_5_haze_density/5d1_prediction_audit.md\n M docs/stage_5_haze_density/5d2_decoder_verification.md\n M docs/stage_5_haze_density/5d_preflight.md\n M docs/stage_5_haze_density/5e_test_evaluation.md\n M docs/stage_6_integration/6-2_baseline.md\n M docs/surveys/dataset_manifest.md\n M docs/surveys/dataset_survey.md\n M docs/v1_acceptance_report.md\n M \"docs/\\351\\233\\276\\345\\257\\206\\345\\272\\246\\347\\275\\221\\347\\273\\234_\\346\\233\\264\\346\\226\\260\\345\\220\\216.ipynb\"\n M \"docs/\\351\\233\\276\\345\\257\\206\\345\\272\\246\\347\\275\\221\\347\\273\\234_\\346\\234\\200\\347\\256\\200\\345\\256\\236\\351\\252\\214\\346\\265\\201\\347\\250\\213.ipynb\"\n M requirements.txt\n D scripts/benchmark/build_colab_notebook.py\n D scripts/benchmark/run_colab_benchmark.py\n M scripts/benchmark/seal_v1_acceptance.py\n M scripts/benchmark/sync_minimal_notebook.py\n M scripts/data/analyze_rshazeplus_structure.py\n M scripts/data/check_data_leakage.py\n M scripts/data/inspect_dataset.py\n M scripts/data/visualize_physical_prior.py\n M scripts/test/test_core_modules.py\n M scripts/test/test_dataset.py\n M scripts/test/test_minimal_notebook_benchmark.py\n M scripts/test/test_model.py\n M scripts/test/test_physical_prior.py\n M scripts/test/test_rshazeplus_physical_prior.py\n D scripts/utils/setup_colab.py\n M scripts/utils/static_check.py\n M tools/update_notebook_paths.py\n?? docs/guides/cloud_gpu.md\n?? docs/haze_density_benchmark.ipynb\n?? \"docs/\\351\\233\\276\\345\\257\\206\\345\\272\\246\\347\\275\\221\\347\\273\\234_\\346\\234\\200\\347\\256\\200\\345\\256\\236\\351\\252\\214\\346\\265\\201\\347\\250\\213.md\"\n?? scripts/benchmark/build_benchmark_notebook.py\n?? scripts/benchmark/run_benchmark.py\n?? scripts/test/test_cloud_workflow.py\n?? scripts/utils/prepare_experiment.py\n?? scripts/utils/setup_environment.py\n",
+      "files": {
+        "benchmarks/__init__.py": "7283bce00d9db61dfea683e28b2dff54b6b9c550d4820b5659fcb6ff0df5b4dc",
+        "benchmarks/haze_density/__init__.py": "278896646221126a1e4fbb58c8f1b661998490701fbd96da1fd1415d9f900663",
+        "benchmarks/haze_density/__main__.py": "6d9fea9c388f1c61c627776d122f7ebd082f614bcf4eca972fc7eff4a0ce0739",
+        "benchmarks/haze_density/audit.py": "6750f0ef7c17d6da67e15d0a24e22724cb59ed1f1ff03c2073434a775f2a0d41",
+        "benchmarks/haze_density/baselines.py": "51b08b54a507bf3fba05185066898e2d3c81c8062c2aacff35fc1a12c81ff64a",
+        "benchmarks/haze_density/common.py": "a3a017f8cb7ecf915e640840a8bb9f875f997dfab2b6eb6b5148f6c3cbb38e4b",
+        "benchmarks/haze_density/evaluate.py": "593f541a1a01928f1fe15edd784ba38682ad5a67e2730b24115395cb8af23ef0",
+        "benchmarks/haze_density/metrics.py": "514f8360d1517b98a51983db234ca6981e3303840ee9a782f3c338f3115770e0",
+        "benchmarks/haze_density/performance.py": "de96b9ba6383a7cd45e74095a62834f908cf85c61db36b70193547db26571e73",
+        "benchmarks/haze_density/report.py": "d8a19554c2bb98547d7d55dad60edc073068f9d56ec608ec9c92890b5008e2cb",
+        "benchmarks/haze_density/synthetic.py": "713ae32c5a73d74d474c5a90f822fb2819dd43c3d15ab50d068451e0992b969a",
+        "configs/haze_benchmark.yaml": "7a474e57dc0b68cf151d57cca333eea28cad2e33f73b9d0ac21458521b13d315",
+        "configs/haze_benchmark_pilot_scenes.json": "7ce89f786a46811dbe7a1170c4106bc3411488b3115f6765190f62acd5abb556",
+        "configs/haze_density.yaml": "b7eaaf1cd3773eacdd7a9ec9733341c49cfc9e0e540b05c7a7135d32415d9e18",
+        "requirements.txt": "bd30a8b23c147dba79f749ab447961e7024847a3ee3faea4d40fed1b5af6c49c",
+        "scripts/benchmark/accept_v1.py": "5f7febf0394d1a4abd0ce092a3133fb759cb3e7a40251b9d2e7971875bc5251e",
+        "scripts/benchmark/build_benchmark_notebook.py": "f285437a7181f1fc25e25c9b5c4235480bcfb8f6d49cc463a04775b59a0e5b89",
+        "scripts/benchmark/run_benchmark.py": "e646e134577a8fc761b77289ad6b74b6200002f72f22e87498b38109f23a7435",
+        "scripts/benchmark/seal_v1_acceptance.py": "1bec759ec51d52b040d2bf374bd37ee1ef630c258ca25e0c1822536946d5ad55",
+        "scripts/benchmark/sync_minimal_notebook.py": "def56380d31658da13d333d5f015ed8a06259ec0e86f4b74db09b3617a941794",
+        "scripts/data/analyze_rshazeplus_structure.py": "781be7279f9b2451ac393598dd280efcb34f7765898b20421876f1e15c5a4dc4",
+        "scripts/data/check_data_leakage.py": "46b49fd50bff85b7ab4986527c360c1e580d2320a942074542827ec1af3b437c",
+        "scripts/data/fetch_benchmark_samples.py": "ff7391614efece1883361498bdd9130d8850217b7b030406df14146244721275",
+        "scripts/data/generate_rshazeplus_split.py": "fb8c0efe98666718a730ad26d8ee072dbaa036456ab14603feede0fc2f8e3819",
+        "scripts/data/inspect_dataset.py": "d2034be451306d4d085b43ce8ae7a0964c9c592ed4334f45373a12d7e90daeff",
+        "scripts/data/verify_rshazeplus_split.py": "dd35c0fbedcbbd30bdf7c765c30124d784674bd2f1334fe574c806e86428db63",
+        "scripts/data/visualize_physical_prior.py": "c35c2c3a81c4cc16559fd64c78e9a6ed5f3b34b9a3edde916edc1f1c629b650d",
+        "scripts/data/visualize_physical_prior_on_rshazeplus.py": "6caa9ae941ffc1aa533abf442c040f5c3220e344706877ad24cc8f07be4eef8d",
+        "scripts/data/visualize_rshazeplus_dataset.py": "a1d11885aba9189fb4bd2bd5b409de8961463e6aca90f052e89ec5e7de3542da",
+        "scripts/test/test_cloud_workflow.py": "7a4e223ca8fa2d148b092802b17d9933ca1391cd7e7b1a7406b9c77217c596e8",
+        "scripts/test/test_core_modules.py": "b29621a5d50ef35c95a59123c4ebdb3ed5aaee1e841a78be42ae1c51c91f0660",
+        "scripts/test/test_dataset.py": "2fc7867305c98f27a7e9acbb1eb46a7956d18bcdeb6778529a9eba138559fb32",
+        "scripts/test/test_density_concat_integration.py": "52d98afb9b1caa2ba818b27f5444f98655b21c3beaf61d4600b9c440b5219705",
+        "scripts/test/test_density_guidance.py": "d9f7ec39f01611b18d285038498bee2afb9c532655b64705e9bcff743cacf220",
+        "scripts/test/test_haze_benchmark.py": "1dc97d301a9aafbe644d4bf6a66c5d38f1a544fc3577c883cd54e428981b3bda",
+        "scripts/test/test_minimal_notebook_benchmark.py": "6f208869a81bf29895a829f20b80a33d71ba45d7b424d34513360011e0b9eb7e",
+        "scripts/test/test_model.py": "ae8aff4a7c57e57b03d73115c4fcc301d129fd695eef639a900d67a575c712cc",
+        "scripts/test/test_physical_prior.py": "fe159ff8267d8ef8d6bab2575af97a2a6e320c1a90661ef1311e91ee2034dae2",
+        "scripts/test/test_review_regressions.py": "31c7f8e613613678bc157452669fb7b28d5b392bad7a048a0447bc7c68bed721",
+        "scripts/test/test_rshazeplus_dataset.py": "e7ea87d3b17bcf31983a89c0b69494e1b3340632f599becbd6548b36e6eff0bb",
+        "scripts/test/test_rshazeplus_physical_prior.py": "ad015fd5cd8e8d4f8266c3b3ef2a16e74bef3c2c53cf0190bee5f8d8fc8e5003",
+        "scripts/test/test_stage1_bugfixes.py": "f4d5e9617ecac80d9e6af1d5678a66bb36b757b82fb7b2988a991ce2210371bb",
+        "scripts/test/test_stage_6_3b.py": "ca5b1776aaeb592a3ba149bb2452ebba11037a350b63a421f86dfaaf8958eb8c",
+        "scripts/test/test_v1_acceptance.py": "9c2a1cc52d6e775c9083394f8bb6c1d994b86cfdd982b06e2da81c0ea2f46f06",
+        "scripts/train/train_haze_density.py": "54ddf091cf79a5461138bbb41aa5e92bcce6f6d00995acfcd33acfdd69f35f0d",
+        "scripts/train/train_overfit_8.py": "773c1a98bea83a3cfd6f4d61c5548c2ea355977031fc565ebbf2b2af4e2ad214",
+        "scripts/utils/debug_gpu.py": "0e79d02b0a6888b11e86e0b3a7081df2ba9e26d2f2691b4cf603d1cc478a5222",
+        "scripts/utils/fix_decoder_relu.py": "8b87afa87ced600950ce22d265e94dce278c480f29cd450fe1a7371745c39f77",
+        "scripts/utils/prepare_experiment.py": "769d91aa822b6680f108482ae7683af37b7fb799efafdc6d5f929cac8beedd5e",
+        "scripts/utils/setup_environment.py": "79d5f977e5471320d7d4ca655a68d3ffb0392c8d5e78cb284b3d63af543f5800",
+        "scripts/utils/smoke_test.py": "acea256028d472bdb3e6736d1532c4e7c42301c55bbe98aea827128168401999",
+        "scripts/utils/static_check.py": "26f6205a848622b8aea28be66e995ec3efea57e15ecca079e834c9a272d36d9d",
+        "src/__init__.py": "131955f05513f5fbcb458f7fa168788943feeffd0e93535e8adb48e8404266f5",
+        "src/data/__init__.py": "2fbedac9bae1faecaff276e7bbec013c6a615d4a910cc1d9cdb0b0f96dbb2ab4",
+        "src/data/datasets.py": "d6ad466fb4913ebd67182e0ecb0a5f40127f9b7e7df580b84372f7abf5ada1dd",
+        "src/data/transforms.py": "f1332d02458463f411d310ca40bfb96e3bea7f764961f7ccead74afe578d38d6",
+        "src/models/__init__.py": "4842cfa3a7e174553ee82de47e0c155887896a0cede14edb4658ce976a920b64",
+        "src/models/backbone/__init__.py": "b4cf472f64ef4f632631feb801821921d581eef3ca7ba9c13bce4fd1cf7a25ad",
+        "src/models/backbone/simple_backbone.py": "edd745f6fc460bc01ce0717a58d28525225e7b03bdb01b73c80e443426735ee8",
+        "src/models/crossmodal/__init__.py": "5ea9552b63218858a6f2fe7cba941f0f6ae47e1ace7c734195d8613792032795",
+        "src/models/crossmodal/density_concat_model.py": "ea36f53d4e00ba34c481f26e95a2ec64aa4b09a3c8a6be15eba5ccdf87eb02d2",
+        "src/models/crossmodal/density_guided_backbone.py": "89fcd08afdbe056da69c85c4cbc5936de2877f7ea43afc401869d24bfb2d7752",
+        "src/models/density_guidance/__init__.py": "fa232e722c6e743e63fd583bd863f1f9dd2a79711af2c3e1b3a6583e1f8c6d03",
+        "src/models/density_guidance/density_guidance.py": "c1e2c36289ee76e2f324d0147de559d43c3c3844258f83ab067bd685dd9b35f3",
+        "src/models/haze_density/__init__.py": "fefb238da0193dfd6557a8fad729c53d25e6845a6220a10f7cd370221f90c8db",
+        "src/models/haze_density/basic_blocks.py": "d512f111d3248d577430f0b58f63860fadf7b591b5ab6775067d7d277a796c66",
+        "src/models/haze_density/decoder.py": "462400cdc247a8dc737392429b591cb560ecdec950a2e15b551938b15ceecd5f",
+        "src/models/haze_density/eca.py": "b14312bfaae56c9ccace456936bacbe0f631535863bb01635098c3f46d3f9e54",
+        "src/models/haze_density/encoder.py": "8d2e236c34ea55a12ef1d0f07d38d1c858987a7cfc03d967638452509a9f9f2c",
+        "src/models/haze_density/fusion.py": "668c724ecc7b1c1250cfc8975f64914ded9e3d5f4a24f854f3c0b81cf485a7ec",
+        "src/models/haze_density/guided_filter.py": "cb91992f5e9729bf0e5b9b7f2e1e5cd7327f593e1f1858054c3ee308efc276cd",
+        "src/models/haze_density/haze_density_net.py": "42f953fa6035b28d705fbb357791e35b29f475fd3d433cd17858be7a2f322e07",
+        "src/models/haze_density/multiscale.py": "d22ee816746f2b57b2c9e7f7bf591a7fcf1ac2ea84b3b7f612757afa027258aa",
+        "src/models/haze_density/physical_prior.py": "d9ab2afa31fe96e0083872ca99a25dc53d3843e453dbe2d64316b2d701ab49eb",
+        "src/models/haze_density/residual_blocks.py": "ae21c346aad165d3e964bc80f84e601ac24ed53b923ff678f5dfdf90119f5283",
+        "src/utils/__init__.py": "666b02a455f6a022b31ff98bc213fdb1b4ec7287640444c1b97be615a2212422"
+      }
+    },
+    "source_sha256": {
+      "benchmarks/haze_density/__init__.py": "278896646221126a1e4fbb58c8f1b661998490701fbd96da1fd1415d9f900663",
+      "benchmarks/haze_density/__main__.py": "6d9fea9c388f1c61c627776d122f7ebd082f614bcf4eca972fc7eff4a0ce0739",
+      "benchmarks/haze_density/audit.py": "6750f0ef7c17d6da67e15d0a24e22724cb59ed1f1ff03c2073434a775f2a0d41",
+      "benchmarks/haze_density/baselines.py": "51b08b54a507bf3fba05185066898e2d3c81c8062c2aacff35fc1a12c81ff64a",
+      "benchmarks/haze_density/common.py": "a3a017f8cb7ecf915e640840a8bb9f875f997dfab2b6eb6b5148f6c3cbb38e4b",
+      "benchmarks/haze_density/evaluate.py": "593f541a1a01928f1fe15edd784ba38682ad5a67e2730b24115395cb8af23ef0",
+      "benchmarks/haze_density/metrics.py": "514f8360d1517b98a51983db234ca6981e3303840ee9a782f3c338f3115770e0",
+      "benchmarks/haze_density/performance.py": "de96b9ba6383a7cd45e74095a62834f908cf85c61db36b70193547db26571e73",
+      "benchmarks/haze_density/report.py": "d8a19554c2bb98547d7d55dad60edc073068f9d56ec608ec9c92890b5008e2cb",
+      "benchmarks/haze_density/synthetic.py": "713ae32c5a73d74d474c5a90f822fb2819dd43c3d15ab50d068451e0992b969a",
+      "src/models/haze_density/__init__.py": "fefb238da0193dfd6557a8fad729c53d25e6845a6220a10f7cd370221f90c8db",
+      "src/models/haze_density/basic_blocks.py": "d512f111d3248d577430f0b58f63860fadf7b591b5ab6775067d7d277a796c66",
+      "src/models/haze_density/decoder.py": "462400cdc247a8dc737392429b591cb560ecdec950a2e15b551938b15ceecd5f",
+      "src/models/haze_density/eca.py": "b14312bfaae56c9ccace456936bacbe0f631535863bb01635098c3f46d3f9e54",
+      "src/models/haze_density/encoder.py": "8d2e236c34ea55a12ef1d0f07d38d1c858987a7cfc03d967638452509a9f9f2c",
+      "src/models/haze_density/fusion.py": "668c724ecc7b1c1250cfc8975f64914ded9e3d5f4a24f854f3c0b81cf485a7ec",
+      "src/models/haze_density/guided_filter.py": "cb91992f5e9729bf0e5b9b7f2e1e5cd7327f593e1f1858054c3ee308efc276cd",
+      "src/models/haze_density/haze_density_net.py": "42f953fa6035b28d705fbb357791e35b29f475fd3d433cd17858be7a2f322e07",
+      "src/models/haze_density/multiscale.py": "d22ee816746f2b57b2c9e7f7bf591a7fcf1ac2ea84b3b7f612757afa027258aa",
+      "src/models/haze_density/physical_prior.py": "d9ab2afa31fe96e0083872ca99a25dc53d3843e453dbe2d64316b2d701ab49eb",
+      "src/models/haze_density/residual_blocks.py": "ae21c346aad165d3e964bc80f84e601ac24ed53b923ff678f5dfdf90119f5283"
+    },
+    "python": "3.12.0 (main, Jan  5 2026, 15:00:34) [GCC 11.4.0]",
+    "platform": "Linux-5.10.0-36-amd64-x86_64-with-glibc2.35",
+    "cpu": "x86_64",
+    "logical_cpu_count": 96,
+    "numpy": "1.26.4",
+    "torch": "2.4.1+cu124",
+    "cuda_build": "12.4",
+    "cuda_available": true,
+    "cudnn": 90100,
+    "torch_threads": 1,
+    "gpu": [
+      "Tesla V100-SXM2-16GB"
+    ],
+    "deterministic_algorithms": true
+  }
+}

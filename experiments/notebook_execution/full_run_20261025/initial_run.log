@@ -1,0 +1,944 @@
+/usr/local/lib/python3.12/site-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+
+>>> CELL 2 START 2026-10-25T11:26:25.237728+00:00
+
+============================================================
+CrossModal-Defog-OVOD - 通用环境初始化
+============================================================
+
+项目根目录：/mnt/CrossModal-Defog-OVOD
+
+============================================================
+PyTorch 环境检查
+============================================================
+✓ PyTorch version: 2.4.1+cu124
+✓ CUDA available: True
+✓ CUDA version: 12.4
+✓ GPU count: 1
+  GPU 0: Tesla V100-SXM2-16GB
+    Memory: 15.77 GB
+    Compute Capability: 7.0
+
+============================================================
+依赖检查
+============================================================
+✓ torchvision
+✓ opencv
+✓ numpy
+✓ yaml
+✓ tqdm
+✓ Pillow
+✓ matplotlib
+✓ scipy
+
+============================================================
+目录检查
+============================================================
+✓ experiments/haze_density/checkpoints
+✓ experiments/haze_density/logs
+✓ experiments/haze_density/output
+
+============================================================
+配置摘要
+============================================================
+amp: True
+image_size: 256
+batch_size: 4
+base_channels: 32
+lr: 0.0001
+epochs: 50
+checkpoint_dir: experiments/haze_density/checkpoints/spatial_v3
+result_dir: experiments/haze_density/results/spatial_v3
+
+============================================================
+✓ 环境初始化完成！
+============================================================
+
+下一步:
+  1. 运行 smoke test: python scripts/utils/smoke_test.py
+  2. 按 docs/雾密度网络_最简实验流程.md 准备数据、持久化实验配置并训练
+
+Branch: v1-nocolab
+Commit: 2b549204e679ede504b25d623bd3199397d5814f
+Prior: spatial_minmax_valid_boundary_v3
+Python: /usr/bin/python
+PyTorch: 2.4.1+cu124; CUDA: True
+GPU: Tesla V100-SXM2-16GB
+>>> CELL 2 OK
+
+>>> CELL 4 START 2026-10-25T11:26:33.617000+00:00
+
+============================================================
+CrossModal-Defog-OVOD - 静态检查
+============================================================
+
+============================================================
+目录结构检查
+============================================================
+[OK] configs
+[OK] docs
+[OK] scripts
+[OK] src/data
+[OK] src/models/haze_density
+[OK] src/utils
+
+============================================================
+__init__.py 检查
+============================================================
+[OK] src/__init__.py
+[OK] src/data/__init__.py
+[OK] src/models/__init__.py
+[OK] src/models/haze_density/__init__.py
+[OK] src/utils/__init__.py
+
+============================================================
+requirements.txt 检查
+============================================================
+[OK] requirements.txt 存在
+  包含 11 个依赖项
+  [OK] torch
+  [OK] torchvision
+  [OK] opencv-python
+  [OK] numpy
+  [OK] pyyaml
+
+============================================================
+Python 语法检查
+============================================================
+[OK] src/__init__.py
+[OK] src/models/__init__.py
+[OK] src/data/transforms.py
+[OK] src/data/__init__.py
+[OK] src/data/datasets.py
+[OK] src/utils/__init__.py
+[OK] src/models/backbone/__init__.py
+[OK] src/models/backbone/simple_backbone.py
+[OK] src/models/crossmodal/__init__.py
+[OK] src/models/crossmodal/density_concat_model.py
+[OK] src/models/crossmodal/density_guided_backbone.py
+[OK] src/models/haze_density/guided_filter.py
+[OK] src/models/haze_density/physical_prior.py
+[OK] src/models/haze_density/residual_blocks.py
+[OK] src/models/haze_density/__init__.py
+[OK] src/models/haze_density/decoder.py
+[OK] src/models/haze_density/encoder.py
+[OK] src/models/haze_density/haze_density_net.py
+[OK] src/models/haze_density/fusion.py
+[OK] src/models/haze_density/basic_blocks.py
+[OK] src/models/haze_density/eca.py
+[OK] src/models/haze_density/multiscale.py
+[OK] src/models/density_guidance/__init__.py
+[OK] src/models/density_guidance/density_guidance.py
+[OK] scripts/train/train_overfit_8.py
+[OK] scripts/train/train_haze_density.py
+[OK] scripts/benchmark/build_benchmark_notebook.py
+[OK] scripts/benchmark/run_benchmark.py
+[OK] scripts/benchmark/sync_minimal_notebook.py
+[OK] scripts/benchmark/accept_v1.py
+[OK] scripts/benchmark/seal_v1_acceptance.py
+[OK] scripts/evaluate/audit_prediction_distribution.py
+[OK] scripts/evaluate/evaluate_haze_density.py
+[OK] scripts/data/visualize_physical_prior_on_rshazeplus.py
+[OK] scripts/data/inspect_dataset.py
+[OK] scripts/data/generate_rshazeplus_split.py
+[OK] scripts/data/verify_rshazeplus_split.py
+[OK] scripts/data/analyze_rshazeplus_structure.py
+[OK] scripts/data/visualize_physical_prior.py
+[OK] scripts/data/visualize_rshazeplus_dataset.py
+[OK] scripts/data/fetch_benchmark_samples.py
+[OK] scripts/data/check_data_leakage.py
+[OK] scripts/test/test_dataset.py
+[OK] scripts/test/test_model.py
+[OK] scripts/test/test_physical_prior.py
+[OK] scripts/test/test_density_guidance.py
+[OK] scripts/test/test_v1_acceptance.py
+[OK] scripts/test/test_review_regressions.py
+[OK] scripts/test/test_haze_benchmark.py
+[OK] scripts/test/test_rshazeplus_physical_prior.py
+[OK] scripts/test/test_stage1_bugfixes.py
+[OK] scripts/test/test_core_modules.py
+[OK] scripts/test/test_rshazeplus_dataset.py
+[OK] scripts/test/test_cloud_workflow.py
+[OK] scripts/test/test_density_concat_integration.py
+[OK] scripts/test/test_stage_6_3b.py
+[OK] scripts/test/test_minimal_notebook_benchmark.py
+[OK] scripts/utils/static_check.py
+[OK] scripts/utils/fix_decoder_relu.py
+[OK] scripts/utils/prepare_experiment.py
+[OK] scripts/utils/debug_gpu.py
+[OK] scripts/utils/setup_environment.py
+[OK] scripts/utils/smoke_test.py
+[OK] tools/fix_all_scripts_paths.py
+[OK] tools/update_notebook_paths.py
+
+============================================================
+YAML 语法检查
+============================================================
+[OK] configs/haze_benchmark.yaml
+[OK] configs/density_concat.yaml
+[OK] configs/haze_density.yaml
+
+Markdown local links
+[OK] Local file targets in 31 Markdown files
+
+============================================================
+检查结果汇总
+============================================================
+[OK] 目录结构
+[OK] __init__.py
+[OK] requirements.txt
+[OK] Python 语法
+[OK] YAML 语法
+[OK] Markdown links
+
+[OK] 所有静态检查通过！
+
+下一步:
+  1. 将项目推送到 GitHub 或导出为 ZIP
+  2. 在 GPU 服务器运行 python scripts/utils/setup_environment.py --require-cuda
+  3. 运行 smoke_test.py 进行动态测试
+============================================================
+test_incomplete_manifest_is_rejected (test_review_regressions.SplitRegressionTests.test_incomplete_manifest_is_rejected) ... [WARN] Split file /tmp/tmp6f7zl45k/split.json not found, using default split
+ok
+test_official_test_is_unchanged (test_review_regressions.SplitRegressionTests.test_official_test_is_unchanged) ... ok
+test_overlapping_manifest_is_rejected (test_review_regressions.SplitRegressionTests.test_overlapping_manifest_is_rejected) ... [WARN] Split file /tmp/tmpqwub7rfg/split.json not found, using default split
+ok
+test_partition_does_not_reset_global_random_state (test_review_regressions.SplitRegressionTests.test_partition_does_not_reset_global_random_state) ... ok
+test_train_first_creates_manifest_and_excludes_validation (test_review_regressions.SplitRegressionTests.test_train_first_creates_manifest_and_excludes_validation) ... [WARN] Split file /tmp/tmp3hruz5k5/split.json not found, using default split
+ok
+test_train_first_without_manifest (test_review_regressions.SplitRegressionTests.test_train_first_without_manifest) ... ok
+test_validation_first_gives_same_partition (test_review_regressions.SplitRegressionTests.test_validation_first_gives_same_partition) ... [WARN] Split file /tmp/tmpazpc95qa/split.json not found, using default split
+ok
+test_config_file_is_read_and_cli_wins (test_review_regressions.TensorRegressionTests.test_config_file_is_read_and_cli_wins) ... ok
+test_latest_checkpoint_retains_best_loss_and_can_resume (test_review_regressions.TensorRegressionTests.test_latest_checkpoint_retains_best_loss_and_can_resume) ... 
+Loading checkpoint: /tmp/tmp3usk35i0/latest.pth
+/mnt/CrossModal-Defog-OVOD/scripts/train/train_haze_density.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location='cpu')
+  Epoch: 2
+  Best val loss: 0.100000
+  Resuming from epoch 3
+ok
+test_normalization_is_independent_per_image_and_channel (test_review_regressions.TensorRegressionTests.test_normalization_is_independent_per_image_and_channel) ... ok
+test_normalization_preserves_horizontal_gradient (test_review_regressions.TensorRegressionTests.test_normalization_preserves_horizontal_gradient) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.247s
+
+OK
+test_clean_pair_loader_collates_consistent_keys (test_stage1_bugfixes.DataPipelineImplementationTests.test_clean_pair_loader_collates_consistent_keys) ... [WARN] Split file /tmp/tmpxt90vsrv/split.json not found, using default split
+ok
+test_custom_unpaired_transform_is_rejected_for_pairs (test_stage1_bugfixes.DataPipelineImplementationTests.test_custom_unpaired_transform_is_rejected_for_pairs) ... [WARN] Split file /tmp/tmp3j6td_dk/split.json not found, using default split
+ok
+test_generated_manifest_loads_without_dropping_same_named_test_files (test_stage1_bugfixes.DataPipelineImplementationTests.test_generated_manifest_loads_without_dropping_same_named_test_files) ... ok
+test_manifest_verifier_still_rejects_train_val_overlap_and_duplicates (test_stage1_bugfixes.DataPipelineImplementationTests.test_manifest_verifier_still_rejects_train_val_overlap_and_duplicates) ... [WARN] Split file /tmp/tmpobwpj5cd/split.json not found, using default split
+ok
+test_manifest_verifier_uses_official_source_directory (test_stage1_bugfixes.DataPipelineImplementationTests.test_manifest_verifier_uses_official_source_directory) ... [WARN] Split file /tmp/tmpy45v52w7/split.json not found, using default split
+ok
+test_mismatched_native_pair_sizes_are_rejected (test_stage1_bugfixes.DataPipelineImplementationTests.test_mismatched_native_pair_sizes_are_rejected) ... [WARN] Split file /tmp/tmpkmajrrmq/split.json not found, using default split
+ok
+test_missing_clean_is_rejected_when_pair_is_requested (test_stage1_bugfixes.DataPipelineImplementationTests.test_missing_clean_is_rejected_when_pair_is_requested) ... [WARN] Split file /tmp/tmpzkhbu7fa/split.json not found, using default split
+[WARN] 27 samples missing clear image
+ok
+test_pair_augmentation_consumes_one_set_of_random_parameters (test_stage1_bugfixes.DataPipelineImplementationTests.test_pair_augmentation_consumes_one_set_of_random_parameters) ... ok
+test_path_checker_uses_metadata_without_decoding_or_random_augmentation (test_stage1_bugfixes.DataPipelineImplementationTests.test_path_checker_uses_metadata_without_decoding_or_random_augmentation) ... [WARN] Split file /tmp/tmpxjejdy85/split.json not found, using default split
+ok
+test_random_training_augmentation_is_shared_by_pair (test_stage1_bugfixes.DataPipelineImplementationTests.test_random_training_augmentation_is_shared_by_pair) ... [WARN] Split file /tmp/tmprdzmsfpm/split.json not found, using default split
+ok
+test_split_generator_rejects_invalid_or_missing_data_without_writing (test_stage1_bugfixes.DataPipelineImplementationTests.test_split_generator_rejects_invalid_or_missing_data_without_writing) ... ok
+test_validation_pair_alignment (test_stage1_bugfixes.DataPipelineImplementationTests.test_validation_pair_alignment) ... [WARN] Split file /tmp/tmp5mbsx5yc/split.json not found, using default split
+ok
+test_checkpoint_from_previous_target_version_cannot_resume_silently (test_stage1_bugfixes.PriorImplementationTests.test_checkpoint_from_previous_target_version_cannot_resume_silently) ... /mnt/CrossModal-Defog-OVOD/scripts/train/train_haze_density.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location='cpu')
+ok
+test_constant_minmax_is_zero_for_supported_float_types (test_stage1_bugfixes.PriorImplementationTests.test_constant_minmax_is_zero_for_supported_float_types) ... ok
+test_extreme_images_are_finite_and_keep_shape (test_stage1_bugfixes.PriorImplementationTests.test_extreme_images_are_finite_and_keep_shape) ... ok
+test_guided_filter_preserves_constant_source_with_nonconstant_guide (test_stage1_bugfixes.PriorImplementationTests.test_guided_filter_preserves_constant_source_with_nonconstant_guide) ... ok
+test_guided_filter_preserves_constant_source_with_zero_guide (test_stage1_bugfixes.PriorImplementationTests.test_guided_filter_preserves_constant_source_with_zero_guide) ... ok
+test_horizontal_gradient_is_not_erased (test_stage1_bugfixes.PriorImplementationTests.test_horizontal_gradient_is_not_erased) ... ok
+test_invalid_shapes_are_rejected (test_stage1_bugfixes.PriorImplementationTests.test_invalid_shapes_are_rejected) ... ok
+test_invalid_windows_and_regularizers_are_rejected (test_stage1_bugfixes.PriorImplementationTests.test_invalid_windows_and_regularizers_are_rejected) ... ok
+test_local_means_match_existing_pixel_window_mean (test_stage1_bugfixes.PriorImplementationTests.test_local_means_match_existing_pixel_window_mean) ... ok
+test_local_means_preserve_constants_including_corners (test_stage1_bugfixes.PriorImplementationTests.test_local_means_preserve_constants_including_corners) ... ok
+test_min_pool_does_not_invent_dark_border_pixels (test_stage1_bugfixes.PriorImplementationTests.test_min_pool_does_not_invent_dark_border_pixels) ... ok
+test_nonbinary_constant_does_not_become_false_contrast_after_minmax (test_stage1_bugfixes.PriorImplementationTests.test_nonbinary_constant_does_not_become_false_contrast_after_minmax) ... ok
+test_noncontiguous_input (test_stage1_bugfixes.PriorImplementationTests.test_noncontiguous_input) ... ok
+test_nonfinite_or_out_of_range_images_are_rejected (test_stage1_bugfixes.PriorImplementationTests.test_nonfinite_or_out_of_range_images_are_rejected) ... ok
+test_prior_constants_remain_unchanged (test_stage1_bugfixes.PriorImplementationTests.test_prior_constants_remain_unchanged) ... ok
+test_radius_zero_is_identity (test_stage1_bugfixes.PriorImplementationTests.test_radius_zero_is_identity) ... ok
+test_spatial_minmax_matches_full_image_reduction (test_stage1_bugfixes.PriorImplementationTests.test_spatial_minmax_matches_full_image_reduction) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.586s
+
+OK
+
+============================================================
+物理先验模块测试
+============================================================
+
+GPU available: Tesla V100-SXM2-16GB
+
+============================================================
+7. Constants Test (申报书规定参数)
+============================================================
+  [OK] WEIGHT_DARK = 0.5 (expected 0.5)
+  [OK] WEIGHT_CONTRAST = 0.3 (expected 0.3)
+  [OK] WEIGHT_COLOR = 0.2 (expected 0.2)
+  [OK] EXPONENT_MU = 1.5 (expected 1.5)
+[OK] All constants match 申报书规定!
+
+============================================================
+1. Shape Test
+============================================================
+  [OK] dark_channel: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] local_contrast: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] color_shift: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] d_hat: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] c_hat: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] k_hat: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] s_hat: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] s_final: [1, 3, 256, 256] -> [1, 1, 256, 256]
+  [OK] dark_channel: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] local_contrast: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] color_shift: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] d_hat: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] c_hat: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] k_hat: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] s_hat: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] s_final: [2, 3, 128, 128] -> [2, 1, 128, 128]
+  [OK] dark_channel: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] local_contrast: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] color_shift: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] d_hat: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] c_hat: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] k_hat: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] s_hat: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] s_final: [4, 3, 512, 512] -> [4, 1, 512, 512]
+  [OK] dark_channel: [1, 3, 100, 200] -> [1, 1, 100, 200]
+  [OK] local_contrast: [1, 3, 100, 200] -> [1, 1, 100, 200]
+  [OK] color_shift: [1, 3, 100, 200] -> [1, 1, 100, 200]
+  [OK] d_hat: [1, 3, 100, 200] -> [1, 1, 100, 200]
+  [OK] c_hat: [1, 3, 100, 200] -> [1, 1, 100, 200]
+  [OK] k_hat: [1, 3, 100, 200] -> [1, 1, 100, 200]
+  [OK] s_hat: [1, 3, 100, 200] -> [1, 1, 100, 200]
+  [OK] s_final: [1, 3, 100, 200] -> [1, 1, 100, 200]
+[OK] All shape tests passed!
+
+============================================================
+2. Range Test
+============================================================
+  [OK] d_hat: range [0.0000, 1.0000]
+  [OK] c_hat: range [0.0000, 1.0000]
+  [OK] k_hat: range [0.0000, 1.0000]
+  [OK] s_hat: range [0.0694, 0.8722]
+  [OK] s_final: range [0.2067, 0.2981]
+[OK] All range tests passed!
+
+============================================================
+3. Finite Test
+============================================================
+  [OK] d_hat: no NaN/Inf
+  [OK] c_hat: no NaN/Inf
+  [OK] k_hat: no NaN/Inf
+  [OK] s_hat: no NaN/Inf
+  [OK] s_final: no NaN/Inf
+  Testing edge case: all-zero image
+  [OK] all-zero image: no NaN/Inf
+  Testing edge case: all-ones image
+  [OK] all-ones image: no NaN/Inf
+[OK] All finite tests passed!
+
+============================================================
+4. Batch Test
+============================================================
+  [OK] batch_size=1: output shape (1, 1, 256, 256)
+  [OK] batch_size=2: output shape (2, 1, 256, 256)
+  [OK] batch_size=4: output shape (4, 1, 256, 256)
+  [OK] batch_size=8: output shape (8, 1, 256, 256)
+[OK] All batch tests passed!
+
+============================================================
+5. GPU Test
+============================================================
+  GPU: Tesla V100-SXM2-16GB
+  [OK] output on GPU: cuda:0
+[OK] GPU test passed!
+
+============================================================
+6. Constructive Test
+============================================================
+  6.1 Constant Image Test
+    [OK] constant image: range [0.3536, 0.3536]
+  6.2 Gradient Image Test
+    [OK] gradient image: range [0.3082, 0.9111]
+  6.3 Local Hazy Region Test
+    [OK] local haze image: range [0.0922, 0.9508]
+[OK] All constructive tests passed!
+
+============================================================
+测试结果汇总
+============================================================
+[OK] Constants
+[OK] Shape
+[OK] Range
+[OK] Finite
+[OK] Batch
+[OK] GPU
+[OK] Constructive
+
+[OK] 所有测试通过！
+
+下一步:
+  1. 运行可视化脚本：python scripts/data/visualize_physical_prior.py
+  2. 进入下一阶段：Encoder + 基础模块实现
+============================================================
+torch=2.4.1+cu124, device=cuda, prior=spatial_minmax_valid_boundary_v3
+[OK] (1, 3, 32, 48) -> (1, 1, 32, 48), loss=0.096352, backward/step complete
+[OK] (2, 3, 48, 32) -> (2, 1, 48, 32), loss=0.096325, backward/step complete
+[OK] Small-tensor smoke check passed
+>>> CELL 4 OK
+Waiting for validated dataset extraction...
+
+>>> CELL 6 START 2026-10-25T11:29:59.864127+00:00
+RSHaze_G: 官方 train/test 目录检查通过
+RSHaze_L: 官方 train/test 目录检查通过
+RSHaze_S: 官方 train/test 目录检查通过
+数据目录： /mnt/RSHaze+
+>>> CELL 6 OK
+
+>>> CELL 8 START 2026-10-25T11:30:00.179088+00:00
+
+============================================================
+RSHaze+ Split 生成
+============================================================
+
+扫描数据集...
+  RSHaze_G/train: 1000 files
+  RSHaze_G/test: 330 files
+  RSHaze_L/train: 5130 files
+  RSHaze_L/test: 270 files
+  RSHaze_S/train: 1000 files
+  RSHaze_S/test: 330 files
+
+官方 train 总计：7130 samples
+官方 test 总计：930 samples
+
+RSHaze_G:
+  官方 train: 1000
+  官方 test: 330
+  Train: 900, Val: 100
+
+RSHaze_L:
+  官方 train: 5130
+  官方 test: 270
+  Train: 4617, Val: 513
+
+RSHaze_S:
+  官方 train: 1000
+  官方 test: 330
+  Train: 900, Val: 100
+
+============================================================
+Split 统计
+============================================================
+
+Train: 6417 samples
+Val: 713 samples
+Test: 930 samples
+
+Train subset 分布:
+  RSHaze_G: 900
+  RSHaze_L: 4617
+  RSHaze_S: 900
+
+Val subset 分布:
+  RSHaze_G: 100
+  RSHaze_L: 513
+  RSHaze_S: 100
+
+Test subset 分布:
+  RSHaze_G: 330
+  RSHaze_L: 270
+  RSHaze_S: 330
+
+保存 split 到：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/rshazeplus_split.json
+
+============================================================
+重叠检查
+============================================================
+[OK] Train/Val: No overlap
+[OK] Train/Test: No overlap
+[OK] Val/Test: No overlap
+
+内部重复检查:
+[OK] Train: No internal duplicates
+[OK] Val: No internal duplicates
+[OK] Test: No internal duplicates
+
+============================================================
+Split 生成完成
+============================================================
+以上仅为原始路径检查；内容重复和同场景泄漏尚未核查。
+
+============================================================
+Split JSON 验证
+============================================================
+
+检查 JSON schema...
+train entries: 6417
+val entries: 713
+test entries: 930
+
+Train unique keys: 6417
+Val unique keys: 713
+Test unique keys: 930
+
+[OK] Train/Val: No overlap
+[OK] Train/Test: No overlap
+[OK] Val/Test: No overlap
+
+内部重复检查:
+[OK] Train: No internal duplicates
+[OK] Val: No internal duplicates
+[OK] Test: No internal duplicates
+
+============================================================
+Subset 分布
+============================================================
+
+Train:
+  RSHaze_G: 900
+  RSHaze_L: 4617
+  RSHaze_S: 900
+
+Val:
+  RSHaze_G: 100
+  RSHaze_L: 513
+  RSHaze_S: 100
+
+Test:
+  RSHaze_G: 330
+  RSHaze_L: 270
+  RSHaze_S: 330
+
+[OK] Split JSON 验证通过！
+仅通过清单结构/原始路径检查；内容重复和同场景泄漏尚未核查。
+train: 6417 images
+val: 713 images
+test: 930 images
+Experiment: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01
+Config: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/train_config.yaml
+请确认持久化存储：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01
+>>> CELL 8 OK
+
+>>> CELL 10 START 2026-10-25T11:30:14.397048+00:00
+
+============================================================
+Stage 5D: HazeDensityNet Formal Training
+============================================================
+
+Device: cuda
+CUDA device: Tesla V100-SXM2-16GB
+
+Creating model...
+============================================================
+HazeDensityNet Model Summary
+============================================================
+base_channels: 32
+use_sigmoid: True
+
+Parameter Statistics:
+  Encoder:    28,512 (3.3%)
+  MultiScale: 700,416 (81.0%)
+  Fusion:     122,880 (14.2%)
+  Decoder:    12,944 (1.5%)
+------------------------------------------------------------
+  Total:      864,752
+============================================================
+
+Creating Physical Prior...
+
+Loading datasets...
+Train loader: 1604 batches (6417 samples)
+Val loader: 179 batches (713 samples)
+/mnt/CrossModal-Defog-OVOD/scripts/train/train_haze_density.py:385: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if use_amp else None
+AMP: Enabled
+
+============================================================
+Training Start
+============================================================
+/mnt/CrossModal-Defog-OVOD/scripts/train/train_haze_density.py:434: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch  1/5: train_loss=0.011393, val_loss=0.008293, best=0.008293, time=142.4s
+Epoch  2/5: train_loss=0.009207, val_loss=0.007722, best=0.007722, time=123.6s
+Epoch  3/5: train_loss=0.008831, val_loss=0.007447, best=0.007447, time=94.4s
+Epoch  4/5: train_loss=0.008685, val_loss=0.007329, best=0.007329, time=91.7s
+Epoch  5/5: train_loss=0.008440, val_loss=0.007214, best=0.007214, time=85.8s
+
+Saved training log: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/results/train_log.csv
+Saved summary: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/results/training_summary.txt
+
+============================================================
+Acceptance Check
+============================================================
+[OK] No NaN in training
+[OK] No Inf in training
+[OK] Prediction range: [0.0000, 1.0000]
+[OK] Target range: [0.1251, 0.9876]
+[OK] Checkpoints saved (latest.pth, best.pth)
+
+============================================================
+Result
+============================================================
+[OK] Stage 5D Formal Training PASSED
+本次训练命令成功结束，最优权重：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+>>> CELL 10 OK
+
+>>> CELL 12 START 2026-10-25T11:39:24.892924+00:00
+Checkpoint: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+保存目录：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z
+每子集数量：{'RSHaze_G': 2, 'RSHaze_L': 2, 'RSHaze_S': 2}
+>>> CELL 12 OK
+
+>>> CELL 14 START 2026-10-25T11:39:51.981988+00:00
+
+============================================================
+Stage 5E: HazeDensityNet Test Evaluation
+============================================================
+
+Device: cuda
+
+Loading checkpoint: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+/mnt/CrossModal-Defog-OVOD/scripts/evaluate/evaluate_haze_density.py:134: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.checkpoint, map_location='cpu')
+  Epoch: 5
+  Val Loss: 0.007213565194064968
+
+Creating model...
+  base_channels: 32
+  use_sigmoid: True
+
+Creating Physical Prior...
+
+Loading test dataset...
+Test loader: 233 batches (930 samples)
+
+Test dataset statistics:
+  Total samples: 930
+  Subset counts: {'RSHaze_G': 330, 'RSHaze_L': 270, 'RSHaze_S': 330}
+
+============================================================
+Evaluation
+============================================================
+
+Total test samples: 930
+Shape per sample: torch.Size([1, 256, 256])
+[OK] No NaN detected
+Prediction range: [0.0000, 1.0000]
+[OK] Prediction range within [0, 1]
+
+============================================================
+Overall Metrics
+============================================================
+
+Overall Test Metrics:
+  MSE:     0.006821
+  MAE:     0.064042
+  RMSE:    0.082589
+  Pearson: 0.843236
+
+============================================================
+Metrics by Subset
+============================================================
+
+RSHaze_G (330 samples):
+  MAE:     0.062931
+  RMSE:    0.082195
+  Pearson: 0.837471
+
+RSHaze_L (270 samples):
+  MAE:     0.074426
+  RMSE:    0.093951
+  Pearson: 0.844092
+
+RSHaze_S (330 samples):
+  MAE:     0.056658
+  RMSE:    0.072420
+  Pearson: 0.849294
+
+============================================================
+Prediction Distribution Audit
+============================================================
+
+Prediction Distribution:
+  mean: 0.494884
+  std: 0.127875
+  min: 0.000000
+  max: 1.000000
+  p5: 0.321981
+  p25: 0.410122
+  p50: 0.474047
+  p75: 0.572827
+  p95: 0.718952
+
+Target Distribution:
+  mean: 0.481251
+  std: 0.151495
+  min: 0.107890
+  max: 0.979805
+  p5: 0.280742
+  p25: 0.365199
+  p50: 0.447665
+  p75: 0.579955
+  p95: 0.774369
+
+============================================================
+Generating Visualization
+============================================================
+  RSHaze_G: Saved 16 visualizations
+  RSHaze_L: Saved 16 visualizations
+  RSHaze_S: Saved 16 visualizations
+
+============================================================
+Saving Report
+============================================================
+Saved report: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/test_metrics.txt
+
+============================================================
+Acceptance Check
+============================================================
+[PASS] No NaN in predictions
+[PASS] Prediction range [0.0000, 1.0000] within [0, 1]
+[PASS] All subsets completed: {'RSHaze_L', 'RSHaze_G', 'RSHaze_S'}
+[PASS] Metrics saved to /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/test_metrics.txt
+
+[ALL CHECKS PASSED]
+测试集报告与图像：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z
+>>> CELL 14 OK
+
+>>> CELL 16 START 2026-10-25T11:41:04.805470+00:00
+项目代码已解包： /tmp/stage2_haze_8hq__w2w
+独立评测代码： /tmp/stage2_haze_8hq__w2w
+>>> CELL 16 OK
+
+>>> CELL 17 START 2026-10-25T11:41:05.612507+00:00
+学生网络将使用本实验当前版本权重： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+独立评测结果将保存在： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114105_880258Z
+
+RUN: unit_tests
+..................dcp: 1/2 cases
+prior: 1/2 cases
+......[WARN] Split file /tmp/tmp84hz4im2/split.json not found, using default split
+.[WARN] Split file /tmp/tmpuioo6wm5/split.json not found, using default split
+..[WARN] Split file /tmp/tmp4ub395ts/split.json not found, using default split
+.[WARN] Split file /tmp/tmp4hbwvd6_/split.json not found, using default split
+.[WARN] Split file /tmp/tmph7bv_mm9/split.json not found, using default split
+.[WARN] Split file /tmp/tmpo3edt7dk/split.json not found, using default split
+[WARN] 27 samples missing clear image
+..[WARN] Split file /tmp/tmpk06ypybk/split.json not found, using default split
+.[WARN] Split file /tmp/tmpqrbvnndh/split.json not found, using default split
+..[WARN] Split file /tmp/tmpncck9wzx/split.json not found, using default split
+./tmp/stage2_haze_8hq__w2w/scripts/train/train_haze_density.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location='cpu')
+.................[WARN] Split file /tmp/tmp9_vwmttm/split.json not found, using default split
+..[WARN] Split file /tmp/tmpdnen2mpd/split.json not found, using default split
+..[WARN] Split file /tmp/tmpcg72a1se/split.json not found, using default split
+..[WARN] Split file /tmp/tmpyzj6xm_0/split.json not found, using default split
+..
+Loading checkpoint: /tmp/tmp1rvutuce/latest.pth
+  Epoch: 2
+  Best val loss: 0.100000
+  Resuming from epoch 3
+.........student: 1/32 cases
+student: 21/32 cases
+.
+----------------------------------------------------------------------
+Ran 71 tests in 2.332s
+
+OK
+
+
+RUN: minimal_generate
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: minimal_evaluate
+dcp: 1/20 cases
+prior: 1/20 cases
+FAIL see results.json
+
+Traceback (most recent call last):
+  File "/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py", line 87, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py", line 79, in main
+    run(profile + '_evaluate', cli + ['evaluate', '--dataset', str(data), '--output', str(results), '--device', device] + checkpoint)
+  File "/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py", line 37, in run
+    raise RuntimeError(f'{name}: see {output / (name + ".log")}')
+RuntimeError: minimal_evaluate: see /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114105_880258Z/minimal_evaluate.log
+CalledProcessError: Command '['/usr/bin/python', '-u', '/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py', '--data-root', '/mnt/RSHaze+', '--output', '/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114105_880258Z', '--checkpoint', '/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/mnt/CrossModal-Defog-OVOD/experiments/notebook_execution/full_run_20261025/execute.py", line 79, in <module>
+    client.execute_cell(cell, index, execution_count=client.code_cells_executed + 1)
+  File "/usr/local/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/asyncio/base_events.py", line 664, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/usr/local/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# 需要第 1、3、4 节提供的 PROJECT_ROOT、DATASET_ROOT、RUN_DIR 与 PRIOR_VERSION。
+if not DATASET_ROOT.is_dir() or not RUN_DIR.is_dir():
+    raise RuntimeError('请先完成第 3、4 节的数据和实验目录准备。')
+ALLOW_SMALL_SAMPLE_DOWNLOAD = False  # 缺少官方小样本且允许联网时改为 True；硬上限 24 MiB。
+stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S_%fZ')
+BENCHMARK_OUTPUT = RUN_DIR / 'benchmarks' / stamp
+benchmark_command = [
+    sys.executable, '-u', str(BENCHMARK_ROOT / 'scripts/benchmark/run_benchmark.py'),
+    '--data-root', str(DATASET_ROOT), '--output', str(BENCHMARK_OUTPUT),
+]
+if ALLOW_SMALL_SAMPLE_DOWNLOAD:
+    benchmark_command.append('--fetch-small-sample')
+candidate = CHECKPOINT_DIR / 'best.pth'
+if candidate.is_file():
+    saved = torch.load(candidate, map_location='cpu', weights_only=True)
+    if saved.get('config', {}).get('prior_version') == PRIOR_VERSION and saved.get('epoch', 0) >= 1:
+        benchmark_command += ['--checkpoint', str(candidate)]
+        print('学生网络将使用本实验当前版本权重：', candidate)
+    else:
+        print('权重缺少当前先验版本或训练轮次，学生正确性将标记 NOT EVALUATED：', candidate)
+else:
+    print('未找到本实验权重；DCP/三先验仍可评测，学生正确性 NOT EVALUATED。')
+print('独立评测结果将保存在：', BENCHMARK_OUTPUT)
+run_command(benchmark_command, cwd=BENCHMARK_ROOT)
+
+------------------
+
+----- stdout -----
+学生网络将使用本实验当前版本权重： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+独立评测结果将保存在： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114105_880258Z
+----- stdout -----
+RUN: unit_tests
+----- stdout -----
+..................dcp: 1/2 cases
+----- stdout -----
+prior: 1/2 cases
+----- stdout -----
+......[WARN] Split file /tmp/tmp84hz4im2/split.json not found, using default split
+----- stdout -----
+.[WARN] Split file /tmp/tmpuioo6wm5/split.json not found, using default split
+----- stdout -----
+..[WARN] Split file /tmp/tmp4ub395ts/split.json not found, using default split
+----- stdout -----
+.[WARN] Split file /tmp/tmp4hbwvd6_/split.json not found, using default split
+----- stdout -----
+.[WARN] Split file /tmp/tmph7bv_mm9/split.json not found, using default split
+----- stdout -----
+.[WARN] Split file /tmp/tmpo3edt7dk/split.json not found, using default split
+----- stdout -----
+[WARN] 27 samples missing clear image
+----- stdout -----
+..[WARN] Split file /tmp/tmpk06ypybk/split.json not found, using default split
+----- stdout -----
+.[WARN] Split file /tmp/tmpqrbvnndh/split.json not found, using default split
+----- stdout -----
+..[WARN] Split file /tmp/tmpncck9wzx/split.json not found, using default split
+----- stdout -----
+./tmp/stage2_haze_8hq__w2w/scripts/train/train_haze_density.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+----- stdout -----
+  checkpoint = torch.load(checkpoint_path, map_location='cpu')
+----- stdout -----
+.................[WARN] Split file /tmp/tmp9_vwmttm/split.json not found, using default split
+----- stdout -----
+..[WARN] Split file /tmp/tmpdnen2mpd/split.json not found, using default split
+----- stdout -----
+..[WARN] Split file /tmp/tmpcg72a1se/split.json not found, using default split
+----- stdout -----
+..[WARN] Split file /tmp/tmpyzj6xm_0/split.json not found, using default split
+----- stdout -----
+..
+----- stdout -----
+Loading checkpoint: /tmp/tmp1rvutuce/latest.pth
+----- stdout -----
+  Epoch: 2
+----- stdout -----
+  Best val loss: 0.100000
+----- stdout -----
+  Resuming from epoch 3
+----- stdout -----
+.........student: 1/32 cases
+----- stdout -----
+student: 21/32 cases
+----- stdout -----
+.
+----- stdout -----
+----------------------------------------------------------------------
+----- stdout -----
+Ran 71 tests in 2.332s
+----- stdout -----
+
+----- stdout -----
+OK
+----- stdout -----
+
+----- stdout -----
+
+----- stdout -----
+RUN: minimal_generate
+----- stdout -----
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+----- stdout -----
+
+----- stdout -----
+
+----- stdout -----
+RUN: minimal_evaluate
+----- stdout -----
+dcp: 1/20 cases
+----- stdout -----
+prior: 1/20 cases
+----- stdout -----
+FAIL see results.json
+----- stdout -----
+
+----- stdout -----
+Traceback (most recent call last):
+----- stdout -----
+  File "/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py", line 87, in <module>
+----- stdout -----
+    sys.exit(main())
+----- stdout -----
+             ^^^^^^
+----- stdout -----
+  File "/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py", line 79, in main
+----- stdout -----
+    run(profile + '_evaluate', cli + ['evaluate', '--dataset', str(data), '--output', str(results), '--device', device] + checkpoint)
+----- stdout -----
+  File "/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py", line 37, in run
+----- stdout -----
+    raise RuntimeError(f'{name}: see {output / (name + ".log")}')
+----- stdout -----
+RuntimeError: minimal_evaluate: see /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114105_880258Z/minimal_evaluate.log
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mCalledProcessError[0m                        Traceback (most recent call last)
+Cell [0;32mIn[9], line 24[0m
+[1;32m     22[0m     [38;5;28mprint[39m([38;5;124m'[39m[38;5;124m未找到本实验权重；DCP/三先验仍可评测，学生正确性 NOT EVALUATED。[39m[38;5;124m'[39m)
+[1;32m     23[0m [38;5;28mprint[39m([38;5;124m'[39m[38;5;124m独立评测结果将保存在：[39m[38;5;124m'[39m, BENCHMARK_OUTPUT)
+[0;32m---> 24[0m [43mrun_command[49m[43m([49m[43mbenchmark_command[49m[43m,[49m[43m [49m[43mcwd[49m[38;5;241;43m=[39;49m[43mBENCHMARK_ROOT[49m[43m)[49m
+
+Cell [0;32mIn[1], line 28[0m, in [0;36mrun_command[0;34m(args, cwd)[0m
+[1;32m     26[0m     returncode [38;5;241m=[39m process[38;5;241m.[39mwait()
+[1;32m     27[0m [38;5;28;01mif[39;00m returncode:
+[0;32m---> 28[0m     [38;5;28;01mraise[39;00m subprocess[38;5;241m.[39mCalledProcessError(returncode, command)
+
+[0;31mCalledProcessError[0m: Command '['/usr/bin/python', '-u', '/tmp/stage2_haze_8hq__w2w/scripts/benchmark/run_benchmark.py', '--data-root', '/mnt/RSHaze+', '--output', '/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114105_880258Z', '--checkpoint', '/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth']' returned non-zero exit status 1.
+

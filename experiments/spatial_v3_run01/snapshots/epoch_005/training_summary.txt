@@ -1,0 +1,33 @@
+Stage 5D: Formal Training Summary
+============================================================
+
+Initial train loss: 0.011393
+Final train loss: 0.008440
+Initial val loss: 0.008293
+Final val loss: 0.007214
+Best val loss: 0.007214
+Epochs in this invocation: 5
+Total time: 537.9s
+Time per epoch: 107.57s
+Peak GPU memory: 639.0 MB
+Device: cuda
+
+Config:
+  dataset_root: /mnt/RSHaze+
+  split_file: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/rshazeplus_split.json
+  image_size: 256
+  batch_size: 4
+  num_workers: 2
+  pin_memory: True
+  base_channels: 32
+  use_sigmoid: True
+  epochs: 5
+  lr: 0.0001
+  amp: True
+  seed: 42
+  checkpoint_dir: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints
+  result_dir: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/results
+  window_size: 15
+  guided_radius: 15
+  guided_eps: 0.01
+  prior_version: spatial_minmax_valid_boundary_v3

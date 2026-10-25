@@ -1,0 +1,1212 @@
+{
+  "schema_version": 1,
+  "selected_at": "2026-10-25T22:42:08.358059+08:00",
+  "experiment": "spatial_v3_run01",
+  "selection_scope": "Exact allowlist for the completed 5-epoch and cumulative 50-epoch experiments; no files deleted.",
+  "file_paths_relative_to": "repository_root",
+  "manifest_path": "experiments/artifacts_manifest.json",
+  "manifest_self_hash": "Omitted to avoid a recursive digest. All other selected files are listed below.",
+  "selected_file_count_including_manifest": 156,
+  "hashed_file_count": 155,
+  "hashed_total_bytes": 66165320,
+  "checkpoints": [
+    {
+      "path": "experiments/spatial_v3_run01/snapshots/epoch_005/best.pth",
+      "role": "five_epoch_independent_ranking_baseline",
+      "epoch": 5,
+      "val_loss": 0.007213565194064968,
+      "sha256": "99f08b864ef27a0e169adc412f6477dc639b2219323277103e02ff7b2cfe49ce"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/checkpoints/best.pth",
+      "role": "minimum_validation_pseudo_label_mse_over_50_epochs",
+      "epoch": 48,
+      "val_loss": 0.006716976755365291,
+      "sha256": "4d4d09d6e7c584658757bc1c35f1579c85a209b3af78395da1b4cd3abda72651"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/checkpoints/latest.pth",
+      "role": "resume_after_epoch_50",
+      "epoch": 50,
+      "val_loss": 0.006754870150959299,
+      "sha256": "da46dab676480d3b3f65cd15852788377c66f63e1669c6c7b6b7d09ba549ce7d"
+    }
+  ],
+  "five_epoch_best_and_latest_payloads_identical": true,
+  "benchmark_examples": [
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_06.png",
+      "scene_id": "G_test_1126",
+      "pattern": "blob",
+      "method": "dcp",
+      "case_id": "G_test_1126__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_07.png",
+      "scene_id": "G_test_1126",
+      "pattern": "blob",
+      "method": "prior",
+      "case_id": "G_test_1126__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_08.png",
+      "scene_id": "G_test_1126",
+      "pattern": "blob",
+      "method": "student",
+      "case_id": "G_test_1126__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_09.png",
+      "scene_id": "G_test_1328",
+      "pattern": "blob",
+      "method": "dcp",
+      "case_id": "G_test_1328__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_10.png",
+      "scene_id": "G_test_1328",
+      "pattern": "blob",
+      "method": "prior",
+      "case_id": "G_test_1328__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_11.png",
+      "scene_id": "G_test_1328",
+      "pattern": "blob",
+      "method": "student",
+      "case_id": "G_test_1328__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_15.png",
+      "scene_id": "G_test_1072",
+      "pattern": "gradient",
+      "method": "dcp",
+      "case_id": "G_test_1072__a0_b0__gradient"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_16.png",
+      "scene_id": "G_test_1072",
+      "pattern": "gradient",
+      "method": "prior",
+      "case_id": "G_test_1072__a0_b0__gradient"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_17.png",
+      "scene_id": "G_test_1072",
+      "pattern": "gradient",
+      "method": "student",
+      "case_id": "G_test_1072__a0_b0__gradient"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_24.png",
+      "scene_id": "G_test_1053",
+      "pattern": "regions",
+      "method": "dcp",
+      "case_id": "G_test_1053__a0_b0__regions"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_25.png",
+      "scene_id": "G_test_1053",
+      "pattern": "regions",
+      "method": "prior",
+      "case_id": "G_test_1053__a0_b0__regions"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_26.png",
+      "scene_id": "G_test_1053",
+      "pattern": "regions",
+      "method": "student",
+      "case_id": "G_test_1053__a0_b0__regions"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_06.png",
+      "scene_id": "G_test_1126",
+      "pattern": "blob",
+      "method": "dcp",
+      "case_id": "G_test_1126__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_07.png",
+      "scene_id": "G_test_1126",
+      "pattern": "blob",
+      "method": "prior",
+      "case_id": "G_test_1126__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_08.png",
+      "scene_id": "G_test_1126",
+      "pattern": "blob",
+      "method": "student",
+      "case_id": "G_test_1126__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_09.png",
+      "scene_id": "G_test_1328",
+      "pattern": "blob",
+      "method": "dcp",
+      "case_id": "G_test_1328__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_10.png",
+      "scene_id": "G_test_1328",
+      "pattern": "blob",
+      "method": "prior",
+      "case_id": "G_test_1328__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_11.png",
+      "scene_id": "G_test_1328",
+      "pattern": "blob",
+      "method": "student",
+      "case_id": "G_test_1328__a0_b0__blob"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_15.png",
+      "scene_id": "G_test_1072",
+      "pattern": "gradient",
+      "method": "dcp",
+      "case_id": "G_test_1072__a0_b0__gradient"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_16.png",
+      "scene_id": "G_test_1072",
+      "pattern": "gradient",
+      "method": "prior",
+      "case_id": "G_test_1072__a0_b0__gradient"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_17.png",
+      "scene_id": "G_test_1072",
+      "pattern": "gradient",
+      "method": "student",
+      "case_id": "G_test_1072__a0_b0__gradient"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_24.png",
+      "scene_id": "G_test_1053",
+      "pattern": "regions",
+      "method": "dcp",
+      "case_id": "G_test_1053__a0_b0__regions"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_25.png",
+      "scene_id": "G_test_1053",
+      "pattern": "regions",
+      "method": "prior",
+      "case_id": "G_test_1053__a0_b0__regions"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_26.png",
+      "scene_id": "G_test_1053",
+      "pattern": "regions",
+      "method": "student",
+      "case_id": "G_test_1053__a0_b0__regions"
+    }
+  ],
+  "report_curation": [
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/report.md",
+      "original_full_report": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/report.full.local.md",
+      "removed_image_links": [
+        "figures/comparison_00.png",
+        "figures/comparison_01.png",
+        "figures/comparison_02.png",
+        "figures/comparison_03.png",
+        "figures/comparison_04.png",
+        "figures/comparison_05.png",
+        "figures/comparison_12.png",
+        "figures/comparison_13.png",
+        "figures/comparison_14.png",
+        "figures/comparison_18.png",
+        "figures/comparison_19.png",
+        "figures/comparison_20.png",
+        "figures/comparison_21.png",
+        "figures/comparison_22.png",
+        "figures/comparison_23.png",
+        "figures/comparison_27.png",
+        "figures/comparison_28.png",
+        "figures/comparison_29.png",
+        "figures/comparison_30.png",
+        "figures/comparison_31.png"
+      ],
+      "original_sha256": "b263ec7c40657520d0e667b9cde1d676da0b5cb3f7d92def9d92bb00666b2dac",
+      "curated_sha256": "61a2665b6691434e799a0e4b9d08f4561c1062421824cf7b9a1cf87716074987",
+      "numeric_section_unchanged": true
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/report.md",
+      "original_full_report": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/report.full.local.md",
+      "removed_image_links": [
+        "figures/comparison_00.png",
+        "figures/comparison_01.png",
+        "figures/comparison_02.png",
+        "figures/comparison_03.png",
+        "figures/comparison_04.png",
+        "figures/comparison_05.png",
+        "figures/comparison_12.png",
+        "figures/comparison_13.png",
+        "figures/comparison_14.png",
+        "figures/comparison_18.png",
+        "figures/comparison_19.png",
+        "figures/comparison_20.png",
+        "figures/comparison_21.png",
+        "figures/comparison_22.png",
+        "figures/comparison_23.png",
+        "figures/comparison_27.png",
+        "figures/comparison_28.png",
+        "figures/comparison_29.png",
+        "figures/comparison_30.png",
+        "figures/comparison_31.png"
+      ],
+      "original_sha256": "fee2e3a48ad729d8b1152e413ad84e6631d4baa78efda4ae4f2d3ecd93844809",
+      "curated_sha256": "f4f34c5331ad7509e6ac1f9667edc14e3cd98b50d6e89de63f1fb58a72ed0304",
+      "numeric_section_unchanged": true
+    }
+  ],
+  "scientific_comparison": {
+    "five_epoch_uniform_ranking_accuracy": 0.98125,
+    "final_best_uniform_ranking_accuracy": 0.775,
+    "five_epoch_test_pseudo_label_mae": 0.064042,
+    "final_best_test_pseudo_label_mae": 0.060457,
+    "interpretation": "Pseudo-label fitting improves while independent uniform-haze ranking degrades; retain both versions. One geographic group only."
+  },
+  "excluded_local_artifacts": [
+    "Synthetic .npz cases and pixelwise .npy predictions",
+    "Original source images; source hashes and generation metadata are included",
+    "Repeated notebook output backups and the equivalent 5-epoch latest.pth",
+    "Unselected bulk figures, duplicate minimal reports, and failed-run generated data"
+  ],
+  "files": [
+    {
+      "path": "experiments/.gitkeep",
+      "category": "repository_layout",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/README.md",
+      "category": "artifact_index",
+      "size_bytes": 4838,
+      "sha256": "f8e72e67781f7270820bd414ed3a935eed052552a73272541c3c25b061f28210"
+    },
+    {
+      "path": "experiments/notebook_execution/full_run_20261025/initial_run.log",
+      "category": "execution_evidence",
+      "size_bytes": 44680,
+      "sha256": "72569cb9351851418abe1af26c66f1becb93542e2d814cdd700457e02c88e30c"
+    },
+    {
+      "path": "experiments/notebook_execution/full_run_20261025/run.log",
+      "category": "execution_evidence",
+      "size_bytes": 9517,
+      "sha256": "6f1561c9b331a548938eefa7e1064069a87df236f0dcc709cde9a80373532996"
+    },
+    {
+      "path": "experiments/notebook_execution/full_run_20261025/status.json",
+      "category": "execution_evidence",
+      "size_bytes": 632,
+      "sha256": "8f00bb764a66d877a890ee84ad9e0a9e41ebdbdb561d713cfb12b700400a42d9"
+    },
+    {
+      "path": "experiments/notebook_execution/full_run_20261025/verification.json",
+      "category": "execution_evidence",
+      "size_bytes": 1395,
+      "sha256": "d92ac42ca757db9d406a3601ea43cca81cd9ee29ce0a34135eba40870d2574e3"
+    },
+    {
+      "path": "experiments/notebook_execution/resume_to_50_20261025/resume_info.json",
+      "category": "execution_evidence",
+      "size_bytes": 662,
+      "sha256": "d3020659b3238d330369068f159e5cbf53c321dd3e28df3179196fc8082bfc25"
+    },
+    {
+      "path": "experiments/notebook_execution/resume_to_50_20261025/run.log",
+      "category": "execution_evidence",
+      "size_bytes": 21299,
+      "sha256": "60ea86a0753715c8addc0ef55a80faee7f78b01d2c0f35363276b05f5a286278"
+    },
+    {
+      "path": "experiments/notebook_execution/resume_to_50_20261025/status.json",
+      "category": "execution_evidence",
+      "size_bytes": 740,
+      "sha256": "c2a37f35bb747b22bcc421f40065b8b0e00f605379d04674123e8629f799bf92"
+    },
+    {
+      "path": "experiments/notebook_execution/resume_to_50_20261025/verification.json",
+      "category": "execution_evidence",
+      "size_bytes": 1572,
+      "sha256": "6054c7f324e3beb93dd06be4200b6675332feb81c4c1d6909492b149dcd2a0a0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_data/dataset.json",
+      "category": "benchmark_input_manifest",
+      "size_bytes": 108730,
+      "sha256": "32e914be93cf146d95e1772d5de4b914e2f1b81c26546d560e18b8c07a5b1cf7"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_evaluate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 492,
+      "sha256": "d21e98cf897e98dfa43497e9f160dec4657e9dc7537429e72f52f1571ef832d9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_generate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 69,
+      "sha256": "3b42c5d34b39e7bbce8954d59d616fe7d8d36e0dc2ab937e141d5a58fc8ad4bd"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_report.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 183,
+      "sha256": "bb97de0a672b3c3d215698743d87710480a8397657ce87f13517de02afeb26d0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/condition_strata.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 2997,
+      "sha256": "d6d1458a400803a9ebb2b7d318761c937ef0eb9a5b23488ae1444804e88fa006"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_06.png",
+      "category": "benchmark_examples",
+      "size_bytes": 580482,
+      "sha256": "b98afdde0212aa0e00b5affad94a09fc233b78f277d88cffcbf75e6c9120f30d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_07.png",
+      "category": "benchmark_examples",
+      "size_bytes": 634149,
+      "sha256": "ac98446a8c72b47a55238d39b1ab344d779b872557035e285b76b04136b773f0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_08.png",
+      "category": "benchmark_examples",
+      "size_bytes": 656193,
+      "sha256": "6af92800936201617461d2fce2c9ca50140fd6cdf81b95139411dad0fe89048e"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_09.png",
+      "category": "benchmark_examples",
+      "size_bytes": 629062,
+      "sha256": "dd2e0bdf6502eed52b687cfbad92f7b4b92926ca20352acd703e70b5ddcfe8e3"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_10.png",
+      "category": "benchmark_examples",
+      "size_bytes": 692397,
+      "sha256": "596274062eb5d9279176235f6f8b2a8cb94a5bf0f55e024488dd447ad24ba4c8"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_11.png",
+      "category": "benchmark_examples",
+      "size_bytes": 713171,
+      "sha256": "388c797ff043f96bdca91f81b9b1f6903a7b9a29ab8cc05f8c78fad859ec0d37"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_15.png",
+      "category": "benchmark_examples",
+      "size_bytes": 471903,
+      "sha256": "a8c399376145ade46db17bde1a387e8eca2c070497f16b23bc8538f13c5e39d2"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_16.png",
+      "category": "benchmark_examples",
+      "size_bytes": 501316,
+      "sha256": "2e7d179b4c81102c6bfe59c0b291f4fd9cb10dcb510ecc051f41fe34d7554b5d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_17.png",
+      "category": "benchmark_examples",
+      "size_bytes": 547141,
+      "sha256": "46cd9b2cc1648466e84019452120a44ba55ed093ab1c4d8c8c06274353553331"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_24.png",
+      "category": "benchmark_examples",
+      "size_bytes": 500294,
+      "sha256": "6168a49fcaa910eebb2962fa594704c9a0b09f6a515044262c4160749b90b7a1"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_25.png",
+      "category": "benchmark_examples",
+      "size_bytes": 558805,
+      "sha256": "9d33da5550343f16b9997dd11c096555af098e9e332bf059ed8ec968e1fb02b0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/comparison_26.png",
+      "category": "benchmark_examples",
+      "size_bytes": 592149,
+      "sha256": "c06a0e53fb694d13c10d1cb2f43323318ce6b8b148f914bdd309089d2c8de54f"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_00.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48375,
+      "sha256": "42c0c166c59a1658f618014555885793272a322f91ce22350de13401b6416368"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_01.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48644,
+      "sha256": "bd6ff9cc863a6ee5fb47095e0779586fd2a63d86d76b5ffecdee8c6a67555481"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_02.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49461,
+      "sha256": "515efe17928a915a5e15d6ffa41b9759cd69e09fe80d9bffa551266eba77adbb"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_03.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49322,
+      "sha256": "9039c9c48dc9b0437dbef03e4a66efecb895732fac905312eca22cbc65eb3a60"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_04.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47965,
+      "sha256": "d0eab395121980282124a02ca58192fed9555228e7e7b5fb1cf9034c6999a896"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_05.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48411,
+      "sha256": "2b23891d10fcf1671a2d9ef306a6635ff93bb0d8f9c890ca09c1b87234abefa1"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_06.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47582,
+      "sha256": "755e3a03424025be12a17caf7fc1064ec6fbfd30c7c2e33e1a481a703697006a"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_07.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49096,
+      "sha256": "bdaad1232761349e8a7d0e2aa3fe7dd13d8ea4fc0818a04d841b34e9fcf3f4c6"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_08.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47222,
+      "sha256": "91a3876208717da7e3ff0754bdeba74ad16dbcb959a24710704dd021b73f59b8"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_09.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47734,
+      "sha256": "30b71bbe6daee689f1fa52851531f9b83b22e249ab39759b679537518a34cd09"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_10.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49068,
+      "sha256": "346c127e76d3c9dc00a4d6d5ea1e602360b2b5f96b3cf3ab30652b7d59e0c6c5"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_11.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48736,
+      "sha256": "727a780baba48d72df5cda33e22560b7d79be89f5c15a2bf82013d11dc7d4a56"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_12.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47433,
+      "sha256": "a4979eff1ae70d0bbc861fc6b7a19f7ab4a7596b18ef308a3ec7f98f5e915687"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_13.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47032,
+      "sha256": "addcb100e99356d08eb8d9c9cdf14b9dc3f6a7be91ff682bbd6402c5688755ad"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_14.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49556,
+      "sha256": "23ddb35e636cfe6277512074bd9789cc48df0b8b8f8389a4b59194f895807eec"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/figures/curve_15.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 50357,
+      "sha256": "0a13e297093b57b94fffcd9252faee9e09c7a02e86d185cd9e342cc6d62b6398"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/per_image.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 196645,
+      "sha256": "4580ebaaddf72991ad7bd04b809bb032a04ad4061a770540c6367c5ebf05140d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/ranking.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 14838,
+      "sha256": "f7477aa393b23698342aee5a4aef087dc4c0e0051062b37d8b17dd8144e7accf"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/report.md",
+      "category": "benchmark_metrics",
+      "size_bytes": 7933,
+      "sha256": "61a2665b6691434e799a0e4b9d08f4561c1062421824cf7b9a1cf87716074987"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/results.json",
+      "category": "benchmark_metrics",
+      "size_bytes": 650283,
+      "sha256": "092fc97099fc3590cc01d9dfb6abb134fb1e97e62ae6e00fd28d9dc82e735dd0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/spatial_strata.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 2663,
+      "sha256": "fd76bdf12ef85f40f0d37fe6cd2f5ef732d8e1620813d8db6ae3d9ef8d5b070a"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/full_results/summary.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 1820,
+      "sha256": "fd1591ae4fca1b0ce1fe644ef5283852e1e0b31af98ea6b520b08f67d9daf3b9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/minimal_data/dataset.json",
+      "category": "benchmark_input_manifest",
+      "size_bytes": 33946,
+      "sha256": "c3a810ccfae2ea642af531c642919e4f1a1636c7ad6232e3dea8202e921d97f5"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/minimal_evaluate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 123,
+      "sha256": "c8aca16a4ac0f287cbd2dde9d145ff51c5e2c98fcf8834f05b25c5548d0dfdaa"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/minimal_generate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 69,
+      "sha256": "3b42c5d34b39e7bbce8954d59d616fe7d8d36e0dc2ab937e141d5a58fc8ad4bd"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/minimal_report.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 186,
+      "sha256": "d8e2bbed8733a713339fa355e9a06c241ec777a6fa04777513dd51eba0d4429e"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/performance.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 459,
+      "sha256": "6b9b28ce9985c243ce87b6c50547298824aa36c3719f3dd2f34fef230da248c9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/performance/performance.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 19757,
+      "sha256": "fb02e1abf5aabb623be7175010b954ac09e4d64db360acd39dadc0b31802726d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/performance/performance.json",
+      "category": "benchmark_metrics",
+      "size_bytes": 70390,
+      "sha256": "817babec47d556a331dd63c339277822d2ac8279ee5327aa6d5cc357925c2833"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/performance/report.md",
+      "category": "benchmark_metrics",
+      "size_bytes": 2561,
+      "sha256": "374e8f444aa70372280f16e40bd9854b7b4f210a1ade577fe9ae9a4113df48a8"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/run_status.json",
+      "category": "benchmark_status",
+      "size_bytes": 642,
+      "sha256": "08039c9f318684722a22540fe00bf63bc2973acf44e31e690eda9d215ac229e8"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/source_samples/pilot_scenes.json",
+      "category": "benchmark_input_manifest",
+      "size_bytes": 3309,
+      "sha256": "b90196c9d85c3400092547ce46f61629da6826d5ef224ce90bab35845ffa682d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z/unit_tests.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 2393,
+      "sha256": "9f020902afc33b677ecb7549f4c2006a43761f8a9a801a3513e0b583e0b015aa"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_data/dataset.json",
+      "category": "benchmark_input_manifest",
+      "size_bytes": 108730,
+      "sha256": "97e4dd0c7d5c864285e26dd646f15978753002cc9ff772237b5218de44b6169c"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_evaluate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 492,
+      "sha256": "d21e98cf897e98dfa43497e9f160dec4657e9dc7537429e72f52f1571ef832d9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_generate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 69,
+      "sha256": "3b42c5d34b39e7bbce8954d59d616fe7d8d36e0dc2ab937e141d5a58fc8ad4bd"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_report.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 183,
+      "sha256": "01c204e3a33a61a5c1df14f29d7667ad962354b8a8ec3ea322fe93335473f4db"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/condition_strata.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 3000,
+      "sha256": "8cf5a528ded1d6ef9063d946811ff4d10c79d34aa6a4e80eaa08370a5003a887"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_06.png",
+      "category": "benchmark_examples",
+      "size_bytes": 580482,
+      "sha256": "b98afdde0212aa0e00b5affad94a09fc233b78f277d88cffcbf75e6c9120f30d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_07.png",
+      "category": "benchmark_examples",
+      "size_bytes": 634149,
+      "sha256": "ac98446a8c72b47a55238d39b1ab344d779b872557035e285b76b04136b773f0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_08.png",
+      "category": "benchmark_examples",
+      "size_bytes": 644978,
+      "sha256": "c2f3e3680b972e21bf5acb4e54568e309ec04c2b0b2c702791d07cc8f1719818"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_09.png",
+      "category": "benchmark_examples",
+      "size_bytes": 629062,
+      "sha256": "dd2e0bdf6502eed52b687cfbad92f7b4b92926ca20352acd703e70b5ddcfe8e3"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_10.png",
+      "category": "benchmark_examples",
+      "size_bytes": 692397,
+      "sha256": "596274062eb5d9279176235f6f8b2a8cb94a5bf0f55e024488dd447ad24ba4c8"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_11.png",
+      "category": "benchmark_examples",
+      "size_bytes": 704558,
+      "sha256": "72eb83cb2f236c669551b3630fedd02fd413ea95980c5b72df4c03a99a7d43d2"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_15.png",
+      "category": "benchmark_examples",
+      "size_bytes": 471903,
+      "sha256": "a8c399376145ade46db17bde1a387e8eca2c070497f16b23bc8538f13c5e39d2"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_16.png",
+      "category": "benchmark_examples",
+      "size_bytes": 501316,
+      "sha256": "2e7d179b4c81102c6bfe59c0b291f4fd9cb10dcb510ecc051f41fe34d7554b5d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_17.png",
+      "category": "benchmark_examples",
+      "size_bytes": 523945,
+      "sha256": "a9313adc463e2826e2cf231d743e4c7e9fb4631d66878be770b6cbde83fab529"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_24.png",
+      "category": "benchmark_examples",
+      "size_bytes": 500294,
+      "sha256": "6168a49fcaa910eebb2962fa594704c9a0b09f6a515044262c4160749b90b7a1"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_25.png",
+      "category": "benchmark_examples",
+      "size_bytes": 558805,
+      "sha256": "9d33da5550343f16b9997dd11c096555af098e9e332bf059ed8ec968e1fb02b0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/comparison_26.png",
+      "category": "benchmark_examples",
+      "size_bytes": 575864,
+      "sha256": "b9b2584861fbe1bef15883bdaaefe092413d76a6a7690745f39e61b8353ca65c"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_00.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48390,
+      "sha256": "454616c4d5437b406c5fa99a011ec5b2dfa10e75b9fe642820acccab5474ba8a"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_01.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48672,
+      "sha256": "01c33c988e10530394e3f4f7adef171912fd3489f9a82e4fc37571e6c65f7567"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_02.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49568,
+      "sha256": "955e241bb6601c2015a3ccd587ab052aa3ee0fc6087e7f63baf351e1274fa7a6"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_03.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49689,
+      "sha256": "5bca136b667417526597e4543b2ffbce6358e26624bfc7f4c63e25e800307f8b"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_04.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47955,
+      "sha256": "3fc5d9ff63374a35047fc3bd0e73e2fca5acee5ec2087c85c4825f5faa954d5f"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_05.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48369,
+      "sha256": "10526342aee95607b418efb2a66de6f586d876f945d56e8bb327cebf7c02ec5b"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_06.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47423,
+      "sha256": "aa435e30a75dc70f966d7c014911e0fcaba6cc175905d03ca7a85955c40f0ccc"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_07.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49104,
+      "sha256": "ca38cb43af46a68c8623748b1cda5906e2169d0233f579dafaa135b50d74bbaf"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_08.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47898,
+      "sha256": "242a937abaf980b7ec82c63468455ddef4079012102e43a1d25b70133bad50cd"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_09.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 48409,
+      "sha256": "e84f44d036415679c27aabec787920f66566aba6b49444d6ae98ddd6c7142569"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_10.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49307,
+      "sha256": "8c633d4593de9bb11929f0ee34f37c287a0bd31b71aac5334f8a75a9243437c9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_11.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49216,
+      "sha256": "fbd56967d3c30b4556d2201acdf1765783e6d90ee033e5c5a40204c3a9376805"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_12.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47841,
+      "sha256": "90ab97434d1a4b6152e72dcb72eb4ce7e2072bda6f39de3bd2e127d43563c4ad"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_13.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 47373,
+      "sha256": "9fbf5c1cf791a15773b7f705331256c7733e1b400ebbe8d4ec82f2ca0f29088a"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_14.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 49599,
+      "sha256": "5401f1196af9d8b98fc1c52205e48ffb579e68bd071fae1cf0853d14a7b9d9a0"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/figures/curve_15.png",
+      "category": "benchmark_ranking_curves",
+      "size_bytes": 50494,
+      "sha256": "29c91a612a0f9e21c7368052d958772cc95239ce313d13252b8268081520ca55"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/per_image.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 196621,
+      "sha256": "1d108faa791a598229bdc3dafb345fc1d9673bb5e31f1823de19f906e5c56827"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/ranking.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 14847,
+      "sha256": "7390cfc33972f9c93ce791cc697ed0994229e5f8a97af8291ae3b6115473df92"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/report.md",
+      "category": "benchmark_metrics",
+      "size_bytes": 7934,
+      "sha256": "f4f34c5331ad7509e6ac1f9667edc14e3cd98b50d6e89de63f1fb58a72ed0304"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/results.json",
+      "category": "benchmark_metrics",
+      "size_bytes": 650358,
+      "sha256": "83c72239300d30f08e1309fecc5729f59551836d96947e36c59d0c13d22e1791"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/spatial_strata.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 2656,
+      "sha256": "3ac3fd7fa0c479b9e1c09de459d55ff1b7eb8ec47212170c8ca306da7813b92c"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/summary.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 1849,
+      "sha256": "4fecbaf1e7f3a0bdfac416dc2455705262d52c201214548dd55f19948de54af7"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/minimal_data/dataset.json",
+      "category": "benchmark_input_manifest",
+      "size_bytes": 33946,
+      "sha256": "8f841ade9392baace4fb5613bc6843db8d8425dd87e9b72dce24d6a9b57b4b32"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/minimal_evaluate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 123,
+      "sha256": "c8aca16a4ac0f287cbd2dde9d145ff51c5e2c98fcf8834f05b25c5548d0dfdaa"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/minimal_generate.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 69,
+      "sha256": "3b42c5d34b39e7bbce8954d59d616fe7d8d36e0dc2ab937e141d5a58fc8ad4bd"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/minimal_report.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 186,
+      "sha256": "c9bd8257aec435258b1b53447ccd915206a03928d25044203c14424cd6a1c5c3"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/performance.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 459,
+      "sha256": "6b9b28ce9985c243ce87b6c50547298824aa36c3719f3dd2f34fef230da248c9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/performance/performance.csv",
+      "category": "benchmark_metrics",
+      "size_bytes": 19760,
+      "sha256": "6e4d2cbbd9b95db081d6aa130f1932c86954def8b41be84c4c878e76a119dce2"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/performance/performance.json",
+      "category": "benchmark_metrics",
+      "size_bytes": 70981,
+      "sha256": "ddada4b30b0cec3f497072c6521a3c0cd24f66fdcd2aceb8579644ad19607d3b"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/performance/report.md",
+      "category": "benchmark_metrics",
+      "size_bytes": 2560,
+      "sha256": "9db1299c5e75b474878387f35c5bb02f7de0781553effc46e60e72793c33caef"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/run_status.json",
+      "category": "benchmark_status",
+      "size_bytes": 642,
+      "sha256": "08039c9f318684722a22540fe00bf63bc2973acf44e31e690eda9d215ac229e8"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/source_samples/pilot_scenes.json",
+      "category": "benchmark_input_manifest",
+      "size_bytes": 3309,
+      "sha256": "b90196c9d85c3400092547ce46f61629da6826d5ef224ce90bab35845ffa682d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/unit_tests.log",
+      "category": "benchmark_execution_logs",
+      "size_bytes": 2393,
+      "sha256": "ed4e252b1a99afc1166d6298f6cc1b722ca3044fcf7428f4484f9231778506a7"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/checkpoints/best.pth",
+      "category": "model_checkpoint",
+      "size_bytes": 10413730,
+      "sha256": "4d4d09d6e7c584658757bc1c35f1579c85a209b3af78395da1b4cd3abda72651"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/checkpoints/latest.pth",
+      "category": "model_checkpoint",
+      "size_bytes": 10414674,
+      "sha256": "da46dab676480d3b3f65cd15852788377c66f63e1669c6c7b6b7d09ba549ce7d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/code_20261025T113014_246382Z.json",
+      "category": "source_provenance",
+      "size_bytes": 8042,
+      "sha256": "558969e4dba444842002e3b1c0b48eb07369b0bcbc3465377d9cfca0c57cffd6"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/code_20261025T114306_160277Z.json",
+      "category": "source_provenance",
+      "size_bytes": 8042,
+      "sha256": "558969e4dba444842002e3b1c0b48eb07369b0bcbc3465377d9cfca0c57cffd6"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/code_20261025T122047_646191Z.json",
+      "category": "source_provenance",
+      "size_bytes": 8042,
+      "sha256": "558969e4dba444842002e3b1c0b48eb07369b0bcbc3465377d9cfca0c57cffd6"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/results/model_info.txt",
+      "category": "training_history",
+      "size_bytes": 483,
+      "sha256": "16a65e417a943bed70c7b8a3d8170748be053154dfe1885a3ec931828b0ca7c9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/results/train_log.csv",
+      "category": "training_history",
+      "size_bytes": 8496,
+      "sha256": "91fad04eaf16e95ad6ef4779585b78e8412c672f56fe8b98c54a7a7992d79180"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/results/training_curve_50_epochs.png",
+      "category": "training_history",
+      "size_bytes": 119393,
+      "sha256": "b65a57cb498cb9792f41aaaf5ef44ee0bf17b349ebfd041e897ff4b103e48b5f"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/results/training_summary.txt",
+      "category": "training_history",
+      "size_bytes": 901,
+      "sha256": "c4a7e4677b214ce55b6e160d821828f67a8a5a5b0f207309e03ad0362a8bbcab"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/rshazeplus_split.json",
+      "category": "configuration_and_summary",
+      "size_bytes": 561015,
+      "sha256": "8128ac926bdcc2d190e3d77cd4eaf561b0b10f69e6ce54d3d588650571fbbf09"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/snapshots/epoch_005/README.md",
+      "category": "five_epoch_baseline",
+      "size_bytes": 4649,
+      "sha256": "0ce0af7499e0ce5a093bf293b87d898c35b3dab1105a5ea950026167f93b375d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/snapshots/epoch_005/best.pth",
+      "category": "five_epoch_baseline",
+      "size_bytes": 10413666,
+      "sha256": "99f08b864ef27a0e169adc412f6477dc639b2219323277103e02ff7b2cfe49ce"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/snapshots/epoch_005/snapshot.json",
+      "category": "five_epoch_baseline",
+      "size_bytes": 777,
+      "sha256": "f8e0d2fb1a995f4593b48d7da204a70d91fa5dfbd850ea91d05106af6da78805"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/snapshots/epoch_005/train_log.csv",
+      "category": "five_epoch_baseline",
+      "size_bytes": 973,
+      "sha256": "377ad6aea3021da797b4a7044030b8c7a7e61151b08b60a80ea3f6c1afb28857"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/snapshots/epoch_005/training_summary.txt",
+      "category": "five_epoch_baseline",
+      "size_bytes": 898,
+      "sha256": "391c05f83b355f5eaff44a3634698e7dd5467d0a2550a6936a624b98cbc882c6"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/RSHaze_G_1001.png",
+      "category": "test_examples",
+      "size_bytes": 292365,
+      "sha256": "b4ca085bbba6cb85df15267f740bbb2b7f72fd8cc6e7b9677449a69a5baab7aa"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/RSHaze_G_1002.png",
+      "category": "test_examples",
+      "size_bytes": 293461,
+      "sha256": "f5b249f53d4119f98bf07bff2b228b776885b7cfcedde44a9464cb8040afe2dd"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/RSHaze_L_1.png",
+      "category": "test_examples",
+      "size_bytes": 150935,
+      "sha256": "1086b640f3f9475ed4095559731f4adf6b17bbaa6d68a972548678e9d1d66a75"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/RSHaze_L_10.png",
+      "category": "test_examples",
+      "size_bytes": 182894,
+      "sha256": "472e44b973d4174dddac516a13e73ca1766d6e4fb5c512a608cb9b22e6c7ad3a"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/RSHaze_S_1001.png",
+      "category": "test_examples",
+      "size_bytes": 226077,
+      "sha256": "782d318a4af071ce836a1da8b3d5431dd2c715b02c887e493beb824ab091b450"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/RSHaze_S_1002.png",
+      "category": "test_examples",
+      "size_bytes": 230499,
+      "sha256": "358623cb423ea3ee03b63f8d3de698374ae60caf6bdb2afe0de92dbc37b14bed"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T113952_855364Z/test_metrics.txt",
+      "category": "test_metrics",
+      "size_bytes": 1362,
+      "sha256": "92bfd5ff63ebbad4ac0bd7ad78bea173fe79b6c93d08afd2fff3bc77826c3c29"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/RSHaze_G_1001.png",
+      "category": "test_examples",
+      "size_bytes": 282348,
+      "sha256": "eb469cc334818ad3cd78edc481ac30805f7af961595f82629d17d25dd0e5cde5"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/RSHaze_G_1002.png",
+      "category": "test_examples",
+      "size_bytes": 280876,
+      "sha256": "56178eef0bbbd6ee1dd5935163da04ddd978925d954e5bff2ec38f0fcce24aff"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/RSHaze_L_1.png",
+      "category": "test_examples",
+      "size_bytes": 132751,
+      "sha256": "baa1b4d097612d7d3c87e7c6011cf232c3fbd65f112e38187399719c3a329ce6"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/RSHaze_L_10.png",
+      "category": "test_examples",
+      "size_bytes": 167969,
+      "sha256": "6e27cace0f8c87a029143583cefe04379630cd09168cb7bdcbfc6803eba9347d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/RSHaze_S_1001.png",
+      "category": "test_examples",
+      "size_bytes": 218302,
+      "sha256": "7bc2c25fbc5925411e0fe2b747cbd8b77b64acb949075d187143059c5493783f"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/RSHaze_S_1002.png",
+      "category": "test_examples",
+      "size_bytes": 199274,
+      "sha256": "5be3b1e02509ccab7e795a0d97f0f0d9e7d0edb75a6c10f939ab5a08dd4068cf"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/test_metrics.txt",
+      "category": "test_metrics",
+      "size_bytes": 1363,
+      "sha256": "c8b15547505c97f600094de4fc62a29a4fcefcf17b09ff577f70c5bd86e2dfe2"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/train_config.yaml",
+      "category": "configuration_and_summary",
+      "size_bytes": 467,
+      "sha256": "9f1d9e313468f1ca4f93b49519a693d7d42cf7f4106bc26fa8f3fada82268058"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z/RSHaze_G_10_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 1561877,
+      "sha256": "985e880bee44e7192e7990bcb89ad17b25ae53ed146cf8affb8805e2059e68ea"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z/RSHaze_G_112_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 1619887,
+      "sha256": "bcaa92a171b977c79d719e98a8a187cacf34b79a57744302b7e00619a330492d"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z/RSHaze_L_1000_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 896694,
+      "sha256": "0cda11ff99f67fd1e7d3ad6b520600655dc2b81f783da9bdc18fcf1e1b87ff7f"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z/RSHaze_L_101_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 619432,
+      "sha256": "55479020288386f7b5904857e72481dba132ae15bedff97e62a1dc8110000703"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z/RSHaze_S_102_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 1152558,
+      "sha256": "f2b7277aa48ea380564e2de789e53263bfdf9e312138ae162bcf2079a7bfefac"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z/RSHaze_S_107_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 1288365,
+      "sha256": "0b713b30a220ad3674f829b957b37cc27939eef31139f6db1bb0228ba257a9e8"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T113930_849813Z/preview_info.json",
+      "category": "validation_comparison",
+      "size_bytes": 392,
+      "sha256": "ee2bd5f4018d2a13242f48cd5806b0f672ebe4851c10769f22fb9ad47db72500"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z/RSHaze_G_10_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 1489433,
+      "sha256": "01f74637b78a8abda236825e5e2cf244e6c52a2c78edb8d1e1ceeda2533e1e96"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z/RSHaze_G_112_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 1542971,
+      "sha256": "eb5dc15fac0f3a2611522efeab1e815126c33d4a352962fc53745fef01f64d11"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z/RSHaze_L_1000_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 759806,
+      "sha256": "a7ba3988ab4348d67fe24cb9a49cd2ee5e965e7ea73cfa23a4d37d0636b083a3"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z/RSHaze_L_101_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 512867,
+      "sha256": "cfa3bd0823826a1f47cd88d70e13ddd735fcca9349e87e451dfad0c198b995a9"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z/RSHaze_S_102_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 984889,
+      "sha256": "aa322636400d0822f665398cd312f8ac204fc129cd0db37403e3378156251e43"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z/RSHaze_S_107_density_result.png",
+      "category": "validation_comparison",
+      "size_bytes": 1130008,
+      "sha256": "aedfca9c3daea5cbc83d82b558d13d4cc130aa1eafd1e76b93678ccea2543892"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z/preview_info.json",
+      "category": "validation_comparison",
+      "size_bytes": 393,
+      "sha256": "adc9ad794aa435b7da5a53479e8a2b6791d5a2f71f7b9fbbf1d4cc353f6e27f1"
+    },
+    {
+      "path": "experiments/spatial_v3_run01/运行结果.md",
+      "category": "configuration_and_summary",
+      "size_bytes": 3918,
+      "sha256": "9642526ae71e240ba34c6f44aac8bea869c8dcdd9c821c91f192809644296197"
+    }
+  ],
+  "artifact_byte_policy": ".gitattributes disables automatic line-ending conversion for experiments/**; original CSV/log/report whitespace is preserved."
+}

@@ -1,0 +1,501 @@
+
+>>> CELL 2 START 2026-10-25T12:20:23.180571+00:00
+
+============================================================
+CrossModal-Defog-OVOD - 通用环境初始化
+============================================================
+
+项目根目录：/mnt/CrossModal-Defog-OVOD
+
+============================================================
+PyTorch 环境检查
+============================================================
+✓ PyTorch version: 2.4.1+cu124
+✓ CUDA available: True
+✓ CUDA version: 12.4
+✓ GPU count: 1
+  GPU 0: Tesla V100-SXM2-16GB
+    Memory: 15.77 GB
+    Compute Capability: 7.0
+
+============================================================
+依赖检查
+============================================================
+✓ torchvision
+✓ opencv
+✓ numpy
+✓ yaml
+✓ tqdm
+✓ Pillow
+✓ matplotlib
+✓ scipy
+
+============================================================
+目录检查
+============================================================
+✓ experiments/haze_density/checkpoints
+✓ experiments/haze_density/logs
+✓ experiments/haze_density/output
+
+============================================================
+配置摘要
+============================================================
+amp: True
+image_size: 256
+batch_size: 4
+base_channels: 32
+lr: 0.0001
+epochs: 50
+checkpoint_dir: experiments/haze_density/checkpoints/spatial_v3
+result_dir: experiments/haze_density/results/spatial_v3
+
+============================================================
+✓ 环境初始化完成！
+============================================================
+
+下一步:
+  1. 运行 smoke test: python scripts/utils/smoke_test.py
+  2. 按 docs/雾密度网络_最简实验流程.md 准备数据、持久化实验配置并训练
+
+Branch: v1-nocolab
+Commit: 2b549204e679ede504b25d623bd3199397d5814f
+Prior: spatial_minmax_valid_boundary_v3
+Python: /usr/bin/python
+PyTorch: 2.4.1+cu124; CUDA: True
+GPU: Tesla V100-SXM2-16GB
+>>> CELL 2 OK
+
+>>> CELL 6 START 2026-10-25T12:20:32.672811+00:00
+RSHaze_G: 官方 train/test 目录检查通过
+RSHaze_L: 官方 train/test 目录检查通过
+RSHaze_S: 官方 train/test 目录检查通过
+数据目录： /mnt/RSHaze+
+>>> CELL 6 OK
+
+>>> CELL 8 START 2026-10-25T12:20:32.992561+00:00
+
+============================================================
+Split JSON 验证
+============================================================
+
+检查 JSON schema...
+train entries: 6417
+val entries: 713
+test entries: 930
+
+Train unique keys: 6417
+Val unique keys: 713
+Test unique keys: 930
+
+[OK] Train/Val: No overlap
+[OK] Train/Test: No overlap
+[OK] Val/Test: No overlap
+
+内部重复检查:
+[OK] Train: No internal duplicates
+[OK] Val: No internal duplicates
+[OK] Test: No internal duplicates
+
+============================================================
+Subset 分布
+============================================================
+
+Train:
+  RSHaze_G: 900
+  RSHaze_L: 4617
+  RSHaze_S: 900
+
+Val:
+  RSHaze_G: 100
+  RSHaze_L: 513
+  RSHaze_S: 100
+
+Test:
+  RSHaze_G: 330
+  RSHaze_L: 270
+  RSHaze_S: 330
+
+[OK] Split JSON 验证通过！
+仅通过清单结构/原始路径检查；内容重复和同场景泄漏尚未核查。
+train: 6417 images
+val: 713 images
+test: 930 images
+Experiment: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01
+Config: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/train_config.yaml
+请确认持久化存储：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01
+>>> CELL 8 OK
+
+>>> CELL 10 START 2026-10-25T12:20:47.813934+00:00
+
+============================================================
+Stage 5D: HazeDensityNet Formal Training
+============================================================
+
+Device: cuda
+CUDA device: Tesla V100-SXM2-16GB
+
+Creating model...
+============================================================
+HazeDensityNet Model Summary
+============================================================
+base_channels: 32
+use_sigmoid: True
+
+Parameter Statistics:
+  Encoder:    28,512 (3.3%)
+  MultiScale: 700,416 (81.0%)
+  Fusion:     122,880 (14.2%)
+  Decoder:    12,944 (1.5%)
+------------------------------------------------------------
+  Total:      864,752
+============================================================
+
+Creating Physical Prior...
+
+Loading datasets...
+Train loader: 1604 batches (6417 samples)
+Val loader: 179 batches (713 samples)
+/mnt/CrossModal-Defog-OVOD/scripts/train/train_haze_density.py:385: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler() if use_amp else None
+AMP: Enabled
+
+Loading checkpoint: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/latest.pth
+/mnt/CrossModal-Defog-OVOD/scripts/train/train_haze_density.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location='cpu')
+  Epoch: 5
+  Best val loss: 0.007214
+  Resuming from epoch 6
+
+============================================================
+Training Start
+============================================================
+/mnt/CrossModal-Defog-OVOD/scripts/train/train_haze_density.py:434: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+Epoch  6/50: train_loss=0.008208, val_loss=0.007123, best=0.007123, time=134.0s
+Epoch  7/50: train_loss=0.008296, val_loss=0.007069, best=0.007069, time=112.7s
+Epoch  8/50: train_loss=0.008156, val_loss=0.007151, best=0.007069, time=111.8s
+Epoch  9/50: train_loss=0.008297, val_loss=0.007213, best=0.007069, time=116.4s
+Epoch 10/50: train_loss=0.008142, val_loss=0.007123, best=0.007069, time=115.5s
+Epoch 11/50: train_loss=0.008131, val_loss=0.006976, best=0.006976, time=107.2s
+Epoch 12/50: train_loss=0.008161, val_loss=0.007241, best=0.006976, time=105.6s
+Epoch 13/50: train_loss=0.008002, val_loss=0.007021, best=0.006976, time=106.8s
+Epoch 14/50: train_loss=0.007985, val_loss=0.006941, best=0.006941, time=102.4s
+Epoch 15/50: train_loss=0.008049, val_loss=0.006921, best=0.006921, time=111.4s
+Epoch 16/50: train_loss=0.007918, val_loss=0.006908, best=0.006908, time=103.3s
+Epoch 17/50: train_loss=0.007924, val_loss=0.006872, best=0.006872, time=103.2s
+Epoch 18/50: train_loss=0.007944, val_loss=0.006872, best=0.006872, time=102.8s
+Epoch 19/50: train_loss=0.007922, val_loss=0.006847, best=0.006847, time=106.2s
+Epoch 20/50: train_loss=0.007819, val_loss=0.006947, best=0.006847, time=111.1s
+Epoch 21/50: train_loss=0.007851, val_loss=0.006831, best=0.006831, time=105.9s
+Epoch 22/50: train_loss=0.007862, val_loss=0.007116, best=0.006831, time=105.2s
+Epoch 23/50: train_loss=0.008038, val_loss=0.006857, best=0.006831, time=102.0s
+Epoch 24/50: train_loss=0.007832, val_loss=0.006844, best=0.006831, time=101.6s
+Epoch 25/50: train_loss=0.007844, val_loss=0.006878, best=0.006831, time=102.8s
+Epoch 26/50: train_loss=0.007835, val_loss=0.006837, best=0.006831, time=110.3s
+Epoch 27/50: train_loss=0.007743, val_loss=0.006804, best=0.006804, time=103.4s
+Epoch 28/50: train_loss=0.007917, val_loss=0.006813, best=0.006804, time=105.8s
+Epoch 29/50: train_loss=0.007907, val_loss=0.006778, best=0.006778, time=105.7s
+Epoch 30/50: train_loss=0.007810, val_loss=0.006879, best=0.006778, time=106.1s
+Epoch 31/50: train_loss=0.007885, val_loss=0.006798, best=0.006778, time=105.3s
+Epoch 32/50: train_loss=0.007926, val_loss=0.006791, best=0.006778, time=107.2s
+Epoch 33/50: train_loss=0.007773, val_loss=0.007051, best=0.006778, time=106.3s
+Epoch 34/50: train_loss=0.007843, val_loss=0.006770, best=0.006770, time=106.6s
+Epoch 35/50: train_loss=0.007749, val_loss=0.006772, best=0.006770, time=106.9s
+Epoch 36/50: train_loss=0.007870, val_loss=0.006760, best=0.006760, time=106.5s
+Epoch 37/50: train_loss=0.007796, val_loss=0.006750, best=0.006750, time=105.7s
+Epoch 38/50: train_loss=0.007876, val_loss=0.006778, best=0.006750, time=126.1s
+Epoch 39/50: train_loss=0.007847, val_loss=0.006767, best=0.006750, time=108.5s
+Epoch 40/50: train_loss=0.007759, val_loss=0.006748, best=0.006748, time=108.9s
+Epoch 41/50: train_loss=0.007692, val_loss=0.006729, best=0.006729, time=108.4s
+Epoch 42/50: train_loss=0.007868, val_loss=0.006881, best=0.006729, time=104.8s
+Epoch 43/50: train_loss=0.007921, val_loss=0.006752, best=0.006729, time=105.7s
+Epoch 44/50: train_loss=0.007605, val_loss=0.006723, best=0.006723, time=112.1s
+Epoch 45/50: train_loss=0.007682, val_loss=0.006760, best=0.006723, time=106.8s
+Epoch 46/50: train_loss=0.007799, val_loss=0.006730, best=0.006723, time=104.8s
+Epoch 47/50: train_loss=0.007697, val_loss=0.006727, best=0.006723, time=101.6s
+Epoch 48/50: train_loss=0.007846, val_loss=0.006717, best=0.006717, time=103.1s
+Epoch 49/50: train_loss=0.007642, val_loss=0.006775, best=0.006717, time=104.3s
+Epoch 50/50: train_loss=0.007692, val_loss=0.006755, best=0.006717, time=106.1s
+
+Saved training log: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/results/train_log.csv
+Saved summary: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/results/training_summary.txt
+
+============================================================
+Acceptance Check
+============================================================
+[OK] No NaN in training
+[OK] No Inf in training
+[OK] Prediction range: [0.0000, 1.0000]
+[OK] Target range: [0.1251, 0.9876]
+[OK] Checkpoints saved (latest.pth, best.pth)
+
+============================================================
+Result
+============================================================
+[OK] Stage 5D Formal Training PASSED
+本次训练命令成功结束，最优权重：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+>>> CELL 10 OK
+
+>>> CELL 12 START 2026-10-25T13:41:46.884472+00:00
+Checkpoint: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+保存目录：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/validation_previews/20261025T134154_968685Z
+每子集数量：{'RSHaze_G': 2, 'RSHaze_L': 2, 'RSHaze_S': 2}
+>>> CELL 12 OK
+
+>>> CELL 14 START 2026-10-25T13:42:15.841882+00:00
+
+============================================================
+Stage 5E: HazeDensityNet Test Evaluation
+============================================================
+
+Device: cuda
+
+Loading checkpoint: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+/mnt/CrossModal-Defog-OVOD/scripts/evaluate/evaluate_haze_density.py:134: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(args.checkpoint, map_location='cpu')
+  Epoch: 48
+  Val Loss: 0.006716976755365291
+
+Creating model...
+  base_channels: 32
+  use_sigmoid: True
+
+Creating Physical Prior...
+
+Loading test dataset...
+Test loader: 233 batches (930 samples)
+
+Test dataset statistics:
+  Total samples: 930
+  Subset counts: {'RSHaze_G': 330, 'RSHaze_L': 270, 'RSHaze_S': 330}
+
+============================================================
+Evaluation
+============================================================
+
+Total test samples: 930
+Shape per sample: torch.Size([1, 256, 256])
+[OK] No NaN detected
+Prediction range: [0.0000, 1.0000]
+[OK] Prediction range within [0, 1]
+
+============================================================
+Overall Metrics
+============================================================
+
+Overall Test Metrics:
+  MSE:     0.006246
+  MAE:     0.060457
+  RMSE:    0.079034
+  Pearson: 0.856893
+
+============================================================
+Metrics by Subset
+============================================================
+
+RSHaze_G (330 samples):
+  MAE:     0.059823
+  RMSE:    0.078687
+  Pearson: 0.851949
+
+RSHaze_L (270 samples):
+  MAE:     0.071206
+  RMSE:    0.091079
+  Pearson: 0.854329
+
+RSHaze_S (330 samples):
+  MAE:     0.052297
+  RMSE:    0.068004
+  Pearson: 0.867046
+
+============================================================
+Prediction Distribution Audit
+============================================================
+
+Prediction Distribution:
+  mean: 0.493237
+  std: 0.130173
+  min: 0.000000
+  max: 1.000000
+  p5: 0.313761
+  p25: 0.409576
+  p50: 0.471885
+  p75: 0.571627
+  p95: 0.720709
+
+Target Distribution:
+  mean: 0.481251
+  std: 0.151495
+  min: 0.107890
+  max: 0.979805
+  p5: 0.280742
+  p25: 0.365199
+  p50: 0.447665
+  p75: 0.579955
+  p95: 0.774369
+
+============================================================
+Generating Visualization
+============================================================
+  RSHaze_G: Saved 16 visualizations
+  RSHaze_L: Saved 16 visualizations
+  RSHaze_S: Saved 16 visualizations
+
+============================================================
+Saving Report
+============================================================
+Saved report: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/test_metrics.txt
+
+============================================================
+Acceptance Check
+============================================================
+[PASS] No NaN in predictions
+[PASS] Prediction range [0.0000, 1.0000] within [0, 1]
+[PASS] All subsets completed: {'RSHaze_G', 'RSHaze_L', 'RSHaze_S'}
+[PASS] Metrics saved to /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z/test_metrics.txt
+
+[ALL CHECKS PASSED]
+测试集报告与图像：/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/test_evaluations/20261025T134216_424091Z
+>>> CELL 14 OK
+
+>>> CELL 16 START 2026-10-25T13:43:26.668979+00:00
+项目代码已解包： /tmp/stage2_haze_cav6tj_2
+独立评测代码： /tmp/stage2_haze_cav6tj_2
+>>> CELL 16 OK
+
+>>> CELL 17 START 2026-10-25T13:43:27.442493+00:00
+学生网络将使用本实验当前版本权重： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/best.pth
+独立评测结果将保存在： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z
+
+RUN: unit_tests
+..................dcp: 1/2 cases
+prior: 1/2 cases
+......[WARN] Split file /tmp/tmpa3oh3zy1/split.json not found, using default split
+.[WARN] Split file /tmp/tmpkarn9bhx/split.json not found, using default split
+..[WARN] Split file /tmp/tmppl5zhiuw/split.json not found, using default split
+.[WARN] Split file /tmp/tmp6o0wgenc/split.json not found, using default split
+.[WARN] Split file /tmp/tmp_p6r_q_o/split.json not found, using default split
+.[WARN] Split file /tmp/tmpi6oxigvs/split.json not found, using default split
+[WARN] 27 samples missing clear image
+..[WARN] Split file /tmp/tmpplol6go8/split.json not found, using default split
+.[WARN] Split file /tmp/tmpj5mibqgd/split.json not found, using default split
+..[WARN] Split file /tmp/tmpzgv8y6yo/split.json not found, using default split
+./tmp/stage2_haze_cav6tj_2/scripts/train/train_haze_density.py:181: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location='cpu')
+.................[WARN] Split file /tmp/tmp2vjpuuq6/split.json not found, using default split
+..[WARN] Split file /tmp/tmp7i4n_97d/split.json not found, using default split
+..[WARN] Split file /tmp/tmptrd2jb6q/split.json not found, using default split
+..[WARN] Split file /tmp/tmpivy5f70j/split.json not found, using default split
+..
+Loading checkpoint: /tmp/tmpmgj02el3/latest.pth
+  Epoch: 2
+  Best val loss: 0.100000
+  Resuming from epoch 3
+.........student: 1/32 cases
+student: 21/32 cases
+.
+----------------------------------------------------------------------
+Ran 71 tests in 2.602s
+
+OK
+
+
+RUN: minimal_generate
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: minimal_evaluate
+dcp: 1/20 cases
+prior: 1/20 cases
+student: 1/20 cases
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: minimal_report
+/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/minimal_results/report.md
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: full_generate
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: full_evaluate
+dcp: 1/128 cases
+dcp: 21/128 cases
+dcp: 41/128 cases
+dcp: 61/128 cases
+dcp: 81/128 cases
+dcp: 101/128 cases
+dcp: 121/128 cases
+prior: 1/128 cases
+prior: 21/128 cases
+prior: 41/128 cases
+prior: 61/128 cases
+prior: 81/128 cases
+prior: 101/128 cases
+prior: 121/128 cases
+student: 1/128 cases
+student: 21/128 cases
+student: 41/128 cases
+student: 61/128 cases
+student: 81/128 cases
+student: 101/128 cases
+student: 121/128 cases
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: full_report
+/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z/full_results/report.md
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+
+RUN: performance
+PASS performance: dcp cpu 256
+PASS performance: prior cpu 256
+PASS performance: student cpu 256
+PASS performance: dcp cpu 512
+PASS performance: prior cpu 512
+PASS performance: student cpu 512
+PASS performance: dcp cuda 256
+PASS performance: prior cuda 256
+PASS performance: student cuda 256
+PASS performance: dcp cuda 512
+PASS performance: prior cuda 512
+PASS performance: student cuda 512
+PASS: command completed; consult method-level NOT RUN / N/A statuses
+
+Completed. Read method-level statuses; PASS does not mean the algorithm is accurate. Results: /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z
+>>> CELL 17 OK
+
+>>> CELL 18 START 2026-10-25T13:49:26.069003+00:00
+各阶段执行状态： [{'stage': 'unit_tests', 'status': 'PASS', 'exit_code': 0}, {'stage': 'minimal_generate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'minimal_evaluate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'minimal_report', 'status': 'PASS', 'exit_code': 0}, {'stage': 'full_generate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'full_evaluate', 'status': 'PASS', 'exit_code': 0}, {'stage': 'full_report', 'status': 'PASS', 'exit_code': 0}, {'stage': 'performance', 'status': 'PASS', 'exit_code': 0}]
+完整 CSV、逐图结果、真值和固定尺度可视化： /mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T134327_753304Z
+>>> CELL 18 OK
+{
+  "status": "completed",
+  "notebook": "/mnt/CrossModal-Defog-OVOD/docs/雾密度网络_最简实验流程.ipynb",
+  "run_dir": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01",
+  "resume_checkpoint": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/latest.pth",
+  "starting_epoch": 5,
+  "target_epoch": 50,
+  "epoch_completed": 50,
+  "completed_cells": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    17,
+    18
+  ],
+  "reused_checks": "Previously passed cell 4; source unchanged",
+  "started_at": "2026-10-25T12:20:21.382633+00:00",
+  "train_loss": 0.007692,
+  "val_loss": 0.006755,
+  "updated_at": "2026-10-25T13:41:45.436961+00:00",
+  "finished_at": "2026-10-25T13:49:29.010154+00:00"
+}

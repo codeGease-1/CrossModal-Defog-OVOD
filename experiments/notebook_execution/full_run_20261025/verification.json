@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "completed_code_cells": 10,
+  "notebook_error_outputs": 0,
+  "embedded_images": 10,
+  "epochs_completed": 5,
+  "validation_images": 6,
+  "test_images_evaluated": 930,
+  "test_visualizations": 48,
+  "benchmark_stages": [
+    {
+      "stage": "unit_tests",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "minimal_generate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "minimal_evaluate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "minimal_report",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "full_generate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "full_evaluate",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "full_report",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "stage": "performance",
+      "status": "PASS",
+      "exit_code": 0
+    }
+  ],
+  "performance_measurements": 24,
+  "checkpoints": {
+    "best.pth": {
+      "epoch": 5,
+      "sha256": "99f08b864ef27a0e169adc412f6477dc639b2219323277103e02ff7b2cfe49ce"
+    },
+    "latest.pth": {
+      "epoch": 5,
+      "sha256": "b4c7e582967f4c299f1f5c5719442236bef60af5f3a55df30fc236cbade43f3a"
+    }
+  },
+  "final_benchmark": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/benchmarks/20261025T114306_689701Z"
+}

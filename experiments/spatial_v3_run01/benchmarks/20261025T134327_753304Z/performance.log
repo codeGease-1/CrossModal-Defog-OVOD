@@ -1,0 +1,13 @@
+PASS performance: dcp cpu 256
+PASS performance: prior cpu 256
+PASS performance: student cpu 256
+PASS performance: dcp cpu 512
+PASS performance: prior cpu 512
+PASS performance: student cpu 512
+PASS performance: dcp cuda 256
+PASS performance: prior cuda 256
+PASS performance: student cuda 256
+PASS performance: dcp cuda 512
+PASS performance: prior cuda 512
+PASS performance: student cuda 512
+PASS: command completed; consult method-level NOT RUN / N/A statuses

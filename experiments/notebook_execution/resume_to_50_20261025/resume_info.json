@@ -1,0 +1,12 @@
+{
+  "resume_from_epoch": 5,
+  "target_epoch": 50,
+  "same_training_parameters": true,
+  "original_optimizer_step_min": 8020.0,
+  "original_optimizer_step_max": 8020.0,
+  "amp_state_present": true,
+  "split_sha256": "8128ac926bdcc2d190e3d77cd4eaf561b0b10f69e6ce54d3d588650571fbbf09",
+  "config_sha256": "9f1d9e313468f1ca4f93b49519a693d7d42cf7f4106bc26fa8f3fada82268058",
+  "resume_checkpoint_sha256": "b4c7e582967f4c299f1f5c5719442236bef60af5f3a55df30fc236cbade43f3a",
+  "note": "Trainer restores model, Adam and AMP states; it reseeds on restart and does not restore RNG states, so this is not guaranteed bitwise identical to uninterrupted 50-epoch training."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "notebook": "/mnt/CrossModal-Defog-OVOD/docs/雾密度网络_最简实验流程.ipynb",
+  "run_dir": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01",
+  "resume_checkpoint": "/mnt/CrossModal-Defog-OVOD/experiments/spatial_v3_run01/checkpoints/latest.pth",
+  "starting_epoch": 5,
+  "target_epoch": 50,
+  "epoch_completed": 50,
+  "completed_cells": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    17,
+    18
+  ],
+  "reused_checks": "Previously passed cell 4; source unchanged",
+  "started_at": "2026-10-25T12:20:21.382633+00:00",
+  "train_loss": 0.007692,
+  "val_loss": 0.006755,
+  "updated_at": "2026-10-25T13:41:45.436961+00:00",
+  "finished_at": "2026-10-25T13:49:29.010154+00:00"
+}
