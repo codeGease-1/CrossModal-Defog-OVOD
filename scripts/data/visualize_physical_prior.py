@@ -3,7 +3,7 @@
 """
 物理先验可视化脚本
 
-【在 Colab 执行】
+【在 GPU 服务器或本地执行】
 
 对于一张输入图像，生成并保存:
 - Input (原始图像)
@@ -15,10 +15,10 @@
 
 使用方法:
     # 使用示例图像
-    !python scripts/data/visualize_physical_prior.py --image path/to/image.jpg
+    python scripts/data/visualize_physical_prior.py --image path/to/image.jpg
 
     # 如果没有图像，会生成一个测试图像
-    !python scripts/data/visualize_physical_prior.py --generate-test
+    python scripts/data/visualize_physical_prior.py --generate-test
 """
 
 import sys

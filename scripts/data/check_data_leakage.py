@@ -7,7 +7,7 @@
 路径不同不能证明内容或场景独立；内容/场景泄漏需另行核查。
 
 使用方法:
-    !python scripts/data/check_data_leakage.py
+    python scripts/data/check_data_leakage.py
 """
 
 import sys

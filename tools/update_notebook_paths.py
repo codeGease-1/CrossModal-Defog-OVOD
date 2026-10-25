@@ -184,7 +184,7 @@ def delete_marked_cells(nb: dict) -> int:
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description='Update Colab notebook paths')
+    parser = argparse.ArgumentParser(description='Update notebook paths')
     parser.add_argument('--input', '-i',
                        default=r"C:\Users\35017\AppData\Roaming\CherryStudio\Data\Files\01a0e1f6-30d3-70a0-a97d-ca57d7a10291.ipynb",
                        help='Input notebook path')

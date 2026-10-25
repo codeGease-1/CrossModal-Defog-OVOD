@@ -1,5 +1,8 @@
 # 数据集清单 (Dataset Manifest)
 
+> 历史记录：下文保留当时的 Colab 环境、命令或验证状态。`v1-nocolab` 的当前训练步骤见[通用 GPU 最简流程](../雾密度网络_最简实验流程.md)；历史待验证项不因平台迁移自动完成。
+
+
 **项目**: CrossModal-Defog-OVOD - 跨模态语义恢复引导的含雾低质遥感影像开放词汇目标检测  
 **模块**: 雾密度感知网络 (Haze Density Perception Network)  
 **文档目的**: 记录数据集实际获取与核验结果  

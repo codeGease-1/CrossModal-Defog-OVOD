@@ -3,7 +3,7 @@
 """
 数据集测试脚本
 
-【在 Colab 或本地执行】
+【在 GPU 服务器或本地执行】
 
 测试内容:
 1. Dataset length
@@ -18,7 +18,7 @@
 10. DataLoader 迭代
 
 使用方法:
-    !python scripts/test/test_dataset.py
+    python scripts/test/test_dataset.py
 """
 
 import sys

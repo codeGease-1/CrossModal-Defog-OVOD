@@ -1,5 +1,7 @@
 # 项目当前状态
 
+2026-10-25 平台迁移：`v1-nocolab` 当前训练与 Benchmark 入口已支持通用 GPU 服务器，路径由用户配置。见[最简流程](雾密度网络_最简实验流程.md)和[云平台指南](guides/cloud_gpu.md)。下方保留此前 CPU 审查状态；迁移不代表已完成云端 GPU 实验。
+
 阶段 2 更新（2026-10-21）：已新增独立 Benchmark，完成真实清晰图背景上的 128 个合成样本与 DCP/三先验评价；仅一个地理组的四个混合地物 ROI，不代表跨区域泛化。学生正确性 NOT EVALUATED、GPU NOT RUN。完整数字与局限以 [阶段 2 科研审查](stage_2_research_review.md) 为准；下文保留阶段 1 状态记录。
 
 更新日期：2026-10-21。阶段 1 必要修复已完成，详见 [修复报告](stage_1_bugfix_report.md)。依据是当前工作区代码和实际执行结果；历史指标不作为新流程成绩。
@@ -20,7 +22,7 @@
 
 ## 本地实际拥有的资料
 
-- 两个 notebook：`docs/雾密度网络_最简实验流程.ipynb` 已同步 `codex-v1` / v3，使用 Drive 保存配置、划分与实验产物；`docs/雾密度网络_更新后.ipynb` 保留为历史资料。使用方式见 [Notebook 说明](notebook_update_guide.md)。
+- 两个 notebook：`docs/雾密度网络_最简实验流程.ipynb` 已同步 `v1-nocolab` / v3，使用自选持久化目录保存配置、划分与实验产物；`docs/雾密度网络_更新后.ipynb` 保留为历史资料。使用方式见 [Notebook 说明](notebook_update_guide.md)。
 - 一份约 10.4 MB 的权重：`experiments/haze_density/checkpoints/best.pth`。安全读取 ZIP/pickle 字面元数据（不执行反序列化）可见 epoch=5、val_loss≈0.00974765、配置图像尺寸 256、训练目标轮数 5，且没有 `prior_version`。这只能证明文件内记录了这些字段，不能核实训练数据和流程。
 - 本地没有 `datasets/RSHaze+/`，也没有可复核的完整训练日志、测试报告和固定 split 文件。
 - 本机 Python 为 3.14.6；项目内新增被 Git 忽略的 `.venv`，安装 CPU PyTorch 2.14.1 与 torchvision 0.29.1。40 项单元测试全部通过、无跳过；静态检查通过。未验证 GPU。

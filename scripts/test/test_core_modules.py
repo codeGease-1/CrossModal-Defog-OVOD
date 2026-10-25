@@ -3,7 +3,7 @@
 """
 雾密度网络核心模块测试脚本
 
-【在 Colab 执行】
+【在 GPU 服务器或本地执行】
 
 测试内容:
 1. test_encoder - Encoder 模块测试
@@ -20,7 +20,7 @@
 - backward (梯度)
 
 使用方法:
-    !python scripts/test/test_core_modules.py
+    python scripts/test/test_core_modules.py
 """
 
 import sys

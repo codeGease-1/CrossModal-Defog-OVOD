@@ -1,4 +1,4 @@
-"""Run the independent pilot in a Colab/Jupyter runtime, without training."""
+"""Run the independent pilot on a GPU server, locally or in Jupyter, without training."""
 import argparse
 from datetime import datetime, timezone
 import hashlib
@@ -19,7 +19,7 @@ def main():
     parser.add_argument('--fetch-small-sample', action='store_true',
                         help='Explicitly allow the bounded public sample download (24 MiB hard cap)')
     args = parser.parse_args()
-    output = args.output or ROOT / 'experiments' / ('colab_benchmark_' + datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S'))
+    output = args.output or ROOT / 'experiments' / ('benchmark_' + datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S_%f'))
     output = output.resolve()
     output.mkdir(parents=True, exist_ok=False)
     stages = []
@@ -42,10 +42,9 @@ def main():
     spec = json.loads((ROOT / 'configs/haze_benchmark_pilot_scenes.json').read_text(encoding='utf-8'))
     sources = output / 'source_samples'
     sources.mkdir()
-    roots = [args.data_root] if args.data_root else [ROOT / 'experiments/haze_benchmark/source_samples',
-        ROOT / 'datasets', Path('/content/datasets'), Path('/content/drive/MyDrive/datasets'),
-        Path('/content/drive/MyDrive/CrossModal-Defog-OVOD/datasets'), Path('/content/RSHaze+')]
-    # Bounded path candidates; never recursively traverse a user's entire Drive.
+    roots = [args.data_root.resolve()] if args.data_root else [ROOT / 'experiments/haze_benchmark/source_samples',
+        ROOT / 'datasets']
+    # Bounded path candidates; never recursively traverse an entire mounted disk.
     for scene in spec['scenes']:
         for root in filter(None, roots):
             candidates = [root / scene['path'], root / scene['archive_member'],

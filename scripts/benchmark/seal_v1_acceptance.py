@@ -39,7 +39,7 @@ def main():
     write_json(run / 'runtime_versions.json', {'python': sys.version, 'packages': versions,
         'note': 'Observed versions, not a portable resolver lock; full pip inventory kept separately.'})
     # Validate the exact self-contained code package, detached from the repo.
-    notebook = read_json(ROOT / 'docs/haze_density_benchmark_colab.ipynb')
+    notebook = read_json(ROOT / 'docs/haze_density_benchmark.ipynb')
     setup = ''.join(next(c['source'] for c in notebook['cells'] if c['cell_type'] == 'code'))
     node = next(n for n in ast.parse(setup).body if isinstance(n, ast.Assign)
                 and any(isinstance(t, ast.Name) and t.id == 'payload' for t in n.targets))
@@ -62,7 +62,7 @@ def main():
         write_json(run / 'bundle_validation.json', {'returncode': result.returncode,
             'command': command, 'bundle_sha256': hashlib.sha256(payload).hexdigest(),
             'file_count': len(origin['files']), 'expected_tests': 71,
-            'scope': 'Detached source package, CPU; NOT a Colab/GPU execution'})
+            'scope': 'Detached source package, CPU; NOT a cloud GPU execution'})
         if result.returncode:
             raise RuntimeError('Detached bundle checks failed; see bundle_tests.log')
     copies = ['historical_audit.json', 'historical_rerun_comparison.json', 'normalization_audit.json',

@@ -3,7 +3,7 @@
 """
 数据集验证脚本
 
-【在 Colab 执行】
+【在 GPU 服务器或本地执行】
 
 功能:
 1. 统计文件数量
@@ -16,9 +16,9 @@
 8. 输出数据集统计信息
 
 使用方法:
-    !python scripts/data/inspect_dataset.py --dataset RSHazePlus --data_dir /content/datasets/RSHazePlus
-    !python scripts/data/inspect_dataset.py --dataset RRSHID --data_dir /content/datasets/RRSHID
-    !python scripts/data/inspect_dataset.py --dataset RSHaze --data_dir /content/datasets/RSHaze
+    python scripts/data/inspect_dataset.py --dataset RSHazePlus --data_dir datasets/RSHazePlus
+    python scripts/data/inspect_dataset.py --dataset RRSHID --data_dir datasets/RRSHID
+    python scripts/data/inspect_dataset.py --dataset RSHaze --data_dir datasets/RSHaze
 """
 
 import sys

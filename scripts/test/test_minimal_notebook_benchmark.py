@@ -1,4 +1,4 @@
-"""Check the Colab workflow hands its existing experiment paths to the pilot."""
+"""Check the portable workflow hands its existing experiment paths to the pilot."""
 import ast
 import base64
 from datetime import datetime, timezone
@@ -13,7 +13,7 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[2]
 NOTEBOOK = ROOT / 'docs/雾密度网络_最简实验流程.ipynb'
-STANDALONE = ROOT / 'docs/haze_density_benchmark_colab.ipynb'
+STANDALONE = ROOT / 'docs/haze_density_benchmark.ipynb'
 TAG = 'stage2-independent-benchmark'
 
 
@@ -58,7 +58,7 @@ class NotebookBenchmarkIntegrationTests(unittest.TestCase):
             self.assertEqual(command[command.index('--data-root') + 1], str(data))
             self.assertTrue(Path(command[command.index('--output') + 1]).is_relative_to(run / 'benchmarks'))
             self.assertNotIn('--checkpoint', command)
-            self.assertIn('--fetch-small-sample', command)
+            self.assertNotIn('--fetch-small-sample', command)
             torch.save({'config': {'prior_version': 'older'}, 'epoch': 2}, checkpoint / 'best.pth')
             exec(code, ns)
             self.assertNotIn('--checkpoint', calls[-1][0])

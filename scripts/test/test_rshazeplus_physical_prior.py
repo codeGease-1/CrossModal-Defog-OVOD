@@ -59,7 +59,7 @@ def test_physical_prior_256():
         split='train',
         image_size=256,
         batch_size=4,
-        num_workers=0,  # Colab 上可设为 2
+        num_workers=0,  # GPU 服务器上可设为 2
         pin_memory=True if device.type == "cuda" else False,
         split_file='experiments/haze_density/rshazeplus_split.json',
     )

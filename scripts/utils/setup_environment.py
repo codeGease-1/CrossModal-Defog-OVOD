@@ -1,30 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Colab 环境初始化脚本
+通用 GPU 服务器 / 本地环境初始化脚本
 
-在 Google Colab 中运行此脚本，自动完成环境配置和检查。
+从脚本位置定位项目，检查依赖与 CUDA，不安装或替换已有 PyTorch。
 
 使用方法:
-    !python scripts/utils/setup_colab.py
+    python scripts/utils/setup_environment.py --require-cuda
 """
 
-import os
+import argparse
 import sys
 from pathlib import Path
 
 
 def setup_paths():
     """设置项目路径：将项目根目录添加到 sys.path"""
-    # 检测是否在 Colab 环境中
-    in_colab = "google.colab" in sys.modules
-
-    if in_colab:
-        # Colab 环境：假设项目在 /content/CrossModal-Defog-OVOD
-        project_root = Path("/content/CrossModal-Defog-OVOD")
-    else:
-        # 本地环境：使用脚本所在目录的祖父目录（scripts/utils/ -> 项目根）
-        project_root = Path(__file__).parent.parent.parent
+    project_root = Path(__file__).resolve().parents[2]
 
     # 将项目根目录添加到 sys.path，以便使用 from src.xxx import 导入
     if str(project_root) not in sys.path:
@@ -33,7 +25,7 @@ def setup_paths():
     return project_root
 
 
-def check_pytorch():
+def check_pytorch(require_cuda=False):
     """检查 PyTorch 环境"""
     try:
         import torch
@@ -53,12 +45,22 @@ def check_pytorch():
                 print(f"    Compute Capability: {props.major}.{props.minor}")
         else:
             print("✗ CUDA available: False")
-            print("  警告：未检测到 GPU，将在 CPU 上运行（速度较慢）")
+            if require_cuda:
+                print("  GPU 检查失败：请确认平台已分配 GPU、驱动正常且安装的是 CUDA 版 PyTorch。")
+                return False
+            print("  CPU 模式：可用于小张量检查；云端训练请使用 --require-cuda。")
+
+        if require_cuda:
+            # 驱动可见还不足以证明 CUDA 运算可用。
+            probe = torch.ones(1, device='cuda') * 2
+            torch.cuda.synchronize()
+            if probe.item() != 2:
+                raise RuntimeError('CUDA tensor check failed')
 
         return True
-    except ImportError:
-        print("✗ PyTorch 未安装")
-        print("  请运行：!pip install torch torchvision")
+    except (ImportError, OSError, RuntimeError) as error:
+        print(f"✗ PyTorch/CUDA 检查失败：{error}")
+        print("  请使用平台的 PyTorch GPU 镜像，或按 PyTorch 官方安装说明配置。")
         return False
 
 
@@ -70,6 +72,9 @@ def check_dependencies():
         "numpy": "numpy",
         "yaml": "yaml",
         "tqdm": "tqdm",
+        "Pillow": "PIL",
+        "matplotlib": "matplotlib",
+        "scipy": "scipy",
     }
 
     print("\n" + "=" * 60)
@@ -81,8 +86,8 @@ def check_dependencies():
         try:
             __import__(module)
             print(f"✓ {name}")
-        except ImportError:
-            print(f"✗ {name} - 未安装")
+        except (ImportError, OSError, RuntimeError) as error:
+            print(f"✗ {name} - 无法导入：{error}")
             all_ok = False
 
     return all_ok
@@ -128,8 +133,11 @@ def print_config_summary():
 
 def main():
     """主函数"""
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--require-cuda', action='store_true', help='没有可用 CUDA 时以失败退出')
+    args = parser.parse_args()
     print("\n" + "=" * 60)
-    print("CrossModal-Defog-OVOD - Colab 环境初始化")
+    print("CrossModal-Defog-OVOD - 通用环境初始化")
     print("=" * 60 + "\n")
 
     # 设置路径
@@ -137,13 +145,13 @@ def main():
     print(f"项目根目录：{project_root}\n")
 
     # 检查 PyTorch
-    if not check_pytorch():
-        print("\n⚠️  PyTorch 检查失败，请先安装 PyTorch")
+    if not check_pytorch(require_cuda=args.require_cuda):
+        print("\nPyTorch/CUDA 检查失败，请先修复上述环境问题")
         return False
 
     # 检查依赖
     if not check_dependencies():
-        print("\n⚠️  部分依赖未安装，请运行：!pip install -r requirements.txt")
+        print("\n部分依赖无法导入，请检查环境并运行：python -m pip install -r requirements.txt")
         return False
 
     # 创建目录
@@ -156,8 +164,8 @@ def main():
     print("✓ 环境初始化完成！")
     print("=" * 60)
     print("\n下一步:")
-    print("  1. 运行 smoke test: !python scripts/utils/smoke_test.py")
-    print("  2. 开始训练：!python scripts/train/train_haze_density.py --config configs/haze_density.yaml")
+    print("  1. 运行 smoke test: python scripts/utils/smoke_test.py")
+    print("  2. 按 docs/雾密度网络_最简实验流程.md 准备数据、持久化实验配置并训练")
     print()
 
     return True

@@ -271,7 +271,7 @@ def main():
         print("\n[OK] 所有静态检查通过！")
         print("\n下一步:")
         print("  1. 将项目推送到 GitHub 或导出为 ZIP")
-        print("  2. 在 Google Colab 中运行 setup_colab.py")
+        print("  2. 在 GPU 服务器运行 python scripts/utils/setup_environment.py --require-cuda")
         print("  3. 运行 smoke_test.py 进行动态测试")
     else:
         print("\n[WARN] 部分检查未通过，请修复后重试")

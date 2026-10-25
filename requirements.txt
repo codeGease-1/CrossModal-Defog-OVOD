@@ -1,6 +1,7 @@
 # CrossModal-Defog-OVOD - 雾密度感知网络
 # 依赖列表：仅列运行时所需，本地开发无需安装
-# 在 Google Colab 中执行：pip install -r requirements.txt
+# 在 GPU 服务器或本地执行：python -m pip install -r requirements.txt
+# 优先使用平台预装的 CUDA 版 torch/torchvision；先检查版本，避免替换为 CPU 版。
 
 # Deep Learning Framework
 torch>=2.0.0

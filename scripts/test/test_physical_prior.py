@@ -3,7 +3,7 @@
 """
 物理先验模块测试脚本
 
-【在 Colab 执行】
+【在 GPU 服务器或本地执行】
 
 测试内容:
 1. Shape Test - 验证输出形状
@@ -14,7 +14,7 @@
 6. Constructive Test - 构造性测试（常数图、渐变图、局部雾图）
 
 使用方法:
-    !python scripts/test/test_physical_prior.py
+    python scripts/test/test_physical_prior.py
 """
 
 import sys

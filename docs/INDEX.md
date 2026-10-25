@@ -1,6 +1,6 @@
 # 文档索引
 
-更新于 2026-10-21。当前实现、运行命令和进度以本页列出的“当前文档”为准。
+更新于 2026-10-25。当前实现、运行命令和进度以本页列出的“当前文档”为准。
 
 ## 当前文档
 
@@ -9,20 +9,21 @@
 | [项目首页](../README.md) | 这个仓库目前能做什么？ |
 | [雾密度入门解释](guides/haze_density_explained.md) | 原理是什么，模型到底在学什么？ |
 | [操作指南](guides/haze_density_user_guide.md) | 数据怎么放，训练、恢复、评估怎么跑？ |
-| [Colab 指南](guides/colab.md) | 环境和 Drive 持久化怎么配置？ |
+| [最简实验流程](雾密度网络_最简实验流程.md) | 恒源云等 GPU 平台如何从零训练、续训、评估？ |
+| [GPU 云平台指南](guides/cloud_gpu.md) | 环境、持久化磁盘与远程会话怎么配置？ |
 | [项目状态](project_status.md) | 哪些有代码，哪些有本次验证证据？ |
 | [阶段 2 科研审查](stage_2_research_review.md) | 独立真值评价发现了什么、哪些还未证明？ |
 | [Benchmark 使用说明](guides/haze_density_benchmark.md) | 合成、排序、空间评价、性能和复现命令 |
-| [独立 Colab notebook](haze_density_benchmark_colab.ipynb) | 在 VS Code 的 Colab 内核运行，无需远程获取本地代码 |
+| [独立 Benchmark notebook](haze_density_benchmark.ipynb) | 在通用 Python/Jupyter 内核运行，内嵌评测代码 |
 | [最简实验流程 notebook](雾密度网络_最简实验流程.ipynb) | 第 8 节在训练实验里直接运行独立 Benchmark |
 | [阶段 2 方案](benchmark_plan.md) / [人工盲评协议](benchmark_human_protocol.md) | 评价定义、真实标签独立性与待开展盲评 |
 | [阶段 1 必要修复报告](stage_1_bugfix_report.md) | 确认了哪些 Bug、实际测试结果、旧权重影响、阶段 2 前是否阻塞？ |
 | [审查记录](project_review.md) | 发现了哪些错误，修了什么，还有什么限制？ |
-| [Notebook 使用说明](notebook_update_guide.md) | 两个现有 notebook 如何与新流程配合？ |
+| [Notebook 使用说明](notebook_update_guide.md) | 终端、当前 notebook 与历史 notebook 如何配合？ |
 
 ## 历史阶段记录
 
-以下保留当时的设计、排错和结果记录，包含待填项与未复核数值。历史文档的“已完成”不表示本次重新完成了该实验。特别是旧先验生成的指标，不可直接用于修正后的流程。
+以下保留当时的设计、排错和结果记录（含旧 Colab 命令），当前平台运行请使用最简流程。包含待填项与未复核数值。历史文档的“已完成”不表示本次重新完成了该实验。特别是旧先验生成的指标，不可直接用于修正后的流程。
 
 | 阶段 | 资料 |
 |---|---|

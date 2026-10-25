@@ -14,7 +14,7 @@ python -m unittest scripts.test.test_v1_acceptance -v
 
 该实验明确分开历史独立复算与新增 256 样本旋转敏感性试验；`scenes_portable.json` 可从本地输出目录复用，原始文件 SHA256 必须匹配。SciPy 统计在独立子进程运行，避免本机与 torch 的 OpenMP 冲突。评测入口现在再次拒绝同组跨划分、重复 case ID、场景元数据不一致，以及合成配置不匹配；checkpoint/methods 可以独立选择。
 
-VS Code 选择 Colab notebook 内核不会建立可供本轮命令工具使用的 SSH 连接。需在该内核运行更新后的独立 notebook；已有修复后权重可传 `--checkpoint`，否则学生正确性 NOT RUN。GPU 单独运行可用下列命令（无 GPU 时明确 NOT RUN，绝不回退 CPU）：
+在实际 GPU 服务器的终端或 Jupyter 内核执行；已有修复后权重可传 `--checkpoint`，否则学生正确性 NOT RUN。GPU 单独运行可用下列命令（无 GPU 时明确 NOT RUN，绝不回退 CPU）：
 
 ```bash
 python -m benchmarks.haze_density performance --output experiments/new_gpu_run --devices cuda
@@ -33,17 +33,25 @@ python -m benchmarks.haze_density performance --output experiments/new_gpu_run -
 
 需要分开问三个问题：程序是否按设计计算；雾浓淡判断是否符合独立参照；计算要花多少时间。测试通过只回答第一个问题。本次发现三先验擅长的图内空间分布，与其失败的跨图雾强度排序，是两种不同能力。
 
-## VS Code + Colab
+## GPU 服务器 / Jupyter
 
-你现有的 [最简实验流程 notebook](../雾密度网络_最简实验流程.ipynb) 已在**第 8 节**集成此 Benchmark。第 1、3、4 节准备好项目、RSHaze+ 与实验目录后即可运行；已有当前版本 `best.pth` 时自动加入学生网络。输出存到本次实验的 Google Drive `benchmarks/<时间戳>/`，第 8 节最后一个单元直接显示主要表格与示例图。评测代码作为快照内嵌，不依赖远端分支已经上传未提交的 Benchmark 文件。变更评测源码后需先运行 `python scripts/benchmark/build_colab_notebook.py` 和 `python scripts/benchmark/sync_minimal_notebook.py` 更新两个 notebook。
+[最简实验流程](../雾密度网络_最简实验流程.md)提供终端命令；[最简 notebook](../雾密度网络_最简实验流程.ipynb)的**第 8 节**集成相同 Benchmark。准备好项目、RSHaze+ 与持久化实验目录后即可运行；已有当前版本 `best.pth` 时自动加入学生网络。输出写入本次实验的 `benchmarks/<时间戳>/`。
 
-也可只打开 [独立运行 notebook](../haze_density_benchmark_colab.ipynb)，右上角选 Colab 内核，依次运行三个单元。它无需完成训练流程；评测代码同样内嵌，不依赖 Colab 能看到 Windows 的 D 盘。
+也可打开[独立 notebook](../haze_density_benchmark.ipynb)，选择服务器已安装依赖的 Python 内核，依次运行三个代码单元。它将内嵌代码解包到系统临时目录；第二个单元必须设置持久化的 `OUTPUT_ROOT`，并按需填写 `DATA_ROOT`、`CHECKPOINT`。结果写入指定磁盘，代码临时目录无需保存。
 
-入口先查常见数据路径；缺少匹配样本时显式使用 `--fetch-small-sample` 从官方 ZIP 按字节范围读取少量图片，硬限制 24 MiB，拒绝服务器返回整个压缩包。本机这次实际读取 8,622,736 字节。不会下载完整 7.38 GB 数据集。如果服务器不支持范围读取会报错，需要指定自己的 `--data-root`。
+终端运行不需要 notebook：
 
-默认不猜测权重。已有修复后训练权重时，在 notebook 第二个单元的命令中加 `--checkpoint /实际路径/best.pth`。检查内部 `prior_version=spatial_minmax_valid_boundary_v3` 与完成的训练 epoch；旧权重不能当作 V1 正确性结果。还需人工核对训练场景与测试场景隔离，元数据本身不能证明没有数据泄漏。
+```bash
+python scripts/benchmark/run_benchmark.py --data-root /实际数据目录/RSHaze+ \
+  --output /持久化磁盘/experiments/benchmark_run01
+# 有有效 v3 权重时追加 --checkpoint /实际实验目录/checkpoints/best.pth
+```
 
-结果保存在打印的 `/content/stage2_haze_.../experiments/colab_benchmark_...` 下；关闭 Colab 前打包保存。notebook 没有预填结果，本次本地运行也不代表已在你的 Colab GPU 执行。
+缺少匹配样本时，可显式使用 `--fetch-small-sample` 从官方 ZIP 按字节范围读取小样本，硬限制 24 MiB，拒绝服务器返回整个压缩包。notebook 的下载开关默认关闭。若服务器不支持范围读取，需要自己准备 `--data-root`。本机历史试验读取了 8,622,736 字节，这不是当前平台的实测下载记录。
+
+默认不猜测权重。已有修复后训练权重时明确传入路径；会检查 `prior_version=spatial_minmax_valid_boundary_v3` 与完成的训练 epoch。还需人工核对训练场景与测试场景隔离，元数据本身不能证明没有数据泄漏。
+
+修改评测源码后，依次执行 `python scripts/benchmark/build_benchmark_notebook.py` 和 `python scripts/benchmark/sync_minimal_notebook.py` 更新两份 notebook。它们没有预填运行结果；CPU 检查不等于已在云端 GPU 执行。
 
 ## 本地分步命令
 
@@ -52,7 +60,7 @@ python -m benchmarks.haze_density performance --output experiments/new_gpu_run -
 ```bash
 python -m unittest scripts.test.test_haze_benchmark scripts.test.test_stage1_bugfixes scripts.test.test_review_regressions -v
 # 复现固定四 ROI 试验，优先复用本地官方图像；缺失时允许有限小样本下载：
-python scripts/benchmark/run_colab_benchmark.py --fetch-small-sample
+python scripts/benchmark/run_benchmark.py --fetch-small-sample
 # 自己准备 manifest 后逐步执行：
 python -m benchmarks.haze_density generate --scenes path/to/scenes.json --output experiments/run1/data --profile minimal
 python -m benchmarks.haze_density evaluate --dataset experiments/run1/data --output experiments/run1/results --device cpu
@@ -95,6 +103,6 @@ PASS = 该项成功执行且满足形状/有限值等实现检查；FAIL = 执�
 
 ## 输出与可复现记录
 
-`results.json` 是完整评价记录，CSV 包含总体/地物、条件分层、空间模式、逐图和排序表；`report.md` 与 `figures/` 是自动报告。性能目录含逐次延迟、P50/P95、显存、参数量和局部 MACs。Git commit、工作区状态、源文件 SHA256、配置、Python/PyTorch/CPU/GPU 信息均记录；notebook 另保存代码包来源 `bundle_origin.json`。改变代码后运行 `python scripts/benchmark/build_colab_notebook.py` 重建 notebook。
+`results.json` 是完整评价记录，CSV 包含总体/地物、条件分层、空间模式、逐图和排序表；`report.md` 与 `figures/` 是自动报告。性能目录含逐次延迟、P50/P95、显存、参数量和局部 MACs。Git commit、工作区状态、源文件 SHA256、配置、Python/PyTorch/CPU/GPU 信息均记录；notebook 另保存代码包来源 `bundle_origin.json`。改变代码后运行 `python scripts/benchmark/build_benchmark_notebook.py` 重建 notebook。
 
 真实图像辅助评价见 [盲评协议](../benchmark_human_protocol.md)。尚无独立真实物理标注，因此本次不声称已验证真实遥感雾浓度。

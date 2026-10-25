@@ -1,5 +1,8 @@
 # Stage 5E Report: HazeDensityNet Test Evaluation
 
+> 历史记录：下文保留当时的 Colab 环境、命令或验证状态。`v1-nocolab` 的当前训练步骤见[通用 GPU 最简流程](../雾密度网络_最简实验流程.md)；历史待验证项不因平台迁移自动完成。
+
+
 > 历史阶段记录：本页保留当时的设计、排错与待填结果。当前实现和验证边界见 [项目状态](../project_status.md) 与 [2026-10-20 审查](../project_review.md)；旧先验指标不适用于修正后的标签版本。
 
 **项目**: CrossModal-Defog-OVOD  
