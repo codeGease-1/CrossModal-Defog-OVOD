@@ -272,3 +272,11 @@ Thumbs.db
 !/experiments/v2_investigation_20261101/inference_smoke/prediction/prediction.png
 /experiments/v2_investigation_results.tgz
 /experiments/v2_investigation_20261101/**/*cache*/
+
+# Cloud publishing: preserve large results on disk, exclude from Git delivery.
+/experiments/**/*.pth
+/experiments/**/*.png
+/experiments/**/*.jpg
+/experiments/**/*.jpeg
+/experiments/*.bundle
+!/experiments/git_archive_20261101.json
