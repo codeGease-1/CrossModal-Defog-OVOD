@@ -1,0 +1,15 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 18,
+  "lr": 0.001,
+  "source_sha256": "4e8d9d8a46efdbda72f96b7a14c898d155ca8ba26d718b827a2b53ee84b3360e",
+  "inputs": "RGB only; no candidate/raw-cue features",
+  "scope": "Third/final follow-up training variant, diagnostic only; no adoption or test-based tuning",
+  "trigger": "Need to distinguish value of contextual neural regression from value of prior-constrained weighting; registered before any new confirmation results",
+  "differences": "Same feature trunk and loss; head emits sigmoid H with direct RGB skip. Different output restriction and initialization.",
+  "budget": "Same shared 3000s follow-up ledger, no extra allocation"
+}

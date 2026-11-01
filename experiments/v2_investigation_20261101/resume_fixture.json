@@ -1,0 +1,14 @@
+{
+  "device": "cuda",
+  "actual_trainer": true,
+  "status": "PASS",
+  "compatibility_launcher": "scripts/v2/resume_compat.py",
+  "parameter_max_abs_difference": {
+    "temperature": 0.0,
+    "student": 0.0
+  },
+  "interrupted_at": "temperature epoch1 saved checkpoint",
+  "deterministic_algorithms": true,
+  "elapsed_seconds": 3.1753571815788746,
+  "limit": "Tiny fixture, not simulated power failure or corrupt filesystem"
+}

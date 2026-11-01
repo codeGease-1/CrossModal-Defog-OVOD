@@ -48,6 +48,7 @@ venv/
 !/experiments/.gitkeep
 !/experiments/README.md
 !/experiments/artifacts_manifest.json
+!/experiments/research_snapshot_20261101.json
 !/experiments/notebook_execution/full_run_20261025/initial_run.log
 !/experiments/notebook_execution/full_run_20261025/run.log
 !/experiments/notebook_execution/full_run_20261025/status.json
@@ -211,6 +212,7 @@ venv/
 .ipynb_checkpoints/
 .DS_Store
 Thumbs.db
+~$*
 
 # V1.5 reviewed evidence; source images and per-scene fitting caches stay local.
 !/experiments/v15_20261101/
@@ -238,3 +240,35 @@ Thumbs.db
 !/experiments/v15_20261101/verified_spectral/*.json
 !/experiments/v15_20261101/verified_spectral/*.csv
 !/experiments/v15_20261101/verified_spectral/external_S_1042.png
+
+# V2 reviewed evidence and best models; latest checkpoints remain local/cloud.
+!/experiments/v2_20261101/
+!/experiments/v2_20261101/**/
+!/experiments/v2_20261101/**/*.json
+!/experiments/v2_20261101/**/*.csv
+!/experiments/v2_20261101/**/*.log
+!/experiments/v2_20261101/**/*.md
+!/experiments/v2_20261101/**/best.pth
+!/experiments/v2_20261101/pip_freeze.txt
+!/experiments/v2_20261101/confirmation/figures/FAIL_*.png
+!/experiments/v2_20261101/original_spectral/new_S_*.png
+!/experiments/v2_20261101/v15_display_compat/new2_S_1294.png
+/experiments/v2_20261101/**/*cache*/
+/experiments/v2_results.tgz
+
+# V2 follow-up: diagnostics, refactored student, RGB control and best models.
+!/experiments/v2_investigation_20261101/
+!/experiments/v2_investigation_20261101/**/
+!/experiments/v2_investigation_20261101/**/*.json
+!/experiments/v2_investigation_20261101/**/*.csv
+!/experiments/v2_investigation_20261101/**/*.md
+!/experiments/v2_investigation_20261101/**/*.log
+!/experiments/v2_investigation_20261101/**/best.pth
+!/experiments/v2_investigation_20261101/pip_freeze.txt
+!/experiments/v2_investigation_20261101/nominal/figures/GAIN_OR_FAIL_*.png
+!/experiments/v2_investigation_20261101/nominal/figures/WEIGHTS_*.png
+!/experiments/v2_investigation_20261101/original_S/new3_S_*.png
+!/experiments/v2_investigation_20261101/training_curves.png
+!/experiments/v2_investigation_20261101/inference_smoke/prediction/prediction.png
+/experiments/v2_investigation_results.tgz
+/experiments/v2_investigation_20261101/**/*cache*/

@@ -1,0 +1,8 @@
+{
+  "mode": "dynamic",
+  "seed": 44,
+  "best_development_loss": 0.0015738682168375817,
+  "steps": 3456,
+  "pilot_only": false,
+  "trainable_parameters": 3683
+}

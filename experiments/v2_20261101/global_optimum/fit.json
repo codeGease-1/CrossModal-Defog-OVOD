@@ -1,0 +1,37 @@
+{
+  "weights": [
+    0.990093451870801,
+    0.009906548129199003,
+    0.0
+  ],
+  "quadratic_Q": [
+    [
+      0.17039529777902535,
+      0.13190175490091072,
+      0.1423684525025636
+    ],
+    [
+      0.13190175490091072,
+      0.14359987094874296,
+      0.1259009161813066
+    ],
+    [
+      0.1423684525025636,
+      0.1259009161813066,
+      0.1454709747793135
+    ]
+  ],
+  "linear_r": [
+    0.17115519665499337,
+    0.13315887986171315,
+    0.1424845171444168
+  ],
+  "n_training_cases": 1536,
+  "n_clear_cases": 192,
+  "objective": "dataset pixel MSE + 0.5 image-mean MSE + 0.25 conditional clear MSE; additive y-square constant omitted",
+  "solver": "enumerate all seven nonempty simplex faces and solve equality-constrained normal equations",
+  "calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "fitted_on": "V1.5 procedural training originals ONLY",
+  "refinement_trigger": "development-only inspection showed near-boundary weights; no confirmation/external result used",
+  "elapsed_seconds": 17.5815588850528
+}

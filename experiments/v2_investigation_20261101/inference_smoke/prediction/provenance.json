@@ -1,0 +1,22 @@
+{
+  "image": "/mnt/CrossModal-Defog-OVOD/experiments/v2_investigation_20261101/inference_smoke/train_fixture.png",
+  "image_sha256": "76adf23155fd7c8ace49ae43db5d8050c394eab8e6488fa77f1c1001a6da4b76",
+  "original_size": [
+    256,
+    256
+  ],
+  "evaluation_size": [
+    256,
+    256
+  ],
+  "checkpoint": "experiments/v2_investigation_20261101/student_seed43/best.pth",
+  "checkpoint_sha256": "c227f3f7c41008fd6f9226538fbec2675ad2734dda3cd1cc6e086dd061732e6d",
+  "calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "mode": "student",
+  "seed": 43,
+  "color_range": [
+    0,
+    1
+  ],
+  "warning": "Research output conditional on synthesis/calibration domain; no guarantee of real absolute fog concentration. Other resolutions are unvalidated."
+}

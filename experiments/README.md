@@ -2,6 +2,8 @@
 
 本目录按明确的文件清单纳入 Git，当前归档 `spatial_v3_run01` 的 5 轮对照和累计 50 轮续训结果，约 66 MB。新增实验仍默认忽略，需要逐次评估后加入清单。
 
+2026-11-01 补充独立研究证据：[v1.5](v15_20261101/README.md)、[v2 第一轮](v2_20261101/README.md)、[v2 深入探索](v2_investigation_20261101/README.md)。这些目录不覆盖历史结果。Git 保留标定、数据清单、协议、日志、逐例指标、各随机种子的 best 权重和精选共同色标图；新增实验的 latest 恢复权重、逐像素缓存、源图和传输压缩包仅保存在本地/云端。恢复已有进度需取回对应 latest 文件，从零复现不依赖它。原有 `artifacts_manifest.json` 仅覆盖下文历史归档；新提交精选文件的哈希见 `research_snapshot_20261101.json`，实验完整云端清单允许包含 Git 忽略的文件。
+
 入口：[50 轮结果与学习曲线](spatial_v3_run01/运行结果.md)、[5 轮对照](spatial_v3_run01/snapshots/epoch_005/README.md)、[文件与 SHA256 清单](artifacts_manifest.json)。
 
 ## 保留的模型

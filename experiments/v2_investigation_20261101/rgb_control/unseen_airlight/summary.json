@@ -1,0 +1,32 @@
+{
+  "metrics": {
+    "rgb_seed42": {
+      "n_cases": 512,
+      "global_mae": 0.05704138997953123,
+      "pixel_mae": 0.057446147205155285,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9766942648027704,
+      "clear_response": 0.00518327843019506
+    },
+    "rgb_seed43": {
+      "n_cases": 512,
+      "global_mae": 0.0588706040634861,
+      "pixel_mae": 0.05970196404814487,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9767555393125744,
+      "clear_response": 0.004647196314181201
+    },
+    "rgb_seed44": {
+      "n_cases": 512,
+      "global_mae": 0.04642522913218272,
+      "pixel_mae": 0.047560361859723344,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9766329902929666,
+      "clear_response": 0.005417445594503079
+    }
+  },
+  "role": "RGB-only necessary control, not main pipeline"
+}

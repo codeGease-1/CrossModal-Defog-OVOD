@@ -1,0 +1,19 @@
+{
+  "variants": [
+    "full spatial weights",
+    "per-image mean weights",
+    "per-image spatially shuffled weight vectors",
+    "truth-based best constant weights per image OFFLINE ONLY"
+  ],
+  "data": "new nominal confirmation only",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "source_sha256": "a09075e3dca5ae64ae803e4ea09f9ed14062a78037fa53af1394e087334e3ab1",
+  "purpose": "Distinguish actual within-image weighting from merely image-dependent constant fusion",
+  "training": false,
+  "selection": false,
+  "budget": "same shared ledger"
+}

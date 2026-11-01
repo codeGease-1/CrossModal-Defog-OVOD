@@ -1,0 +1,8 @@
+{
+  "mode": "global",
+  "seed": 43,
+  "best_development_loss": 0.0015698477263867971,
+  "steps": 3456,
+  "pilot_only": false,
+  "trainable_parameters": 3
+}

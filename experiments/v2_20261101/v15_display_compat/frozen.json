@@ -1,0 +1,26 @@
+{
+  "calibration_sha256": "25276d4a87153e64bae43accfb4cd2c140ea935750d100d520f7d26b14830794",
+  "source_sha256": "04c9807357dd6bc2a6d8a23c1a3fde05dc4f8cb77562ac77ee38c4fa64904119",
+  "trigger": "development paired-domain probe ONLY",
+  "primary_v2_models_unchanged": true,
+  "confirmation_seeds": [
+    20321101,
+    20321102,
+    20321103,
+    20321104,
+    20321105,
+    20321106,
+    20321107,
+    20321108,
+    20321109,
+    20321110,
+    20321111,
+    20321112,
+    20321113,
+    20321114,
+    20321115,
+    20321116
+  ],
+  "S_selection_seed": 20261103,
+  "warning": "Known source image-formation convention is required; never choose calibration by test error"
+}

@@ -1,0 +1,7 @@
+{
+  "mode": "temperature",
+  "seed": 44,
+  "best_development_loss": 0.001573869905769243,
+  "steps": 3456,
+  "parameters": 3683
+}

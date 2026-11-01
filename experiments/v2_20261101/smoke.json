@@ -1,0 +1,16 @@
+{
+  "global": {
+    "median_step_seconds": 0.0011734776198863983,
+    "parameters": 3,
+    "batch_size": 8,
+    "steps": 12,
+    "purpose": "synthetic disposable features, NOT an accuracy experiment"
+  },
+  "dynamic": {
+    "median_step_seconds": 0.003694610670208931,
+    "parameters": 3683,
+    "batch_size": 8,
+    "steps": 12,
+    "purpose": "synthetic disposable features, NOT an accuracy experiment"
+  }
+}

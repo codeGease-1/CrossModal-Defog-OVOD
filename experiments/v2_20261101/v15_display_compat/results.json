@@ -1,0 +1,140 @@
+{
+  "confirmation2": {
+    "display_rgb": {
+      "v15_fixed_display": {
+        "n_cases": 512,
+        "global_mae": 0.05253263695703936,
+        "pixel_mae": 0.06366755398937585,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 0.956484375,
+        "region_spearman": 0.9398541265517791,
+        "clear_response": 0.061685813445365056
+      },
+      "v15_fixed_linear": {
+        "n_cases": 512,
+        "global_mae": 0.16951077089168864,
+        "pixel_mae": 0.16961505128409515,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 0.95,
+        "region_spearman": 0.9303002354094159,
+        "clear_response": 0.004833649179528443
+      },
+      "v15_normalized": {
+        "n_cases": 512,
+        "global_mae": 0.13025931402808055,
+        "pixel_mae": 0.15283496231677418,
+        "same_scene_rank": 0.425,
+        "cross_condition_cross_scene_rank": 0.487421875,
+        "region_spearman": 0.9442479903598247,
+        "clear_response": 0.24190177163109183
+      }
+    },
+    "linear_srgb": {
+      "v15_fixed_display": {
+        "n_cases": 512,
+        "global_mae": 0.16853421783162048,
+        "pixel_mae": 0.16964268818901473,
+        "same_scene_rank": 0.9812500000000001,
+        "cross_condition_cross_scene_rank": 0.976328125,
+        "region_spearman": 0.9436619332306048,
+        "clear_response": 0.057933490665163845
+      },
+      "v15_fixed_linear": {
+        "n_cases": 512,
+        "global_mae": 0.032229378266216746,
+        "pixel_mae": 0.03875486452506849,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 0.9906510416666666,
+        "region_spearman": 0.9699851702866876,
+        "clear_response": 0.004569205104027141
+      },
+      "v15_normalized": {
+        "n_cases": 512,
+        "global_mae": 0.13374686369206756,
+        "pixel_mae": 0.14344943770265672,
+        "same_scene_rank": 0.35,
+        "cross_condition_cross_scene_rank": 0.394140625,
+        "region_spearman": 0.9713174265674761,
+        "clear_response": 0.24164468375965953
+      }
+    }
+  },
+  "original_S_new_members": {
+    "v15_fixed_display": {
+      "n_cases": 8,
+      "global_mae": 0.06279812939465046,
+      "pixel_mae": 0.06809608894400299,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7263486673322969,
+      "clear_response": null
+    },
+    "v15_fixed_linear": {
+      "n_cases": 8,
+      "global_mae": 0.1478586415760219,
+      "pixel_mae": 0.1478586420416832,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7395579884888843,
+      "clear_response": null
+    },
+    "v15_normalized": {
+      "n_cases": 8,
+      "global_mae": 0.10556767880916595,
+      "pixel_mae": 0.14542520977556705,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.816545744791941,
+      "clear_response": null
+    }
+  },
+  "reconstruction_checks": [
+    {
+      "scene_id": "new2_S_1294",
+      "reconstruction_mae": 0.0010313097953674186,
+      "status": "PASS"
+    },
+    {
+      "scene_id": "new2_S_1103",
+      "reconstruction_mae": 0.0010006463171716808,
+      "status": "PASS"
+    },
+    {
+      "scene_id": "new2_S_1175",
+      "reconstruction_mae": 0.001012147353212759,
+      "status": "PASS"
+    },
+    {
+      "scene_id": "new2_S_1028",
+      "reconstruction_mae": 0.001006039183490877,
+      "status": "PASS"
+    },
+    {
+      "scene_id": "new2_S_1127",
+      "reconstruction_mae": 0.0009792719470313408,
+      "status": "PASS"
+    },
+    {
+      "scene_id": "new2_S_1217",
+      "reconstruction_mae": 0.0009809260287071588,
+      "status": "PASS"
+    },
+    {
+      "scene_id": "new2_S_1185",
+      "reconstruction_mae": 0.000986230701845945,
+      "status": "PASS"
+    },
+    {
+      "scene_id": "new2_S_1188",
+      "reconstruction_mae": 0.0009871053396242333,
+      "status": "PASS"
+    }
+  ],
+  "adoption": "Compatibility prototype only; does not identify an unknown real image formation domain. No V2 retraining or retrospective replacement.",
+  "remaining_limits": [
+    "Procedural training, same generator family",
+    "Spectral-average endpoint differs from scalar t",
+    "Real scenes share one unverified geographic group",
+    "Only one new source-specific calibration fit"
+  ]
+}

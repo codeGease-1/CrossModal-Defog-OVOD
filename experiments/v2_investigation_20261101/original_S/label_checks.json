@@ -1,0 +1,50 @@
+[
+  {
+    "scene_id": "new3_S_1108",
+    "reconstruction_mae": 0.0010012481036315178,
+    "reversed_direction_mae": 0.362451183979563,
+    "status": "PASS"
+  },
+  {
+    "scene_id": "new3_S_1007",
+    "reconstruction_mae": 0.0010061283935327843,
+    "reversed_direction_mae": 0.36840798217272835,
+    "status": "PASS"
+  },
+  {
+    "scene_id": "new3_S_1044",
+    "reconstruction_mae": 0.0009786013464247521,
+    "reversed_direction_mae": 0.46501164783564314,
+    "status": "PASS"
+  },
+  {
+    "scene_id": "new3_S_1164",
+    "reconstruction_mae": 0.0009686933412592228,
+    "reversed_direction_mae": 0.5703193837612789,
+    "status": "PASS"
+  },
+  {
+    "scene_id": "new3_S_1240",
+    "reconstruction_mae": 0.0009874262767587878,
+    "reversed_direction_mae": 0.4931814799882595,
+    "status": "PASS"
+  },
+  {
+    "scene_id": "new3_S_1237",
+    "reconstruction_mae": 0.0010935769771041564,
+    "reversed_direction_mae": 0.2570029488670723,
+    "status": "PASS"
+  },
+  {
+    "scene_id": "new3_S_1092",
+    "reconstruction_mae": 0.0010012246180417879,
+    "reversed_direction_mae": 0.43259395639941894,
+    "status": "PASS"
+  },
+  {
+    "scene_id": "new3_S_1054",
+    "reconstruction_mae": 0.000978437005961749,
+    "reversed_direction_mae": 0.5283266408397924,
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,263 @@
+{
+  "nominal": {
+    "metrics": {
+      "global_exact": {
+        "n_cases": 512,
+        "global_mae": 0.016602553338998405,
+        "pixel_mae": 0.019926986250197842,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9767708579400254,
+        "clear_response": 0.00450900452415226
+      },
+      "original_dynamic": {
+        "n_cases": 512,
+        "global_mae": 0.016560148552621,
+        "pixel_mae": 0.01981114827014352,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9766942648027704,
+        "clear_response": 0.0027502445977347634
+      },
+      "single_dark": {
+        "n_cases": 512,
+        "global_mae": 0.01655629447427187,
+        "pixel_mae": 0.019807126067037606,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9766942648027704,
+        "clear_response": 0.002716353973267971
+      },
+      "student_seed42": {
+        "n_cases": 512,
+        "global_mae": 0.014413491546861223,
+        "pixel_mae": 0.018073481895044097,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9769087255870842,
+        "clear_response": 0.003085216046201822
+      },
+      "student_seed43": {
+        "n_cases": 512,
+        "global_mae": 0.014309150775204671,
+        "pixel_mae": 0.017809158988825402,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.97700063735179,
+        "clear_response": 0.0029498386206796567
+      },
+      "student_seed44": {
+        "n_cases": 512,
+        "global_mae": 0.014615117018763613,
+        "pixel_mae": 0.01813356814773215,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9768627697047312,
+        "clear_response": 0.0034045363968289166
+      },
+      "temperature_seed42": {
+        "n_cases": 512,
+        "global_mae": 0.016556606133570462,
+        "pixel_mae": 0.019807445325903394,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9766942648027704,
+        "clear_response": 0.0027189466663415374
+      },
+      "temperature_seed43": {
+        "n_cases": 512,
+        "global_mae": 0.01655729345715784,
+        "pixel_mae": 0.01980814908201367,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9766942648027704,
+        "clear_response": 0.0027247032313937325
+      },
+      "temperature_seed44": {
+        "n_cases": 512,
+        "global_mae": 0.016559062865283636,
+        "pixel_mae": 0.019810009183245825,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9766942648027704,
+        "clear_response": 0.0027400935465493603
+      }
+    },
+    "oracle_pixel_mae": 0.00849943627918437,
+    "role": "primary fresh controlled confirmation"
+  },
+  "unseen_airlight": {
+    "metrics": {
+      "global_exact": {
+        "n_cases": 512,
+        "global_mae": 0.08331978422847897,
+        "pixel_mae": 0.08410436697704426,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9749019853910056,
+        "clear_response": 0.00450900452415226
+      },
+      "original_dynamic": {
+        "n_cases": 512,
+        "global_mae": 0.08362357331071024,
+        "pixel_mae": 0.08438231313294153,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9749019853910057,
+        "clear_response": 0.0027502445977347634
+      },
+      "single_dark": {
+        "n_cases": 512,
+        "global_mae": 0.08362003693705033,
+        "pixel_mae": 0.0843786831740958,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9749019853910057,
+        "clear_response": 0.002716353973267971
+      },
+      "student_seed42": {
+        "n_cases": 512,
+        "global_mae": 0.08070414007727322,
+        "pixel_mae": 0.08177384836164947,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9754534559792409,
+        "clear_response": 0.003085216046201822
+      },
+      "student_seed43": {
+        "n_cases": 512,
+        "global_mae": 0.08062894729386016,
+        "pixel_mae": 0.08172170632491316,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9752389951949273,
+        "clear_response": 0.0029498386206796567
+      },
+      "student_seed44": {
+        "n_cases": 512,
+        "global_mae": 0.08117167338008358,
+        "pixel_mae": 0.08218157816867233,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9751624020576725,
+        "clear_response": 0.0034045363968289166
+      },
+      "temperature_seed42": {
+        "n_cases": 512,
+        "global_mae": 0.08362032431647837,
+        "pixel_mae": 0.0843789790400189,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9749019853910057,
+        "clear_response": 0.0027189466663415374
+      },
+      "temperature_seed43": {
+        "n_cases": 512,
+        "global_mae": 0.0836209719933727,
+        "pixel_mae": 0.08437963855307729,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9749019853910057,
+        "clear_response": 0.0027247032313937325
+      },
+      "temperature_seed44": {
+        "n_cases": 512,
+        "global_mae": 0.08362249446277303,
+        "pixel_mae": 0.084381234769765,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 1.0,
+        "region_spearman": 0.9749019853910057,
+        "clear_response": 0.0027400935465493603
+      }
+    },
+    "oracle_pixel_mae": 0.046704605739284144,
+    "role": "predeclared held-out domain stress; never tune on it"
+  },
+  "display_rgb": {
+    "metrics": {
+      "global_exact": {
+        "n_cases": 512,
+        "global_mae": 0.16367914012562323,
+        "pixel_mae": 0.16376461615845983,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 0.9407552083333334,
+        "region_spearman": 0.963704068724339,
+        "clear_response": 0.004429768367117504
+      },
+      "original_dynamic": {
+        "n_cases": 512,
+        "global_mae": 0.16430187326827905,
+        "pixel_mae": 0.16438496960459048,
+        "same_scene_rank": 0.9640625,
+        "cross_condition_cross_scene_rank": 0.9326041666666667,
+        "region_spearman": 0.9556771079400251,
+        "clear_response": 0.0025168008567675315
+      },
+      "single_dark": {
+        "n_cases": 512,
+        "global_mae": 0.16430223107319364,
+        "pixel_mae": 0.16438530808092366,
+        "same_scene_rank": 0.9656250000000001,
+        "cross_condition_cross_scene_rank": 0.9266145833333334,
+        "region_spearman": 0.9653526800936673,
+        "clear_response": 0.0024819667343081164
+      },
+      "student_seed42": {
+        "n_cases": 512,
+        "global_mae": 0.16053481263998037,
+        "pixel_mae": 0.16062070173984466,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 0.9348697916666666,
+        "region_spearman": 0.9659273876676705,
+        "clear_response": 0.0028788785602955613
+      },
+      "student_seed43": {
+        "n_cases": 512,
+        "global_mae": 0.16126872197867215,
+        "pixel_mae": 0.16135037829747034,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 0.9361979166666666,
+        "region_spearman": 0.9656342157831626,
+        "clear_response": 0.002733005590016546
+      },
+      "student_seed44": {
+        "n_cases": 512,
+        "global_mae": 0.1608407545792261,
+        "pixel_mae": 0.16092792663414457,
+        "same_scene_rank": 1.0,
+        "cross_condition_cross_scene_rank": 0.9340364583333334,
+        "region_spearman": 0.9646978936994368,
+        "clear_response": 0.003225439578272926
+      },
+      "temperature_seed42": {
+        "n_cases": 512,
+        "global_mae": 0.16430223920837728,
+        "pixel_mae": 0.1643853178277319,
+        "same_scene_rank": 0.9656250000000001,
+        "cross_condition_cross_scene_rank": 0.9259375,
+        "region_spearman": 0.9580974510772803,
+        "clear_response": 0.002484343300199754
+      },
+      "temperature_seed43": {
+        "n_cases": 512,
+        "global_mae": 0.16430230076391084,
+        "pixel_mae": 0.164385381351412,
+        "same_scene_rank": 0.9640625,
+        "cross_condition_cross_scene_rank": 0.9268229166666667,
+        "region_spearman": 0.9576685295086528,
+        "clear_response": 0.0024897551067226686
+      },
+      "temperature_seed44": {
+        "n_cases": 512,
+        "global_mae": 0.1643021860896745,
+        "pixel_mae": 0.16438527581577844,
+        "same_scene_rank": 0.9609375,
+        "cross_condition_cross_scene_rank": 0.9265625,
+        "region_spearman": 0.9564889951949272,
+        "clear_response": 0.0025069073498400485
+      }
+    },
+    "oracle_pixel_mae": 0.07622861125030855,
+    "role": "predeclared held-out domain stress; never tune on it"
+  }
+}

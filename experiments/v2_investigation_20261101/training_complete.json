@@ -1,0 +1,44 @@
+[
+  {
+    "mode": "temperature",
+    "seed": 42,
+    "best_development_loss": 0.0015738680012873374,
+    "steps": 3456,
+    "parameters": 3683
+  },
+  {
+    "mode": "temperature",
+    "seed": 43,
+    "best_development_loss": 0.0015738687998236855,
+    "steps": 3456,
+    "parameters": 3683
+  },
+  {
+    "mode": "temperature",
+    "seed": 44,
+    "best_development_loss": 0.001573869905769243,
+    "steps": 3456,
+    "parameters": 3683
+  },
+  {
+    "mode": "student",
+    "seed": 42,
+    "best_development_loss": 0.001291032235712919,
+    "steps": 3456,
+    "parameters": 868275
+  },
+  {
+    "mode": "student",
+    "seed": 43,
+    "best_development_loss": 0.0012765085843966517,
+    "steps": 3456,
+    "parameters": 868275
+  },
+  {
+    "mode": "student",
+    "seed": 44,
+    "best_development_loss": 0.001299383293826395,
+    "steps": 3456,
+    "parameters": 868275
+  }
+]

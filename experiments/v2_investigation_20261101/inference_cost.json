@@ -1,0 +1,34 @@
+[
+  {
+    "mode": "temperature",
+    "size": 256,
+    "p50_ms": 3.7548644468188286,
+    "p95_ms": 3.980637714266777,
+    "parameters": 3683,
+    "includes": "frozen prior extraction + calibration + weight network + convex fusion"
+  },
+  {
+    "mode": "temperature",
+    "size": 512,
+    "p50_ms": 6.31294772028923,
+    "p95_ms": 6.470099464058876,
+    "parameters": 3683,
+    "includes": "frozen prior extraction + calibration + weight network + convex fusion"
+  },
+  {
+    "mode": "student",
+    "size": 256,
+    "p50_ms": 7.514959201216698,
+    "p95_ms": 7.696650270372629,
+    "parameters": 868275,
+    "includes": "frozen prior extraction + calibration + weight network + convex fusion"
+  },
+  {
+    "mode": "student",
+    "size": 512,
+    "p50_ms": 19.358214922249317,
+    "p95_ms": 19.51333601027727,
+    "parameters": 868275,
+    "includes": "frozen prior extraction + calibration + weight network + convex fusion"
+  }
+]

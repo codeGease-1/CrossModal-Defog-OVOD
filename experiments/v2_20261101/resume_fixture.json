@@ -1,0 +1,11 @@
+{
+  "device": "cpu",
+  "actual_trainer": true,
+  "interrupted_after": "global epoch1 checkpoint",
+  "uninterrupted_vs_resumed_parameter_max_abs": {
+    "global": 0.0,
+    "dynamic": 0.0
+  },
+  "status": "PASS",
+  "limitation": "Tiny deterministic CPU fixture; does not emulate hardware failure or CUDA kernel nondeterminism"
+}

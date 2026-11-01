@@ -1,0 +1,179 @@
+{
+  "metrics": {
+    "full_seed42": {
+      "n_cases": 512,
+      "global_mae": 0.014413491546861223,
+      "pixel_mae": 0.018073481895044097,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9769087255870842,
+      "clear_response": 0.003085216046201822
+    },
+    "full_seed43": {
+      "n_cases": 512,
+      "global_mae": 0.014309150775204671,
+      "pixel_mae": 0.017809158988825402,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.97700063735179,
+      "clear_response": 0.0029498386206796567
+    },
+    "full_seed44": {
+      "n_cases": 512,
+      "global_mae": 0.014615117018763613,
+      "pixel_mae": 0.01813356814773215,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9768627697047312,
+      "clear_response": 0.0034045363968289166
+    },
+    "image_mean_seed42": {
+      "n_cases": 512,
+      "global_mae": 0.01501751853766109,
+      "pixel_mae": 0.020488040485815873,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9767249020576724,
+      "clear_response": 0.003120105688140029
+    },
+    "image_mean_seed43": {
+      "n_cases": 512,
+      "global_mae": 0.014929894607632832,
+      "pixel_mae": 0.02056821712082524,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9767402206851233,
+      "clear_response": 0.0029834394995305047
+    },
+    "image_mean_seed44": {
+      "n_cases": 512,
+      "global_mae": 0.015279238879827517,
+      "pixel_mae": 0.020463115800794185,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9765410785282606,
+      "clear_response": 0.0034985149682142946
+    },
+    "oracle_constant_OFFLINE_ONLY": {
+      "n_cases": 512,
+      "global_mae": 0.010574278531420992,
+      "pixel_mae": 0.01620570554716267,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9763572549988488,
+      "clear_response": 0.0027215908141316287
+    },
+    "shuffled_seed42": {
+      "n_cases": 512,
+      "global_mae": 0.015015771452738136,
+      "pixel_mae": 0.021465713268469244,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9767095834302214,
+      "clear_response": 0.003120318639503239
+    },
+    "shuffled_seed43": {
+      "n_cases": 512,
+      "global_mae": 0.01492852645250764,
+      "pixel_mae": 0.021738528686086056,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9766176716655154,
+      "clear_response": 0.002983572689799985
+    },
+    "shuffled_seed44": {
+      "n_cases": 512,
+      "global_mae": 0.015278388824953026,
+      "pixel_mae": 0.021686028947414115,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9766483089204175,
+      "clear_response": 0.0034988065506240673
+    }
+  },
+  "stratified": {
+    "all": {
+      "full": {
+        "pixel_mae": 0.018005403010533882,
+        "pixel_mse": 0.0010626525282478178,
+        "global_abs_error": 0.014445919780276503
+      },
+      "image_mean": {
+        "pixel_mae": 0.020506457802478433,
+        "pixel_mse": 0.0013112009031526935,
+        "global_abs_error": 0.01507555067504048
+      },
+      "shuffled": {
+        "pixel_mae": 0.021630090300656473,
+        "pixel_mse": 0.0014850779109373488,
+        "global_abs_error": 0.015074228910066267
+      },
+      "oracle_constant_OFFLINE_ONLY": {
+        "pixel_mae": 0.01620570554716267,
+        "pixel_mse": 0.001056004992159828,
+        "global_abs_error": 0.010574278531420992
+      }
+    },
+    "uniform": {
+      "full": {
+        "pixel_mae": 0.010555731205689275,
+        "pixel_mse": 0.00027186538533635987,
+        "global_abs_error": 0.010342368582981484
+      },
+      "image_mean": {
+        "pixel_mae": 0.010550037181125542,
+        "pixel_mse": 0.0002781734149904698,
+        "global_abs_error": 0.010434159711682394
+      },
+      "shuffled": {
+        "pixel_mae": 0.010649480371042349,
+        "pixel_mse": 0.0002831092334414124,
+        "global_abs_error": 0.010434284873736033
+      },
+      "oracle_constant_OFFLINE_ONLY": {
+        "pixel_mae": 0.006618892053516292,
+        "pixel_mse": 0.00015918695768703646,
+        "global_abs_error": 0.00551022273164877
+      }
+    },
+    "spatial": {
+      "full": {
+        "pixel_mae": 0.030421522685274895,
+        "pixel_mse": 0.002380631099766914,
+        "global_abs_error": 0.0212851717757682
+      },
+      "image_mean": {
+        "pixel_mae": 0.037100492171399914,
+        "pixel_mse": 0.0030329133834230662,
+        "global_abs_error": 0.02281120228063729
+      },
+      "shuffled": {
+        "pixel_mae": 0.039931106850013345,
+        "pixel_mse": 0.003488359040097243,
+        "global_abs_error": 0.022807468970616657
+      },
+      "oracle_constant_OFFLINE_ONLY": {
+        "pixel_mae": 0.0321837280365733,
+        "pixel_mse": 0.0025507017162811466,
+        "global_abs_error": 0.019014371531041362
+      }
+    }
+  },
+  "paired_uncertainty": {
+    "image_mean": {
+      "full_minus_variant_pixel_mae": -0.002501054791944549,
+      "scene_bootstrap_95": [
+        -0.0027114175139997107,
+        -0.002295760127613277
+      ]
+    },
+    "shuffled": {
+      "full_minus_variant_pixel_mae": -0.003624687290122589,
+      "scene_bootstrap_95": [
+        -0.003914285526203188,
+        -0.0033472690623021603
+      ]
+    }
+  },
+  "oracle_scope": "Per-image constant oracle minimizes pixel MSE, not MAE; actual oracle weights use truth OFFLINE ONLY. A spatial gate need not beat an unattainable constant oracle to show alignment benefit."
+}

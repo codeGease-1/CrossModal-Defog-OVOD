@@ -1,0 +1,87 @@
+{
+  "metrics": {
+    "global_exact": {
+      "n_cases": 512,
+      "global_mae": 0.16367914012562323,
+      "pixel_mae": 0.16376461615845983,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 0.9407552083333334,
+      "region_spearman": 0.963704068724339,
+      "clear_response": 0.004429768367117504
+    },
+    "original_dynamic": {
+      "n_cases": 512,
+      "global_mae": 0.16430187326827905,
+      "pixel_mae": 0.16438496960459048,
+      "same_scene_rank": 0.9640625,
+      "cross_condition_cross_scene_rank": 0.9326041666666667,
+      "region_spearman": 0.9556771079400251,
+      "clear_response": 0.0025168008567675315
+    },
+    "single_dark": {
+      "n_cases": 512,
+      "global_mae": 0.16430223107319364,
+      "pixel_mae": 0.16438530808092366,
+      "same_scene_rank": 0.9656250000000001,
+      "cross_condition_cross_scene_rank": 0.9266145833333334,
+      "region_spearman": 0.9653526800936673,
+      "clear_response": 0.0024819667343081164
+    },
+    "student_seed42": {
+      "n_cases": 512,
+      "global_mae": 0.16053481263998037,
+      "pixel_mae": 0.16062070173984466,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 0.9348697916666666,
+      "region_spearman": 0.9659273876676705,
+      "clear_response": 0.0028788785602955613
+    },
+    "student_seed43": {
+      "n_cases": 512,
+      "global_mae": 0.16126872197867215,
+      "pixel_mae": 0.16135037829747034,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 0.9361979166666666,
+      "region_spearman": 0.9656342157831626,
+      "clear_response": 0.002733005590016546
+    },
+    "student_seed44": {
+      "n_cases": 512,
+      "global_mae": 0.1608407545792261,
+      "pixel_mae": 0.16092792663414457,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 0.9340364583333334,
+      "region_spearman": 0.9646978936994368,
+      "clear_response": 0.003225439578272926
+    },
+    "temperature_seed42": {
+      "n_cases": 512,
+      "global_mae": 0.16430223920837728,
+      "pixel_mae": 0.1643853178277319,
+      "same_scene_rank": 0.9656250000000001,
+      "cross_condition_cross_scene_rank": 0.9259375,
+      "region_spearman": 0.9580974510772803,
+      "clear_response": 0.002484343300199754
+    },
+    "temperature_seed43": {
+      "n_cases": 512,
+      "global_mae": 0.16430230076391084,
+      "pixel_mae": 0.164385381351412,
+      "same_scene_rank": 0.9640625,
+      "cross_condition_cross_scene_rank": 0.9268229166666667,
+      "region_spearman": 0.9576685295086528,
+      "clear_response": 0.0024897551067226686
+    },
+    "temperature_seed44": {
+      "n_cases": 512,
+      "global_mae": 0.1643021860896745,
+      "pixel_mae": 0.16438527581577844,
+      "same_scene_rank": 0.9609375,
+      "cross_condition_cross_scene_rank": 0.9265625,
+      "region_spearman": 0.9564889951949272,
+      "clear_response": 0.0025069073498400485
+    }
+  },
+  "oracle_pixel_mae": 0.07622861125030855,
+  "role": "predeclared held-out domain stress; never tune on it"
+}

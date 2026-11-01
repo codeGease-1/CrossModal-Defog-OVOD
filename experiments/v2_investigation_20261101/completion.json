@@ -1,0 +1,36 @@
+{
+  "old_sources_calibration_checkpoints_unchanged": true,
+  "all_new_best_checkpoints_verified": true,
+  "followup_gpu_wall_seconds": 2867.5713768824935,
+  "previous_fit_seconds": 362.61821181699634,
+  "conservative_combined_seconds": 3230.18958869949,
+  "previous_v15_fit_not_included_here": 28.0,
+  "source_sha256": {
+    "scripts/v2/reproduce_investigation.sh": "984ab02a46d581f73d0061317d08ae385d1e163bdb48da480fd476207467bba1",
+    "scripts/v2/report_investigation_tables.py": "1370601978607a6eeaa89bce993b6e9e857ae8abcbcb115320964cd4594929bb",
+    "scripts/v2/finalize_investigation.py": "b77d12c944911fa1a605cf88603cbb2323611515aff363698d79e646e88589ef",
+    "scripts/v2/investigate.py": "3a773254e2ae5467e60022ce89f31c991097d1671c49a55042fddd9e98096510",
+    "scripts/v2/analyze_investigation.py": "3aa00aee24e6601417136c6fc298e8335863a89ac39f36307af6df0eda455da3",
+    "scripts/v2/investigate_real.py": "932638191453b2031403cce6d8213763d29a8c834bbd6409ababb3eb29a5b439",
+    "scripts/v2/plot_investigation_training.py": "1017b969e96055dd4a755ba8753ac807da61ac9c7b7cd77f7496e2e45421278a",
+    "scripts/v2/rgb_control.py": "4e8d9d8a46efdbda72f96b7a14c898d155ca8ba26d718b827a2b53ee84b3360e",
+    "scripts/v2/evaluate_rgb_control.py": "1ea1eb0cb3f2e5134610486e6861d92064f5cf3b808507387a87c15e78791231",
+    "scripts/v2/summarize_rgb_comparison.py": "cf9c483b6c36690a763806c856c46692bee1259373e6d6a7f3dd063905818eb9",
+    "scripts/v2/test_student_gate.py": "10691514fdd3698b00c386fcd329f2f274a360b31ffd5ff64fdd8226a25aab0f",
+    "scripts/v2/resume_compat.py": "1b1c6405e44e65eb105fe1e0857243be9f8caf625672e88f2533c5ae02c0e369",
+    "scripts/v2/verify_student_resume.py": "246d4930ad068efba78544056a4ebdb1477f44cd29f13e3cd85cb23e002da8ae",
+    "scripts/v2/check_cuda_rng.py": "f0819898c07f3e768c0da89c51c01fe07da241e603d6c4717ec5f561b3a45f3d",
+    "scripts/v2/inspect_development.py": "f4a1f6f4232d2d217ceb405954ea0a3e2de22063dad88bcadeba578d8ecf6ceb",
+    "scripts/v2/predict_weight_gate.py": "d9be8346362c779c723e262cf79768f3f903cd68505d01ad10deac634cec65bd",
+    "scripts/v2/spatial_gate_controls.py": "a09075e3dca5ae64ae803e4ea09f9ed14062a78037fa53af1394e087334e3ab1",
+    "scripts/v2/inference_smoke.py": "35ae5adcfbafa36dda8813cb423ff6f4296753e53340a49fdc49442622bab8a1",
+    "configs/v2_investigation.json": "aded90399df8a09d276481a4235d6816c4d69eec32425d6161a331222d18d43c"
+  },
+  "limitations": [
+    "procedural training",
+    "same generator-family confirmation",
+    "real geography unverified",
+    "secondary spectral target differs from scalar t"
+  ],
+  "status": "All declared follow-up experiments evaluated; see report for adoption decision"
+}

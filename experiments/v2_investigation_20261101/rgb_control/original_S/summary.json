@@ -1,0 +1,32 @@
+{
+  "metrics": {
+    "rgb_seed42": {
+      "n_cases": 8,
+      "global_mae": 0.04531855043023825,
+      "pixel_mae": 0.06174040539190173,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7566882807690529,
+      "clear_response": null
+    },
+    "rgb_seed43": {
+      "n_cases": 8,
+      "global_mae": 0.0845238664187491,
+      "pixel_mae": 0.08665893413126469,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7153294751012382,
+      "clear_response": null
+    },
+    "rgb_seed44": {
+      "n_cases": 8,
+      "global_mae": 0.07685718359425664,
+      "pixel_mae": 0.08059934806078672,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7269053508501977,
+      "clear_response": null
+    }
+  },
+  "role": "Secondary spectral endpoint, one geographic group"
+}

@@ -1,0 +1,166 @@
+{
+  "config": {
+    "previous_directory": "experiments/v2_20261101",
+    "output_directory": "experiments/v2_investigation_20261101",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 18,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "temperature": 2.0,
+    "student_base_channels": 32,
+    "candidates": [
+      "temperature",
+      "student"
+    ],
+    "new_gpu_wall_budget_seconds": 3000,
+    "evaluation_reserve_seconds": 300,
+    "confirmation_scenes": 16,
+    "confirmation_seed_offset": 80000,
+    "unseen_airlights": [
+      [
+        0.55,
+        0.6,
+        0.65
+      ],
+      [
+        0.9,
+        0.78,
+        0.65
+      ]
+    ],
+    "selection_rule": "best original development objective; report all seeds; no test-based selection",
+    "evaluation_rule": "Freeze both modes/all seeds before new confirmation; nominal linear-sRGB is primary; unseen-airlight and display-RGB are declared stress tests",
+    "old_student_policy": "Reuse original base32 architecture only. No old pretrained weights: old source split is not geographically verified. Replace density head with weight head; independent H target.",
+    "scope": "No free density residual, no semantic input, no dehazing or detection. No new calibration. Preserve all prior results."
+  },
+  "base": {
+    "seed": 20261101,
+    "image_size": 256,
+    "scene_counts": {
+      "train": 48,
+      "development": 16,
+      "test": 16
+    },
+    "scene_seed_offsets": {
+      "train": 0,
+      "development": 10000,
+      "test": 20000
+    },
+    "uniform_t": [
+      1.0,
+      0.9,
+      0.75,
+      0.6,
+      0.4
+    ],
+    "spatial_patterns": [
+      "gradient",
+      "blob",
+      "regions"
+    ],
+    "airlights": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.75,
+        0.8,
+        0.9
+      ]
+    ],
+    "brightness": [
+      0.65,
+      1.0
+    ],
+    "domain": "linear_srgb",
+    "prior": {
+      "window_size": 15,
+      "guided_radius": 15,
+      "guided_eps": 0.01
+    },
+    "percentiles": [
+      0.01,
+      0.99
+    ],
+    "pixels_per_case": 256,
+    "isotonic_bins": 128,
+    "external_scenes_per_subset": 8,
+    "spatial_noninferiority_margin": 0.03,
+    "training_budget_seconds": 3600,
+    "primary_candidates": [
+      "legacy",
+      "normalized_calibrated",
+      "fixed_calibrated"
+    ],
+    "selection_rule": "development global MAE minimum among candidates with spatial rho >= legacy rho-0.03; if none improves legacy MAE select legacy",
+    "external_policy": "All RSHaze sources held out as ONE conservative geographic supergroup; never fit or tune on them. Controlled originals are independent procedural scenes."
+  },
+  "loss": {
+    "v15_directory": "experiments/v15_20261101",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "hidden": 16,
+    "epochs": 18,
+    "batch_size": 8,
+    "lr_global": 0.03,
+    "lr_dynamic": 0.001,
+    "global_loss_weight": 0.5,
+    "clear_loss_extra_weight": 0.25,
+    "ranking_loss": false,
+    "ranking_reason": "Keep the first comparison attributable to fusion. Absolute independent targets already train strength; ranking is not assumed beneficial.",
+    "training_budget_seconds": 3600,
+    "oracle_critical_error": 0.1,
+    "oracle_bias_tolerance": 0.03,
+    "oracle_majority_threshold": 0.5,
+    "diagnostic_only_pilot_steps": 120,
+    "fresh_confirmation_scenes": 16,
+    "fresh_confirmation_seed_offset": 40000,
+    "new_external_per_subset": 8,
+    "external_selection_seed": 20261102,
+    "spatial_noninferiority_margin": 0.03,
+    "calibration_change": "Shared train-only per-prior monotone maps predict H=1-t BEFORE fusion. Smoothing/power occur identically within each frozen candidate; no post-fusion transform. Exact V1.5 fixed/normalized outputs remain bridge references.",
+    "data_policy": "Reuse V1.5 procedural training and development originals; historical test and RSHaze examples are diagnostics, not fresh blind tests. Add predeclared unused procedural originals and unused real reference members. All real references remain one held-out supergroup, never used to fit."
+  },
+  "candidate_calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "previous_frozen_sha256": "09532aae575b6a4f576a28f06cad082e7fe6be30bca28aaf8886f51fb98dc5d6",
+  "previous_budget": {
+    "training_seconds": 331.2915187496692,
+    "calibration_seconds": 31.32669306732714,
+    "limit_seconds": 3600
+  },
+  "source_sha256": {
+    "scripts/v2/investigate.py": "3a773254e2ae5467e60022ce89f31c991097d1671c49a55042fddd9e98096510",
+    "src/models/haze_density/student_weight_gate.py": "8db52511daaf5bb981cefce185647cf0c0935c3c4c54cf109882146ad9e0944e",
+    "src/models/haze_density/dynamic_prior.py": "c09340b9e33d5550c468c3cdbb42d9e9ce51756aeab576989d6815ccb240ca5f",
+    "scripts/v2/run.py": "e755735d4e5d44188e1780db30d677368d314c97d51cb2ddc978a35113e31656",
+    "scripts/v15/run.py": "e432a6fbdaaee750bf9e5069d678f0d58e34b7266c586f817946ec9eb403db87",
+    "src/models/haze_density/guided_filter.py": "cb91992f5e9729bf0e5b9b7f2e1e5cd7327f593e1f1858054c3ee308efc276cd",
+    "src/models/haze_density/physical_prior.py": "d9ab2afa31fe96e0083872ca99a25dc53d3843e453dbe2d64316b2d701ab49eb",
+    "src/models/haze_density/residual_blocks.py": "ae21c346aad165d3e964bc80f84e601ac24ed53b923ff678f5dfdf90119f5283",
+    "src/models/haze_density/__init__.py": "fefb238da0193dfd6557a8fad729c53d25e6845a6220a10f7cd370221f90c8db",
+    "src/models/haze_density/decoder.py": "462400cdc247a8dc737392429b591cb560ecdec950a2e15b551938b15ceecd5f",
+    "src/models/haze_density/encoder.py": "8d2e236c34ea55a12ef1d0f07d38d1c858987a7cfc03d967638452509a9f9f2c",
+    "src/models/haze_density/haze_density_net.py": "42f953fa6035b28d705fbb357791e35b29f475fd3d433cd17858be7a2f322e07",
+    "src/models/haze_density/fusion.py": "668c724ecc7b1c1250cfc8975f64914ded9e3d5f4a24f854f3c0b81cf485a7ec",
+    "src/models/haze_density/basic_blocks.py": "d512f111d3248d577430f0b58f63860fadf7b591b5ab6775067d7d277a796c66",
+    "src/models/haze_density/eca.py": "b14312bfaae56c9ccace456936bacbe0f631535863bb01635098c3f46d3f9e54",
+    "src/models/haze_density/multiscale.py": "d22ee816746f2b57b2c9e7f7bf591a7fcf1ac2ea84b3b7f612757afa027258aa",
+    "src/models/haze_density/calibrated_prior.py": "f21505fe5a040978f98f1574fd7cd663bf3bdadef4c938d246b063ea8f0af5ff"
+  },
+  "git_head": "ce19129dd77b027af5fc8ed9884e1f6fdb9f400a",
+  "environment": {
+    "python": "3.12.0 (main, Jan  5 2026, 15:00:34) [GCC 11.4.0]",
+    "torch": "2.4.1+cu124",
+    "gpu": "Tesla V100-SXM2-16GB"
+  },
+  "purpose": "Separate optimization saturation, contextual capacity and candidate information limits; no old test tuning"
+}

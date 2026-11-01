@@ -1,0 +1,17 @@
+{
+  "selected_seeds": {
+    "temperature": 42,
+    "student": 43
+  },
+  "checkpoints": {
+    "temperature_seed44/best.pth": "b8ed242539856d8a385dae36b0a3704d37ad094076e0b56fccdfbf1515945cc3",
+    "student_seed43/best.pth": "c227f3f7c41008fd6f9226538fbec2675ad2734dda3cd1cc6e086dd061732e6d",
+    "temperature_seed43/best.pth": "62bc6931be7424b270c614e053fd473856891b70c1f07fbad996c824ebec82ba",
+    "temperature_seed42/best.pth": "bf694a36431e0cdd65fd92d9f110f657ef93fb607ce053dbcebe0f2df72ec3db",
+    "student_seed42/best.pth": "b0c5b960f3e1de7ff04fddec9297e5716a62758ae807ce09c76cd70d00d31385",
+    "student_seed44/best.pth": "1086ece33c02080a114726eecf1aa73868a0e1412a4d8b3b23d9f6d8a2f13079"
+  },
+  "calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "selection": "original development only",
+  "no_test_selection": true
+}

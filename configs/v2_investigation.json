@@ -1,0 +1,20 @@
+{
+  "previous_directory": "experiments/v2_20261101",
+  "output_directory": "experiments/v2_investigation_20261101",
+  "seeds": [42, 43, 44],
+  "epochs": 18,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "temperature": 2.0,
+  "student_base_channels": 32,
+  "candidates": ["temperature", "student"],
+  "new_gpu_wall_budget_seconds": 3000,
+  "evaluation_reserve_seconds": 300,
+  "confirmation_scenes": 16,
+  "confirmation_seed_offset": 80000,
+  "unseen_airlights": [[0.55, 0.6, 0.65], [0.9, 0.78, 0.65]],
+  "selection_rule": "best original development objective; report all seeds; no test-based selection",
+  "evaluation_rule": "Freeze both modes/all seeds before new confirmation; nominal linear-sRGB is primary; unseen-airlight and display-RGB are declared stress tests",
+  "old_student_policy": "Reuse original base32 architecture only. No old pretrained weights: old source split is not geographically verified. Replace density head with weight head; independent H target.",
+  "scope": "No free density residual, no semantic input, no dehazing or detection. No new calibration. Preserve all prior results."
+}

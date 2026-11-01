@@ -1,6 +1,14 @@
 # Preserve experiment bytes so recorded SHA256 hashes verify on every platform.
 /experiments/** -text
 
+# Frozen research protocols verify exact source bytes, including on Windows.
+/scripts/v15/** -text
+/scripts/v2/** -text
+/src/models/haze_density/** -text
+/configs/v15_calibration.json -text
+/configs/v2_dynamic.json -text
+/configs/v2_investigation.json -text
+
 # Original CSV line endings and captured log/report spacing are archival data.
 /experiments/**/*.csv whitespace=cr-at-eol
 /experiments/**/*.log whitespace=-blank-at-eol,-blank-at-eof

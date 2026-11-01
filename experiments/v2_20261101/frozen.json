@@ -1,0 +1,18 @@
+{
+  "selected_seeds": {
+    "global": 44,
+    "dynamic": 43
+  },
+  "checkpoint_sha256": {
+    "dynamic_seed42/best.pth": "e15756c591a96ec63c7f8f53138c928e50781a8349b473200eeafe1670655753",
+    "dynamic_seed43/best.pth": "54c1afb9b8e8d0a98bcb81ea15ed9c9a900e23ad804300341c364096b72f8d45",
+    "dynamic_seed44/best.pth": "2cdc6a3950a747b3a973307085da284cc032f62a93c7c4941ce85ac62e1b12ac",
+    "global_seed42/best.pth": "3017456911b71c7fad25853b3659454c004561a0eeafbbf7a51376640bd31dd3",
+    "global_seed43/best.pth": "352a9cfa069862dc5e1ba5c9fcb4546c3c5a8a068fcb79bb07a8b21e7254c7a1",
+    "global_seed44/best.pth": "bd4e49fd3d75b79317527876955af053b63449f3f92122677a0461fae73d7ee7"
+  },
+  "calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "selection": "best development loss; all three seeds will be reported, never selected on confirmation/external results",
+  "post_fusion_transform": "identity for ALL three v2 methods",
+  "global_head_added": false
+}

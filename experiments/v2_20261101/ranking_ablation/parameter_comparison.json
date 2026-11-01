@@ -1,0 +1,4 @@
+{
+  "max_absolute_parameter_difference_from_unranked_seed42": 9.685754776000977e-08,
+  "meaning": "Identical parameters imply no net training effect for this seed/protocol, not that ranking is universally useless."
+}

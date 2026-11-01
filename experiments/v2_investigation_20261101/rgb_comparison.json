@@ -1,0 +1,88 @@
+{
+  "nominal": {
+    "pixel_mae": {
+      "student_minus_rgb": 0.004408966293832842,
+      "scene_bootstrap_95": [
+        0.003720041447822098,
+        0.005031283805831776
+      ]
+    },
+    "global_abs_error": {
+      "student_minus_rgb": 0.003263528960512,
+      "scene_bootstrap_95": [
+        0.002110283778472421,
+        0.00430668500117619
+      ]
+    },
+    "region_spearman": {
+      "student_minus_rgb": -0.001072303921568575,
+      "scene_bootstrap_95": [
+        -0.001833129084967197,
+        -0.00040849673202616955
+      ]
+    }
+  },
+  "unseen_airlight": {
+    "pixel_mae": {
+      "student_minus_rgb": 0.02698955324740382,
+      "scene_bootstrap_95": [
+        0.022227447956556526,
+        0.03249230248779492
+      ]
+    },
+    "global_abs_error": {
+      "student_minus_rgb": 0.02672251252533897,
+      "scene_bootstrap_95": [
+        0.021842014857715246,
+        0.03234297002639224
+      ]
+    },
+    "region_spearman": {
+      "student_minus_rgb": -0.0014093137254902327,
+      "scene_bootstrap_95": [
+        -0.0023794934640523078,
+        -0.0005208333333334132
+      ]
+    }
+  },
+  "display_rgb": {
+    "pixel_mae": {
+      "student_minus_rgb": 0.025947479986143666,
+      "scene_bootstrap_95": [
+        0.018735726630043577,
+        0.032947646762955904
+      ]
+    },
+    "global_abs_error": {
+      "student_minus_rgb": 0.026149992216460305,
+      "scene_bootstrap_95": [
+        0.019016066139585775,
+        0.03309843423312344
+      ]
+    },
+    "region_spearman": {
+      "student_minus_rgb": -0.004273819674249051,
+      "scene_bootstrap_95": [
+        -0.006978815845619656,
+        -0.00140783888989018
+      ]
+    }
+  },
+  "original_S": {
+    "pixel_mae": {
+      "student_minus_rgb": 0.056878826736162104,
+      "CI": null,
+      "reason": "one unverified geographic group"
+    },
+    "global_abs_error": {
+      "student_minus_rgb": 0.06431070373704037,
+      "CI": null,
+      "reason": "one unverified geographic group"
+    },
+    "region_spearman": {
+      "student_minus_rgb": -0.02414251769906811,
+      "CI": null,
+      "reason": "one unverified geographic group"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "ranking_weight": 0.1,
+  "best_development_primary_loss": 0.0015738676866021706,
+  "no_rank_seed42_development_loss": 0.0015738676866021706,
+  "development_prefers_ranking": false,
+  "adoption": "One seed ablation only; no automatic promotion into main flow",
+  "checkpoint_sha256": "9f75c4bcdd9fed7afda77222bb585db22063e457f05a64ccd53afadbcf7e201d"
+}

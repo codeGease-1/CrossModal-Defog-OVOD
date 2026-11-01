@@ -1,0 +1,29 @@
+{
+  "selected_seed": 43,
+  "all_seeds": [
+    {
+      "seed": 42,
+      "best_development_loss": 0.0005401184034781181,
+      "steps": 3456,
+      "parameters": 867377
+    },
+    {
+      "seed": 43,
+      "best_development_loss": 0.00048559152037341846,
+      "steps": 3456,
+      "parameters": 867377
+    },
+    {
+      "seed": 44,
+      "best_development_loss": 0.0005422848146281467,
+      "steps": 3456,
+      "parameters": 867377
+    }
+  ],
+  "checkpoint_sha256": {
+    "rgb_control/seed42/best.pth": "9c973f2572fce6c78ee77468a892a113756b331b763fd84c3b0f7bd56c07cdd6",
+    "rgb_control/seed43/best.pth": "ed12fefd70059467deeb50920ea24bdf9c5aff4da8618fcc9c650c42e6142b1a",
+    "rgb_control/seed44/best.pth": "92ad45fbe9d3763cab26fc8746acc388b46b72895f0dd00cdf042322da75f6fd"
+  },
+  "selection": "original development only"
+}

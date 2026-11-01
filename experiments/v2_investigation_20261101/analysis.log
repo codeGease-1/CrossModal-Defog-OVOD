@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/CrossModal-Defog-OVOD/scripts/v2/analyze_investigation.py", line 86, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD/scripts/v2/analyze_investigation.py", line 31, in main
+    for method in ('global_exact','original_dynamic')+[f'{mode}_seed{frozen["selected_seeds"][mode]}' for mode in cfg['candidates']]:
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate tuple (not "list") to tuple

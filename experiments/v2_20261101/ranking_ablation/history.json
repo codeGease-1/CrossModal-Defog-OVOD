@@ -1,0 +1,92 @@
+[
+  {
+    "epoch": 1,
+    "development_primary_loss": 0.001575006615894381,
+    "training_total_loss": 0.002423815852049908
+  },
+  {
+    "epoch": 2,
+    "development_primary_loss": 0.0015739257842142251,
+    "training_total_loss": 0.0015697753430761925
+  },
+  {
+    "epoch": 3,
+    "development_primary_loss": 0.0015738851216156036,
+    "training_total_loss": 0.0015717382960550215
+  },
+  {
+    "epoch": 4,
+    "development_primary_loss": 0.0015738766005597427,
+    "training_total_loss": 0.0015672285104149826
+  },
+  {
+    "epoch": 5,
+    "development_primary_loss": 0.0015738732654426713,
+    "training_total_loss": 0.0015689463981137426
+  },
+  {
+    "epoch": 6,
+    "development_primary_loss": 0.0015738713027531048,
+    "training_total_loss": 0.0015682400315123839
+  },
+  {
+    "epoch": 7,
+    "development_primary_loss": 0.001573870244101272,
+    "training_total_loss": 0.0015714990002303846
+  },
+  {
+    "epoch": 8,
+    "development_primary_loss": 0.0015738696138214436,
+    "training_total_loss": 0.0015681950292976883
+  },
+  {
+    "epoch": 9,
+    "development_primary_loss": 0.0015738690508442232,
+    "training_total_loss": 0.0015716810973268973
+  },
+  {
+    "epoch": 10,
+    "development_primary_loss": 0.0015738687789053074,
+    "training_total_loss": 0.001570311373977044
+  },
+  {
+    "epoch": 11,
+    "development_primary_loss": 0.0015738684469397413,
+    "training_total_loss": 0.001570340405199507
+  },
+  {
+    "epoch": 12,
+    "development_primary_loss": 0.001573868285959179,
+    "training_total_loss": 0.0015700305818124132
+  },
+  {
+    "epoch": 13,
+    "development_primary_loss": 0.001573868148625479,
+    "training_total_loss": 0.0015708210009203565
+  },
+  {
+    "epoch": 14,
+    "development_primary_loss": 0.0015738680203867261,
+    "training_total_loss": 0.0015674986937028734
+  },
+  {
+    "epoch": 15,
+    "development_primary_loss": 0.0015738679085188778,
+    "training_total_loss": 0.0015736750140149525
+  },
+  {
+    "epoch": 16,
+    "development_primary_loss": 0.001573867798470019,
+    "training_total_loss": 0.001569945420631787
+  },
+  {
+    "epoch": 17,
+    "development_primary_loss": 0.0015738677448098315,
+    "training_total_loss": 0.001568765774967081
+  },
+  {
+    "epoch": 18,
+    "development_primary_loss": 0.0015738676866021706,
+    "training_total_loss": 0.0015712968077726448
+  }
+]

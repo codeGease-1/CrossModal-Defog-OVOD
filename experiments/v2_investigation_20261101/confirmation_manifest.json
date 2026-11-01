@@ -1,0 +1,114 @@
+[
+  {
+    "scene_id": "confirm3_000",
+    "seed": 20341101,
+    "group_id": "procedural_original_20341101",
+    "land_cover_design": "vegetation",
+    "original_pixel_sha256": "a68dadb0d7e62f174c53dab7e070fc22479361dd734b6204a9129db031af54af"
+  },
+  {
+    "scene_id": "confirm3_001",
+    "seed": 20341102,
+    "group_id": "procedural_original_20341102",
+    "land_cover_design": "water",
+    "original_pixel_sha256": "045ac5552e1f208caa18301bb475a5dbba76b085b5df2343e078f3a97b9f1fbc"
+  },
+  {
+    "scene_id": "confirm3_002",
+    "seed": 20341103,
+    "group_id": "procedural_original_20341103",
+    "land_cover_design": "soil",
+    "original_pixel_sha256": "d0a85f7f22e994e6f9730966478d9a1a3607a4c45b1b384ebffcf41de691a8cc"
+  },
+  {
+    "scene_id": "confirm3_003",
+    "seed": 20341104,
+    "group_id": "procedural_original_20341104",
+    "land_cover_design": "urban",
+    "original_pixel_sha256": "3f653188e2aecb10660b55bd1fb1b0e72f09d1c64ce5a026c2fadba8325e8691"
+  },
+  {
+    "scene_id": "confirm3_004",
+    "seed": 20341105,
+    "group_id": "procedural_original_20341105",
+    "land_cover_design": "vegetation",
+    "original_pixel_sha256": "ced7e4c2a29ddc4b8c571e074f3f33a06f42d396e451567f99f667923df59043"
+  },
+  {
+    "scene_id": "confirm3_005",
+    "seed": 20341106,
+    "group_id": "procedural_original_20341106",
+    "land_cover_design": "water",
+    "original_pixel_sha256": "649acd62a3bb492b1b4253011aa6b021fd5e930a23ecbed3c1957a5a9b248311"
+  },
+  {
+    "scene_id": "confirm3_006",
+    "seed": 20341107,
+    "group_id": "procedural_original_20341107",
+    "land_cover_design": "soil",
+    "original_pixel_sha256": "e19a8596193e0cbd4eb3867b40549d04b578d3b485ca0c43d52e419db90b3e76"
+  },
+  {
+    "scene_id": "confirm3_007",
+    "seed": 20341108,
+    "group_id": "procedural_original_20341108",
+    "land_cover_design": "urban",
+    "original_pixel_sha256": "cad148d6283616fa723675dcb6c2d8fa437e669ba219655505439d198cdc4624"
+  },
+  {
+    "scene_id": "confirm3_008",
+    "seed": 20341109,
+    "group_id": "procedural_original_20341109",
+    "land_cover_design": "vegetation",
+    "original_pixel_sha256": "8afe5eb639c7c27250b5c2972c3ae8bb1d8c4b234d7f880d546c72f862248cf7"
+  },
+  {
+    "scene_id": "confirm3_009",
+    "seed": 20341110,
+    "group_id": "procedural_original_20341110",
+    "land_cover_design": "water",
+    "original_pixel_sha256": "4b3cfbef2046bc07609a9570a4db438715e66da211e8b42b43b5d5224dd0297f"
+  },
+  {
+    "scene_id": "confirm3_010",
+    "seed": 20341111,
+    "group_id": "procedural_original_20341111",
+    "land_cover_design": "soil",
+    "original_pixel_sha256": "6c3860afad6df24ee523f70122cec89098f23e59da45ac7141f8fe41ee7bacf9"
+  },
+  {
+    "scene_id": "confirm3_011",
+    "seed": 20341112,
+    "group_id": "procedural_original_20341112",
+    "land_cover_design": "urban",
+    "original_pixel_sha256": "ec9208bfcb6b9e34f9f24eea2f715339a85898cac8ad3603f05ce13f16da916b"
+  },
+  {
+    "scene_id": "confirm3_012",
+    "seed": 20341113,
+    "group_id": "procedural_original_20341113",
+    "land_cover_design": "vegetation",
+    "original_pixel_sha256": "8d094f6f6bd690d89b641b468b174ae19122952b4b3fdf68b167578da9312ab3"
+  },
+  {
+    "scene_id": "confirm3_013",
+    "seed": 20341114,
+    "group_id": "procedural_original_20341114",
+    "land_cover_design": "water",
+    "original_pixel_sha256": "d88697e3307d5b1b78a230cf8adf6a928d93d4b221c312812336df8a69f5d445"
+  },
+  {
+    "scene_id": "confirm3_014",
+    "seed": 20341115,
+    "group_id": "procedural_original_20341115",
+    "land_cover_design": "soil",
+    "original_pixel_sha256": "75fcff61c9bedd7adf4f6964a405dd35bca75862dd15c7be9e796dcdadb62a2c"
+  },
+  {
+    "scene_id": "confirm3_015",
+    "seed": 20341116,
+    "group_id": "procedural_original_20341116",
+    "land_cover_design": "urban",
+    "original_pixel_sha256": "5181e41e199411aaed5994853ad7c1a801b5e128055b9226eaab464a77627ffd"
+  }
+]

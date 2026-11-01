@@ -1,0 +1,7 @@
+{
+  "mode": "student",
+  "seed": 42,
+  "best_development_loss": 0.001291032235712919,
+  "steps": 3456,
+  "parameters": 868275
+}

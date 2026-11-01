@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "input_role": "TRAINING fixture, not an accuracy result",
+  "case_id": "train_000_a0_b1_gradient_None",
+  "H_shape": [
+    256,
+    256
+  ],
+  "weight_shape": [
+    3,
+    256,
+    256
+  ],
+  "device": "cpu",
+  "CLI_exercised": true,
+  "truth_used_for_inference": false
+}

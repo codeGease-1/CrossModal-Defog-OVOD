@@ -1,0 +1,1 @@
+PREFLIGHT [{'mode': 'temperature', 'parameters': 3683, 'batch_step_median_seconds': 0.0037417635321617126}, {'mode': 'student', 'parameters': 868275, 'batch_step_median_seconds': 0.08223706483840942}] forecast 891.4284925460815

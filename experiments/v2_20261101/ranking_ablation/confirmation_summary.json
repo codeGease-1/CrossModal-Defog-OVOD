@@ -1,0 +1,11 @@
+{
+  "dynamic_rank_seed42": {
+    "n_cases": 512,
+    "global_mae": 0.016624580257117216,
+    "pixel_mae": 0.01979015368724113,
+    "same_scene_rank": 1.0,
+    "cross_condition_cross_scene_rank": 1.0,
+    "region_spearman": 0.9782261275478685,
+    "clear_response": 0.003054136087271786
+  }
+}

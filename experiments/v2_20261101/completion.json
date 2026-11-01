@@ -1,0 +1,30 @@
+{
+  "source_sha256": {
+    "scripts/v2/test_v2.py": "eda5c16d51a17dc40c9e0af681d516ed2e506ad695d9a8ce85b87300a2ced4ec",
+    "scripts/v2/ranking_ablation.py": "ca83bf286417c5f379082c853dff0240f996739697e34490d1676eeabae192b8",
+    "scripts/v2/v15_checks.py": "c807d422f7a5343bcc6e689848ae96c4106505b74ce1cf43cd75083e2864b04a",
+    "scripts/v2/run.py": "e755735d4e5d44188e1780db30d677368d314c97d51cb2ddc978a35113e31656",
+    "scripts/v2/plot_failures.py": "08de8e3ca09b3f68d2e269bc6e0020d83ae17c7cbb1801dd5f6964f980227b63",
+    "scripts/v2/verify_resume.py": "bba3d79ad061bdd9066a83a1914ba4218d7c1b7cc76b9c6add3d715ca54443de",
+    "scripts/v2/exact_evaluate.py": "0ba24b9eff8cfbc5ca1dd85ee37e614ebcb214965253a8c8cb5cb70fa70f43bd",
+    "scripts/v2/smoke_train.py": "ae9f07572feeb3bd61c7d999e6e24c960f022e56dbda8daea39ed97880673c13",
+    "scripts/v2/supplement.py": "d5c424f19100f64d3b92fda9e3f2c3a6d9a6d84e1a8dfa7d3ddd7168e98cbb12",
+    "scripts/v2/finalize.py": "7da1ddc53a0f416c9599ee27c43ec784c20b87cff9a1d2a13a356c06e1061d9c",
+    "scripts/v2/global_optimum.py": "d3d20ca7e4c2bd0f21a237a2fed07e228f66ba812b51cded044d6a3de5f2aaf6",
+    "scripts/v2/watch_weights.py": "fd81465e203aa3e644d23fa1472cec1c0ec8e5b7a746ba407deebe2a6e54bf2b",
+    "scripts/v2/test_solver.py": "32363aa2fb794def98979ab498195ab35e05bb6621e6e81fa68193a2aa85a574",
+    "scripts/v2/v15_display_compat.py": "04c9807357dd6bc2a6d8a23c1a3fde05dc4f8cb77562ac77ee38c4fa64904119",
+    "scripts/v2/reproduce.sh": "2b8f90f80c6905bc7f8e0b554ea3bb5822d2636366cb5d84b4333a1a0fed61c1",
+    "configs/v2_dynamic.json": "8fded7cd0d16577aa14444029ec8d746facc276c725f7c68d1585852d00738f5",
+    "src/models/haze_density/dynamic_prior.py": "c09340b9e33d5550c468c3cdbb42d9e9ce51756aeab576989d6815ccb240ca5f"
+  },
+  "v15_unchanged": true,
+  "v2_calibration_unchanged": true,
+  "git_head": "ce19129dd77b027af5fc8ed9884e1f6fdb9f400a",
+  "status": "implemented and evaluated; dynamic weighting not recommended for main pipeline",
+  "limits": [
+    "unverified real geographic groups",
+    "procedural training domain",
+    "original spectral endpoint is secondary"
+  ]
+}

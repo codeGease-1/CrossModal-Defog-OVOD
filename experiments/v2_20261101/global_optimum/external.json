@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "global_exact": {
+      "n_cases": 768,
+      "global_mae": 0.020319477747761994,
+      "pixel_mae": 0.024373613649345316,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9674575193727013,
+      "clear_response": 0.011640113045965942
+    },
+    "single_dark_candidate": {
+      "n_cases": 768,
+      "global_mae": 0.020394809705801247,
+      "pixel_mae": 0.024337858129243273,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": 0.9675187938825053,
+      "clear_response": 0.010639144082044064
+    }
+  },
+  "mean_dynamic_to_dark_candidate_absolute_difference": 4.597646878471788e-06,
+  "max_dynamic_to_dark_candidate_difference": 0.020599573850631714
+}

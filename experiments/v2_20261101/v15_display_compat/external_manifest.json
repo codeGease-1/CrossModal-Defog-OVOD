@@ -1,0 +1,58 @@
+[
+  {
+    "scene_id": "new2_S_1294",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1294.png",
+    "pixel_sha256": "957322780fc5635db31b3c82acbecd7e4f4fb5f5240036b14515c857ce8974b8",
+    "file_sha256": "7e8ae2de58ef6fd2787ab24f6ec7d0a1020dccb03e51d40015c3f65c6191a258",
+    "group_id": "RSHaze_all_geography_unverified"
+  },
+  {
+    "scene_id": "new2_S_1103",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1103.png",
+    "pixel_sha256": "099b7f24eb3d3518fe06f22730741b888c3e60747a334af58e1ae669361a156e",
+    "file_sha256": "49498779633b606623360345e8b7089f8558376dc38286e151028688b24f0a88",
+    "group_id": "RSHaze_all_geography_unverified"
+  },
+  {
+    "scene_id": "new2_S_1175",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1175.png",
+    "pixel_sha256": "5f113f7e230a6bf1cf5aab472840c0a56765be1917f9b3c37112905d5e961082",
+    "file_sha256": "aad4af4cacbf0158c4cc89e842dbd16b2feffbff5a92e492de757c74e0cd4657",
+    "group_id": "RSHaze_all_geography_unverified"
+  },
+  {
+    "scene_id": "new2_S_1028",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1028.png",
+    "pixel_sha256": "59207e90698b674d5a81253e8dff8dcf66b014e4266aad1ea6cb1fc507a0a7c5",
+    "file_sha256": "257fdd722ea0ef8f13aac1ac88637c73aa02645056a14dc4866cf19df549d591",
+    "group_id": "RSHaze_all_geography_unverified"
+  },
+  {
+    "scene_id": "new2_S_1127",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1127.png",
+    "pixel_sha256": "fe9737d09f38783cf2082a854285268f2045ff00ee5d5617082ecfe60479f416",
+    "file_sha256": "8eb5e5d749b5cf2c4efeb1cf0771519c755d96460751649603cf32dfba9d586d",
+    "group_id": "RSHaze_all_geography_unverified"
+  },
+  {
+    "scene_id": "new2_S_1217",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1217.png",
+    "pixel_sha256": "8ce0780b99afbe711ce86ef9c2482d84e0a30dc5ec422ab1bf9275f71961ab63",
+    "file_sha256": "65a77f67025cb303bc5302abccae36fdc72d1f0b49668d136a915eea0cb887e5",
+    "group_id": "RSHaze_all_geography_unverified"
+  },
+  {
+    "scene_id": "new2_S_1185",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1185.png",
+    "pixel_sha256": "75edd523d701b3099674acf24854e3b9c3523ac6eeeee9cdf42e41ae070f7c69",
+    "file_sha256": "1ec21cf9edede58027c49a46c4994f9a52c89bb82c038c4780b9c1822b219c1c",
+    "group_id": "RSHaze_all_geography_unverified"
+  },
+  {
+    "scene_id": "new2_S_1188",
+    "archive_member": "RSHaze+/RSHaze_S/test/cleanpng/1188.png",
+    "pixel_sha256": "6414dc58327d240cd98cda4511670e4018653da741861de72fd5ed0f135bae1a",
+    "file_sha256": "edc3f2274fcf26bac7f735e391c8be437418ea6bd6208bef125bd50b4334361e",
+    "group_id": "RSHaze_all_geography_unverified"
+  }
+]

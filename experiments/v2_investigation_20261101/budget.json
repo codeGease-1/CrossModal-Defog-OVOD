@@ -1,0 +1,696 @@
+{
+  "new_gpu_wall_seconds": 2867.5713768824935,
+  "limit_seconds": 3000,
+  "stages": [
+    {
+      "stage": "preflight",
+      "seconds": 2.3076193537563086
+    },
+    {
+      "stage": "diagnostics",
+      "seconds": 21.236054638400674
+    },
+    {
+      "stage": "train_feature_precompute",
+      "seconds": 28.330258287489414
+    },
+    {
+      "stage": "train_temperature_42_epoch1",
+      "seconds": 2.9648121893405914
+    },
+    {
+      "stage": "train_temperature_42_epoch2",
+      "seconds": 2.61540930531919
+    },
+    {
+      "stage": "train_temperature_42_epoch3",
+      "seconds": 2.868612602353096
+    },
+    {
+      "stage": "train_temperature_42_epoch4",
+      "seconds": 2.5994041077792645
+    },
+    {
+      "stage": "train_temperature_42_epoch5",
+      "seconds": 2.6472333129495382
+    },
+    {
+      "stage": "train_temperature_42_epoch6",
+      "seconds": 2.9041728265583515
+    },
+    {
+      "stage": "train_temperature_42_epoch7",
+      "seconds": 2.7015106808394194
+    },
+    {
+      "stage": "train_temperature_42_epoch8",
+      "seconds": 2.6049847155809402
+    },
+    {
+      "stage": "train_temperature_42_epoch9",
+      "seconds": 2.5704711824655533
+    },
+    {
+      "stage": "train_temperature_42_epoch10",
+      "seconds": 2.6036080718040466
+    },
+    {
+      "stage": "train_temperature_42_epoch11",
+      "seconds": 2.59680506773293
+    },
+    {
+      "stage": "train_temperature_42_epoch12",
+      "seconds": 2.598476465791464
+    },
+    {
+      "stage": "train_temperature_42_epoch13",
+      "seconds": 2.6158105060458183
+    },
+    {
+      "stage": "train_temperature_42_epoch14",
+      "seconds": 2.6735698599368334
+    },
+    {
+      "stage": "train_temperature_42_epoch15",
+      "seconds": 2.584845555946231
+    },
+    {
+      "stage": "train_temperature_42_epoch16",
+      "seconds": 2.559594389051199
+    },
+    {
+      "stage": "train_temperature_42_epoch17",
+      "seconds": 2.5681244991719723
+    },
+    {
+      "stage": "train_temperature_42_epoch18",
+      "seconds": 2.6622937358915806
+    },
+    {
+      "stage": "train_temperature_43_epoch1",
+      "seconds": 2.563428495079279
+    },
+    {
+      "stage": "train_temperature_43_epoch2",
+      "seconds": 2.5657168831676245
+    },
+    {
+      "stage": "train_temperature_43_epoch3",
+      "seconds": 2.639690460637212
+    },
+    {
+      "stage": "train_temperature_43_epoch4",
+      "seconds": 2.8368293792009354
+    },
+    {
+      "stage": "train_temperature_43_epoch5",
+      "seconds": 2.7645749002695084
+    },
+    {
+      "stage": "train_temperature_43_epoch6",
+      "seconds": 2.6669743452221155
+    },
+    {
+      "stage": "train_temperature_43_epoch7",
+      "seconds": 2.830840416252613
+    },
+    {
+      "stage": "train_temperature_43_epoch8",
+      "seconds": 2.662018947303295
+    },
+    {
+      "stage": "train_temperature_43_epoch9",
+      "seconds": 2.5749711245298386
+    },
+    {
+      "stage": "train_temperature_43_epoch10",
+      "seconds": 2.561768166720867
+    },
+    {
+      "stage": "train_temperature_43_epoch11",
+      "seconds": 2.603806657716632
+    },
+    {
+      "stage": "train_temperature_43_epoch12",
+      "seconds": 2.5602875258773565
+    },
+    {
+      "stage": "train_temperature_43_epoch13",
+      "seconds": 2.5676917731761932
+    },
+    {
+      "stage": "train_temperature_43_epoch14",
+      "seconds": 2.5782953687012196
+    },
+    {
+      "stage": "train_temperature_43_epoch15",
+      "seconds": 2.5826207380741835
+    },
+    {
+      "stage": "train_temperature_43_epoch16",
+      "seconds": 2.557784538716078
+    },
+    {
+      "stage": "train_temperature_43_epoch17",
+      "seconds": 2.55766181088984
+    },
+    {
+      "stage": "train_temperature_43_epoch18",
+      "seconds": 2.551400687545538
+    },
+    {
+      "stage": "train_temperature_44_epoch1",
+      "seconds": 2.5824577398598194
+    },
+    {
+      "stage": "train_temperature_44_epoch2",
+      "seconds": 2.723398210480809
+    },
+    {
+      "stage": "train_temperature_44_epoch3",
+      "seconds": 2.671682894229889
+    },
+    {
+      "stage": "train_temperature_44_epoch4",
+      "seconds": 2.810661593452096
+    },
+    {
+      "stage": "train_temperature_44_epoch5",
+      "seconds": 2.5545974485576153
+    },
+    {
+      "stage": "train_temperature_44_epoch6",
+      "seconds": 2.661968670785427
+    },
+    {
+      "stage": "train_temperature_44_epoch7",
+      "seconds": 2.638385282829404
+    },
+    {
+      "stage": "train_temperature_44_epoch8",
+      "seconds": 2.543863235041499
+    },
+    {
+      "stage": "train_temperature_44_epoch9",
+      "seconds": 2.6742680221796036
+    },
+    {
+      "stage": "train_temperature_44_epoch10",
+      "seconds": 2.56825658865273
+    },
+    {
+      "stage": "train_temperature_44_epoch11",
+      "seconds": 2.5726093370467424
+    },
+    {
+      "stage": "train_temperature_44_epoch12",
+      "seconds": 2.7567630372941494
+    },
+    {
+      "stage": "train_temperature_44_epoch13",
+      "seconds": 2.661991197615862
+    },
+    {
+      "stage": "train_temperature_44_epoch14",
+      "seconds": 2.5421817898750305
+    },
+    {
+      "stage": "train_temperature_44_epoch15",
+      "seconds": 2.6197793558239937
+    },
+    {
+      "stage": "train_temperature_44_epoch16",
+      "seconds": 2.5576500203460455
+    },
+    {
+      "stage": "train_temperature_44_epoch17",
+      "seconds": 2.5712525714188814
+    },
+    {
+      "stage": "train_temperature_44_epoch18",
+      "seconds": 2.5608818624168634
+    },
+    {
+      "stage": "train_student_42_epoch1",
+      "seconds": 20.274840019643307
+    },
+    {
+      "stage": "train_student_42_epoch2",
+      "seconds": 19.829962134361267
+    },
+    {
+      "stage": "train_student_42_epoch3",
+      "seconds": 19.817113691940904
+    },
+    {
+      "stage": "train_student_42_epoch4",
+      "seconds": 20.434617698192596
+    },
+    {
+      "stage": "train_student_42_epoch5",
+      "seconds": 21.231166319921613
+    },
+    {
+      "stage": "train_student_42_epoch6",
+      "seconds": 21.998966494575143
+    },
+    {
+      "stage": "train_student_42_epoch7",
+      "seconds": 22.75006752833724
+    },
+    {
+      "stage": "train_student_42_epoch8",
+      "seconds": 22.587456883862615
+    },
+    {
+      "stage": "train_student_42_epoch9",
+      "seconds": 22.702975567430258
+    },
+    {
+      "stage": "train_student_42_epoch10",
+      "seconds": 22.594361839815974
+    },
+    {
+      "stage": "train_student_42_epoch11",
+      "seconds": 22.721183359622955
+    },
+    {
+      "stage": "train_student_42_epoch12",
+      "seconds": 22.891452990472317
+    },
+    {
+      "stage": "train_student_42_epoch13",
+      "seconds": 22.667464200407267
+    },
+    {
+      "stage": "train_student_42_epoch14",
+      "seconds": 23.124962786212564
+    },
+    {
+      "stage": "train_student_42_epoch15",
+      "seconds": 23.06611517444253
+    },
+    {
+      "stage": "train_student_42_epoch16",
+      "seconds": 22.188798593357205
+    },
+    {
+      "stage": "train_student_42_epoch17",
+      "seconds": 23.38991593569517
+    },
+    {
+      "stage": "train_student_42_epoch18",
+      "seconds": 22.929379438981414
+    },
+    {
+      "stage": "train_student_43_epoch1",
+      "seconds": 22.869197769090533
+    },
+    {
+      "stage": "train_student_43_epoch2",
+      "seconds": 23.218690503388643
+    },
+    {
+      "stage": "train_student_43_epoch3",
+      "seconds": 22.75300792604685
+    },
+    {
+      "stage": "train_student_43_epoch4",
+      "seconds": 23.36350378394127
+    },
+    {
+      "stage": "train_student_43_epoch5",
+      "seconds": 22.426000621169806
+    },
+    {
+      "stage": "train_student_43_epoch6",
+      "seconds": 23.183793110772967
+    },
+    {
+      "stage": "train_student_43_epoch7",
+      "seconds": 22.629137264564633
+    },
+    {
+      "stage": "train_student_43_epoch8",
+      "seconds": 23.349628653377295
+    },
+    {
+      "stage": "train_student_43_epoch9",
+      "seconds": 23.2297425493598
+    },
+    {
+      "stage": "train_student_43_epoch10",
+      "seconds": 22.915026761591434
+    },
+    {
+      "stage": "train_student_43_epoch11",
+      "seconds": 23.194576662033796
+    },
+    {
+      "stage": "train_student_43_epoch12",
+      "seconds": 23.355087745934725
+    },
+    {
+      "stage": "train_student_43_epoch13",
+      "seconds": 22.78726431913674
+    },
+    {
+      "stage": "train_student_43_epoch14",
+      "seconds": 22.9624352324754
+    },
+    {
+      "stage": "train_student_43_epoch15",
+      "seconds": 23.04555001668632
+    },
+    {
+      "stage": "train_student_43_epoch16",
+      "seconds": 22.459826231002808
+    },
+    {
+      "stage": "train_student_43_epoch17",
+      "seconds": 23.445118302479386
+    },
+    {
+      "stage": "train_student_43_epoch18",
+      "seconds": 23.036471337080002
+    },
+    {
+      "stage": "train_student_44_epoch1",
+      "seconds": 23.05322476103902
+    },
+    {
+      "stage": "train_student_44_epoch2",
+      "seconds": 22.883517304435372
+    },
+    {
+      "stage": "train_student_44_epoch3",
+      "seconds": 22.618133353069425
+    },
+    {
+      "stage": "train_student_44_epoch4",
+      "seconds": 23.141854790970683
+    },
+    {
+      "stage": "train_student_44_epoch5",
+      "seconds": 22.86087298579514
+    },
+    {
+      "stage": "train_student_44_epoch6",
+      "seconds": 23.48999086022377
+    },
+    {
+      "stage": "train_student_44_epoch7",
+      "seconds": 22.850465178489685
+    },
+    {
+      "stage": "train_student_44_epoch8",
+      "seconds": 22.924892239272594
+    },
+    {
+      "stage": "train_student_44_epoch9",
+      "seconds": 22.985439244657755
+    },
+    {
+      "stage": "train_student_44_epoch10",
+      "seconds": 23.132110396400094
+    },
+    {
+      "stage": "train_student_44_epoch11",
+      "seconds": 22.940482828766108
+    },
+    {
+      "stage": "train_student_44_epoch12",
+      "seconds": 22.80408131144941
+    },
+    {
+      "stage": "train_student_44_epoch13",
+      "seconds": 23.103095844388008
+    },
+    {
+      "stage": "train_student_44_epoch14",
+      "seconds": 23.02407241985202
+    },
+    {
+      "stage": "train_student_44_epoch15",
+      "seconds": 22.63225688226521
+    },
+    {
+      "stage": "train_student_44_epoch16",
+      "seconds": 22.92030269652605
+    },
+    {
+      "stage": "train_student_44_epoch17",
+      "seconds": 23.24409911222756
+    },
+    {
+      "stage": "train_student_44_epoch18",
+      "seconds": 23.026270490139723
+    },
+    {
+      "stage": "rgb_feature_precompute",
+      "seconds": 28.515199037268758
+    },
+    {
+      "stage": "rgb_42_epoch1",
+      "seconds": 19.09871367365122
+    },
+    {
+      "stage": "rgb_42_epoch2",
+      "seconds": 19.092624677345157
+    },
+    {
+      "stage": "rgb_42_epoch3",
+      "seconds": 19.196655847132206
+    },
+    {
+      "stage": "rgb_42_epoch4",
+      "seconds": 19.4199754409492
+    },
+    {
+      "stage": "rgb_42_epoch5",
+      "seconds": 21.21331211179495
+    },
+    {
+      "stage": "rgb_42_epoch6",
+      "seconds": 22.02418170310557
+    },
+    {
+      "stage": "rgb_42_epoch7",
+      "seconds": 21.802713742479682
+    },
+    {
+      "stage": "rgb_42_epoch8",
+      "seconds": 21.497772216796875
+    },
+    {
+      "stage": "rgb_42_epoch9",
+      "seconds": 22.24247395247221
+    },
+    {
+      "stage": "rgb_42_epoch10",
+      "seconds": 21.771413426846266
+    },
+    {
+      "stage": "rgb_42_epoch11",
+      "seconds": 21.7139431592077
+    },
+    {
+      "stage": "rgb_42_epoch12",
+      "seconds": 22.402485888451338
+    },
+    {
+      "stage": "rgb_42_epoch13",
+      "seconds": 21.23912704922259
+    },
+    {
+      "stage": "rgb_42_epoch14",
+      "seconds": 22.303456906229258
+    },
+    {
+      "stage": "rgb_42_epoch15",
+      "seconds": 21.955413803458214
+    },
+    {
+      "stage": "rgb_42_epoch16",
+      "seconds": 21.8701315484941
+    },
+    {
+      "stage": "rgb_42_epoch17",
+      "seconds": 21.96346265077591
+    },
+    {
+      "stage": "rgb_42_epoch18",
+      "seconds": 21.852769561111927
+    },
+    {
+      "stage": "rgb_43_epoch1",
+      "seconds": 22.14623081870377
+    },
+    {
+      "stage": "rgb_43_epoch2",
+      "seconds": 21.62792558595538
+    },
+    {
+      "stage": "rgb_43_epoch3",
+      "seconds": 22.29709554463625
+    },
+    {
+      "stage": "rgb_43_epoch4",
+      "seconds": 21.478809917345643
+    },
+    {
+      "stage": "rgb_43_epoch5",
+      "seconds": 21.759114341810346
+    },
+    {
+      "stage": "rgb_43_epoch6",
+      "seconds": 22.13526527583599
+    },
+    {
+      "stage": "rgb_43_epoch7",
+      "seconds": 22.026765260845423
+    },
+    {
+      "stage": "rgb_43_epoch8",
+      "seconds": 21.777937142178416
+    },
+    {
+      "stage": "rgb_43_epoch9",
+      "seconds": 21.79259030520916
+    },
+    {
+      "stage": "rgb_43_epoch10",
+      "seconds": 21.970100017264485
+    },
+    {
+      "stage": "rgb_43_epoch11",
+      "seconds": 21.511320266872644
+    },
+    {
+      "stage": "rgb_43_epoch12",
+      "seconds": 22.510320773348212
+    },
+    {
+      "stage": "rgb_43_epoch13",
+      "seconds": 21.310521924868226
+    },
+    {
+      "stage": "rgb_43_epoch14",
+      "seconds": 22.09809655882418
+    },
+    {
+      "stage": "rgb_43_epoch15",
+      "seconds": 21.67360300011933
+    },
+    {
+      "stage": "rgb_43_epoch16",
+      "seconds": 22.12931228429079
+    },
+    {
+      "stage": "rgb_43_epoch17",
+      "seconds": 21.74009102769196
+    },
+    {
+      "stage": "rgb_43_epoch18",
+      "seconds": 21.847963076084852
+    },
+    {
+      "stage": "rgb_44_epoch1",
+      "seconds": 22.266995070502162
+    },
+    {
+      "stage": "rgb_44_epoch2",
+      "seconds": 21.883190657943487
+    },
+    {
+      "stage": "rgb_44_epoch3",
+      "seconds": 22.66965695656836
+    },
+    {
+      "stage": "rgb_44_epoch4",
+      "seconds": 21.87386779859662
+    },
+    {
+      "stage": "rgb_44_epoch5",
+      "seconds": 21.997410625219345
+    },
+    {
+      "stage": "rgb_44_epoch6",
+      "seconds": 22.238853434100747
+    },
+    {
+      "stage": "rgb_44_epoch7",
+      "seconds": 21.68868567235768
+    },
+    {
+      "stage": "rgb_44_epoch8",
+      "seconds": 21.606337912380695
+    },
+    {
+      "stage": "rgb_44_epoch9",
+      "seconds": 22.235495012253523
+    },
+    {
+      "stage": "rgb_44_epoch10",
+      "seconds": 21.764998234808445
+    },
+    {
+      "stage": "rgb_44_epoch11",
+      "seconds": 21.9088401440531
+    },
+    {
+      "stage": "rgb_44_epoch12",
+      "seconds": 21.681748129427433
+    },
+    {
+      "stage": "rgb_44_epoch13",
+      "seconds": 21.906440492719412
+    },
+    {
+      "stage": "rgb_44_epoch14",
+      "seconds": 22.20779607258737
+    },
+    {
+      "stage": "rgb_44_epoch15",
+      "seconds": 21.525900676846504
+    },
+    {
+      "stage": "rgb_44_epoch16",
+      "seconds": 21.930659890174866
+    },
+    {
+      "stage": "rgb_44_epoch17",
+      "seconds": 22.151674259454012
+    },
+    {
+      "stage": "rgb_44_epoch18",
+      "seconds": 21.82407777197659
+    },
+    {
+      "stage": "evaluate",
+      "seconds": 149.41257711313665
+    },
+    {
+      "stage": "original_S",
+      "seconds": 5.723033495247364
+    },
+    {
+      "stage": "rgb_evaluate",
+      "seconds": 47.363231133669615
+    },
+    {
+      "stage": "analysis_visualization",
+      "seconds": 6.2891291584819555
+    },
+    {
+      "stage": "spatial_controls",
+      "seconds": 34.85477435588837
+    },
+    {
+      "stage": "auxiliary_cuda_checks_conservative_overlap_count",
+      "seconds": 4.184408716857433
+    }
+  ],
+  "accounting": "Conservative GPU-stage wall time including preprocessing/evaluation. Brief CUDA resume fixtures overlapped training and are additionally counted; no concurrent model searches or inference benchmarks.",
+  "auxiliary_checks_added": true
+}

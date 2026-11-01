@@ -1,0 +1,89 @@
+{
+  "metrics": {
+    "global_exact": {
+      "n_cases": 8,
+      "global_mae": 0.13326969370245934,
+      "pixel_mae": 0.13327090628445148,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7798433033007017,
+      "clear_response": null
+    },
+    "original_dynamic": {
+      "n_cases": 8,
+      "global_mae": 0.13388387393206358,
+      "pixel_mae": 0.13388482946902514,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7155009850911274,
+      "clear_response": null
+    },
+    "single_dark": {
+      "n_cases": 8,
+      "global_mae": 0.13390258233994246,
+      "pixel_mae": 0.133903537876904,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.8030936637568769,
+      "clear_response": null
+    },
+    "student_seed42": {
+      "n_cases": 8,
+      "global_mae": 0.13331564515829086,
+      "pixel_mae": 0.1333168400451541,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7478715170383448,
+      "clear_response": null
+    },
+    "student_seed43": {
+      "n_cases": 8,
+      "global_mae": 0.13366832211613655,
+      "pixel_mae": 0.13366934563964605,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.6344270957441347,
+      "clear_response": null
+    },
+    "student_seed44": {
+      "n_cases": 8,
+      "global_mae": 0.13264774437993765,
+      "pixel_mae": 0.1326489821076393,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.7441969408408052,
+      "clear_response": null
+    },
+    "temperature_seed42": {
+      "n_cases": 8,
+      "global_mae": 0.133901528082788,
+      "pixel_mae": 0.13390248455107212,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.6938111617567504,
+      "clear_response": null
+    },
+    "temperature_seed43": {
+      "n_cases": 8,
+      "global_mae": 0.13389900140464306,
+      "pixel_mae": 0.13389995880424976,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.6864582205802798,
+      "clear_response": null
+    },
+    "temperature_seed44": {
+      "n_cases": 8,
+      "global_mae": 0.13389485608786345,
+      "pixel_mae": 0.13389581069350243,
+      "same_scene_rank": null,
+      "cross_condition_cross_scene_rank": null,
+      "region_spearman": 0.6952814793648023,
+      "clear_response": null
+    }
+  },
+  "oracle_pixel_mae": 0.06448799092322588,
+  "all_too_low_fraction": 0.31989479064941406,
+  "all_too_high_fraction": 0.0,
+  "scope": "Secondary spectral endpoint; eight new members, one unverified geographic group. No tuning or population CI."
+}

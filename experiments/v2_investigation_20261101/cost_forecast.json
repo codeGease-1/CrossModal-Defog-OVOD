@@ -1,0 +1,5 @@
+{
+  "training_step_estimate_seconds": 891.4284925460815,
+  "remaining_seconds": 2997.6923806462437,
+  "note": "Excludes epoch validation and checkpoint IO; stop before evaluation reserve if necessary"
+}

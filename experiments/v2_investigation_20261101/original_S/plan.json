@@ -1,0 +1,9 @@
+{
+  "selection_seed": 20261104,
+  "count": 8,
+  "endpoint": "H_eff=1-mean_RGB(t_c); secondary, not scalar t",
+  "reconstruction_threshold": 0.005,
+  "all_sources_one_external_geographic_group": true,
+  "fitting_on_real_images": false,
+  "role": "Predeclared failure-bound diagnostic, no change to model selection or nominal primary endpoint"
+}

@@ -1,0 +1,562 @@
+[
+  {
+    "seed": 42,
+    "epoch": 13,
+    "mean_weights": [
+      0.9999841451644897,
+      6.348919669108e-06,
+      9.562909326632507e-06
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0001480190985603258,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 42,
+    "epoch": 14,
+    "mean_weights": [
+      0.9999855756759644,
+      5.692890681530116e-06,
+      8.742860700294841e-06
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00013476324966177344,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 42,
+    "epoch": 15,
+    "mean_weights": [
+      0.9999872446060181,
+      5.010227596358163e-06,
+      7.79256606620038e-06
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00012002293806290254,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 42,
+    "epoch": 16,
+    "mean_weights": [
+      0.9999883770942688,
+      4.517205525189638e-06,
+      7.139911303966073e-06
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00010963587556034327,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 42,
+    "epoch": 17,
+    "mean_weights": [
+      0.9999893307685852,
+      4.106527740077581e-06,
+      6.570591722265817e-06
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00010071739234263077,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 42,
+    "epoch": 18,
+    "mean_weights": [
+      0.9999902844429016,
+      3.707114046846982e-06,
+      6.042195764166536e-06
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 9.224565292242914e-05,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 1,
+    "mean_weights": [
+      0.9980010390281677,
+      0.0009686605189926922,
+      0.0010303339222446084
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.012606075033545494,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 2,
+    "mean_weights": [
+      0.999132513999939,
+      0.00035732868127524853,
+      0.0005101176793687046
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.006047792732715607,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 3,
+    "mean_weights": [
+      0.9995044469833374,
+      0.0001828241511248052,
+      0.0003128108219243586
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0036566071212291718,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 4,
+    "mean_weights": [
+      0.9996315836906433,
+      0.00012447357585188001,
+      0.00024396371736656874
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0027932284865528345,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 5,
+    "mean_weights": [
+      0.9996981024742126,
+      9.417814726475626e-05,
+      0.00020777378813363612
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0023286084178835154,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 6,
+    "mean_weights": [
+      0.999751091003418,
+      7.1571150328964e-05,
+      0.0001774069241946563
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.001950166653841734,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 7,
+    "mean_weights": [
+      0.9997866153717041,
+      5.732290810556151e-05,
+      0.0001560821256134659
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.001691316720098257,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 8,
+    "mean_weights": [
+      0.9998089075088501,
+      4.763597826240584e-05,
+      0.00014351410209201276
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0015271120937541127,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 9,
+    "mean_weights": [
+      0.9998285174369812,
+      3.987243690062314e-05,
+      0.00013158888032194227
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.001380021683871746,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 10,
+    "mean_weights": [
+      0.9998384714126587,
+      3.4782082366291434e-05,
+      0.00012672363664023578
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0013045442756265402,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 11,
+    "mean_weights": [
+      0.999845027923584,
+      3.081406248384155e-05,
+      0.00012415902165230364
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.001254017697647214,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 12,
+    "mean_weights": [
+      0.9998509287834167,
+      2.730895903368946e-05,
+      0.00012179495388409123
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0012084782356396317,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 13,
+    "mean_weights": [
+      0.9998504519462585,
+      2.4921244403230958e-05,
+      0.00012463561142794788
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.001209933077916503,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 14,
+    "mean_weights": [
+      0.999847948551178,
+      2.2723650545231067e-05,
+      0.0001293668756261468
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0012261858209967613,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 15,
+    "mean_weights": [
+      0.9998453855514526,
+      2.065562512143515e-05,
+      0.00013399777526501566
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0012423214502632618,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 16,
+    "mean_weights": [
+      0.9998233914375305,
+      1.9986453480669297e-05,
+      0.00015668306150473654
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00139914033934474,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 17,
+    "mean_weights": [
+      0.9997987747192383,
+      1.913874439196661e-05,
+      0.0001821212936192751
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00157090462744236,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 43,
+    "epoch": 18,
+    "mean_weights": [
+      0.9996902942657471,
+      2.0964571376680396e-05,
+      0.00028881337493658066
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0023067411966621876,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 1,
+    "mean_weights": [
+      0.9956026077270508,
+      0.0023099028039723635,
+      0.002087486209347844
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0246881116181612,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 2,
+    "mean_weights": [
+      0.997988224029541,
+      0.0009993499843403697,
+      0.001012488384731114
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.012631580233573914,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 3,
+    "mean_weights": [
+      0.9987392425537109,
+      0.0006055696285329759,
+      0.000655225187074393
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.008398041129112244,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 4,
+    "mean_weights": [
+      0.9991801977157593,
+      0.00038168684113770723,
+      0.0004382306942716241
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00573898758739233,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 5,
+    "mean_weights": [
+      0.9993891716003418,
+      0.00027669890550896525,
+      0.0003342038835398853
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.004417033400386572,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 6,
+    "mean_weights": [
+      0.9995291233062744,
+      0.00020787757239304483,
+      0.0002630438539199531
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.00349970581009984,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 7,
+    "mean_weights": [
+      0.99960857629776,
+      0.0001694329985184595,
+      0.00022205821005627513
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.002965019317343831,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 8,
+    "mean_weights": [
+      0.9996525645256042,
+      0.00014781013305764645,
+      0.00019968702690675855
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0026659006252884865,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 9,
+    "mean_weights": [
+      0.9996935725212097,
+      0.00012825880548916757,
+      0.00017826477414928377
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0023821431677788496,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 10,
+    "mean_weights": [
+      0.9997072815895081,
+      0.00012115572462789714,
+      0.0001716150582069531
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0022894679568707943,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  },
+  {
+    "seed": 44,
+    "epoch": 18,
+    "mean_weights": [
+      0.9996949434280396,
+      0.00011639303556876257,
+      0.00018867768812924623
+    ],
+    "argmax_fraction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "entropy": 0.0023917730432003736,
+    "sample": "four fixed development cases; CPU observation, not accuracy selection"
+  }
+]
