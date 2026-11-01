@@ -1,0 +1,45 @@
+{
+  "selected": "fixed_calibrated",
+  "rule": "development global MAE minimum among candidates with spatial rho >= legacy rho-0.03; if none improves legacy MAE select legacy",
+  "calibration_sha256": "c279112ef218b79453fb0230919e14c8cc4acf6dda501992beb05ba4c5955fca",
+  "development_metrics": {
+    "legacy": {
+      "n_cases": 512,
+      "global_mae": 0.22810345035395585,
+      "pixel_mae": 0.22975634077738505,
+      "same_scene_rank_accuracy": 0.3734375,
+      "cross_original_rank_accuracy": 0.390625,
+      "cross_original_tie_rate": 0.0,
+      "region_spearman": 0.9763419363713979,
+      "spatial_defined_cases": 192,
+      "clear_mean": 0.3738202936947346,
+      "clear_bright_response": 0.36413632333278656
+    },
+    "normalized_calibrated": {
+      "n_cases": 512,
+      "global_mae": 0.13373309007147327,
+      "pixel_mae": 0.14231882692365616,
+      "same_scene_rank_accuracy": 0.37343750000000003,
+      "cross_original_rank_accuracy": 0.385,
+      "cross_original_tie_rate": 0.00020833333333333335,
+      "region_spearman": 0.9735539461753193,
+      "spatial_defined_cases": 192,
+      "clear_mean": 0.240061289165169,
+      "clear_bright_response": 0.23872257210314274
+    },
+    "fixed_calibrated": {
+      "n_cases": 512,
+      "global_mae": 0.03196592779345525,
+      "pixel_mae": 0.038376811643094755,
+      "same_scene_rank_accuracy": 1.0,
+      "cross_original_rank_accuracy": 1.0,
+      "cross_original_tie_rate": 0.0,
+      "region_spearman": 0.9718712472723742,
+      "spatial_defined_cases": 192,
+      "clear_mean": 0.004428819910041515,
+      "clear_bright_response": 0.00542668308185057
+    }
+  },
+  "external_opened_for_model_selection": false,
+  "extra_global_head": "NOT ADDED; structural need not established"
+}

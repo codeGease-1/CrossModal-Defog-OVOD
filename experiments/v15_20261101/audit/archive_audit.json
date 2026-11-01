@@ -1,0 +1,856 @@
+{
+  "archive": "/mnt/RSHaze+.zip",
+  "archive_bytes": 7380255872,
+  "non_image_entries": [],
+  "samples": [
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/778.png",
+      "sha256": "862d972641686659002e97d5402bf6c2a6a3ee5b0670baf81e7eca65b447cebf",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        15,
+        168
+      ],
+      "t_quantiles": [
+        15.0,
+        21.0,
+        140.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 35,
+      "reconstruction": {
+        "display_t_mae": 0.10669979533002759,
+        "display_1-t_mae": 0.18270930779953418,
+        "linear_t_mae": 0.15141681406724802,
+        "linear_1-t_mae": 0.2271044790846688
+      },
+      "clean_hazy_mae": 0.08620041990591813
+    },
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/182.png",
+      "sha256": "8929b5717a109680a73269a100ede43e385b7248c29529aea4df9fdf83f727ef",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        17,
+        168
+      ],
+      "t_quantiles": [
+        17.0,
+        21.0,
+        101.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 74,
+      "reconstruction": {
+        "display_t_mae": 0.09739960147007513,
+        "display_1-t_mae": 0.16388065358178672,
+        "linear_t_mae": 0.16020356280175604,
+        "linear_1-t_mae": 0.21654065774834297
+      },
+      "clean_hazy_mae": 0.15023754344267
+    },
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/204.png",
+      "sha256": "b102891d4bd249738cec8d4e38bf95e23be91b8088ce85ff4a679acd9a485bf3",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        54,
+        168
+      ],
+      "t_quantiles": [
+        54.0,
+        72.0,
+        137.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 38,
+      "reconstruction": {
+        "display_t_mae": 0.13416940200455627,
+        "display_1-t_mae": 0.19734020455592752,
+        "linear_t_mae": 0.21529745105443374,
+        "linear_1-t_mae": 0.2823544329511168
+      },
+      "clean_hazy_mae": 0.09110825981190002
+    },
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/986.png",
+      "sha256": "3c797d85867458061ffa5354ddd4ab96571ce1261bc158da02612f09b61db959",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        33,
+        168
+      ],
+      "t_quantiles": [
+        33.0,
+        63.0,
+        136.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 67,
+      "reconstruction": {
+        "display_t_mae": 0.13416986184106122,
+        "display_1-t_mae": 0.15758571008283576,
+        "linear_t_mae": 0.19260383669698342,
+        "linear_1-t_mae": 0.21084553568313033
+      },
+      "clean_hazy_mae": 0.060835675008935886
+    },
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/461.png",
+      "sha256": "bf7dbe273b8c0a8e1cf6d3cfb035aeeb787b9569d0457213ea2cddc7cde26347",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        61,
+        168
+      ],
+      "t_quantiles": [
+        61.0,
+        84.0,
+        147.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 39,
+      "reconstruction": {
+        "display_t_mae": 0.11110689510554206,
+        "display_1-t_mae": 0.1661899835629814,
+        "linear_t_mae": 0.1624896798562853,
+        "linear_1-t_mae": 0.22788388693809547
+      },
+      "clean_hazy_mae": 0.051514025918798494
+    },
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/153.png",
+      "sha256": "a044e59ed51239bf4eca50cb962e4ef4dde1e6a31702263d81fc38be0b2cd815",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        112,
+        168
+      ],
+      "t_quantiles": [
+        112.0,
+        117.0,
+        144.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 21,
+      "reconstruction": {
+        "display_t_mae": 0.09419461271937928,
+        "display_1-t_mae": 0.14416603812892725,
+        "linear_t_mae": 0.15268411456845643,
+        "linear_1-t_mae": 0.2158849370664265
+      },
+      "clean_hazy_mae": 0.07749600877948835
+    },
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/739.png",
+      "sha256": "839e5461825d49177d64dc287ace8a30113865c243e8f868e50c028efb1bc07b",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        106,
+        168
+      ],
+      "t_quantiles": [
+        106.0,
+        121.0,
+        158.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 16,
+      "reconstruction": {
+        "display_t_mae": 0.11239527020716568,
+        "display_1-t_mae": 0.20398290944835798,
+        "linear_t_mae": 0.16026315033215852,
+        "linear_1-t_mae": 0.2749491409232723
+      },
+      "clean_hazy_mae": 0.04012092141544118
+    },
+    {
+      "member": "RSHaze+/RSHaze_G/train/cleanpng/138.png",
+      "sha256": "15189da0e79db74c53f4bb1e685f19b49c74c0ce30de28d13a67f159b949b813",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        3,
+        168
+      ],
+      "t_quantiles": [
+        3.0,
+        12.0,
+        116.0,
+        168.0,
+        168.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 101,
+      "reconstruction": {
+        "display_t_mae": 0.09792570678053887,
+        "display_1-t_mae": 0.09006950095847804,
+        "linear_t_mae": 0.15105851455624084,
+        "linear_1-t_mae": 0.12952157047931193
+      },
+      "clean_hazy_mae": 0.04141991309870303
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/778.png",
+      "sha256": "165be375fbec39c2ea405e0d30135d1586dda4d0b0fc7b0d7cbf82c6b271de52",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        28,
+        245
+      ],
+      "t_quantiles": [
+        28.0,
+        38.0,
+        239.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 32,
+      "reconstruction": {
+        "display_t_mae": 0.0009900732845828035,
+        "display_1-t_mae": 0.3986278433911575,
+        "linear_t_mae": 0.03946912218653823,
+        "linear_1-t_mae": 0.4373491908231561
+      },
+      "clean_hazy_mae": 0.10904936946295445
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/182.png",
+      "sha256": "eedd4c4fbf2466f874dfb6c8218cdf6857f46ae17c65363785b52433fa5b3575",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        26,
+        245
+      ],
+      "t_quantiles": [
+        26.0,
+        34.0,
+        157.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 90,
+      "reconstruction": {
+        "display_t_mae": 0.0010097038350196342,
+        "display_1-t_mae": 0.3187281132489921,
+        "linear_t_mae": 0.07913349096193195,
+        "linear_1-t_mae": 0.34314997415346965
+      },
+      "clean_hazy_mae": 0.23679032668568725
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/204.png",
+      "sha256": "c23bf7b1e29c4f6ba9d05dbb74903c4dd764fb30a4d9264682ec43ea096862c5",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        31,
+        245
+      ],
+      "t_quantiles": [
+        31.0,
+        58.0,
+        223.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 105,
+      "reconstruction": {
+        "display_t_mae": 0.000988042318834704,
+        "display_1-t_mae": 0.3762068171185223,
+        "linear_t_mae": 0.05458295934101739,
+        "linear_1-t_mae": 0.43104027083553037
+      },
+      "clean_hazy_mae": 0.12182385313744638
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/986.png",
+      "sha256": "c01898a34a9b0ed7be275c01ed821152de553f2e5392dc36439c14f6907ee9c8",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        132,
+        245
+      ],
+      "t_quantiles": [
+        132.0,
+        177.0,
+        244.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 6,
+      "reconstruction": {
+        "display_t_mae": 0.000981134817750885,
+        "display_1-t_mae": 0.5798799852339196,
+        "linear_t_mae": 0.03910373533217049,
+        "linear_1-t_mae": 0.6944346137680618
+      },
+      "clean_hazy_mae": 0.05637074888142104
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/461.png",
+      "sha256": "b1e162fb68d47a1b9fe3b0a3b63bc6bd3a55ce173366a7b5696b337b29d7af49",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        123,
+        245
+      ],
+      "t_quantiles": [
+        123.0,
+        153.0,
+        242.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 21,
+      "reconstruction": {
+        "display_t_mae": 0.0009888151531324597,
+        "display_1-t_mae": 0.462188899885855,
+        "linear_t_mae": 0.030572533851657365,
+        "linear_1-t_mae": 0.49885138943717505
+      },
+      "clean_hazy_mae": 0.05528038872612848
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/153.png",
+      "sha256": "cd179178f41a895ac39515365d634b47d34f5eedc9cbca48935fd88bf708d7dc",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        114,
+        245
+      ],
+      "t_quantiles": [
+        114.0,
+        126.0,
+        204.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 80,
+      "reconstruction": {
+        "display_t_mae": 0.0009939978420008726,
+        "display_1-t_mae": 0.3497565610876576,
+        "linear_t_mae": 0.0844293305176703,
+        "linear_1-t_mae": 0.4838326765543981
+      },
+      "clean_hazy_mae": 0.14714156506108303
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/739.png",
+      "sha256": "f39809693a9895b77234526e7afabfa94c1a3d8bac5b649605af257ed619978a",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        76,
+        245
+      ],
+      "t_quantiles": [
+        76.0,
+        116.0,
+        229.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 102,
+      "reconstruction": {
+        "display_t_mae": 0.0009952987402994543,
+        "display_1-t_mae": 0.5266332927441333,
+        "linear_t_mae": 0.0625787110903194,
+        "linear_1-t_mae": 0.6011154508552997
+      },
+      "clean_hazy_mae": 0.09901623694725288
+    },
+    {
+      "member": "RSHaze+/RSHaze_S/train/cleanpng/138.png",
+      "sha256": "cb1ec881076fe0555ef223c4ca7a41ef0ca5357da7b2dc1a6dd733d85652b8e5",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": [],
+      "t_dtype": "uint8",
+      "t_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_min_max": [
+        34,
+        245
+      ],
+      "t_quantiles": [
+        34.0,
+        74.0,
+        237.0,
+        245.0,
+        245.0
+      ],
+      "air_shape": [
+        512,
+        512,
+        3
+      ],
+      "hazy_shape": [
+        512,
+        512,
+        3
+      ],
+      "t_channel_max_diff": 54,
+      "reconstruction": {
+        "display_t_mae": 0.0009926960441709626,
+        "display_1-t_mae": 0.4728623869320406,
+        "linear_t_mae": 0.034880216235534924,
+        "linear_1-t_mae": 0.5259991769151843
+      },
+      "clean_hazy_mae": 0.06896100013084659
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/167.png",
+      "sha256": "b46f5928df4ede673866eb9fedd355c4f94bb97b90ad1d204754102be9f4f0ad",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/1852.png",
+      "sha256": "58e60998977280dea0336ec18980593f1261b58ca07e339c0c2c7d9e0f955305",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/3904.png",
+      "sha256": "564ef0d693f13846875c9647e6dda7821d5aca2c5af6dcc43c7e7a0817137e12",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/1439.png",
+      "sha256": "fb1838801b5b8fe60922e67a2b2e686c51f3046faefa06037c3f2985d1019741",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/1318.png",
+      "sha256": "5f559cb87e21920023fd7de6fe110e96c415c2a68f50e3875fc12230bf7d6fd8",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/1370.png",
+      "sha256": "caffc4f09d8f21e2381681dc535b72cd1e17a48832783a5dcd76664653985408",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/2614.png",
+      "sha256": "98674c739cbfbbc640df08902f912b20ffb540e6b022b08d7722766fe1dbc01c",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    },
+    {
+      "member": "RSHaze+/RSHaze_L/train/cleanpng/3023.png",
+      "sha256": "4274c50e701ea3fc57e49641fc60c01dac2679d46701649920917b8e87a3aa0c",
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "metadata_keys": [],
+      "exif_keys": []
+    }
+  ],
+  "warning": "Encoding plausibility is not proof of geographic independence or calibrated physical labels."
+}

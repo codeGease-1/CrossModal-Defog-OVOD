@@ -1,0 +1,22 @@
+{
+  "implementation": "PASS",
+  "controlled_scalar_attenuation": "PRELIMINARY SUPPORT",
+  "original_spectral_pairs": "DOES NOT MEET LOCAL NONINFERIORITY; not a validated replacement",
+  "selected_on_development": "fixed_calibrated",
+  "test_used_for_tuning": false,
+  "new_global_head": false,
+  "next_stage_started": false,
+  "fit_budget": {
+    "fit_elapsed_seconds": 28.02456970512867,
+    "neural_training_seconds": 0.0
+  },
+  "new_source_sha256": {
+    "scripts/v15/audit_archive.py": "f4a83a672afdb057844fadf11dd810a0efb08406b01ae16cc7b65d4c0a1cabf5",
+    "scripts/v15/finalize.py": "1b9c34a11e60a1e9d84875f15d78b9dcda549446b460193b0dec4aa530996942",
+    "scripts/v15/reproduce.sh": "f1cec90fa4805d9ec96d681f527a3d1c5eaa6b0f6ce3eac0173dd8b8ac05dfc9",
+    "scripts/v15/run.py": "e432a6fbdaaee750bf9e5069d678f0d58e34b7266c586f817946ec9eb403db87",
+    "scripts/v15/summarize.py": "c91d8cfc68ea6dbbb1c26e5fb25aca2f45de6a302d96a128103ffc6db98d64fb",
+    "scripts/v15/test_v15.py": "6dc88dcbf8516fd96d19210af8df44e26ca7551e147293891ab5afd4d584a2eb",
+    "scripts/v15/verified_spectral_test.py": "fcc46edc12cc59e19ab31da8abecba9a04d132ce8d06ec81a1377679b700c147"
+  }
+}

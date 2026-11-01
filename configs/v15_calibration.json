@@ -1,0 +1,21 @@
+{
+  "seed": 20261101,
+  "image_size": 256,
+  "scene_counts": {"train": 48, "development": 16, "test": 16},
+  "scene_seed_offsets": {"train": 0, "development": 10000, "test": 20000},
+  "uniform_t": [1.0, 0.9, 0.75, 0.6, 0.4],
+  "spatial_patterns": ["gradient", "blob", "regions"],
+  "airlights": [[1.0, 1.0, 1.0], [0.75, 0.8, 0.9]],
+  "brightness": [0.65, 1.0],
+  "domain": "linear_srgb",
+  "prior": {"window_size": 15, "guided_radius": 15, "guided_eps": 0.01},
+  "percentiles": [0.01, 0.99],
+  "pixels_per_case": 256,
+  "isotonic_bins": 128,
+  "external_scenes_per_subset": 8,
+  "spatial_noninferiority_margin": 0.03,
+  "training_budget_seconds": 3600,
+  "primary_candidates": ["legacy", "normalized_calibrated", "fixed_calibrated"],
+  "selection_rule": "development global MAE minimum among candidates with spatial rho >= legacy rho-0.03; if none improves legacy MAE select legacy",
+  "external_policy": "All RSHaze sources held out as ONE conservative geographic supergroup; never fit or tune on them. Controlled originals are independent procedural scenes."
+}

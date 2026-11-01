@@ -1,0 +1,81 @@
+{
+  "interpretation": "Secondary original-S label check, after candidate freeze; never model selection.\n\nS supplies channel-dependent t_R,t_G,t_B, not a single achromatic t. We explicitly\ndefine t_eff=mean_RGB(t_c) for this SECONDARY endpoint; this does not silently\nreinterpret a colorful PNG as grayscale transmission. Each held-out pair must\npass the image-formation residual check before this endpoint is evaluated.\n",
+  "checks": [
+    {
+      "scene": "external_S_1282",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.0010139981780344905,
+      "reverse_direction_mae": 0.37066988817777435,
+      "t_channel_max_difference": 0.2392156862745098
+    },
+    {
+      "scene": "external_S_1115",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.0010208650828782797,
+      "reverse_direction_mae": 0.3627474371139992,
+      "t_channel_max_difference": 0.11764705882352944
+    },
+    {
+      "scene": "external_S_1042",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.0009826805645665123,
+      "reverse_direction_mae": 0.4940409730419688,
+      "t_channel_max_difference": 0.1568627450980392
+    },
+    {
+      "scene": "external_S_1310",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.0010025187894104246,
+      "reverse_direction_mae": 0.2859370656045876,
+      "t_channel_max_difference": 0.12549019607843137
+    },
+    {
+      "scene": "external_S_1263",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.0009887060751811712,
+      "reverse_direction_mae": 0.4899527555781269,
+      "t_channel_max_difference": 0.16470588235294115
+    },
+    {
+      "scene": "external_S_1297",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.001013303778957712,
+      "reverse_direction_mae": 0.28818814052888325,
+      "t_channel_max_difference": 0.33725490196078434
+    },
+    {
+      "scene": "external_S_1187",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.0009854948656628955,
+      "reverse_direction_mae": 0.514724517493741,
+      "t_channel_max_difference": 0.01176470588235301
+    },
+    {
+      "scene": "external_S_1279",
+      "status": "PASS",
+      "display_rgb_reconstruction_mae": 0.0009874293664533587,
+      "reverse_direction_mae": 0.4966265110992154,
+      "t_channel_max_difference": 0.33725490196078434
+    }
+  ],
+  "metrics": {
+    "legacy": {
+      "global_abs_error": 0.27013006061315536,
+      "pixel_mae": 0.270360816270113,
+      "region_spearman": 0.8216803172326733
+    },
+    "normalized_calibrated": {
+      "global_abs_error": 0.08913979772478342,
+      "pixel_mae": 0.1322648678906262,
+      "region_spearman": 0.8125071018688081
+    },
+    "fixed_calibrated": {
+      "global_abs_error": 0.15821214206516743,
+      "pixel_mae": 0.15821214113384485,
+      "region_spearman": 0.7647742818057456
+    }
+  },
+  "endpoint": "H_eff=1-mean_RGB(t_c), original display-RGB synthesis, secondary only",
+  "n_conservative_geographic_groups": 1,
+  "selected_candidate_unchanged": "fixed_calibrated"
+}

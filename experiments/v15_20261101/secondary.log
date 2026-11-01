@@ -1,0 +1,162 @@
+{
+  "frozen_selected": "fixed_calibrated",
+  "secondary_metric_plan": "Predeclared secondary diagnostics; never changes the frozen candidate.\n\nCross-condition ranking includes different brightnesses AND airlights, unlike\nthe primary within-condition cross-original comparison. Scene bootstrap is\nonly reported for genuinely independent procedural originals, never for the\nsingle conservatively grouped RSHaze source.\n",
+  "phases": {
+    "development": {
+      "cross_condition_cross_original_rank": {
+        "legacy": {
+          "accuracy": 0.39328125,
+          "tie_rate": 0.0,
+          "comparable_pairs": 38400
+        },
+        "normalized_calibrated": {
+          "accuracy": 0.388125,
+          "tie_rate": 0.00018229166666666667,
+          "comparable_pairs": 38400
+        },
+        "fixed_calibrated": {
+          "accuracy": 0.9909375,
+          "tie_rate": 0.0,
+          "comparable_pairs": 38400
+        }
+      },
+      "uncertainty": {
+        "global_abs_error": {
+          "fixed_minus_legacy": -0.1961375225605006,
+          "scene_bootstrap_95_percentile_interval": [
+            -0.20504716489681524,
+            -0.1884285642561354
+          ],
+          "n_independent_procedural_originals": 16
+        },
+        "region_spearman": {
+          "fixed_minus_legacy": -0.004470689099023664,
+          "scene_bootstrap_95_percentile_interval": [
+            -0.006674977890403025,
+            -0.00245423118164
+          ],
+          "n_independent_procedural_originals": 16
+        }
+      }
+    },
+    "test": {
+      "cross_condition_cross_original_rank": {
+        "legacy": {
+          "accuracy": 0.38588541666666665,
+          "tie_rate": 0.0,
+          "comparable_pairs": 38400
+        },
+        "normalized_calibrated": {
+          "accuracy": 0.377734375,
+          "tie_rate": 0.000234375,
+          "comparable_pairs": 38400
+        },
+        "fixed_calibrated": {
+          "accuracy": 0.9904427083333334,
+          "tie_rate": 0.0,
+          "comparable_pairs": 38400
+        }
+      },
+      "uncertainty": {
+        "global_abs_error": {
+          "fixed_minus_legacy": -0.1948334232615756,
+          "scene_bootstrap_95_percentile_interval": [
+            -0.2039940167801517,
+            -0.1874444070238121
+          ],
+          "n_independent_procedural_originals": 16
+        },
+        "region_spearman": {
+          "fixed_minus_legacy": -0.0037603748086306316,
+          "scene_bootstrap_95_percentile_interval": [
+            -0.006489076398425011,
+            -0.001816747786341716
+          ],
+          "n_independent_procedural_originals": 16
+        }
+      }
+    },
+    "external": {
+      "cross_condition_cross_original_rank": {
+        "legacy": {
+          "accuracy": 0.3572463768115942,
+          "tie_rate": 0.0,
+          "comparable_pairs": 88320
+        },
+        "normalized_calibrated": {
+          "accuracy": 0.3523890398550725,
+          "tie_rate": 0.0002151268115942029,
+          "comparable_pairs": 88320
+        },
+        "fixed_calibrated": {
+          "accuracy": 0.977445652173913,
+          "tie_rate": 1.1322463768115942e-05,
+          "comparable_pairs": 88320
+        }
+      },
+      "uncertainty": "No geographic CI: all real sources form one supergroup."
+    }
+  },
+  "cost": [
+    {
+      "method": "legacy",
+      "size": 256,
+      "device": "cuda",
+      "batch": 1,
+      "warmup": 5,
+      "repeats": 20,
+      "p50_ms": 1.8193209543824196,
+      "p95_ms": 1.8921206705272198
+    },
+    {
+      "method": "normalized_calibrated",
+      "size": 256,
+      "device": "cuda",
+      "batch": 1,
+      "warmup": 5,
+      "repeats": 20,
+      "p50_ms": 2.3737698793411255,
+      "p95_ms": 2.43853060528636
+    },
+    {
+      "method": "fixed_calibrated",
+      "size": 256,
+      "device": "cuda",
+      "batch": 1,
+      "warmup": 5,
+      "repeats": 20,
+      "p50_ms": 1.7969729378819466,
+      "p95_ms": 1.8426453694701195
+    },
+    {
+      "method": "legacy",
+      "size": 512,
+      "device": "cuda",
+      "batch": 1,
+      "warmup": 5,
+      "repeats": 20,
+      "p50_ms": 2.757859416306019,
+      "p95_ms": 2.788352407515049
+    },
+    {
+      "method": "normalized_calibrated",
+      "size": 512,
+      "device": "cuda",
+      "batch": 1,
+      "warmup": 5,
+      "repeats": 20,
+      "p50_ms": 3.11104953289032,
+      "p95_ms": 3.2852706499397764
+    },
+    {
+      "method": "fixed_calibrated",
+      "size": 512,
+      "device": "cuda",
+      "batch": 1,
+      "warmup": 5,
+      "repeats": 20,
+      "p50_ms": 2.571696415543556,
+      "p95_ms": 2.595836203545332
+    }
+  ]
+}
