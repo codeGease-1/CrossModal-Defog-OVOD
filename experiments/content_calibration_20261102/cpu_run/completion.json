@@ -1,0 +1,9 @@
+{
+  "status": "CPU implementation feasibility only; no efficacy claim",
+  "elapsed_this_invocation_seconds": 33.71805419999873,
+  "gpu_seconds": 0,
+  "new_confirmation_accessed": false,
+  "neural_training_steps": 0,
+  "physical_constraint": "Paired nonparametric weighted forward-response objective implemented; same table capacity, no hard inversion",
+  "future_dynamic_and_regression_effects": "NOT TRAINED OR EVALUATED FOR ACCURACY"
+}

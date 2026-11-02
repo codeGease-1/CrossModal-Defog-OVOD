@@ -1,0 +1,7 @@
+{
+  "mode": "rgb32",
+  "seed": 42,
+  "best_development_loss": 0.000554683237169229,
+  "parameters": 867377,
+  "steps": 3456
+}

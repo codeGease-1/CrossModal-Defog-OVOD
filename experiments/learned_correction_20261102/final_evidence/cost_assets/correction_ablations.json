@@ -1,0 +1,31 @@
+{
+  "summary": {
+    "image_mean_coefficients": {
+      "pixel_mae": 0.02908584110002721,
+      "region_spearman": 0.9771385049988489
+    },
+    "learned": {
+      "pixel_mae": 0.01496782776166583,
+      "region_spearman": 0.9783639951949272
+    },
+    "mean_candidate_maps": {
+      "pixel_mae": 0.03965247652331527,
+      "region_spearman": 0.9767095834302214
+    },
+    "shuffled_coefficients": {
+      "pixel_mae": 0.03756010852930558,
+      "region_spearman": 0.9767861765674762
+    }
+  },
+  "mean_gain_D_C_K": [
+    0.597288966178894,
+    0.7838937044143677,
+    0.7564805746078491
+  ],
+  "mean_offset_D_C_K": [
+    -0.5347481369972229,
+    -0.8806316256523132,
+    -0.9952921867370605
+  ],
+  "scope": "Frozen development inference interventions only; prior replacement alone cannot prove trained-model necessity. Same-input direct control supplies the main comparison."
+}

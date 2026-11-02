@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "source_files_exactly_verified_against_frozen_zip": 46,
+  "source_archive_sha256": "34f807739e79f6c2c407fa6a06fe3aeeb065e5c5ceadf4b7817e55c0c505aaf4",
+  "train_originals_cases": [
+    48,
+    1536
+  ],
+  "development_originals_cases": [
+    16,
+    512
+  ],
+  "training_development_pixel_hashes_unique": true,
+  "no_cross_split_group_overlap": true,
+  "fresh_original_pixel_hashes_unique_and_disjoint": [
+    "2f29653a042ae80f9b5da722234b4bb67b5b4775f168fa6f00732f04c36da25b",
+    "ac1212bd68ad33d0ccc9256f51af0ed74e5ff718c80882b0acc74b56dde768e3",
+    "64c350f22b231f86d4964dfe57ee79f795579df5f51308bb1fe898dcf06b77c9",
+    "60b989a1606a40f75e2107faf18f93eba755ca2f8ed8f9c78da7f420caad48b4",
+    "fdba017c969dd53afc75cafce50f7b27904f1f3416ca576e446e742fbaf14ec6",
+    "63e7ae56f31b2d4433e9e6de3d67abee204f227c3b7da3ae113d01dea722dda7",
+    "c383f30e219f4cc3db7c7281ec108ace902f0a01ff38a69222816b47f51daa90",
+    "f7fce2bf2c664327855385597b399c9296fccb393125d55ad5fc9edeb3054166",
+    "f3160519fe398dedfab66c54cf7a6e8fc43c7bc7e09f354e2379c3719f83d472",
+    "816af115630eb4b10e9507c1eb3f358053c231b915a7dddfa82cbd9f9cc1534c",
+    "a78b6dd5862ee506cc2a4bd7b6f26d43b12810b97c43ee43a7b7ff26e5bfe253",
+    "cb09defb9a3dbf533df3dedae3e774bd31f3eb2bbd6dde03455a6150384f972f",
+    "bd98f85ba675c5bed1fd165da664105e1dd600f26021f31032ee37dac1cc5251",
+    "85e620db92acb1edabf1ea001b27c31288b004d0f09a511d4b71724e0515491d",
+    "8808b3e595b47b4bf8752f5975e105d06816f7705ffba3b51cb6b3e8ad5e13e2",
+    "74a666e42aebad7fb65c00feda2f4da7903e30ecce48788c84c6197be70ca126",
+    "85157bbf15e775a03981a3267a684450b1083857aaa0539e99cef1d9e1be357e",
+    "4d3300a73db5fe3e4308f0b864fb4bdec90887c4803c56f33986bdf3814593c8",
+    "27d1099c36d00029a3a54140b1ec00829711b93bd43b2bd336e3ef15c9f1126d",
+    "eb1d8ef5c70ec778ae329bfbcbff0e178eb8aae90a7d7e8e1d115e3821f50f7b",
+    "8a5e468f695bd94f472ef5c61f07bc270f9fb60bac9a78eac961f89b33b363e3",
+    "211ea9f5fd6cafa9bfffb289d14f2f1d4092ead12b43d4c0f4f3e564d7d8bbd3",
+    "9a77bfacd675db6f8f96a55f556901efe58a0c7909cebc0d0c5458f8eb0f2663",
+    "05c9ba059b350b43680fb33b2168731f880ebdb86c11dc244db0f3e80f4730d9"
+  ],
+  "frozen_fusion_hash_unchanged": true,
+  "all_checkpoints_frozen": 9,
+  "conditions": {
+    "nominal": {
+      "original_scenes": 24,
+      "cases": 768,
+      "versions_per_group": 32,
+      "no_development_input_overlap": true,
+      "target_hashes_identical_across_conditions": true
+    },
+    "unseen_A": {
+      "original_scenes": 24,
+      "cases": 768,
+      "versions_per_group": 32,
+      "no_development_input_overlap": true,
+      "target_hashes_identical_across_conditions": true
+    },
+    "display_rgb": {
+      "original_scenes": 24,
+      "cases": 768,
+      "versions_per_group": 32,
+      "no_development_input_overlap": true,
+      "target_hashes_identical_across_conditions": true
+    }
+  },
+  "audit_script_sha256": "36faa2c7ea3bfdd656c2b3b7e9ba56a00a50cbef6d28e5d5256dbfbb1acf6cd4"
+}

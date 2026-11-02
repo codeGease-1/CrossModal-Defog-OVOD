@@ -1,0 +1,5 @@
+Command: .venv/Scripts/python.exe scripts/learned_correction/test_contracts.py
+RGB 16 218273
+RGB 32 867377
+Corrector 218358
+PASS: identity initialization, finite gradients, bounded coefficients, own-cue isolation, monotonic response, parameter count

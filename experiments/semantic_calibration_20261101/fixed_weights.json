@@ -1,0 +1,22 @@
+{
+  "weights": {
+    "A_original": [
+      0.8997498563281479,
+      0.037990775150832275,
+      0.06225936852101981
+    ],
+    "global_refit": [
+      0.9816951703550939,
+      0.0,
+      0.01830482964490619
+    ],
+    "C_semantic": [
+      0.9816951703550939,
+      0.0,
+      0.01830482964490619
+    ]
+  },
+  "fit_split": "train",
+  "objective": "pixel MSE + .5 image-mean MSE + .25 conditional clear MSE",
+  "solver": "all simplex faces; same loss as historical v2; reduced dataset, not historical fair comparison"
+}

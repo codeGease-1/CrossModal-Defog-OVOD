@@ -1,0 +1,1010 @@
+[
+  {
+    "case_id": "development_000_a0_b1_uniform_1.0",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "A_original",
+    "prior_mae": [
+      0.0,
+      0.08628125123243535,
+      0.0570005549016912
+    ],
+    "prior_bias": [
+      0.0,
+      0.08628125123243535,
+      0.0570005549016912
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_000_a0_b1_uniform_1.0",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "global_refit",
+    "prior_mae": [
+      0.0,
+      0.07755384650687347,
+      0.046984964585846
+    ],
+    "prior_bias": [
+      0.0,
+      0.07755384650687347,
+      0.046984964585846
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_000_a0_b1_uniform_1.0",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.0,
+      0.07755384650687347,
+      0.046984964585846
+    ],
+    "prior_bias": [
+      0.0,
+      0.07755384650687347,
+      0.046984964585846
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_000_a0_b1_uniform_0.6",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "A_original",
+    "prior_mae": [
+      0.021294582908922166,
+      0.10060586202325794,
+      0.038561620298423804
+    ],
+    "prior_bias": [
+      0.021294582908922166,
+      -0.10060586202325794,
+      -0.000810109654594271
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_000_a0_b1_uniform_0.6",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "global_refit",
+    "prior_mae": [
+      0.0008221741545639816,
+      0.0654225132634565,
+      0.04090332789974127
+    ],
+    "prior_bias": [
+      0.0008221741545639816,
+      -0.0654225132634565,
+      0.026857160496092547
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_000_a0_b1_uniform_0.6",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.0008221741545639816,
+      0.0654225132634565,
+      0.04090332789974127
+    ],
+    "prior_bias": [
+      0.0008221741545639816,
+      -0.0654225132634565,
+      0.026857160496092547
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_000_a0_b1_gradient_None",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "A_original",
+    "prior_mae": [
+      0.03165640592391128,
+      0.11227599709445713,
+      0.08981679649139096
+    ],
+    "prior_bias": [
+      0.02041297762735894,
+      -0.08576070908338806,
+      0.03207687846122553
+    ],
+    "joint_high_fraction": 0.0038909912109375,
+    "joint_low_fraction": 0.0349884033203125,
+    "outside_envelope_fraction": 0.186553955078125,
+    "offline_oracle_mae": 0.002916585374691749,
+    "offline_oracle_mse": 8.23392658501322e-05
+  },
+  {
+    "case_id": "development_000_a0_b1_gradient_None",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "global_refit",
+    "prior_mae": [
+      0.013862672573537793,
+      0.11803970928303897,
+      0.08657713097090891
+    ],
+    "prior_bias": [
+      -0.009322194835618802,
+      -0.03515173996765952,
+      0.04758415290143603
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.049041748046875,
+    "outside_envelope_fraction": 0.3634796142578125,
+    "offline_oracle_mae": 0.0046001538769360195,
+    "offline_oracle_mse": 0.0001099004147192531
+  },
+  {
+    "case_id": "development_000_a0_b1_gradient_None",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.013862672573537793,
+      0.11803970928303897,
+      0.08657713097090891
+    ],
+    "prior_bias": [
+      -0.009322194835618802,
+      -0.03515173996765952,
+      0.04758415290143603
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.049041748046875,
+    "outside_envelope_fraction": 0.3634796142578125,
+    "offline_oracle_mae": 0.0046001538769360195,
+    "offline_oracle_mse": 0.0001099004147192531
+  },
+  {
+    "case_id": "development_000_a0_b1_regions_None",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "A_original",
+    "prior_mae": [
+      0.019591944795251948,
+      0.1418172489253493,
+      0.10671056229477927
+    ],
+    "prior_bias": [
+      -0.004777709472023162,
+      -0.11491863971230032,
+      0.03751939598680565
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0610504150390625,
+    "outside_envelope_fraction": 0.1931304931640625,
+    "offline_oracle_mae": 0.00822169270509221,
+    "offline_oracle_mse": 0.0010581725539648942
+  },
+  {
+    "case_id": "development_000_a0_b1_regions_None",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "global_refit",
+    "prior_mae": [
+      0.02321360303005804,
+      0.13756434975732645,
+      0.0992895987983502
+    ],
+    "prior_bias": [
+      -0.015723818647643384,
+      -0.07177665327105842,
+      0.04830479398788157
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.1090087890625,
+    "outside_envelope_fraction": 0.4026641845703125,
+    "offline_oracle_mae": 0.01214211252113273,
+    "offline_oracle_mse": 0.001188833685987273
+  },
+  {
+    "case_id": "development_000_a0_b1_regions_None",
+    "scene_id": "development_000",
+    "group_id": "procedural_original_20271101",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.02321360303005804,
+      0.13756434975732645,
+      0.0992895987983502
+    ],
+    "prior_bias": [
+      -0.015723818647643384,
+      -0.07177665327105842,
+      0.04830479398788157
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.1090087890625,
+    "outside_envelope_fraction": 0.4026641845703125,
+    "offline_oracle_mae": 0.01214211252113273,
+    "offline_oracle_mse": 0.001188833685987273
+  },
+  {
+    "case_id": "development_001_a0_b1_uniform_1.0",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "A_original",
+    "prior_mae": [
+      0.0,
+      0.3292415220564635,
+      0.038600597759312905
+    ],
+    "prior_bias": [
+      0.0,
+      0.3292415220564635,
+      0.038600597759312905
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_001_a0_b1_uniform_1.0",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "global_refit",
+    "prior_mae": [
+      0.0,
+      0.34435290966621324,
+      0.02684952040486621
+    ],
+    "prior_bias": [
+      0.0,
+      0.34435290966621324,
+      0.02684952040486621
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_001_a0_b1_uniform_1.0",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.0,
+      0.34435290966621324,
+      0.02684952040486621
+    ],
+    "prior_bias": [
+      0.0,
+      0.34435290966621324,
+      0.02684952040486621
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_001_a0_b1_uniform_0.6",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "A_original",
+    "prior_mae": [
+      0.022265128126491618,
+      0.031174765485502576,
+      0.042249370379977336
+    ],
+    "prior_bias": [
+      0.022265128126491618,
+      -0.020030949702686485,
+      -0.01739592543708568
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0643463134765625,
+    "offline_oracle_mae": 0.0009423526848877373,
+    "offline_oracle_mse": 1.8108284424029098e-05
+  },
+  {
+    "case_id": "development_001_a0_b1_uniform_0.6",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "global_refit",
+    "prior_mae": [
+      0.0010208017142758763,
+      0.01561938641634697,
+      0.03361782020647297
+    ],
+    "prior_bias": [
+      0.0010208017142758763,
+      0.01561938641634697,
+      0.009581151120528375
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.5618896484375,
+    "offline_oracle_mae": 0.000571330655930069,
+    "offline_oracle_mse": 6.040499665875451e-07
+  },
+  {
+    "case_id": "development_001_a0_b1_uniform_0.6",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.0010208017142758763,
+      0.01561938641634697,
+      0.03361782020647297
+    ],
+    "prior_bias": [
+      0.0010208017142758763,
+      0.01561938641634697,
+      0.009581151120528375
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.5618896484375,
+    "offline_oracle_mae": 0.000571330655930069,
+    "offline_oracle_mse": 6.040499665875451e-07
+  },
+  {
+    "case_id": "development_001_a0_b1_gradient_None",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "A_original",
+    "prior_mae": [
+      0.033557737198350424,
+      0.12642314259665,
+      0.08485151993926365
+    ],
+    "prior_bias": [
+      0.024261788513911142,
+      0.0418136654443515,
+      0.015312966692647478
+    ],
+    "joint_high_fraction": 0.0679168701171875,
+    "joint_low_fraction": 0.0345916748046875,
+    "outside_envelope_fraction": 0.38818359375,
+    "offline_oracle_mae": 0.007655127951920804,
+    "offline_oracle_mse": 0.0002235471919861659
+  },
+  {
+    "case_id": "development_001_a0_b1_gradient_None",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "global_refit",
+    "prior_mae": [
+      0.012013647228542368,
+      0.1398201634074212,
+      0.08149106520943405
+    ],
+    "prior_bias": [
+      -0.005048394188889915,
+      0.06473651154828985,
+      0.030188088929094192
+    ],
+    "joint_high_fraction": 0.00146484375,
+    "joint_low_fraction": 0.027374267578125,
+    "outside_envelope_fraction": 0.41278076171875,
+    "offline_oracle_mae": 0.004845455145414235,
+    "offline_oracle_mse": 0.000103131931126966
+  },
+  {
+    "case_id": "development_001_a0_b1_gradient_None",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.012013647228542368,
+      0.1398201634074212,
+      0.08149106520943405
+    ],
+    "prior_bias": [
+      -0.005048394188889915,
+      0.06473651154828985,
+      0.030188088929094192
+    ],
+    "joint_high_fraction": 0.00146484375,
+    "joint_low_fraction": 0.027374267578125,
+    "outside_envelope_fraction": 0.41278076171875,
+    "offline_oracle_mae": 0.004845455145414235,
+    "offline_oracle_mse": 0.000103131931126966
+  },
+  {
+    "case_id": "development_001_a0_b1_regions_None",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "A_original",
+    "prior_mae": [
+      0.016231423201020334,
+      0.14509425731876036,
+      0.08996584717533551
+    ],
+    "prior_bias": [
+      0.0017617480485796477,
+      -0.0019614640254985716,
+      0.020813243693282857
+    ],
+    "joint_high_fraction": 0.000244140625,
+    "joint_low_fraction": 0.042938232421875,
+    "outside_envelope_fraction": 0.3983917236328125,
+    "offline_oracle_mae": 0.006894966129948443,
+    "offline_oracle_mse": 0.0005063016291776848
+  },
+  {
+    "case_id": "development_001_a0_b1_regions_None",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "global_refit",
+    "prior_mae": [
+      0.018318915764780286,
+      0.1554579427400995,
+      0.08450656765103304
+    ],
+    "prior_bias": [
+      -0.009485014510232759,
+      0.02547410335012046,
+      0.031077779204679246
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.07940673828125,
+    "outside_envelope_fraction": 0.5782623291015625,
+    "offline_oracle_mae": 0.009599840270993809,
+    "offline_oracle_mse": 0.0006890677575073413
+  },
+  {
+    "case_id": "development_001_a0_b1_regions_None",
+    "scene_id": "development_001",
+    "group_id": "procedural_original_20271102",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.018318915764780286,
+      0.1554579427400995,
+      0.08450656765103304
+    ],
+    "prior_bias": [
+      -0.009485014510232759,
+      0.02547410335012046,
+      0.031077779204679246
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.07940673828125,
+    "outside_envelope_fraction": 0.5782623291015625,
+    "offline_oracle_mae": 0.009599840270993809,
+    "offline_oracle_mse": 0.0006890677575073413
+  },
+  {
+    "case_id": "development_002_a0_b1_uniform_1.0",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "A_original",
+    "prior_mae": [
+      0.004223252211555199,
+      0.1755939168454006,
+      0.02180672207623502
+    ],
+    "prior_bias": [
+      0.004223252211555199,
+      0.1755939168454006,
+      0.02180672207623502
+    ],
+    "joint_high_fraction": 0.02288818359375,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.322723388671875,
+    "offline_oracle_mae": 0.003558202734747077,
+    "offline_oracle_mse": 7.550559002430177e-05
+  },
+  {
+    "case_id": "development_002_a0_b1_uniform_1.0",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "global_refit",
+    "prior_mae": [
+      0.00010271100111946922,
+      0.2671093635674424,
+      0.011994455189068276
+    ],
+    "prior_bias": [
+      0.00010271100111946922,
+      0.2671093635674424,
+      0.011994455189068276
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.084625244140625,
+    "offline_oracle_mae": 0.00010271100111946922,
+    "offline_oracle_mse": 3.7519431937958126e-07
+  },
+  {
+    "case_id": "development_002_a0_b1_uniform_1.0",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.00010271100111946922,
+      0.2671093635674424,
+      0.011994455189068276
+    ],
+    "prior_bias": [
+      0.00010271100111946922,
+      0.2671093635674424,
+      0.011994455189068276
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.084625244140625,
+    "offline_oracle_mae": 0.00010271100111946922,
+    "offline_oracle_mse": 3.7519431937958126e-07
+  },
+  {
+    "case_id": "development_002_a0_b1_uniform_0.6",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "A_original",
+    "prior_mae": [
+      0.030731189347079635,
+      0.056222348215669626,
+      0.16408599440632088
+    ],
+    "prior_bias": [
+      0.030731189347079635,
+      -0.056222348215669626,
+      -0.16408599440632088
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_002_a0_b1_uniform_0.6",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "global_refit",
+    "prior_mae": [
+      0.002824791978127905,
+      0.04518753434786049,
+      0.18106552778277774
+    ],
+    "prior_bias": [
+      0.002824791978127905,
+      -0.04518753434786049,
+      -0.18106552778277774
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_002_a0_b1_uniform_0.6",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.002824791978127905,
+      0.04518753434786049,
+      0.18106552778277774
+    ],
+    "prior_bias": [
+      0.002824791978127905,
+      -0.04518753434786049,
+      -0.18106552778277774
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_002_a0_b1_gradient_None",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "A_original",
+    "prior_mae": [
+      0.0483141746004776,
+      0.11328388250922217,
+      0.16077795855233035
+    ],
+    "prior_bias": [
+      0.04410313329105975,
+      -0.03544145276418931,
+      -0.15487232828377273
+    ],
+    "joint_high_fraction": 0.02587890625,
+    "joint_low_fraction": 0.02734375,
+    "outside_envelope_fraction": 0.1537933349609375,
+    "offline_oracle_mae": 0.0037627071853307825,
+    "offline_oracle_mse": 0.00013160278652304388
+  },
+  {
+    "case_id": "development_002_a0_b1_gradient_None",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "global_refit",
+    "prior_mae": [
+      0.020051183499617764,
+      0.1330815355663617,
+      0.16474836424856676
+    ],
+    "prior_bias": [
+      0.01503284238674496,
+      0.0010213566124548379,
+      -0.1617187551587449
+    ],
+    "joint_high_fraction": 0.0142059326171875,
+    "joint_low_fraction": 0.0234375,
+    "outside_envelope_fraction": 0.1789093017578125,
+    "offline_oracle_mae": 0.003283992851095263,
+    "offline_oracle_mse": 8.818855288042664e-05
+  },
+  {
+    "case_id": "development_002_a0_b1_gradient_None",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.020051183499617764,
+      0.1330815355663617,
+      0.16474836424856676
+    ],
+    "prior_bias": [
+      0.01503284238674496,
+      0.0010213566124548379,
+      -0.1617187551587449
+    ],
+    "joint_high_fraction": 0.0142059326171875,
+    "joint_low_fraction": 0.0234375,
+    "outside_envelope_fraction": 0.1789093017578125,
+    "offline_oracle_mae": 0.003283992851095263,
+    "offline_oracle_mse": 8.818855288042664e-05
+  },
+  {
+    "case_id": "development_002_a0_b1_regions_None",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "A_original",
+    "prior_mae": [
+      0.02587160403516009,
+      0.13691799238995372,
+      0.1627103158644161
+    ],
+    "prior_bias": [
+      0.015725132902275618,
+      -0.06688341725816827,
+      -0.15509054727479565
+    ],
+    "joint_high_fraction": 0.009307861328125,
+    "joint_low_fraction": 0.02862548828125,
+    "outside_envelope_fraction": 0.17999267578125,
+    "offline_oracle_mae": 0.006409738621414363,
+    "offline_oracle_mse": 0.0008246599886728637
+  },
+  {
+    "case_id": "development_002_a0_b1_regions_None",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "global_refit",
+    "prior_mae": [
+      0.024395034125291204,
+      0.14532733676043108,
+      0.1652639158518383
+    ],
+    "prior_bias": [
+      0.0026607868728660833,
+      -0.01681263337246719,
+      -0.15949270133627635
+    ],
+    "joint_high_fraction": 0.0070037841796875,
+    "joint_low_fraction": 0.0921783447265625,
+    "outside_envelope_fraction": 0.2070770263671875,
+    "offline_oracle_mae": 0.011410898948611248,
+    "offline_oracle_mse": 0.0014868363831992627
+  },
+  {
+    "case_id": "development_002_a0_b1_regions_None",
+    "scene_id": "development_002",
+    "group_id": "procedural_original_20271103",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.024395034125291204,
+      0.14532733676043108,
+      0.1652639158518383
+    ],
+    "prior_bias": [
+      0.0026607868728660833,
+      -0.01681263337246719,
+      -0.15949270133627635
+    ],
+    "joint_high_fraction": 0.0070037841796875,
+    "joint_low_fraction": 0.0921783447265625,
+    "outside_envelope_fraction": 0.2070770263671875,
+    "offline_oracle_mae": 0.011410898948611248,
+    "offline_oracle_mse": 0.0014868363831992627
+  },
+  {
+    "case_id": "development_003_a0_b1_uniform_1.0",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "A_original",
+    "prior_mae": [
+      0.017134413499065325,
+      0.11732101568384223,
+      0.15601589332635513
+    ],
+    "prior_bias": [
+      0.017134413499065325,
+      0.11732101568384223,
+      0.15601589332635513
+    ],
+    "joint_high_fraction": 0.2436065673828125,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.6172027587890625,
+    "offline_oracle_mae": 0.016456311294377322,
+    "offline_oracle_mse": 0.0006979139764622664
+  },
+  {
+    "case_id": "development_003_a0_b1_uniform_1.0",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "global_refit",
+    "prior_mae": [
+      0.004355228362015071,
+      0.09839446450496325,
+      0.15146179082857714
+    ],
+    "prior_bias": [
+      0.004355228362015071,
+      0.09839446450496325,
+      0.15146179082857714
+    ],
+    "joint_high_fraction": 0.043304443359375,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.3515625,
+    "offline_oracle_mae": 0.00321385449589606,
+    "offline_oracle_mse": 0.00011315028629090134
+  },
+  {
+    "case_id": "development_003_a0_b1_uniform_1.0",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.004355228362015071,
+      0.09839446450496325,
+      0.15146179082857714
+    ],
+    "prior_bias": [
+      0.004355228362015071,
+      0.09839446450496325,
+      0.15146179082857714
+    ],
+    "joint_high_fraction": 0.043304443359375,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.3515625,
+    "offline_oracle_mae": 0.00321385449589606,
+    "offline_oracle_mse": 0.00011315028629090134
+  },
+  {
+    "case_id": "development_003_a0_b1_uniform_0.6",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "A_original",
+    "prior_mae": [
+      0.045042352624477644,
+      0.1785112313045829,
+      0.03437473203712216
+    ],
+    "prior_bias": [
+      0.045042352624477644,
+      -0.1785112313045829,
+      -0.025398879803560703
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_003_a0_b1_uniform_0.6",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "global_refit",
+    "prior_mae": [
+      0.007345998346409033,
+      0.13233125446873828,
+      0.02176032468514677
+    ],
+    "prior_bias": [
+      0.007345998346409033,
+      -0.13233125446873828,
+      -0.0002167104016734811
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_003_a0_b1_uniform_0.6",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.007345998346409033,
+      0.13233125446873828,
+      0.02176032468514677
+    ],
+    "prior_bias": [
+      0.007345998346409033,
+      -0.13233125446873828,
+      -0.0002167104016734811
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "case_id": "development_003_a0_b1_gradient_None",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "A_original",
+    "prior_mae": [
+      0.05365398067965543,
+      0.16242628991756192,
+      0.09829830614597768
+    ],
+    "prior_bias": [
+      0.04975487650312971,
+      -0.14404743562261046,
+      0.012338291059847961
+    ],
+    "joint_high_fraction": 0.05377197265625,
+    "joint_low_fraction": 0.02734375,
+    "outside_envelope_fraction": 0.2349700927734375,
+    "offline_oracle_mae": 0.005545362363193362,
+    "offline_oracle_mse": 0.00017915306700700616
+  },
+  {
+    "case_id": "development_003_a0_b1_gradient_None",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "global_refit",
+    "prior_mae": [
+      0.025413212745775127,
+      0.14720588814134317,
+      0.09363196318247446
+    ],
+    "prior_bias": [
+      0.02143105049310634,
+      -0.10150418990485832,
+      0.030244824333180986
+    ],
+    "joint_high_fraction": 0.092010498046875,
+    "joint_low_fraction": 0.0234375,
+    "outside_envelope_fraction": 0.3747406005859375,
+    "offline_oracle_mae": 0.008545311977684378,
+    "offline_oracle_mse": 0.0002679571934188675
+  },
+  {
+    "case_id": "development_003_a0_b1_gradient_None",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.025413212745775127,
+      0.14720588814134317,
+      0.09363196318247446
+    ],
+    "prior_bias": [
+      0.02143105049310634,
+      -0.10150418990485832,
+      0.030244824333180986
+    ],
+    "joint_high_fraction": 0.092010498046875,
+    "joint_low_fraction": 0.0234375,
+    "outside_envelope_fraction": 0.3747406005859375,
+    "offline_oracle_mae": 0.008545311977684378,
+    "offline_oracle_mse": 0.0002679571934188675
+  },
+  {
+    "case_id": "development_003_a0_b1_regions_None",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "A_original",
+    "prior_mae": [
+      0.038013280103996294,
+      0.1820160700381166,
+      0.10531492138454723
+    ],
+    "prior_bias": [
+      0.028865252170589883,
+      -0.1579845288388242,
+      0.02167200633232369
+    ],
+    "joint_high_fraction": 0.0744171142578125,
+    "joint_low_fraction": 0.0261383056640625,
+    "outside_envelope_fraction": 0.295745849609375,
+    "offline_oracle_mae": 0.009075081265450535,
+    "offline_oracle_mse": 0.0006628465192722982
+  },
+  {
+    "case_id": "development_003_a0_b1_regions_None",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "global_refit",
+    "prior_mae": [
+      0.029924430256983214,
+      0.16870206012890776,
+      0.09989612044159912
+    ],
+    "prior_bias": [
+      0.010894973665585894,
+      -0.12759984313856876,
+      0.04142089989682063
+    ],
+    "joint_high_fraction": 0.085357666015625,
+    "joint_low_fraction": 0.0736083984375,
+    "outside_envelope_fraction": 0.3675384521484375,
+    "offline_oracle_mae": 0.012685251505672568,
+    "offline_oracle_mse": 0.0008176575662076751
+  },
+  {
+    "case_id": "development_003_a0_b1_regions_None",
+    "scene_id": "development_003",
+    "group_id": "procedural_original_20271104",
+    "version": "C_semantic",
+    "prior_mae": [
+      0.029924430256983214,
+      0.16870206012890776,
+      0.09989612044159912
+    ],
+    "prior_bias": [
+      0.010894973665585894,
+      -0.12759984313856876,
+      0.04142089989682063
+    ],
+    "joint_high_fraction": 0.085357666015625,
+    "joint_low_fraction": 0.0736083984375,
+    "outside_envelope_fraction": 0.3675384521484375,
+    "offline_oracle_mae": 0.012685251505672568,
+    "offline_oracle_mse": 0.0008176575662076751
+  }
+]

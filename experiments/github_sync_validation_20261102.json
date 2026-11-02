@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "executed_on": "existing cloud instance CPU, under /mnt",
+  "source_sha256": "7917eee3497b614932f05f0ec6030266a2b07f39e52c55e52d89c5fa54b30941",
+  "preview_created_no_worktree": true,
+  "new_worktree_received_expected_commit": true,
+  "original_HEAD_status_and_all_three_protected_files_unchanged": true,
+  "rejected": [
+    "existing_destination",
+    "outside_mnt",
+    "wrong_remote_commit",
+    "overlapping_directory"
+  ],
+  "training_or_new_confirmation": false,
+  "contracts_log": "RGB 16 218273\nRGB 32 867377\nCorrector 218358\nPASS: identity initialization, finite gradients, bounded coefficients, own-cue isolation, monotonic response, parameter count\n"
+}

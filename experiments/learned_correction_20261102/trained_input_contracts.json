@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "weights_sha256": "ad41409bd7a81486e27d4a83d65b156f39ba90449b54649f34a67b1055466871",
+  "calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "image_sha256": "b1461fc55b3daea6ea671ab6d5b2e686ea5a102e3bc0dd69f3ce190fde5433f7",
+  "audit_script_sha256": "9907e8bc4b4a6c2aa2efac193689a6df6b259cfec6d341266550b433e0a8edc9",
+  "forward_signature": "(features)",
+  "own_candidate_mean_response": 0.06580161303281784,
+  "unrelated_candidates_exactly_unchanged": true,
+  "batch_member_max_difference": 4.172325134277344e-07,
+  "fusion_weights_separate_frozen_constants": [
+    0.9168409571701379,
+    0.05351137779337362,
+    0.02964766503648853
+  ],
+  "scope": "Actual trained model dependency contracts, not proof of causal necessity or natural-image accuracy"
+}

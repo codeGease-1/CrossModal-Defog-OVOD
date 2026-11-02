@@ -1,0 +1,13 @@
+{
+  "targeted_t06_pixel_weighted_agreement": 0.49479071929505447,
+  "t06_confident_fraction": 0.6787643432617188,
+  "proxy_stability_screen_passed": false,
+  "parameters_total": 3752694,
+  "parameters_trainable": 0,
+  "median_seconds": 0.20005910000327276,
+  "p95_seconds": 0.2272880749944306,
+  "warmup_calls": 1,
+  "timing": "CPU, RGB tensor conversion + normalize/resize 512 + model + resize 256 + aggregation; no disk read",
+  "limitations": "Agreement with clear-input prediction is stability, NOT semantic accuracy; no reliable white-roof/water/vegetation annotations. No inference gets clear RGB.",
+  "training_decision": "No full training authorized. If screen fails, retain failure evidence before any full training."
+}

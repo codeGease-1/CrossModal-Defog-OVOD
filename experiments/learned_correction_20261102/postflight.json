@@ -1,0 +1,57 @@
+{
+  "old_latest_checked": 18,
+  "old_latest_changed": [],
+  "old_head": "1672fb1d9921b21f13408b17991c865333d44abe",
+  "head": "1672fb1d9921b21f13408b17991c865333d44abe",
+  "git_status": "",
+  "all_nine_frozen_checkpoints_unchanged": true,
+  "fusion_and_frozen_source_unchanged": true,
+  "GPU_compute_processes": "",
+  "new_latest_retained": {
+    "rgb32_seed44": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed44/latest.pth",
+      "sha256": "0ac4ade5094b1f71d41336de0be134756000697cd0776cc9387707aaffdb2096",
+      "bytes": 10468509
+    },
+    "direct_same16_seed43": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed43/latest.pth",
+      "sha256": "10c9d9d2bb91716a1a772f039dd8850656a5840027116588f97b5eaa2eabe881",
+      "bytes": 2689629
+    },
+    "corrector16_seed42": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed42/latest.pth",
+      "sha256": "d6623dacab02b652e2efa6a1a4a284df2d6f8902288a08e52b30f9cf91e4755e",
+      "bytes": 2680541
+    },
+    "corrector16_seed43": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed43/latest.pth",
+      "sha256": "ab3829d7c954bbddda87a0076eee2941746cb9e54ad52285f03aec39d99008b8",
+      "bytes": 2680541
+    },
+    "direct_same16_seed44": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed44/latest.pth",
+      "sha256": "f7570bc3ccb87241f2aa0581c5a8cb403eb2c245297b18df8d60c7a1d3cafbb3",
+      "bytes": 2689629
+    },
+    "corrector16_seed44": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed44/latest.pth",
+      "sha256": "a45696b1fad24c10ebbc52b1fcd9201ef9609713ac4e29aff267a335fe862ecc",
+      "bytes": 2680541
+    },
+    "direct_same16_seed42": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed42/latest.pth",
+      "sha256": "05355aa47c88dc21adfc4776d4759b4dbcee09d877081a504af1957a4aca8059",
+      "bytes": 2689629
+    },
+    "rgb32_seed43": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed43/latest.pth",
+      "sha256": "a796e9d76d0233adffff171dea6503f6f699dd9e25938bb1e958a1f30ef93b66",
+      "bytes": 10468509
+    },
+    "rgb32_seed42": {
+      "path": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed42/latest.pth",
+      "sha256": "d2199a5facbe632cecc0d7df7b5820c5184f1978479906ed0c2159e59c6188be",
+      "bytes": 10468509
+    }
+  }
+}

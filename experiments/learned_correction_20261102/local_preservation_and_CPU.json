@@ -1,0 +1,34 @@
+{
+  "preexisting_unchanged": 86,
+  "append_only_prefix_preserved": [
+    ".gitignore"
+  ],
+  "changed_or_missing": [],
+  "CPU_prediction": {
+    "H": {
+      "shape": [
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "range": [
+        0.05762485787272453,
+        0.6328558921813965
+      ]
+    },
+    "candidates": {
+      "shape": [
+        3,
+        256,
+        256
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "range": [
+        0.02343849278986454,
+        0.7357050180435181
+      ]
+    }
+  }
+}

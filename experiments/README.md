@@ -1,5 +1,7 @@
 # 精选实验归档
 
+2026-11-02 精选发布：[语义 CPU 诊断](semantic_calibration_20261101/README.md)、[物理离线复核](physical_feasibility_20261102/README.md)、[内容 CPU 标定](content_calibration_20261102/README.md)、[V100 神经校正](learned_correction_20261102/README.md)。本次实际 Git 范围及 blob 哈希见 `research_delivery_20261102.json`；原始完整 manifest 保留磁盘，可能包含未发布产物。权重、图片、缓存、备份与重复快照不入 Git。后续源码编辑及实验全部在 `/mnt`；[安全同步说明](../docs/guides/github_sync.md)。下文旧归档叙述按历史记录保留，当前权重发布策略以上述精简政策为准。
+
 2026-11-01 云端精简发布：实验权重和图片已停止 Git 跟踪，仍保留在本地/云端磁盘；Git 保留代码、配置、指标表、日志和报告。历史完整哈希清单包含未随 Git 发布的文件，当前精简清单见 experiments/git_archive_20261101.json。历史提交中的大文件没有改写；后续首次获取建议使用浅克隆。
 
 本目录按明确的文件清单纳入 Git，当前归档 `spatial_v3_run01` 的 5 轮对照和累计 50 轮续训结果，约 66 MB。新增实验仍默认忽略，需要逐次评估后加入清单。

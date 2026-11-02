@@ -1,0 +1,2062 @@
+[
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_000_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_000_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_000_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_000_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_000_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_000_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_000_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_000_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_001_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_001_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_001_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_001_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.4,
+        0.6
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_001_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_001_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_001_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_001_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.4,
+        0.6
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_002_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_002_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_002_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_002_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_002_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_002_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_002_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_002_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_003_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_003_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_003_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_003_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.6,
+        0.75,
+        0.4
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_003_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_003_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_003_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "same_protocol",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_003_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.6,
+        0.75,
+        0.4
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_000_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_000_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_000_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_000_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_000_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_000_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_000_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_000_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_001_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_001_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_001_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_001_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.4,
+        0.6
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_001_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_001_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_001_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_001_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.4,
+        0.6
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_002_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_002_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_002_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_002_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_002_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_002_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_002_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_002_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_003_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_003_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_003_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_003_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.6,
+        0.75,
+        0.4
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_003_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_003_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_003_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "display_domain",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_003_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.6,
+        0.75,
+        0.4
+      ]
+    },
+    "domain": "display_rgb",
+    "A": [
+      0.75,
+      0.8,
+      0.9
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_000_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_000_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_000_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_000_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_001_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_001_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_001_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_001_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.4,
+        0.6
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_002_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_002_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_002_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_002_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.4,
+        0.9
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "development_003_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "development_003_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "development_003_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  },
+  {
+    "condition": "unseen_A",
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "development_003_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.6,
+        0.75,
+        0.4
+      ]
+    },
+    "domain": "linear_srgb",
+    "A": [
+      0.55,
+      0.65,
+      0.75
+    ]
+  }
+]

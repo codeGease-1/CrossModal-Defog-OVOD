@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "A_original": {
+      "n_cases": 24,
+      "global_mae": 0.026908770463404796,
+      "pixel_mae": 0.02693167779504894,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": null,
+      "clear_response": 0.029419322919377683
+    },
+    "C_semantic": {
+      "n_cases": 24,
+      "global_mae": 0.010137729446382951,
+      "pixel_mae": 0.010172423141610815,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": null,
+      "clear_response": 0.009389764062253456
+    },
+    "global_refit": {
+      "n_cases": 24,
+      "global_mae": 0.010137729446382951,
+      "pixel_mae": 0.010172423141610815,
+      "same_scene_rank": 1.0,
+      "cross_condition_cross_scene_rank": 1.0,
+      "region_spearman": null,
+      "clear_response": 0.009389764062253456
+    }
+  },
+  "scope": "6 previously exposed real RGB backgrounds, known added synthetic t, uniform haze only; no geography generalization, no natural atmospheric t truth, no semantic truth"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "corrector16_seed42",
+    "path": "corrector16_seed42_inference.pth",
+    "sha256": "ded409efee6efede7593292517e61e52259c948012c3b0a518c123a6f3dcbbe2",
+    "bytes": 893994,
+    "checkpoint_epoch_selected_on_development": 18
+  },
+  {
+    "name": "corrector16_seed43",
+    "path": "corrector16_seed43_inference.pth",
+    "sha256": "39b9ed41d74fe31972549bb733680ac27e135f5fe498d2b6365bfbc71ff1e265",
+    "bytes": 893994,
+    "checkpoint_epoch_selected_on_development": 18
+  },
+  {
+    "name": "corrector16_seed44",
+    "path": "corrector16_seed44_inference.pth",
+    "sha256": "91c3dab34a05e813c2ce4accde10b810aa6de0bc6775d90f2cf65d9234b89d41",
+    "bytes": 893994,
+    "checkpoint_epoch_selected_on_development": 17
+  },
+  {
+    "name": "direct_same16_seed42",
+    "path": "direct_same16_seed42_inference.pth",
+    "sha256": "111cc3d5382737ccd948f678bdbc80c9cbb0d10e7489f49822b2d98e48220b69",
+    "bytes": 897202,
+    "checkpoint_epoch_selected_on_development": 17
+  },
+  {
+    "name": "direct_same16_seed43",
+    "path": "direct_same16_seed43_inference.pth",
+    "sha256": "184beef1dcbeaeed5553c25ba97901e1c7d79b33df6a9a2b4bfea48f1665c4fa",
+    "bytes": 897202,
+    "checkpoint_epoch_selected_on_development": 15
+  },
+  {
+    "name": "direct_same16_seed44",
+    "path": "direct_same16_seed44_inference.pth",
+    "sha256": "3f359f29609216775de96eff2b1e9b1195b75e5fd71c911efd28eced293bc8b2",
+    "bytes": 897202,
+    "checkpoint_epoch_selected_on_development": 17
+  },
+  {
+    "name": "rgb32_seed42",
+    "path": "rgb32_seed42_inference.pth",
+    "sha256": "d0c65bbe447afbaae4eb7e1f100e0a9f7ac5a604cd7f59d4b0afcdd2636e2a2d",
+    "bytes": 3489810,
+    "checkpoint_epoch_selected_on_development": 15
+  },
+  {
+    "name": "rgb32_seed43",
+    "path": "rgb32_seed43_inference.pth",
+    "sha256": "3d77dc9c18e10972a038e922a10fa83adb0406c6b68201b78d3d4c1b69002205",
+    "bytes": 3489810,
+    "checkpoint_epoch_selected_on_development": 18
+  },
+  {
+    "name": "rgb32_seed44",
+    "path": "rgb32_seed44_inference.pth",
+    "sha256": "41267ee1cbd97591c221fa89d717a7b3edc367205d1845e78347e9ea019044cd",
+    "bytes": 3489810,
+    "checkpoint_epoch_selected_on_development": 17
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "script_sha256": "585f9dcf6dd36908a91ab446abd593b88b4232ae9c75e82bc7f3ad2c4b7a1e71",
+  "run_protocol_sha256": "60b281d66d991a994356a9dd5465dfb21d5aeab8db359250315b51cfd8faa600",
+  "selected_by": "development, no confirmation tuning",
+  "elapsed_wall_seconds": 20.659668751060963,
+  "GPU_memory_scope": "PyTorch allocated/reserved; framework/driver memory outside allocator not included"
+}

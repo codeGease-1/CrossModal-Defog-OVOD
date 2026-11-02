@@ -1,0 +1,24 @@
+{
+  "git_head": "1672fb1d9921b21f13408b17991c865333d44abe",
+  "sources": {
+    "README.md": "2681d7d8af4359d6bd949300cbbdad8d0a20508368e3766a113cde1bf16339dd",
+    ".gitignore": "12ce7133f227e0f7bec6b8e5657f120c3fd6265a554ede30c9cfb1d997b1a954",
+    "requirements-semantic.txt": "0bc276f2dde524385cf654591f23ab486a14a9330682081e2090f57ff5f9a92a",
+    "configs/semantic_calibration.json": "45012c65ea4ac6e91e8e6952f77f459efcf9e74757292120e09228c6e43c654a",
+    "src/models/haze_density/semantic_prior.py": "9eeab78a2a1ff09768ef77a31939e1a49e98d8fac2b2f28bfa222047151a0ad5",
+    "docs/语义辅助校正阶段诊断报告.md": "0fac9c627c66c930ada1eb3bdd13e2ff7eb67c899acde6a5cce4c93535aa804c",
+    "scripts/semantic/benchmark_cpu.py": "c7fbfd193d973802360d8962e662595900a6c1060dc77c221cbfba14b6a97d02",
+    "scripts/semantic/cloud_audit.py": "a52e283eccc374e44722ce9ec455dd9acd3fcc9a450834811fac8d2f472d6a5d",
+    "scripts/semantic/extra_water_probe.py": "683dfd0c9d2750a2af4d0e7ae821036ebe4a3b5e7cebfa9a51728a494d2ac54b",
+    "scripts/semantic/finalize.py": "15fee5c59d3bf02e29417622a984b91d3507f8a4f1bf7f04aea704b6f0cf6655",
+    "scripts/semantic/frozen_semantics.py": "f40d0614f952fcf01eb1032b7a358430495247c31ee6d03ed0bf1fde95b64038",
+    "scripts/semantic/real_reference_diagnostics.py": "cb2b7ae51b7832664fe3833c48cc7cb0102866b128a71e351b8ea318d7519d4a",
+    "scripts/semantic/render_evidence.py": "86061d97f4489a613a104206dc0d8df3eb314cffc98705d10ee8c71ea91354e9",
+    "scripts/semantic/run_diagnostics.py": "4b95d020db409c8347160b98eabc44f003969cda10ff5aca125e27daf9e2e33d",
+    "scripts/semantic/test_semantic_prior.py": "cc79439ffa0951df59ae799d65a4904633ea94a8fd58e64eed8386e3864e8285"
+  },
+  "historical_code_and_configs_unchanged": true,
+  "expected_historical_document_changes": [
+    "README.md"
+  ]
+}

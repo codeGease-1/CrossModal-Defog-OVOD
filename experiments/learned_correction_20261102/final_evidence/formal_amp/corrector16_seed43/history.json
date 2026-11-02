@@ -1,0 +1,236 @@
+[
+  {
+    "epoch": 1,
+    "step": 192,
+    "train_loss": 0.006900984312475582,
+    "development_loss": 0.003935352831831551,
+    "development_mae_per_output": [
+      0.02115217037498951,
+      0.05606580898165703,
+      0.064258873462677
+    ],
+    "seconds": 11.569329719990492,
+    "train_peak_allocated_bytes": 727612928
+  },
+  {
+    "epoch": 2,
+    "step": 384,
+    "train_loss": 0.003357471690227006,
+    "development_loss": 0.0030976904836279573,
+    "development_mae_per_output": [
+      0.01978914625942707,
+      0.04996242746710777,
+      0.056296516209840775
+    ],
+    "seconds": 11.85000729560852,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 3,
+    "step": 576,
+    "train_loss": 0.0029351002819263763,
+    "development_loss": 0.0028074412530258996,
+    "development_mae_per_output": [
+      0.01957227848470211,
+      0.04416370391845703,
+      0.053573884069919586
+    ],
+    "seconds": 11.875016737729311,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 4,
+    "step": 768,
+    "train_loss": 0.0027487463630677667,
+    "development_loss": 0.002656667809787905,
+    "development_mae_per_output": [
+      0.01723361760377884,
+      0.0451228991150856,
+      0.052384115755558014
+    ],
+    "seconds": 12.476333785802126,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 5,
+    "step": 960,
+    "train_loss": 0.0025948214879463194,
+    "development_loss": 0.0025586756910342956,
+    "development_mae_per_output": [
+      0.017351679503917694,
+      0.042823828756809235,
+      0.052796389907598495
+    ],
+    "seconds": 12.247413448989391,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 6,
+    "step": 1152,
+    "train_loss": 0.0024622059133131793,
+    "development_loss": 0.0025693753468658542,
+    "development_mae_per_output": [
+      0.018209900707006454,
+      0.04080202057957649,
+      0.053348444402217865
+    ],
+    "seconds": 12.134647436439991,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 7,
+    "step": 1344,
+    "train_loss": 0.0023753542482154444,
+    "development_loss": 0.0023563530176033964,
+    "development_mae_per_output": [
+      0.016591252759099007,
+      0.04053632542490959,
+      0.05179642140865326
+    ],
+    "seconds": 11.857557822018862,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 8,
+    "step": 1536,
+    "train_loss": 0.0023034770753535363,
+    "development_loss": 0.0021691138654205133,
+    "development_mae_per_output": [
+      0.015638429671525955,
+      0.03780502453446388,
+      0.05010594427585602
+    ],
+    "seconds": 12.255409643054008,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 9,
+    "step": 1728,
+    "train_loss": 0.0021608439292322146,
+    "development_loss": 0.002244531686301343,
+    "development_mae_per_output": [
+      0.01835283823311329,
+      0.03742242231965065,
+      0.04995095357298851
+    ],
+    "seconds": 12.48691425845027,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 10,
+    "step": 1920,
+    "train_loss": 0.0020688198386172494,
+    "development_loss": 0.002078200922369433,
+    "development_mae_per_output": [
+      0.015781519934535027,
+      0.038375336676836014,
+      0.04914020374417305
+    ],
+    "seconds": 12.120458666235209,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 11,
+    "step": 2112,
+    "train_loss": 0.0019495322018580434,
+    "development_loss": 0.001944776007803739,
+    "development_mae_per_output": [
+      0.014724723994731903,
+      0.035409945994615555,
+      0.04731643199920654
+    ],
+    "seconds": 11.841679014265537,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 12,
+    "step": 2304,
+    "train_loss": 0.0019632770175424716,
+    "development_loss": 0.0025636702030169545,
+    "development_mae_per_output": [
+      0.019161928445100784,
+      0.040913332253694534,
+      0.051671840250492096
+    ],
+    "seconds": 11.837620861828327,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 13,
+    "step": 2496,
+    "train_loss": 0.0019239064492163986,
+    "development_loss": 0.0019430099346209317,
+    "development_mae_per_output": [
+      0.0161102544516325,
+      0.035075489431619644,
+      0.046116381883621216
+    ],
+    "seconds": 11.61070866510272,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 14,
+    "step": 2688,
+    "train_loss": 0.0018723110985471674,
+    "development_loss": 0.0021201915114943404,
+    "development_mae_per_output": [
+      0.01756139099597931,
+      0.037194181233644485,
+      0.04875195398926735
+    ],
+    "seconds": 12.569581676274538,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 15,
+    "step": 2880,
+    "train_loss": 0.0019112865605469171,
+    "development_loss": 0.0017033411713782698,
+    "development_mae_per_output": [
+      0.01380852609872818,
+      0.03362375870347023,
+      0.044233597815036774
+    ],
+    "seconds": 12.053097631782293,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 16,
+    "step": 3072,
+    "train_loss": 0.0017119119432512282,
+    "development_loss": 0.0018026473790087039,
+    "development_mae_per_output": [
+      0.016480958089232445,
+      0.034521378576755524,
+      0.044809259474277496
+    ],
+    "seconds": 12.681768991053104,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 17,
+    "step": 3264,
+    "train_loss": 0.0016892488808177102,
+    "development_loss": 0.0016934911154748988,
+    "development_mae_per_output": [
+      0.01482823770493269,
+      0.03292565420269966,
+      0.04295184463262558
+    ],
+    "seconds": 11.941538661718369,
+    "train_peak_allocated_bytes": 717198848
+  },
+  {
+    "epoch": 18,
+    "step": 3456,
+    "train_loss": 0.001494009631339092,
+    "development_loss": 0.0016108828358483152,
+    "development_mae_per_output": [
+      0.014683999121189117,
+      0.032434672117233276,
+      0.040742188692092896
+    ],
+    "seconds": 11.786344904452562,
+    "train_peak_allocated_bytes": 717198848
+  }
+]

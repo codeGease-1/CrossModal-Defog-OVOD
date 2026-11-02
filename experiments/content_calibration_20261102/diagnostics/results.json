@@ -1,0 +1,247 @@
+{
+  "frozen_run_sha256": "b4f4909d186ec913c4615076e8933fc4f21ad9af1f5bb5ca23f140df33cf89a8",
+  "source_sha256": {
+    "scripts/content_calibration/diagnose_controls.py": "805ec09ce44179ebc6226963fb943a6d8669197f80f77442779e44bf3c53d1ec"
+  },
+  "physical_weight_equivalence": {
+    "max_soft_target_minus_H": 5.11194512928248e-07,
+    "effective_weights_min_max": [
+      1.0,
+      2.0
+    ],
+    "effective_weight_mean_D_C_K": [
+      1.6484497994684357,
+      1.0047970226129899,
+      1.0237992998132839
+    ],
+    "identity": "If q=b+(s-b)H exactly, H_MSE+lambda*response_MSE = (1+lambda*valid*(s-b)^2)*H_MSE.",
+    "implication": "Known J/A and independent H make this soft term signal-dependent sample weighting; no extra physical information is established. Weight-matched control required for future attribution."
+  },
+  "boundary_pooling": {
+    "global": {
+      "outside_amplitude_mean_given_outside": 0.027595487080554912,
+      "outside_amplitude_max": 0.4123591184616089
+    },
+    "content": {
+      "outside_amplitude_mean_given_outside": 0.026470629350263303,
+      "outside_amplitude_max": 0.4099399745464325
+    },
+    "content_physical": {
+      "outside_amplitude_mean_given_outside": 0.02451509862371585,
+      "outside_amplitude_max": 0.4077657461166382
+    }
+  },
+  "frozen_context_and_stress_diagnostics": {
+    "same_protocol": {
+      "global": {
+        "aligned": {
+          "pixel_mae": 0.029064551424323237,
+          "region_spearman": 0.9693845763170934,
+          "clear_response": 0.008227148410285379,
+          "offline_oracle_mae": 0.014380945750347183,
+          "offline_oracle_mse": 0.001446664214015033,
+          "joint_high_fraction": 0.05321502685546875,
+          "joint_low_fraction": 0.08880233764648438
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.029064551424323237,
+          "region_spearman": 0.9693845763170934,
+          "clear_response": 0.008227148410285379,
+          "offline_oracle_mae": 0.014380945750347183,
+          "offline_oracle_mse": 0.001446664214015033,
+          "joint_high_fraction": 0.05321502685546875,
+          "joint_low_fraction": 0.08880233764648438
+        }
+      },
+      "content": {
+        "aligned": {
+          "pixel_mae": 0.028003818303096478,
+          "region_spearman": 0.9693845763170934,
+          "clear_response": 0.007342465652549257,
+          "offline_oracle_mae": 0.014054123551716254,
+          "offline_oracle_mse": 0.0014440548067235666,
+          "joint_high_fraction": 0.0518341064453125,
+          "joint_low_fraction": 0.08816719055175781
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.030937775290913988,
+          "region_spearman": 0.9693845763170934,
+          "clear_response": 0.007261373124059722,
+          "offline_oracle_mae": 0.016934625700659504,
+          "offline_oracle_mse": 0.0017147846697052964,
+          "joint_high_fraction": 0.074615478515625,
+          "joint_low_fraction": 0.1041412353515625
+        }
+      },
+      "content_physical": {
+        "aligned": {
+          "pixel_mae": 0.026736703017705504,
+          "region_spearman": 0.9693845763170934,
+          "clear_response": 0.006251229120101454,
+          "offline_oracle_mae": 0.013403994647382352,
+          "offline_oracle_mse": 0.0014243200374107015,
+          "joint_high_fraction": 0.04368400573730469,
+          "joint_low_fraction": 0.08646774291992188
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.029189003577685863,
+          "region_spearman": 0.9693845763170934,
+          "clear_response": 0.006164314213895961,
+          "offline_oracle_mae": 0.015918600453670308,
+          "offline_oracle_mse": 0.001656665035172733,
+          "joint_high_fraction": 0.05865669250488281,
+          "joint_low_fraction": 0.10310745239257812
+        }
+      }
+    },
+    "display_domain": {
+      "global": {
+        "aligned": {
+          "pixel_mae": 0.15395343759872365,
+          "region_spearman": 0.9686266524888548,
+          "clear_response": 0.008227149577154647,
+          "offline_oracle_mae": 0.07137654533122087,
+          "offline_oracle_mse": 0.013289611461112353,
+          "joint_high_fraction": 0.022478103637695312,
+          "joint_low_fraction": 0.47379302978515625
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.15395343759872365,
+          "region_spearman": 0.9686266524888548,
+          "clear_response": 0.008227149577154647,
+          "offline_oracle_mae": 0.07137654533122087,
+          "offline_oracle_mse": 0.013289611461112353,
+          "joint_high_fraction": 0.022478103637695312,
+          "joint_low_fraction": 0.47379302978515625
+        }
+      },
+      "content": {
+        "aligned": {
+          "pixel_mae": 0.1549129880644425,
+          "region_spearman": 0.9686266524888548,
+          "clear_response": 0.0073424665838656145,
+          "offline_oracle_mae": 0.08076572595572605,
+          "offline_oracle_mse": 0.01543287091618023,
+          "joint_high_fraction": 0.018157958984375,
+          "joint_low_fraction": 0.5095901489257812
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.156779781804634,
+          "region_spearman": 0.9671108048323778,
+          "clear_response": 0.007261374522856356,
+          "offline_oracle_mae": 0.08281094288456477,
+          "offline_oracle_mse": 0.016775167176415327,
+          "joint_high_fraction": 0.020616531372070312,
+          "joint_low_fraction": 0.5008583068847656
+        }
+      },
+      "content_physical": {
+        "aligned": {
+          "pixel_mae": 0.15854560104286064,
+          "region_spearman": 0.9678687286606162,
+          "clear_response": 0.006251230280613473,
+          "offline_oracle_mae": 0.08031939434416017,
+          "offline_oracle_mse": 0.015380012319617616,
+          "joint_high_fraction": 0.013761520385742188,
+          "joint_low_fraction": 0.5086860656738281
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.1603190560684743,
+          "region_spearman": 0.9671108048323778,
+          "clear_response": 0.006164314914203661,
+          "offline_oracle_mae": 0.08233394093782533,
+          "offline_oracle_mse": 0.016727416635266373,
+          "joint_high_fraction": 0.015226364135742188,
+          "joint_low_fraction": 0.5000247955322266
+        }
+      }
+    },
+    "unseen_A": {
+      "global": {
+        "aligned": {
+          "pixel_mae": 0.08365985479680321,
+          "region_spearman": 0.9625632618629465,
+          "clear_response": 0.008227148410285379,
+          "offline_oracle_mae": 0.04993215725207342,
+          "offline_oracle_mse": 0.007664761255207655,
+          "joint_high_fraction": 0.0247955322265625,
+          "joint_low_fraction": 0.38506317138671875
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.08365985479680321,
+          "region_spearman": 0.9625632618629465,
+          "clear_response": 0.008227148410285379,
+          "offline_oracle_mae": 0.04993215725207342,
+          "offline_oracle_mse": 0.007664761255207655,
+          "joint_high_fraction": 0.0247955322265625,
+          "joint_low_fraction": 0.38506317138671875
+        }
+      },
+      "content": {
+        "aligned": {
+          "pixel_mae": 0.08419421651922762,
+          "region_spearman": 0.9655949571759006,
+          "clear_response": 0.007342465652549257,
+          "offline_oracle_mae": 0.05064541569810648,
+          "offline_oracle_mse": 0.007868581525370028,
+          "joint_high_fraction": 0.020954132080078125,
+          "joint_low_fraction": 0.38690948486328125
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.08629772253869392,
+          "region_spearman": 0.9701425001453319,
+          "clear_response": 0.007261373124059722,
+          "offline_oracle_mae": 0.0534248803616919,
+          "offline_oracle_mse": 0.008548711009779225,
+          "joint_high_fraction": 0.02979278564453125,
+          "joint_low_fraction": 0.3964385986328125
+        }
+      },
+      "content_physical": {
+        "aligned": {
+          "pixel_mae": 0.08549226498176801,
+          "region_spearman": 0.9640791095194235,
+          "clear_response": 0.006251229120101454,
+          "offline_oracle_mae": 0.050331597536035506,
+          "offline_oracle_mse": 0.00788233449439988,
+          "joint_high_fraction": 0.015125274658203125,
+          "joint_low_fraction": 0.38480377197265625
+        },
+        "shuffled_context": {
+          "pixel_mae": 0.08739073574257497,
+          "region_spearman": 0.9686266524888548,
+          "clear_response": 0.006164314213895961,
+          "offline_oracle_mae": 0.052924631335781264,
+          "offline_oracle_mse": 0.008542694476477996,
+          "joint_high_fraction": 0.019054412841796875,
+          "joint_low_fraction": 0.39453887939453125
+        }
+      }
+    }
+  },
+  "full_pipeline_timing_256": {
+    "global": {
+      "full_fixed_pipeline_p50_ms": 80.98899998003617,
+      "full_fixed_pipeline_p95_ms": 81.60854001471307
+    },
+    "content": {
+      "full_fixed_pipeline_p50_ms": 90.96629999112338,
+      "full_fixed_pipeline_p95_ms": 91.6175799939083
+    },
+    "content_physical": {
+      "full_fixed_pipeline_p50_ms": 91.71570002217777,
+      "full_fixed_pipeline_p95_ms": 91.9753900001524
+    }
+  },
+  "timing": "CPU 4 threads, batch1, tensor-to-H including cues, context, tables and fixed fusion; warmup2 repeat7; no disk",
+  "gate": {
+    "content_reduces_each_candidate_MAE": true,
+    "content_reduces_both_oracle_bounds": true,
+    "content_reduces_total_joint_error_fraction": false,
+    "fixed_fusion_uses_multiple_priors": false,
+    "decision": "Stop expansion/full training: joint-error criterion failed; three-prior necessity and physical attribution unproven. Keep implementation and failure evidence. No dynamic/regression accuracy claim."
+  },
+  "gpu_seconds": 0,
+  "new_confirmation": false,
+  "cpu_elapsed_seconds": 7.527738300006604
+}

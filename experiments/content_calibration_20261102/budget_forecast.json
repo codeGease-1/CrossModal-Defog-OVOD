@@ -1,0 +1,62 @@
+{
+  "historical_gpu_seconds_verified_local_and_cloud": 3258.18958869949,
+  "arithmetic_remaining_seconds": 341.81041130051017,
+  "new_authorized_gpu_seconds": 0,
+  "actual_gpu_seconds": 0,
+  "current_CPU_main_loop_seconds": 33.71805419999873,
+  "current_CPU_additional_diagnostics_seconds": 7.527738300006604,
+  "decision": "Stop expansion now: joint errors criterion failed; no new GPU request recommended until qualification improves",
+  "conditional_future_CPU_plan": {
+    "originals_train_development": [
+      48,
+      16
+    ],
+    "image_size": 256,
+    "versions_per_original": 32,
+    "cases": 2048,
+    "estimated_minutes_range": [
+      8,
+      15
+    ],
+    "basis": "Area and case-count extrapolation from observed CPU stages and measured 256 full pipeline; NOT a measured promise",
+    "uncompressed_GiB_one_9channel_features_plus_target": 5.0,
+    "uncompressed_GiB_shared_RGB_raw_three_candidate_sets_target": 8.0,
+    "approved_or_executed": false
+  },
+  "conditional_future_GPU_plan": {
+    "prerequisites": [
+      "candidate/common-error gate passed",
+      "qualified scene grouping/target/domain",
+      "frozen method and untouched new holdout",
+      "application noninferiority margin chosen if claiming near-but-cheaper"
+    ],
+    "major_neural_variants": [
+      "B new-protocol global candidates + dynamic",
+      "D same frozen C candidates + dynamic",
+      "same-input direct regression with same pairs and auxiliary supervision opportunity"
+    ],
+    "variants_per_round_max": 3,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 18,
+    "old_student_three_seed_seconds": 1225.0600221473724,
+    "old_RGB_three_seed_seconds": 1171.8563192933798,
+    "training_estimate_seconds": 3621.9763635881245,
+    "overhead_reserve_minutes": [
+      15,
+      25
+    ],
+    "total_minutes_range": [
+      75.36627272646874,
+      85.36627272646874
+    ],
+    "model_timing_on_new_GPU_unmeasured": true,
+    "authorized_or_started": false,
+    "controls": "Changed raw-cue/calibration protocol requires B and direct reference retraining; old scores are not fair controls"
+  },
+  "no_resource_purchase_or_change": true,
+  "not_a_cloud_bill": true
+}

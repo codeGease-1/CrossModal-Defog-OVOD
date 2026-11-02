@@ -1,0 +1,246 @@
+{
+  "config": {
+    "seed": 20261102,
+    "device": "cpu",
+    "torch_threads": 4,
+    "train_scenes": 8,
+    "development_scenes": 4,
+    "image_size": 128,
+    "uniform_t": [
+      1.0,
+      0.9,
+      0.6,
+      0.4
+    ],
+    "spatial_patterns": [
+      "gradient",
+      "regions"
+    ],
+    "airlights": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.75,
+        0.8,
+        0.9
+      ]
+    ],
+    "brightness": [
+      0.65,
+      1.0
+    ],
+    "domain": "linear_srgb",
+    "cue_window": 15,
+    "content_window": 31,
+    "pixels_per_case": 256,
+    "bins": 32,
+    "min_pixels": 512,
+    "min_scenes": 4,
+    "shrinkage": 4096,
+    "max_alpha": 0.5,
+    "max_delta": 0.1,
+    "physical_strength": 1.0,
+    "bias_tolerance": 0.03,
+    "global_loss_weight": 0.5,
+    "clear_loss_weight": 0.25,
+    "new_gpu_authorized_seconds": 0,
+    "scope": "CPU implementation feasibility on exposed train/development originals only; not efficacy or confirmation",
+    "noninferiority_margin": null,
+    "new_confirmation": "Not opened; protocol and application tolerance must be frozen first"
+  },
+  "base": {
+    "seed": 20261101,
+    "image_size": 128,
+    "scene_counts": {
+      "train": 48,
+      "development": 16,
+      "test": 16
+    },
+    "scene_seed_offsets": {
+      "train": 0,
+      "development": 10000,
+      "test": 20000
+    },
+    "uniform_t": [
+      1.0,
+      0.9,
+      0.6,
+      0.4
+    ],
+    "spatial_patterns": [
+      "gradient",
+      "regions"
+    ],
+    "airlights": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.75,
+        0.8,
+        0.9
+      ]
+    ],
+    "brightness": [
+      0.65,
+      1.0
+    ],
+    "domain": "linear_srgb",
+    "prior": {
+      "window_size": 15,
+      "guided_radius": 15,
+      "guided_eps": 0.01
+    },
+    "percentiles": [
+      0.01,
+      0.99
+    ],
+    "pixels_per_case": 256,
+    "isotonic_bins": 128,
+    "external_scenes_per_subset": 8,
+    "spatial_noninferiority_margin": 0.03,
+    "training_budget_seconds": 3600,
+    "primary_candidates": [
+      "legacy",
+      "normalized_calibrated",
+      "fixed_calibrated"
+    ],
+    "selection_rule": "development global MAE minimum among candidates with spatial rho >= legacy rho-0.03; if none improves legacy MAE select legacy",
+    "external_policy": "All RSHaze sources held out as ONE conservative geographic supergroup; never fit or tune on them. Controlled originals are independent procedural scenes."
+  },
+  "scenes": [
+    {
+      "scene_id": "train_000",
+      "split": "train",
+      "group_id": "procedural_original_20261101",
+      "seed": 20261101,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5"
+    },
+    {
+      "scene_id": "train_001",
+      "split": "train",
+      "group_id": "procedural_original_20261102",
+      "seed": 20261102,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29"
+    },
+    {
+      "scene_id": "train_002",
+      "split": "train",
+      "group_id": "procedural_original_20261103",
+      "seed": 20261103,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6"
+    },
+    {
+      "scene_id": "train_003",
+      "split": "train",
+      "group_id": "procedural_original_20261104",
+      "seed": 20261104,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4"
+    },
+    {
+      "scene_id": "train_004",
+      "split": "train",
+      "group_id": "procedural_original_20261105",
+      "seed": 20261105,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8"
+    },
+    {
+      "scene_id": "train_005",
+      "split": "train",
+      "group_id": "procedural_original_20261106",
+      "seed": 20261106,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae"
+    },
+    {
+      "scene_id": "train_006",
+      "split": "train",
+      "group_id": "procedural_original_20261107",
+      "seed": 20261107,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62"
+    },
+    {
+      "scene_id": "train_007",
+      "split": "train",
+      "group_id": "procedural_original_20261108",
+      "seed": 20261108,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368"
+    },
+    {
+      "scene_id": "development_000",
+      "split": "development",
+      "group_id": "procedural_original_20271101",
+      "seed": 20271101,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "c917372b347c332d51667730012221fb82d0860d5edeac18c755496f0b02712b"
+    },
+    {
+      "scene_id": "development_001",
+      "split": "development",
+      "group_id": "procedural_original_20271102",
+      "seed": 20271102,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "f2b6b42b19d5277ed2ca6eaf122acc9dde321c06db9b9de35c6b1750035d51d0"
+    },
+    {
+      "scene_id": "development_002",
+      "split": "development",
+      "group_id": "procedural_original_20271103",
+      "seed": 20271103,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "7a2bcada162bb9f0d0aa6f21f0dbc956a70c2330e4c9b7053b7adafdca998cf6"
+    },
+    {
+      "scene_id": "development_003",
+      "split": "development",
+      "group_id": "procedural_original_20271104",
+      "seed": 20271104,
+      "source_kind": "procedural_controlled_original",
+      "original_sha256": "3f55cc0ea8b8c00b4814967898ca3a40c4d0cf8fc9309956c0a29c48051288b6"
+    }
+  ],
+  "source_sha256": {
+    "scripts/content_calibration/run_cpu.py": "f98536f325c2e1e14812146e67432135ead75d575a1732216f69e7cba1b7b146",
+    "configs/content_calibration.json": "ccfece86fd3fe248d5d95e9e799ea26dd418bffe988c9c6e257be5f6ac5c0044",
+    "scripts/content_calibration/test_contracts.py": "231cfa417d220359cf1a0fb0a1bb5d5084c1b67fe289b81b0daa8f4523dd81c0",
+    "src/models/haze_density/content_calibration.py": "d82d155b366b4a6f3ea55399b98702413750c5dfd97dcc0a93c76243609980ec",
+    "src/models/haze_density/calibrated_prior.py": "f21505fe5a040978f98f1574fd7cd663bf3bdadef4c938d246b063ea8f0af5ff",
+    "src/models/haze_density/physical_prior.py": "d9ab2afa31fe96e0083872ca99a25dc53d3843e453dbe2d64316b2d701ab49eb",
+    "src/models/haze_density/guided_filter.py": "cb91992f5e9729bf0e5b9b7f2e1e5cd7327f593e1f1858054c3ee308efc276cd",
+    "src/models/haze_density/semantic_prior.py": "9eeab78a2a1ff09768ef77a31939e1a49e98d8fac2b2f28bfa222047151a0ad5",
+    "src/models/haze_density/dynamic_prior.py": "c09340b9e33d5550c468c3cdbb42d9e9ce51756aeab576989d6815ccb240ca5f",
+    "src/models/haze_density/student_weight_gate.py": "8db52511daaf5bb981cefce185647cf0c0935c3c4c54cf109882146ad9e0944e",
+    "scripts/v15/run.py": "e432a6fbdaaee750bf9e5069d678f0d58e34b7266c586f817946ec9eb403db87",
+    "scripts/v2/global_optimum.py": "d3d20ca7e4c2bd0f21a237a2fed07e228f66ba812b51cded044d6a3de5f2aaf6",
+    "benchmarks/haze_density/synthetic.py": "713ae32c5a73d74d474c5a90f822fb2819dd43c3d15ab50d068451e0992b969a",
+    "benchmarks/haze_density/metrics.py": "514f8360d1517b98a51983db234ca6981e3303840ee9a782f3c338f3115770e0",
+    "configs/v15_calibration.json": "fc3ede9aec9c7a269c7d570f8f2b854e3a1220f379af6ae2661d06ace135f1e2"
+  },
+  "git_head": "1672fb1d9921b21f13408b17991c865333d44abe",
+  "command": "scripts/content_calibration/run_cpu.py",
+  "environment": {
+    "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:29:05) [MSC v.1942 64 bit (AMD64)]",
+    "executable": "D:\\Desktop\\project\\CrossModal-Defog-OVOD\\.venv\\Scripts\\python.exe",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "device": "cpu",
+    "threads": 4,
+    "cuda_used": false
+  },
+  "data_policy": "Exposed procedural train/dev originals only; same original all versions same group. Design names are not semantic labels. No natural-haze truth or new confirmation.",
+  "physics": "Training-only actual J after brightness and clipping; positive constant known A, scalar t. Raw positive d,c,k of J/A and I/A in linear domain, no clipping/power/guided filtering. d/c uniform cases only, k all cases. No inference physics applicability gate.",
+  "comparability": "All three fits share samples/knots/support/inputs; physical penalty differs only in objective. Historical v2 scores/weights are not fair controls for this changed raw-cue protocol."
+}

@@ -1,0 +1,7 @@
+{
+  "mode": "direct_same16",
+  "seed": 44,
+  "best_development_loss": 0.00037483505093405256,
+  "parameters": 219137,
+  "steps": 3456
+}

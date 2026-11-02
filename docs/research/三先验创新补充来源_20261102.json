@@ -1,0 +1,29 @@
+[
+  {
+    "name": "phat",
+    "url": "https://arxiv.org/html/2507.14826v1",
+    "final_url": "https://arxiv.org/html/2507.14826v1",
+    "bytes": 281908,
+    "sha256": "694a93453d5e895785ba70e57da221e7f5fe93ca454d74dde3a3af9c0270a47b",
+    "text_chars": 47316,
+    "preview": "PHATNet: A Physics-guided Haze Transfer Network for Domain-adaptive Real-world Image Dehazing Report GitHub Issue × Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub arXiv is now an independent nonprofit! Learn more × Back to arXiv Why HTML? Report Issue Back to Abstract Download PDF Abstract 1 Introduction 2 Related Work 2.1 Image Dehazing 2.2 Domain Adaptation for Image Restoration 3 Proposed Method 3.1 Parametric Haze Disentanglement & Transfer 3.2 Multi-scale Haze Transfer 3.3 Loss Functions 3.4 Domain Adaptation via Haze Transfer 4 Experiments 4.1 Datasets 4.2 Implementation Details PHATNet Dehazing Models 4.3 Experimental Results Quantitative Results Qualitative Results 4.4 Ablation Studies Component analysis of PHATNet Effe"
+  },
+  {
+    "name": "density_disentangle",
+    "url": "https://arxiv.org/abs/2103.06501",
+    "final_url": "https://arxiv.org/abs/2103.06501",
+    "bytes": 45712,
+    "sha256": "6e4dd2589c3ef8c593744a695a94639e69c79b82de7c009e74c7d128102c537d",
+    "text_chars": 5240,
+    "preview": "[2103.06501] Density-aware Haze Image Synthesis by Self-Supervised Content-Style Disentanglement Skip to main content Search Submit Donate Log in Search arXiv Press Enter to search · Advanced search Computer Science > Computer Vision and Pattern Recognition arXiv:2103.06501 (cs) [Submitted on 11 Mar 2021 ( v1 ), last revised 25 Nov 2021 (this version, v2)] Title: Density-aware Haze Image Synthesis by Self-Supervised Content-Style Disentanglement Authors: Chi Zhang , Zihang Lin , Liheng Xu , Zongliang Li , Wei Tang , Yuehu Liu , Gaofeng Meng , Le Wang , Li Li View a PDF of the paper titled Density-aware Haze Image Synthesis by Self-Supervised Content-Style Disentanglement, by Chi Zhang and 8 other authors View PDF HTML (experimental) Abstract: The key procedure of haze image translation thr"
+  },
+  {
+    "name": "nonlocal",
+    "url": "https://openaccess.thecvf.com/content_cvpr_2016/papers/Berman_Non-Local_Image_Dehazing_CVPR_2016_paper.pdf",
+    "final_url": "https://openaccess.thecvf.com/content_cvpr_2016/papers/Berman_Non-Local_Image_Dehazing_CVPR_2016_paper.pdf",
+    "bytes": 6163547,
+    "sha256": "e8c5131119abed40cc700222afa426508ebb0d0d029395d115151606e4344c26",
+    "text_chars": 37947,
+    "preview": "Non-Local Image Dehazing\nDana Berman\nTel Aviv University\ndanamena@post.tau.ac.il\nTali Treibitz\nUniversity of Haifa\nttreibitz@univ.haifa.ac.il\nShai Avidan\nTel Aviv University\navidan@eng.tau.ac.il\nAbstract\nHaze limits visibility and reduces image contrast in out-\ndoor images. The degradation is different for every pixel\nand depends on the distance of the scene point from the\ncamera. This dependency is expressed in the transmission\ncoefﬁcients, that control the scene attenuation and amount\nof haze in every pixel. Previous methods solve the single\nimage dehazing problem using various patch-based priors.\nWe, on the other hand, propose an algorithm based on a\nnew, non-local prior . The algorithm relies on the assump-\ntion that colors of a haze-free image are well approximated\nby a few hundred di"
+  }
+]

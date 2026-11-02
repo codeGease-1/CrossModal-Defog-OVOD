@@ -1,0 +1,110 @@
+[
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "a02975f384b5e55886dc00e11a60ecc9292401e55f62132e8089fb544474dc7b"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "d251b64ed90dbc40b66db826465f99925335b173606c0479e56d95b0f7a369f7"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "47c23ba1a9e6160f8f8e5e073c10cae465f1c8fd55fcb86ae43bb81bb6073031"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "0035893b6c23829bbd2a242d5204c4f550231c157f19a7226a33dd97e1406ede"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "c38db1b804e0731b738e4b337c020983ec4a86094d74fa6affdc668f0d72c344"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "4aa3e800af387d72bb4e3a6d2df6da4b0a303d8d218bfaedf07748cb87622123"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "8742ee78a229dc8981b9817a9f9a3a3ebf853f426f2bdfd1a62086a5bc4f6a2e"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "a8cc76e06b3c8713d07321a5e449aab0765d663c0cd281fac85ac5607a13781d"
+  },
+  {
+    "scene_id": "development_000",
+    "split": "development",
+    "group_id": "procedural_original_20271101",
+    "seed": 20271101,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "0229a8fc23e3258efd8ea64010888da924c46a9a1bcd3c4a4d86908e61c44b7c"
+  },
+  {
+    "scene_id": "development_001",
+    "split": "development",
+    "group_id": "procedural_original_20271102",
+    "seed": 20271102,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "35aec03b32cf933594a2efec2d973a937fd75498db8feaef073f1c68293fb396"
+  },
+  {
+    "scene_id": "development_002",
+    "split": "development",
+    "group_id": "procedural_original_20271103",
+    "seed": 20271103,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "57be6838362045f0be1ebab57f9d3c5ad999db4ac071a6f7829374daa25ab63c"
+  },
+  {
+    "scene_id": "development_003",
+    "split": "development",
+    "group_id": "procedural_original_20271104",
+    "seed": 20271104,
+    "source_kind": "procedural_controlled_original",
+    "purpose": "reduced development diagnostic",
+    "original_sha256": "0b730f4d2f803f4370ad465d370c93796951f03cceea517231138711443d1cea"
+  }
+]

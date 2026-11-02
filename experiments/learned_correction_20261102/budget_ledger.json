@@ -1,0 +1,75 @@
+{
+  "historical_seconds_verified": 3258.18958869949,
+  "new_authorization": "Existing V100 actual training authorized; no resource changes",
+  "runs": {
+    "run01": {
+      "recorded_stage_seconds": 1305.4518325701356,
+      "overlap_excluded": [
+        {
+          "stage": "frozen_candidate_train_only_fixed_fusion",
+          "seconds": 30.461006969213486
+        }
+      ],
+      "stage_count": 58,
+      "epochs": {
+        "corrector16": {
+          "epochs": 18,
+          "seconds": 298.84201073274016,
+          "median_epoch_seconds": 16.309033814817667,
+          "peak_allocated_MiB": 1252.80615234375
+        },
+        "rgb_context16": {
+          "epochs": 18,
+          "seconds": 305.7690194398165,
+          "median_epoch_seconds": 16.99506059102714,
+          "peak_allocated_MiB": 1239.3095703125
+        },
+        "rgb32": {
+          "epochs": 18,
+          "seconds": 595.5846637152135,
+          "median_epoch_seconds": 33.034348245710135,
+          "peak_allocated_MiB": 2388.8154296875
+        }
+      }
+    },
+    "formal_amp": {
+      "recorded_stage_seconds": 2606.5412759408355,
+      "overlap_excluded": [
+        {
+          "stage": "frozen_candidate_train_only_fixed_fusion",
+          "seconds": 31.40000493451953
+        }
+      ],
+      "stage_count": 167,
+      "epochs": {
+        "corrector16": {
+          "epochs": 54,
+          "seconds": 653.2176112309098,
+          "median_epoch_seconds": 11.949714224785566,
+          "peak_allocated_MiB": 693.90576171875
+        },
+        "direct_same16": {
+          "epochs": 54,
+          "seconds": 623.7937487624586,
+          "median_epoch_seconds": 11.330299647524953,
+          "peak_allocated_MiB": 711.64892578125
+        },
+        "rgb32": {
+          "epochs": 54,
+          "seconds": 1004.2819997556508,
+          "median_epoch_seconds": 18.51414373703301,
+          "peak_allocated_MiB": 1257.197265625
+        }
+      }
+    }
+  },
+  "supplementary_seconds": 22.931782964617014,
+  "new_recorded_GPU_stage_wall_seconds": 3934.924891475588,
+  "new_recorded_GPU_stage_wall_minutes": 65.58208152459314,
+  "scope": "Measured GPU-job stage wall time; includes CPU/data/validation while job uses GPU, excludes SSH/idle/setup outside timers; not CUDA active time or cloud bill. Fixed fusion is nested in development_evaluation and counted once.",
+  "next_three_model_three_seed_18epoch_estimate_minutes": [
+    40,
+    55
+  ],
+  "next_estimate_basis": "Observed formal AMP epochs plus 5-20min precompute/evaluation/provenance; not launched, real background curation excluded"
+}

@@ -1,0 +1,8 @@
+{
+  "original_gpu_limit_seconds": 3600,
+  "historical_conservative_seconds": 3258.18958869949,
+  "arithmetic_remainder_seconds": 341.81041130051017,
+  "new_gpu_authorized_seconds": 0,
+  "this_run_gpu_seconds": 0,
+  "policy": "No GPU work or neural training in this CPU diagnostic; historical remainder is not a new one-hour grant"
+}

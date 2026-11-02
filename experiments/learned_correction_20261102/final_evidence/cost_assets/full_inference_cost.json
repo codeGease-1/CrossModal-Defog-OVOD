@@ -1,0 +1,184 @@
+[
+  {
+    "mode": "corrector16",
+    "size": 256,
+    "parameters_trainable": 218358,
+    "parameters_inference_neural": 218358,
+    "p50_ms": 9.253257885575294,
+    "p95_ms": 9.46110412478447,
+    "peak_cuda_allocated_bytes": 21536256,
+    "peak_cuda_reserved_bytes": 31457280,
+    "includes": "RGB tensor to H, priors/calibration/context if required + model + fixed fusion; no disk read",
+    "precision": "same AMP policy for all neural models, float32 prior extraction",
+    "warmup": 8,
+    "repeats": 40,
+    "components_cached_inputs": {
+      "raw_cues_fixed_scaling_power_guided": {
+        "p50_ms": 2.500457689166069,
+        "p95_ms": 2.5512369349598885
+      },
+      "train_fitted_candidate_tables": {
+        "p50_ms": 1.0544490069150925,
+        "p95_ms": 1.08835119754076
+      },
+      "observed_content_features": {
+        "p50_ms": 0.2438873052597046,
+        "p95_ms": 0.25783050805330276
+      },
+      "network_and_bounded_correction_if_used": {
+        "p50_ms": 5.161060020327568,
+        "p95_ms": 6.109320372343057
+      },
+      "fixed_fusion": {
+        "p50_ms": 0.04393234848976135,
+        "p95_ms": 0.05224999040365217
+      }
+    },
+    "semantic_cost": "No semantic model or semantic precompute"
+  },
+  {
+    "mode": "corrector16",
+    "size": 512,
+    "parameters_trainable": 218358,
+    "parameters_inference_neural": 218358,
+    "p50_ms": 12.13480532169342,
+    "p95_ms": 12.217573449015617,
+    "peak_cuda_allocated_bytes": 82091520,
+    "peak_cuda_reserved_bytes": 125829120,
+    "includes": "RGB tensor to H, priors/calibration/context if required + model + fixed fusion; no disk read",
+    "precision": "same AMP policy for all neural models, float32 prior extraction",
+    "warmup": 8,
+    "repeats": 40,
+    "components_cached_inputs": {
+      "raw_cues_fixed_scaling_power_guided": {
+        "p50_ms": 4.19418141245842,
+        "p95_ms": 4.239170253276825
+      },
+      "train_fitted_candidate_tables": {
+        "p50_ms": 1.049613580107689,
+        "p95_ms": 1.0906435549259186
+      },
+      "observed_content_features": {
+        "p50_ms": 0.43138861656188965,
+        "p95_ms": 0.44174510985612864
+      },
+      "network_and_bounded_correction_if_used": {
+        "p50_ms": 6.3365790992975235,
+        "p95_ms": 6.355215609073639
+      },
+      "fixed_fusion": {
+        "p50_ms": 0.03789365291595459,
+        "p95_ms": 0.03927573561668396
+      }
+    },
+    "semantic_cost": "No semantic model or semantic precompute"
+  },
+  {
+    "mode": "direct_same16",
+    "size": 256,
+    "parameters_trainable": 219137,
+    "parameters_inference_neural": 219137,
+    "p50_ms": 8.319251239299774,
+    "p95_ms": 8.585877157747746,
+    "peak_cuda_allocated_bytes": 21903360,
+    "peak_cuda_reserved_bytes": 31457280,
+    "includes": "RGB tensor to H, priors/calibration/context if required + model + fixed fusion; no disk read",
+    "precision": "same AMP policy for all neural models, float32 prior extraction",
+    "warmup": 8,
+    "repeats": 40,
+    "components_cached_inputs": {
+      "raw_cues_fixed_scaling_power_guided": {
+        "p50_ms": 2.4101492017507553,
+        "p95_ms": 2.5335650891065598
+      },
+      "train_fitted_candidate_tables": {
+        "p50_ms": 1.0368209332227707,
+        "p95_ms": 1.079549826681614
+      },
+      "observed_content_features": {
+        "p50_ms": 0.23511983454227448,
+        "p95_ms": 0.2659084275364876
+      },
+      "network_and_bounded_correction_if_used": {
+        "p50_ms": 4.6532247215509415,
+        "p95_ms": 4.948706179857254
+      }
+    },
+    "semantic_cost": "No semantic model or semantic precompute"
+  },
+  {
+    "mode": "direct_same16",
+    "size": 512,
+    "parameters_trainable": 219137,
+    "parameters_inference_neural": 219137,
+    "p50_ms": 11.932220309972763,
+    "p95_ms": 12.033933214843273,
+    "peak_cuda_allocated_bytes": 83638272,
+    "peak_cuda_reserved_bytes": 148897792,
+    "includes": "RGB tensor to H, priors/calibration/context if required + model + fixed fusion; no disk read",
+    "precision": "same AMP policy for all neural models, float32 prior extraction",
+    "warmup": 8,
+    "repeats": 40,
+    "components_cached_inputs": {
+      "raw_cues_fixed_scaling_power_guided": {
+        "p50_ms": 4.146561026573181,
+        "p95_ms": 4.188653267920017
+      },
+      "train_fitted_candidate_tables": {
+        "p50_ms": 1.0350197553634644,
+        "p95_ms": 1.0764755308628082
+      },
+      "observed_content_features": {
+        "p50_ms": 0.4292484372854233,
+        "p95_ms": 0.4570227116346359
+      },
+      "network_and_bounded_correction_if_used": {
+        "p50_ms": 6.22977502644062,
+        "p95_ms": 6.249103136360645
+      }
+    },
+    "semantic_cost": "No semantic model or semantic precompute"
+  },
+  {
+    "mode": "rgb32",
+    "size": 256,
+    "parameters_trainable": 867377,
+    "parameters_inference_neural": 867377,
+    "p50_ms": 4.482284188270569,
+    "p95_ms": 4.670661129057407,
+    "peak_cuda_allocated_bytes": 35617280,
+    "peak_cuda_reserved_bytes": 60817408,
+    "includes": "RGB tensor to H, priors/calibration/context if required + model + fixed fusion; no disk read",
+    "precision": "same AMP policy for all neural models, float32 prior extraction",
+    "warmup": 8,
+    "repeats": 40,
+    "components_cached_inputs": {
+      "network_and_bounded_correction_if_used": {
+        "p50_ms": 4.6805888414382935,
+        "p95_ms": 4.74548377096653
+      }
+    },
+    "semantic_cost": "No semantic model or semantic precompute"
+  },
+  {
+    "mode": "rgb32",
+    "size": 512,
+    "parameters_trainable": 867377,
+    "parameters_inference_neural": 867377,
+    "p50_ms": 9.383363649249077,
+    "p95_ms": 9.400025010108948,
+    "peak_cuda_allocated_bytes": 127400448,
+    "peak_cuda_reserved_bytes": 159383552,
+    "includes": "RGB tensor to H, priors/calibration/context if required + model + fixed fusion; no disk read",
+    "precision": "same AMP policy for all neural models, float32 prior extraction",
+    "warmup": 8,
+    "repeats": 40,
+    "components_cached_inputs": {
+      "network_and_bounded_correction_if_used": {
+        "p50_ms": 9.384410455822945,
+        "p95_ms": 9.404856339097023
+      }
+    },
+    "semantic_cost": "No semantic model or semantic precompute"
+  }
+]

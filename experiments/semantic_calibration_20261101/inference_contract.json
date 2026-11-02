@@ -1,0 +1,26 @@
+{
+  "status": "PASS; untrained models only",
+  "C_D_candidate_sha256": "8639cac3fc295d0070e94ab92d53783c89f6fcf1ffaca47c0d628abd26461f9a",
+  "D_parameters": [
+    {
+      "model": "D",
+      "trainable_parameters": 868851,
+      "total_parameters_including_semantic": 4621545
+    },
+    {
+      "model": "RGB_semantic",
+      "trainable_parameters": 867953,
+      "total_parameters_including_semantic": 4620647
+    },
+    {
+      "model": "RGB_semantic_light",
+      "trainable_parameters": 55817,
+      "total_parameters_including_semantic": 3808511
+    }
+  ],
+  "D_single_cpu_forward_seconds": 0.17330550000770018,
+  "prohibitions": "No truth, clean reference, free residual, dehazing or detection in inference",
+  "weights": "fusion choices, not physical confidence truth",
+  "gpu_memory": "not measured; CPU only",
+  "neural_checkpoints": "none; no neural training"
+}

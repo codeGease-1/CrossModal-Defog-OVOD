@@ -1,0 +1,697 @@
+{
+  "config": {
+    "seed": 20261102,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "modes": [
+      "corrector16",
+      "rgb_context16",
+      "rgb32"
+    ],
+    "epochs": 18,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "candidate_loss_weights": [
+      1.0,
+      0.25,
+      0.25
+    ],
+    "global_loss_weight": 0.5,
+    "clear_loss_extra_weight": 0.25,
+    "rho": 0.75,
+    "shift": 3.0,
+    "confirmation_scene_count": 24,
+    "confirmation_seed_offset": 2000000,
+    "relative_MAE_margin": 0.05,
+    "spatial_margin": 0.01,
+    "clear_response_margin": 0.005,
+    "unseen_airlights": [
+      [
+        0.55,
+        0.6,
+        0.65
+      ],
+      [
+        0.9,
+        0.78,
+        0.65
+      ]
+    ],
+    "scope": "New user authorization: use existing V100 for actual training, no cloud resource changes; three main models per round.",
+    "selection": "development only; corrector independent per-candidate weighted H loss; RGB same H loss; fit global fusion weights on training after freezing correction",
+    "confirmation": "Only after all modes/seeds trained and source/checkpoint freeze; prior confirmations remain development references",
+    "physics": "off; known-clean forward term previously reduced to signal weighting; no new physical claim"
+  },
+  "base": {
+    "seed": 20261101,
+    "image_size": 256,
+    "scene_counts": {
+      "train": 48,
+      "development": 16,
+      "test": 16
+    },
+    "scene_seed_offsets": {
+      "train": 0,
+      "development": 10000,
+      "test": 20000
+    },
+    "uniform_t": [
+      1.0,
+      0.9,
+      0.75,
+      0.6,
+      0.4
+    ],
+    "spatial_patterns": [
+      "gradient",
+      "blob",
+      "regions"
+    ],
+    "airlights": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.75,
+        0.8,
+        0.9
+      ]
+    ],
+    "brightness": [
+      0.65,
+      1.0
+    ],
+    "domain": "linear_srgb",
+    "prior": {
+      "window_size": 15,
+      "guided_radius": 15,
+      "guided_eps": 0.01
+    },
+    "percentiles": [
+      0.01,
+      0.99
+    ],
+    "pixels_per_case": 256,
+    "isotonic_bins": 128,
+    "external_scenes_per_subset": 8,
+    "spatial_noninferiority_margin": 0.03,
+    "training_budget_seconds": 3600,
+    "primary_candidates": [
+      "legacy",
+      "normalized_calibrated",
+      "fixed_calibrated"
+    ],
+    "selection_rule": "development global MAE minimum among candidates with spatial rho >= legacy rho-0.03; if none improves legacy MAE select legacy",
+    "external_policy": "All RSHaze sources held out as ONE conservative geographic supergroup; never fit or tune on them. Controlled originals are independent procedural scenes."
+  },
+  "scenes": [
+    {
+      "scene_id": "train_000",
+      "split": "train",
+      "group_id": "procedural_original_20261101",
+      "seed": 20261101,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "a02975f384b5e55886dc00e11a60ecc9292401e55f62132e8089fb544474dc7b"
+    },
+    {
+      "scene_id": "train_001",
+      "split": "train",
+      "group_id": "procedural_original_20261102",
+      "seed": 20261102,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "d251b64ed90dbc40b66db826465f99925335b173606c0479e56d95b0f7a369f7"
+    },
+    {
+      "scene_id": "train_002",
+      "split": "train",
+      "group_id": "procedural_original_20261103",
+      "seed": 20261103,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "47c23ba1a9e6160f8f8e5e073c10cae465f1c8fd55fcb86ae43bb81bb6073031"
+    },
+    {
+      "scene_id": "train_003",
+      "split": "train",
+      "group_id": "procedural_original_20261104",
+      "seed": 20261104,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0035893b6c23829bbd2a242d5204c4f550231c157f19a7226a33dd97e1406ede"
+    },
+    {
+      "scene_id": "train_004",
+      "split": "train",
+      "group_id": "procedural_original_20261105",
+      "seed": 20261105,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "c38db1b804e0731b738e4b337c020983ec4a86094d74fa6affdc668f0d72c344"
+    },
+    {
+      "scene_id": "train_005",
+      "split": "train",
+      "group_id": "procedural_original_20261106",
+      "seed": 20261106,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "4aa3e800af387d72bb4e3a6d2df6da4b0a303d8d218bfaedf07748cb87622123"
+    },
+    {
+      "scene_id": "train_006",
+      "split": "train",
+      "group_id": "procedural_original_20261107",
+      "seed": 20261107,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "8742ee78a229dc8981b9817a9f9a3a3ebf853f426f2bdfd1a62086a5bc4f6a2e"
+    },
+    {
+      "scene_id": "train_007",
+      "split": "train",
+      "group_id": "procedural_original_20261108",
+      "seed": 20261108,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "a8cc76e06b3c8713d07321a5e449aab0765d663c0cd281fac85ac5607a13781d"
+    },
+    {
+      "scene_id": "train_008",
+      "split": "train",
+      "group_id": "procedural_original_20261109",
+      "seed": 20261109,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "366a36807a0875a6794aec806f09104a217151416dc43db0b9455777d71cb797"
+    },
+    {
+      "scene_id": "train_009",
+      "split": "train",
+      "group_id": "procedural_original_20261110",
+      "seed": 20261110,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "7e27533eefe41a2b8088a760cb957490153e525825f71b63a5e609c2fb7c7a75"
+    },
+    {
+      "scene_id": "train_010",
+      "split": "train",
+      "group_id": "procedural_original_20261111",
+      "seed": 20261111,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "638579c1806eae371ca4cc8584bbc3c923509628445e1d149324ff202cc4c4c4"
+    },
+    {
+      "scene_id": "train_011",
+      "split": "train",
+      "group_id": "procedural_original_20261112",
+      "seed": 20261112,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "c55052377fda63a66a2eb98e879d85065ef9790f0d4b939779c93c28c89dde3e"
+    },
+    {
+      "scene_id": "train_012",
+      "split": "train",
+      "group_id": "procedural_original_20261113",
+      "seed": 20261113,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "bf07dc2149d11dc0975ac20517f7dba4862d1a91e53ef04d624a644be797b467"
+    },
+    {
+      "scene_id": "train_013",
+      "split": "train",
+      "group_id": "procedural_original_20261114",
+      "seed": 20261114,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "14a0d47cea237bd89646e544e31f45df9d024058cd07b365272e2e1cb724ff15"
+    },
+    {
+      "scene_id": "train_014",
+      "split": "train",
+      "group_id": "procedural_original_20261115",
+      "seed": 20261115,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "6754d23542cd2c67c574d5e8375bb5e0dc0f3c8b5d01ddd1881d46204ae8aaa6"
+    },
+    {
+      "scene_id": "train_015",
+      "split": "train",
+      "group_id": "procedural_original_20261116",
+      "seed": 20261116,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "2f98e0c7f3ec6555c247e074129be0e7f06a448a336f42d9372b9c410d2a291b"
+    },
+    {
+      "scene_id": "train_016",
+      "split": "train",
+      "group_id": "procedural_original_20261117",
+      "seed": 20261117,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "6dbb0a5a3dbe1dfc749c02eb459804ffec73152cf9decae18f64edc93376ead5"
+    },
+    {
+      "scene_id": "train_017",
+      "split": "train",
+      "group_id": "procedural_original_20261118",
+      "seed": 20261118,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "cebed52761a5ea045ea0686c4a8f88e3a562fe8edb4cc09d8719c762d7cbf2c5"
+    },
+    {
+      "scene_id": "train_018",
+      "split": "train",
+      "group_id": "procedural_original_20261119",
+      "seed": 20261119,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "9ce2c5229853a1b6396c1070afbdca720647dba8a28964da708f4b50e048c158"
+    },
+    {
+      "scene_id": "train_019",
+      "split": "train",
+      "group_id": "procedural_original_20261120",
+      "seed": 20261120,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "4c2cde8e7dea5674d9a5dd0a026ef37c6407a5edc4656c3e4a3b6d5ee0e1f4ca"
+    },
+    {
+      "scene_id": "train_020",
+      "split": "train",
+      "group_id": "procedural_original_20261121",
+      "seed": 20261121,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0f15e9bc3ed5ab544100aba048712b92c0d9b76a50f29223eb02d40f5be646c3"
+    },
+    {
+      "scene_id": "train_021",
+      "split": "train",
+      "group_id": "procedural_original_20261122",
+      "seed": 20261122,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "c72a40d4332185e0dd0d5240d290f7a856bab4dddfa066f47dc3439495fa0db8"
+    },
+    {
+      "scene_id": "train_022",
+      "split": "train",
+      "group_id": "procedural_original_20261123",
+      "seed": 20261123,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "c19f6ce3641ea8d37edd42f89c843cb33ecd3b8f00926f7c6b04f7644df54370"
+    },
+    {
+      "scene_id": "train_023",
+      "split": "train",
+      "group_id": "procedural_original_20261124",
+      "seed": 20261124,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "84df8441ec45a45dc79eb203723667651b47803d94c0c0a377246fb65fa6562a"
+    },
+    {
+      "scene_id": "train_024",
+      "split": "train",
+      "group_id": "procedural_original_20261125",
+      "seed": 20261125,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "c4ceb47dcb5ead2249dc4c8daad95765b1d0fd03eed04a7618ce67a9d72bf55e"
+    },
+    {
+      "scene_id": "train_025",
+      "split": "train",
+      "group_id": "procedural_original_20261126",
+      "seed": 20261126,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "2042d55ae16bf57ac6be4dd0f034e3eb4a3184d2bf65cf068b016c5644e32d2e"
+    },
+    {
+      "scene_id": "train_026",
+      "split": "train",
+      "group_id": "procedural_original_20261127",
+      "seed": 20261127,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "2e28f791101d59848ecdcf34c8b4ccc4aeb641628f2da50da576332f6862e5a0"
+    },
+    {
+      "scene_id": "train_027",
+      "split": "train",
+      "group_id": "procedural_original_20261128",
+      "seed": 20261128,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "bdc685b80b19d297eec2270542bf98eef64abff8916abe57c511a4c1e4290746"
+    },
+    {
+      "scene_id": "train_028",
+      "split": "train",
+      "group_id": "procedural_original_20261129",
+      "seed": 20261129,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "7fb44f0d95cefd97a549220466afee0127e27aeae9e91d102954ccdf0a44131f"
+    },
+    {
+      "scene_id": "train_029",
+      "split": "train",
+      "group_id": "procedural_original_20261130",
+      "seed": 20261130,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "d967494b4f2c2317ed6080fd2f56415403bc679b675aeaa2d1676545ac469d1c"
+    },
+    {
+      "scene_id": "train_030",
+      "split": "train",
+      "group_id": "procedural_original_20261131",
+      "seed": 20261131,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "c32d236914f8bbc5950ffef7fb865b5b5544ffc96ff0d6a68580f64e8dce2e33"
+    },
+    {
+      "scene_id": "train_031",
+      "split": "train",
+      "group_id": "procedural_original_20261132",
+      "seed": 20261132,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "f3d6e986e035b26a3501a4c96eabf8aca06b5b0502140cdff7d8818c13fcf7fc"
+    },
+    {
+      "scene_id": "train_032",
+      "split": "train",
+      "group_id": "procedural_original_20261133",
+      "seed": 20261133,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "4cb44094929512246979ca1ef456b6126f5a808989ec495400232b09d290b0d6"
+    },
+    {
+      "scene_id": "train_033",
+      "split": "train",
+      "group_id": "procedural_original_20261134",
+      "seed": 20261134,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "8f92d894203d5992845e14a1d0fe1276572f31da272b7e5461c52f985b04fe10"
+    },
+    {
+      "scene_id": "train_034",
+      "split": "train",
+      "group_id": "procedural_original_20261135",
+      "seed": 20261135,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "053cda04d335c00cf515f79bb4b0e47cf47581413c4e1ababa710a718c9545f4"
+    },
+    {
+      "scene_id": "train_035",
+      "split": "train",
+      "group_id": "procedural_original_20261136",
+      "seed": 20261136,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "249fc98711586639b70ab948ccb93697940863652dd2256fcfc2fd8ff3e0ed48"
+    },
+    {
+      "scene_id": "train_036",
+      "split": "train",
+      "group_id": "procedural_original_20261137",
+      "seed": 20261137,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "a7e8c6b35c3eb94b470968abe4d5aaac0249ef49e14a5704ec9d6d91b5d20eaa"
+    },
+    {
+      "scene_id": "train_037",
+      "split": "train",
+      "group_id": "procedural_original_20261138",
+      "seed": 20261138,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "c0cd2ad58a583ce7c51e902ddf46c1e553589eebcb851c542205cb615bf58b3c"
+    },
+    {
+      "scene_id": "train_038",
+      "split": "train",
+      "group_id": "procedural_original_20261139",
+      "seed": 20261139,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "2d339edc8ba7f5b48f5ece25b4a7e92d6d79cf90f21aa382c3bd21a6b05b699b"
+    },
+    {
+      "scene_id": "train_039",
+      "split": "train",
+      "group_id": "procedural_original_20261140",
+      "seed": 20261140,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "876aecba874cf18cf18971fd083b782e6f7261e28982ec7adb1f792ffdb8a74b"
+    },
+    {
+      "scene_id": "train_040",
+      "split": "train",
+      "group_id": "procedural_original_20261141",
+      "seed": 20261141,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "809c635f0bb3b443b8e906e5c278cb9b5ee3a8907d8f84cf08c4690f3cfcbe51"
+    },
+    {
+      "scene_id": "train_041",
+      "split": "train",
+      "group_id": "procedural_original_20261142",
+      "seed": 20261142,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "2fac7855c3e7f94427393f499718dfa0d633cbf753ccf68d7afd57a64c5186fc"
+    },
+    {
+      "scene_id": "train_042",
+      "split": "train",
+      "group_id": "procedural_original_20261143",
+      "seed": 20261143,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "ce36ffe7cb7e352346ab7942bdb777d5a5a19e7a1e4da949424ae0f4b03ff4da"
+    },
+    {
+      "scene_id": "train_043",
+      "split": "train",
+      "group_id": "procedural_original_20261144",
+      "seed": 20261144,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "d3eb22422bad5b1fe1c532d1c02fd4688597441246d628081301185549c408e9"
+    },
+    {
+      "scene_id": "train_044",
+      "split": "train",
+      "group_id": "procedural_original_20261145",
+      "seed": 20261145,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0c888b1233befdc07f51dc89352111d228723bf327c8e574673d66538b2c6358"
+    },
+    {
+      "scene_id": "train_045",
+      "split": "train",
+      "group_id": "procedural_original_20261146",
+      "seed": 20261146,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "9184f28fc9b01e002735b72bd7430cf9e354782d95721a97917cdd53280bda03"
+    },
+    {
+      "scene_id": "train_046",
+      "split": "train",
+      "group_id": "procedural_original_20261147",
+      "seed": 20261147,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0f8925b51aca9f24a46da3cc9a6102e3766a0bcd8e4c5c72dd86a401c7d716e8"
+    },
+    {
+      "scene_id": "train_047",
+      "split": "train",
+      "group_id": "procedural_original_20261148",
+      "seed": 20261148,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "df14e2a5c187918a98c2a885d71f1ace3fac64cd50c010b29031bfd049837f99"
+    },
+    {
+      "scene_id": "development_000",
+      "split": "development",
+      "group_id": "procedural_original_20271101",
+      "seed": 20271101,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0229a8fc23e3258efd8ea64010888da924c46a9a1bcd3c4a4d86908e61c44b7c"
+    },
+    {
+      "scene_id": "development_001",
+      "split": "development",
+      "group_id": "procedural_original_20271102",
+      "seed": 20271102,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "35aec03b32cf933594a2efec2d973a937fd75498db8feaef073f1c68293fb396"
+    },
+    {
+      "scene_id": "development_002",
+      "split": "development",
+      "group_id": "procedural_original_20271103",
+      "seed": 20271103,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "57be6838362045f0be1ebab57f9d3c5ad999db4ac071a6f7829374daa25ab63c"
+    },
+    {
+      "scene_id": "development_003",
+      "split": "development",
+      "group_id": "procedural_original_20271104",
+      "seed": 20271104,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0b730f4d2f803f4370ad465d370c93796951f03cceea517231138711443d1cea"
+    },
+    {
+      "scene_id": "development_004",
+      "split": "development",
+      "group_id": "procedural_original_20271105",
+      "seed": 20271105,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0d1e08a64fc89a464d0a717b80f6096dae046737f99e1e3bb6389655bd257d99"
+    },
+    {
+      "scene_id": "development_005",
+      "split": "development",
+      "group_id": "procedural_original_20271106",
+      "seed": 20271106,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "008845901edc89082f75c4afd7e06d3585c904c2bc9fd7eb4e016e4a7c8978e1"
+    },
+    {
+      "scene_id": "development_006",
+      "split": "development",
+      "group_id": "procedural_original_20271107",
+      "seed": 20271107,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "d6a0829bbfd8959a54a2b4d59bce64b3c96d7e90ebd9140f68dc835978f70fe8"
+    },
+    {
+      "scene_id": "development_007",
+      "split": "development",
+      "group_id": "procedural_original_20271108",
+      "seed": 20271108,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "91383b729bc964b5f62003966689b2d1e4b28e6b1c97f688112106740b2e554f"
+    },
+    {
+      "scene_id": "development_008",
+      "split": "development",
+      "group_id": "procedural_original_20271109",
+      "seed": 20271109,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "3a69fe1defc683d60673156f13c8d9402900bc4b45485adc835d1f1ae342948b"
+    },
+    {
+      "scene_id": "development_009",
+      "split": "development",
+      "group_id": "procedural_original_20271110",
+      "seed": 20271110,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "5e0547a0233f3fde642ecc41555ac5f830613b3329889c107160b1ab87e0b057"
+    },
+    {
+      "scene_id": "development_010",
+      "split": "development",
+      "group_id": "procedural_original_20271111",
+      "seed": 20271111,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "ff64d98cb03a226fcb40d4e087f56867f4903bf386dc59d723919e9345e1f0f0"
+    },
+    {
+      "scene_id": "development_011",
+      "split": "development",
+      "group_id": "procedural_original_20271112",
+      "seed": 20271112,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "36a729ee8c230b01826e0b583c2138910cfc2cd889e943159e9db04f187ca2e5"
+    },
+    {
+      "scene_id": "development_012",
+      "split": "development",
+      "group_id": "procedural_original_20271113",
+      "seed": 20271113,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "e4d9726ecf726ef8ac20c52426cf3c153c6e9a1d3bf0c9c9949d9a40357260ca"
+    },
+    {
+      "scene_id": "development_013",
+      "split": "development",
+      "group_id": "procedural_original_20271114",
+      "seed": 20271114,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "10f7d2142ba7b661a893ef18fe7b7c8773782e18ef43f50d0c4cd587e46ad97c"
+    },
+    {
+      "scene_id": "development_014",
+      "split": "development",
+      "group_id": "procedural_original_20271115",
+      "seed": 20271115,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "0575f6e52a10649d831bde4c4522a1ec1771006dd6572850f3f845045b06b714"
+    },
+    {
+      "scene_id": "development_015",
+      "split": "development",
+      "group_id": "procedural_original_20271116",
+      "seed": 20271116,
+      "source_kind": "procedural_controlled_original",
+      "pixel_sha256": "b1a4b43270862e36fd286d22acb654e28d1f0ac61dcc899b21ff509280224cff"
+    }
+  ],
+  "source_sha256": {
+    "src/__init__.py": "131955f05513f5fbcb458f7fa168788943feeffd0e93535e8adb48e8404266f5",
+    "src/models/__init__.py": "4842cfa3a7e174553ee82de47e0c155887896a0cede14edb4658ce976a920b64",
+    "src/data/transforms.py": "f1332d02458463f411d310ca40bfb96e3bea7f764961f7ccead74afe578d38d6",
+    "src/data/__init__.py": "2fbedac9bae1faecaff276e7bbec013c6a615d4a910cc1d9cdb0b0f96dbb2ab4",
+    "src/data/datasets.py": "d6ad466fb4913ebd67182e0ecb0a5f40127f9b7e7df580b84372f7abf5ada1dd",
+    "src/utils/__init__.py": "666b02a455f6a022b31ff98bc213fdb1b4ec7287640444c1b97be615a2212422",
+    "src/models/backbone/__init__.py": "b4cf472f64ef4f632631feb801821921d581eef3ca7ba9c13bce4fd1cf7a25ad",
+    "src/models/backbone/simple_backbone.py": "edd745f6fc460bc01ce0717a58d28525225e7b03bdb01b73c80e443426735ee8",
+    "src/models/crossmodal/__init__.py": "5ea9552b63218858a6f2fe7cba941f0f6ae47e1ace7c734195d8613792032795",
+    "src/models/crossmodal/density_concat_model.py": "ea36f53d4e00ba34c481f26e95a2ec64aa4b09a3c8a6be15eba5ccdf87eb02d2",
+    "src/models/crossmodal/density_guided_backbone.py": "89fcd08afdbe056da69c85c4cbc5936de2877f7ea43afc401869d24bfb2d7752",
+    "src/models/haze_density/guided_filter.py": "cb91992f5e9729bf0e5b9b7f2e1e5cd7327f593e1f1858054c3ee308efc276cd",
+    "src/models/haze_density/physical_prior.py": "d9ab2afa31fe96e0083872ca99a25dc53d3843e453dbe2d64316b2d701ab49eb",
+    "src/models/haze_density/semantic_prior.py": "9eeab78a2a1ff09768ef77a31939e1a49e98d8fac2b2f28bfa222047151a0ad5",
+    "src/models/haze_density/residual_blocks.py": "ae21c346aad165d3e964bc80f84e601ac24ed53b923ff678f5dfdf90119f5283",
+    "src/models/haze_density/__init__.py": "fefb238da0193dfd6557a8fad729c53d25e6845a6220a10f7cd370221f90c8db",
+    "src/models/haze_density/decoder.py": "462400cdc247a8dc737392429b591cb560ecdec950a2e15b551938b15ceecd5f",
+    "src/models/haze_density/learned_correction.py": "bdb2074500d79c58550ae625e6659dfefa22647bcc1315ee2c5a8fd8f8fdeab3",
+    "src/models/haze_density/encoder.py": "8d2e236c34ea55a12ef1d0f07d38d1c858987a7cfc03d967638452509a9f9f2c",
+    "src/models/haze_density/haze_density_net.py": "42f953fa6035b28d705fbb357791e35b29f475fd3d433cd17858be7a2f322e07",
+    "src/models/haze_density/content_calibration.py": "d82d155b366b4a6f3ea55399b98702413750c5dfd97dcc0a93c76243609980ec",
+    "src/models/haze_density/student_weight_gate.py": "8db52511daaf5bb981cefce185647cf0c0935c3c4c54cf109882146ad9e0944e",
+    "src/models/haze_density/fusion.py": "668c724ecc7b1c1250cfc8975f64914ded9e3d5f4a24f854f3c0b81cf485a7ec",
+    "src/models/haze_density/basic_blocks.py": "d512f111d3248d577430f0b58f63860fadf7b591b5ab6775067d7d277a796c66",
+    "src/models/haze_density/eca.py": "b14312bfaae56c9ccace456936bacbe0f631535863bb01635098c3f46d3f9e54",
+    "src/models/haze_density/multiscale.py": "d22ee816746f2b57b2c9e7f7bf591a7fcf1ac2ea84b3b7f612757afa027258aa",
+    "src/models/haze_density/dynamic_prior.py": "c09340b9e33d5550c468c3cdbb42d9e9ce51756aeab576989d6815ccb240ca5f",
+    "src/models/haze_density/calibrated_prior.py": "f21505fe5a040978f98f1574fd7cd663bf3bdadef4c938d246b063ea8f0af5ff",
+    "src/models/density_guidance/__init__.py": "fa232e722c6e743e63fd583bd863f1f9dd2a79711af2c3e1b3a6583e1f8c6d03",
+    "src/models/density_guidance/density_guidance.py": "c1e2c36289ee76e2f324d0147de559d43c3c3844258f83ab067bd685dd9b35f3",
+    "benchmarks/haze_density/common.py": "a3a017f8cb7ecf915e640840a8bb9f875f997dfab2b6eb6b5148f6c3cbb38e4b",
+    "benchmarks/haze_density/synthetic.py": "713ae32c5a73d74d474c5a90f822fb2819dd43c3d15ab50d068451e0992b969a",
+    "benchmarks/haze_density/__init__.py": "278896646221126a1e4fbb58c8f1b661998490701fbd96da1fd1415d9f900663",
+    "benchmarks/haze_density/report.py": "d8a19554c2bb98547d7d55dad60edc073068f9d56ec608ec9c92890b5008e2cb",
+    "benchmarks/haze_density/audit.py": "6750f0ef7c17d6da67e15d0a24e22724cb59ed1f1ff03c2073434a775f2a0d41",
+    "benchmarks/haze_density/evaluate.py": "593f541a1a01928f1fe15edd784ba38682ad5a67e2730b24115395cb8af23ef0",
+    "benchmarks/haze_density/metrics.py": "514f8360d1517b98a51983db234ca6981e3303840ee9a782f3c338f3115770e0",
+    "benchmarks/haze_density/__main__.py": "6d9fea9c388f1c61c627776d122f7ebd082f614bcf4eca972fc7eff4a0ce0739",
+    "benchmarks/haze_density/baselines.py": "51b08b54a507bf3fba05185066898e2d3c81c8062c2aacff35fc1a12c81ff64a",
+    "benchmarks/haze_density/performance.py": "de96b9ba6383a7cd45e74095a62834f908cf85c61db36b70193547db26571e73",
+    "scripts/learned_correction/test_contracts.py": "d85a20761fab7483d5306803c47c81a46d036d72cb3c67739335f382cfa3ae06",
+    "scripts/learned_correction/run.py": "e72ad55010a34f187d82797fc9222b694238a23bec030e88947f1a0626e7c61b",
+    "scripts/v15/run.py": "e432a6fbdaaee750bf9e5069d678f0d58e34b7266c586f817946ec9eb403db87",
+    "scripts/v2/global_optimum.py": "d3d20ca7e4c2bd0f21a237a2fed07e228f66ba812b51cded044d6a3de5f2aaf6"
+  },
+  "calibration_path": "/mnt/CrossModal-Defog-OVOD/experiments/v2_20261101/calibration.json",
+  "calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "environment": {
+    "python": "3.12.0 (main, Jan  5 2026, 15:00:34) [GCC 11.4.0]",
+    "torch": "2.4.1+cu124",
+    "numpy": "1.26.4",
+    "gpu": "Tesla V100-SXM2-16GB",
+    "cuda": "12.4"
+  },
+  "command": [
+    "scripts/learned_correction/run.py",
+    "--calibration",
+    "/mnt/CrossModal-Defog-OVOD/experiments/v2_20261101/calibration.json",
+    "--output",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/run01",
+    "--stage",
+    "train",
+    "--only-seed",
+    "42"
+  ],
+  "data": "48/16 original scenes, 32 versions each; synthetic scalar H=1-t, not natural atmospheric truth",
+  "inputs": "RGB and deterministic RGB-derived priors/context only; no J,t,A,scene identity or oracle in forward",
+  "noninferiority": "User selected relative MAE margin .05 before any new confirmation; rho drop <=.01, clear increase <=.005",
+  "confirmation_state": "No new confirmation generated before freeze",
+  "selection": "development only; corrector independent per-candidate weighted H loss; RGB same H loss; fit global fusion weights on training after freezing correction"
+}

@@ -1,0 +1,41 @@
+{
+  "original_groups_disjoint": true,
+  "decoded_original_duplicates": 0,
+  "training_cases": 192,
+  "sampled_pixels": 49152,
+  "target": "known synthetic scalar H=1-t; independent of old teacher",
+  "linear_formation_max_abs_error": 2.384185791015625e-07,
+  "eligible_forward_response_max_abs_error": 2.689659595489502e-06,
+  "brightness_clipped_fraction_max": 0.0,
+  "context_sample_quantiles": [
+    [
+      0.11752118915319443,
+      0.0004680089186877012
+    ],
+    [
+      0.1511400492489338,
+      0.001268905051983893
+    ],
+    [
+      0.6203823685646057,
+      0.018148927949368954
+    ],
+    [
+      0.8535405522584915,
+      0.20040945291519163
+    ],
+    [
+      0.932811439037323,
+      0.3027086853981018
+    ]
+  ],
+  "physics_eligible_fraction_D_C_K": [
+    0.6666666666666666,
+    0.6666666666666666,
+    1.0
+  ],
+  "seconds": 9.762569900020026,
+  "RSHaze": "Existing G reconstruction failure and S channelwise target restrictions retained; no new RSHaze labels fitted",
+  "coverage": "Small artificial texture/geometric family only. No validated roof/water/vegetation semantic coverage",
+  "semantics": "No segmenter used; prior semantic failures remain evidence, no semantic robustness claim"
+}

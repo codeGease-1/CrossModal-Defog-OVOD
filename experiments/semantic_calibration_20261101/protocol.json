@@ -1,0 +1,163 @@
+{
+  "config": {
+    "seed": 20261101,
+    "device": "cpu",
+    "torch_threads": 4,
+    "semantic_model": "nvidia/segformer-b0-finetuned-ade-512-512",
+    "semantic_revision": "489d5cd81a0b59fab9b7ea758d3548ebe99677da",
+    "semantic_groups": [
+      "other",
+      "built",
+      "vegetation",
+      "water"
+    ],
+    "semantic_labels": [
+      [
+        "building",
+        "house",
+        "skyscraper",
+        "hovel",
+        "tower"
+      ],
+      [
+        "tree",
+        "grass",
+        "plant",
+        "palm"
+      ],
+      [
+        "water",
+        "sea",
+        "river",
+        "waterfall",
+        "lake"
+      ]
+    ],
+    "confidence_threshold": 0.6,
+    "min_class_pixels": 1024,
+    "min_class_scenes": 4,
+    "shrinkage_pixels": 4096,
+    "isotonic_bins": 64,
+    "bias_tolerance": 0.03,
+    "probe_t": [
+      1.0,
+      0.9,
+      0.6,
+      0.4
+    ],
+    "probe_real_per_subset": 2,
+    "probe_development_scenes": 4,
+    "probe_min_agreement_t06": 0.7,
+    "probe_min_confident_fraction": 0.25,
+    "diagnostic_train_scenes": 8,
+    "diagnostic_development_scenes": 4,
+    "diagnostic_patterns": [
+      "uniform_1.0",
+      "uniform_0.6",
+      "gradient_None",
+      "regions_None"
+    ],
+    "pixels_per_case": 256,
+    "scope": "CPU development feasibility and reduced-protocol calibration diagnostic only; no confirmatory test or neural training",
+    "new_gpu_training_authorized_seconds": 0,
+    "noninferiority_margin": null,
+    "new_confirmation_policy": "No new confirmation opened; freeze method and application-based noninferiority margin first"
+  },
+  "base": {
+    "seed": 20261101,
+    "image_size": 256,
+    "scene_counts": {
+      "train": 48,
+      "development": 16,
+      "test": 16
+    },
+    "scene_seed_offsets": {
+      "train": 0,
+      "development": 10000,
+      "test": 20000
+    },
+    "uniform_t": [
+      1.0,
+      0.9,
+      0.75,
+      0.6,
+      0.4
+    ],
+    "spatial_patterns": [
+      "gradient",
+      "blob",
+      "regions"
+    ],
+    "airlights": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        0.75,
+        0.8,
+        0.9
+      ]
+    ],
+    "brightness": [
+      0.65,
+      1.0
+    ],
+    "domain": "linear_srgb",
+    "prior": {
+      "window_size": 15,
+      "guided_radius": 15,
+      "guided_eps": 0.01
+    },
+    "percentiles": [
+      0.01,
+      0.99
+    ],
+    "pixels_per_case": 256,
+    "isotonic_bins": 128,
+    "external_scenes_per_subset": 8,
+    "spatial_noninferiority_margin": 0.03,
+    "training_budget_seconds": 3600,
+    "primary_candidates": [
+      "legacy",
+      "normalized_calibrated",
+      "fixed_calibrated"
+    ],
+    "selection_rule": "development global MAE minimum among candidates with spatial rho >= legacy rho-0.03; if none improves legacy MAE select legacy",
+    "external_policy": "All RSHaze sources held out as ONE conservative geographic supergroup; never fit or tune on them. Controlled originals are independent procedural scenes."
+  },
+  "git_head": "1672fb1d9921b21f13408b17991c865333d44abe",
+  "source_sha256": {
+    "scripts/semantic/cloud_audit.py": "a52e283eccc374e44722ce9ec455dd9acd3fcc9a450834811fac8d2f472d6a5d",
+    "scripts/semantic/frozen_semantics.py": "f40d0614f952fcf01eb1032b7a358430495247c31ee6d03ed0bf1fde95b64038",
+    "scripts/semantic/run_diagnostics.py": "4b95d020db409c8347160b98eabc44f003969cda10ff5aca125e27daf9e2e33d",
+    "scripts/semantic/test_semantic_prior.py": "2a917f29d018776897d9f74f248007d3b755fb2b7270e20044a3ef0836e03303",
+    "src/models/haze_density/semantic_prior.py": "9eeab78a2a1ff09768ef77a31939e1a49e98d8fac2b2f28bfa222047151a0ad5",
+    "configs/semantic_calibration.json": "45012c65ea4ac6e91e8e6952f77f459efcf9e74757292120e09228c6e43c654a",
+    "src/models/haze_density/dynamic_prior.py": "c09340b9e33d5550c468c3cdbb42d9e9ce51756aeab576989d6815ccb240ca5f",
+    "scripts/v15/run.py": "e432a6fbdaaee750bf9e5069d678f0d58e34b7266c586f817946ec9eb403db87",
+    "src/models/haze_density/calibrated_prior.py": "f21505fe5a040978f98f1574fd7cd663bf3bdadef4c938d246b063ea8f0af5ff",
+    "scripts/semantic/render_evidence.py": "86061d97f4489a613a104206dc0d8df3eb314cffc98705d10ee8c71ea91354e9",
+    "scripts/semantic/benchmark_cpu.py": "c7fbfd193d973802360d8962e662595900a6c1060dc77c221cbfba14b6a97d02"
+  },
+  "candidate_calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "model_sha256": {
+    "config.json": "209caa9091e4632f7c8883c11170cd08ad29af68b23c09590aa4a5befb1a2a7f",
+    "model.safetensors": "6ae39addd01de6b1b8bde2cf677d43a5cd733424b8d186de3f95d1c51fee23f9",
+    "preprocessor_config.json": "8039d1d210abaa7117ad78e58cdfd6141a2ec72c03dae891b3cd76737e422c6c",
+    "README.md": "a738172c9395b26f14e1981f6a95885085cc1239210446d752bf30ad6a9b8538"
+  },
+  "environment": {
+    "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:29:05) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.14.1+cpu",
+    "cuda_used": false
+  },
+  "data_audit": {
+    "procedural": "known scalar t and disjoint seed originals; design names are NOT semantic labels",
+    "RSHaze": "external only; geography unverified; original G labels failed reconstruction; S is channelwise, not scalar t",
+    "semantics": "ADE20K predictions from input RGB; no task semantic truth; not an independent sensor",
+    "prior_confirmation": "all earlier confirmations now development references; no new confirmation accessed"
+  },
+  "implementation_revision": "Unspecified other semantic aggregate always falls back to global. Initial other-class development trial retained separately; no new confirmation accessed."
+}

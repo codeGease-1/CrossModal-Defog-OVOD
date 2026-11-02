@@ -1,0 +1,7 @@
+{
+  "stage": "complete",
+  "device": "cpu",
+  "gpu_seconds": 0,
+  "optimizer": null,
+  "rng": "deterministic per-case numpy seed; no neural training"
+}

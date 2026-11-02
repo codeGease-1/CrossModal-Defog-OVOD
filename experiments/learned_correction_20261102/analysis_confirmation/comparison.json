@@ -1,0 +1,1301 @@
+{
+  "nominal": {
+    "vs_RGB32": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.01253235119747842,
+            "reference": 0.014183300350547748,
+            "relative_increase": -0.11640091602555469
+          },
+          "region_spearman": {
+            "candidate": 0.9771946732995023,
+            "reference": 0.9772661602276069,
+            "relative_increase": -7.314990635509666e-05
+          },
+          "clear_response": {
+            "candidate": 0.004413035123434383,
+            "reference": 0.005312244097391765,
+            "relative_increase": -0.16927101945463685
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.014762358547765567,
+            "reference": 0.012463685994589468,
+            "relative_increase": 0.18442959443730866
+          },
+          "region_spearman": {
+            "candidate": 0.9770414870249926,
+            "reference": 0.9774397713387182,
+            "relative_increase": -0.0004074770900514002
+          },
+          "clear_response": {
+            "candidate": 0.006073801220433476,
+            "reference": 0.003680268923441569,
+            "relative_increase": 0.6503688580326945
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.012951348712704203,
+            "reference": 0.015383234220886758,
+            "relative_increase": -0.15808675037142939
+          },
+          "region_spearman": {
+            "candidate": 0.9771129739530972,
+            "reference": 0.9767453268942736,
+            "relative_increase": 0.0003764001205845968
+          },
+          "clear_response": {
+            "candidate": 0.00600553927506553,
+            "reference": 0.0036834081013997397,
+            "relative_increase": 0.6304300554650331
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.013415352819316065,
+        "reference_mean": 0.01401007352200799,
+        "difference_or_relative_increase": -0.042449506189792485,
+        "scene_bootstrap_95": [
+          -0.08704600508069812,
+          0.00028582353386820365
+        ],
+        "margin": 0.05,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.9771163780925307,
+        "reference_mean": 0.9771504194868662,
+        "difference_or_relative_increase": 3.404139433549336e-05,
+        "scene_bootstrap_95": [
+          -0.0005787888071895563,
+          0.0006740196078430793
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.005497458539644464,
+        "reference_mean": 0.004225307040744358,
+        "difference_or_relative_increase": 0.0012721514989001061,
+        "scene_bootstrap_95": [
+          0.0004245726455741933,
+          0.0021784423655036435
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": true,
+      "all_upper_95_margins_passed": true
+    },
+    "vs_same_capacity_same_information_direct": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.01253235119747842,
+            "reference": 0.012652024399055032,
+            "relative_increase": -0.009458818431108185
+          },
+          "region_spearman": {
+            "candidate": 0.9771946732995023,
+            "reference": 0.9772150981361039,
+            "relative_increase": -2.0901065323819523e-05
+          },
+          "clear_response": {
+            "candidate": 0.004413035123434383,
+            "reference": 0.005078315734863281,
+            "relative_increase": -0.13100418449007845
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.014762358547765567,
+            "reference": 0.012522126862980562,
+            "relative_increase": 0.17890185184178664
+          },
+          "region_spearman": {
+            "candidate": 0.9770414870249926,
+            "reference": 0.976827026240679,
+            "relative_increase": 0.00021954837300008911
+          },
+          "clear_response": {
+            "candidate": 0.006073801220433476,
+            "reference": 0.005838553110758464,
+            "relative_increase": 0.040292193153391054
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.012951348712704203,
+            "reference": 0.012238622105238997,
+            "relative_increase": 0.058235853786196
+          },
+          "region_spearman": {
+            "candidate": 0.9771129739530972,
+            "reference": 0.9775214706851233,
+            "relative_increase": -0.0004178902911869953
+          },
+          "clear_response": {
+            "candidate": 0.00600553927506553,
+            "reference": 0.005447546641031901,
+            "relative_increase": 0.10243007922699143
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.013415352819316065,
+        "reference_mean": 0.012470924455758198,
+        "difference_or_relative_increase": 0.07573042134192343,
+        "scene_bootstrap_95": [
+          0.0021144900337083457,
+          0.14776969536332224
+        ],
+        "margin": 0.05,
+        "point_within_margin": false,
+        "upper_95_within_margin": false,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.9771163780925307,
+        "reference_mean": 0.9771878650206354,
+        "difference_or_relative_increase": 7.148692810465818e-05,
+        "scene_bootstrap_95": [
+          -0.0004493464052286483,
+          0.0006297657952071267
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.005497458539644464,
+        "reference_mean": 0.0054548051622178816,
+        "difference_or_relative_increase": 4.265337742658231e-05,
+        "scene_bootstrap_95": [
+          -0.00091658608259119,
+          0.0010905400511950973
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": false,
+      "all_upper_95_margins_passed": false
+    },
+    "small_direct_vs_RGB32": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.012652024399055032,
+            "reference": 0.014183300350547748,
+            "relative_increase": -0.10796330287355016
+          },
+          "region_spearman": {
+            "candidate": 0.9772150981361039,
+            "reference": 0.9772661602276069,
+            "relative_increase": -5.224993311048198e-05
+          },
+          "clear_response": {
+            "candidate": 0.005078315734863281,
+            "reference": 0.005312244097391765,
+            "relative_increase": -0.044035695318168644
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.012522126862980562,
+            "reference": 0.012463685994589468,
+            "relative_increase": 0.004688891265109074
+          },
+          "region_spearman": {
+            "candidate": 0.976827026240679,
+            "reference": 0.9774397713387182,
+            "relative_increase": -0.0006268878308480774
+          },
+          "clear_response": {
+            "candidate": 0.005838553110758464,
+            "reference": 0.003680268923441569,
+            "relative_increase": 0.5864474124620751
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.012238622105238997,
+            "reference": 0.015383234220886758,
+            "relative_increase": -0.20441813928686914
+          },
+          "region_spearman": {
+            "candidate": 0.9775214706851233,
+            "reference": 0.9767453268942736,
+            "relative_increase": 0.0007946224767898524
+          },
+          "clear_response": {
+            "candidate": 0.005447546641031901,
+            "reference": 0.0036834081013997397,
+            "relative_increase": 0.4789419176663503
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.012470924455758198,
+        "reference_mean": 0.01401007352200799,
+        "difference_or_relative_increase": -0.1098601705288691,
+        "scene_bootstrap_95": [
+          -0.1427687708946845,
+          -0.07823917010565451
+        ],
+        "margin": 0.05,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.9771878650206354,
+        "reference_mean": 0.9771504194868662,
+        "difference_or_relative_increase": -3.744553376916482e-05,
+        "scene_bootstrap_95": [
+          -0.00041870915032682365,
+          0.0003097766884532227
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.0054548051622178816,
+        "reference_mean": 0.004225307040744358,
+        "difference_or_relative_increase": 0.0012294981214735238,
+        "scene_bootstrap_95": [
+          0.0010198480553097193,
+          0.0014265911446677325
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": true,
+      "all_upper_95_margins_passed": true
+    },
+    "candidate_diagnostics": {
+      "original": {
+        "candidate_mae": [
+          0.019707964657712296,
+          0.13849011429798944,
+          0.12052555324286611
+        ],
+        "candidate_bias": [
+          -0.0020289513234909387,
+          -0.0009161126235994743,
+          -0.0008967747789938585
+        ],
+        "joint_high": 0.016050020853678387,
+        "joint_low": 0.07423595587412517,
+        "outside_fraction": 0.3280537525812785,
+        "oracle_mae": 0.008361370903567847,
+        "oracle_mse": 0.0006176696076358811,
+        "outside_global_max": 0.36982205510139465,
+        "outside_conditional_amplitude": 0.025487807524762995
+      },
+      "corrector16_seed42": {
+        "candidate_mae": [
+          0.012355234148875146,
+          0.033019569756409815,
+          0.04351795199302918
+        ],
+        "candidate_bias": [
+          0.0022644289573842493,
+          0.013487727440292474,
+          -0.00019956021022456602
+        ],
+        "joint_high": 0.016083816687266033,
+        "joint_low": 0.004811783631642659,
+        "outside_fraction": 0.5002456506093343,
+        "oracle_mae": 0.004543524475214629,
+        "oracle_mse": 9.533996370262275e-05,
+        "outside_global_max": 0.38820430636405945,
+        "outside_conditional_amplitude": 0.009082586664532311
+      },
+      "corrector16_seed43": {
+        "candidate_mae": [
+          0.014496585777427148,
+          0.03186562358920734,
+          0.04016822867561132
+        ],
+        "candidate_bias": [
+          -0.008398674092992072,
+          0.003858292153684791,
+          -0.003911991707658065
+        ],
+        "joint_high": 0.00298154354095459,
+        "joint_low": 0.034421940644582115,
+        "outside_fraction": 0.4706657926241557,
+        "oracle_mae": 0.005332325451814057,
+        "oracle_mse": 0.00014610543602553683,
+        "outside_global_max": 0.33705562353134155,
+        "outside_conditional_amplitude": 0.011329324406781607
+      },
+      "corrector16_seed44": {
+        "candidate_mae": [
+          0.012671268386990656,
+          0.03183172173703497,
+          0.04407590940415199
+        ],
+        "candidate_bias": [
+          -0.0011671073392231317,
+          0.005763338833427649,
+          -0.004962728675764083
+        ],
+        "joint_high": 0.007596929868062337,
+        "joint_low": 0.014497220516204834,
+        "outside_fraction": 0.504704495271047,
+        "oracle_mae": 0.004734644757810713,
+        "oracle_mse": 0.00010263310389031434,
+        "outside_global_max": 0.47545039653778076,
+        "outside_conditional_amplitude": 0.009381023553729228
+      }
+    },
+    "rankings": {
+      "corrector16_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "corrector16_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "corrector16_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "original_fixed": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      }
+    }
+  },
+  "unseen_A": {
+    "vs_RGB32": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.07518522346708778,
+            "reference": 0.049068516179128586,
+            "relative_increase": 0.5322497870654586
+          },
+          "region_spearman": {
+            "candidate": 0.9755606863713978,
+            "reference": 0.9763368301622476,
+            "relative_increase": -0.0007949549447200388
+          },
+          "clear_response": {
+            "candidate": 0.004413035123434383,
+            "reference": 0.005312244097391765,
+            "relative_increase": -0.16927101945463685
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.08653844904438301,
+            "reference": 0.07250620313546581,
+            "relative_increase": 0.1935316607697728
+          },
+          "region_spearman": {
+            "candidate": 0.9756117484629011,
+            "reference": 0.9765717157831625,
+            "relative_increase": -0.000982997259439955
+          },
+          "clear_response": {
+            "candidate": 0.006073801220433476,
+            "reference": 0.003680268923441569,
+            "relative_increase": 0.6503688580326945
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.07617095560969271,
+            "reference": 0.05037735722483679,
+            "relative_increase": 0.5120077710654358
+          },
+          "region_spearman": {
+            "candidate": 0.9757547223191102,
+            "reference": 0.975203251730875,
+            "relative_increase": 0.0005654929751890414
+          },
+          "clear_response": {
+            "candidate": 0.00600553927506553,
+            "reference": 0.0036834081013997397,
+            "relative_increase": 0.6304300554650331
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.07929820937372117,
+        "reference_mean": 0.05731735884647706,
+        "difference_or_relative_increase": 0.3834937786669341,
+        "scene_bootstrap_95": [
+          0.3144424528849102,
+          0.4627404335600316
+        ],
+        "margin": 0.05,
+        "point_within_margin": false,
+        "upper_95_within_margin": false,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.975642385717803,
+        "reference_mean": 0.9760372658920949,
+        "difference_or_relative_increase": 0.0003948801742919006,
+        "scene_bootstrap_95": [
+          -0.00042892156862750497,
+          0.0012425108932462292
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.005497458539644464,
+        "reference_mean": 0.004225307040744358,
+        "difference_or_relative_increase": 0.0012721514989001061,
+        "scene_bootstrap_95": [
+          0.0004245726455741933,
+          0.0021784423655036435
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": false,
+      "all_upper_95_margins_passed": false
+    },
+    "vs_same_capacity_same_information_direct": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.07518522346708778,
+            "reference": 0.06782100125928991,
+            "relative_increase": 0.1085832127373545
+          },
+          "region_spearman": {
+            "candidate": 0.9755606863713978,
+            "reference": 0.9758976961753194,
+            "relative_increase": -0.00034533312789075676
+          },
+          "clear_response": {
+            "candidate": 0.004413035123434383,
+            "reference": 0.005078315734863281,
+            "relative_increase": -0.13100418449007845
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.08653844904438301,
+            "reference": 0.07878412278053777,
+            "relative_increase": 0.09842498704270408
+          },
+          "region_spearman": {
+            "candidate": 0.9756117484629011,
+            "reference": 0.9749173040184567,
+            "relative_increase": 0.0007123111279101479
+          },
+          "clear_response": {
+            "candidate": 0.006073801220433476,
+            "reference": 0.005838553110758464,
+            "relative_increase": 0.040292193153391054
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.07617095560969271,
+            "reference": 0.06014684497798347,
+            "relative_increase": 0.26641647849649974
+          },
+          "region_spearman": {
+            "candidate": 0.9757547223191102,
+            "reference": 0.9760815197047311,
+            "relative_increase": -0.0003348054225222885
+          },
+          "clear_response": {
+            "candidate": 0.00600553927506553,
+            "reference": 0.005447546641031901,
+            "relative_increase": 0.10243007922699143
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.07929820937372117,
+        "reference_mean": 0.06891732300593706,
+        "difference_or_relative_increase": 0.1506281137311416,
+        "scene_bootstrap_95": [
+          0.11495527546392942,
+          0.19041718820044748
+        ],
+        "margin": 0.05,
+        "point_within_margin": false,
+        "upper_95_within_margin": false,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.975642385717803,
+        "reference_mean": 0.9756321732995025,
+        "difference_or_relative_increase": -1.0212418300570292e-05,
+        "scene_bootstrap_95": [
+          -0.0007693355119825524,
+          0.0007455065359477375
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.005497458539644464,
+        "reference_mean": 0.0054548051622178816,
+        "difference_or_relative_increase": 4.265337742658231e-05,
+        "scene_bootstrap_95": [
+          -0.00091658608259119,
+          0.0010905400511950973
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": false,
+      "all_upper_95_margins_passed": false
+    },
+    "small_direct_vs_RGB32": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.06782100125928991,
+            "reference": 0.049068516179128586,
+            "relative_increase": 0.3821693937453472
+          },
+          "region_spearman": {
+            "candidate": 0.9758976961753194,
+            "reference": 0.9763368301622476,
+            "relative_increase": -0.0004497771397757866
+          },
+          "clear_response": {
+            "candidate": 0.005078315734863281,
+            "reference": 0.005312244097391765,
+            "relative_increase": -0.044035695318168644
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.07878412278053777,
+            "reference": 0.07250620313546581,
+            "relative_increase": 0.08658458688483117
+          },
+          "region_spearman": {
+            "candidate": 0.9749173040184567,
+            "reference": 0.9765717157831625,
+            "relative_increase": -0.001694101659885816
+          },
+          "clear_response": {
+            "candidate": 0.005838553110758464,
+            "reference": 0.003680268923441569,
+            "relative_increase": 0.5864474124620751
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.06014684497798347,
+            "reference": 0.05037735722483679,
+            "relative_increase": 0.19392616626443782
+          },
+          "region_spearman": {
+            "candidate": 0.9760815197047311,
+            "reference": 0.975203251730875,
+            "relative_increase": 0.0009005999234490414
+          },
+          "clear_response": {
+            "candidate": 0.005447546641031901,
+            "reference": 0.0036834081013997397,
+            "relative_increase": 0.4789419176663503
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.06891732300593706,
+        "reference_mean": 0.05731735884647706,
+        "difference_or_relative_increase": 0.202381344725429,
+        "scene_bootstrap_95": [
+          0.17488683820410086,
+          0.23280295307905008
+        ],
+        "margin": 0.05,
+        "point_within_margin": false,
+        "upper_95_within_margin": false,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.9756321732995025,
+        "reference_mean": 0.9760372658920949,
+        "difference_or_relative_increase": 0.0004050925925924709,
+        "scene_bootstrap_95": [
+          -2.7233115468375257e-05,
+          0.0008169934640523985
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.0054548051622178816,
+        "reference_mean": 0.004225307040744358,
+        "difference_or_relative_increase": 0.0012294981214735238,
+        "scene_bootstrap_95": [
+          0.0010198480553097193,
+          0.0014265911446677325
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": false,
+      "all_upper_95_margins_passed": false
+    },
+    "candidate_diagnostics": {
+      "original": {
+        "candidate_mae": [
+          0.08441504877566312,
+          0.1400081663656844,
+          0.17122988238406833
+        ],
+        "candidate_bias": [
+          -0.08294433439937639,
+          -0.008978494195162057,
+          -0.07622050344230047
+        ],
+        "joint_high": 0.005526562531789144,
+        "joint_low": 0.36725789308547974,
+        "outside_fraction": 0.44137386480967206,
+        "oracle_mae": 0.047216141823388146,
+        "oracle_mse": 0.0072386111805249715,
+        "outside_global_max": 0.47332441806793213,
+        "outside_conditional_amplitude": 0.10697539113184364
+      },
+      "corrector16_seed42": {
+        "candidate_mae": [
+          0.0759068975972544,
+          0.06149693311029599,
+          0.10682587961612929
+        ],
+        "candidate_bias": [
+          -0.0745672109755257,
+          -0.04318755925851292,
+          -0.09758430675477332
+        ],
+        "joint_high": 0.0014264980951944988,
+        "joint_low": 0.4624903400739034,
+        "outside_fraction": 0.8057155609130859,
+        "oracle_mae": 0.04326598565673804,
+        "oracle_mse": 0.0044703599632583,
+        "outside_global_max": 0.3635895848274231,
+        "outside_conditional_amplitude": 0.05369883337949486
+      },
+      "corrector16_seed43": {
+        "candidate_mae": [
+          0.08706137056772907,
+          0.0667594290443958,
+          0.1127123381114264
+        ],
+        "candidate_bias": [
+          -0.08610742664071343,
+          -0.05150158986739939,
+          -0.10490197927712568
+        ],
+        "joint_high": 0.0009746154149373373,
+        "joint_low": 0.5440709789594015,
+        "outside_fraction": 0.8484672904014587,
+        "oracle_mae": 0.04971576488729568,
+        "oracle_mse": 0.0049528849197408775,
+        "outside_global_max": 0.45738154649734497,
+        "outside_conditional_amplitude": 0.05859479257446953
+      },
+      "corrector16_seed44": {
+        "candidate_mae": [
+          0.07699311694962792,
+          0.06470899952061397,
+          0.10829246756475186
+        ],
+        "candidate_bias": [
+          -0.07574543176618438,
+          -0.047775582842518816,
+          -0.09959856149964708
+        ],
+        "joint_high": 0.00257947047551473,
+        "joint_low": 0.4959190885225932,
+        "outside_fraction": 0.8295756777127584,
+        "oracle_mae": 0.04593725259301129,
+        "oracle_mse": 0.004731451933436056,
+        "outside_global_max": 0.4170873761177063,
+        "outside_conditional_amplitude": 0.055374396606788084
+      }
+    },
+    "rankings": {
+      "corrector16_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "corrector16_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "corrector16_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "original_fixed": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 1.0,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      }
+    }
+  },
+  "display_rgb": {
+    "vs_RGB32": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.14858906374714329,
+            "reference": 0.13111007816830048,
+            "relative_increase": 0.1333153470963977
+          },
+          "region_spearman": {
+            "candidate": 0.9676154249334893,
+            "reference": 0.9698110948681298,
+            "relative_increase": -0.002264018164216841
+          },
+          "clear_response": {
+            "candidate": 0.004449058331374545,
+            "reference": 0.005068858464558919,
+            "relative_increase": -0.12227607803965546
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.16047359300803996,
+            "reference": 0.13402250208613017,
+            "relative_increase": 0.19736305851767244
+          },
+          "region_spearman": {
+            "candidate": 0.9636325817962343,
+            "reference": 0.9700868301622475,
+            "relative_increase": -0.006653268723309735
+          },
+          "clear_response": {
+            "candidate": 0.006342339266363221,
+            "reference": 0.0034519831339518228,
+            "relative_increase": 0.8373030864442623
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.1547529617176527,
+            "reference": 0.13416029982969727,
+            "relative_increase": 0.15349296262825685
+          },
+          "region_spearman": {
+            "candidate": 0.9668086438877378,
+            "reference": 0.9669822549988488,
+            "relative_increase": -0.00017953908690004905
+          },
+          "clear_response": {
+            "candidate": 0.006014752269644911,
+            "reference": 0.003514965375264486,
+            "relative_increase": 0.7111839314184787
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.15460520615761197,
+        "reference_mean": 0.13309762669470934,
+        "difference_or_relative_increase": 0.16159250917550394,
+        "scene_bootstrap_95": [
+          0.12734410219439246,
+          0.19367451266748947
+        ],
+        "margin": 0.05,
+        "point_within_margin": false,
+        "upper_95_within_margin": false,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.9660188835391539,
+        "reference_mean": 0.9689600600097421,
+        "difference_or_relative_increase": 0.002941176470588225,
+        "scene_bootstrap_95": [
+          0.001062006399782134,
+          0.004857792075163588
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.005602049955794226,
+        "reference_mean": 0.004011935657925076,
+        "difference_or_relative_increase": 0.0015901142978691505,
+        "scene_bootstrap_95": [
+          0.0008466555203590869,
+          0.0023818414432349114
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": false,
+      "all_upper_95_margins_passed": false
+    },
+    "vs_same_capacity_same_information_direct": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.14858906374714329,
+            "reference": 0.14509447232315628,
+            "relative_increase": 0.024084938371765174
+          },
+          "region_spearman": {
+            "candidate": 0.9676154249334893,
+            "reference": 0.9672171406197639,
+            "relative_increase": 0.0004117837629202814
+          },
+          "clear_response": {
+            "candidate": 0.004449058331374545,
+            "reference": 0.004912217458089192,
+            "relative_increase": -0.0942871789912193
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.16047359300803996,
+            "reference": 0.14664990357899418,
+            "relative_increase": 0.09426320162290125
+          },
+          "region_spearman": {
+            "candidate": 0.9636325817962343,
+            "reference": 0.9662559160933585,
+            "relative_increase": -0.0027149477208175954
+          },
+          "clear_response": {
+            "candidate": 0.006342339266363221,
+            "reference": 0.00560768445332845,
+            "relative_increase": 0.13100858636914126
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.1547529617176527,
+            "reference": 0.13844078932985818,
+            "relative_increase": 0.11782779097660345
+          },
+          "region_spearman": {
+            "candidate": 0.9668086438877378,
+            "reference": 0.9662878105544044,
+            "relative_increase": 0.0005390043500959063
+          },
+          "clear_response": {
+            "candidate": 0.006014752269644911,
+            "reference": 0.005213260650634766,
+            "relative_increase": 0.15374094500963742
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.15460520615761197,
+        "reference_mean": 0.14339505507733621,
+        "difference_or_relative_increase": 0.0781766921755418,
+        "scene_bootstrap_95": [
+          0.05023223688485956,
+          0.10436371756359825
+        ],
+        "margin": 0.05,
+        "point_within_margin": false,
+        "upper_95_within_margin": false,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.9660188835391539,
+        "reference_mean": 0.9665869557558423,
+        "difference_or_relative_increase": 0.00056807221668842,
+        "scene_bootstrap_95": [
+          -0.001627608194670152,
+          0.002671840863340866
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.005602049955794226,
+        "reference_mean": 0.005244387520684137,
+        "difference_or_relative_increase": 0.00035766243511008936,
+        "scene_bootstrap_95": [
+          -0.00047586821066134856,
+          0.0012604675501683641
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": false,
+      "all_upper_95_margins_passed": false
+    },
+    "small_direct_vs_RGB32": {
+      "per_seed": {
+        "42": {
+          "pixel_mae": {
+            "candidate": 0.14509447232315628,
+            "reference": 0.13111007816830048,
+            "relative_increase": 0.10666147370383405
+          },
+          "region_spearman": {
+            "candidate": 0.9672171406197639,
+            "reference": 0.9698110948681298,
+            "relative_increase": -0.0026747005288886294
+          },
+          "clear_response": {
+            "candidate": 0.004912217458089192,
+            "reference": 0.005068858464558919,
+            "relative_increase": -0.03090261990247878
+          }
+        },
+        "43": {
+          "pixel_mae": {
+            "candidate": 0.14664990357899418,
+            "reference": 0.13402250208613017,
+            "relative_increase": 0.09421851775867429
+          },
+          "region_spearman": {
+            "candidate": 0.9662559160933585,
+            "reference": 0.9700868301622475,
+            "relative_increase": -0.003949042446281137
+          },
+          "clear_response": {
+            "candidate": 0.00560768445332845,
+            "reference": 0.0034519831339518228,
+            "relative_increase": 0.6244819965005985
+          }
+        },
+        "44": {
+          "pixel_mae": {
+            "candidate": 0.13844078932985818,
+            "reference": 0.13416029982969727,
+            "relative_increase": 0.03190578364534491
+          },
+          "region_spearman": {
+            "candidate": 0.9662878105544044,
+            "reference": 0.9669822549988488,
+            "relative_increase": -0.0007181563476004182
+          },
+          "clear_response": {
+            "candidate": 0.005213260650634766,
+            "reference": 0.003514965375264486,
+            "relative_increase": 0.4831613100150356
+          }
+        }
+      },
+      "bootstrap_scope": "Average fixed three training seeds per scene; resample original scenes. Does not characterize all training-seed uncertainty.",
+      "pixel_mae": {
+        "candidate_mean": 0.14339505507733621,
+        "reference_mean": 0.13309762669470934,
+        "difference_or_relative_increase": 0.07736748309003616,
+        "scene_bootstrap_95": [
+          0.06869514882771825,
+          0.08630475347762424
+        ],
+        "margin": 0.05,
+        "point_within_margin": false,
+        "upper_95_within_margin": false,
+        "original_scenes": 24
+      },
+      "region_spearman": {
+        "candidate_mean": 0.9665869557558423,
+        "reference_mean": 0.9689600600097421,
+        "difference_or_relative_increase": 0.002373104253899805,
+        "scene_bootstrap_95": [
+          0.0006842320261437607,
+          0.003973533006433604
+        ],
+        "margin": 0.01,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "clear_response": {
+        "candidate_mean": 0.005244387520684137,
+        "reference_mean": 0.004011935657925076,
+        "difference_or_relative_increase": 0.001232451862759061,
+        "scene_bootstrap_95": [
+          0.0010602805349561907,
+          0.0013932476441065468
+        ],
+        "margin": 0.005,
+        "point_within_margin": true,
+        "upper_95_within_margin": true,
+        "original_scenes": 24
+      },
+      "all_point_margins_passed": false,
+      "all_upper_95_margins_passed": false
+    },
+    "candidate_diagnostics": {
+      "original": {
+        "candidate_mae": [
+          0.16451715910435874,
+          0.16941509605991692,
+          0.18013727711998703
+        ],
+        "candidate_bias": [
+          -0.163785086211116,
+          -0.052070307087130153,
+          -0.11728156805899441
+        ],
+        "joint_high": 0.0042493343353271484,
+        "joint_low": 0.46916959683100384,
+        "outside_fraction": 0.5218764146169027,
+        "oracle_mae": 0.07679704727832111,
+        "oracle_mse": 0.01651750358170839,
+        "outside_global_max": 0.5230180025100708,
+        "outside_conditional_amplitude": 0.14715561985052733
+      },
+      "corrector16_seed42": {
+        "candidate_mae": [
+          0.14912963483592043,
+          0.13650733071638874,
+          0.16971016892057378
+        ],
+        "candidate_bias": [
+          -0.14840453745144563,
+          -0.12076428837303865,
+          -0.16149888867463838
+        ],
+        "joint_high": 0.0008973081906636556,
+        "joint_low": 0.6985058983167013,
+        "outside_fraction": 0.9241502086321512,
+        "oracle_mae": 0.1102431508275205,
+        "oracle_mse": 0.022131819724283946,
+        "outside_global_max": 0.5677065849304199,
+        "outside_conditional_amplitude": 0.11929137687551145
+      },
+      "corrector16_seed43": {
+        "candidate_mae": [
+          0.16129523482156097,
+          0.142030532673895,
+          0.1708034731770264
+        ],
+        "candidate_bias": [
+          -0.16055384820189525,
+          -0.12744679467687092,
+          -0.1629645113243896
+        ],
+        "joint_high": 0.0007911920547485352,
+        "joint_low": 0.7368426521619161,
+        "outside_fraction": 0.9488410552342733,
+        "oracle_mae": 0.12257340732356663,
+        "oracle_mse": 0.024358889197881612,
+        "outside_global_max": 0.5313578248023987,
+        "outside_conditional_amplitude": 0.129182234102742
+      },
+      "corrector16_seed44": {
+        "candidate_mae": [
+          0.15542414264821977,
+          0.14353711804778868,
+          0.1731681776679276
+        ],
+        "candidate_bias": [
+          -0.1545234972107513,
+          -0.12846388626561142,
+          -0.16509241956615975
+        ],
+        "joint_high": 0.0020223061243693032,
+        "joint_low": 0.7293432553609213,
+        "outside_fraction": 0.9374526341756185,
+        "oracle_mae": 0.11934179458789007,
+        "oracle_mse": 0.024314105345809727,
+        "outside_global_max": 0.5535992980003357,
+        "outside_conditional_amplitude": 0.12730434609406951
+      }
+    },
+    "rankings": {
+      "corrector16_seed42": {
+        "same_scene_rank_accuracy": 0.975,
+        "cross_scene_nuisance_rank_accuracy": 0.9591032608695652,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "corrector16_seed43": {
+        "same_scene_rank_accuracy": 0.99375,
+        "cross_scene_nuisance_rank_accuracy": 0.9624320652173913,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "corrector16_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.9601336050724638,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.9828577898550724,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.9857563405797102,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "direct_same16_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.9923686594202898,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "original_fixed": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.941304347826087,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed42": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.9829370471014492,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed43": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.9857676630434783,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      },
+      "rgb32_seed44": {
+        "same_scene_rank_accuracy": 1.0,
+        "cross_scene_nuisance_rank_accuracy": 0.9915647644927537,
+        "same_pairs": 960,
+        "cross_pairs": 88320
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-01",
+  "goal": "论文创新取舍；不启动训练",
+  "verified_fulltext_or_official_sources": [
+    {
+      "name": "dcp",
+      "url": "https://people.csail.mit.edu/kaiming/publications/cvpr09.pdf",
+      "final_url": "https://people.csail.mit.edu/kaiming/publications/cvpr09.pdf",
+      "bytes": 4389504,
+      "sha256": "7dbd992b7fee7d324f40e4e2be0bcd2c4a01b6fb6c3e68572d717a0219b36c2f",
+      "text_chars": 27468,
+      "preview": "Single Image Haze Removal Using Dark Channel Prior\nKaiming He1\n1Department of Information Engineering\nThe Chinese University of Hong Kong\nJian Sun2\n2Microsoft Research Asia\nXiaoou Tang1,3\n3Shenzhen Institute of Advanced Technology\nChinese Academy of Sciences\nAbstract In this paper , we propose a simple but effective\nimage prior - dark channel prior to remove haze from a s-\ningle input im age. The dark channel prior is a kind of s-\ntatistics of the haze-free outdoor images. It is based on a\nkey observation - most local patches in haze-free outdoor\nimages contain some pixels which have very low intensities\nin at least one color channel. Using this prior with the haze\nimaging model, we can directly estimate the thickness of the\nhaze and recover a high quality haze-free image. Results on\na var"
+    },
+    {
+      "name": "rshaze_repo",
+      "url": "https://raw.githubusercontent.com/colacomo/PhDnet/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/colacomo/PhDnet/main/README.md",
+      "bytes": 4096,
+      "sha256": "a67470ea1f1ade082b4b5eeaa6faade88547f8a2b6db66c5c6e2079cba89547e",
+      "text_chars": 4080,
+      "preview": "# PhDnet (IF 2024)\r\n### 📖[**Paper**](https://www.sciencedirect.com/science/article/abs/pii/S1566253524000551) | 🖼️[**PDF**](/figs/main.png)\r\n\r\nPyTorch codes for \"[PhDnet: A novel physic-aware dehazing network for remote sensing images](https://www.sciencedirect.com/science/article/abs/pii/S1566253524000551)\", **Information Fusion (IF)**, 2024.\r\n\r\n- Authors:  [Ziyang LiHe](Ziyang_Lihe@whu.edu.cn), [Jiang He](https://jianghe96.github.io/), [Qiangqiang Yuan*](http://qqyuan.users.sgg.whu.edu.cn/), [Xianyu Jin](jin_xy@whu.edu.cn), [Yi Xiao](https://xy-boy.github.io/), and [Liangpei Zhang](http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/index.html)<br>\r\n- Wuhan University,\r\n\r\n\r\n## Abstract\r\n> Remote sensing haze removal is a popular computational imaging technique that directly obtains cle"
+    },
+    {
+      "name": "rshaze_data",
+      "url": "https://zenodo.org/api/records/13837162",
+      "final_url": "https://zenodo.org/api/records/13837162",
+      "bytes": 3323,
+      "sha256": "b1d4c882b27c6a606e010c8afc554a17e259e178f83d93b65ead19185d0cc9be",
+      "text_chars": 3323,
+      "preview": "{\"created\": \"2024-09-27T01:43:55.159709+00:00\", \"modified\": \"2024-09-27T01:43:55.422354+00:00\", \"id\": 13837162, \"conceptrecid\": \"13837161\", \"doi\": \"10.1016/j.inffus.2024.102277\", \"doi_url\": \"https://doi.org/10.1016/j.inffus.2024.102277\", \"metadata\": {\"title\": \"RSHaze+\", \"doi\": \"10.1016/j.inffus.2024.102277\", \"publication_date\": \"2024-09-25\", \"description\": \"<p>remote sensing dehazing datasets in PhDnet: A novel physic-aware dehazing network for remote sensing images</p>\", \"access_right\": \"open\", \"creators\": [{\"name\": \"Lihe, Ziyang\", \"affiliation\": null}], \"resource_type\": {\"title\": \"Dataset\", \"type\": \"dataset\"}, \"license\": {\"id\": \"cc-by-4.0\"}, \"relations\": {\"version\": [{\"index\": 0, \"is_last\": true, \"parent\": {\"pid_type\": \"recid\", \"pid_value\": \"13837161\"}}]}}, \"title\": \"RSHaze+\", \"links\": {"
+    },
+    {
+      "name": "rrshid",
+      "url": "https://arxiv.org/html/2503.17966v1",
+      "final_url": "https://arxiv.org/html/2503.17966v1",
+      "bytes": 292306,
+      "sha256": "0cc389a99469f1de7e75cf9c4a06b343e28caf24bf814d420a81e6a71e1c99bb",
+      "text_chars": 64269,
+      "preview": "Real-World Remote Sensing Image Dehazing: Benchmark and Baseline Skip to main content Report GitHub Issue × Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub Why HTML? Report Issue Back to Abstract Download PDF Contents Reading mode Colour theme Abstract I Introduction II Related Work II-A Model-Based RSID II-B Deep Learning-Based RSID III Proposed Method III-A MFIBA III-B CSAM III-C MFAFM III-D Loss Function IV RRSHID: A Real-World RSID Dataset IV-A Image Acquisition and Processing IV-B Haze Density Estimation IV-C Dataset Characteristics V Experiments V-A Experimental Settings V-A 1 Datasets V-A 2 Implementation Details V-A 3 Evaluation Metrics V-B Experimental Results V-B 1 Real-World RSID V-B 2 Synthetic RSID V-C Ablation Stud"
+    },
+    {
+      "name": "fade_paper",
+      "url": "https://live.ece.utexas.edu/publications/2015/LarkKwonChoi_TIP_2015_Referenceless_Prediction_of_Perceptual_Fog_Density_and_Perceptual_Image_Defogging.pdf",
+      "final_url": "https://live.ece.utexas.edu/publications/2015/LarkKwonChoi_TIP_2015_Referenceless_Prediction_of_Perceptual_Fog_Density_and_Perceptual_Image_Defogging.pdf",
+      "bytes": 3137532,
+      "sha256": "43b90cafdd51a5840ac9146dc4833f733e6e5c58974c7f490907db27e74ac768",
+      "text_chars": 71089,
+      "preview": "3888 IEEE TRANSACTIONS ON IMAGE PROCESSING, VOL. 24, NO. 11, NOVEMBER 2015\nReferenceless Prediction of Perceptual Fog Density\nand Perceptual Image Defogging\nLark Kwon Choi, Member, IEEE, Jaehee You, and Alan Conrad Bovik, Fellow, IEEE\nAbstract— We propose a referenceless perceptual fog density\nprediction model based on natural scene statistics (NSS) and\nfog aware statistical features. The proposed model, called Fog\nAware Density Evaluator (FADE), predicts the visibility of a foggy\nscene from a single image without reference to a corresponding\nfog-free image, without dependence on salient objects in a\nscene, without side geographical camera information, without\nestimating a depth-dependent transmission map, and without\ntraining on human-rated judgments. FADE only makes use of\nmeasurable dev"
+    },
+    {
+      "name": "loveda",
+      "url": "https://raw.githubusercontent.com/Junjue-Wang/LoveDA/master/README.md",
+      "final_url": "https://raw.githubusercontent.com/Junjue-Wang/LoveDA/master/README.md",
+      "bytes": 7410,
+      "sha256": "19918c24807368eb2445947033fbeff9844309f9aec4b0955d40c780b0247ba9",
+      "text_chars": 7368,
+      "preview": "<h2 align=\"center\">LoveDA: A Remote Sensing Land-Cover Dataset for Domain Adaptive Semantic Segmentation</h2>\n\n<h5 align=\"right\">by <a href=\"https://junjue-wang.github.io/homepage/\">Junjue Wang</a>, <a href=\"http://zhuozheng.top/\">Zhuo Zheng</a>, Ailong Ma, Xiaoyan Lu, and <a href=\"http://rsidea.whu.edu.cn/\">Yanfei Zhong</a></h5>\n\n[[`Paper`](https://www.researchgate.net/profile/Junjue-Wang/publication/355390292_LoveDA_A_Remote_Sensing_Land-Cover_Dataset_for_Domain_Adaptive_Semantic_Segmentation/links/617cd8bda767a03c14cecbc9/LoveDA-A-Remote-Sensing-Land-Cover-Dataset-for-Domain-Adaptive-Semantic-Segmentation.pdf?_sg%5B0%5D=Iw5FPui1-9iYrZN7aZO766hZA-LmublHlq8bp0694vUeIGDIzp5SGTfYN-OWhurZOujSPU0RDZ5lW0i02HVUew.7x9qdrvJwRmAnsqEyh5-xSFdh0M9AaTpdXcZCfHyhVl5GNLR5nlDIx8ctTXFy1HE1yNexX4ytzYqJWkAGJ"
+    },
+    {
+      "name": "loveda_paper",
+      "url": "https://arxiv.org/abs/2110.08733",
+      "final_url": "https://arxiv.org/abs/2110.08733",
+      "bytes": 43411,
+      "sha256": "03c362dc5e79f8a559df570ebd2c8bee38b802cb44ccaceed46ceb141e39748c",
+      "text_chars": 5289,
+      "preview": "[2110.08733] LoveDA: A Remote Sensing Land-Cover Dataset for Domain Adaptive Semantic Segmentation Skip to main content Search Submit Donate Log in Search arXiv Press Enter to search · Advanced search Computer Science > Computer Vision and Pattern Recognition arXiv:2110.08733 (cs) [Submitted on 17 Oct 2021 ( v1 ), last revised 31 May 2022 (this version, v6)] Title: LoveDA: A Remote Sensing Land-Cover Dataset for Domain Adaptive Semantic Segmentation Authors: Junjue Wang , Zhuo Zheng , Ailong Ma , Xiaoyan Lu , Yanfei Zhong View a PDF of the paper titled LoveDA: A Remote Sensing Land-Cover Dataset for Domain Adaptive Semantic Segmentation, by Junjue Wang and 3 other authors View PDF HTML (experimental) Abstract: Deep learning approaches have shown promising results in remote sensing high spa"
+    },
+    {
+      "name": "cloudsen12_paper",
+      "url": "https://www.nature.com/articles/s41597-022-01878-2",
+      "final_url": "https://www.nature.com/articles/s41597-022-01878-2?error=cookies_not_supported&code=841ae996-a116-4060-9f24-917cd941a94a",
+      "bytes": 511508,
+      "sha256": "e78c8f3506e96bd896c29a981a3ac0008fdaf23e6c1498f40056c8d32555fc04",
+      "text_chars": 69125,
+      "preview": "CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2 | Scientific Data Skip to main content Thank you for visiting nature.com. You are using a browser version with limited support for CSS. To obtain\n            the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in\n            Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles\n            and JavaScript. Advertisement View all journals Saved research Search Account Log in Content Explore content About the journal Publish with us Sign up for alerts RSS feed nature scientific data data descriptors article CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentine"
+    },
+    {
+      "name": "density2025",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323536",
+      "final_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323536",
+      "bytes": 231655,
+      "sha256": "bb1fa45d51ef684fbd29aa6c3f69d09b6dc4f11b9a9235a5aaec26be53cd3dcf",
+      "text_chars": 53578,
+      "preview": "Image based fog density estimation | PLOS One Skip to main content Advertisement PLOS One Publish Submissions Getting Started Submission Guidelines Figures Tables Supporting Information LaTeX What We Publish Preprints Revising Your Manuscript Submit Now Calls for Papers Policies Best Practices in Research Reporting Human Subjects Research Animal Research Competing Interests Disclosure of Funding Sources Licenses and Copyright Data Availability Complementary Research Materials, Software and Code Sharing Ethical Publishing Practice Authorship Corrections, Expressions of Concern, and Retractions Manuscript Review and Publication Criteria for Publication Editorial and Peer Review Process Editor Center Guidelines for Reviewers Accepted Manuscripts Comments Submit Your Manuscript Discover a fast"
+    },
+    {
+      "name": "flair1_paper",
+      "url": "https://arxiv.org/pdf/2211.12979",
+      "final_url": "https://arxiv.org/pdf/2211.12979",
+      "bytes": 19879886,
+      "sha256": "f5721a55f8e99d58844e6cf7312327b93787074f0042b44644e19b1e04f2e8c3",
+      "text_chars": 31496,
+      "preview": "FLAIR: French Land cover from Aerospace ImageRy.\nChallenge FLAIR #1:\nsemantic segmentation and domain adaptation\nAnatol Garioud, St ´ephane Peillet, Eva Bookjans, S ´ebastien Giordano, Boris Wattrelos\nInstitut national de l’information g ´eographique et foresti `ere (IGN), France\nai-challenge@ign.fr\nDataset overview\nFigures\n  20,293,091,328 pixels annotated at 0.20 m spatial resolution\n  77,412 patches (512 ×512)\n  50 spatio-temporal domains and 950 areas covering 810 km²\n  13 semantic classes (+6 optional ones)\nStructure\nDataset\ntrain\\val\ndomain year\narea\nimg\nIMG ID.tif\nmsk\nMSK ID.tif\ntest\ndomain year\narea\nimg\nIMG ID.tif\nmetadata.json\nContext\nThe French National Institute of Geographical and Forest\nInformation (IGN) [1] has the mission to document and mea-\nsure land-cover on French territ"
+    },
+    {
+      "name": "flair1_repo",
+      "url": "https://raw.githubusercontent.com/IGNF/FLAIR-1/main/README.md",
+      "final_url": "https://raw.githubusercontent.com/IGNF/FLAIR-1/main/README.md",
+      "bytes": 15635,
+      "sha256": "c90312ee51ba06298101fdf6540f17861b97b983d0e1518cb0b94dbeff8b56d7",
+      "text_chars": 15571,
+      "preview": "<div align=\"center\">\r\n  \r\n# FLAIR #1 \r\n# Semantic segmentation and domain adaptation for land-cover from aerial imagery\r\n### Challenge proposed by the French National Institute of Geographical and Forest Information (IGN).\r\n\r\n\r\n![Static Badge](https://img.shields.io/badge/Code%3A-lightgrey?color=lightgrey) [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/IGNF/FLAIR-1-AI-Challenge/blob/master/LICENSE) <a href=\"https://pytorch.org/get-started/locally/\"><img alt=\"PyTorch\" src=\"https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white\"></a>\r\n<a href=\"https://pytorchlightning.ai/\"><img alt=\"Lightning\" src=\"https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white\"></a> &emsp; ![Static Badge](https://img.shields"
+    }
+  ],
+  "official_flair_page": "https://ignf.github.io/FLAIR/FLAIR1/flair_1.html",
+  "flair_page_sha256": "26a933dd030979a612e8db648cffdac58f6e71c3d4d5b502e16bf7e4ac333042",
+  "abstract_only_sources": [
+    "https://arxiv.org/abs/2203.07677",
+    "https://arxiv.org/abs/2210.16057",
+    "https://arxiv.org/abs/2507.14826",
+    "https://arxiv.org/abs/2412.03745",
+    "https://arxiv.org/abs/2503.13073"
+  ],
+  "excluded": [
+    "initial guessed CloudSEN12 arXiv URL resolved to an unrelated paper; not used",
+    "unrelated Bing results; not used",
+    "rate-limited metadata and forbidden MDPI page; not treated as read"
+  ],
+  "novelty_status": "不宣称检索完备或已证明研究空白；提出单一可审定问题"
+}

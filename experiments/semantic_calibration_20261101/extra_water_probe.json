@@ -1,0 +1,182 @@
+[
+  {
+    "scene_id": "external_G_1293",
+    "t": 1.0,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.0667266845703125,
+    "agreement_with_clear_prediction": 0.9999847412109375,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 1.0,
+    "region": "water_reference_prediction",
+    "pixels": 2070,
+    "water_prediction_fraction": 1.0,
+    "agreement_with_clear_prediction": 1.0,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 1.0,
+    "region": "visual_water_like_proxy",
+    "pixels": 1260,
+    "water_prediction_fraction": 0.4452380952380952,
+    "agreement_with_clear_prediction": 1.0,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.9,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.000274658203125,
+    "agreement_with_clear_prediction": 0.7589111328125,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.9,
+    "region": "water_reference_prediction",
+    "pixels": 2070,
+    "water_prediction_fraction": 0.008695652173913044,
+    "agreement_with_clear_prediction": 0.008695652173913044,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.9,
+    "region": "visual_water_like_proxy",
+    "pixels": 1260,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.5547619047619048,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.6,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.4448394775390625,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.6,
+    "region": "water_reference_prediction",
+    "pixels": 2070,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.0,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.6,
+    "region": "visual_water_like_proxy",
+    "pixels": 1260,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.5547619047619048,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.4,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.410003662109375,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.4,
+    "region": "water_reference_prediction",
+    "pixels": 2070,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.0,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1293",
+    "t": 0.4,
+    "region": "visual_water_like_proxy",
+    "pixels": 1260,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.5547619047619048,
+    "source_sha256": "1dbe1eef73d040f2859c0036c130179f10c14f4b1083507d7dc817a8a6c0162d"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 1.0,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.136993408203125,
+    "agreement_with_clear_prediction": 1.0,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 1.0,
+    "region": "water_reference_prediction",
+    "pixels": 7373,
+    "water_prediction_fraction": 1.0,
+    "agreement_with_clear_prediction": 1.0,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 0.9,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.066864013671875,
+    "agreement_with_clear_prediction": 0.735626220703125,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 0.9,
+    "region": "water_reference_prediction",
+    "pixels": 7373,
+    "water_prediction_fraction": 0.5807676658076767,
+    "agreement_with_clear_prediction": 0.5807676658076767,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 0.6,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.0001220703125,
+    "agreement_with_clear_prediction": 0.65234375,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 0.6,
+    "region": "water_reference_prediction",
+    "pixels": 7373,
+    "water_prediction_fraction": 0.0010850400108504,
+    "agreement_with_clear_prediction": 0.0010850400108504,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 0.4,
+    "region": "all",
+    "pixels": 65536,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.6424407958984375,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  },
+  {
+    "scene_id": "external_G_1297",
+    "t": 0.4,
+    "region": "water_reference_prediction",
+    "pixels": 7373,
+    "water_prediction_fraction": 0.0,
+    "agreement_with_clear_prediction": 0.0,
+    "source_sha256": "b57bf74095ea555fecda56df9c4b4ca1b3a0b24b9d84785e51ad536fd29e0f76"
+  }
+]

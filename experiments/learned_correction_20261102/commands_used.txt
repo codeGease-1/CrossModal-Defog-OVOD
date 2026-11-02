@@ -1,0 +1,12 @@
+Original immutable formal source: cloud experiment/source_formal; exact source_formal_upload.zip retained locally.
+Formal pipeline commands: pipeline.py; stages train then development; 3 seeds x 3 modes x18epochs.
+Freeze: remote.py launch --stage freeze --run formal_amp --source source_formal --config configs/learned_correction_amp.json
+Confirmation: remote.py launch --stage confirmation --run formal_amp --source source_formal --config configs/learned_correction_amp.json
+Post-confirmation: postpipeline.py (cost_and_ablations.py + external_s.py, tools_v2)
+Local bootstrap: python scripts/learned_correction/analyze.py --run experiments/learned_correction_20261102/final_evidence/formal_amp --split confirmation --output experiments/learned_correction_20261102/analysis_confirmation
+Frozen data audit: python scripts/learned_correction/audit_results.py --run experiments/learned_correction_20261102/final_evidence/formal_amp --source-archive experiments/learned_correction_20261102/source_formal_upload.zip --output experiments/learned_correction_20261102/frozen_data_audit.json
+CPU file inference: python scripts/learned_correction/predict.py --image experiments/learned_correction_20261102/final_evidence/cost_assets/input_rgb.png --weights experiments/learned_correction_20261102/portable_weights/corrector16_inference.pth --calibration experiments/learned_correction_20261102/final_evidence/cost_assets/calibration.json --output experiments/learned_correction_20261102/cpu_inference --device cpu
+Trained contracts: python scripts/learned_correction/audit_export.py --image experiments/learned_correction_20261102/final_evidence/cost_assets/input_rgb.png --weights experiments/learned_correction_20261102/portable_weights/corrector16_inference.pth --calibration experiments/learned_correction_20261102/final_evidence/cost_assets/calibration.json --output experiments/learned_correction_20261102/trained_input_contracts.json
+Scientific plots: python scripts/learned_correction/plot_results.py --evidence experiments/learned_correction_20261102/final_evidence --output experiments/learned_correction_20261102/figures
+Exports (CPU, all seeds): python export_all_seeds.py --run cloud_experiment/formal_amp --output cloud_experiment/all_seed_weights
+All output paths above already exist; use NEW output paths to reproduce, never overwrite recorded evidence.

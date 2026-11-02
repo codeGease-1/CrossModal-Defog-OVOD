@@ -1,0 +1,23 @@
+{
+  "seed": 20261102,
+  "seeds": [42, 43, 44],
+  "modes": ["corrector16", "rgb_context16", "rgb32"],
+  "epochs": 18,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "candidate_loss_weights": [1.0, 0.25, 0.25],
+  "global_loss_weight": 0.5,
+  "clear_loss_extra_weight": 0.25,
+  "rho": 0.75,
+  "shift": 3.0,
+  "confirmation_scene_count": 24,
+  "confirmation_seed_offset": 2000000,
+  "relative_MAE_margin": 0.05,
+  "spatial_margin": 0.01,
+  "clear_response_margin": 0.005,
+  "unseen_airlights": [[0.55, 0.6, 0.65], [0.9, 0.78, 0.65]],
+  "scope": "New user authorization: use existing V100 for actual training, no cloud resource changes; three main models per round.",
+  "selection": "development only; corrector independent per-candidate weighted H loss; RGB same H loss; fit global fusion weights on training after freezing correction",
+  "confirmation": "Only after all modes/seeds trained and source/checkpoint freeze; prior confirmations remain development references",
+  "physics": "off; known-clean forward term previously reduced to signal weighting; no new physical claim"
+}

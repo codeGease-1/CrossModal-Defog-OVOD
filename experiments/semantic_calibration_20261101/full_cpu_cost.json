@@ -1,0 +1,85 @@
+{
+  "shape": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "threads": 4,
+  "warmup": 2,
+  "repeats": 5,
+  "pipelines": [
+    {
+      "model": "A_original_fixed",
+      "trainable_neural_parameters": 0,
+      "total_neural_parameters": 0,
+      "median_seconds": 0.24635110000963323,
+      "p95_seconds": 0.26217164000554477
+    },
+    {
+      "model": "B_original_dynamic",
+      "trainable_neural_parameters": 868275,
+      "total_neural_parameters": 868275,
+      "median_seconds": 0.3986948000092525,
+      "p95_seconds": 0.39982618000067305
+    },
+    {
+      "model": "C_semantic_fixed",
+      "trainable_neural_parameters": 0,
+      "total_neural_parameters": 3752694,
+      "median_seconds": 0.5187447000062093,
+      "p95_seconds": 0.5381338799925288
+    },
+    {
+      "model": "D_semantic_dynamic",
+      "trainable_neural_parameters": 868851,
+      "total_neural_parameters": 4621545,
+      "median_seconds": 0.6652805000048829,
+      "p95_seconds": 0.6947607399953994
+    },
+    {
+      "model": "RGB_semantic",
+      "trainable_neural_parameters": 867953,
+      "total_neural_parameters": 4620647,
+      "median_seconds": 0.40797980000206735,
+      "p95_seconds": 0.41461395999940576
+    },
+    {
+      "model": "RGB_semantic_light",
+      "trainable_neural_parameters": 55817,
+      "total_neural_parameters": 3808511,
+      "median_seconds": 0.2684251999889966,
+      "p95_seconds": 0.2988226799963741
+    },
+    {
+      "model": "RGB_only",
+      "trainable_neural_parameters": 867377,
+      "total_neural_parameters": 867377,
+      "median_seconds": 0.14873749999969732,
+      "p95_seconds": 0.15334514000278432
+    },
+    {
+      "model": "RGB_only_light",
+      "trainable_neural_parameters": 55241,
+      "total_neural_parameters": 55241,
+      "median_seconds": 0.022614000001340173,
+      "p95_seconds": 0.023167200008174405
+    }
+  ],
+  "timing_scope": "RGB tensor in memory -> full pipeline output; includes semantic RGB resize/normalize/512 model/upsample and priors/calibration/gate where needed; excludes disk I/O",
+  "calibration_table_scalars": 162,
+  "fixed_weights_scalars": 3,
+  "models": "Random initialized downstream networks; inference cost only, not efficacy results",
+  "cpu_process_rss_bytes": 545841152,
+  "cpu_process_peak_bytes": 757784576,
+  "memory_limit": "One process loaded all candidate networks and libraries; peak cannot be attributed per model",
+  "gpu_peak_memory_bytes": null,
+  "gpu_timing": null,
+  "gpu_used": false,
+  "cache_bytes": {
+    "semantic_model": 15047288,
+    "probe_cache": 36355347,
+    "diagnostic_cache": 177052701,
+    "frozen_candidate_cache": 70692680
+  }
+}

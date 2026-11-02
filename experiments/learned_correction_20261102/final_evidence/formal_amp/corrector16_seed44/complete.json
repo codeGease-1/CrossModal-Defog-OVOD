@@ -1,0 +1,7 @@
+{
+  "mode": "corrector16",
+  "seed": 44,
+  "best_development_loss": 0.0016340315878551337,
+  "parameters": 218358,
+  "steps": 3456
+}

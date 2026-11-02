@@ -1,0 +1,12 @@
+{
+  "input_sha256": "862449e7ec075cec81a0ad8752b2d17ff7b074f309d51aa04c6d17134fdc609a",
+  "calibration_sha256": "3964276744d4fd7747af4ad4e9e28962b5790b25cf10f27a5f2064da340b0b44",
+  "variant": "content",
+  "input": "hazy display RGB only",
+  "domain_warning": "unknown sensor domain may be out of calibration",
+  "H_mean": 0.0,
+  "seconds_first_call_no_warmup": 0.027247299993177876,
+  "color_scale": "uint8=round(255*H), fixed [0,1], no image stretching",
+  "source_sha256": "529f52abeec7aa8008afc6c4257c9ad961aafec6735fefd8c11b9a8f39d973c6",
+  "gpu_seconds": 0
+}

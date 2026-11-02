@@ -1,0 +1,20 @@
+[
+  {
+    "mode": "corrector16",
+    "path": "corrector16_inference.pth",
+    "sha256": "ad41409bd7a81486e27d4a83d65b156f39ba90449b54649f34a67b1055466871",
+    "bytes": 886382
+  },
+  {
+    "mode": "direct_same16",
+    "path": "direct_same16_inference.pth",
+    "sha256": "a58600f0ba1d418aaa0ac5d2f43fc94f242f2ea0095fbb0032640964cbf20b96",
+    "bytes": 889590
+  },
+  {
+    "mode": "rgb32",
+    "path": "rgb32_inference.pth",
+    "sha256": "81e12d75120cc46702bd90882ee5a78a3bacd8d673b94660166c2ef1c0dcdd65",
+    "bytes": 3482198
+  }
+]

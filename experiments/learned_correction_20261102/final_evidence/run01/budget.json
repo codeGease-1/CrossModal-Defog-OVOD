@@ -1,0 +1,238 @@
+{
+  "new_authorization": "Use existing V100 for training; prior 3600s ceiling superseded for this task",
+  "stages": [
+    {
+      "stage": "resume_smoke",
+      "seconds": 2.6417542845010757
+    },
+    {
+      "stage": "RGB_derived_precompute_and_target_cache",
+      "seconds": 28.64131409302354
+    },
+    {
+      "stage": "corrector16_seed42_epoch1",
+      "seconds": 16.344402752816677
+    },
+    {
+      "stage": "corrector16_seed42_epoch2",
+      "seconds": 16.55423418059945
+    },
+    {
+      "stage": "corrector16_seed42_epoch3",
+      "seconds": 16.409818772226572
+    },
+    {
+      "stage": "corrector16_seed42_epoch4",
+      "seconds": 17.007245402783155
+    },
+    {
+      "stage": "corrector16_seed42_epoch5",
+      "seconds": 16.50839549675584
+    },
+    {
+      "stage": "corrector16_seed42_epoch6",
+      "seconds": 16.471914913505316
+    },
+    {
+      "stage": "corrector16_seed42_epoch7",
+      "seconds": 15.988012634217739
+    },
+    {
+      "stage": "corrector16_seed42_epoch8",
+      "seconds": 16.291677847504616
+    },
+    {
+      "stage": "corrector16_seed42_epoch9",
+      "seconds": 16.31342726200819
+    },
+    {
+      "stage": "corrector16_seed42_epoch10",
+      "seconds": 16.14743596315384
+    },
+    {
+      "stage": "corrector16_seed42_epoch11",
+      "seconds": 16.20724055543542
+    },
+    {
+      "stage": "corrector16_seed42_epoch12",
+      "seconds": 16.739594593644142
+    },
+    {
+      "stage": "corrector16_seed42_epoch13",
+      "seconds": 17.224022444337606
+    },
+    {
+      "stage": "corrector16_seed42_epoch14",
+      "seconds": 16.94412549957633
+    },
+    {
+      "stage": "corrector16_seed42_epoch15",
+      "seconds": 17.422518521547318
+    },
+    {
+      "stage": "corrector16_seed42_epoch16",
+      "seconds": 18.207638695836067
+    },
+    {
+      "stage": "corrector16_seed42_epoch17",
+      "seconds": 17.58805675059557
+    },
+    {
+      "stage": "corrector16_seed42_epoch18",
+      "seconds": 17.41471867635846
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch1",
+      "seconds": 17.483967065811157
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch2",
+      "seconds": 17.186193820089102
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch3",
+      "seconds": 17.35445550084114
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch4",
+      "seconds": 17.509259786456823
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch5",
+      "seconds": 17.148677065968513
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch6",
+      "seconds": 16.579676192253828
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch7",
+      "seconds": 17.61604130268097
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch8",
+      "seconds": 17.469000700861216
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch9",
+      "seconds": 16.5631020963192
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch10",
+      "seconds": 17.091091245412827
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch11",
+      "seconds": 16.986997365951538
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch12",
+      "seconds": 17.18652930855751
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch13",
+      "seconds": 16.851289805024862
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch14",
+      "seconds": 16.894075356423855
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch15",
+      "seconds": 17.145321864634752
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch16",
+      "seconds": 16.831158336251974
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch17",
+      "seconds": 16.53036641329527
+    },
+    {
+      "stage": "rgb_context16_seed42_epoch18",
+      "seconds": 17.567433197051287
+    },
+    {
+      "stage": "rgb32_seed42_epoch1",
+      "seconds": 34.246527157723904
+    },
+    {
+      "stage": "rgb32_seed42_epoch2",
+      "seconds": 33.77831657603383
+    },
+    {
+      "stage": "rgb32_seed42_epoch3",
+      "seconds": 33.840804517269135
+    },
+    {
+      "stage": "rgb32_seed42_epoch4",
+      "seconds": 33.23895710334182
+    },
+    {
+      "stage": "rgb32_seed42_epoch5",
+      "seconds": 33.81428751721978
+    },
+    {
+      "stage": "rgb32_seed42_epoch6",
+      "seconds": 33.268658842891455
+    },
+    {
+      "stage": "rgb32_seed42_epoch7",
+      "seconds": 33.82796612754464
+    },
+    {
+      "stage": "rgb32_seed42_epoch8",
+      "seconds": 33.03494077920914
+    },
+    {
+      "stage": "rgb32_seed42_epoch9",
+      "seconds": 33.23416745662689
+    },
+    {
+      "stage": "rgb32_seed42_epoch10",
+      "seconds": 33.885206654667854
+    },
+    {
+      "stage": "rgb32_seed42_epoch11",
+      "seconds": 33.4077133089304
+    },
+    {
+      "stage": "rgb32_seed42_epoch12",
+      "seconds": 33.54618613421917
+    },
+    {
+      "stage": "rgb32_seed42_epoch13",
+      "seconds": 33.495789885520935
+    },
+    {
+      "stage": "rgb32_seed42_epoch14",
+      "seconds": 33.01382986083627
+    },
+    {
+      "stage": "rgb32_seed42_epoch15",
+      "seconds": 33.5002921000123
+    },
+    {
+      "stage": "rgb32_seed42_epoch16",
+      "seconds": 33.843132112175226
+    },
+    {
+      "stage": "rgb32_seed42_epoch17",
+      "seconds": 32.968382492661476
+    },
+    {
+      "stage": "rgb32_seed42_epoch18",
+      "seconds": 33.240069173276424
+    },
+    {
+      "stage": "frozen_candidate_train_only_fixed_fusion",
+      "seconds": 30.461006969213486
+    },
+    {
+      "stage": "development_evaluation",
+      "seconds": 61.2044190056622
+    }
+  ],
+  "gpu_stage_wall_seconds": 1335.912839539349
+}

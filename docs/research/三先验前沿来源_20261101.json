@@ -1,0 +1,47 @@
+[
+  {
+    "name": "pgh2",
+    "url": "https://arxiv.org/html/2503.01136v1",
+    "final_url": "https://arxiv.org/html/2503.01136v1",
+    "bytes": 217622,
+    "sha256": "fc429e2a54633a5e9c423f85ca1dec6ef76863de687b83e826ad14166a360132",
+    "text_chars": 45775,
+    "preview": "Prior-guided Hierarchical Harmonization Network for Efficient Image Dehazing Skip to main content Report GitHub Issue \u00d7 Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub Why HTML? Report Issue Back to Abstract Download PDF Contents Reading mode Colour theme Abstract Introduction Related Work Image Dehazing Triple Priors Proposed Method Overall Architecture Spatial Aggregation Block Spatial Harmonization. Prior Aggregation. Channel Harmonization Block Sandwich Module Histogram Equation Guided Module Triple Learning Objective Experimental Results Datasets and Evaluation Metrics Implementation Details Image Dehazing Results Ablation Studies Conclusion Acknowledgements References License: arXiv.org perpetual non-exclusive license arXi"
+  },
+  {
+    "name": "dgfd",
+    "url": "https://arxiv.org/html/2507.11035v3",
+    "final_url": "https://arxiv.org/html/2507.11035v3",
+    "bytes": 329355,
+    "sha256": "576ae1a3a6b5396c8b7ccb90bff25bb8003d609b6acdcdb50976825fe8c44be6",
+    "text_chars": 63054,
+    "preview": "Efficient Dual-domain Image Dehazing with Haze Prior Perception Report GitHub Issue \u00d7 Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub arXiv is now an independent nonprofit! Learn more \u00d7 Back to arXiv Why HTML? Report Issue Back to Abstract Download PDF Abstract 1 Introduction 2 Related Work 3 Method 3.1 Haze-Aware Frequency Modulator 3.1.1 Motivation 3.1.2 Pipeline 3.2 Multi-level Gating Aggregation Module 3.2.1 Motivation 3.2.2 Pipeline 3.3 Prior Correction Guidance Branch 3.3.1 Motivation 3.3.2 Pipeline 3.4 Loss Function 4 Experiments 4.1 Experimental settings 4.2 Comparison with State-of-the-art Methods 4.2.1 Quantitative Comparisons 4.2.2 Qualitative Comparisons 4.3 Ablation Studies 4.3.1 Effectiveness of Core Modules 4.3.2 "
+  },
+  {
+    "name": "ur2p",
+    "url": "https://arxiv.org/html/2501.06818v1",
+    "final_url": "https://arxiv.org/html/2501.06818v1",
+    "bytes": 306600,
+    "sha256": "230f7003adf835659fa103159e93845cd6b78d3b0f3e440765f139ce52c8112a",
+    "text_chars": 64003,
+    "preview": "UR2P-Dehaze: Learning a Simple Image Dehaze Enhancer via Unpaired Rich Physical Prior Skip to main content Report GitHub Issue \u00d7 Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub Why HTML? Report Issue Back to Abstract Download PDF Contents Reading mode Colour theme Abstract 1 Introduction 2 Related Work 2.1 Traditional Learning Dehazing Methods 2.2 Supervised Learning Dehazing Methods 2.3 Semi-supervised Learning Dehazing Methods 2.4 Unsupervised Learning Dehazing Methods 2.5 Retinex Theoretical Learning Dehazing Methods 3 Mathematics 3.1 Shared Prior Estimator 3.2 Dynamic Wavelet Separable Convolution 3.3 Adaptive Color Corrector 3.4 Overall Loss 4 Experiments 4.1 Implementation Details 4.2 Experimental Comparison 4.3 Ablation E"
+  },
+  {
+    "name": "dpsf",
+    "url": "https://arxiv.org/html/2609.06962v1",
+    "final_url": "https://arxiv.org/html/2609.06962v1",
+    "bytes": 304625,
+    "sha256": "2c92de65de59a1fd8f819ad5183b7579b888d40dd9390f568ffb4dd2541dee93",
+    "text_chars": 70561,
+    "preview": "DPSF-Net: A Dual-Prior Spatial-Frequency Network for Real-World Remote Sensing Image Dehazing Skip to main content Report GitHub Issue \u00d7 Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub Why HTML? Report Issue Back to Abstract Download PDF Contents Reading mode Colour theme Abstract I Introduction II Related work II-A Physics-based RSID methods II-B Deep learning-based RSID methods II-C Spatial-frequency modelling and dynamic fusion III Proposed method III-A Dual prior and feature embedding III-B Spatial-frequency residual interaction block III-C Prior-guided feature attention module III-D Selective kernel complementary fusion module III-E Loss functions III-E 1 L1 loss III-E 2 SCWP loss III-E 3 Contrastive loss IV Experiments IV-"
+  },
+  {
+    "name": "bayesian",
+    "url": "https://arxiv.org/html/2412.03745v1",
+    "final_url": "https://arxiv.org/html/2412.03745v1",
+    "bytes": 245149,
+    "sha256": "a5e3cf63702baf7102c6ad2235872e760fd4f52e46d106e4bb280bae84fe256a",
+    "text_chars": 59902,
+    "preview": "Deep Variational Bayesian Modeling of Haze Degradation Process Skip to main content Report GitHub Issue \u00d7 Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub Why HTML? Report Issue Back to Abstract Download PDF Contents Reading mode Colour theme Abstract. 1 Introduction 2 Related Work Prior-based Methods Learning-based Methods Variational Bayesian Modeling 3 Variational Haze Removal Framework 3.1 Bayesian Model Construction Likelihood Model Haze-free Image Transmission Map. Atmospheric Light. 3.2 Variational Formulation of Posterior 3.3 Variational Lower Bound 3.4 Learning with Variational Lower Bound 4 Experimental Results 4.1 Experimental Setting Datasets Implementation 4.2 Performance Evaluation Results on Synthetic Datasets Resu"
+  }
+]

@@ -12,4 +12,17 @@
 # Original CSV line endings and captured log/report spacing are archival data.
 /experiments/**/*.csv whitespace=cr-at-eol
 /experiments/**/*.log whitespace=-blank-at-eol,-blank-at-eof
-/experiments/**/*.txt whitespace=-blank-at-eof
+/experiments/**/*.txt whitespace=cr-at-eol,-blank-at-eof
+
+# Preserve frozen new research source/config bytes across Windows and Linux.
+/scripts/semantic/** -text
+/scripts/content_calibration/** -text
+/scripts/learned_correction/** -text
+/configs/semantic_calibration.json -text
+/configs/content_calibration.json -text
+/configs/learned_correction.json -text
+/configs/learned_correction_amp.json -text
+
+# CRLF is archival data in JSON and frozen configuration, not trailing spaces.
+/experiments/**/*.json whitespace=cr-at-eol
+/configs/learned_correction_amp.json whitespace=cr-at-eol

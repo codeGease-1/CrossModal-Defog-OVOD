@@ -1,0 +1,106 @@
+{
+  "purpose": "Offline equation/conditioning feasibility, not model efficacy",
+  "split": "previously exposed development only",
+  "scenes": [
+    {
+      "scene_id": "development_000",
+      "split": "development",
+      "group_id": "procedural_original_20271101",
+      "seed": 20271101,
+      "source_kind": "procedural_controlled_original"
+    },
+    {
+      "scene_id": "development_001",
+      "split": "development",
+      "group_id": "procedural_original_20271102",
+      "seed": 20271102,
+      "source_kind": "procedural_controlled_original"
+    },
+    {
+      "scene_id": "development_002",
+      "split": "development",
+      "group_id": "procedural_original_20271103",
+      "seed": 20271103,
+      "source_kind": "procedural_controlled_original"
+    },
+    {
+      "scene_id": "development_003",
+      "split": "development",
+      "group_id": "procedural_original_20271104",
+      "seed": 20271104,
+      "source_kind": "procedural_controlled_original"
+    }
+  ],
+  "image_size": 256,
+  "window": 15,
+  "patterns": [
+    [
+      "uniform",
+      1.0
+    ],
+    [
+      "uniform",
+      0.6
+    ],
+    [
+      "uniform",
+      0.4
+    ],
+    [
+      "gradient",
+      null
+    ],
+    [
+      "blob",
+      null
+    ],
+    [
+      "regions",
+      null
+    ]
+  ],
+  "airlights": [
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.75,
+      0.8,
+      0.9
+    ]
+  ],
+  "brightness": 1.0,
+  "variants": [
+    "correct_linear_known_A",
+    "wrong_display_equations",
+    "linear_with_perturbed_A"
+  ],
+  "A_perturbation": [
+    0.02,
+    -0.02,
+    0.01
+  ],
+  "conditioning_thresholds": [
+    0.0001,
+    0.001,
+    0.01,
+    0.05
+  ],
+  "reported_inverse_threshold": 0.01,
+  "baseline_perturbation": 0.005,
+  "boundary": "within seven pixels of regions quadrant seam, diagnostic only",
+  "truth_policy": "J,A,t used only for offline mechanism/oracle diagnostics",
+  "gpu_used": false,
+  "training_steps": 0,
+  "source_sha256": {
+    "scripts\\semantic\\audit_physical_feasibility.py": "a5122f2d2c6c7c3406c25a1c94c58eca1a06a4dd80d6ad7116d295d40fd539fe",
+    "benchmarks\\haze_density\\synthetic.py": "713ae32c5a73d74d474c5a90f822fb2819dd43c3d15ab50d068451e0992b969a",
+    "src\\models\\haze_density\\calibrated_prior.py": "f21505fe5a040978f98f1574fd7cd663bf3bdadef4c938d246b063ea8f0af5ff",
+    "src\\models\\haze_density\\physical_prior.py": "d9ab2afa31fe96e0083872ca99a25dc53d3843e453dbe2d64316b2d701ab49eb",
+    "src\\models\\haze_density\\guided_filter.py": "cb91992f5e9729bf0e5b9b7f2e1e5cd7327f593e1f1858054c3ee308efc276cd",
+    "scripts\\v15\\run.py": "e432a6fbdaaee750bf9e5069d678f0d58e34b7266c586f817946ec9eb403db87",
+    "configs\\v15_calibration.json": "fc3ede9aec9c7a269c7d570f8f2b854e3a1220f379af6ae2661d06ace135f1e2"
+  }
+}

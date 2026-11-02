@@ -1,0 +1,20 @@
+[
+  {
+    "name": "dehazenet_abs",
+    "url": "https://arxiv.org/abs/1601.07661",
+    "final_url": "https://arxiv.org/abs/1601.07661",
+    "bytes": 44348,
+    "sha256": "dead523ec5bb1ee046e69202b74e1937fd0b8263e7031cb0959a0d86eaa8dfc6",
+    "text_chars": 4937,
+    "preview": "[1601.07661] DehazeNet: An End-to-End System for Single Image Haze Removal Skip to main content Search Submit Donate Log in Search arXiv Press Enter to search · Advanced search Computer Science > Computer Vision and Pattern Recognition arXiv:1601.07661 (cs) [Submitted on 28 Jan 2016 ( v1 ), last revised 17 May 2016 (this version, v2)] Title: DehazeNet: An End-to-End System for Single Image Haze Removal Authors: Bolun Cai , Xiangmin Xu , Kui Jia , Chunmei Qing , Dacheng Tao View a PDF of the paper titled DehazeNet: An End-to-End System for Single Image Haze Removal, by Bolun Cai and 3 other authors View PDF HTML (experimental) Abstract: Single image haze removal is a challenging ill-posed problem. Existing methods use various constraints/priors to get plausible dehazing solutions. The key t"
+  },
+  {
+    "name": "dehazenet",
+    "url": "https://arxiv.org/pdf/1601.07661",
+    "final_url": "https://arxiv.org/pdf/1601.07661",
+    "bytes": 3955814,
+    "sha256": "38179911e8046b7859bec686d57244d7341bedab209ec97c99a371e405b3bd24",
+    "text_chars": 58298,
+    "preview": "1\nDehazeNet: An End-to-End System for Single Image\nHaze Removal\nBolun Cai, Xiangmin Xu, Member , IEEE, Kui Jia, Member , IEEE, Chunmei Qing, Member , IEEE,\nand Dacheng Tao, Fellow, IEEE\nAbstract—Single image haze removal is a challenging ill-posed\nproblem. Existing methods use various constraints/priors to get\nplausible dehazing solutions. The key to achieve haze removal is\nto estimate a medium transmission map for an input hazy image.\nIn this paper, we propose a trainable end-to-end system called\nDehazeNet, for medium transmission estimation. DehazeNet takes\na hazy image as input, and outputs its medium transmission map\nthat is subsequently used to recover a haze-free image via atmo-\nspheric scattering model. DehazeNet adopts Convolutional Neural\nNetworks (CNN) based deep architecture, wh"
+  }
+]

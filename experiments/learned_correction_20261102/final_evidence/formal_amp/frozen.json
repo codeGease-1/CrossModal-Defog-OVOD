@@ -1,0 +1,66 @@
+{
+  "checkpoints": {
+    "corrector16_seed42": "74798bde23c700900a737cef9046ee1386358984689f3b7aadbb869dea75f8ab",
+    "corrector16_seed43": "aa2e2c0a57a6e84b310b24a0da46a7e79b0b9e5ee3d044a8cd488bd3ae6a7571",
+    "corrector16_seed44": "c3ba482d52655c6dc3c4892bda2ec60e01202e17b78c3619c65050dcf812b29a",
+    "direct_same16_seed42": "df61a014bffb1632ea7a85f6d866cfc525c5d545b985a86e3171da2a750a6425",
+    "direct_same16_seed43": "1c3ff79efc15366c1fb8920914509f6be8e22ac06d891a1c27a0f1399e268ce9",
+    "direct_same16_seed44": "c193c5950f275054e8d83faed38f452048182e3cacd613603e432fabed0a69eb",
+    "rgb32_seed42": "75f4f2aff2db57001d1ac970d3f2105c537114064da95387b5b63c9290ab3dad",
+    "rgb32_seed43": "f0caf148ff9e318e182cdbce0d4f97d33aff14e70c9ca8de9428bd6e9ffbcfa6",
+    "rgb32_seed44": "b5286c5350c2346ca2aef28b4b5e631a1418f01da515a4ecf40fa32854bdcdf9"
+  },
+  "config": {
+    "seed": 20261102,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "modes": [
+      "corrector16",
+      "direct_same16",
+      "rgb32"
+    ],
+    "epochs": 18,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "candidate_loss_weights": [
+      1.0,
+      0.25,
+      0.25
+    ],
+    "global_loss_weight": 0.5,
+    "clear_loss_extra_weight": 0.25,
+    "rho": 0.75,
+    "shift": 3.0,
+    "confirmation_scene_count": 24,
+    "confirmation_seed_offset": 2000000,
+    "relative_MAE_margin": 0.05,
+    "spatial_margin": 0.01,
+    "clear_response_margin": 0.005,
+    "unseen_airlights": [
+      [
+        0.55,
+        0.6,
+        0.65
+      ],
+      [
+        0.9,
+        0.78,
+        0.65
+      ]
+    ],
+    "scope": "Three-model formal AMP matrix; FP32 seed42 pilot preserved separately. Same training pairs/model definitions; no new confirmation before freeze.",
+    "selection": "development only; corrector independent per-candidate weighted H loss; RGB same H loss; fit global fusion weights on training after freezing correction",
+    "confirmation": "Only after all modes/seeds trained and source/checkpoint freeze; prior confirmations remain development references",
+    "physics": "off; known-clean forward term previously reduced to signal weighting; no new physical claim",
+    "amp": true,
+    "precision": "mixed float16 network, float32 priors/targets; all models identical precision policy",
+    "fair_input_control": "direct_same16 consumes exactly the same 11 RGB-derived channels available to correction, same trunk16, unrestricted H head. rgb32 pure RGB is the requested main benchmark."
+  },
+  "fusion_weights_sha256": "6db5bbe7d5693b34a27bfdef1923fb8c9ee509bf1733ae06a7ffd271cfd952c8",
+  "all_seeds_reported": true,
+  "selection": "development only",
+  "new_confirmation_seen": false
+}

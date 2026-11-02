@@ -1,0 +1,5 @@
+{
+  "max_parameter_difference": 0.0,
+  "device": "cuda",
+  "actual_save_load_and_optimizer_resume": true
+}

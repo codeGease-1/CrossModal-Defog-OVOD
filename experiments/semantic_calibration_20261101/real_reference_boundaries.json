@@ -1,0 +1,4142 @@
+[
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.005786402714813848,
+      0.07710352059655179,
+      0.22688148370167482
+    ],
+    "prior_bias": [
+      0.005786402714813848,
+      0.07710352059655179,
+      0.22688148370167482
+    ],
+    "joint_high_fraction": 0.0810546875,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.1861114501953125,
+    "offline_oracle_mae": 0.005569963875070643,
+    "offline_oracle_mse": 0.0002763735490342585
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.010349285428732053,
+      0.07698308068683718,
+      0.2027663927593583
+    ],
+    "prior_bias": [
+      0.010349285428732053,
+      0.07698308068683718,
+      0.2027663927593583
+    ],
+    "joint_high_fraction": 0.1449083278109123,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.38612767837419926,
+    "offline_oracle_mae": 0.009995066920744554,
+    "offline_oracle_mse": 0.0004580663224920357
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.006802871876876507,
+      0.07852481180071608,
+      0.16932833657143934
+    ],
+    "prior_bias": [
+      0.006802871876876507,
+      0.07852481180071608,
+      0.16932833657143934
+    ],
+    "joint_high_fraction": 0.099812382739212,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.21876172607879926,
+    "offline_oracle_mae": 0.006684778485803376,
+    "offline_oracle_mse": 0.00032296420167295006
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.002186148469072006,
+      0.05111205378972272,
+      0.20600422410403496
+    ],
+    "prior_bias": [
+      0.002186148469072006,
+      0.05111205378972272,
+      0.20600422410403496
+    ],
+    "joint_high_fraction": 0.0285797119140625,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.1058197021484375,
+    "offline_oracle_mae": 0.0017117063488643648,
+    "offline_oracle_mse": 6.854004610025942e-05
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.003379548957785811,
+      0.05078018188101318,
+      0.1822295506964766
+    ],
+    "prior_bias": [
+      0.003379548957785811,
+      0.05078018188101318,
+      0.1822295506964766
+    ],
+    "joint_high_fraction": 0.04440026507620941,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.1901921802518224,
+    "offline_oracle_mae": 0.0026076234477828432,
+    "offline_oracle_mse": 0.00010587529917278218
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.0022072671430908414,
+      0.055051260778425336,
+      0.15021196119382446
+    ],
+    "prior_bias": [
+      0.0022072671430908414,
+      0.055051260778425336,
+      0.15021196119382446
+    ],
+    "joint_high_fraction": 0.03076923076923077,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.12833020637898687,
+    "offline_oracle_mae": 0.0019442801878037563,
+    "offline_oracle_mse": 7.157426795006375e-05
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.002186148469072006,
+      0.05111205378972272,
+      0.20600422410403496
+    ],
+    "prior_bias": [
+      0.002186148469072006,
+      0.05111205378972272,
+      0.20600422410403496
+    ],
+    "joint_high_fraction": 0.0285797119140625,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.1058197021484375,
+    "offline_oracle_mae": 0.0017117063488643648,
+    "offline_oracle_mse": 6.854004610025942e-05
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.003379548957785811,
+      0.05078018188101318,
+      0.1822295506964766
+    ],
+    "prior_bias": [
+      0.003379548957785811,
+      0.05078018188101318,
+      0.1822295506964766
+    ],
+    "joint_high_fraction": 0.04440026507620941,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.1901921802518224,
+    "offline_oracle_mae": 0.0026076234477828432,
+    "offline_oracle_mse": 0.00010587529917278218
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.0022072671430908414,
+      0.055051260778425336,
+      0.15021196119382446
+    ],
+    "prior_bias": [
+      0.0022072671430908414,
+      0.055051260778425336,
+      0.15021196119382446
+    ],
+    "joint_high_fraction": 0.03076923076923077,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.12833020637898687,
+    "offline_oracle_mae": 0.0019442801878037563,
+    "offline_oracle_mse": 7.157426795006375e-05
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.010750173810151864,
+      0.022635930932551673,
+      0.18746014352876728
+    ],
+    "prior_bias": [
+      0.010055932706222848,
+      -0.021324286741105425,
+      0.18599268838926264
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0086212158203125,
+    "offline_oracle_mae": 1.1858399716402346e-05,
+    "offline_oracle_mse": 2.3803448102211785e-08
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.01976699510110723,
+      0.023016691364237667,
+      0.13881202146200278
+    ],
+    "prior_bias": [
+      0.019712134970256184,
+      -0.023016691364237667,
+      0.12468458542500291
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.011685067269860244,
+      0.02594255909854878,
+      0.14199512296165803
+    ],
+    "prior_bias": [
+      0.011218626045151902,
+      -0.0075841244373044195,
+      0.13821519383458214
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.16622889305816135,
+    "offline_oracle_mae": 0.00023779614669520682,
+    "offline_oracle_mse": 4.926159100136182e-07
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.010082264987204326,
+      0.04689309989527146,
+      0.1918251616517921
+    ],
+    "prior_bias": [
+      0.009756381580245943,
+      -0.046245211340476544,
+      0.1900573198489326
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0156707763671875,
+    "offline_oracle_mae": 5.049024707659555e-05,
+    "offline_oracle_mse": 1.837330420062577e-07
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.0180663895861766,
+      0.04921910305811339,
+      0.12706379319255404
+    ],
+    "prior_bias": [
+      0.0180663895861766,
+      -0.04921910305811339,
+      0.1083076289016198
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.010977386268061948,
+      0.03933168545393291,
+      0.1459040386920295
+    ],
+    "prior_bias": [
+      0.010796310303917969,
+      -0.030862141362833485,
+      0.1405259745157067
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.22814258911819887,
+    "offline_oracle_mae": 0.0008491921659705787,
+    "offline_oracle_mse": 3.3026391414970164e-06
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.010082264987204326,
+      0.04689309989527146,
+      0.1918251616517921
+    ],
+    "prior_bias": [
+      0.009756381580245943,
+      -0.046245211340476544,
+      0.1900573198489326
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0156707763671875,
+    "offline_oracle_mae": 5.049024707659555e-05,
+    "offline_oracle_mse": 1.837330420062577e-07
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.0180663895861766,
+      0.04921910305811339,
+      0.12706379319255404
+    ],
+    "prior_bias": [
+      0.0180663895861766,
+      -0.04921910305811339,
+      0.1083076289016198
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.010977386268061948,
+      0.03933168545393291,
+      0.1459040386920295
+    ],
+    "prior_bias": [
+      0.010796310303917969,
+      -0.030862141362833485,
+      0.1405259745157067
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.22814258911819887,
+    "offline_oracle_mae": 0.0008491921659705787,
+    "offline_oracle_mse": 3.3026391414970164e-06
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.03211180321704887,
+      0.2741551929788102,
+      0.0350484970706475
+    ],
+    "prior_bias": [
+      0.03211180321704887,
+      -0.2741551929788102,
+      -0.014724924492156788
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.037389764103479724,
+      0.31958810207937,
+      0.08460544465142211
+    ],
+    "prior_bias": [
+      0.037389764103479724,
+      -0.31958810207937,
+      -0.08137493562969594
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.03331961383515406,
+      0.2587260865779352,
+      0.05563773884111229
+    ],
+    "prior_bias": [
+      0.03331961383515406,
+      -0.2587260865779352,
+      -0.043019036873196574
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004072312939115363,
+      0.2832646572902604,
+      0.03650178608677379
+    ],
+    "prior_bias": [
+      0.004072312939115363,
+      -0.2832646572902604,
+      0.008803285236353986
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.005490263441368947,
+      0.34101990544034966,
+      0.08044976400557485
+    ],
+    "prior_bias": [
+      0.005490263441368947,
+      -0.34101990544034966,
+      -0.07246772287919975
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.004296483476882133,
+      0.2462864358334559,
+      0.04370009374104119
+    ],
+    "prior_bias": [
+      0.004296483476882133,
+      -0.2462864358334559,
+      -0.015641587184249347
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004072312939115363,
+      0.2832646572902604,
+      0.03650178608677379
+    ],
+    "prior_bias": [
+      0.004072312939115363,
+      -0.2832646572902604,
+      0.008803285236353986
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.005490263441368947,
+      0.34101990544034966,
+      0.08044976400557485
+    ],
+    "prior_bias": [
+      0.005490263441368947,
+      -0.34101990544034966,
+      -0.07246772287919975
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.004296483476882133,
+      0.2462864358334559,
+      0.04370009374104119
+    ],
+    "prior_bias": [
+      0.004296483476882133,
+      -0.2462864358334559,
+      -0.015641587184249347
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0028305791565799154,
+      0.42688016168972354,
+      0.10954394842519832
+    ],
+    "prior_bias": [
+      0.0028305791565799154,
+      -0.42688016168972354,
+      -0.10954394842519832
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.0037761443177937986,
+      0.47615178977288447,
+      0.2008095198391762
+    ],
+    "prior_bias": [
+      0.0037761443177937986,
+      -0.47615178977288447,
+      -0.2008095198391762
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.00301353506478315,
+      0.4120013349666828,
+      0.13981994642102025
+    ],
+    "prior_bias": [
+      0.00301353506478315,
+      -0.4120013349666828,
+      -0.13981994642102025
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.00589407726056379,
+      0.3826922915824298,
+      0.09278240530466064
+    ],
+    "prior_bias": [
+      0.00589407726056379,
+      -0.3826922915824298,
+      -0.09278240530466064
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.006542009261367019,
+      0.4889242028040301,
+      0.1727173104503704
+    ],
+    "prior_bias": [
+      0.006542009261367019,
+      -0.4889242028040301,
+      -0.1727173104503704
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.006019667076125154,
+      0.35116345546370825,
+      0.12186199156025784
+    ],
+    "prior_bias": [
+      0.006019667076125154,
+      -0.35116345546370825,
+      -0.12186199156025784
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.00589407726056379,
+      0.3826922915824298,
+      0.09278240530466064
+    ],
+    "prior_bias": [
+      0.00589407726056379,
+      -0.3826922915824298,
+      -0.09278240530466064
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 4527,
+    "prior_mae": [
+      0.006542009261367019,
+      0.4889242028040301,
+      0.1727173104503704
+    ],
+    "prior_bias": [
+      0.006542009261367019,
+      -0.4889242028040301,
+      -0.1727173104503704
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 2665,
+    "prior_mae": [
+      0.006019667076125154,
+      0.35116345546370825,
+      0.12186199156025784
+    ],
+    "prior_bias": [
+      0.006019667076125154,
+      -0.35116345546370825,
+      -0.12186199156025784
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.04013127164658152,
+      0.08292228341497321,
+      0.2902835045271104
+    ],
+    "prior_bias": [
+      0.04013127164658152,
+      0.08292228341497321,
+      0.2902835045271104
+    ],
+    "joint_high_fraction": 0.439788818359375,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.6598052978515625,
+    "offline_oracle_mae": 0.035833755403453946,
+    "offline_oracle_mse": 0.002831107203013489
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.01595878716073546,
+      0.07699691982512487,
+      0.3194948901433267
+    ],
+    "prior_bias": [
+      0.01595878716073546,
+      0.07699691982512487,
+      0.3194948901433267
+    ],
+    "joint_high_fraction": 0.20388349514563106,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.5201839550332141,
+    "offline_oracle_mae": 0.014074692181149996,
+    "offline_oracle_mse": 0.0007360231456478483
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.07303414925218639,
+      0.09661019002902464,
+      0.2965288284960838
+    ],
+    "prior_bias": [
+      0.07303414925218639,
+      0.09661019002902464,
+      0.2965288284960838
+    ],
+    "joint_high_fraction": 0.7427172582619339,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.8589963280293758,
+    "offline_oracle_mae": 0.06577983991092966,
+    "offline_oracle_mse": 0.006114366485797481
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.031861450861764534,
+      0.059083768241862344,
+      0.2817937627887659
+    ],
+    "prior_bias": [
+      0.031861450861764534,
+      0.059083768241862344,
+      0.2817937627887659
+    ],
+    "joint_high_fraction": 0.3271026611328125,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.4913330078125,
+    "offline_oracle_mae": 0.024203259508066156,
+    "offline_oracle_mse": 0.0019431805209963351
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.007481520783816007,
+      0.05081881268600009,
+      0.3430091635793767
+    ],
+    "prior_bias": [
+      0.007481520783816007,
+      0.05081881268600009,
+      0.3430091635793767
+    ],
+    "joint_high_fraction": 0.07805314256515074,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.24591211037301994,
+    "offline_oracle_mae": 0.00470612681202434,
+    "offline_oracle_mse": 0.00020374564173286658
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.06538134553273105,
+      0.07663181258258359,
+      0.2976196617781751
+    ],
+    "prior_bias": [
+      0.06538134553273105,
+      0.07663181258258359,
+      0.2976196617781751
+    ],
+    "joint_high_fraction": 0.619094247246022,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.7767441860465116,
+    "offline_oracle_mae": 0.0538316711241318,
+    "offline_oracle_mse": 0.005100104840265461
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.031861450861764534,
+      0.059083768241862344,
+      0.2817937627887659
+    ],
+    "prior_bias": [
+      0.031861450861764534,
+      0.059083768241862344,
+      0.2817937627887659
+    ],
+    "joint_high_fraction": 0.3271026611328125,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.4913330078125,
+    "offline_oracle_mae": 0.024203259508066156,
+    "offline_oracle_mse": 0.0019431805209963351
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.007481520783816007,
+      0.05081881268600009,
+      0.3430091635793767
+    ],
+    "prior_bias": [
+      0.007481520783816007,
+      0.05081881268600009,
+      0.3430091635793767
+    ],
+    "joint_high_fraction": 0.07805314256515074,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.24591211037301994,
+    "offline_oracle_mae": 0.00470612681202434,
+    "offline_oracle_mse": 0.00020374564173286658
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.06538134553273105,
+      0.07663181258258359,
+      0.2976196617781751
+    ],
+    "prior_bias": [
+      0.06538134553273105,
+      0.07663181258258359,
+      0.2976196617781751
+    ],
+    "joint_high_fraction": 0.619094247246022,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.7767441860465116,
+    "offline_oracle_mae": 0.0538316711241318,
+    "offline_oracle_mse": 0.005100104840265461
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.058822325353730776,
+      0.025010409273932055,
+      0.21514218687730136
+    ],
+    "prior_bias": [
+      0.058796075932150416,
+      -0.011100880071239771,
+      0.21514218687730136
+    ],
+    "joint_high_fraction": 0.105743408203125,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.13531494140625,
+    "offline_oracle_mae": 0.006954764601346142,
+    "offline_oracle_mse": 0.0004457596119739603
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.02739169171454045,
+      0.022925965986692852,
+      0.22027170904433782
+    ],
+    "prior_bias": [
+      0.02739169171454045,
+      -0.022925965986692852,
+      0.22027170904433782
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.09983723530023743,
+      0.03286868914542321,
+      0.22739248925607966
+    ],
+    "prior_bias": [
+      0.09983058567255772,
+      0.009769997985593547,
+      0.22739248925607966
+    ],
+    "joint_high_fraction": 0.32215422276621786,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.3843329253365973,
+    "offline_oracle_mae": 0.021319343565508377,
+    "offline_oracle_mse": 0.0013959842988354755
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.046466947354360855,
+      0.04521889211139296,
+      0.23601802725761445
+    ],
+    "prior_bias": [
+      0.046466947354360855,
+      -0.03002664237726549,
+      0.23601802725761445
+    ],
+    "joint_high_fraction": 0.0635528564453125,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.160858154296875,
+    "offline_oracle_mae": 0.006619707794698115,
+    "offline_oracle_mse": 0.0006024673999434459
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.02453827325732475,
+      0.04898002203011397,
+      0.2503952249336377
+    ],
+    "prior_bias": [
+      0.02453827325732475,
+      -0.04897496559098934,
+      0.2503952249336377
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0011497189575881452,
+    "offline_oracle_mae": 2.5282195623151244e-06,
+    "offline_oracle_mse": 6.449645379541845e-09
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.07877157172017174,
+      0.0482814521016952,
+      0.2419650292874404
+    ],
+    "prior_bias": [
+      0.07877157172017174,
+      0.001383093114363228,
+      0.2419650292874404
+    ],
+    "joint_high_fraction": 0.2119951040391677,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.4318237454100367,
+    "offline_oracle_mae": 0.02139248137922007,
+    "offline_oracle_mse": 0.0020647105582363217
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.046466947354360855,
+      0.04521889211139296,
+      0.23601802725761445
+    ],
+    "prior_bias": [
+      0.046466947354360855,
+      -0.03002664237726549,
+      0.23601802725761445
+    ],
+    "joint_high_fraction": 0.0635528564453125,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.160858154296875,
+    "offline_oracle_mae": 0.006619707794698115,
+    "offline_oracle_mse": 0.0006024673999434459
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.02453827325732475,
+      0.04898002203011397,
+      0.2503952249336377
+    ],
+    "prior_bias": [
+      0.02453827325732475,
+      -0.04897496559098934,
+      0.2503952249336377
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0011497189575881452,
+    "offline_oracle_mae": 2.5282195623151244e-06,
+    "offline_oracle_mse": 6.449645379541845e-09
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.07877157172017174,
+      0.0482814521016952,
+      0.2419650292874404
+    ],
+    "prior_bias": [
+      0.07877157172017174,
+      0.001383093114363228,
+      0.2419650292874404
+    ],
+    "joint_high_fraction": 0.2119951040391677,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.4318237454100367,
+    "offline_oracle_mae": 0.02139248137922007,
+    "offline_oracle_mse": 0.0020647105582363217
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.08717058624597485,
+      0.27997256218918665,
+      0.03768302390562894
+    ],
+    "prior_bias": [
+      0.08717058624597485,
+      -0.27997256218918665,
+      0.013497173876203306
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.04774044602195645,
+      0.32058992111312073,
+      0.02432128317239154
+    ],
+    "prior_bias": [
+      0.04774044602195645,
+      -0.32058992111312073,
+      -0.0029331615644873073
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.13311831840248994,
+      0.24363031014526487,
+      0.06323144721868135
+    ],
+    "prior_bias": [
+      0.13311831840248994,
+      -0.24363031014526487,
+      0.02823634245404415
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.031125129998599732,
+      0.28203572037119784,
+      0.04198691309102287
+    ],
+    "prior_bias": [
+      0.031125129998599732,
+      -0.28203572037119784,
+      0.03716341138624557
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.009668612482447861,
+      0.3458059903440781,
+      0.027690599676779355
+    ],
+    "prior_bias": [
+      0.009668612482447861,
+      -0.3458059903440781,
+      0.02095298207896549
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.058163463244969286,
+      0.2180436632095527,
+      0.06547942575217752
+    ],
+    "prior_bias": [
+      0.058163463244969286,
+      -0.2180436632095527,
+      0.05180285002493654
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.031125129998599732,
+      0.28203572037119784,
+      0.04198691309102287
+    ],
+    "prior_bias": [
+      0.031125129998599732,
+      -0.28203572037119784,
+      0.03716341138624557
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.009668612482447861,
+      0.3458059903440781,
+      0.027690599676779355
+    ],
+    "prior_bias": [
+      0.009668612482447861,
+      -0.3458059903440781,
+      0.02095298207896549
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.058163463244969286,
+      0.2180436632095527,
+      0.06547942575217752
+    ],
+    "prior_bias": [
+      0.058163463244969286,
+      -0.2180436632095527,
+      0.05180285002493654
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004630493259355717,
+      0.437577518227954,
+      0.0859276041405792
+    ],
+    "prior_bias": [
+      0.004630493259355717,
+      -0.437577518227954,
+      -0.0859276041405792
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.004418613186403995,
+      0.4987954246770166,
+      0.10269861184841038
+    ],
+    "prior_bias": [
+      0.004418613186403995,
+      -0.4987954246770166,
+      -0.10269861184841038
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.004863984902894337,
+      0.39398505314546234,
+      0.08169894833459702
+    ],
+    "prior_bias": [
+      0.004863984902894337,
+      -0.39398505314546234,
+      -0.08169894833459702
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.007114300637113047,
+      0.41317163118151257,
+      0.0711449183249897
+    ],
+    "prior_bias": [
+      0.007114300637113047,
+      -0.41317163118151257,
+      -0.0711449183249897
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.006976053956277406,
+      0.5103145164014523,
+      0.08446449198220905
+    ],
+    "prior_bias": [
+      0.006976053956277406,
+      -0.5103145164014523,
+      -0.08446449198220905
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.007268900751629833,
+      0.34950927010802335,
+      0.07171115263147483
+    ],
+    "prior_bias": [
+      0.007268900751629833,
+      -0.34950927010802335,
+      -0.07171115263147483
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.007114300637113047,
+      0.41317163118151257,
+      0.0711449183249897
+    ],
+    "prior_bias": [
+      0.007114300637113047,
+      -0.41317163118151257,
+      -0.0711449183249897
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 7828,
+    "prior_mae": [
+      0.006976053956277406,
+      0.5103145164014523,
+      0.08446449198220905
+    ],
+    "prior_bias": [
+      0.006976053956277406,
+      -0.5103145164014523,
+      -0.08446449198220905
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 4085,
+    "prior_mae": [
+      0.007268900751629833,
+      0.34950927010802335,
+      0.07171115263147483
+    ],
+    "prior_bias": [
+      0.007268900751629833,
+      -0.34950927010802335,
+      -0.07171115263147483
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.09646080247193822,
+      0.0571021473207054
+    ],
+    "prior_bias": [
+      0.0,
+      0.09646080247193822,
+      0.0571021473207054
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.0,
+      0.11764922775382845,
+      0.054098012170913416
+    ],
+    "prior_bias": [
+      0.0,
+      0.11764922775382845,
+      0.054098012170913416
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.07605820468285174,
+      0.048020563848481856
+    ],
+    "prior_bias": [
+      0.0,
+      0.07605820468285174,
+      0.048020563848481856
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.0,
+      0.09944749941198419,
+      0.04485417075223991
+    ],
+    "prior_bias": [
+      0.0,
+      0.09944749941198419,
+      0.04485417075223991
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.07605820468285174,
+      0.048020563848481856
+    ],
+    "prior_bias": [
+      0.0,
+      0.07605820468285174,
+      0.048020563848481856
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.0,
+      0.09944749941198419,
+      0.04485417075223991
+    ],
+    "prior_bias": [
+      0.0,
+      0.09944749941198419,
+      0.04485417075223991
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0010070166042623896,
+      0.06374239234310153,
+      0.13081753808116048
+    ],
+    "prior_bias": [
+      -0.001006013747655743,
+      0.0621865215341586,
+      0.1220839958716482
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0430450439453125,
+    "offline_oracle_mae": 4.177564846941095e-05,
+    "offline_oracle_mse": 4.140432310335565e-08
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.0009363695943876651,
+      0.07692256584141328,
+      0.12116639470522657
+    ],
+    "prior_bias": [
+      -0.0009326353587746095,
+      0.07568704353226494,
+      0.11026074765762003
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.03832979938019899,
+    "offline_oracle_mae": 3.681544842153831e-05,
+    "offline_oracle_mse": 3.6214219256830425e-08
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.001469306023182071,
+      0.0818962268094765,
+      0.11386580835101512
+    ],
+    "prior_bias": [
+      -0.000979905422354932,
+      0.07920338852409259,
+      0.10433535265219263
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.16229248046875,
+    "offline_oracle_mae": 0.00011321852105083963,
+    "offline_oracle_mse": 1.9502991782625082e-07
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.001279226095189163,
+      0.13052354344335276,
+      0.11160643838037336
+    ],
+    "prior_bias": [
+      -0.0003179045264337098,
+      0.12829079923389047,
+      0.10079725650100417
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.29383461099331265,
+    "offline_oracle_mae": 0.000260750254392235,
+    "offline_oracle_mse": 5.090424224667317e-07
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.001469306023182071,
+      0.0818962268094765,
+      0.11386580835101512
+    ],
+    "prior_bias": [
+      -0.000979905422354932,
+      0.07920338852409259,
+      0.10433535265219263
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.16229248046875,
+    "offline_oracle_mae": 0.00011321852105083963,
+    "offline_oracle_mse": 1.9502991782625082e-07
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.001279226095189163,
+      0.13052354344335276,
+      0.11160643838037336
+    ],
+    "prior_bias": [
+      -0.0003179045264337098,
+      0.12829079923389047,
+      0.10079725650100417
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.29383461099331265,
+    "offline_oracle_mae": 0.000260750254392235,
+    "offline_oracle_mse": 5.090424224667317e-07
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.021929607008132734,
+      0.13531790241017916,
+      0.056518060403050185
+    ],
+    "prior_bias": [
+      0.021929607008132734,
+      -0.13531790241017916,
+      -0.04015306746487113
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.022104147151464974,
+      0.10779426944180971,
+      0.06170342251587956
+    ],
+    "prior_bias": [
+      0.022104147151464974,
+      -0.10779426944180971,
+      -0.038795306034236685
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0009512480096418585,
+      0.069313134802087,
+      0.0441640884341723
+    ],
+    "prior_bias": [
+      0.0009512480096418585,
+      -0.069313134802087,
+      -0.01514592630928746
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.0009870053241778267,
+      0.06408612136252843,
+      0.052073496832405836
+    ],
+    "prior_bias": [
+      0.0009870053241778267,
+      -0.06408612136252843,
+      -0.01465026986159541
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0009512480096418585,
+      0.069313134802087,
+      0.0441640884341723
+    ],
+    "prior_bias": [
+      0.0009512480096418585,
+      -0.069313134802087,
+      -0.01514592630928746
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.0009870053241778267,
+      0.06408612136252843,
+      0.052073496832405836
+    ],
+    "prior_bias": [
+      0.0009870053241778267,
+      -0.06408612136252843,
+      -0.01465026986159541
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0009114495842368342,
+      0.26608452438085806,
+      0.13695497893922948
+    ],
+    "prior_bias": [
+      0.0009114495842368342,
+      -0.26608452438085806,
+      -0.13695497893922948
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.0010858114363415715,
+      0.25662094120576046,
+      0.13771644953587883
+    ],
+    "prior_bias": [
+      0.0010858114363415715,
+      -0.25662094120576046,
+      -0.13771644953587883
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004580322953188443,
+      0.24630671954810168,
+      0.1147356092164955
+    ],
+    "prior_bias": [
+      0.004580322953188443,
+      -0.24630671954810168,
+      -0.1147356092164955
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.004701654127654818,
+      0.23620187195755882,
+      0.11755801309790274
+    ],
+    "prior_bias": [
+      0.004701654127654818,
+      -0.23620187195755882,
+      -0.11755801309790274
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004580322953188443,
+      0.24630671954810168,
+      0.1147356092164955
+    ],
+    "prior_bias": [
+      0.004580322953188443,
+      -0.24630671954810168,
+      -0.1147356092164955
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 12262,
+    "prior_mae": [
+      0.004701654127654818,
+      0.23620187195755882,
+      0.11755801309790274
+    ],
+    "prior_bias": [
+      0.004701654127654818,
+      -0.23620187195755882,
+      -0.11755801309790274
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.10973198883948498,
+      0.19549795393862723
+    ],
+    "prior_bias": [
+      0.0,
+      0.10973198883948498,
+      0.19549795393862723
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.0,
+      0.0769820362329483,
+      0.059155676513910294
+    ],
+    "prior_bias": [
+      0.0,
+      0.0769820362329483,
+      0.059155676513910294
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0,
+      0.12835957146140636,
+      0.2316553429634965
+    ],
+    "prior_bias": [
+      0.0,
+      0.12835957146140636,
+      0.2316553429634965
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.09346417555332209,
+      0.18503534605948602
+    ],
+    "prior_bias": [
+      0.0,
+      0.09346417555332209,
+      0.18503534605948602
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.0,
+      0.05077742040157318,
+      0.039374733343720436
+    ],
+    "prior_bias": [
+      0.0,
+      0.05077742040157318,
+      0.039374733343720436
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0,
+      0.11958391007126738,
+      0.2204152744317356
+    ],
+    "prior_bias": [
+      0.0,
+      0.11958391007126738,
+      0.2204152744317356
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.09346417555332209,
+      0.18503534605948602
+    ],
+    "prior_bias": [
+      0.0,
+      0.09346417555332209,
+      0.18503534605948602
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.0,
+      0.05077742040157318,
+      0.039374733343720436
+    ],
+    "prior_bias": [
+      0.0,
+      0.05077742040157318,
+      0.039374733343720436
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0,
+      0.11958391007126738,
+      0.2204152744317356
+    ],
+    "prior_bias": [
+      0.0,
+      0.11958391007126738,
+      0.2204152744317356
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0013247130088984704,
+      0.11473362931224074,
+      0.27158271742945317
+    ],
+    "prior_bias": [
+      -0.0013247130088984704,
+      0.1143776682540647,
+      0.2705452484204329
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.01104736328125,
+    "offline_oracle_mae": 1.0473301813362923e-05,
+    "offline_oracle_mse": 1.03323427133444e-08
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.0010478012263774872,
+      0.016386769711971283,
+      0.19613643735647202
+    ],
+    "prior_bias": [
+      -0.0010478012263774872,
+      -0.016386769711971283,
+      0.19613643735647202
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0013454074037803844,
+      0.14968610508719946,
+      0.31050345636048693
+    ],
+    "prior_bias": [
+      -0.0013454074037803844,
+      0.1496118617640613,
+      0.3098844763397985
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.006934283351358229,
+    "offline_oracle_mae": 6.7272372422945455e-06,
+    "offline_oracle_mse": 6.669723355544374e-09
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.003167848965858866,
+      0.14676241172651316,
+      0.28616975427098623
+    ],
+    "prior_bias": [
+      -0.0031628496465145872,
+      0.14642373381229845,
+      0.28491520729880904
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.00469970703125,
+    "offline_oracle_mae": 1.5141428093556897e-06,
+    "offline_oracle_mse": 1.1220232295855597e-09
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.0022040456533432007,
+      0.030778363347053528,
+      0.13755344599485397
+    ],
+    "prior_bias": [
+      -0.0022040456533432007,
+      -0.030778363347053528,
+      0.13755344599485397
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0032854757449866418,
+      0.1914599647596066,
+      0.32742335083550494
+    ],
+    "prior_bias": [
+      -0.0032822595238192662,
+      0.19141241215201188,
+      0.3266431235088145
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.002481073859660284,
+    "offline_oracle_mae": 9.277212315672294e-07,
+    "offline_oracle_mse": 6.327182502968873e-10
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.003167848965858866,
+      0.14676241172651316,
+      0.28616975427098623
+    ],
+    "prior_bias": [
+      -0.0031628496465145872,
+      0.14642373381229845,
+      0.28491520729880904
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.00469970703125,
+    "offline_oracle_mae": 1.5141428093556897e-06,
+    "offline_oracle_mse": 1.1220232295855597e-09
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.0022040456533432007,
+      0.030778363347053528,
+      0.13755344599485397
+    ],
+    "prior_bias": [
+      -0.0022040456533432007,
+      -0.030778363347053528,
+      0.13755344599485397
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0032854757449866418,
+      0.1914599647596066,
+      0.32742335083550494
+    ],
+    "prior_bias": [
+      -0.0032822595238192662,
+      0.19141241215201188,
+      0.3266431235088145
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.002481073859660284,
+    "offline_oracle_mae": 9.277212315672294e-07,
+    "offline_oracle_mse": 6.327182502968873e-10
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.02145386521169712,
+      0.09050778759615241,
+      0.12339826427341904
+    ],
+    "prior_bias": [
+      0.02145386521169712,
+      -0.09050778759615241,
+      0.11129855120543652
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.02159079909324646,
+      0.18360356241464615,
+      0.05575396120548248
+    ],
+    "prior_bias": [
+      0.02159079909324646,
+      -0.18360356241464615,
+      0.05575396120548248
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.02143106812875351,
+      0.06491405117055965,
+      0.15205829362429707
+    ],
+    "prior_bias": [
+      0.02143106812875351,
+      -0.06491405117055965,
+      0.14178573821130785
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0008544722968508722,
+      0.04561169594899184,
+      0.12419117612216724
+    ],
+    "prior_bias": [
+      0.0008544722968508722,
+      -0.04528258242726224,
+      0.11811859013187131
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.032989501953125,
+    "offline_oracle_mae": 2.6632767003320623e-05,
+    "offline_oracle_mse": 2.206691161057788e-08
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.000882267951965332,
+      0.07184863090515137,
+      0.10050982236862183
+    ],
+    "prior_bias": [
+      0.000882267951965332,
+      -0.07184863090515137,
+      0.10050982236862183
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0008498463506909134,
+      0.032956260223941984,
+      0.1458326611451971
+    ],
+    "prior_bias": [
+      0.0008498463506909134,
+      -0.03206582838467146,
+      0.14057353344443826
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.08556523951905337,
+    "offline_oracle_mae": 6.932219450949591e-05,
+    "offline_oracle_mse": 5.751702023852253e-08
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0008544722968508722,
+      0.04561169594899184,
+      0.12419117612216724
+    ],
+    "prior_bias": [
+      0.0008544722968508722,
+      -0.04528258242726224,
+      0.11811859013187131
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.032989501953125,
+    "offline_oracle_mae": 2.6632767003320623e-05,
+    "offline_oracle_mse": 2.206691161057788e-08
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.000882267951965332,
+      0.07184863090515137,
+      0.10050982236862183
+    ],
+    "prior_bias": [
+      0.000882267951965332,
+      -0.07184863090515137,
+      0.10050982236862183
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0008498463506909134,
+      0.032956260223941984,
+      0.1458326611451971
+    ],
+    "prior_bias": [
+      0.0008498463506909134,
+      -0.03206582838467146,
+      0.14057353344443826
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.08556523951905337,
+    "offline_oracle_mae": 6.932219450949591e-05,
+    "offline_oracle_mse": 5.751702023852253e-08
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.00048597619934298564,
+      0.24843441358598284,
+      0.031796721170849196
+    ],
+    "prior_bias": [
+      0.00048597619934298564,
+      -0.24843441358598284,
+      -0.031796721170849196
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.0005606412887573242,
+      0.2712314575910568,
+      0.018664419651031494
+    ],
+    "prior_bias": [
+      0.0005606412887573242,
+      -0.2712314575910568,
+      -0.018664419651031494
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.0004672972298554241,
+      0.2385334470180452,
+      0.022542295678743798
+    ],
+    "prior_bias": [
+      0.0004672972298554241,
+      -0.2385334470180452,
+      -0.022542295678743798
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004249314129992854,
+      0.2239465077918794,
+      0.03657957578798232
+    ],
+    "prior_bias": [
+      0.004249314129992854,
+      -0.2239465077918794,
+      -0.03657957578798232
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.00433763861656189,
+      0.25752030313014984,
+      0.020036756992340088
+    ],
+    "prior_bias": [
+      0.00433763861656189,
+      -0.25752030313014984,
+      -0.020036756992340088
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.004233525927660309,
+      0.21045864105596215,
+      0.03189172564598507
+    ],
+    "prior_bias": [
+      0.004233525927660309,
+      -0.21045864105596215,
+      -0.03189172564598507
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004249314129992854,
+      0.2239465077918794,
+      0.03657957578798232
+    ],
+    "prior_bias": [
+      0.004249314129992854,
+      -0.2239465077918794,
+      -0.03657957578798232
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "bright_proxy",
+    "pixels": 2,
+    "prior_mae": [
+      0.00433763861656189,
+      0.25752030313014984,
+      0.020036756992340088
+    ],
+    "prior_bias": [
+      0.00433763861656189,
+      -0.25752030313014984,
+      -0.020036756992340088
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 15719,
+    "prior_mae": [
+      0.004233525927660309,
+      0.21045864105596215,
+      0.03189172564598507
+    ],
+    "prior_bias": [
+      0.004233525927660309,
+      -0.21045864105596215,
+      -0.03189172564598507
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.036333270135173734,
+      0.16017615406337882,
+      0.1666296314979263
+    ],
+    "prior_bias": [
+      0.036333270135173734,
+      0.16017615406337882,
+      0.1666296314979263
+    ],
+    "joint_high_fraction": 0.884674072265625,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.036333270135173734,
+    "offline_oracle_mse": 0.0013469571111552358
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.03666790241463727,
+      0.16091468024551786,
+      0.16915753190673818
+    ],
+    "prior_bias": [
+      0.03666790241463727,
+      0.16091468024551786,
+      0.16915753190673818
+    ],
+    "joint_high_fraction": 0.8880344227776252,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.03666790241463727,
+    "offline_oracle_mse": 0.0013721863220005216
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0014442930560757915,
+      0.1313589072757395,
+      0.16801453791504173
+    ],
+    "prior_bias": [
+      0.0014442930560757915,
+      0.1313589072757395,
+      0.16801453791504173
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.9978790283203125,
+    "offline_oracle_mae": 0.0014442930560757915,
+    "offline_oracle_mse": 3.0986359071902764e-06
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.0015072707531798737,
+      0.13331186234511747,
+      0.16910135117651484
+    ],
+    "prior_bias": [
+      0.0015072707531798737,
+      0.13331186234511747,
+      0.16910135117651484
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.9984436510116268,
+    "offline_oracle_mae": 0.0015072707531798737,
+    "offline_oracle_mse": 3.5124995349506772e-06
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0014442930560757915,
+      0.1313589072757395,
+      0.16801453791504173
+    ],
+    "prior_bias": [
+      0.0014442930560757915,
+      0.1313589072757395,
+      0.16801453791504173
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.9978790283203125,
+    "offline_oracle_mae": 0.0014442930560757915,
+    "offline_oracle_mse": 3.0986359071902764e-06
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.0015072707531798737,
+      0.13331186234511747,
+      0.16910135117651484
+    ],
+    "prior_bias": [
+      0.0015072707531798737,
+      0.13331186234511747,
+      0.16910135117651484
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.9984436510116268,
+    "offline_oracle_mae": 0.0015072707531798737,
+    "offline_oracle_mse": 3.5124995349506772e-06
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.03913616947329501,
+      0.07553615448046003,
+      0.19816718476886308
+    ],
+    "prior_bias": [
+      0.03913616947329501,
+      0.07553615448046003,
+      0.19816718476886308
+    ],
+    "joint_high_fraction": 0.9355621337890625,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.03913616947329501,
+    "offline_oracle_mse": 0.0015737351308396108
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.03958479110617063,
+      0.07716806267648131,
+      0.19820620208995024
+    ],
+    "prior_bias": [
+      0.03958479110617063,
+      0.07716806267648131,
+      0.19820620208995024
+    ],
+    "joint_high_fraction": 0.9363727913576856,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.03958479110617063,
+    "offline_oracle_mse": 0.001610756714657885
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.02964591143972939,
+      0.15929030357392548,
+      0.19414434494569832
+    ],
+    "prior_bias": [
+      0.02964591143972939,
+      0.15929030357392548,
+      0.19414434494569832
+    ],
+    "joint_high_fraction": 0.425994873046875,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.02964591143972939,
+    "offline_oracle_mse": 0.0008826890552279291
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.02977661592564412,
+      0.16650705238606242,
+      0.19516127650692253
+    ],
+    "prior_bias": [
+      0.02977661592564412,
+      0.16650705238606242,
+      0.19516127650692253
+    ],
+    "joint_high_fraction": 0.46141170008239496,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.02977661592564412,
+    "offline_oracle_mse": 0.0008905976285572945
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.02964591143972939,
+      0.15929030357392548,
+      0.19414434494569832
+    ],
+    "prior_bias": [
+      0.02964591143972939,
+      0.15929030357392548,
+      0.19414434494569832
+    ],
+    "joint_high_fraction": 0.425994873046875,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.02964591143972939,
+    "offline_oracle_mse": 0.0008826890552279291
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.02977661592564412,
+      0.16650705238606242,
+      0.19516127650692253
+    ],
+    "prior_bias": [
+      0.02977661592564412,
+      0.16650705238606242,
+      0.19516127650692253
+    ],
+    "joint_high_fraction": 0.46141170008239496,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 1.0,
+    "offline_oracle_mae": 0.02977661592564412,
+    "offline_oracle_mse": 0.0008905976285572945
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.05273305618402446,
+      0.09127474499382515,
+      0.011772927275160328
+    ],
+    "prior_bias": [
+      0.05273305618402446,
+      -0.09127474499382515,
+      -0.0035212287784816
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.05302637106091245,
+      0.08841176151650888,
+      0.012007833012815994
+    ],
+    "prior_bias": [
+      0.05302637106091245,
+      -0.08841176151650888,
+      -0.0027964764338518403
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.008108226425974863,
+      0.0646866315414627,
+      0.01418140342912011
+    ],
+    "prior_bias": [
+      0.008108226425974863,
+      -0.0646866315414627,
+      0.014181396359617793
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.008209607490501833,
+      0.06425709549754048,
+      0.015158941454801391
+    ],
+    "prior_bias": [
+      0.008209607490501833,
+      -0.06425709549754048,
+      0.015158941454801391
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.008108226425974863,
+      0.0646866315414627,
+      0.01418140342912011
+    ],
+    "prior_bias": [
+      0.008108226425974863,
+      -0.0646866315414627,
+      0.014181396359617793
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.008209607490501833,
+      0.06425709549754048,
+      0.015158941454801391
+    ],
+    "prior_bias": [
+      0.008209607490501833,
+      -0.06425709549754048,
+      0.015158941454801391
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.005092442035675049,
+      0.24751724521138385,
+      0.07302758365358386
+    ],
+    "prior_bias": [
+      0.005092442035675049,
+      -0.24751724521138385,
+      -0.07302758365358386
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.005092442035675049,
+      0.24698816574745036,
+      0.07208357695300839
+    ],
+    "prior_bias": [
+      0.005092442035675049,
+      -0.24698816574745036,
+      -0.07208357695300839
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.007419586181640625,
+      0.23362648889587945,
+      0.06797757519507286
+    ],
+    "prior_bias": [
+      0.007419586181640625,
+      -0.23362648889587945,
+      -0.06797757519507286
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.007419586181640625,
+      0.23262796207824535,
+      0.06683895341928522
+    ],
+    "prior_bias": [
+      0.007419586181640625,
+      -0.23262796207824535,
+      -0.06683895341928522
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.007419586181640625,
+      0.23362648889587945,
+      0.06797757519507286
+    ],
+    "prior_bias": [
+      0.007419586181640625,
+      -0.23362648889587945,
+      -0.06797757519507286
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 10923,
+    "prior_mae": [
+      0.007419586181640625,
+      0.23262796207824535,
+      0.06683895341928522
+    ],
+    "prior_bias": [
+      0.007419586181640625,
+      -0.23262796207824535,
+      -0.06683895341928522
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.15281379411237594,
+      0.2956608682084152
+    ],
+    "prior_bias": [
+      0.0,
+      0.15281379411237594,
+      0.2956608682084152
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.0,
+      0.160411156029634,
+      0.29801368992570004
+    ],
+    "prior_bias": [
+      0.0,
+      0.160411156029634,
+      0.29801368992570004
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.14255973783656373,
+      0.28548639117070707
+    ],
+    "prior_bias": [
+      0.0,
+      0.14255973783656373,
+      0.28548639117070707
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.0,
+      0.1588918805867284,
+      0.3013106452529628
+    ],
+    "prior_bias": [
+      0.0,
+      0.1588918805867284,
+      0.3013106452529628
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0,
+      0.14255973783656373,
+      0.28548639117070707
+    ],
+    "prior_bias": [
+      0.0,
+      0.14255973783656373,
+      0.28548639117070707
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 1.0,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.0,
+      0.1588918805867284,
+      0.3013106452529628
+    ],
+    "prior_bias": [
+      0.0,
+      0.1588918805867284,
+      0.3013106452529628
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.003270001924988719,
+      0.1231064371352204,
+      0.29787860383385123
+    ],
+    "prior_bias": [
+      0.0026069826438970267,
+      0.1231064371352204,
+      0.29787860383385123
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.58905029296875,
+    "offline_oracle_mae": 0.002938492284442873,
+    "offline_oracle_mse": 1.9194906384052993e-05
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.0035536735023367575,
+      0.13820408228571648,
+      0.31182711779819966
+    ],
+    "prior_bias": [
+      0.0030163461048903174,
+      0.13820408228571648,
+      0.31182711779819966
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.6573479221039952,
+    "offline_oracle_mae": 0.0032850098036135375,
+    "offline_oracle_mse": 2.122140417492259e-05
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004060271666730841,
+      0.21493818672820453,
+      0.32430138233758043
+    ],
+    "prior_bias": [
+      0.0037402979830858385,
+      0.21493818672820453,
+      0.32430138233758043
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.884246826171875,
+    "offline_oracle_mae": 0.00390028482490834,
+    "offline_oracle_mse": 2.26970511645066e-05
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.004339757008387176,
+      0.22394139853434566,
+      0.3383445902653689
+    ],
+    "prior_bias": [
+      0.004141572719266726,
+      0.22394139853434566,
+      0.3383445902653689
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.9205982734390684,
+    "offline_oracle_mae": 0.004240664863826951,
+    "offline_oracle_mse": 2.4858170168638835e-05
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.004060271666730841,
+      0.21493818672820453,
+      0.32430138233758043
+    ],
+    "prior_bias": [
+      0.0037402979830858385,
+      0.21493818672820453,
+      0.32430138233758043
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.884246826171875,
+    "offline_oracle_mae": 0.00390028482490834,
+    "offline_oracle_mse": 2.26970511645066e-05
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.9,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.004339757008387176,
+      0.22394139853434566,
+      0.3383445902653689
+    ],
+    "prior_bias": [
+      0.004141572719266726,
+      0.22394139853434566,
+      0.3383445902653689
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.9205982734390684,
+    "offline_oracle_mae": 0.004240664863826951,
+    "offline_oracle_mse": 2.4858170168638835e-05
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.02349561305709358,
+      0.054054888129485335,
+      0.1797051284133886
+    ],
+    "prior_bias": [
+      0.02349561305709358,
+      -0.054054888129485335,
+      0.1797051284133886
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.023635081970782627,
+      0.04914726516468605,
+      0.18651748795187204
+    ],
+    "prior_bias": [
+      0.023635081970782627,
+      -0.04914726516468605,
+      0.18651748795187204
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0013073379127490625,
+      0.03884861445067145,
+      0.17411455077126448
+    ],
+    "prior_bias": [
+      0.0013073379127490625,
+      -0.03884861445067145,
+      0.17411455077126448
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.0013385529939703759,
+      0.033057864848879584,
+      0.1775154427091799
+    ],
+    "prior_bias": [
+      0.0013385529939703759,
+      -0.033057864848879584,
+      0.1775154427091799
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0013073379127490625,
+      0.03884861445067145,
+      0.17411455077126448
+    ],
+    "prior_bias": [
+      0.0013073379127490625,
+      -0.03884861445067145,
+      0.17411455077126448
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.6,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.0013385529939703759,
+      0.033057864848879584,
+      0.1775154427091799
+    ],
+    "prior_bias": [
+      0.0013385529939703759,
+      -0.033057864848879584,
+      0.1775154427091799
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.0024982160657600616,
+      0.23820908733523538,
+      0.0028786971870431444
+    ],
+    "prior_bias": [
+      0.0024982160657600616,
+      -0.23820908733523538,
+      -0.0028786971870431444
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "A_original",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.0026398203688150334,
+      0.23711940533388237,
+      0.0026863942607486375
+    ],
+    "prior_bias": [
+      0.0026398203688150334,
+      -0.23711940533388237,
+      -0.0026863942607486375
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.005671826744219288,
+      0.21185896083807165,
+      0.020036756992340088
+    ],
+    "prior_bias": [
+      0.005671826744219288,
+      -0.21185896083807165,
+      -0.020036756992340088
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "global_refit",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.005769183569417807,
+      0.20820652131837095,
+      0.020036756992340088
+    ],
+    "prior_bias": [
+      0.005769183569417807,
+      -0.20820652131837095,
+      -0.020036756992340088
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "all",
+    "pixels": 65536,
+    "prior_mae": [
+      0.005671826744219288,
+      0.21185896083807165,
+      0.020036756992340088
+    ],
+    "prior_bias": [
+      0.005671826744219288,
+      -0.21185896083807165,
+      -0.020036756992340088
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "t_added": 0.4,
+    "version": "C_semantic",
+    "region": "low_texture_proxy",
+    "pixels": 19924,
+    "prior_mae": [
+      0.005769183569417807,
+      0.20820652131837095,
+      0.020036756992340088
+    ],
+    "prior_bias": [
+      0.005769183569417807,
+      -0.20820652131837095,
+      -0.020036756992340088
+    ],
+    "joint_high_fraction": 0.0,
+    "joint_low_fraction": 0.0,
+    "outside_envelope_fraction": 0.0,
+    "offline_oracle_mae": 0.0,
+    "offline_oracle_mse": 0.0
+  }
+]

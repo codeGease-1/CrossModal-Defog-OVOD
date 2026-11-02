@@ -1,0 +1,18 @@
+{
+  "implementation": "PASS; 5 contract tests including single CPU fixture gradient update",
+  "semantic_stability": "FAIL for tested frozen semantic source",
+  "semantic_gain": "Not supported; final class maps empty and C equals pooled calibration",
+  "dynamic_independent_gain": "Not evaluated; D not trained",
+  "same_information_regression_advantage": "No efficacy result; full CPU D cost higher",
+  "gpu_used_seconds": 0,
+  "new_neural_training": false,
+  "fresh_confirmation_accessed": false,
+  "recovery": {
+    "calibration": "complete, frozen JSON",
+    "features": "48 cached cases, no need to recompute",
+    "C_D_candidates": "48 frozen files with SHA256, no truth/clear input",
+    "neural_resume": "No experiment training started; no best/latest created"
+  },
+  "scope": "CPU development feasibility; no dehazing/detection/resource changes/commit/push",
+  "source_manifest_sha256": "2a509502da1a7721677de976bf5f031a40a5df48d1914ba09d2b22f1e176b61b"
+}

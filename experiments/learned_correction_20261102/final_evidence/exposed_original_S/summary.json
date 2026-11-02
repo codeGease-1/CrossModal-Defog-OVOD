@@ -1,0 +1,62 @@
+{
+  "metrics": {
+    "corrector16_seed42": {
+      "pixel_mae": 0.10973776876926422,
+      "global_mae": 0.10964345932006836,
+      "region_spearman": 0.7666272002104322
+    },
+    "corrector16_seed43": {
+      "pixel_mae": 0.12235150020569563,
+      "global_mae": 0.12235148809850216,
+      "region_spearman": 0.8263759363822065
+    },
+    "corrector16_seed44": {
+      "pixel_mae": 0.12137617636471987,
+      "global_mae": 0.12137330323457718,
+      "region_spearman": 0.755596435309515
+    },
+    "direct_same16_seed42": {
+      "pixel_mae": 0.1009149462915957,
+      "global_mae": 0.09738041693344712,
+      "region_spearman": 0.6458439103563489
+    },
+    "direct_same16_seed43": {
+      "pixel_mae": 0.08829289767891169,
+      "global_mae": 0.08444206416606903,
+      "region_spearman": 0.6599952099077689
+    },
+    "direct_same16_seed44": {
+      "pixel_mae": 0.09299019211903214,
+      "global_mae": 0.08868589857593179,
+      "region_spearman": 0.678741150499135
+    },
+    "original_fixed": {
+      "pixel_mae": 0.13327090069651604,
+      "global_mae": 0.13326968345791101,
+      "region_spearman": 0.7798433033007017
+    },
+    "rgb32_seed42": {
+      "pixel_mae": 0.05661958549171686,
+      "global_mae": 0.039835645351558924,
+      "region_spearman": 0.7713944337492364
+    },
+    "rgb32_seed43": {
+      "pixel_mae": 0.09666469180956483,
+      "global_mae": 0.09591395827010274,
+      "region_spearman": 0.6041139394755615
+    },
+    "rgb32_seed44": {
+      "pixel_mae": 0.0903307544067502,
+      "global_mae": 0.08894727472215891,
+      "region_spearman": 0.7434540691603748
+    }
+  },
+  "endpoint": "H_eff=1-mean_RGB(t_c), spectral secondary endpoint",
+  "geographic_groups": 1,
+  "confidence_interval": null,
+  "role": "Already exposed development failure diagnostic; no model tuning",
+  "not_natural_haze_truth": true,
+  "old_label_audit_sha256": "c076cbb667d0babd2a0c68a8452933af2a93729345cbffe55e3be016cf6488f1",
+  "elapsed_wall_seconds": 2.2721142135560513,
+  "script_sha256": "6b25bc6fa404a1319650102345de8be6a89f621914596b23ab131d271a1c4eb9"
+}

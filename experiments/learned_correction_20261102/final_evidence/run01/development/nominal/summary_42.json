@@ -1,0 +1,34 @@
+{
+  "corrector16_seed42": {
+    "pixel_mae": 0.012247715080775379,
+    "pixel_mse": 0.00031829013751805135,
+    "global_mae": 0.009345347576982022,
+    "region_spearman": 0.9786856863713979,
+    "clear_response": 0.004935301305522444,
+    "cases": 512
+  },
+  "original_fixed": {
+    "pixel_mae": 0.02002393740997377,
+    "pixel_mse": 0.001252903827644758,
+    "global_mae": 0.016812089220366033,
+    "region_spearman": 0.9772304167635548,
+    "clear_response": 0.004969862413418014,
+    "cases": 512
+  },
+  "rgb32_seed42": {
+    "pixel_mae": 0.013875902512154425,
+    "pixel_mse": 0.0004157808331370916,
+    "global_mae": 0.011285148801107425,
+    "region_spearman": 0.9779350736262998,
+    "clear_response": 0.005036658665630966,
+    "cases": 512
+  },
+  "rgb_context16_seed42": {
+    "pixel_mae": 0.016029915403123596,
+    "pixel_mse": 0.0012769581871623359,
+    "global_mae": 0.011095400652266107,
+    "region_spearman": 0.9776440197047312,
+    "clear_response": 0.006847709883004427,
+    "cases": 512
+  }
+}

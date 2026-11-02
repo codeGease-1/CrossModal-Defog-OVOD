@@ -1,0 +1,35 @@
+[
+  {
+    "method": "global",
+    "case_id": "development_000_a0_b0_uniform_1.0",
+    "sha256": "9abcc0e768b803612ca40b8b497090384a0ded715df2d0b311c9149d61eb591f",
+    "calibration_sha256": "3964276744d4fd7747af4ad4e9e28962b5790b25cf10f27a5f2064da340b0b44",
+    "keys": [
+      "candidates",
+      "rgb"
+    ],
+    "truth_or_clean_or_A_or_scene_input": false
+  },
+  {
+    "method": "content",
+    "case_id": "development_000_a0_b0_uniform_1.0",
+    "sha256": "6df522a0fb226dd3bc965a6f6f1cf0839fdee7e4948f3fb473777445cf023451",
+    "calibration_sha256": "3964276744d4fd7747af4ad4e9e28962b5790b25cf10f27a5f2064da340b0b44",
+    "keys": [
+      "candidates",
+      "rgb"
+    ],
+    "truth_or_clean_or_A_or_scene_input": false
+  },
+  {
+    "method": "content_physical",
+    "case_id": "development_000_a0_b0_uniform_1.0",
+    "sha256": "e5a6828be9b49ccc449c1f7fce0969d94d4843c5d43da52659fdc72fee281409",
+    "calibration_sha256": "eecea2ab2c76da64bfaeebbf99f8123547e2b3a5a8db837136a7d122c3ade56d",
+    "keys": [
+      "candidates",
+      "rgb"
+    ],
+    "truth_or_clean_or_A_or_scene_input": false
+  }
+]

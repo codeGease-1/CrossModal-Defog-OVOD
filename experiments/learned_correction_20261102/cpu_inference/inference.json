@@ -1,0 +1,12 @@
+{
+  "mode": "corrector16",
+  "device": "cpu",
+  "H_mean": 0.3246857523918152,
+  "input": "hazy RGB only",
+  "first_call_seconds": 0.3515432999993209,
+  "fixed_scale": [
+    0,
+    1
+  ],
+  "warning": "Synthetic-protocol effective attenuation, not measured natural fog concentration"
+}

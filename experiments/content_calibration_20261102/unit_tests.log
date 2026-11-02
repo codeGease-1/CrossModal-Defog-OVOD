@@ -1,0 +1,12 @@
+test_candidate_dependency_and_bounded_correction (__main__.Contracts.test_candidate_dependency_and_bounded_correction) ... ok
+test_context_is_observed_only_no_per_image_scaling (__main__.Contracts.test_context_is_observed_only_no_per_image_scaling) ... ok
+test_inference_signature_and_fusion_independence (__main__.Contracts.test_inference_signature_and_fusion_independence) ... ok
+test_no_envelope_only_success_and_oracle (__main__.Contracts.test_no_envelope_only_success_and_oracle) ... ok
+test_physics_square_completion_zero_baseline_and_domain_guard (__main__.Contracts.test_physics_square_completion_zero_baseline_and_domain_guard) ... ok
+test_sparse_out_of_support_fallback_and_serialization (__main__.Contracts.test_sparse_out_of_support_fallback_and_serialization) ... ok
+test_train_only_and_original_support (__main__.Contracts.test_train_only_and_original_support) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.304s
+
+OK

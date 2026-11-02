@@ -1,0 +1,90 @@
+{
+  "timings": {
+    "raw_prior_128": {
+      "p50_ms": 13.191999983973801,
+      "p95_ms": 13.241600012406707
+    },
+    "content_features_128": {
+      "p50_ms": 5.317700008163229,
+      "p95_ms": 5.334139987826347
+    },
+    "global_candidates_128": {
+      "p50_ms": 20.18380002118647,
+      "p95_ms": 20.50142001826316
+    },
+    "content_candidates_128": {
+      "p50_ms": 24.549299996579066,
+      "p95_ms": 25.32336000003852
+    },
+    "content_plus_dynamic_128": {
+      "p50_ms": 66.03099999483675,
+      "p95_ms": 66.9095599965658
+    },
+    "same_features_regression_128": {
+      "p50_ms": 66.54800000251271,
+      "p95_ms": 68.43697999720462
+    },
+    "RGB_regression_128": {
+      "p50_ms": 38.80870001739822,
+      "p95_ms": 39.357339980779216
+    },
+    "raw_prior_256": {
+      "p50_ms": 47.442999988561496,
+      "p95_ms": 51.96076001157053
+    },
+    "content_features_256": {
+      "p50_ms": 20.619199989596382,
+      "p95_ms": 22.144439996918663
+    },
+    "global_candidates_256": {
+      "p50_ms": 72.29720000759698,
+      "p95_ms": 76.7260999942664
+    },
+    "content_candidates_256": {
+      "p50_ms": 91.03189999586903,
+      "p95_ms": 92.30297999456525
+    },
+    "content_plus_dynamic_256": {
+      "p50_ms": 247.04879999626428,
+      "p95_ms": 251.2672199984081
+    },
+    "same_features_regression_256": {
+      "p50_ms": 240.4953000077512,
+      "p95_ms": 242.55188000388443
+    },
+    "RGB_regression_256": {
+      "p50_ms": 151.42999999807216,
+      "p95_ms": 152.3171000124421
+    }
+  },
+  "warmups": 2,
+  "repeats": 5,
+  "threads": 4,
+  "timing_scope": "CPU tensor-to-output, batch1, no disk reads. candidate calls include content + prior + tables; dynamic includes all those costs. Fixed fusion adds three multiplies and sum, separately negligible but not timed here.",
+  "parameters": {
+    "calibrator_neural_trainable": 0,
+    "calibrator_neural_total": 0,
+    "content_fitted_table_xy_scalars": 608,
+    "physical_fitted_table_xy_scalars": 600,
+    "fixed_fusion_scalars": 3,
+    "dynamic_trainable_and_total": 868275,
+    "RGB_trainable_and_total": 867377,
+    "semantic_model": 0
+  },
+  "same_features_reference_parameters": 868241,
+  "same_frozen_candidates_for_C_D": true,
+  "dynamic_fusion_identity_passed": true,
+  "RGB_only_inference_saved_png_passed": true,
+  "prior_replaced_mean_candidate_change": [
+    0.2715618312358856,
+    0.09241793304681778,
+    0.18292014300823212
+  ],
+  "prior_probe_scope": "one exposed RGB input, not an ablation efficacy result; retrained prior-removal control remains pending",
+  "GPU_memory": null,
+  "GPU_memory_reason": "No CUDA execution authorized or performed",
+  "CPU_max_RSS": null,
+  "CPU_RSS_reason": "Per-model peak not instrumented; do not misattribute process aggregate",
+  "precompute_bytes": 2556468,
+  "models_trained": "nonparametric train-only table fits + fixed-weight solve; gate and regressor cost/contract only"
+}

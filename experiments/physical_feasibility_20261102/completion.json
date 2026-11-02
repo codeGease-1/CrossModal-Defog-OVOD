@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "source_head": "1672fb1d9921b21f13408b17991c865333d44abe",
+  "source_tree": "uncommitted source hashes in plan.json",
+  "command": ".venv/Scripts/python.exe scripts/semantic/audit_physical_feasibility.py",
+  "gpu_used": false,
+  "training_steps": 0,
+  "verified_artifact_hashes": 4,
+  "verified_source_hashes": 7,
+  "csv_rows": 432,
+  "validation": "Applicable algebra assertions passed during run; archived hashes and row count checked afterwards"
+}

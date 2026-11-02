@@ -1,0 +1,44 @@
+[
+  {
+    "scene_id": "external_G_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "source": "experiments/v15_20261101/external_sources/external_G_1282.png",
+    "sha256": "d0fe30f681544149c1473621c1c5a64034f98c26e0ef56eb5eac0433fce09a00",
+    "role": "previously exposed external DEVELOPMENT reference, one geography-unverified supergroup"
+  },
+  {
+    "scene_id": "external_G_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "source": "experiments/v15_20261101/external_sources/external_G_1115.png",
+    "sha256": "082e166ac7c778cc16865b441012be57457e2f866d28a7d5f601949a7f1dc029",
+    "role": "previously exposed external DEVELOPMENT reference, one geography-unverified supergroup"
+  },
+  {
+    "scene_id": "external_S_1282",
+    "group_id": "RSHaze_all_geography_unverified",
+    "source": "experiments/v15_20261101/external_sources/external_S_1282.png",
+    "sha256": "5fb4aa9f74ce6796bfd4e3f5bfcfbf88bbe5d1dac6ea32cc9b89f6775a016cb7",
+    "role": "previously exposed external DEVELOPMENT reference, one geography-unverified supergroup"
+  },
+  {
+    "scene_id": "external_S_1115",
+    "group_id": "RSHaze_all_geography_unverified",
+    "source": "experiments/v15_20261101/external_sources/external_S_1115.png",
+    "sha256": "847d6e1fa8ec0e5c2aaafab3a062d68bd2b3053fc8e513b31766da9af56f7e8f",
+    "role": "previously exposed external DEVELOPMENT reference, one geography-unverified supergroup"
+  },
+  {
+    "scene_id": "external_L_162",
+    "group_id": "RSHaze_all_geography_unverified",
+    "source": "experiments/v15_20261101/external_sources/external_L_162.png",
+    "sha256": "2baff3f771c73d6dfa5d7676a755a71f22831edab4727fcfd1380ac9d560971d",
+    "role": "previously exposed external DEVELOPMENT reference, one geography-unverified supergroup"
+  },
+  {
+    "scene_id": "external_L_214",
+    "group_id": "RSHaze_all_geography_unverified",
+    "source": "experiments/v15_20261101/external_sources/external_L_214.png",
+    "sha256": "1e9300d511e3b59e6630e127069c704b67f93384b3b5b797b3ebef93d82aaaae",
+    "role": "previously exposed external DEVELOPMENT reference, one geography-unverified supergroup"
+  }
+]

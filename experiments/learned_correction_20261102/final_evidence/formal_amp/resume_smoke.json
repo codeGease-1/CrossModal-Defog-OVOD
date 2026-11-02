@@ -1,0 +1,6 @@
+{
+  "max_parameter_difference": 0.0,
+  "device": "cuda",
+  "amp": true,
+  "actual_save_load_and_optimizer_resume": true
+}

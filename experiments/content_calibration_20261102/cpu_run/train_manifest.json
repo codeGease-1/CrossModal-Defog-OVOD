@@ -1,0 +1,4066 @@
+[
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_000_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "85c00231f7bff72824332d85e84711501b88dfc580b226cdaa27c98f03cbe216",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "e424e2ec4037fe091f2bc3aecd3090947eab72c5ec2235ef3e7636317f0e801e"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_000_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "e00bbbb096e0d688f0baed8ce4cca7f977c07c144391ca2258d72bef570827ea",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "9ae9063ae2bb04313290526832cde82f0dcca19ea256bf8f7785877f1dfe68b9"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_000_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "a50b3a26f062fbafb389807e2915f0314440dc9b8df1e5ef25cef64e1fc4c11c",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "65c6d856abfc2a7e5e127c73fa48349dd946292508257ee48c789db563357418"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_000_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "caad17a7a30650ca205461aebbeb3596e3c8f0574676f8389e8880dcbeaf83c8",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "a20cc10573a90ff4688ad9b8a00773dcc09968d62faa4f921141f077e9758c02"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_000_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "dea047ac628054f5e8ec6607171b5ebee5e0b5ac76726a5112d72d1730cbfa73",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "b793fd96cf77cb0423176f894cbcaaee65ea383cc50ba1402c81675c79e4ce90"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_000_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.75,
+        0.4
+      ]
+    },
+    "rgb_sha256": "ea90fa112e4389af57a58fd7c0072db64a37462ad0c0fc03e65451f42ec8da48",
+    "target_sha256": "1338e96c7f7620d37512a8a0f81c3fdc2d384369877bb6eabcf3dc15faf73638",
+    "sample_index_sha256": "04286136fd5bcbc80284f607f2f0c21e620961a352b1767b226ebdc3d082a569"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_000_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "c4ca3dda5d210117d99a8e18f5932aaae51f4c559daf986a58b70e5ea17be19e",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "d23a60ff45ab7ec9179ccee3c5de11822c69b1ba62bc88b31578b708c24c9462"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_000_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "616b14c7042dd803a915cc25232eb163d7931bedb1cc13d0b2fad1abb55fa64f",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "d14e2a79d0653fa6f05fdb0398e623fad4b1011077205ac1a84d30c215dee0c5"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_000_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "ac0897419dd7420e876f4765e13885bf6bd769ea239fc2724cebd4fb3cc066ee",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "53efc9e9e9baf57f54368b463f3c4a476a69691b1805501bf043f6c8865fce27"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_000_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "902e209b75f2c998affeae5fc6b456971caafdce84dd4394d209b0091c49ccea",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "8b18227f7834673b9165af26a4c3a6c885bee24a427b6677326572947276d6e3"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_000_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "c0b4831638a36ecb145ef453ede36963054df81b46bb34a333163ff312dd4ed7",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "b3c05bbc0c12ef37f8b836b7a842ebe922d7e789c5fb4ae6fa27b6e94304d17b"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_000_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.75,
+        0.4
+      ]
+    },
+    "rgb_sha256": "95d3a8c289f37cb04845aac59dd95128d2d67d55b6203920466dba8573ed16f5",
+    "target_sha256": "1338e96c7f7620d37512a8a0f81c3fdc2d384369877bb6eabcf3dc15faf73638",
+    "sample_index_sha256": "846bb724eafde85f9c7a0f09b0fead3543057b28f6ae441cb2d23e6e5dd1c289"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_000_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "85c00231f7bff72824332d85e84711501b88dfc580b226cdaa27c98f03cbe216",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "e130243f30c8863d18899151ed209292e23a18e830a38056336ba955ded14b6a"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_000_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "964bbca22602d52b901dc49c63d979e750d8149bb6cfb16c416c9157894f7134",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "aaff8b5222d6eb2f2c0b1ee3f8feb377713a235d36e74f83e9be18d966e53c90"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_000_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "d0dad87a8e1235f4a43b53edb4f361d70dae037c8503ad5df3db7eda59a132bc",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "b8e1a4130d323c64a380b986f025e18aad9980a4d44b2b44d369df8bd6e66847"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_000_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "45241e2d075b57c700e45cb93226280d77f98ce775c994333dad3afd65fc5b72",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "f7dcdbd127e5c055ba297c550b936e8eeab0104b1991c91c5f8a5dc0f5627d20"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_000_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "644a3fff2487340c3fe29b8e2a86122bb57ec65bb00fe24b0bc6095992901ec8",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "7f2bf2c5d53d013ae8f0168de38dbaab5361949450f64d9f9b80ac335db0e62a"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_000_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.75,
+        0.4
+      ]
+    },
+    "rgb_sha256": "657547dd3f3e5972b3400f35c2b46bf820f971ab89db8c8d83b4d4fc29a20bc6",
+    "target_sha256": "1338e96c7f7620d37512a8a0f81c3fdc2d384369877bb6eabcf3dc15faf73638",
+    "sample_index_sha256": "2f5ea21d5e98a8d7682f01fcc5b28cb113776e96493e26ec3e190564e4023cef"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_000_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "c4ca3dda5d210117d99a8e18f5932aaae51f4c559daf986a58b70e5ea17be19e",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "91a294376eb2f9c6414486ead681587f7a02fa0de45cdf3dee74497de870fb52"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_000_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "c71caa2ef2191b20dcc0b5d99bf5cb47d62783efbb5ea3dded8f21741ddbaa3a",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "7e86d90669262378219f695562b57b052b420563adb24f18a3ad4e3ae572b98d"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_000_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "66437079c2a02afea823feeac0603162c57f0cec1dd8136792327cc8c862794a",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "7a3292a82f18911b8fb9030aac5cb0ced90aa6b9749831903e1fb1ce393c90fd"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_000_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "35c02d2de128a2e17949f2680874dec658ce481fd601225fe6e5996ee1149204",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "68577e9d73125c90cd874629fe4f696d8712893483ef913679806072bd046df3"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_000_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "d88e846b3941f5985e453998f674926a5d179da8a239cad5db31349e7267a01c",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "e85a0e5c595b8ea3985811c1f5482912e61f38b93a8ae1a26c2b38b1698bcb39"
+  },
+  {
+    "scene_id": "train_000",
+    "split": "train",
+    "group_id": "procedural_original_20261101",
+    "seed": 20261101,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "64c2ba41f76a7fd0814ce96036cc349a458cef967a9b60d0ecfe7e281b4be2a5",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_000_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.75,
+        0.4
+      ]
+    },
+    "rgb_sha256": "9d1df14c1c18d14b3af306c246962e27f01e3b67ac70a9bdd383a6c5555fbb74",
+    "target_sha256": "1338e96c7f7620d37512a8a0f81c3fdc2d384369877bb6eabcf3dc15faf73638",
+    "sample_index_sha256": "8100c27240f8c26967b5c335f409a704b1c4c242e13d26bc230a4710e2163d22"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_001_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "81e9e97f8d0b68d3d31e78b9d91c427b38c5dfc195a7c00cc0588b01ca8feca4",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "d37a2f80b9abe48897992caa2ed7194359f828f5e98d53c62fb796fb455c8ce8"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_001_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "ecec6cc2290d9a89d8dd7a29706009ea55e4ddd438bfbc349dab48cf0ed9e75c",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "93286e83fc98fb3baafa4f3ef1eded0582eb72b46ac58560bd78e4079a94ed68"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_001_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "2ddb109b9fa0fb2064c11ce03122ed964753fc35ab0b18e45d0bd8260554d194",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "93fb69dc52e372734f2d65c85addb755184e28f2224c78ffe8dc37f65f602cff"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_001_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "7402349f67c387db0bfd647bec682243e1666405beabdb950104b195072a2033",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "3cb5d44a18fbbb4b47a6652bda38dcfcb9a4fa5be4b0ac429da78c1122cde039"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_001_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "58b4a0c1118413ed88493008409e832db8e4216c9d9f02e71d8b3f3c86d0985b",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "9ea42387d644df980fd1990f5acbbb1cf4b8a27e48acaf827f231602d59e051f"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_001_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.4,
+        0.75
+      ]
+    },
+    "rgb_sha256": "542a55345e2459538200ce5a7b44e6976e7e9b508d8939582d1a12699aa06fd6",
+    "target_sha256": "6d8b4c8223bb90cb88e849adfc13d8c9534e21cbf1478b15e5d39d418dc28769",
+    "sample_index_sha256": "c6b9f0e5975c357a2a834ea6a17cbc72ea55710ee58a3c945779022e9f2359c1"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_001_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "9b9c590bad00123ecd6a71f6fa10f3363d0b213a6ff8b32608a295a4609f4bfc",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "b90614f401b3e75f93ea9a914f0ea73c5acff3ac1ed368fa8d4a58a47690c343"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_001_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "8cc36c3c7e0a671aa3cca758a14afc39ab58421d696f98f767d221bdd5375fac",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "a6ff0e6fb1b7646abdaae0cacf5181cb941e5354c9b8297d84633633db96a1f8"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_001_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "7987c75204305081e03040dd9ac6a74a7a8f30b26ca85fc0fb75687d55ac96fd",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "0c8d5c433ee0269419ff1130e7cd6d3eb816edd43f7ff33592b0411d63e3ff37"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_001_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "d8b96ee6de140b7a062d507b0f634d83fdc58b2b6f432ff6f22d61484e7ab30a",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "dcc33a0e5e19862a08c047d87cbb3c54f7135e484af5b66d83be59d399270933"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_001_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "9d6847d5ed4d3b7fb625b8bf0a6dcc4d9ad391488de4c7030c56eedc82033c17",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "bc801b21e36907f6483a69faaa55812da9fb17a9da430068b2ec0aefb385111f"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_001_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.4,
+        0.75
+      ]
+    },
+    "rgb_sha256": "c7570efd2446f1623a23936cce236e196de960bdd22e075a03894ad712d1e353",
+    "target_sha256": "6d8b4c8223bb90cb88e849adfc13d8c9534e21cbf1478b15e5d39d418dc28769",
+    "sample_index_sha256": "2be620a05a7c1fad1d3569f81a8757ad8b99bac08a414c72aa4d8969eb45bd9a"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_001_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "81e9e97f8d0b68d3d31e78b9d91c427b38c5dfc195a7c00cc0588b01ca8feca4",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "a7b94c20867bea86ee0ce330c457a5f0b938063bcb2b806ecdff2b3c018bf1c2"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_001_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "dc973d40372af7fc180e574d73543719b4adaee533cc7beb2b1eac673fb59c08",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "70fce32fc45f13af2dd786f6a16a4e172126e1a2d2fb02a896ad8021cfd96707"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_001_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "ee6f20688c49eddc846ee08e18a0a562245302235dcad5d9c3210bc45568e570",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "17454e95da1552335fd5c05139dac8c0ac6a33676d94de8cfb0d509fc43fa64d"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_001_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "01bee473614e9d550afcd93d2f1e3bce36225f80b906b03e427e4c4742d2ffba",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "a0cae711cc6e0d51172b3f327c6c2233f17521b6a8b7d6432575eeff033d2139"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_001_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "70ac6054c75c150e75a70d1509463da84060b0722466cab93edaace72e9e1bc9",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "5f6720508009b7558cf3ea6327f7a17cd5e349a8e9da9af5ca30d39f2a5d9da0"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_001_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.4,
+        0.75
+      ]
+    },
+    "rgb_sha256": "b6882d99dd57844317bbc654f450d658b21fa243bff05eb71ecabd6405903d74",
+    "target_sha256": "6d8b4c8223bb90cb88e849adfc13d8c9534e21cbf1478b15e5d39d418dc28769",
+    "sample_index_sha256": "bd2d4c1ed27c04006afce57ad976eb006ba703a52eb38ee695ade24c0816059b"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_001_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "9b9c590bad00123ecd6a71f6fa10f3363d0b213a6ff8b32608a295a4609f4bfc",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "8bfe228ddf64c278a45f4db966f201a0759c664aaa1e09de148e3efee75f4e64"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_001_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "394692479917d38ebe6f9715cb061112a5348b69a33d9e19a58c6c818cbb6aa8",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "abad00e4df22e84de1bb93768f2b1922f16b23ed417c119040f572b4da7ea082"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_001_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "902b8aa4365113e01da9d5dafb8dcec8912101d95e4e93f06d02f9eb6d817301",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "9e01e4ccc74b1a60e01376ecb9e5805623612a53cb2d181a00d4f148a5f6892c"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_001_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "253fb1413958b6c41321ded26223f011a6baea12d96c62d3d2acf44035759c0f",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "9ca690db7cfca487d53fb08fa85cfed4d540db7697770ec2c2b09605a621b422"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_001_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "bdc2b58400cced572039b7781abd374b31fd7e85c96b2598a58bd33e910efeb6",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "5472669896a509aa85c6d2e3f9558158812f78d7695bdf842fbe7c11edfe3eb2"
+  },
+  {
+    "scene_id": "train_001",
+    "split": "train",
+    "group_id": "procedural_original_20261102",
+    "seed": 20261102,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "6c718f28f647156450fee52287d048874a948a11e96b2530552c10b9446c4a29",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_001_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.9,
+        0.4,
+        0.75
+      ]
+    },
+    "rgb_sha256": "b39c3d45a36f749c2e1418a8f9a53ec869717bf21793eb04c1ea8226ef85d28f",
+    "target_sha256": "6d8b4c8223bb90cb88e849adfc13d8c9534e21cbf1478b15e5d39d418dc28769",
+    "sample_index_sha256": "4552e6ca57379ba3ffd29fff55ade2bd4a0ee252b8a34f627ede084351c93af3"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_002_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "f0a0b3931fd0efdec53b147c9c8b676ea113c7c3d636c9acde83ed07cbc146ef",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "8ed6e37710ed35b396b6813366b1e6b87cb9949651e6b9815935ab9a5f7a4856"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_002_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "fd15b39804aab71e790bdac146241679ae95ae01f4a51662fac615133e24600b",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "cb61d55ecf0cd6e98d80c3f98f6b833aba79577b75e9ffb329387a0e7185f4a5"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_002_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "c43f1db2bd7c2059457f068f275364b911e4b0c1e06f424df561906ee07742d8",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "39faa26b4569b03076d1447ab8c288dcac739645f91131ab1296986e305cbdb9"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_002_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "27d61e879ff2eba1b67d4d40a59790936aaf5e7826e9938b6cc43c6cd6d40c1b",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "1c931a5d01e0709385fd3573ad6d404fbd0344b827ed50deb11b61e9ec48856e"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_002_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "c40ec434e89bde2f51bc6603d007ee0ce943afcf0f4500985a84c76ebfe99872",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "2df0fb7a83bbd18bdbf69f13019dfd39af326ce0254adb4b7ba825d9c368927c"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_002_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "2e5ccee84f507c8ea05fa19d652f426f98faf84133aa170c8b7ceee2d89c75f7",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "70aa68559583892fb41d76107465668009579527084ecfa2956c20db0c4f6bc1"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_002_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "43d07ff26928ce418b4e99a992bdfa381cc29db1e01c83e3d8aa07ec7f295369",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "8644d7640536396b5de5e6cbe3297b0aabd9382bc9f244bfab8c0256a502e131"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_002_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "2209c23dbf5c6cb6c91c7467e0f7340f4c595e2d36c33232082e2db4425f8bfa",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "c8f6a6b6aa44c1a4ead68ab433b7a791b097ee87521d3f4bb426d425bd3bf627"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_002_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "b2020d6f7faa3e1573897c08086e9afd65a15ad821ad7a8fecb8f3a4173f2001",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "512a3e5ac0447e365f3c68aae27c0aea2e65022b2e8b91b0364e8af0e52960a1"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_002_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "b14132cbe2d632d9bd08b9e51149c2f99a4def75be02c0465f377df805af6756",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "dd21c5458087c4b2deb9436e316f53811dabca77296bb48050eff9cd2a936882"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_002_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "3dee1b864e8d5642c2a6b0242c072fd06529c2d4fe81fdabb3c63e981a777149",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "6e0c4bd54cc2fb962b011f584855648796879ead6689b699ded35a1e4154511a"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_002_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "de22fa3496fb1badc6ac1aa4b6094c193cc1a937074e9c89ec2cca66c05fcd6d",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "5bce4f4751f4e91924c9955073b8a1f01f9275a62f2b30d3f77cb3c10fc04d86"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_002_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "f0a0b3931fd0efdec53b147c9c8b676ea113c7c3d636c9acde83ed07cbc146ef",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "f40312f187508351807dabe2852e6cd7dda79fa94ab02cd939e61f926ea5f2c1"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_002_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "247dabdf98403d6c70b2f2f4afe4fce8610a5fbd9cccebfc645d206fb6dfaf39",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "d291ef874768199fc9d1739e841c80b8e23fb60611d36829bdb08db16610f9a3"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_002_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "c86354524e61f36789f520766d7a7b12ee921d8faf26f29fe2ce236600b9ef5a",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "bd260bb01a47f971062ebb23f1841eeffb25f44a8d6a2bac891cfddd7ffe70ef"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_002_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "591987a9b97a99441625465776206b60034d527230d1c4aa169b9710b5e3469d",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "e5b275a836dbb7d1b225f6ff0dd0750f0ad30a1acfaa563d2b51937b6b8b9358"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_002_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "e1ea1466a18db3f0a32891048ec8873b9abb14f27cd9db7eb81f7825d0f01229",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "94424f337d8e696ea255432e6897e24dc06661750661a509e46f84751981b541"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_002_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "172542f7fadbe2b6e79d5790c56567819d26559ccda0120f23aeb4199afddb8c",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "ca071b883ba3c156b2b6ee5af10241e1bb540cd22c8588128c72294068931ffd"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_002_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "43d07ff26928ce418b4e99a992bdfa381cc29db1e01c83e3d8aa07ec7f295369",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "624f34ace9ae05917c19da3cc6a0ec378891d11ec00f5cef20aad068abc754a1"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_002_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "c666a39b8f9def9d9ecb9c033a96ef95b039402039f0bd91e72c2697b1eb6adc",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "37621599d54c15d42519c01b005524b3724296678c3934c8276fb50fee293fb0"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_002_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "9dfb2b3e093506ae8a93ded0e07919c55fcb5f56dd4cd4030dbeb690f6e55d43",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "56cf9e6003f7d0cfec2943801a3c69950bac1b9e559df4b8f4276223115e5d72"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_002_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "6f58fe140cd809cf057b3fdda7af2ec49efdbf348fc366fe1d8e03a518c7b35a",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "99f36854ace54fcecf7b77e3881c77a8186190b062531744cb91ad7e85174b7e"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_002_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "5a0a2a99452508925dffc4aa67a0415e3e357c2997808b20a39778a7eb59e118",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "00636c9b5d939ae3b9d80505cd015150a9f043244fb6521f20b3a2b0f6bcc042"
+  },
+  {
+    "scene_id": "train_002",
+    "split": "train",
+    "group_id": "procedural_original_20261103",
+    "seed": 20261103,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "047988f8d03c440c9512b18f6d086dbdbd59a3dd78ba29521b6c309d58ee8fb6",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_002_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "ffedbef532ecfbae81ffdca7b8d735d2235a4a6a3b1610eecaaf73f2cf3e31eb",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "4b01ed3af280176124234260ad444c0f6a4e3b3dfdc806c451939e87ab4911b4"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_003_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "16f2d876c94d38f7e327d4ef2a4a3c2f6869990b3899d54152af145a40cec195",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "06ef4e09cdfeae00807edb68af37e2ad3327d78230a344234d41bfd0690438e3"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_003_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "4c70c8bb4535e2c4801404b1e8d1824d860f4417b4ff9207042b23dfb718669b",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "9e074b0bbc98d55490e749e5439bf69c94eca97049893da501465c637b8c48ea"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_003_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "77cc285684c346945224ad9984573834fa004ae82f7c3101c494de0108e89deb",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "c94c28d60c871f50e67141e1f77e35ca1f044fdf7e7171facf5d3b01880d7ec0"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_003_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "2d83034568a8d9df7e0ae55240947c6773b4f9431e74709ecd34256631dfcf4f",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "aedc7a0489c0bafe946ec3dc8bee9f5b490a898907e9026ceb1ad73c73895e41"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_003_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "701d1ae24159cc1cddc5500fdd59bafcdabb7adc8cae3493a57f816eeb36e8a5",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "48bd7c36c797acbb9a6872a0022f6fe222e5ec90a03946875f4694ba3aaeaab6"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_003_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.4,
+        0.9,
+        0.75,
+        0.6
+      ]
+    },
+    "rgb_sha256": "f186eb02772efbe652a59adeda0765b3ea61c6805c73cda48e5a76ace61ed491",
+    "target_sha256": "e1fea7aeecca5a1278f8fac576ad6fdef79f3c76da35b7eeba52d91d8337a6af",
+    "sample_index_sha256": "f073233b9ae4b0f466e7a1eb8b7bffad9cc2f425e64d6c915b18ce9d685b7871"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_003_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "6aec686c56c605ad6983bf0a435ece531501aa1389991d15ad29fa842557e24c",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "d43902939a09499317d9b70e83616983ddb3b6372ecef4191883eef9aa068c37"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_003_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "3b91320030fe092295b1e05beb51d6aed5218a50fac15e688bc213c488439821",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "0128585b7a30a752cd34db2fc849e13e3c26e2d9545232b2ad8141550092f575"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_003_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "927d8c95b3360c0a86ce126e25462d6fafda7e3afb5a746583c4e8997ab0c6a4",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "8e3dbe0554da2498eb12d399e027b1d5434c40d7310fb779fc4b921b3c1533a8"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_003_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "a3bd53eb9f0d5f00e621941da6bca561b4fe2e210b4ab0fc330ff593e1f7c420",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "5d9e7f949fa9895e2b2704ecca5c675c6494fe7cdf590a3832123d6c6418b99c"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_003_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "74f132118b133c50ee8fcc89a94563527b87b3f259040060259925dd60cd5df9",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "ba8fa11687de6024e370c195f6964d14e5c8c633bbe79a6fb265cb5af66d7292"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_003_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.4,
+        0.9,
+        0.75,
+        0.6
+      ]
+    },
+    "rgb_sha256": "94a8a12b581cc1209e663d46677acd8181b0574314ee47d9805818825775e373",
+    "target_sha256": "e1fea7aeecca5a1278f8fac576ad6fdef79f3c76da35b7eeba52d91d8337a6af",
+    "sample_index_sha256": "4824b4cae9de0dbbcc3c0472d3373a16dc6eb93b18c39f38a56ccf6730fa9fab"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_003_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "16f2d876c94d38f7e327d4ef2a4a3c2f6869990b3899d54152af145a40cec195",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "c83ab7fa16262603f03b613098aa3f6717f01fa92c77747baea734ff5d584191"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_003_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "955be540ecd8ec484e3ebf9673c7705486ab5dca115677864d1d881060752265",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "5c8c11967a990707d54658c6436948786aeee88f877f27644c2e6a0fefd119aa"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_003_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "5b615f0564deb68d09f1216403b2bb313968f3655d7823aa4b8dc9776492a04b",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "d496bd277f462959a69b3189e8fb06c1170ac36d66d114bb63d751c0121f4305"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_003_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "351fec1f2cacd46848d7441aa3371f77dc98de6a8f0dc749ccacfdfe1ec01abe",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "67a86c8e54bb3feb981d0cb3e1aad39bd64a5ed357afb801591c6a49a9e4f9f2"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_003_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "fc2bad8779091675c8cc61b9b30095034cd6dd52a8e2fb008613d8af5ba38b61",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "1bab4f00837ba14620ff820627d2ea4620f52d0732b6f9231e6582cb950a0d99"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_003_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.4,
+        0.9,
+        0.75,
+        0.6
+      ]
+    },
+    "rgb_sha256": "fef4f71acaa3453b25352403f358ffce04df0189f1612ec025d69519c93b2d0e",
+    "target_sha256": "e1fea7aeecca5a1278f8fac576ad6fdef79f3c76da35b7eeba52d91d8337a6af",
+    "sample_index_sha256": "3229f1e5014ae207640cf90540231c3e0ca810331ae05490cefdcda6a89f9bd4"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_003_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "6aec686c56c605ad6983bf0a435ece531501aa1389991d15ad29fa842557e24c",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "ef65719f5c6c677ae537bd246c43dac865da16d7c3ab9fc2b12ea46532da8a5a"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_003_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "e45687f6803211e5d9cb7bfbf407b47d5ac49c1ee35a8fe08f00ed9633dc8f88",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "4976e51d8b927834636132df42339ec03d2a26434e8431bf50510b28bb751bff"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_003_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "aad12effd76ab492bb9c5704129d472dc4ba5983798f63fab15f340d048b1d28",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "9080f424f36b824ff1049c51f86c0b0f7f1d86f9df27591aba53b9fbe17b5b54"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_003_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "4e67e0e31686062750c8a5e72bbcc7d83c6860fae9f0bdf6e825727c83f21c56",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "5b3e83feefd37ce7cf876ae0529aa931f7d17dc79d58494767b1a55dd7096b85"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_003_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "dc8f5f2c7eb8701727fc686824b7887cf5a04089de03833d72a195d267122f24",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "af586d5dabf4bc87225484f498bb130732fd68ef705b3cdfd422be940938b6c5"
+  },
+  {
+    "scene_id": "train_003",
+    "split": "train",
+    "group_id": "procedural_original_20261104",
+    "seed": 20261104,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "97aa160fc1f4d8b6b5dc1c3a9e10b34e49120fb79c1b57ad786326adcf820ef4",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_003_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.4,
+        0.9,
+        0.75,
+        0.6
+      ]
+    },
+    "rgb_sha256": "c4920c7bb0116e713a360e9ee02428ad83b4ab826f82c913cb8373b2d10f24b0",
+    "target_sha256": "e1fea7aeecca5a1278f8fac576ad6fdef79f3c76da35b7eeba52d91d8337a6af",
+    "sample_index_sha256": "38a01279f195b929b15fa110e817357609975310458fd3e48884a2019336d719"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_004_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "4debf0d046bc137375109353d0324614a7559efd0e2c99b40d92e75bb2e2f532",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "f01c505512959c4cd5a9cb6821bceb90e030c2de68be8f687bc6b0b6b2532004"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_004_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "e61c304baa082c02fc98f0579b72d83f28c2b08e9fb95b6076e7f6109febc28b",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "5dbfd72a66c3a301a3bed18ef631ced6b1c8f8407c8a66b6d72b07df98821a63"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_004_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "8b19187412f88b24c22f198b2f96d309046636911bcd1a92d952a3b526a7f6fa",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "5de4e405a6ebf4f426d1d7dd94ad1c5e9fefb7d3b4319b8ba576b99699cede94"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_004_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "79e902cd3193c83fc8feae2e518dfc15792d228a68a718c44a6a0651240a6fc5",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "517edf03a412c6390ffd57c659a8808b27bdfe548cf39a99b135feefe8d104dc"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_004_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "250a3f51d9bed4f4e781367adb43c3dc81299a294512f4fbf9c31166b5e0969d",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "f3e41faa905b731b7cf5044588a90d816135c524086a39dc0f366c1ec45353c3"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_004_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.4,
+        0.6,
+        0.75
+      ]
+    },
+    "rgb_sha256": "9cb55e1edbf4f282533fc36c7966225af1c069560cd6c60cf0b8eb12859ba54b",
+    "target_sha256": "e6a9691966e480bd47c21d0fd2fcf4f946140dae983900b0e92de0e21d207502",
+    "sample_index_sha256": "e6d37b3a653943982a9fde173032449829384b878b513ee9a459197139fef6be"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_004_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "0e8466f7d3261c828d05c46ce9a22c04f2d95717e299cf15f23ce39c27587564",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "2bc704abb77f5cf7f5f00328ed435aab2e6f145aaa39aa68da6328b852998bb5"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_004_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "b2eb4bbe6904b66ad93bd62d921f48fefbb1fa8bbd9113d8d649651119a7e7f5",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "58a8e2c78e5b533c413a9842071a9d19c7bd19e042dc7ad16f429b94b75076d8"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_004_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "3a96235c62b2e14494852abcbf3206ceeb2da92c86b1ec63b0b75c9ee12d4fd3",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "8223b55db04e84497fbdf357fc860cd3fac8eaac8751679632f510acb7c05739"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_004_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "8ec9d0875df0f24f34ad2325f7edbd0ffb2a0d525ae1e04ec62633e9a52f4ac2",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "4a97233ba78233306bb5657fa2a36c73f7eb0b30d4d4f27b80b95a00ce83731f"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_004_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "1ecdbd54aabd1552d0ac526ee34de233e5cef4327dbd1473801b7b013424a973",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "1d59aaee32f81e8cd844aadc94594bee9e1aa977a05ccc81cd65d268d00ed781"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_004_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.4,
+        0.6,
+        0.75
+      ]
+    },
+    "rgb_sha256": "1e61795d6e653a3f31454e6590d8e4c1c3c6f76cad868d91e90dce4a3b2ba2b3",
+    "target_sha256": "e6a9691966e480bd47c21d0fd2fcf4f946140dae983900b0e92de0e21d207502",
+    "sample_index_sha256": "ce8e2d6c984e8290e2b9ae6ef85661c41eb3a235b35ad9254090d4fcf1ef038e"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_004_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "4debf0d046bc137375109353d0324614a7559efd0e2c99b40d92e75bb2e2f532",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "a36f11ddbe91a95eed6be909e18852f6fff9fd9f43ad64c1b1e0fbfe99d96ab6"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_004_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "10a74c9a13942c16237cf5a990fd1090f32cf1adc5d90693dc2d1ac22058024a",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "aa1a4cfc33ce208d5930118382134fa299a02ac842ecc6e72c84364aa42f0b87"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_004_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "316b3a11eb2426ba07a4a9814b1aca5b335254ca28fa9c759f205155609ce0d7",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "84ab622309e2d1da3992d22e37828432ca58ae2a3b157bae0a64aab2ef3ab0f0"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_004_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "643fef1c4cbf82a87640f6f239d5f7d112f0ec249c2a796d51d7d88ca75303ba",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "7157b36575ed3445bb677436ab518fbcc64961ff77f1b208fdca8a1e5aa7877f"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_004_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "d142c9a98065d7f258730f66971e98db00fe08c9f584272fd3ba72cdd3ddd188",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "bded4c3fcfb81902fa02c9f1b647d75ab364366bc24757cf7dc119580ea093c0"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_004_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.4,
+        0.6,
+        0.75
+      ]
+    },
+    "rgb_sha256": "1e0f6e466cae2bef972a1d79d978bb367d8437a86e2cfbd9494064a5afe5fed8",
+    "target_sha256": "e6a9691966e480bd47c21d0fd2fcf4f946140dae983900b0e92de0e21d207502",
+    "sample_index_sha256": "43e6f0c61e77c56944fc9445178e4fc227463f16de3e81cef1f453dba458720c"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_004_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "0e8466f7d3261c828d05c46ce9a22c04f2d95717e299cf15f23ce39c27587564",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "e13def0c6332ec36137c7bfa25a2e269651caf202d53b2a410ddfa66cf4df7b5"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_004_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "5cf4d33037dea794a4b23f88f5226ae91b897b2299f0fc70fd77c6ed9c7ec4c9",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "7508b72b170b07e3e2e21e0fab73bba575e35433e60f568c4b321e51d5b5ff66"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_004_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "78453b7420dbbea0a96ba724abb4a4d3aa6f5bd17b1af922b67871d368194e1b",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "5399f3f8fbff9da1a973153cc22d5e01fde8a0f1033fec406a0ae368f62205bf"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_004_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "67973086e314180baf91a9fa05683576461af9bbdd4fbdbc8183a04ac5cd69c9",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "d9c013b12d2e71cf0e33c62ff3ca1ec0790b59a9cea8e34f8d60906bd8671b58"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_004_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "ccc41550a52f01728696f673676f400c784ea20d7ba93d76f3d838cd12ae0189",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "646a7ad2ee3276981944ff5e87fc87ed5d9d6dc14389d6ef266231832d596e2e"
+  },
+  {
+    "scene_id": "train_004",
+    "split": "train",
+    "group_id": "procedural_original_20261105",
+    "seed": 20261105,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "7be78f21466941d7a528d40d2a4f77995dc7730e20e96b702cb1695538acc2b8",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_004_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.9,
+        0.4,
+        0.6,
+        0.75
+      ]
+    },
+    "rgb_sha256": "7de9b0c78d893f278ffa436a38d71b6dc48b31ce106382de241cb125fb9d6f66",
+    "target_sha256": "e6a9691966e480bd47c21d0fd2fcf4f946140dae983900b0e92de0e21d207502",
+    "sample_index_sha256": "0e93f02fc81b93a528386e49673fdd7da509596e44336b603bc8525c78152125"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_005_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "3274037473fbc518033d80e1db31a73da6637b8459d2322b86542d99859913c4",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "b5e39b6bfd1515c28b9b7bd06ba9db15c6ddf541fc986883d24376f879700c8b"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_005_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "9e6c387a28133ecba724879b77223fabbb63de7f8915aabfcf76acaf482fa55e",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "47f5928b75c20ad2edcb3a7a912df550d0c17ceded473b721026d7ad603bd816"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_005_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "e3ea02bfcfd7d3399e033f02f35187d59f6baa1e73848a9655052b9d196cf476",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "5223ceab6abce98eb215801cfd07a7983c482378ea7ce9c8471b395e88cab9ef"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_005_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "d2c75acc8b121eb1a34b02e53db2684a42c11c7d778bc2a20a03f53d8e387d51",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "a80e43e3c50f0108ffc4f6b4f146e5604d935a3ba265825a1e1582eafc43d9aa"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_005_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "b1171d5f503deb40e60d536ebe43d6b3d899ee1596c13cf4df801b385e6024d8",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "ecc63ff481340115591c6300b0745f77f724a7b90f577ff34c8dc4cb2b4d4f5d"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_005_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "rgb_sha256": "470964b4780202b180ff280ab5f0b534295a485f2bc7d6e07e5b35aafb37a1c6",
+    "target_sha256": "2c563d99d2fea71bad6e1cff04c3443e768f29e4e9edc93984895e444ec39b35",
+    "sample_index_sha256": "aa6f73a95e064e0d3b969df8bbd5b5e587cabe8522534823178727db5bb3c790"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_005_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "d4367d9a486a8703141903ff98f4ec29cea37127f7ef16b450819d65036f23f8",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "d76e4ea99ba0db8757772ecc483dbfe0f0f962a57caffd306500ac46df4b389d"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_005_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "c8159f197f2a6efbed618e2aef16e0fb2764843e3c0d6f2892ea797e247de8bf",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "a793e0266db3fe2830ab18ec928825074910580bcf96a00e1019c8bb09c49f2c"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_005_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "17436eb7560b3f03a43a7b2e4eeb054e9d1be0e5ebdab9149485d7911c29c4de",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "209461fb27d783dbf8fc1e51b7db692bde92ebdff7819fd3ed8805919294e040"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_005_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "c7d391d5e690774fad9cf88b773b3b0f913d9cda6e7a855bad9292c14c13c9ae",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "f037f2a371c3b874a0bf80787e6c0e40d7b2b591cdb1cc2d8aaab42a66701b51"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_005_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "b23f33a269d2660cae99d4d401865cdb1e605a1f78ccc2690c4f54f5597eb9ea",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "a6bfa317bd644dfebd3e6ee809cfff72bb2cfc90e4827e7154a69926075c8369"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_005_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "rgb_sha256": "b2630717a5989714819e66176d600368cc62c811d32c5f4d266485c4971d3e93",
+    "target_sha256": "2c563d99d2fea71bad6e1cff04c3443e768f29e4e9edc93984895e444ec39b35",
+    "sample_index_sha256": "166e32ab0821f5bae45e448fe02ca3c869408b86f908a24412aea9148be58251"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_005_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "3274037473fbc518033d80e1db31a73da6637b8459d2322b86542d99859913c4",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "f8655fe8edfeba5d39e5842c7274fc22516607fde7491b990dfb812fe0de1c83"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_005_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "7a313fecde1c2adaaff5ab93585eac77ad18e8afabd83600f08fb8caf83a77f0",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "8d758e3b59a07560a654d67d84dc4183a6fc529a3a4bc2fe346e554d1c1a2338"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_005_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "a756d325d8d0aab7c8b76565178100116a731afbd832ef3c035ec80df1b1b44b",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "7db7a29ff6f606b1dd59acea83cc270d65632943a6fb778b707352ff7098607c"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_005_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "69a01a02acf8ef6d180655ae482f88f55e8f135331fad71a3fc13f545cc3ac23",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "dd961e829ca6c4f5e9dc701a5a912cc7a6444524f7c21053f71726f779460720"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_005_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "f36a3722d40f8ae4d78c36cd23175b6dcface1f10497614739268348e87ce944",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "7621d2bd30066dd02584aac68fc0e2715b35e548eb086c8a4e0e4d951c417802"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_005_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "rgb_sha256": "9c9ea490071a9ae620a02b1f017b81940deb3765196b48db20d7744a5406169a",
+    "target_sha256": "2c563d99d2fea71bad6e1cff04c3443e768f29e4e9edc93984895e444ec39b35",
+    "sample_index_sha256": "eea64c2df2ddaed1ee75870603b3afde4fc1c4fe08520bfe95320d21902cc4db"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_005_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "d4367d9a486a8703141903ff98f4ec29cea37127f7ef16b450819d65036f23f8",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "95f009269c11e72d2e9c599dfe390290cd0fb6011c8b1377780c42d688c2f189"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_005_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "d52258ad37e17392bcf3c54bef5605a24f0f5b3b4b2c3aea70b744e62ea668ac",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "7d6987c128fb34c505e741249933cd7d584198afa288a6ce71c1ce6f43a3966b"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_005_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "fa8c10fb38c73b03a0703fc710070c880805ac7f60877611254335b72f88594b",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "42c8347c81d2c0e714caf3e581cb0573d195c027345f62f643bcef3f9341defe"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_005_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "583c66bcf2356d97089e056d9541bfd832f84c27ff294e534f066b49d5804ab8",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "f8840280c4d70e3138a63bf6b090c0fc0c80313fd547758c6a960e9d0bdd4074"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_005_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "8440241f44aa4a5f51bacb7365b10fe8882f50807b3fc5d70e243d7e3b0a4a32",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "5ded7f91fd3bca05ff6cb129a6eea6488ff8ad4f2ae9c50779ab253df995126b"
+  },
+  {
+    "scene_id": "train_005",
+    "split": "train",
+    "group_id": "procedural_original_20261106",
+    "seed": 20261106,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "63dd0ce365bb10e33fc55604c272964a59b60b08a29ec165daca528200b92fae",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_005_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.6,
+        0.4,
+        0.9
+      ]
+    },
+    "rgb_sha256": "cd9b3012c7aed6864f7119827a1b1d048cd4d55423e083660a3e7f9cde4ee562",
+    "target_sha256": "2c563d99d2fea71bad6e1cff04c3443e768f29e4e9edc93984895e444ec39b35",
+    "sample_index_sha256": "fcd6c694341c4610a21bbe133b12a7fafde285de2b0c181c1fd0c475ed127386"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_006_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "206f1c465bd4e74dc79903ce2f1cf6a77ddd2a88518698e53eaf4b9211742747",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "a3e0c864e255d66ca1a9429cae7e1eba63017db06d136b46248a58038ba16fa6"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_006_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "3a093fb2fb4a31e4b886b86cc63ce3aac43c1bdc6446b5fa78911189c63af366",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "9e24e3bdac78a3650304a4dfd0ef00189a678b1feb537d8c922d28340c6eb639"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_006_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "5b8541fc8ad92063d682d1e10bcb40adf8f894e6383e6fe4fdc8de3a6935215e",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "7aa48c48df72f16b204bd92c99bedda1d61f13a2f77932d95e68168d409d3c69"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_006_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "26d0a9c12eb64507bbec4be2e4561c59b7b040ec95d81c35ea3726398005682e",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "3b5dbc3ea70f339e73cb19b1da0a07753f11b91b8333da2b3516397b5c647a50"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_006_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "2b5c18e302928dc4577835ff230d9037ae53d38296f91acc8b87b1bd84778171",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "2c18e14749d21db3f1c5f06a2485561b35bcdd6c14988a63fc6ace12486e2f77"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_006_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.9,
+        0.4
+      ]
+    },
+    "rgb_sha256": "1a8d10217d6d5a131a464046b1d9c5697f8852ba7e121995206e9ce35dd0a7ec",
+    "target_sha256": "b742f713d8d26b1108e5797a1cef214be8c643b2fd8ea1c9e4bc7a6c6609b530",
+    "sample_index_sha256": "d263704af98ce029148c7f54dcf88ba4d0e77aa4c8f9d2a0ac5ebeccbf2acbb1"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_006_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "a2ae83480725c269cc45843d9e4802465f6c40f8bb003ba9d2230eff5ccea07b",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "3cb2ba0eeed8214fb28e6fb6786fbb897d30f782b243ff307e219edfcd0853ed"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_006_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "477977e5a2dbde24de13e60c1533e8bf734d845ac059471d977786f02038673b",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "24810fe778d8ac7f97a635834b5c09f891ffeb76ff8cdc07e2f42cfef15a84d1"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_006_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "b1aaf0d86b20ec1329ffd51a6dcdcd49d215b3216ae3075a6dc8a5b78ba7da33",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "fbbdaf999bea8466bf51d14939bdedf1f9665a45b92431ed9f6c786df2917a6c"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_006_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "018d87d11a8aa823946fb5648bb987a61b8f5dbd1bd0001222a39c1672eeb741",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "6ee38a7506d63978cf6221eb5870ebd158cca4be86ce9a038e8d2c2d584bfa13"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_006_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "ac3d369a8b21e11be3c9c3cc3bd6a276b33d0e4b7246a440fb8546d78505cb3c",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "efae5f953da8928034a7f0137d7d3a64c2a1c78b4ba500952a7e35fc289ffb36"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_006_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.9,
+        0.4
+      ]
+    },
+    "rgb_sha256": "e6179f7691796c32cefd34c81022698e6d639afb92401ddfc4a4aef49ceba56f",
+    "target_sha256": "b742f713d8d26b1108e5797a1cef214be8c643b2fd8ea1c9e4bc7a6c6609b530",
+    "sample_index_sha256": "d94667d1fc9437ea90cd6a81f780fc087e5f2b6deb055a662b051756aed0fc82"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_006_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "206f1c465bd4e74dc79903ce2f1cf6a77ddd2a88518698e53eaf4b9211742747",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "fd6f8382ae1c6cd79a3ab4ac7579b3b19b87ef9e40c2de2deb3258aa4a35e488"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_006_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "611643be6f15fc2b97c6f66650d2f8e796b88710957185946e8c49d6cde1c866",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "cb0e624df08eabe77e21f9c764f32914b8068b271e033d6c14ee0d0affe51a8d"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_006_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "ff5e2e90436cdedf4c647c9e7fe5e45ed98d3cc0cc6d8374e0b685e4bef59172",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "b0e5a7e1744ee8fb324166ecd233f593cea83c0dfbf1004cdfa6f9baf5808cc4"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_006_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "d7036e398dbfcd822c55ca36b01f206c8fb10393eb5c7b9ea725ef1903dcc0a2",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "30312192e2959b37615061deeb11e36d72e15bff8a957ea6122d8b5cb7c255c8"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_006_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "d67730a81532cba4db0cd6cfd4bca5d0c8b925fba3eb2965d5428f55e737760d",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "ecc22c7fc47d69ac02f620e3bad970803f5537c4179edffcb3c47b4291ed2549"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_006_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.9,
+        0.4
+      ]
+    },
+    "rgb_sha256": "3d163f386653274048fc688952a8b7cd71ffcf76d6cd9a98c59345f43691f315",
+    "target_sha256": "b742f713d8d26b1108e5797a1cef214be8c643b2fd8ea1c9e4bc7a6c6609b530",
+    "sample_index_sha256": "3e044f2db818709ad36c1f0e90114b018eada05bc51b330be0e62b696d562752"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_006_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "a2ae83480725c269cc45843d9e4802465f6c40f8bb003ba9d2230eff5ccea07b",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "78629b2d5e827266c08aa86746e89e752a0d68bbe42fd090ed0ac47a7065f304"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_006_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "bbcd6292688598f2bd2f2917fd14971ca6fa1ca90ca7fa05af0f2005314daae3",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "5d905f506ff7957b0438cf148c28a3d226bff743dccf49a4fe4f66557cf590db"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_006_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "a5e742bad13efffb884077a36849eacb6247198402c389b47039a260698922a7",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "75a189d607372d67e94057a47f3dc24784d9b05c677750bf0d951b1030957b31"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_006_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "a1f6120abe5551344168d101de35a2b3e41fcf002cf6a43428c698aeb5ea2d36",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "8a119e5b6a718a0f3cd644efcb02335fcd48a414eb996360facfb95c65fedfd1"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_006_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "9fd9d6997cd3c91dd1947d01d897532abd3cb623b5c348ec07c7fee62e14c148",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "d7cb946ba2a795f7cf665e83cd55be9950f2b6fab631803e56dc1d747833d528"
+  },
+  {
+    "scene_id": "train_006",
+    "split": "train",
+    "group_id": "procedural_original_20261107",
+    "seed": 20261107,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "d2ec9df91ffc335d300117c7bc0b353186703bf48ee57f93212c54b45c40db62",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_006_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.6,
+        0.75,
+        0.9,
+        0.4
+      ]
+    },
+    "rgb_sha256": "808d258f49d362deba37f74f358d5810f391d844965a41430eb0b12e1a39a1e5",
+    "target_sha256": "b742f713d8d26b1108e5797a1cef214be8c643b2fd8ea1c9e4bc7a6c6609b530",
+    "sample_index_sha256": "41cc34ad3f32e2a30f71727003406f08dc2139326fe6faa7a5ed7ee399801a67"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_007_a0_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "19413e3416b8f483167b9d9ba4bc881583f377637d474e5ab2803f65ef308086",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "0c1ce889373ccb01e6126b5d3e9ef46949730452b300ca64682e8be80cdffa3c"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_007_a0_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "27fc9aaccb61fbd247fc56460b0966ac79df59cfb766917b51754fc02832f173",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "d456feda32285bdfca7d04a54bf95f2d7063777a6d24724baa8353ffff9b7f21"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_007_a0_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "297f3573f70283c578f74da896894875786eec3e1de8a0a7d69addcf0c87e975",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "cb6303b213fe1afc34550b596e7f38eb5f701bbc9e596012767f5d430df7d6f7"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_007_a0_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "583c22e33fc8d60e7989065ce4bb0890bb4077c4ac0bf517607a124c86f97924",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "fa6d318be932ae0c7ccf442c3f963f10b03855a5c30863efe7d0e80661d8dacf"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_007_a0_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "990459a9d6c5ac74f4e8578a945a44de7f2c93ef98ff1803ac1b63a4f5d8a67f",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "e713e51d9ec2dbea3e3e4d861507d5fca5845c7b93dca2ecd9dd053a77a8ba57"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_007_a0_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "aa450aed4ea1eacb817c3e206dbe3052810cfebdc8fe4c50a2c2ff9a12a49c1d",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "c4c3798e1768d05f176a0d23bb3b14c453549bc99fd6c70c49efe1433612bf09"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_007_a0_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "af12ea56a54bae03e3d92307ef095d33a049323b016e307ae47b6c637cc2715e",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "d5aa869469bed8dc97e2640bfbae1a49be72ccf25fd55e733c0a0031b7c7cbd3"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_007_a0_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "8deab72982dae0875fc65d9629fb91691dc141060a8093d6ad6d1992af8318c3",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "09516b92c3155a5d2ba772455fd2d5d7e07879230521b62422e769fddd9b2392"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_007_a0_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "a36a5048a6a43c4b475b6a6026bb87d537eb10c675c1effabe06d4bd193d5370",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "8eecb89e91bfef43c26594b0cc10a4ea71345b197ca0635a5d935e99ec0e9291"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_007_a0_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "2c840e17a10a27312da0cc14cb5d0c8ae9e464aa4d41245b82269bba2632f2f8",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "2de8e239008041a1029b04037b54c966d667cf2c757db2f180928a46869f0da0"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_007_a0_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "59a72a4c3788d3649aa11ea176d3ac1ad7e520a127350fa4e6d8bb5f62d740fb",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "a3b78728e195587734fe64892fe304387680aff4fa464abaf339e1b83a29555a"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 0,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_007_a0_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "6f87d1a5a3500d1e90fca06de44f9b61cb17b037a824b8021650bff6fe219407",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "81b926fc5584707d05b292ab0e32761bb664323923f04a4fcb981d05ce707c73"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_007_a1_b0_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "19413e3416b8f483167b9d9ba4bc881583f377637d474e5ab2803f65ef308086",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "577f148831b01eb8c763480f4a6029441cc1bb544462272af54d657b43620f0c"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_007_a1_b0_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "4dc76d290f4e67a0dd749ba54aea680c878cc2351da6303ef05d351798895635",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "8232bf22c5fb299d61601374bfe3a4f712c5b6f332c350319d0ffbf38528197b"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_007_a1_b0_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "f19d5e2cc6f3fb07819b021ff5473fc39e795ba221129147f851b495caf735f9",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "5feddecb26fd165144d7a25ba31945dff0dac83fa35f7b931dc6c1443b1f4c42"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_007_a1_b0_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "360d8c9b1b070eed992f3ca47f36cdd45e0b0f502e616556da80fa9d4941e9da",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "259042b9b7094e1d6d3464a29961110ab7e094fcf2cca9146c82fbc4f6054bd1"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_007_a1_b0_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "eaacc86e6e791083b5f7c4c588704191d10a9cc61570eb75780999379511ab69",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "36c8ced3c665d2de5e6b8a66e069850551a2f184e37862f1a0a889d392460308"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 0,
+    "brightness": 0.65,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_007_a1_b0_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "88e99955a3adf98174db31b6aba4a3ea5e33a89fb3279ea87ee2122785f0eff5",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "a3bbadd3fdce43ec49fd32571796ceec3391ccf1d5375469e441a54f20a105d6"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 1.0,
+    "case_id": "train_007_a1_b1_uniform_1.0",
+    "t_parameters": {
+      "t": 1.0
+    },
+    "rgb_sha256": "af12ea56a54bae03e3d92307ef095d33a049323b016e307ae47b6c637cc2715e",
+    "target_sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+    "sample_index_sha256": "c6094eeb270be9576df47c299011fddef34a84c417043ff3c63d77e5bb3c39ce"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.9,
+    "case_id": "train_007_a1_b1_uniform_0.9",
+    "t_parameters": {
+      "t": 0.9
+    },
+    "rgb_sha256": "eefec8c18fbb5deb318e79f8f5c6ff265d55531fffc40ede1c71cb2eaea1165f",
+    "target_sha256": "8b633bb87b623e9c962f8306c1f611b1c821542f681f1d6c894c054403a29a6f",
+    "sample_index_sha256": "55d1b17beeaf8aa480839a39f1f24e0df5a776cdbed6930481bcfc91179e9626"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.6,
+    "case_id": "train_007_a1_b1_uniform_0.6",
+    "t_parameters": {
+      "t": 0.6
+    },
+    "rgb_sha256": "b70c7d6f8a24eeed0a421d9374f9acbcd3e29aec9592fb2f51b1885d84b6648d",
+    "target_sha256": "19d06b3eec455732fdece89f2f2941f973b79103e4b7984a27dfee7e73032983",
+    "sample_index_sha256": "4151ac8cd75c2608cdcbca5b3eea008b33f5d433d24bfa6d596b96368b5791b4"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "uniform",
+    "uniform_t": 0.4,
+    "case_id": "train_007_a1_b1_uniform_0.4",
+    "t_parameters": {
+      "t": 0.4
+    },
+    "rgb_sha256": "65ffaa01354d10148a776ee9a7b5c4c49dce44edad27c6012281e070241132d3",
+    "target_sha256": "ead58e1bb0ab08da4fe2d18e3fafd2db40a5c57f6c11be9b3f73c3d5d421e398",
+    "sample_index_sha256": "2dd18ffa698f5d9b8dc43eaa67fd4de8243b5226ee5827ba00d104019aa3b948"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "gradient",
+    "uniform_t": null,
+    "case_id": "train_007_a1_b1_gradient_None",
+    "t_parameters": {
+      "axis": "left_to_right",
+      "t_min": 0.35,
+      "t_max": 0.95
+    },
+    "rgb_sha256": "190afc0c7587b6b7893a4907d0a393e1efbf9fbebfc595e8cf382fb262859a22",
+    "target_sha256": "22371422ea682856a0ec4afc73cb0691e3f8d3a6611cf3ea8e292abb49af2b95",
+    "sample_index_sha256": "41b1ce870f484533f027955995df9918622c74b3fa2619963361e9e0c7118c3b"
+  },
+  {
+    "scene_id": "train_007",
+    "split": "train",
+    "group_id": "procedural_original_20261108",
+    "seed": 20261108,
+    "source_kind": "procedural_controlled_original",
+    "original_sha256": "29c2289198799174797aae2b3f5573bcf89b249aef315c584e98ae7092125368",
+    "airlight_index": 1,
+    "brightness_index": 1,
+    "brightness": 1.0,
+    "pattern": "regions",
+    "uniform_t": null,
+    "case_id": "train_007_a1_b1_regions_None",
+    "t_parameters": {
+      "quadrant_t": [
+        0.75,
+        0.9,
+        0.6,
+        0.4
+      ]
+    },
+    "rgb_sha256": "794b691e6f7ab03076a32a6dd487f350456fbbfe135a0847fe4b72cffefc5f98",
+    "target_sha256": "2b571725b215f1c60ba941d81f3993fe85703472191a008588dadbcb03988802",
+    "sample_index_sha256": "464a5c34fda324bd3cd3a0325ed180a724bed940109ece976447667eba6523a9"
+  }
+]

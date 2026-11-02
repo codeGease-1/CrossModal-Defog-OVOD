@@ -1,0 +1,5 @@
+# Optional CPU feasibility dependencies; install inside the project venv.
+transformers==5.22.1
+safetensors==0.8.0
+numpy==2.4.6
+psutil==7.2.2

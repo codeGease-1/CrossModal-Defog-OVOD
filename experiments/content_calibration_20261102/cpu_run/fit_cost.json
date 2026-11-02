@@ -1,0 +1,5 @@
+{
+  "cpu_seconds": 0.16487800001050346,
+  "gpu_seconds": 0,
+  "objective": "Per-candidate sampled pixel H MSE; optional raw forward-response MSE. No fused-loss calibration."
+}

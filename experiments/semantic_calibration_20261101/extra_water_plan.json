@@ -1,0 +1,14 @@
+{
+  "scenes": [
+    "external_G_1293",
+    "external_G_1297"
+  ],
+  "purpose": "Supplement missing water coverage after inspecting old reference contact sheet; development proxy only; no effect on frozen 6-scene screen",
+  "G1293_water_like_rectangle_256": [
+    175,
+    0,
+    245,
+    18
+  ],
+  "annotation": "Visual rectangular proxy; not reliable semantic ground truth"
+}
