@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/scripts/optimization_20261103/postprocess.py", line 94, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/scripts/optimization_20261103/postprocess.py", line 13, in main
+    if (P/'status.json').exists() and read(P/'status.json')['stage']=='failed':raise RuntimeError(read(P/'status.json'))
+                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: {'stage': 'failed', 'error': 'AttributeError("\'str\' object has no attribute \'read_text\'")'}

@@ -1,0 +1,866 @@
+[
+  {
+    "method": "joint_dynamic",
+    "implementation": "eager",
+    "size": 256,
+    "round": 0,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.703224964439869,
+      "p95_ms": 7.042434625327587,
+      "repeats": 60,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 28978176,
+      "incremental_peak_bytes": 22734336
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 8.654050529003143,
+      "p95_ms": 9.081014711409807,
+      "repeats": 20,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 29764608,
+      "incremental_peak_bytes": 23520768
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "captured",
+    "size": 256,
+    "round": 0,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 3.078906796872616,
+      "p95_ms": 3.098197840154171,
+      "repeats": 60,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 7620096,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 5.019942298531532,
+      "p95_ms": 5.19235972315073,
+      "repeats": 20,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 8406528,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.6088135913014412
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "captured",
+    "size": 256,
+    "round": 1,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 3.0773263424634933,
+      "p95_ms": 3.091625217348337,
+      "repeats": 60,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 7620096,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 5.021807737648487,
+      "p95_ms": 5.157436430454254,
+      "repeats": 20,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 8406528,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.6088135913014412
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "eager",
+    "size": 256,
+    "round": 1,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 7.440703921020031,
+      "p95_ms": 7.70368417724967,
+      "repeats": 60,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 28978176,
+      "incremental_peak_bytes": 22734336
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 8.714905008673668,
+      "p95_ms": 8.821109682321548,
+      "repeats": 20,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 29764608,
+      "incremental_peak_bytes": 23520768
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "eager",
+    "size": 256,
+    "round": 2,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.933627650141716,
+      "p95_ms": 7.08965165540576,
+      "repeats": 60,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 28978176,
+      "incremental_peak_bytes": 22734336
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 8.592791855335236,
+      "p95_ms": 8.722955826669931,
+      "repeats": 20,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 29764608,
+      "incremental_peak_bytes": 23520768
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "captured",
+    "size": 256,
+    "round": 2,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 3.0798204243183136,
+      "p95_ms": 3.1122157350182533,
+      "repeats": 60,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 7620096,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 5.180841311812401,
+      "p95_ms": 5.217956844717264,
+      "repeats": 20,
+      "resident_allocated_bytes": 6243840,
+      "peak_allocated_bytes": 8406528,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.6088135913014412
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "eager",
+    "size": 512,
+    "round": 0,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 10.226843878626823,
+      "p95_ms": 10.29745228588581,
+      "repeats": 60,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 119155712,
+      "incremental_peak_bytes": 91940352
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 17.594617791473866,
+      "p95_ms": 17.65422886237502,
+      "repeats": 20,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 120990720,
+      "incremental_peak_bytes": 93775360
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "captured",
+    "size": 512,
+    "round": 0,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.836679324507713,
+      "p95_ms": 9.851788822561502,
+      "repeats": 60,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 32720384,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.715393401682377,
+      "p95_ms": 16.92666718736291,
+      "repeats": 20,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 35866112,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.14748361892998219
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "captured",
+    "size": 512,
+    "round": 1,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.834627620875835,
+      "p95_ms": 9.856747090816498,
+      "repeats": 60,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 32720384,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 17.379184253513813,
+      "p95_ms": 19.4769454188645,
+      "repeats": 20,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 35866112,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.14748361892998219
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "eager",
+    "size": 512,
+    "round": 1,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 10.210481472313404,
+      "p95_ms": 10.26615984737873,
+      "repeats": 60,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 119155712,
+      "incremental_peak_bytes": 91940352
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 17.66254473477602,
+      "p95_ms": 17.88022080436349,
+      "repeats": 20,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 120990720,
+      "incremental_peak_bytes": 93775360
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "eager",
+    "size": 512,
+    "round": 2,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 10.227068327367306,
+      "p95_ms": 10.263805277645588,
+      "repeats": 60,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 119155712,
+      "incremental_peak_bytes": 91940352
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 17.56912376731634,
+      "p95_ms": 17.66907488927245,
+      "repeats": 20,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 120990720,
+      "incremental_peak_bytes": 93775360
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "joint_dynamic",
+    "implementation": "captured",
+    "size": 512,
+    "round": 2,
+    "all_network_parameters": 221161,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.838426485657692,
+      "p95_ms": 9.856572188436985,
+      "repeats": 60,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 32720384,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 19.65408306568861,
+      "p95_ms": 20.492977369576693,
+      "repeats": 20,
+      "resident_allocated_bytes": 27215360,
+      "peak_allocated_bytes": 35866112,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.14748361892998219
+  },
+  {
+    "method": "rgb16",
+    "implementation": "eager",
+    "size": 256,
+    "round": 0,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 5.046105943620205,
+      "p95_ms": 5.5321180261671525,
+      "repeats": 60,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 28964352,
+      "incremental_peak_bytes": 16204800
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 6.929521448910236,
+      "p95_ms": 7.793548982590437,
+      "repeats": 20,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 29750784,
+      "incremental_peak_bytes": 16991232
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "rgb16",
+    "implementation": "captured",
+    "size": 256,
+    "round": 0,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.9772117957472801,
+      "p95_ms": 1.9999167881906033,
+      "repeats": 60,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 14135808,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.9726989343762398,
+      "p95_ms": 4.065573774278164,
+      "repeats": 20,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 14922240,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.1384050901979208
+  },
+  {
+    "method": "rgb16",
+    "implementation": "captured",
+    "size": 256,
+    "round": 1,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.9865799695253372,
+      "p95_ms": 2.020444069057703,
+      "repeats": 60,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 14135808,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.9381608366966248,
+      "p95_ms": 4.043417703360319,
+      "repeats": 20,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 14922240,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.1384050901979208
+  },
+  {
+    "method": "rgb16",
+    "implementation": "eager",
+    "size": 256,
+    "round": 1,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 5.13518787920475,
+      "p95_ms": 5.2328696474432945,
+      "repeats": 60,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 28964352,
+      "incremental_peak_bytes": 16204800
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 7.102512754499912,
+      "p95_ms": 7.8635270707309255,
+      "repeats": 20,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 29750784,
+      "incremental_peak_bytes": 16991232
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "rgb16",
+    "implementation": "eager",
+    "size": 256,
+    "round": 2,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 5.141924135386944,
+      "p95_ms": 5.246950313448906,
+      "repeats": 60,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 28964352,
+      "incremental_peak_bytes": 16204800
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 6.981033831834793,
+      "p95_ms": 7.288151606917381,
+      "repeats": 20,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 29750784,
+      "incremental_peak_bytes": 16991232
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "rgb16",
+    "implementation": "captured",
+    "size": 256,
+    "round": 2,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.9794097170233727,
+      "p95_ms": 1.9941034726798534,
+      "repeats": 60,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 14135808,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.023566842079163,
+      "p95_ms": 4.073342494666576,
+      "repeats": 20,
+      "resident_allocated_bytes": 12759552,
+      "peak_allocated_bytes": 14922240,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.1384050901979208
+  },
+  {
+    "method": "rgb16",
+    "implementation": "eager",
+    "size": 512,
+    "round": 0,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.638490594923496,
+      "p95_ms": 7.0870171301066875,
+      "repeats": 60,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 89781760,
+      "incremental_peak_bytes": 63390720
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.707826845347881,
+      "p95_ms": 13.857082463800907,
+      "repeats": 20,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 92927488,
+      "incremental_peak_bytes": 66536448
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "rgb16",
+    "implementation": "captured",
+    "size": 512,
+    "round": 0,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.2386654317379,
+      "p95_ms": 6.260618846863508,
+      "repeats": 60,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 31896064,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.420005328953266,
+      "p95_ms": 13.588229473680258,
+      "repeats": 20,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 35041792,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.09186002425849438
+  },
+  {
+    "method": "rgb16",
+    "implementation": "captured",
+    "size": 512,
+    "round": 1,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.234629079699516,
+      "p95_ms": 6.250247359275818,
+      "repeats": 60,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 31896064,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.488887809216976,
+      "p95_ms": 13.89384213835001,
+      "repeats": 20,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 35041792,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.09186002425849438
+  },
+  {
+    "method": "rgb16",
+    "implementation": "eager",
+    "size": 512,
+    "round": 1,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.407896056771278,
+      "p95_ms": 6.4338685013353825,
+      "repeats": 60,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 89781760,
+      "incremental_peak_bytes": 63390720
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.662947341799736,
+      "p95_ms": 13.879860937595367,
+      "repeats": 20,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 92927488,
+      "incremental_peak_bytes": 66536448
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "rgb16",
+    "implementation": "eager",
+    "size": 512,
+    "round": 2,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.402830593287945,
+      "p95_ms": 6.427489686757326,
+      "repeats": 60,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 89781760,
+      "incremental_peak_bytes": 63390720
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.554124161601067,
+      "p95_ms": 13.765850476920605,
+      "repeats": 20,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 92927488,
+      "incremental_peak_bytes": 66536448
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "rgb16",
+    "implementation": "captured",
+    "size": 512,
+    "round": 2,
+    "all_network_parameters": 217985,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.232305429875851,
+      "p95_ms": 6.243341322988272,
+      "repeats": 60,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 31896064,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.401939533650875,
+      "p95_ms": 13.651584926992655,
+      "repeats": 20,
+      "resident_allocated_bytes": 26391040,
+      "peak_allocated_bytes": 35041792,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.09186002425849438
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "eager",
+    "size": 256,
+    "round": 0,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.538710556924343,
+      "p95_ms": 6.741092074662447,
+      "repeats": 60,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 33140224,
+      "incremental_peak_bytes": 21148672
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 8.560456335544586,
+      "p95_ms": 8.798878081142902,
+      "repeats": 20,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 33926656,
+      "incremental_peak_bytes": 21935104
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "captured",
+    "size": 256,
+    "round": 0,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.9068253934383392,
+      "p95_ms": 2.923279069364071,
+      "repeats": 60,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 13367808,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.858349449932575,
+      "p95_ms": 4.9970608204603195,
+      "repeats": 20,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 14154240,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.09544449485838413
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "captured",
+    "size": 256,
+    "round": 1,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.906510606408119,
+      "p95_ms": 2.922617830336094,
+      "repeats": 60,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 13367808,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.9369316548109055,
+      "p95_ms": 4.984851740300655,
+      "repeats": 20,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 14154240,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.09544449485838413
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "eager",
+    "size": 256,
+    "round": 1,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.884098052978516,
+      "p95_ms": 7.015397399663925,
+      "repeats": 60,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 33140224,
+      "incremental_peak_bytes": 21148672
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 8.813164196908474,
+      "p95_ms": 8.908891677856445,
+      "repeats": 20,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 33926656,
+      "incremental_peak_bytes": 21935104
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "eager",
+    "size": 256,
+    "round": 2,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.863407790660858,
+      "p95_ms": 7.048300746828318,
+      "repeats": 60,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 33140224,
+      "incremental_peak_bytes": 21148672
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 8.60900990664959,
+      "p95_ms": 8.795042801648378,
+      "repeats": 20,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 33926656,
+      "incremental_peak_bytes": 21935104
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "captured",
+    "size": 256,
+    "round": 2,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.9041701927781105,
+      "p95_ms": 2.922962326556444,
+      "repeats": 60,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 13367808,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.935339093208313,
+      "p95_ms": 5.173930432647467,
+      "repeats": 20,
+      "resident_allocated_bytes": 11991552,
+      "peak_allocated_bytes": 14154240,
+      "incremental_peak_bytes": 2162688
+    },
+    "capture_build_seconds": 0.09544449485838413
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "eager",
+    "size": 512,
+    "round": 0,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.729256853461266,
+      "p95_ms": 9.792590886354446,
+      "repeats": 60,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 106023424,
+      "incremental_peak_bytes": 79613952
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 17.01356191188097,
+      "p95_ms": 17.281420156359673,
+      "repeats": 20,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 109169152,
+      "incremental_peak_bytes": 82759680
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "captured",
+    "size": 512,
+    "round": 0,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.342275559902191,
+      "p95_ms": 9.359182137995958,
+      "repeats": 60,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 31914496,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.39106683433056,
+      "p95_ms": 16.516867838799953,
+      "repeats": 20,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 35060224,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.10244008153676987
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "captured",
+    "size": 512,
+    "round": 1,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.347054176032543,
+      "p95_ms": 9.365971572697163,
+      "repeats": 60,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 31914496,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.223237849771976,
+      "p95_ms": 16.3880062289536,
+      "repeats": 20,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 35060224,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.10244008153676987
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "eager",
+    "size": 512,
+    "round": 1,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.719710797071457,
+      "p95_ms": 9.765935968607664,
+      "repeats": 60,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 106023424,
+      "incremental_peak_bytes": 79613952
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 17.053580842912197,
+      "p95_ms": 17.20119146630168,
+      "repeats": 20,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 109169152,
+      "incremental_peak_bytes": 82759680
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "eager",
+    "size": 512,
+    "round": 2,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.707297198474407,
+      "p95_ms": 9.756387397646904,
+      "repeats": 60,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 106023424,
+      "incremental_peak_bytes": 79613952
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 17.172708176076412,
+      "p95_ms": 18.082071281969547,
+      "repeats": 20,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 109169152,
+      "incremental_peak_bytes": 82759680
+    },
+    "capture_build_seconds": 0.0
+  },
+  {
+    "method": "direct_same16",
+    "implementation": "captured",
+    "size": 512,
+    "round": 2,
+    "all_network_parameters": 219137,
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.34310257434845,
+      "p95_ms": 9.363207779824734,
+      "repeats": 60,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 31914496,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.33650343865156,
+      "p95_ms": 16.43598349764943,
+      "repeats": 20,
+      "resident_allocated_bytes": 26409472,
+      "peak_allocated_bytes": 35060224,
+      "incremental_peak_bytes": 8650752
+    },
+    "capture_build_seconds": 0.10244008153676987
+  }
+]

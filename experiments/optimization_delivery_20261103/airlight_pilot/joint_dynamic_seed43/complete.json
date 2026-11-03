@@ -1,0 +1,7 @@
+{
+  "steps": 1152,
+  "epochs": 6,
+  "parameters": 221161,
+  "initial_weight_path": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/portable_weights/joint_dynamic_seed43.pth",
+  "initial_weight_sha256": "d6f5dbb1f2a6efbe1d29ab38db451ba6f628f299e762c738c47430be8533bcd6"
+}

@@ -1,0 +1,6 @@
+{
+  "train_pairs": 1536,
+  "dev_pairs_each": 512,
+  "groups_disjoint": true,
+  "train_features_sha256": "8d15d714342c96f11fb72677a33b493fc52323f299b411dfb74654edfb10a819"
+}

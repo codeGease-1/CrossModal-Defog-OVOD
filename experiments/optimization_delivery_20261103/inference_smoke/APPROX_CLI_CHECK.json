@@ -1,0 +1,8 @@
+{
+  "max_abs_difference": 1.6849662642925978e-07,
+  "input_shape": [
+    65,
+    65
+  ],
+  "default_captured_unchanged": true
+}

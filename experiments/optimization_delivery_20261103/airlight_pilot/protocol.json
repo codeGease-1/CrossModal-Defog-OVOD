@@ -1,0 +1,56 @@
+{
+  "config": {
+    "modes": [
+      "joint_dynamic",
+      "rgb16",
+      "direct_same16"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 6,
+    "batch_size": 8,
+    "learning_rate": 0.0003,
+    "global_loss_weight": 0.5,
+    "clear_loss_extra_weight": 0.25,
+    "auxiliary_weight": 0.25,
+    "candidate_loss_weights": [
+      1,
+      0.25,
+      0.25
+    ],
+    "train_A": "2 per train original: independent channel Uniform(.55,1), seeded by scene+20261103",
+    "calibration": "frozen old train-only mapping to isolate A coverage",
+    "domain": "linear_srgb synthesis returning display RGB, unchanged",
+    "supervised_extra_updates_per_model": 1152,
+    "noninferiority": {
+      "relative_MAE": 0.05,
+      "rho_drop": 0.01,
+      "clear_increase": 0.005
+    },
+    "nominal_guard": "Report degradation separately; select by predefined equal old nominal+unseen_A task loss",
+    "budget_minutes": [
+      13,
+      20
+    ],
+    "real_source_audit": false,
+    "new_confirmation": false
+  },
+  "base_HEAD": "ed4cc48c05e1f767e006d9f155af2f65b0f4aed3",
+  "sources": {
+    "scripts/optimization_20261103/airlight_pilot.py": "c800b35fedc1a3bb116b95f4e74926afdc62385a105bcee1f3e921c22ae15294",
+    "configs/airlight_pilot_20261103.json": "788a765132634888a26d532f2f4ba16cd31cdcaec0ef3bff91b77db46c1eb114"
+  },
+  "frozen_calibration_path": "/mnt/CrossModal-Defog-OVOD/experiments/v2_20261101/calibration.json",
+  "frozen_calibration_sha256": "7662d4876f788f9dd5a271c6b855d724c81f06be45eece699daff3d9da3dc606",
+  "environment": {
+    "torch": "2.4.1+cu124",
+    "CUDA": "12.4",
+    "GPU": "Tesla V100-SXM2-16GB"
+  },
+  "fairness": "Each mode/seed starts its registered previous 36-opportunity best checkpoint, then same 1536 augmented pairs and 6 epochs. Optimization losses differ as previously disclosed; pilot only.",
+  "selection": "Equal nominal+unseen_A OLD development task loss. Exposed dev, not confirmation.",
+  "scope": "Isolate A coverage: old calibration remains fixed, no mixture of synthesis domains, no new architecture"
+}

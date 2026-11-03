@@ -1,0 +1,7 @@
+{
+  "steps": 1152,
+  "epochs": 6,
+  "parameters": 217985,
+  "initial_weight_path": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb16_seed42/best.pth",
+  "initial_weight_sha256": "a8cd70dfa73224901c7f9d12c78a7397200dd9c0e767d54eefede5396e9279e5"
+}

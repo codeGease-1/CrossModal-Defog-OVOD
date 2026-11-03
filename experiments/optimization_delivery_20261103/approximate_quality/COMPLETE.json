@@ -1,0 +1,7 @@
+{
+  "all_gates_pass": true,
+  "max_output_difference": 0.00048828125,
+  "numerically_identical": false,
+  "seconds": 84.3334706518799,
+  "scope": "seed42 exposed development only; not confirmation or arbitrary-scene guarantee"
+}

@@ -1,0 +1,26 @@
+{
+  "config": {
+    "methods": [
+      "joint_dynamic",
+      "rgb16",
+      "direct_same16"
+    ],
+    "seed": 42,
+    "relative_MAE_margin": 0.001,
+    "rho_margin": 0.001,
+    "clear_margin": 0.0001,
+    "conditions": [
+      "nominal",
+      "unseen_A",
+      "display_rgb"
+    ],
+    "scope": "Approximate numerical execution only; prior strict equivalence failure remains. Predefined quality gate before computing MAE; exposed dev only.",
+    "new_training": false
+  },
+  "source_sha256": {
+    "scripts/optimization_20261103/approximate_quality.py": "de5059347943a697762d5e5c4ede1d1d0ced1ca6cfcc478f31bc2114a6206662",
+    "src/models/haze_density/approximate_inference.py": "2cccdf087f2a0e4a520d45b92af707066bcd020ed106521c950fff1db6e54647"
+  },
+  "numerical_equivalence": false,
+  "prior_strict_check": "failed and preserved in separable_check; this study uses separate predefined quality margins, NOT relaxed exactness tolerances"
+}

@@ -1,0 +1,155 @@
+{
+  "joint_dynamic_nominal": {
+    "exact": {
+      "pixel_mae": 0.007280676090942961,
+      "region_spearman": 0.9788695099008095,
+      "clear_response": 0.0016420099423157808
+    },
+    "approximate": {
+      "pixel_mae": 0.007280679132236401,
+      "region_spearman": 0.9788695099008095,
+      "clear_response": 0.0016420089268649463
+    },
+    "relative_MAE_CI95": [
+      9.782075779396494e-08,
+      8.54601106564657e-07
+    ],
+    "passes_quality_gate": true
+  },
+  "joint_dynamic_unseen_A": {
+    "exact": {
+      "pixel_mae": 0.07604361423733508,
+      "region_spearman": 0.9776133824498291,
+      "clear_response": 0.0016420099423157808
+    },
+    "approximate": {
+      "pixel_mae": 0.07604361719540975,
+      "region_spearman": 0.9776133824498291,
+      "clear_response": 0.0016420089268649463
+    },
+    "relative_MAE_CI95": [
+      -9.125053551661821e-09,
+      8.588636929429684e-08
+    ],
+    "passes_quality_gate": true
+  },
+  "joint_dynamic_display_rgb": {
+    "exact": {
+      "pixel_mae": 0.1403382658627379,
+      "region_spearman": 0.9712255148027703,
+      "clear_response": 0.0015442847070517018
+    },
+    "approximate": {
+      "pixel_mae": 0.140338265489504,
+      "region_spearman": 0.9712255148027703,
+      "clear_response": 0.001544283758448728
+    },
+    "relative_MAE_CI95": [
+      -3.698945862384839e-08,
+      2.8094806420186915e-08
+    ],
+    "passes_quality_gate": true
+  },
+  "rgb16_nominal": {
+    "exact": {
+      "pixel_mae": 0.009345613439109002,
+      "region_spearman": 0.9788082353910056,
+      "clear_response": 0.0023978126009751577
+    },
+    "approximate": {
+      "pixel_mae": 0.009345613439109002,
+      "region_spearman": 0.9788082353910056,
+      "clear_response": 0.0023978126009751577
+    },
+    "relative_MAE_CI95": [
+      0.0,
+      0.0
+    ],
+    "passes_quality_gate": true
+  },
+  "rgb16_unseen_A": {
+    "exact": {
+      "pixel_mae": 0.07205644738724004,
+      "region_spearman": 0.977689975587084,
+      "clear_response": 0.0023978126009751577
+    },
+    "approximate": {
+      "pixel_mae": 0.07205644738724004,
+      "region_spearman": 0.977689975587084,
+      "clear_response": 0.0023978126009751577
+    },
+    "relative_MAE_CI95": [
+      0.0,
+      0.0
+    ],
+    "passes_quality_gate": true
+  },
+  "rgb16_display_rgb": {
+    "exact": {
+      "pixel_mae": 0.1392123081777754,
+      "region_spearman": 0.9715472059792408,
+      "clear_response": 0.002261012989038136
+    },
+    "approximate": {
+      "pixel_mae": 0.1392123081777754,
+      "region_spearman": 0.9715472059792408,
+      "clear_response": 0.002261012989038136
+    },
+    "relative_MAE_CI95": [
+      0.0,
+      0.0
+    ],
+    "passes_quality_gate": true
+  },
+  "direct_same16_nominal": {
+    "exact": {
+      "pixel_mae": 0.00797335013328393,
+      "region_spearman": 0.9787316422537506,
+      "clear_response": 0.003441236578510143
+    },
+    "approximate": {
+      "pixel_mae": 0.007973350774477694,
+      "region_spearman": 0.9787316422537506,
+      "clear_response": 0.003441236578510143
+    },
+    "relative_MAE_CI95": [
+      -1.9828499987495362e-07,
+      4.3955008827145663e-07
+    ],
+    "passes_quality_gate": true
+  },
+  "direct_same16_unseen_A": {
+    "exact": {
+      "pixel_mae": 0.06645574319190928,
+      "region_spearman": 0.9778278432341428,
+      "clear_response": 0.003441236578510143
+    },
+    "approximate": {
+      "pixel_mae": 0.06645574534195475,
+      "region_spearman": 0.9778278432341428,
+      "clear_response": 0.003441236578510143
+    },
+    "relative_MAE_CI95": [
+      1.182585918080305e-10,
+      6.115537954376472e-08
+    ],
+    "passes_quality_gate": true
+  },
+  "direct_same16_display_rgb": {
+    "exact": {
+      "pixel_mae": 0.1379864186847044,
+      "region_spearman": 0.9712867893125742,
+      "clear_response": 0.003372959930857178
+    },
+    "approximate": {
+      "pixel_mae": 0.13798642053552612,
+      "region_spearman": 0.9712867893125742,
+      "clear_response": 0.0033729599526850507
+    },
+    "relative_MAE_CI95": [
+      -1.6316838222230067e-08,
+      4.279574141174969e-08
+    ],
+    "passes_quality_gate": true
+  }
+}

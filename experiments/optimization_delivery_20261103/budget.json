@@ -1,0 +1,9 @@
+{
+  "scope": "Stage wall and file timestamp estimates, not GPU-active billing seconds",
+  "latency_study_seconds": 54.64576233923435,
+  "strict_separable_check_seconds": 12.54222621023655,
+  "approximate_quality_seconds": 84.3334706518799,
+  "training_epoch_seconds": 610.8150290101767,
+  "cache_and_hash_wall_estimate_seconds": 48.50354051589966,
+  "pilot_including_evaluation_and_manual_export_recovery_wall_estimate_seconds": 841.2065625190735
+}

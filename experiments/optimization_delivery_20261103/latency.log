@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/scripts/optimization_20261103/latency.py", line 96, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/scripts/optimization_20261103/latency.py", line 50, in main
+    runner=CapturedInference(pipe,x);cold=time.monotonic()-s
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/src/models/haze_density/captured_inference.py", line 53, in __init__
+    for _ in range(4):self.pipeline(self.static)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/src/models/haze_density/joint_correction.py", line 38, in forward
+    f,_=self.extractor(rgb.float());f=torch.cat([f,observed_context(rgb.float())],1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/src/models/haze_density/captured_inference.py", line 18, in forward
+    contrast=(gray-_mean_filter(gray,cfg['window_size'])).abs()
+                   ^^^^^^^^^^^^
+NameError: name '_mean_filter' is not defined

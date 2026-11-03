@@ -1,0 +1,18 @@
+{
+  "methods": [
+    "joint_dynamic",
+    "rgb16",
+    "direct_same16"
+  ],
+  "sizes": [
+    256,
+    512
+  ],
+  "seed": 42,
+  "repeats": 60,
+  "rounds": 3,
+  "feature_tolerance": 1e-06,
+  "network_tolerance": 1e-05,
+  "new_confirmation": false,
+  "latency_budget_seconds": 600
+}

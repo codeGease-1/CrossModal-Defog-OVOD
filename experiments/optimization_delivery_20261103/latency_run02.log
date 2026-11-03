@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/src/models/haze_density/captured_inference.py", line 59, in __init__
+    self.output=self.pipeline(self.static)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/src/models/haze_density/joint_correction.py", line 38, in forward
+    f,_=self.extractor(rgb.float());f=torch.cat([f,observed_context(rgb.float())],1)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/src/models/haze_density/learned_correction.py", line 11, in observed_context
+    gray = (rgb*rgb.new_tensor([.299, .587, .114])[None, :, None, None]).sum(1, keepdim=True)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: operation not permitted when stream is capturing
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/scripts/optimization_20261103/latency.py", line 96, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/scripts/optimization_20261103/latency.py", line 50, in main
+    runner=CapturedInference(pipe,x);cold=time.monotonic()-s
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/CrossModal-Defog-OVOD-optimize-20261103/src/models/haze_density/captured_inference.py", line 58, in __init__
+    with torch.no_grad(),torch.cuda.graph(self.graph):
+  File "/usr/local/lib/python3.12/site-packages/torch/cuda/graphs.py", line 185, in __exit__
+    self.cuda_graph.capture_end()
+  File "/usr/local/lib/python3.12/site-packages/torch/cuda/graphs.py", line 83, in capture_end
+    super().capture_end()
+RuntimeError: CUDA error: operation failed due to a previous error during capture
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

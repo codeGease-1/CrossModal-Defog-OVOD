@@ -1,0 +1,481 @@
+{
+  "base_HEAD": "ed4cc48c05e1f767e006d9f155af2f65b0f4aed3",
+  "scope": "Audited inference execution and finite A coverage pilot; no new confirmation",
+  "files": {
+    "configs/.gitattributes": {
+      "sha256": "306f852b0f2aa6f92e42ae8476c0c4e79ad0cb90033e383d0ba709f12a7879bc",
+      "bytes": 129
+    },
+    "configs/airlight_pilot_20261103.json": {
+      "sha256": "788a765132634888a26d532f2f4ba16cd31cdcaec0ef3bff91b77db46c1eb114",
+      "bytes": 931
+    },
+    "configs/approximate_quality_20261103.json": {
+      "sha256": "5e733b35843d43607b9cb08b6607cecf17bf06b17482e1d9ed3c13c5bdf6d9d2",
+      "bytes": 426
+    },
+    "configs/optimization_20261103.json": {
+      "sha256": "9cd61697f1e11693f8bc9ec54859a7982d3437dee4d5fb695ddb1155f5168b6c",
+      "bytes": 279
+    },
+    "docs/.gitattributes": {
+      "sha256": "09fc06c795a573aa469fdeac673d37f10222dc6c3b7a86aca7274ce3e4caf1ba",
+      "bytes": 105
+    },
+    "docs/optimization_approximation_20261103.md": {
+      "sha256": "96e977fcb3510e0438ead10a95305307f16d2eb2031fdb01afded0fa592bd26f",
+      "bytes": 3484
+    },
+    "docs/optimization_results_20261103.md": {
+      "sha256": "904b44b11607654857664d8ba9fd69e82521f68824e081d4f6db7fd9403c7499",
+      "bytes": 4818
+    },
+    "docs/research/.gitattributes": {
+      "sha256": "acbc707e680f03276f7b9b9a14734afc5dd627c4ebf103257ddcd902ef331752",
+      "bytes": 58
+    },
+    "docs/research/昨日成果简报_20261102.md": {
+      "sha256": "f9450a9e8a23e6166f4795746d469ddf5f937a2887493d367794006c8b023a2d",
+      "bytes": 3139
+    },
+    "experiments/optimization_delivery_20261103/POSTPROCESS_COMPLETE.json": {
+      "sha256": "a16b45fc3f6f7b87563d48cfc507539360d63da8195a33d7f1858387b0fd62f9",
+      "bytes": 292,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/POSTPROCESS_COMPLETE.json"
+    },
+    "experiments/optimization_delivery_20261103/README.md": {
+      "sha256": "295e04c21b5f24267e89ff6c94ecdd2cd10a5228c10199fa6b62ab63e586e8e6",
+      "bytes": 1997
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot.log": {
+      "sha256": "fa8278e5bed6de93c4f7ce392af43d8a0ab308315355e827ac2bae7be8c8db39",
+      "bytes": 19173,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot.log"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/COMPLETE.json": {
+      "sha256": "3ad56d09792e89c9321ea6f53e2836fa51d96efa71768fc2b212f892cde87243",
+      "bytes": 140,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/COMPLETE.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/EXPORT_REPAIR.json": {
+      "sha256": "d0856a824fbaa371b336e31db35a18bfb786000d58a52667981b29663504f8b8",
+      "bytes": 272,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/EXPORT_REPAIR.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/data_check.json": {
+      "sha256": "c9ad92d3f68ecb0c132748b3af2a587cf9727b7b4fc34efd81bd925948652b43",
+      "bytes": 172,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/data_check.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/direct_same16_seed42/complete.json": {
+      "sha256": "bad15ee3c7da4cb5eeca2f09b196753068db678e47760495c57f604c601a7079",
+      "bytes": 296,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/direct_same16_seed42/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/direct_same16_seed42/history.json": {
+      "sha256": "7791206cbef38ae7127505112e96c54775b0df31669c7ae30ff7b59e58261610",
+      "bytes": 1283,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/direct_same16_seed42/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/direct_same16_seed43/complete.json": {
+      "sha256": "94a268eb38d8f130a0169f7aa2f40030ed6d2c80d6615c932cffda6064bcc8c1",
+      "bytes": 296,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/direct_same16_seed43/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/direct_same16_seed43/history.json": {
+      "sha256": "863cfd77ac553ffc37c0981fa762b59eaa55d5e406e65424cf24fe60e56ec045",
+      "bytes": 1284,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/direct_same16_seed43/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/direct_same16_seed44/complete.json": {
+      "sha256": "fb51b6923ee893d8d4b17c9a460be59e4011e4708e246904f6e085bf8e04f3a9",
+      "bytes": 296,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/direct_same16_seed44/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/direct_same16_seed44/history.json": {
+      "sha256": "267b2cc77683d3317f509944107eefe03455c826e968e7fbedff83af2179731f",
+      "bytes": 1282,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/direct_same16_seed44/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/display_rgb_manifest.json": {
+      "sha256": "8249f9f22c7a6846bfee62693b02db50aeb3478d68e8dc26386c0fb059df7bdd",
+      "bytes": 405102,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/display_rgb_manifest.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/display_rgb/candidate_diagnostics.json": {
+      "sha256": "180197aa1810cf6240b6e11d32bd60aced22520ff37062defe07c8bd2a8d4eaa",
+      "bytes": 1636573,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/display_rgb/candidate_diagnostics.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/display_rgb/candidate_summary.json": {
+      "sha256": "feccbcfbc0e35bae373a3f45d8577fba4003d6479c9b21cfc211df56554d323e",
+      "bytes": 884,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/display_rgb/candidate_summary.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/display_rgb/per_case.csv": {
+      "sha256": "ffa467122fef5a740fada2a9c6c9939bc37b1c84cd4f7bca9e1bba0684fd7259",
+      "bytes": 1748387,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/display_rgb/per_case.csv"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/display_rgb/summary.json": {
+      "sha256": "20e3ee5d4f5cae333aa671c237d51dcdcd37c3cc725573f64d0b107dec113564",
+      "bytes": 2386,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/display_rgb/summary.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/nominal/candidate_diagnostics.json": {
+      "sha256": "7077a34c4e756bd02a8715b9f417908551a18b272b9c15b245ca4d391d890058",
+      "bytes": 1675978,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/nominal/candidate_diagnostics.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/nominal/candidate_summary.json": {
+      "sha256": "483de9445c4164c1170684667a48efd46be516d46448a117ffc5a13a1ad671ae",
+      "bytes": 896,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/nominal/candidate_summary.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/nominal/per_case.csv": {
+      "sha256": "c53d388aaa85fa49b88704dd527916747abd56ead6794946db62e0f6c9fe94e2",
+      "bytes": 1777094,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/nominal/per_case.csv"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/nominal/summary.json": {
+      "sha256": "496bde348f86061c587737a3f087b5e46881acb3d78a5506f9013e4babfa5768",
+      "bytes": 2429,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/nominal/summary.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/unseen_A/candidate_diagnostics.json": {
+      "sha256": "cb4b3f4dd90fdf4c62c19cb1d31a0d2a202a8a82e0ade87d1349f3abf76f13bc",
+      "bytes": 1672794,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/unseen_A/candidate_diagnostics.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/unseen_A/candidate_summary.json": {
+      "sha256": "b9414ed7c5876fec3515d7613e27121c7f5dd2dacda991d01821b45c960223f2",
+      "bytes": 893,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/unseen_A/candidate_summary.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/unseen_A/per_case.csv": {
+      "sha256": "b044a1bd36c98fe2c222e6d6334a42635b0d0fe311ca2ea325fb7a120103e194",
+      "bytes": 1766444,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/unseen_A/per_case.csv"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/evaluation/unseen_A/summary.json": {
+      "sha256": "445d071f3b210268ac4ce1902aa6b1ab190085e9cfa0bd4f6a9d0b03020f0223",
+      "bytes": 2411,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/evaluation/unseen_A/summary.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/joint_dynamic_seed42/complete.json": {
+      "sha256": "f3ebfb89b4c1c34823bdcd860e692a60520aeeee6c54689da60fdef42ebc4c25",
+      "bytes": 314,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/joint_dynamic_seed42/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/joint_dynamic_seed42/history.json": {
+      "sha256": "7ccbb0e951be249262a6045c4a3fee8bc27b14602e33429ad94c2c578a64cfa9",
+      "bytes": 1277,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/joint_dynamic_seed42/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/joint_dynamic_seed43/complete.json": {
+      "sha256": "addd3871735207b0954dcfb81258d92668eaf87e84b3b3aa741bb40f14cdc11a",
+      "bytes": 314,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/joint_dynamic_seed43/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/joint_dynamic_seed43/history.json": {
+      "sha256": "4bb087c05dc1d001fdc8aeb534cf69350b5b118987a7d91416fb723c1b9e7cc2",
+      "bytes": 1271,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/joint_dynamic_seed43/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/joint_dynamic_seed44/complete.json": {
+      "sha256": "6fa0f633dd11ecb7602da23247d803d0f569e8b941cf6d5aa510ef550e63c8e1",
+      "bytes": 314,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/joint_dynamic_seed44/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/joint_dynamic_seed44/history.json": {
+      "sha256": "b852d20b69ab4cf922317d290cf58400a4264980424c52fd28d9224649b6f431",
+      "bytes": 1276,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/joint_dynamic_seed44/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/nominal_manifest.json": {
+      "sha256": "c188d09be92bc180ef14c724fe7c70dabba3e8d980a43e3f11aa016625b78869",
+      "bytes": 405102,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/nominal_manifest.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/portable_manifest.json": {
+      "sha256": "e54ef8a55e49493c3f9671989f2ece268b4d4bdec9a5afad92508c3d478cd5b3",
+      "bytes": 506,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/portable_manifest.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/protocol.json": {
+      "sha256": "d37f6626f1e4dcb111b7a86b17fce44930667a65d66f9d705a43bc94213f4753",
+      "bytes": 2062,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/protocol.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/rgb16_seed42/complete.json": {
+      "sha256": "28f36935bae145b5a0a949fd2b8b8d79c24609f4b6134d045f6f907d1b03ac3b",
+      "bytes": 288,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/rgb16_seed42/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/rgb16_seed42/history.json": {
+      "sha256": "294bbef57c81e649ccc96c6459ee0b44d17a0023872ae5ecd22c09887843ad0f",
+      "bytes": 1278,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/rgb16_seed42/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/rgb16_seed43/complete.json": {
+      "sha256": "eb0718ae6b3f8238eef0964aed1368c19eab747df417d99d9038905948f3c1ac",
+      "bytes": 288,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/rgb16_seed43/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/rgb16_seed43/history.json": {
+      "sha256": "9de11121ab45da29046308588234d6fbd912decdde1595edc3e726a0bb5cb832",
+      "bytes": 1278,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/rgb16_seed43/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/rgb16_seed44/complete.json": {
+      "sha256": "1710d49596a3a694f2026aa7ce4b339ca694cc2ac7d94414671b99a3f332a3dd",
+      "bytes": 288,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/rgb16_seed44/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/rgb16_seed44/history.json": {
+      "sha256": "97952da67507810827e84c755cc0cee9ee1cb72e4b7cce4eb7d4d654e79e2248",
+      "bytes": 1277,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/rgb16_seed44/history.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/status.json": {
+      "sha256": "3e3df7cd173474760eece2c8e6dcb29214f196a46d24f07dba40296ab7524fe1",
+      "bytes": 46,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/status.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/summary.json": {
+      "sha256": "dc9a4019e91386f0fc1eb9145a67d109889341f2e83417a66586bef1733ac2de",
+      "bytes": 7752,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/summary.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/train_manifest.json": {
+      "sha256": "451d0208cfecd87340a5fab1171b5f87b0f6dc10a680ac720721ee2eed77eb11",
+      "bytes": 1255306,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/train_manifest.json"
+    },
+    "experiments/optimization_delivery_20261103/airlight_pilot/unseen_A_manifest.json": {
+      "sha256": "48b7c8949a8a29f55ef177c977cd8faf79cb761db12fc98c54c94e5852caf04e",
+      "bytes": 405870,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/airlight_pilot/unseen_A_manifest.json"
+    },
+    "experiments/optimization_delivery_20261103/approximate_quality.log": {
+      "sha256": "decb8f24d1bf8f2d53199dbf073507dc8a32373324e5e15206df3fc45dcb4eb9",
+      "bytes": 714,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/approximate_quality.log"
+    },
+    "experiments/optimization_delivery_20261103/approximate_quality/COMPLETE.json": {
+      "sha256": "b8a3fd78fa9d33a7e277108467bbd3ff6e6f0dbb5d6c1bb16c9b1a4e9c64d545",
+      "bytes": 228,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/approximate_quality/COMPLETE.json"
+    },
+    "experiments/optimization_delivery_20261103/approximate_quality/costs.json": {
+      "sha256": "a1627be69e8525c10758cf087a53cd928d23ce5b2cdfe732f8452369e8c0353f",
+      "bytes": 21303,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/approximate_quality/costs.json"
+    },
+    "experiments/optimization_delivery_20261103/approximate_quality/per_case.csv": {
+      "sha256": "aceadd1457b4171beb6fb3ac2574fdcdba0e45cd5024a561ada86957f1f0d878",
+      "bytes": 1038124,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/approximate_quality/per_case.csv"
+    },
+    "experiments/optimization_delivery_20261103/approximate_quality/protocol.json": {
+      "sha256": "c72c458e592280e06a62c722ca08dd3a64f4acbe2ce6fead5937d5526910b11b",
+      "bytes": 941,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/approximate_quality/protocol.json"
+    },
+    "experiments/optimization_delivery_20261103/approximate_quality/summary.json": {
+      "sha256": "9fe53638d193af0318b2fb88f5684f9748585c21a2287e39f43164ca301ab7ea",
+      "bytes": 4102,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/approximate_quality/summary.json"
+    },
+    "experiments/optimization_delivery_20261103/approximate_quality_recovered.log": {
+      "sha256": "6fff01142ea6cd586d550b63abae434dee4885980bf67cbbdba827d579d88e10",
+      "bytes": 48,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/approximate_quality_recovered.log"
+    },
+    "experiments/optimization_delivery_20261103/audit.json": {
+      "sha256": "7ad16cd2295c1f45d93727e3afa8dd3d696dfdf2202f2789136c460a70bdf64e",
+      "bytes": 13874,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/audit.json"
+    },
+    "experiments/optimization_delivery_20261103/budget.json": {
+      "sha256": "4ac19e0f39da6c946bda6f732805d3d04944f371fc6d7413791bdd49cae8fe33",
+      "bytes": 448,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/budget.json"
+    },
+    "experiments/optimization_delivery_20261103/inference_smoke/APPROX_CLI_CHECK.json": {
+      "sha256": "f02013214e6209e3f06ebb9a4801c86cb683cb29981e36344593e3b19d284d81",
+      "bytes": 127,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/inference_smoke/APPROX_CLI_CHECK.json"
+    },
+    "experiments/optimization_delivery_20261103/inference_smoke/captured.json": {
+      "sha256": "3a1fc7adf052a0b1483c2c2be3cf9afd9f850b7384fdc9685efa1ba94412ad64",
+      "bytes": 366,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/inference_smoke/captured.json"
+    },
+    "experiments/optimization_delivery_20261103/inference_smoke/eager.json": {
+      "sha256": "071caf22085e3327fe48b32d935af40b672678a35dbee074d9f83f09f8f2a598",
+      "bytes": 363,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/inference_smoke/eager.json"
+    },
+    "experiments/optimization_delivery_20261103/inference_smoke/old_approximate.json": {
+      "sha256": "2d986ee4be65700d88bec4a65d6a362506c1bc1946a4588528bf769b8ca84539",
+      "bytes": 368,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/inference_smoke/old_approximate.json"
+    },
+    "experiments/optimization_delivery_20261103/inference_smoke/old_captured.json": {
+      "sha256": "df8b265bcea5ee9cf71225a5665440550357c48a41e965a32f980735ae101321",
+      "bytes": 366,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/inference_smoke/old_captured.json"
+    },
+    "experiments/optimization_delivery_20261103/latency.log": {
+      "sha256": "0bbf7c3b0bd55ebe33e990fa1a8eaf49366b7de83ec160f5d19026c71985e868",
+      "bytes": 1920,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency.log"
+    },
+    "experiments/optimization_delivery_20261103/latency/protocol.json": {
+      "sha256": "ea847dc834e8e6d86e4d8750ef3110de0f8c163b4cbf02d96d906e2bcb65f81b",
+      "bytes": 1023,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency/protocol.json"
+    },
+    "experiments/optimization_delivery_20261103/latency/status.json": {
+      "sha256": "93aca99b4d7aac58242960cc19c74dcb22c2374935d83d612b2c461747513e3e",
+      "bytes": 60,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency/status.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_launch.json": {
+      "sha256": "b2a07746795e545ed3f93e289745daff5e910011d4cfd07b870236c1324774a2",
+      "bytes": 178,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_launch.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run02.log": {
+      "sha256": "c89ce8c489be99058618a9039a4f1dd7432065d866cb01eecc764d78af329f76",
+      "bytes": 2756,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run02.log"
+    },
+    "experiments/optimization_delivery_20261103/latency_run02/protocol.json": {
+      "sha256": "09597c6d3771914294222b964905a41c91d7ca1c0014eaf835f5a492143271bd",
+      "bytes": 1023,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run02/protocol.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run02/status.json": {
+      "sha256": "93aca99b4d7aac58242960cc19c74dcb22c2374935d83d612b2c461747513e3e",
+      "bytes": 60,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run02/status.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run03.log": {
+      "sha256": "5a2d5fad7e30810292fb326672c2d591383bb7ff71fa5e2dbd3535c89d81708a",
+      "bytes": 20175,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run03.log"
+    },
+    "experiments/optimization_delivery_20261103/latency_run03/complete.json": {
+      "sha256": "015e6985050556f1252b147ecada40e1ecfa31ce2ba68a860ca8a4835e01091d",
+      "bytes": 92,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run03/complete.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run03/costs.json": {
+      "sha256": "344b11dec033e904a703d13cd9eb972dc98ff8dbe7695a4f83494a00b73b9304",
+      "bytes": 24390,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run03/costs.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run03/equivalence.json": {
+      "sha256": "2319901c591ca1d95b4061c8008b94b97908c12623924719bb0e9ca8029dbdec",
+      "bytes": 3520,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run03/equivalence.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run03/protocol.json": {
+      "sha256": "ec0ed1a4e3bc305c72bef5b17d5619a3d4ddf88b1e216fd606e6a031a0d8a58e",
+      "bytes": 1023,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run03/protocol.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run03/segments.json": {
+      "sha256": "c9a7f6f35f42a4ccea4c23f80eecfa35e3755eadb7df8375c803b5a55064d221",
+      "bytes": 1464,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run03/segments.json"
+    },
+    "experiments/optimization_delivery_20261103/latency_run03/status.json": {
+      "sha256": "5a8d559d6562c8c96ef4f20ec58e195e69200dd47495dd68384b5a3121526420",
+      "bytes": 21,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/latency_run03/status.json"
+    },
+    "experiments/optimization_delivery_20261103/postprocess.log": {
+      "sha256": "0e256dce4f4ceb5b47d6264e2e317dae7b2a5926b7dac193f684afaf64dacd9e",
+      "bytes": 695,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/postprocess.log"
+    },
+    "experiments/optimization_delivery_20261103/postprocess_recovered.log": {
+      "sha256": "5c243cf58d618e4018babbf5e8bfaba0fef70e2dd2cdb2e6e5056affa7d134d9",
+      "bytes": 674,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/postprocess_recovered.log"
+    },
+    "experiments/optimization_delivery_20261103/separable_check.log": {
+      "sha256": "246b6b2b35e7899fe0155a85c36e52b4cd6a72fd3754dc5883f49dc1d47325b3",
+      "bytes": 2122,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/separable_check.log"
+    },
+    "experiments/optimization_delivery_20261103/separable_check/result.json": {
+      "sha256": "fe3f82009a457f5cb3124096a88b5085005aaa6cec34054b04017282493efdc4",
+      "bytes": 2837,
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-optimize-20261103/experiments/optimization_20261103/separable_check/result.json"
+    },
+    "scripts/optimization_20261103/.gitattributes": {
+      "sha256": "b58d2a1e89da081f6fb37dda6182bf2436a58951d46eb9c01e66a0cff301cd25",
+      "bytes": 32
+    },
+    "scripts/optimization_20261103/airlight_pilot.py": {
+      "sha256": "c800b35fedc1a3bb116b95f4e74926afdc62385a105bcee1f3e921c22ae15294",
+      "bytes": 12575
+    },
+    "scripts/optimization_20261103/approximate_quality.py": {
+      "sha256": "de5059347943a697762d5e5c4ede1d1d0ced1ca6cfcc478f31bc2114a6206662",
+      "bytes": 5743
+    },
+    "scripts/optimization_20261103/finish_export.py": {
+      "sha256": "d22e00548f36c782f2bf65f3484afb5a45729f439f9a353666cdece48cdf87a5",
+      "bytes": 2055
+    },
+    "scripts/optimization_20261103/latency.py": {
+      "sha256": "f6fd7083480703fd48f41c73fe83f6a2de0eb5dc06e6ef86323c79e4404dd016",
+      "bytes": 7763
+    },
+    "scripts/optimization_20261103/postprocess.py": {
+      "sha256": "7bf9e2f6c11cb7e6100a35160d97354d8bc4a4f88cc648b9566a34a65fb610cc",
+      "bytes": 10275
+    },
+    "scripts/optimization_20261103/predict.py": {
+      "sha256": "c24003d90608e2b882d5b79a28429a2ba6b5df2125126e160d1acd6b03d8fc4c",
+      "bytes": 2557
+    },
+    "scripts/optimization_20261103/run.py": {
+      "sha256": "09ef79750e29642e0e00d91e81f4301112ad88652e02bc53608221ae1907a28e",
+      "bytes": 1568
+    },
+    "scripts/optimization_20261103/separable_check.py": {
+      "sha256": "e5feb8b38f306da60b809dd09f424ece85afa615cc3a3ab224fa90383fca0424",
+      "bytes": 3247
+    },
+    "scripts/optimization_20261103/status.py": {
+      "sha256": "52aed204596b2869dc6642b3a376a62afcc3db479610702a8b3b6e06bc540a61",
+      "bytes": 1004
+    },
+    "scripts/optimization_20261103/verify_delivery.py": {
+      "sha256": "4f1715896e3743b0fa2083a62108730e8359ced4b0441f6080fa606ec9fe1a7f",
+      "bytes": 1892
+    },
+    "src/models/haze_density/approximate_inference.py": {
+      "sha256": "2cccdf087f2a0e4a520d45b92af707066bcd020ed106521c950fff1db6e54647",
+      "bytes": 4404
+    },
+    "src/models/haze_density/captured_inference.py": {
+      "sha256": "01c4703dd005c895c3c0c0b4632e97d4507797449063c9a9b56e7ff5dab94429",
+      "bytes": 5061
+    }
+  },
+  "excluded": [
+    "weights/latest/best",
+    "arrays/images",
+    "source snapshots",
+    "SSH helpers",
+    "machine launch files"
+  ],
+  "self_hash_excluded": true
+}

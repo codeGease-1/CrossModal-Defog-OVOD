@@ -1,0 +1,7 @@
+{
+  "report": "docs/optimization_results_20261103.md",
+  "report_sha256": "904b44b11607654857664d8ba9fd69e82521f68824e081d4f6db7fd9403c7499",
+  "audit_sha256": "7ad16cd2295c1f45d93727e3afa8dd3d696dfdf2202f2789136c460a70bdf64e",
+  "all_csv_recomputations": 18,
+  "actual_CLI_difference": 0.0
+}

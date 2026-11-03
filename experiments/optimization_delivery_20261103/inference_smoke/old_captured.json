@@ -1,0 +1,10 @@
+{
+  "weights_sha256": "448db2891c2029a52409f1d5c99e40bd0a26cfb6c2de8093f3c686e65e713f2d",
+  "execution": "captured",
+  "seconds_including_build_and_first_inference": 0.7018392756581306,
+  "color_scale": [
+    0,
+    1
+  ],
+  "input_contract": "Display RGB as produced by linear-domain haze synthesis, NOT arbitrary sensor calibration; no automatic domain recovery"
+}

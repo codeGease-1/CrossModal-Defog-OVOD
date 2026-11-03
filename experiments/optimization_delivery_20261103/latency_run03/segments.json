@@ -1,0 +1,50 @@
+{
+  "warning": "Stage times include Python dispatch/synchronization and are not additive causal decomposition",
+  "rows": [
+    {
+      "stage": "input_validation",
+      "p50_ms": 0.1683337613940239,
+      "p95_ms": 0.19347397610545158,
+      "repeats": 40,
+      "resident_allocated_bytes": 12797440,
+      "peak_allocated_bytes": 14173696,
+      "incremental_peak_bytes": 1376256
+    },
+    {
+      "stage": "FP32_prior_calibration",
+      "p50_ms": 1.2924671173095703,
+      "p95_ms": 1.339966058731079,
+      "repeats": 40,
+      "resident_allocated_bytes": 12797440,
+      "peak_allocated_bytes": 32196096,
+      "incremental_peak_bytes": 19398656
+    },
+    {
+      "stage": "content_features",
+      "p50_ms": 0.23107416927814484,
+      "p95_ms": 0.2617953345179558,
+      "repeats": 40,
+      "resident_allocated_bytes": 12797440,
+      "peak_allocated_bytes": 14108160,
+      "incremental_peak_bytes": 1310720
+    },
+    {
+      "stage": "RGB_trunk",
+      "p50_ms": 3.9602434262633324,
+      "p95_ms": 4.047104250639677,
+      "repeats": 40,
+      "resident_allocated_bytes": 13230592,
+      "peak_allocated_bytes": 29015040,
+      "incremental_peak_bytes": 15784448
+    },
+    {
+      "stage": "full_network_after_features",
+      "p50_ms": 4.752493463456631,
+      "p95_ms": 4.841390158981085,
+      "repeats": 40,
+      "resident_allocated_bytes": 13243392,
+      "peak_allocated_bytes": 31862784,
+      "incremental_peak_bytes": 18619392
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "reason": "Original training helper read() expected Path but export passed calibration path string; no training/evaluation failure",
+  "repair_script_sha256": "d22e00548f36c782f2bf65f3484afb5a45729f439f9a353666cdece48cdf87a5",
+  "old_training_source_unchanged": true
+}

@@ -1,0 +1,30 @@
+{
+  "base_HEAD": "ed4cc48c05e1f767e006d9f155af2f65b0f4aed3",
+  "config": {
+    "methods": [
+      "joint_dynamic",
+      "rgb16",
+      "direct_same16"
+    ],
+    "sizes": [
+      256,
+      512
+    ],
+    "seed": 42,
+    "repeats": 60,
+    "rounds": 3,
+    "feature_tolerance": 1e-06,
+    "network_tolerance": 1e-05,
+    "new_confirmation": false,
+    "latency_budget_seconds": 600
+  },
+  "source_sha256": {
+    "src/models/haze_density/captured_inference.py": "de879dcce3ece4bd2b3fd3dc6b319ee9ff90e0e6679e550992abb6349e9fdb11",
+    "scripts/optimization_20261103/latency.py": "1effd822808e3d0892aa8f777e332a136fb9fb8c320ef9384771a41bf6835be1",
+    "configs/optimization_20261103.json": "9cd61697f1e11693f8bc9ec54859a7982d3437dee4d5fb695ddb1155f5168b6c"
+  },
+  "torch": "2.4.1+cu124",
+  "GPU": "Tesla V100-SXM2-16GB",
+  "CUDA": "12.4",
+  "scope": "seed42 frozen weights; no training; every model gets identical capture and public range validation; serialized process retains eager/reference and captured implementations"
+}

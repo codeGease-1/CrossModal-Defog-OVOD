@@ -1,0 +1,17 @@
+[
+  {
+    "path": "portable_weights/joint_dynamic_seed42.pth",
+    "sha256": "8444b05d95ea45b71ed9123a214c9555a714eedadbee625f9b070094b4934610",
+    "bytes": 905916
+  },
+  {
+    "path": "portable_weights/joint_dynamic_seed43.pth",
+    "sha256": "429099a4bdc34d1e4937e4fb6988d6b9c17276d1774b898ab0516436ee6d3688",
+    "bytes": 905916
+  },
+  {
+    "path": "portable_weights/joint_dynamic_seed44.pth",
+    "sha256": "5c39c41ff454ff7349936f263ac9d786c42a7699ef6e6b1d4ab69dc73772bf52",
+    "bytes": 905916
+  }
+]

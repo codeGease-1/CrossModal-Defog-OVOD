@@ -1,0 +1,794 @@
+[
+  {
+    "method": "joint_dynamic",
+    "size": 256,
+    "round": 0,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 3.2569821923971176,
+      "p95_ms": 3.507082723081112,
+      "repeats": 60,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 6940672,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 5.182419903576374,
+      "p95_ms": 5.395069159567356,
+      "repeats": 20,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 7727104,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 256,
+    "round": 0,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.788015641272068,
+      "p95_ms": 2.850737143307923,
+      "repeats": 60,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 6940672,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.779145121574402,
+      "p95_ms": 5.179697368294001,
+      "repeats": 20,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 7727104,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 256,
+    "round": 1,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.779697999358177,
+      "p95_ms": 2.798065636307001,
+      "repeats": 60,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 6940672,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.69486229121685,
+      "p95_ms": 4.773744195699692,
+      "repeats": 20,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 7727104,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 256,
+    "round": 1,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 3.078266978263855,
+      "p95_ms": 3.092837054282427,
+      "repeats": 60,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 6940672,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.989047534763813,
+      "p95_ms": 5.085574463009834,
+      "repeats": 20,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 7727104,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 256,
+    "round": 2,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 3.0749738216400146,
+      "p95_ms": 3.0957145616412163,
+      "repeats": 60,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 6940672,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 5.004316568374634,
+      "p95_ms": 5.079029127955437,
+      "repeats": 20,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 7727104,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 256,
+    "round": 2,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.772110514342785,
+      "p95_ms": 2.7858001179993153,
+      "repeats": 60,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 6940672,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.693049006164074,
+      "p95_ms": 4.7697462141513824,
+      "repeats": 20,
+      "resident_allocated_bytes": 5564416,
+      "peak_allocated_bytes": 7727104,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 512,
+    "round": 0,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.821255691349506,
+      "p95_ms": 9.874840825796127,
+      "repeats": 60,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 20506624,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.949525102972984,
+      "p95_ms": 17.22607985138893,
+      "repeats": 20,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 23652352,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 512,
+    "round": 0,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 8.659041486680508,
+      "p95_ms": 8.696979284286499,
+      "repeats": 60,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 20506624,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 15.523524954915047,
+      "p95_ms": 15.658921748399734,
+      "repeats": 20,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 23652352,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 512,
+    "round": 1,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 8.653235621750355,
+      "p95_ms": 8.669581916183233,
+      "repeats": 60,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 20506624,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 15.480024740099907,
+      "p95_ms": 15.686657931655645,
+      "repeats": 20,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 23652352,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 512,
+    "round": 1,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.807843714952469,
+      "p95_ms": 9.825137536972761,
+      "repeats": 60,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 20506624,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.699617728590965,
+      "p95_ms": 17.020496260374784,
+      "repeats": 20,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 23652352,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 512,
+    "round": 2,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.806860238313675,
+      "p95_ms": 9.829600155353546,
+      "repeats": 60,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 20506624,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.786610707640648,
+      "p95_ms": 16.956186946481466,
+      "repeats": 20,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 23652352,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "joint_dynamic",
+    "size": 512,
+    "round": 2,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 8.655563928186893,
+      "p95_ms": 8.670482132583857,
+      "repeats": 60,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 20506624,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 15.593130141496658,
+      "p95_ms": 15.832408983260393,
+      "repeats": 20,
+      "resident_allocated_bytes": 15001600,
+      "peak_allocated_bytes": 23652352,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 256,
+    "round": 0,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.970839686691761,
+      "p95_ms": 1.9877939485013485,
+      "repeats": 60,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 7670272,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.9564669132232666,
+      "p95_ms": 4.094079788774253,
+      "repeats": 20,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 8456704,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 256,
+    "round": 0,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.9629132002592087,
+      "p95_ms": 1.9817542284727097,
+      "repeats": 60,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 7670272,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.975716419517994,
+      "p95_ms": 4.105840530246496,
+      "repeats": 20,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 8456704,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 256,
+    "round": 1,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.9645532593131065,
+      "p95_ms": 1.9873464480042458,
+      "repeats": 60,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 7670272,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.9442703127861023,
+      "p95_ms": 4.015674255788326,
+      "repeats": 20,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 8456704,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 256,
+    "round": 1,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.965395174920559,
+      "p95_ms": 1.9876673817634583,
+      "repeats": 60,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 7670272,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.9346786215901375,
+      "p95_ms": 3.991810232400894,
+      "repeats": 20,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 8456704,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 256,
+    "round": 2,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.9642459228634834,
+      "p95_ms": 1.9850313663482666,
+      "repeats": 60,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 7670272,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.995128907263279,
+      "p95_ms": 4.044629912823439,
+      "repeats": 20,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 8456704,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 256,
+    "round": 2,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 1.9662464037537575,
+      "p95_ms": 1.9865133799612522,
+      "repeats": 60,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 7670272,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 3.944708965718746,
+      "p95_ms": 3.9909769780933857,
+      "repeats": 20,
+      "resident_allocated_bytes": 6294016,
+      "peak_allocated_bytes": 8456704,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 512,
+    "round": 0,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.247254088521004,
+      "p95_ms": 6.266559101641178,
+      "repeats": 60,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 20449792,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.249837793409824,
+      "p95_ms": 13.531575631350279,
+      "repeats": 20,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 23595520,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 512,
+    "round": 0,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.244243122637272,
+      "p95_ms": 6.258116569370031,
+      "repeats": 60,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 20449792,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.230770826339722,
+      "p95_ms": 13.476896565407515,
+      "repeats": 20,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 23595520,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 512,
+    "round": 1,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.248202174901962,
+      "p95_ms": 6.272996868938208,
+      "repeats": 60,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 20449792,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.352857902646065,
+      "p95_ms": 13.524897675961256,
+      "repeats": 20,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 23595520,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 512,
+    "round": 1,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.241930648684502,
+      "p95_ms": 6.264051701873541,
+      "repeats": 60,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 20449792,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.34239449352026,
+      "p95_ms": 13.537392020225525,
+      "repeats": 20,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 23595520,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 512,
+    "round": 2,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.2515344470739365,
+      "p95_ms": 6.474054325371981,
+      "repeats": 60,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 20449792,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.412706553936005,
+      "p95_ms": 13.53222606703639,
+      "repeats": 20,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 23595520,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "rgb16",
+    "size": 512,
+    "round": 2,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 6.24734815210104,
+      "p95_ms": 6.263204663991928,
+      "repeats": 60,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 20449792,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 13.48764542490244,
+      "p95_ms": 13.556553609669209,
+      "repeats": 20,
+      "resident_allocated_bytes": 14944768,
+      "peak_allocated_bytes": 23595520,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 256,
+    "round": 0,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.9013287276029587,
+      "p95_ms": 2.917054668068886,
+      "repeats": 60,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 7697920,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.941682331264019,
+      "p95_ms": 4.973577335476875,
+      "repeats": 20,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 8484352,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 256,
+    "round": 0,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.5986460968852043,
+      "p95_ms": 2.6187420822679996,
+      "repeats": 60,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 7697920,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.6202316880226135,
+      "p95_ms": 4.664045479148626,
+      "repeats": 20,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 8484352,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 256,
+    "round": 1,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.5952663272619247,
+      "p95_ms": 2.609149180352688,
+      "repeats": 60,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 7697920,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.5147547498345375,
+      "p95_ms": 4.619543254375458,
+      "repeats": 20,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 8484352,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 256,
+    "round": 1,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.895616926252842,
+      "p95_ms": 2.918942179530859,
+      "repeats": 60,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 7697920,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.87755611538887,
+      "p95_ms": 4.962650127708912,
+      "repeats": 20,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 8484352,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 256,
+    "round": 2,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.8957054018974304,
+      "p95_ms": 2.912391908466816,
+      "repeats": 60,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 7697920,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.902292974293232,
+      "p95_ms": 4.95712049305439,
+      "repeats": 20,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 8484352,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 256,
+    "round": 2,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 2.6025641709566116,
+      "p95_ms": 2.621378004550934,
+      "repeats": 60,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 7697920,
+      "incremental_peak_bytes": 1376256
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 4.60384227335453,
+      "p95_ms": 4.670874308794737,
+      "repeats": 20,
+      "resident_allocated_bytes": 6321664,
+      "peak_allocated_bytes": 8484352,
+      "incremental_peak_bytes": 2162688
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 512,
+    "round": 0,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.290993213653564,
+      "p95_ms": 9.321012161672115,
+      "repeats": 60,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 20477440,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.0042317584157,
+      "p95_ms": 16.31194930523634,
+      "repeats": 20,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 23623168,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 512,
+    "round": 0,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 8.154526352882385,
+      "p95_ms": 8.172652404755354,
+      "repeats": 60,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 20477440,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 15.259407460689545,
+      "p95_ms": 17.10566272959113,
+      "repeats": 20,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 23623168,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 512,
+    "round": 1,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 8.154014125466347,
+      "p95_ms": 8.174907509237528,
+      "repeats": 60,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 20477440,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 15.151475556194782,
+      "p95_ms": 15.222334209829569,
+      "repeats": 20,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 23623168,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 512,
+    "round": 1,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.302397258579731,
+      "p95_ms": 9.340956527739763,
+      "repeats": 60,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 20477440,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.026509925723076,
+      "p95_ms": 16.459789592772722,
+      "repeats": 20,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 23623168,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 512,
+    "round": 2,
+    "execution": "exact",
+    "GPU_RGB_to_H": {
+      "p50_ms": 9.312664158642292,
+      "p95_ms": 9.54278316348791,
+      "repeats": 60,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 20477440,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 16.447911970317364,
+      "p95_ms": 18.907274678349495,
+      "repeats": 20,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 23623168,
+      "incremental_peak_bytes": 8650752
+    }
+  },
+  {
+    "method": "direct_same16",
+    "size": 512,
+    "round": 2,
+    "execution": "approximate",
+    "GPU_RGB_to_H": {
+      "p50_ms": 8.160881698131561,
+      "p95_ms": 8.236667048186064,
+      "repeats": 60,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 20477440,
+      "incremental_peak_bytes": 5505024
+    },
+    "PNG_bytes_to_CPU_H": {
+      "p50_ms": 15.24270698428154,
+      "p95_ms": 15.981834009289743,
+      "repeats": 20,
+      "resident_allocated_bytes": 14972416,
+      "peak_allocated_bytes": 23623168,
+      "incremental_peak_bytes": 8650752
+    }
+  }
+]
