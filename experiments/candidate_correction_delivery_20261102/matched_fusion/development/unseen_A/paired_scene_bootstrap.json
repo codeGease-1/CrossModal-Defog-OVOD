@@ -1,0 +1,187 @@
+[
+  {
+    "left": "corrected_gate",
+    "right": "rgb16",
+    "scene_count": 16,
+    "bootstrap_draws": 3000,
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.09132548388853712,
+      0.0006740196078431904,
+      0.0007914065035947706
+    ],
+    "CI95": [
+      [
+        0.04393038922880875,
+        0.14084868819276497
+      ],
+      [
+        0.00011744281045744653,
+        0.001261233660130756
+      ],
+      [
+        -0.0004421298146553452,
+        0.0021333527574749194
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only, fixed three training seeds; scene bootstrap does not establish optimizer-seed robustness or fresh confirmation"
+  },
+  {
+    "left": "corrected_gate",
+    "right": "rgb32",
+    "scene_count": 16,
+    "bootstrap_draws": 3000,
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.03240540219475041,
+      0.00095996732026149,
+      0.0013892643270689091
+    ],
+    "CI95": [
+      [
+        -0.014407825680009017,
+        0.08176702865753563
+      ],
+      [
+        0.0005412581699346635,
+        0.001393995098039283
+      ],
+      [
+        0.00010541273031018751,
+        0.002803851276151667
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only, fixed three training seeds; scene bootstrap does not establish optimizer-seed robustness or fresh confirmation"
+  },
+  {
+    "left": "corrected_gate",
+    "right": "direct_same16",
+    "scene_count": 16,
+    "bootstrap_draws": 3000,
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.08360284965200537,
+      0.0008527369281047248,
+      6.616595510422398e-05
+    ],
+    "CI95": [
+      [
+        0.03798958457450278,
+        0.13011366609950134
+      ],
+      [
+        0.0003215635212416607,
+        0.001358251633986951
+      ],
+      [
+        -0.001334684620511932,
+        0.001635550562612784
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only, fixed three training seeds; scene bootstrap does not establish optimizer-seed robustness or fresh confirmation"
+  },
+  {
+    "left": "corrected_gate",
+    "right": "corrected_fixed",
+    "scene_count": 16,
+    "bootstrap_draws": 3000,
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      -0.03279434297170569,
+      5.6168300653691716e-05,
+      -0.0022937755581248593
+    ],
+    "CI95": [
+      [
+        -0.041739041265056336,
+        -0.024347249991831743
+      ],
+      [
+        -7.148692810432511e-05,
+        0.0001940359477121678
+      ],
+      [
+        -0.0029249188403734174,
+        -0.001737247302761108
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": true,
+    "scope": "Old development only, fixed three training seeds; scene bootstrap does not establish optimizer-seed robustness or fresh confirmation"
+  },
+  {
+    "left": "corrected_gate",
+    "right": "raw_gate",
+    "scene_count": 16,
+    "bootstrap_draws": 3000,
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      -0.07384958211312731,
+      -0.0012867647058822929,
+      -0.0002783024024211045
+    ],
+    "CI95": [
+      [
+        -0.09734093162792974,
+        -0.04689504248011599
+      ],
+      [
+        -0.0022928155637255477,
+        -0.00036241319444438265
+      ],
+      [
+        -0.000986956261995904,
+        0.00036057821631535155
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": true,
+    "scope": "Old development only, fixed three training seeds; scene bootstrap does not establish optimizer-seed robustness or fresh confirmation"
+  }
+]

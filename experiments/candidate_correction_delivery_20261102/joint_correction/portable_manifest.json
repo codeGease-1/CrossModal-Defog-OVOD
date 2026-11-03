@@ -1,0 +1,32 @@
+[
+  {
+    "file": "portable_weights/joint_fixed_seed42.pth",
+    "sha256": "f845e92ae4e9841e477e44aaf21d52bb2324ac2e523806ef5f465490677d9717",
+    "bytes": 893642
+  },
+  {
+    "file": "portable_weights/joint_dynamic_seed42.pth",
+    "sha256": "448db2891c2029a52409f1d5c99e40bd0a26cfb6c2de8093f3c686e65e713f2d",
+    "bytes": 906108
+  },
+  {
+    "file": "portable_weights/joint_fixed_seed43.pth",
+    "sha256": "8f855f9a79d355abe7565edbc97ff0ec6e34cc2c94c8210d00db862baf49d5a2",
+    "bytes": 893642
+  },
+  {
+    "file": "portable_weights/joint_dynamic_seed43.pth",
+    "sha256": "d6f5dbb1f2a6efbe1d29ab38db451ba6f628f299e762c738c47430be8533bcd6",
+    "bytes": 906108
+  },
+  {
+    "file": "portable_weights/joint_fixed_seed44.pth",
+    "sha256": "1b1be2d3f71dfca01c816a241205286db59b96121e1dbc1051eba1f91818959c",
+    "bytes": 893642
+  },
+  {
+    "file": "portable_weights/joint_dynamic_seed44.pth",
+    "sha256": "46a5940c42a302abedae0e62f5d9ddf7055524bdb92b73ab7321ff3a5e69d885",
+    "bytes": 906108
+  }
+]

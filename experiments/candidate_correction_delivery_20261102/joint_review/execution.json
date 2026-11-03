@@ -1,0 +1,7 @@
+{
+  "command": "python scripts/joint_review/review.py",
+  "base_HEAD": "90070aeb012bfbce2e639dd7ed95a583c590ee46",
+  "script_sha256": "82b669307e04033149135e1374005a88cca59503af6cff5d79d38bf8a4151184",
+  "CUDA_used": false,
+  "training_started": false
+}

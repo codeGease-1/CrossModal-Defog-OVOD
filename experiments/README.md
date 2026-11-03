@@ -1,5 +1,7 @@
 # 精选实验归档
 
+2026-11-02 追加：[候选校正提交归档](candidate_correction_delivery_20261102/README.md)。包括冻结候选动态融合、联合校正、逐样本三条件成功/失败指标、完整成本、协议、训练记录和权重哈希。原始文件字节不变，归档路径映射见 manifest.json；不发布权重、缓存或重复源码快照。
+
 2026-11-02 精选发布：[语义 CPU 诊断](semantic_calibration_20261101/README.md)、[物理离线复核](physical_feasibility_20261102/README.md)、[内容 CPU 标定](content_calibration_20261102/README.md)、[V100 神经校正](learned_correction_20261102/README.md)。本次实际 Git 范围及 blob 哈希见 `research_delivery_20261102.json`；原始完整 manifest 保留磁盘，可能包含未发布产物。权重、图片、缓存、备份与重复快照不入 Git。后续源码编辑及实验全部在 `/mnt`；[安全同步说明](../docs/guides/github_sync.md)。下文旧归档叙述按历史记录保留，当前权重发布策略以上述精简政策为准。
 
 2026-11-01 云端精简发布：实验权重和图片已停止 Git 跟踪，仍保留在本地/云端磁盘；Git 保留代码、配置、指标表、日志和报告。历史完整哈希清单包含未随 Git 发布的文件，当前精简清单见 experiments/git_archive_20261101.json。历史提交中的大文件没有改写；后续首次获取建议使用浅克隆。

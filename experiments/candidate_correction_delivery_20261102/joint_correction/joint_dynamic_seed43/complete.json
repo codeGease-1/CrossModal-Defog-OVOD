@@ -1,0 +1,9 @@
+{
+  "mode": "joint_dynamic",
+  "seed": 43,
+  "total_parameters": 221161,
+  "second_stage_steps": 3456,
+  "total_supervised_update_opportunity": 6912,
+  "best_final_task_loss": 0.00012913428446381658,
+  "candidate_calibration_and_fusion_remain_separate_outputs": true
+}

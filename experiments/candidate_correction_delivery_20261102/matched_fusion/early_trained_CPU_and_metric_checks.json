@@ -1,0 +1,15 @@
+{
+  "source_original_pixel_hashes_match": 64,
+  "trained_gate_CPU_RGB_only_forward": true,
+  "output_shape": [
+    1,
+    1,
+    65,
+    65
+  ],
+  "inference_signature": "(rgb)",
+  "mapping_and_range_scalars": 362,
+  "paired_bootstrap_known_relative_difference": 0.04999999999999982,
+  "no_GPU_test_concurrent_with_training": true,
+  "weights_not_modified": true
+}

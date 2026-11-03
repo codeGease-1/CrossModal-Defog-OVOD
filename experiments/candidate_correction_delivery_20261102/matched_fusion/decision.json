@@ -1,0 +1,39 @@
+{
+  "only_development": true,
+  "new_confirmation_scenes": 0,
+  "three_seed_mean_not_ensemble": true,
+  "best_development_regression": "direct_same16",
+  "relative_MAE_increase_vs_best_regression": 0.5873603342355418,
+  "corrected_gate_improves_fixed_seed_count": 3,
+  "registered_margins_development_pass": false,
+  "decision": "动态融合有开发收益，但尚未在最佳匹配回归对照下满足相近标准；停止扩张模块，保留差距和失败证据。",
+  "per_seed": [
+    {
+      "seed": 42,
+      "corrected_gate_mae": 0.011500403915874813,
+      "corrected_fixed_mae": 0.012628850374312606,
+      "rgb16_mae": 0.009345511189621902,
+      "rgb32_mae": 0.008474140694488597,
+      "direct_same16_mae": 0.007973354309001479
+    },
+    {
+      "seed": 43,
+      "corrected_gate_mae": 0.013299345974473908,
+      "corrected_fixed_mae": 0.014967825072744745,
+      "rgb16_mae": 0.008880273835529806,
+      "rgb32_mae": 0.008694838038536545,
+      "direct_same16_mae": 0.007575822246735697
+    },
+    {
+      "seed": 44,
+      "corrected_gate_mae": 0.011833182317332103,
+      "corrected_fixed_mae": 0.013023395110394631,
+      "rgb16_mae": 0.010519531629597623,
+      "rgb32_mae": 0.00996857765153436,
+      "direct_same16_mae": 0.007528716609158437
+    }
+  ],
+  "measured_stage_wall_seconds_this_round": 3770.5465471073985,
+  "old_pretraining_cost": "Prior first 18 epochs reused, accounted separately, not charged again",
+  "stop_no_automatic_additional_candidates": true
+}

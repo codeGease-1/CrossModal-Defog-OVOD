@@ -1,0 +1,282 @@
+[
+  {
+    "left": "joint_fixed",
+    "right": "rgb16",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.09146205050432799,
+      0.0034001066910455124,
+      0.0013422310257737986
+    ],
+    "CI95": [
+      [
+        0.0637834323132692,
+        0.11466991134823723
+      ],
+      [
+        0.0012347067606975877,
+        0.005463015187777265
+      ],
+      [
+        0.0007956546140121647,
+        0.0018884137904327278
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  },
+  {
+    "left": "joint_fixed",
+    "right": "rgb32",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.06617042302177722,
+      0.0040543300653594905,
+      0.0019263571327125344
+    ],
+    "CI95": [
+      [
+        0.03317311891645592,
+        0.09490765200149717
+      ],
+      [
+        0.0018632557189543599,
+        0.006178640727124183
+      ],
+      [
+        0.001327370870527981,
+        0.002529888059219351
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  },
+  {
+    "left": "joint_fixed",
+    "right": "direct_same16",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.0701062796529559,
+      0.0033649918300652226,
+      0.0005483741248705582
+    ],
+    "CI95": [
+      [
+        0.044663578163383844,
+        0.09368669205570165
+      ],
+      [
+        0.0008986928104576186,
+        0.005555555555555208
+      ],
+      [
+        -6.710527504765166e-05,
+        0.0012137577771682124
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  },
+  {
+    "left": "joint_fixed",
+    "right": "frozen_dynamic",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      -0.007634091030082724,
+      0.0007601965603265537,
+      0.0005873543417086089
+    ],
+    "CI95": [
+      [
+        -0.01854021691899869,
+        0.005602699289049893
+      ],
+      [
+        -0.0008942152043790508,
+        0.002542279268867523
+      ],
+      [
+        -0.00024557312209102193,
+        0.001408971418944323
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": true,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  },
+  {
+    "left": "joint_dynamic",
+    "right": "rgb16",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.06907938952089565,
+      0.001362729240065197,
+      -0.0008038936593948165
+    ],
+    "CI95": [
+      [
+        0.04124839050899764,
+        0.09212881603786582
+      ],
+      [
+        -0.00021959842361753135,
+        0.003036968668454157
+      ],
+      [
+        -0.0013387686842861511,
+        -0.0002276802902883906
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  },
+  {
+    "left": "joint_dynamic",
+    "right": "rgb32",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.0443064185719364,
+      0.002016952614379175,
+      -0.00021976755245608072
+    ],
+    "CI95": [
+      [
+        0.01190072914778664,
+        0.07257246232377627
+      ],
+      [
+        0.0003012663398690385,
+        0.0038195720996730275
+      ],
+      [
+        -0.0007935196500928514,
+        0.0004089267808543211
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  },
+  {
+    "left": "joint_dynamic",
+    "right": "direct_same16",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      0.04816156241551561,
+      0.001327614379084907,
+      -0.0015977505602980569
+    ],
+    "CI95": [
+      [
+        0.02372553458679402,
+        0.07058103544723009
+      ],
+      [
+        -0.000531301062091724,
+        0.0030638531454247084
+      ],
+      [
+        -0.002287969889281763,
+        -0.0008170361826349404
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": false,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  },
+  {
+    "left": "joint_dynamic",
+    "right": "frozen_dynamic",
+    "quantities": [
+      "relative_MAE_increase",
+      "rho_drop",
+      "clear_increase"
+    ],
+    "point": [
+      -0.027984583016245734,
+      -0.0012771808906537618,
+      -0.0015587703434600062
+    ],
+    "CI95": [
+      [
+        -0.038464487756444794,
+        -0.015515719075947983
+      ],
+      [
+        -0.002191192328562022,
+        -0.0002775739581033302
+      ],
+      [
+        -0.0022013195293160005,
+        -0.0009720367391347885
+      ]
+    ],
+    "margins": [
+      0.05,
+      0.01,
+      0.005
+    ],
+    "all_upper_bounds_within_margins": true,
+    "scope": "Old development only; scene bootstrap of fixed three trained seeds, not a fresh confirmation or seed uncertainty interval"
+  }
+]

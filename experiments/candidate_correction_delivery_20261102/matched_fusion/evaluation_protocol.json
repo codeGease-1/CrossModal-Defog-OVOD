@@ -1,0 +1,29 @@
+{
+  "sources": {
+    "scripts/matched_evaluation/export.py": "d4fb6adc255c25e4ecc417457c4dbc544ec5a5b5f395f0fb416a3ce580aa0364",
+    "scripts/matched_evaluation/finish.py": "66eeaf69399f9d7052f7cb58d632ba3abd8ccae8127fc9de0b1c044507dfa69b",
+    "scripts/matched_evaluation/predict.py": "174fe3e6aac82acce0420816ce8226686414a8fe2e336f5bf6dfeba9f7b0e6c2",
+    "scripts/matched_evaluation/resume_check.py": "5a1e1ee04f5cff37c9e23b4f2ef028337818196cdf49328b2e79b3c2b021a595",
+    "scripts/matched_evaluation/run.py": "5a95c51ed466c188dd6bbfa607b4d6e5afaf94aa9353d842f85bde1ee71fbbb5"
+  },
+  "training_protocol_sha256": "5a1e8a72ce7960f83cfde3cd61be768f86e6c6bf23d3d8fa5bd37e9f4f90e0a0",
+  "scope": "Old development only, no automatic confirmation or candidate expansion",
+  "commands": [
+    [
+      "scripts/matched_evaluation/resume_check.py"
+    ],
+    [
+      "scripts/matched_evaluation/run.py",
+      "--stage",
+      "evaluate"
+    ],
+    [
+      "scripts/matched_evaluation/run.py",
+      "--stage",
+      "cost"
+    ],
+    [
+      "scripts/matched_evaluation/export.py"
+    ]
+  ]
+}

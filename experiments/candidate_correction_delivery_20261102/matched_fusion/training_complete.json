@@ -1,0 +1,16 @@
+{
+  "all_modes": [
+    "raw_gate",
+    "corrected_gate",
+    "rgb16",
+    "direct_same16",
+    "rgb32"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "old_checkpoints_unchanged": true,
+  "new_confirmation_scenes": 0
+}

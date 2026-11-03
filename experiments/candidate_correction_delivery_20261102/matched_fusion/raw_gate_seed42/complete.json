@@ -1,0 +1,10 @@
+{
+  "mode": "raw_gate",
+  "seed": 42,
+  "parameters_total": 221161,
+  "parameters_trainable_this_stage": 2803,
+  "steps_this_network": 3456,
+  "total_supervised_updates_opportunity": 6912,
+  "best_development_loss": 0.0013343835739760834,
+  "frozen_corrector_unchanged": true
+}

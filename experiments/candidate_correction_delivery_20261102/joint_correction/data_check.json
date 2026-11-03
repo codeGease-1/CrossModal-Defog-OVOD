@@ -1,0 +1,10 @@
+{
+  "train_features_sha256": "55cc87f9efaee7c36de2e4e48af3f9f66ef8672c266f38bbd29bea8deecc8209",
+  "train_target_sha256": "37c0269b7506ee95d344e721286c413110a352fb4b7c13d9410358fb9d3b2ff8",
+  "development_features_sha256": "73fca6c73aab6fc583c66cfc83cdb3093260d0bdaa8c89ea5939deb2a7d6859a",
+  "development_target_sha256": "8abc7993466a86701162b3bc6bdb380ffb524e3619f89fd337d151a15fe97622",
+  "identical_to_matched_round": true,
+  "train_cases": 1536,
+  "development_cases": 512,
+  "no_group_overlap": true
+}

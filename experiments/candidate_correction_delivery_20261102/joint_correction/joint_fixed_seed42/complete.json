@@ -1,0 +1,9 @@
+{
+  "mode": "joint_fixed",
+  "seed": 42,
+  "total_parameters": 218358,
+  "second_stage_steps": 3456,
+  "total_supervised_update_opportunity": 6912,
+  "best_final_task_loss": 0.00020278739486911945,
+  "candidate_calibration_and_fusion_remain_separate_outputs": true
+}

@@ -1,0 +1,10 @@
+{
+  "mode": "direct_same16",
+  "seed": 42,
+  "parameters_total": 219137,
+  "parameters_trainable_this_stage": 219137,
+  "steps_this_network": 6912,
+  "total_supervised_updates_opportunity": 6912,
+  "best_development_loss": 0.00017699851969155134,
+  "frozen_corrector_unchanged": null
+}

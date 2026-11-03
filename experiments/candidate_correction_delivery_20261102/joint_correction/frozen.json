@@ -1,0 +1,12 @@
+{
+  "checkpoints": {
+    "joint_fixed_seed42": "280c8275bda596f50ea2941b3d923ffe1a6bce26f9ab79bb79f4dece7126a7bd",
+    "joint_fixed_seed43": "7fab54079b82434c6b851ee852357b5f0d8cb55b4643a0a20eab1a151f69d54d",
+    "joint_fixed_seed44": "69caf1e821e40c20abde4928fbecf64de07e8b4e80bf31e56fb2d81224e1ac3a",
+    "joint_dynamic_seed42": "f81100597dc837f4f83d78306aac28c51a6b7b5e4e6983231f346943018d8aba",
+    "joint_dynamic_seed43": "8a5b7939d6ad02e58df810335a2d2b5e50a138420783ba57fa429c16a1a208d0",
+    "joint_dynamic_seed44": "ff13686048e62064bb65a8ce4540f58facded64dc35e9304c54d833ee0be0812"
+  },
+  "fusion_refit_sha256": "e7f38be48a61baca1eaa9e6ef42f4d323dda09b7f8ea50a8006f11fe2166e8d4",
+  "new_confirmation_scenes": 0
+}

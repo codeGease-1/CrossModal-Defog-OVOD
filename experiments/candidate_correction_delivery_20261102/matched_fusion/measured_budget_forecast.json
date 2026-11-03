@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-02T10:57:11.607608+00:00",
+  "measured_epoch_median_seconds": {
+    "raw_gate": 5.639364309608936,
+    "corrected_gate": 5.500039914622903,
+    "rgb16": 11.058857545256615,
+    "direct_same16": 11.316709009930491,
+    "rgb32": 18.528508074581623
+  },
+  "estimated_training_epoch_seconds_all_three_seeds": 3407.526165559888,
+  "updated_total_wall_minutes_range": [
+    60,
+    70
+  ],
+  "includes": "Three new models x three seeds; two necessary continued controls; preprocessing and development/cost/export",
+  "reason_for_update": "Actual epoch timing; RGB controls receive equal 36-epoch opportunities, not only 18",
+  "this_is_forecast_not_measured_final_cost": true,
+  "configuration_and_frozen_source_not_changed": true
+}

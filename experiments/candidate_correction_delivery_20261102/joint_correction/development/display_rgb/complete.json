@@ -1,0 +1,5 @@
+{
+  "cases_per_model_seed": 512,
+  "old_control_MAE_reproduced": true,
+  "new_confirmation_scenes": 0
+}

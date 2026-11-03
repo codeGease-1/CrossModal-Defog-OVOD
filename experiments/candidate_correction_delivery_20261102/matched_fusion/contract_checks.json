@@ -1,0 +1,52 @@
+[
+  {
+    "candidate_equivalence": [
+      {
+        "size": 32,
+        "candidate_max_difference": 0.0
+      },
+      {
+        "size": 65,
+        "candidate_max_difference": 0.0
+      },
+      {
+        "size": 256,
+        "candidate_max_difference": 0.0
+      }
+    ],
+    "frozen_weights_unchanged": true,
+    "only_gate_gradients": true,
+    "convex_outputs": true,
+    "optimizer_resume_max_delta": 0.0,
+    "RGB16_ignores_derived_channels": true,
+    "inference_signature": "(rgb)",
+    "device": "cpu",
+    "parameters_total": 221161,
+    "parameters_trainable": 2803
+  },
+  {
+    "candidate_equivalence": [
+      {
+        "size": 32,
+        "candidate_max_difference": 0.0
+      },
+      {
+        "size": 65,
+        "candidate_max_difference": 0.0
+      },
+      {
+        "size": 256,
+        "candidate_max_difference": 0.0
+      }
+    ],
+    "frozen_weights_unchanged": true,
+    "only_gate_gradients": true,
+    "convex_outputs": true,
+    "optimizer_resume_max_delta": 0.0,
+    "RGB16_ignores_derived_channels": true,
+    "inference_signature": "(rgb)",
+    "device": "cuda",
+    "parameters_total": 221161,
+    "parameters_trainable": 2803
+  }
+]

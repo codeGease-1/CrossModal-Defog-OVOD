@@ -1,0 +1,10 @@
+{
+  "mode": "rgb32",
+  "seed": 43,
+  "parameters_total": 867377,
+  "parameters_trainable_this_stage": 867377,
+  "steps_this_network": 6912,
+  "total_supervised_updates_opportunity": 6912,
+  "best_development_loss": 0.00018692247545004648,
+  "frozen_corrector_unchanged": null
+}

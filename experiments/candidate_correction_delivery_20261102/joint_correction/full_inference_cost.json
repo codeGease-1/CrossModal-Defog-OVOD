@@ -1,0 +1,320 @@
+{
+  "methods": [
+    {
+      "method": "joint_fixed",
+      "size": 256,
+      "all_network_parameters": 218358,
+      "all_registered_buffer_elements": 474,
+      "GPU_RGB_to_H": {
+        "p50_ms": 6.595103070139885,
+        "p95_ms": 6.760742515325546,
+        "resident_allocated_bytes": 18705920,
+        "peak_allocated_bytes": 39629312,
+        "incremental_peak_bytes": 20923392,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 8.650820702314377,
+        "p95_ms": 8.933742716908457,
+        "resident_allocated_bytes": 18705920,
+        "peak_allocated_bytes": 40415744,
+        "incremental_peak_bytes": 21709824,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 3,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "joint_fixed",
+      "size": 512,
+      "all_network_parameters": 218358,
+      "all_registered_buffer_elements": 474,
+      "GPU_RGB_to_H": {
+        "p50_ms": 10.532913729548454,
+        "p95_ms": 10.63049454241991,
+        "resident_allocated_bytes": 21065216,
+        "peak_allocated_bytes": 101102080,
+        "incremental_peak_bytes": 80036864,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 18.644975498318672,
+        "p95_ms": 18.86798683553934,
+        "resident_allocated_bytes": 21065216,
+        "peak_allocated_bytes": 104247808,
+        "incremental_peak_bytes": 83182592,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 3,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "joint_dynamic",
+      "size": 256,
+      "all_network_parameters": 221161,
+      "all_registered_buffer_elements": 474,
+      "GPU_RGB_to_H": {
+        "p50_ms": 7.314441725611687,
+        "p95_ms": 7.777817361056804,
+        "resident_allocated_bytes": 18718720,
+        "peak_allocated_bytes": 41715200,
+        "incremental_peak_bytes": 22996480,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 8.964119479060173,
+        "p95_ms": 9.112161584198475,
+        "resident_allocated_bytes": 18718720,
+        "peak_allocated_bytes": 42501632,
+        "incremental_peak_bytes": 23782912,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "joint_dynamic",
+      "size": 512,
+      "all_network_parameters": 221161,
+      "all_registered_buffer_elements": 474,
+      "GPU_RGB_to_H": {
+        "p50_ms": 10.963821783661842,
+        "p95_ms": 11.059938929975033,
+        "resident_allocated_bytes": 21078016,
+        "peak_allocated_bytes": 113673728,
+        "incremental_peak_bytes": 92595712,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 18.996093422174454,
+        "p95_ms": 19.489402510225773,
+        "resident_allocated_bytes": 21078016,
+        "peak_allocated_bytes": 117868032,
+        "incremental_peak_bytes": 96790016,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "frozen_dynamic",
+      "size": 256,
+      "all_network_parameters": 221161,
+      "all_registered_buffer_elements": 471,
+      "GPU_RGB_to_H": {
+        "p50_ms": 6.88057579100132,
+        "p95_ms": 7.0386383682489395,
+        "resident_allocated_bytes": 18718208,
+        "peak_allocated_bytes": 39276544,
+        "incremental_peak_bytes": 20558336,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 8.846942335367203,
+        "p95_ms": 9.513826109468937,
+        "resident_allocated_bytes": 18718208,
+        "peak_allocated_bytes": 40062976,
+        "incremental_peak_bytes": 21344768,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "frozen_dynamic",
+      "size": 512,
+      "all_network_parameters": 221161,
+      "all_registered_buffer_elements": 471,
+      "GPU_RGB_to_H": {
+        "p50_ms": 10.957799851894379,
+        "p95_ms": 11.014613136649132,
+        "resident_allocated_bytes": 21077504,
+        "peak_allocated_bytes": 101175808,
+        "incremental_peak_bytes": 80098304,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 19.211484119296074,
+        "p95_ms": 19.723913073539734,
+        "resident_allocated_bytes": 21077504,
+        "peak_allocated_bytes": 103895040,
+        "incremental_peak_bytes": 82817536,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "direct_same16",
+      "size": 256,
+      "all_network_parameters": 219137,
+      "all_registered_buffer_elements": 471,
+      "GPU_RGB_to_H": {
+        "p50_ms": 6.445158272981644,
+        "p95_ms": 6.618747301399708,
+        "resident_allocated_bytes": 18708992,
+        "peak_allocated_bytes": 39632384,
+        "incremental_peak_bytes": 20923392,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 8.487975224852562,
+        "p95_ms": 9.113053977489473,
+        "resident_allocated_bytes": 18708992,
+        "peak_allocated_bytes": 40418816,
+        "incremental_peak_bytes": 21709824,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "direct_same16",
+      "size": 512,
+      "all_network_parameters": 219137,
+      "all_registered_buffer_elements": 471,
+      "GPU_RGB_to_H": {
+        "p50_ms": 10.426590219140053,
+        "p95_ms": 10.473752208054066,
+        "resident_allocated_bytes": 21068288,
+        "peak_allocated_bytes": 102648320,
+        "incremental_peak_bytes": 81580032,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 18.464110791683197,
+        "p95_ms": 19.446942023932934,
+        "resident_allocated_bytes": 21068288,
+        "peak_allocated_bytes": 105794048,
+        "incremental_peak_bytes": 84725760,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 362,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "rgb16",
+      "size": 256,
+      "all_network_parameters": 217985,
+      "all_registered_buffer_elements": 0,
+      "GPU_RGB_to_H": {
+        "p50_ms": 4.910623654723167,
+        "p95_ms": 5.028949119150639,
+        "resident_allocated_bytes": 18699776,
+        "peak_allocated_bytes": 34904576,
+        "incremental_peak_bytes": 16204800,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 6.930265575647354,
+        "p95_ms": 7.164853624999523,
+        "resident_allocated_bytes": 18699776,
+        "peak_allocated_bytes": 35691008,
+        "incremental_peak_bytes": 16991232,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 0,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "rgb16",
+      "size": 512,
+      "all_network_parameters": 217985,
+      "all_registered_buffer_elements": 0,
+      "GPU_RGB_to_H": {
+        "p50_ms": 7.114207372069359,
+        "p95_ms": 7.147610932588577,
+        "resident_allocated_bytes": 21059072,
+        "peak_allocated_bytes": 84449792,
+        "incremental_peak_bytes": 63390720,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 14.493627473711967,
+        "p95_ms": 14.676660671830177,
+        "resident_allocated_bytes": 21059072,
+        "peak_allocated_bytes": 88644096,
+        "incremental_peak_bytes": 67585024,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 0,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "rgb32",
+      "size": 256,
+      "all_network_parameters": 867377,
+      "all_registered_buffer_elements": 0,
+      "GPU_RGB_to_H": {
+        "p50_ms": 4.840712994337082,
+        "p95_ms": 4.88272737711668,
+        "resident_allocated_bytes": 21297152,
+        "peak_allocated_bytes": 54622720,
+        "incremental_peak_bytes": 33325568,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 6.749171763658524,
+        "p95_ms": 7.329468242824078,
+        "resident_allocated_bytes": 21297152,
+        "peak_allocated_bytes": 55409152,
+        "incremental_peak_bytes": 34112000,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 0,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    },
+    {
+      "method": "rgb32",
+      "size": 512,
+      "all_network_parameters": 867377,
+      "all_registered_buffer_elements": 0,
+      "GPU_RGB_to_H": {
+        "p50_ms": 10.851413011550903,
+        "p95_ms": 10.876015201210976,
+        "resident_allocated_bytes": 23656448,
+        "peak_allocated_bytes": 144439808,
+        "incremental_peak_bytes": 120783360,
+        "repeats": 40
+      },
+      "PNG_bytes_to_CPU_H": {
+        "p50_ms": 18.573496490716934,
+        "p95_ms": 18.7986021861434,
+        "resident_allocated_bytes": 23656448,
+        "peak_allocated_bytes": 147585536,
+        "incremental_peak_bytes": 123929088,
+        "repeats": 20
+      },
+      "semantic_parameters": 0,
+      "unique_active_calibration_scalars": 0,
+      "fixed_fusion_scalars": 0,
+      "precision": "FP32 priors/context; AMP network; same fast implementation offered to every prior-using method"
+    }
+  ],
+  "batch_size": 1,
+  "CPU_threads": 1,
+  "GPU": "Tesla V100-SXM2-16GB",
+  "scope": "Measured serially after training/evaluation; one method resident. PNG path includes decode,H2D,D2H, excludes disk/network fetch."
+}

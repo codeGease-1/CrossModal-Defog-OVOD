@@ -1,0 +1,40 @@
+{
+  "models": [
+    {
+      "mode": "raw_gate",
+      "CPU_save_load_max_difference": 0.0,
+      "CPU_FP32_vs_CUDA_AMP_max_difference": 8.198246359825134e-05,
+      "signature": "forward(rgb)",
+      "device_and_precision_difference_not_an_accuracy_test": true
+    },
+    {
+      "mode": "corrected_gate",
+      "CPU_save_load_max_difference": 0.0,
+      "CPU_FP32_vs_CUDA_AMP_max_difference": 7.089320570230484e-05,
+      "signature": "forward(rgb)",
+      "device_and_precision_difference_not_an_accuracy_test": true
+    },
+    {
+      "mode": "rgb16",
+      "CPU_save_load_max_difference": 0.0,
+      "CPU_FP32_vs_CUDA_AMP_max_difference": 0.00010672211647033691,
+      "signature": "forward(rgb)",
+      "device_and_precision_difference_not_an_accuracy_test": true
+    },
+    {
+      "mode": "direct_same16",
+      "CPU_save_load_max_difference": 0.0,
+      "CPU_FP32_vs_CUDA_AMP_max_difference": 0.00017774105072021484,
+      "signature": "forward(rgb)",
+      "device_and_precision_difference_not_an_accuracy_test": true
+    },
+    {
+      "mode": "rgb32",
+      "CPU_save_load_max_difference": 0.0,
+      "CPU_FP32_vs_CUDA_AMP_max_difference": 0.00020068883895874023,
+      "signature": "forward(rgb)",
+      "device_and_precision_difference_not_an_accuracy_test": true
+    }
+  ],
+  "source_pixels_match_previous_manifest": true
+}

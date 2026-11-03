@@ -1,0 +1,6 @@
+{
+  "condition": "unseen_A",
+  "only_old_development": true,
+  "cases_per_model_per_seed": 512,
+  "proxy_definition": "Clean source brightness/gradient masks, evaluation only; not land-cover semantics; masks before brightness augmentation"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "mode": "joint_fixed",
+    "CPU_portable_save_load_max_difference": 0.0,
+    "RGB_only_shape": [
+      1,
+      1,
+      65,
+      65
+    ],
+    "CPU_FP32_vs_CUDA_AMP_max_difference": 2.2970139980316162e-05
+  },
+  {
+    "mode": "joint_dynamic",
+    "CPU_portable_save_load_max_difference": 0.0,
+    "RGB_only_shape": [
+      1,
+      1,
+      65,
+      65
+    ],
+    "CPU_FP32_vs_CUDA_AMP_max_difference": 7.152464240789413e-05
+  }
+]

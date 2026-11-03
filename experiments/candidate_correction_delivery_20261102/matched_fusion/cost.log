@@ -1,0 +1,14 @@
+COST original_fixed 256 {"p50_ms": 3.8986466825008392, "p95_ms": 3.9690157398581505, "resident_allocated_bytes": 786432, "peak_allocated_bytes": 6553600, "incremental_peak_bytes": 5767168, "repeats": 40}
+COST original_fixed 512 {"p50_ms": 6.05228915810585, "p95_ms": 6.254704482853413, "resident_allocated_bytes": 3145728, "peak_allocated_bytes": 26214400, "incremental_peak_bytes": 23068672, "repeats": 40}
+COST corrected_fixed 256 {"p50_ms": 9.886635467410088, "p95_ms": 10.72327233850956, "resident_allocated_bytes": 10181120, "peak_allocated_bytes": 30973440, "incremental_peak_bytes": 20792320, "repeats": 40}
+COST corrected_fixed 512 {"p50_ms": 13.15806619822979, "p95_ms": 13.342482782900333, "resident_allocated_bytes": 12540416, "peak_allocated_bytes": 91659776, "incremental_peak_bytes": 79119360, "repeats": 40}
+COST raw_gate 256 {"p50_ms": 10.038815438747406, "p95_ms": 10.731082037091255, "resident_allocated_bytes": 10193920, "peak_allocated_bytes": 30621184, "incremental_peak_bytes": 20427264, "repeats": 40}
+COST raw_gate 512 {"p50_ms": 13.468872755765915, "p95_ms": 15.851408801972866, "resident_allocated_bytes": 12553216, "peak_allocated_bytes": 91734016, "incremental_peak_bytes": 79180800, "repeats": 40}
+COST corrected_gate 256 {"p50_ms": 9.73566249012947, "p95_ms": 10.302059538662434, "resident_allocated_bytes": 10193920, "peak_allocated_bytes": 30621184, "incremental_peak_bytes": 20427264, "repeats": 40}
+COST corrected_gate 512 {"p50_ms": 13.415247201919556, "p95_ms": 13.56301512569189, "resident_allocated_bytes": 12553216, "peak_allocated_bytes": 91734016, "incremental_peak_bytes": 79180800, "repeats": 40}
+COST rgb16 256 {"p50_ms": 5.1976945251226425, "p95_ms": 5.448974296450614, "resident_allocated_bytes": 10180096, "peak_allocated_bytes": 26384896, "incremental_peak_bytes": 16204800, "repeats": 40}
+COST rgb16 512 {"p50_ms": 7.056521251797676, "p95_ms": 7.073277235031128, "resident_allocated_bytes": 12539392, "peak_allocated_bytes": 76847616, "incremental_peak_bytes": 64308224, "repeats": 40}
+COST direct_same16 256 {"p50_ms": 9.410634636878967, "p95_ms": 9.80226919054985, "resident_allocated_bytes": 10184704, "peak_allocated_bytes": 30977024, "incremental_peak_bytes": 20792320, "repeats": 40}
+COST direct_same16 512 {"p50_ms": 12.92787492275238, "p95_ms": 13.048192486166954, "resident_allocated_bytes": 12544000, "peak_allocated_bytes": 93730816, "incremental_peak_bytes": 81186816, "repeats": 40}
+COST rgb32 256 {"p50_ms": 5.187246948480606, "p95_ms": 5.696214735507965, "resident_allocated_bytes": 12777472, "peak_allocated_bytes": 44136960, "incremental_peak_bytes": 31359488, "repeats": 40}
+COST rgb32 512 {"p50_ms": 10.858733206987381, "p95_ms": 10.895579867064953, "resident_allocated_bytes": 15136768, "peak_allocated_bytes": 135789056, "incremental_peak_bytes": 120652288, "repeats": 40}

@@ -1,0 +1,49 @@
+{
+  "modes": [
+    "joint_fixed",
+    "joint_dynamic"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 18,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "global_loss_weight": 0.5,
+  "clear_loss_extra_weight": 0.25,
+  "candidate_loss_weights": [
+    1.0,
+    0.25,
+    0.25
+  ],
+  "auxiliary_weight": 0.25,
+  "amp": true,
+  "rho": 0.75,
+  "shift": 3.0,
+  "initial_gate_weights": [
+    0.9,
+    0.05,
+    0.05
+  ],
+  "old_pretraining": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp",
+  "matched_controls": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102",
+  "calibration": "/mnt/CrossModal-Defog-OVOD/experiments/v2_20261101/calibration.json",
+  "selection": "Lowest development FINAL fused H task loss, not auxiliary candidate loss; no confirmation selection",
+  "loss": "task_loss(final_H,H) + .25 * independent weighted candidate task losses; no extra clean/semantic/physical targets",
+  "fixed_fusion": "Frozen old train-only optimized weights during joint training/selection; refit optimal global weights on train only after checkpoint freeze; report both outputs",
+  "opportunity": "18 previously trained corrector epochs + 18 joint epochs = 36 paired-data exposures; RGB16/RGB32/direct_same16 reused only from existing matched 36-epoch runs",
+  "physics": "off",
+  "semantic": "none; content features only",
+  "confirmation": "No new confirmation or real-source audit this round",
+  "user_override": "Do not stop structural exploration, switch to pure RGB or simplify cues based on a miss; preserve honest unsuccessful evidence",
+  "relative_MAE_margin": 0.05,
+  "spatial_margin": 0.01,
+  "clear_response_margin": 0.005,
+  "budget_prediction_minutes": [
+    25,
+    35
+  ],
+  "scope": "Two preregistered model modes; three seeds; do not automatically expand search"
+}

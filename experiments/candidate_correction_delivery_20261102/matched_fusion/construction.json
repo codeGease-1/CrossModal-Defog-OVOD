@@ -1,0 +1,67 @@
+{
+  "base_HEAD": "90070aeb012bfbce2e639dd7ed95a583c590ee46",
+  "worktree": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102",
+  "configuration": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "new_modes": [
+      "raw_gate",
+      "corrected_gate",
+      "rgb16"
+    ],
+    "continued_controls": [
+      "direct_same16",
+      "rgb32"
+    ],
+    "gate_epochs": 18,
+    "total_RGB_epochs": 36,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "amp": true,
+    "global_loss_weight": 0.5,
+    "clear_loss_extra_weight": 0.25,
+    "gate_hidden": 16,
+    "gate_initial_weights": [
+      0.9,
+      0.05,
+      0.05
+    ],
+    "selection": "Development task loss only, unchanged MSE+.5 mean MSE+.25 extra clear MSE; carry earlier best for continued RGB controls",
+    "opportunity": "Corrector 18 epochs + frozen-feature gate 18; every RGB control 36 total epochs. Same 1536 paired cases, 192 batches/epoch. No extra clean/semantic supervision.",
+    "fairness_limit": "Two-stage correction uses candidate auxiliary objectives then fusion; RGB has same targets/data exposure/updates but direct H objective. Raw gate shares correction-trained frozen features and is a controlled candidate-map intervention, not old v2.",
+    "relative_MAE_margin": 0.05,
+    "spatial_margin": 0.01,
+    "clear_response_margin": 0.005,
+    "physics": "off",
+    "semantic": "none; deterministic brightness/texture content descriptors only",
+    "confirmation": "No new confirmation in this structural screening round; existing old development originals only",
+    "budget": "Conservative initial estimate 40-55 V100 minutes, update after measured timing; no resource changes",
+    "old_output": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp",
+    "calibration": "/mnt/CrossModal-Defog-OVOD/experiments/v2_20261101/calibration.json"
+  },
+  "pretraining_checkpoints": {
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed44/best.pth": "b5286c5350c2346ca2aef28b4b5e631a1418f01da515a4ecf40fa32854bdcdf9",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed43/best.pth": "1c3ff79efc15366c1fb8920914509f6be8e22ac06d891a1c27a0f1399e268ce9",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed42/best.pth": "74798bde23c700900a737cef9046ee1386358984689f3b7aadbb869dea75f8ab",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed43/best.pth": "aa2e2c0a57a6e84b310b24a0da46a7e79b0b9e5ee3d044a8cd488bd3ae6a7571",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed44/best.pth": "c193c5950f275054e8d83faed38f452048182e3cacd613603e432fabed0a69eb",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed44/best.pth": "c3ba482d52655c6dc3c4892bda2ec60e01202e17b78c3619c65050dcf812b29a",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed42/best.pth": "df61a014bffb1632ea7a85f6d866cfc525c5d545b985a86e3171da2a750a6425",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed43/best.pth": "f0caf148ff9e318e182cdbce0d4f97d33aff14e70c9ca8de9428bd6e9ffbcfa6",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed42/best.pth": "75f4f2aff2db57001d1ac970d3f2105c537114064da95387b5b63c9290ab3dad"
+  },
+  "restoration_checkpoints": {
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed44/latest.pth": "0ac4ade5094b1f71d41336de0be134756000697cd0776cc9387707aaffdb2096",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed43/latest.pth": "10c9d9d2bb91716a1a772f039dd8850656a5840027116588f97b5eaa2eabe881",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed42/latest.pth": "d6623dacab02b652e2efa6a1a4a284df2d6f8902288a08e52b30f9cf91e4755e",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed43/latest.pth": "ab3829d7c954bbddda87a0076eee2941746cb9e54ad52285f03aec39d99008b8",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed44/latest.pth": "f7570bc3ccb87241f2aa0581c5a8cb403eb2c245297b18df8d60c7a1d3cafbb3",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/corrector16_seed44/latest.pth": "a45696b1fad24c10ebbc52b1fcd9201ef9609713ac4e29aff267a335fe862ecc",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/direct_same16_seed42/latest.pth": "05355aa47c88dc21adfc4776d4759b4dbcee09d877081a504af1957a4aca8059",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed43/latest.pth": "a796e9d76d0233adffff171dea6503f6f699dd9e25938bb1e958a1f30ef93b66",
+    "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp/rgb32_seed42/latest.pth": "d2199a5facbe632cecc0d7df7b5820c5184f1978479906ed0c2159e59c6188be"
+  }
+}

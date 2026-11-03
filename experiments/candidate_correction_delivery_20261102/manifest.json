@@ -1,0 +1,909 @@
+{
+  "base_HEAD": "90070aeb012bfbce2e639dd7ed95a583c590ee46",
+  "scope": "Frozen and joint correction: full successful/failed development evidence; no new training or confirmation",
+  "files": {
+    ".gitattributes": {
+      "bytes": 2042,
+      "sha256": "49167c16c61734875932a4df37ef4dd2b4f838c6efa523a504f4ae226b6a7d0c"
+    },
+    ".gitignore": {
+      "bytes": 53144,
+      "sha256": "237fa4a04434c8a206de09e232b58aa23637fd7bbd3468cea37346f2d0060652"
+    },
+    "README.md": {
+      "bytes": 8420,
+      "sha256": "2708690e854ba211478b7f066218d28d475d47159ee20dcfbfe5c6857bcacad7"
+    },
+    "configs/joint_correction_20261102.json": {
+      "bytes": 1853,
+      "sha256": "71466c5bff7aec12c0e8bbc48ee7dad107a220ed7856e90474aaa227c9e2aa7d"
+    },
+    "configs/matched_fusion_20261102.json": {
+      "bytes": 1633,
+      "sha256": "72b06364e4713ee9b4388dd2203f5244c203dd32fe79056d2d0f39ef1b7a8daa"
+    },
+    "docs/guides/candidate_correction_submission_20261102.md": {
+      "bytes": 3557,
+      "sha256": "4438b3bac12708c1db45627058f984af85f71ae2dd5670bad00287b0e12e4d58"
+    },
+    "docs/joint_correction_results_20261102.md": {
+      "bytes": 3131,
+      "sha256": "020f3856bdf596093a5dae3d86e03fb5e7b5cd156f24f4c521e76ee4e2bc1fcb"
+    },
+    "docs/joint_correction_review_20261102.md": {
+      "bytes": 9175,
+      "sha256": "2223514be8e85180fecffb4293e047d218a14dbbf3edec092532229370da4428"
+    },
+    "docs/匹配候选融合构建与训练协议_20261102.md": {
+      "bytes": 3944,
+      "sha256": "ef723f5c995b9b4b6cf52b542a1a45ae2dfcff3a357d2971a53f456b70ffcd49"
+    },
+    "docs/匹配融合结果复核与下一步_20261102.md": {
+      "bytes": 4226,
+      "sha256": "855d46bb4eb7298dc1e040535a97f5a2c3deeb0c46d9110829ab8558c609858a"
+    },
+    "docs/匹配训练机会的候选校正动态融合报告_20261102.md": {
+      "bytes": 4050,
+      "sha256": "c5447c641766d51cf5eab4bc963c8d15dc0de3d1db4f48e2b9e3b14ac51e59db"
+    },
+    "docs/联合校正构建与运行协议_20261102.md": {
+      "bytes": 4874,
+      "sha256": "e645666f9fe7e8db0b9875e82a15f65f32c08df323b9a216e9b4e6b7959d6206"
+    },
+    "experiments/README.md": {
+      "bytes": 6959,
+      "sha256": "53e8216b489887e8cbea20e3575b6298ba3de0344a53b0f9c06f7f907890c657"
+    },
+    "experiments/candidate_correction_delivery_20261102/README.md": {
+      "bytes": 1411,
+      "sha256": "3a85c70b716441396095f2735053000101681c33645772334f5cb4bad1f34b27"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/BUILD.md": {
+      "bytes": 4874,
+      "sha256": "e645666f9fe7e8db0b9875e82a15f65f32c08df323b9a216e9b4e6b7959d6206",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/BUILD.md"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/COMPLETE.json": {
+      "bytes": 98,
+      "sha256": "8124b1f2e0f2eb3f400e54b8873dacaf4ed95a2c051fdbb5ffb0a65c23eb0039",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/COMPLETE.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/budget.json": {
+      "bytes": 10734,
+      "sha256": "11662be3426bcc5ca563e732be0ef578d9300f4caba2757fa1e4ba0c6f934a56",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/budget.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/data_check.json": {
+      "bytes": 507,
+      "sha256": "de0bf93f8fb5fff1e0dd11f99aa7ea10f9ad4b9f8c3b7b4eda4e121771c195fc",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/data_check.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/decision.json": {
+      "bytes": 7191,
+      "sha256": "7529af5abbf1704809b9d3bc495afb104339732ce78ae07bd57df0e2f2b37c99",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/decision.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/by_seed.json": {
+      "bytes": 32043,
+      "sha256": "153268601b85100e9d087abc37a6af60f55df331bf769f70491971903ecf8956",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/by_seed.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/candidate_diagnostics.json": {
+      "bytes": 3663897,
+      "sha256": "b398f1346c8bd8a1312d149704e1a6aab8fa26c7f7aa7e6320e912bedc822592",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/candidate_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/complete.json": {
+      "bytes": 103,
+      "sha256": "2d8484b92ec299d24a68c389fa61359e009f0120a1aee3cb0077b44bfe0cb3f4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/data_manifest.json": {
+      "bytes": 363374,
+      "sha256": "9c675e9f10c7160774282a5dc0a87bcb5b26ea17379c2d30d0564049cdb3a149",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/data_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/paired_scene_bootstrap.json": {
+      "bytes": 6106,
+      "sha256": "03a30dd43168a6e086861510d3f340d15b0fc7dcbfd460956af6e18df6bb1891",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/paired_scene_bootstrap.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/per_case.csv": {
+      "bytes": 5223922,
+      "sha256": "584a9c544dcedbc949e93975dd98a0d87f774204a9efd52cdbb812df63a5559a",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/per_case.csv"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/summary.json": {
+      "bytes": 10308,
+      "sha256": "46cddf2e8ceb22e366c023a7129a67ff7d41c464c6cc16a8d9e9d2e63407c787",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/summary.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/display_rgb/weight_diagnostics.json": {
+      "bytes": 645549,
+      "sha256": "9da7564085e4482ab07735ff8539a335766021ed12c8017aee519fdf0093d015",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/display_rgb/weight_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/by_seed.json": {
+      "bytes": 31864,
+      "sha256": "1bb521d8d1839e063256529175a01063002b7afb42912bb09c039b807640c16f",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/by_seed.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/candidate_diagnostics.json": {
+      "bytes": 3760902,
+      "sha256": "d66c2630f5dc98bd2f7420cc923aae144a5c267abe7b80984914c7c500cf8ea6",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/candidate_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/complete.json": {
+      "bytes": 103,
+      "sha256": "2d8484b92ec299d24a68c389fa61359e009f0120a1aee3cb0077b44bfe0cb3f4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/data_manifest.json": {
+      "bytes": 363374,
+      "sha256": "92ff35ed7ef0e263b01cd8e6acaf4b82b12d71f7790ddd1b9b7b0044f592d1a9",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/data_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/paired_scene_bootstrap.json": {
+      "bytes": 6138,
+      "sha256": "479c832e1c6537b9f0d1620dbcdd6bcf3cbd1c1856b506158a71cfe3db07a9dd",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/paired_scene_bootstrap.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/per_case.csv": {
+      "bytes": 5333280,
+      "sha256": "d9f2ba2ec8af7f1220d0083c6d66169e637430b83505b0b18c446d08c07fc8f2",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/per_case.csv"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/summary.json": {
+      "bytes": 10151,
+      "sha256": "c56b625d7cd0246547e7ecbeeb43f70897034916dc619324e96611227ebcb07d",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/summary.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/nominal/weight_diagnostics.json": {
+      "bytes": 645811,
+      "sha256": "f9036f39779afca06cce5b64a582d96302961a0de1a8357d61052da82f840519",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/nominal/weight_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/by_seed.json": {
+      "bytes": 31556,
+      "sha256": "18247f8b9c35a92eb9f3b170dcc537608ded83fc1cb19b93efd0a9ea44cd0478",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/by_seed.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/candidate_diagnostics.json": {
+      "bytes": 3724501,
+      "sha256": "ab81fbfa51cd8d588edf846f7ce1bd355de08432f92f1ed038d452ee74b3f098",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/candidate_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/complete.json": {
+      "bytes": 103,
+      "sha256": "2d8484b92ec299d24a68c389fa61359e009f0120a1aee3cb0077b44bfe0cb3f4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/data_manifest.json": {
+      "bytes": 363374,
+      "sha256": "a52c6b089c0499ab376a4f6c56ad7f9c04eb3b600841e540b7e55a15389c0cde",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/data_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/paired_scene_bootstrap.json": {
+      "bytes": 6123,
+      "sha256": "963a1f043ad2fc92dc01655819a800c979f27026f0ca25d681235a7f5b1bfcc6",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/paired_scene_bootstrap.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/per_case.csv": {
+      "bytes": 5246318,
+      "sha256": "d49c32ba1ebcc418a4f6982d182a5ff4d92bdd7d2f3b3afb01060a3ca060ca6c",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/per_case.csv"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/summary.json": {
+      "bytes": 10050,
+      "sha256": "d25321da8d26bdba6e3cd6626bb33e10a044a4733b8f0037b1c3e25fb4c50ee6",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/summary.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development/unseen_A/weight_diagnostics.json": {
+      "bytes": 645592,
+      "sha256": "77db4d8e4f5f169e9303c8185a3e495b9e1dc52ff8a3c6e3ce2a0a267d2a05bc",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development/unseen_A/weight_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/development_manifest.json": {
+      "bytes": 273774,
+      "sha256": "e48fe4dee5575b3b89f7ec0ede11fb95506ff285eb14842c35d1a52ba6e2090b",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/development_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/evaluation_complete.json": {
+      "bytes": 67,
+      "sha256": "c3e44f7771958b79a5103bb91a1a3128aad46bc2955ed70838d255455fc153d5",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/evaluation_complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/fast_check.log": {
+      "bytes": 5314,
+      "sha256": "5d8e7a10577be1a374f0d6707c93f57f45bcd11ca21445a20a31dc5bee74230b",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/fast_check.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/fast_checks.json": {
+      "bytes": 7343,
+      "sha256": "9a3fd6ee0e59d560bf1304b0e88f075fec199c49ff4ad3b440217c36a005f448",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/fast_checks.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/frozen.json": {
+      "bytes": 720,
+      "sha256": "e99d132db90482e704e82533a862448694af0c2cd1fe868c9c6f30fe3c1549dd",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/frozen.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/full_inference_cost.json": {
+      "bytes": 11099,
+      "sha256": "353e0f90b6f0251314613ee9e65a781fcd8548a9804ff0359941631bc38551dc",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/full_inference_cost.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/fusion_refit.json": {
+      "bytes": 4250,
+      "sha256": "e7f38be48a61baca1eaa9e6ef42f4d323dda09b7f8ea50a8006f11fe2166e8d4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/fusion_refit.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/inherited_source_and_protection.json": {
+      "bytes": 9417,
+      "sha256": "38af0646f370ceb5a1575d1b964165c44cf301d1142ffafd3e4802228f71fd03",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/inherited_source_and_protection.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_check.log": {
+      "bytes": 1159,
+      "sha256": "81efe5f7cb62c65a4b700aec2164f01fb754500759483f1765b423c94ed28b04",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_check.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_checks.json": {
+      "bytes": 1328,
+      "sha256": "d593fd8ba15afbad1cbc7c672e8edb043859d22172e36cd129bd2b9988c68697",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_checks.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_dynamic_seed42/complete.json": {
+      "bytes": 268,
+      "sha256": "b3b49b649237b55fc67822c8de6ad382bdf25c4a5156d820193b2579ea7889ea",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_dynamic_seed42/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_dynamic_seed42/history.json": {
+      "bytes": 6449,
+      "sha256": "e467d11a9d4ba5d43138cd6088821cfdb9a0984faed89674b01d2a0677b1be3a",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_dynamic_seed42/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_dynamic_seed43/complete.json": {
+      "bytes": 268,
+      "sha256": "6b4c9d64dcb98a8e81af9c0eb0131739185d73f8f9fa56f0c984c634e4bcd257",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_dynamic_seed43/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_dynamic_seed43/history.json": {
+      "bytes": 6447,
+      "sha256": "0535af6899d931f058d04332d1015b8b4bfb4cd9f5ad5fba0dd264dc7a2f9a08",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_dynamic_seed43/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_dynamic_seed44/complete.json": {
+      "bytes": 268,
+      "sha256": "428aac5accf9c519796b51179b14c0fdb4aa4f19c6e17f5e845c527233ac8e16",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_dynamic_seed44/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_dynamic_seed44/history.json": {
+      "bytes": 6454,
+      "sha256": "9a9a61a7c11f13da4ed063ea0a26fa51e1517e401008ee278e08c80097a8e4f4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_dynamic_seed44/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_fixed_seed42/complete.json": {
+      "bytes": 266,
+      "sha256": "dc5633df56f5194231a882bc516edfea9f5a9387dc54bc40340121447ab0d5d0",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_fixed_seed42/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_fixed_seed42/history.json": {
+      "bytes": 6444,
+      "sha256": "33fca5dd4ab7ff35f9d369827d6215619b35eb3135ecd11147bcfaa3c6fa9377",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_fixed_seed42/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_fixed_seed43/complete.json": {
+      "bytes": 266,
+      "sha256": "30e9f5fb77c806ef575027c03b6ec1ec8f0028d63b2efe9a5268583a4e2722cf",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_fixed_seed43/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_fixed_seed43/history.json": {
+      "bytes": 6447,
+      "sha256": "05869f4bbf3eaab7187778091f454c1eb9efcd9b6a072c9c8a47e214fc12cd42",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_fixed_seed43/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_fixed_seed44/complete.json": {
+      "bytes": 266,
+      "sha256": "69dece959fb01658e671bb0c1a3d71cb099b22688cea584d1954a139fd6d7839",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_fixed_seed44/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/joint_fixed_seed44/history.json": {
+      "bytes": 6451,
+      "sha256": "2ce66b7e7336d8514e1681b0048384503d26cd046bb74b49103d572f91a53de8",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/joint_fixed_seed44/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/pip_freeze.txt": {
+      "bytes": 2683,
+      "sha256": "2442d7166cf70f7301871cca6288c42b166064e9023de1518c6f9007cf4ce238",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/pip_freeze.txt"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/portable_manifest.json": {
+      "bytes": 1004,
+      "sha256": "1d83c1e62fbbcdbedb9dcce970839972a69634f6ad5621a0df5ea89ececba219",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/portable_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/protocol.json": {
+      "bytes": 38049,
+      "sha256": "43dd68a30705a816bc7fcc8d8c17c4ec0e127b3f5d487fef2703093240d115fb",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/protocol.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/result_report.json": {
+      "bytes": 190,
+      "sha256": "d6b270c4971552c493169741145f914f9e3a35f73ec11281ce60ba46d7cecfed",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/result_report.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/run.log": {
+      "bytes": 76788,
+      "sha256": "9a6e4f594a5ee1e21a6dd87184906db6da6d5fa3a652d1caec7ea51ba6762400",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/run.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/status.json": {
+      "bytes": 249,
+      "sha256": "0ce69f5cb040cf7a2f12fe15dd02d2d4346d290578c2171955855a8d2744ec57",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/status.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/train_manifest.json": {
+      "bytes": 793594,
+      "sha256": "4ce31ed60727e262ebd08733f0f9402a9deed8b530f26c588a882aa985892fab",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/train_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/trained_portable_inference_checks.json": {
+      "bytes": 443,
+      "sha256": "bbff8d289dfe06e8864636af058bb36ae9e1fd88c98646a62dc63a2601477e34",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/trained_portable_inference_checks.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_correction/training_complete.json": {
+      "bytes": 67,
+      "sha256": "2bfbf3d8a81e43ef268c4dbac9203de8412ec563449ad77a789919f7a10b3e5c",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_correction_20261102/training_complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_review/audit.json": {
+      "bytes": 187426,
+      "sha256": "b3a6a422f493a9bb3a97c0af56ade4638e8788e003218579503d6e0917aa4ba2",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_review_20261102/audit.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_review/complete.json": {
+      "bytes": 289,
+      "sha256": "17542e89a5bc3bb1008544176d820147f8be8f89938689ecbb0ac89a0c5ca6c9",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_review_20261102/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_review/execution.json": {
+      "bytes": 253,
+      "sha256": "f1fc9a8e5ea2ff831cc40908be413bc68828b33ec5b171bec0a6b8e528f98cd2",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_review_20261102/execution.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_review/input_sha256.json": {
+      "bytes": 3831,
+      "sha256": "91b049711dc5f57b6205d7faf7ceee72bf89b653e6d10f900b1bef92d00b3002",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-joint-correction-20261102/experiments/joint_review_20261102/input_sha256.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/README.md": {
+      "bytes": 4050,
+      "sha256": "c5447c641766d51cf5eab4bc963c8d15dc0de3d1db4f48e2b9e3b14ac51e59db",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/README.md"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/budget.json": {
+      "bytes": 29966,
+      "sha256": "46fd3dd87cbd2aaa7ea12a5a33bfaee58b76a0d1b3f666bd10e8d2b16c949676",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/budget.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/complete_inference_cost.json": {
+      "bytes": 16814,
+      "sha256": "1c9870bf05a91e6f57511a179b110aa73562e51af7ce32afd77378194b5d574d",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/complete_inference_cost.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/construction.json": {
+      "bytes": 5182,
+      "sha256": "9becc2be6fa83128ca93f91e8fcd1cffa8e01f0b39817be2026e829ab0135a17",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/construction.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/contract_checks.json": {
+      "bytes": 1167,
+      "sha256": "f96d18b110aaf20cb6161e0cabc4eefa7b3f52ecb15c94abfebdf43fb9e21417",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/contract_checks.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/corrected_gate_seed42/complete.json": {
+      "bytes": 283,
+      "sha256": "7869275543dbefddbd781080b9f0e215356865b86dc68f8c4cd6ba4d448d0ba4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/corrected_gate_seed42/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/corrected_gate_seed42/history.json": {
+      "bytes": 4700,
+      "sha256": "a0ef2f45a708234ac696e497813127ff2199db2f06ec5ae76fb4b495b13897a2",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/corrected_gate_seed42/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/corrected_gate_seed43/complete.json": {
+      "bytes": 283,
+      "sha256": "62df6f2ce8138674b6adf2aa0f2cb98722d123f60f158aca147d4df1e556613b",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/corrected_gate_seed43/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/corrected_gate_seed43/history.json": {
+      "bytes": 4686,
+      "sha256": "3c5634df52233e06dc491a329002e6b0da8aed7ca36b666599f93a61f31f9adb",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/corrected_gate_seed43/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/corrected_gate_seed44/complete.json": {
+      "bytes": 282,
+      "sha256": "caea0eb2471d0b49028cd3f570990d253846629146b6618b90832a0d9bde33ab",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/corrected_gate_seed44/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/corrected_gate_seed44/history.json": {
+      "bytes": 4692,
+      "sha256": "1b90b9f2fd5847ea23cf88a0e58b4453acf4e68b3c047ed9e7a6bf00ebc57a23",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/corrected_gate_seed44/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/cost.log": {
+      "bytes": 2843,
+      "sha256": "3e564d9fb3bc3a04c5c5ae72c941ec8c403f46db7b74065c612ecf78f8d84863",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/cost.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/cost_source.json": {
+      "bytes": 212,
+      "sha256": "826d5a965217dd30ca6093f6025fcdc330192543f0de33dfdbe0b19edcc1cf6b",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/cost_source.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/data_check.json": {
+      "bytes": 689,
+      "sha256": "ec6ad49d2085c233df6a8a404da5cebc2cfe5501340fd7fb0e0e7eaf571bbc33",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/data_check.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/decision.json": {
+      "bytes": 1493,
+      "sha256": "3f7afd29a3a2688ca4fc09d9c1d424efb123d42f42736158acd66adfd2c5f709",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/decision.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/by_seed.json": {
+      "bytes": 22140,
+      "sha256": "3e0b97ac5cba968be7097afba91cd46916fc8983d4309a5d6e0b182b26cafb48",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/by_seed.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/candidate_diagnostics.json": {
+      "bytes": 1958184,
+      "sha256": "fe62c69f33d9be1c8fd0ffcaf30b9f6f41dc5062b4f75a76654d4d9831761784",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/candidate_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/complete.json": {
+      "bytes": 244,
+      "sha256": "1b64b7c9d0557b5f732832d2284a823de1c21086a80920d20d844db6657740f9",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/data_manifest.json": {
+      "bytes": 363374,
+      "sha256": "9c675e9f10c7160774282a5dc0a87bcb5b26ea17379c2d30d0564049cdb3a149",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/data_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/paired_scene_bootstrap.json": {
+      "bytes": 4146,
+      "sha256": "5f1e2475894e14448c17967edb9162337ed10cf84d5cf59f47f56a1195e73ffa",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/paired_scene_bootstrap.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/per_case.csv": {
+      "bytes": 6045892,
+      "sha256": "2279230079a3c9f899892e98285378e345fc0eacf6fe8d9be07c2d60a99b9c4c",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/per_case.csv"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/summary.json": {
+      "bytes": 7018,
+      "sha256": "56c9395918347275ba48cbaa758d86fabc17c07295f53406d179b889c24a2388",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/summary.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/display_rgb/weight_diagnostics.json": {
+      "bytes": 1126489,
+      "sha256": "0dc09b3609028994aabb87b7d9b3ea66b0e459c28b29ad5893047c8f43395b6d",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/display_rgb/weight_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/by_seed.json": {
+      "bytes": 22350,
+      "sha256": "024a56364ff274feea61c498778495b5c6b78ad751861033530e02044d28e2f6",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/by_seed.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/candidate_diagnostics.json": {
+      "bytes": 2001527,
+      "sha256": "f35763aba3af68db93b0285253de9bbfd2a0038724d336b610d3140797c08f82",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/candidate_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/complete.json": {
+      "bytes": 240,
+      "sha256": "f1f9bdee90464b814c2fcf87909cde418c4cdf51f0d86ce1243c6b715331abf3",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/data_manifest.json": {
+      "bytes": 363374,
+      "sha256": "92ff35ed7ef0e263b01cd8e6acaf4b82b12d71f7790ddd1b9b7b0044f592d1a9",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/data_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/paired_scene_bootstrap.json": {
+      "bytes": 4141,
+      "sha256": "aefa03bd8a9447748ea874e71b0674f988f84b4615dfaea94ab93b8ece02abf8",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/paired_scene_bootstrap.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/per_case.csv": {
+      "bytes": 6158271,
+      "sha256": "e0e30e024c7a6ba515dbe053d5df697d6b63ac1ad24f65099c49d309d5c1cdfd",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/per_case.csv"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/summary.json": {
+      "bytes": 7066,
+      "sha256": "9070ebf4eb484fe91bc83a3d9d455c4edaf0ea05489f0afb78b63456ff37c38a",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/summary.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/nominal/weight_diagnostics.json": {
+      "bytes": 1125192,
+      "sha256": "fefcd64dbb03e9251e5f76c16eac9057f204ef8eb13b7f5c372e2be79a3b9887",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/nominal/weight_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/by_seed.json": {
+      "bytes": 22051,
+      "sha256": "44b3b2a091b78add893636b75fb6914dbc44439bfaade594aa2609d629e3aaf6",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/by_seed.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/candidate_diagnostics.json": {
+      "bytes": 1989889,
+      "sha256": "86315df58d007cf22da771cdd2881e6b84ddf55cd953fd90efdad6d754d4aa13",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/candidate_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/complete.json": {
+      "bytes": 241,
+      "sha256": "904d14d290984a22ceb674b36311f139ec89f2c6fc6d00026860fe2c70e6f3c7",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/data_manifest.json": {
+      "bytes": 363374,
+      "sha256": "a52c6b089c0499ab376a4f6c56ad7f9c04eb3b600841e540b7e55a15389c0cde",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/data_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/paired_scene_bootstrap.json": {
+      "bytes": 4147,
+      "sha256": "8a00d75a105216898281c5549ddca72f4ae2844cfd659cf38b0d1fc41a77e1aa",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/paired_scene_bootstrap.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/per_case.csv": {
+      "bytes": 6075403,
+      "sha256": "38790a5d1633fe4efa066ca7a8b65ae815ab1d8b52d44f1c1041ebe1fe4fec7c",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/per_case.csv"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/summary.json": {
+      "bytes": 6955,
+      "sha256": "2470fd125cda25e71831ff8b06937c5bfe2fb93b55e7868efd697fdf63a03245",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/summary.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development/unseen_A/weight_diagnostics.json": {
+      "bytes": 1125110,
+      "sha256": "2d73d31ca167e14d92a721b8b322793be07daff7a0ca4e2dbe05f3795d21703f",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development/unseen_A/weight_diagnostics.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/development_manifest.json": {
+      "bytes": 273774,
+      "sha256": "e48fe4dee5575b3b89f7ec0ede11fb95506ff285eb14842c35d1a52ba6e2090b",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/development_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/direct_same16_seed42/complete.json": {
+      "bytes": 285,
+      "sha256": "247e09f689bdc7303122b589bed206d637fbbeaf427d12a8be08c97f8bb31583",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/direct_same16_seed42/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/direct_same16_seed42/history.json": {
+      "bytes": 9757,
+      "sha256": "ad35eb7394c809e255181866333756d5033d61338501f08a2ff843118d53a8ce",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/direct_same16_seed42/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/direct_same16_seed43/complete.json": {
+      "bytes": 285,
+      "sha256": "fdd3269c8ed7a7ff7e452f0f01c29f563cd1b4445445ccbacae12b0aa25042a0",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/direct_same16_seed43/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/direct_same16_seed43/history.json": {
+      "bytes": 9767,
+      "sha256": "dac56781d61179be2bba137fe8c7a8262882a81fc4e0e1651bcbd962b479194e",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/direct_same16_seed43/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/direct_same16_seed44/complete.json": {
+      "bytes": 283,
+      "sha256": "9e08dbe55803cc8cab3b16e9e008f0ec9f4462f80fb21bb1b678ba271f015c2d",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/direct_same16_seed44/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/direct_same16_seed44/history.json": {
+      "bytes": 9751,
+      "sha256": "656184bfb7e6aec3fedd6b7d5367c64cf02775c7b23efdada6ea3f861a7be990",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/direct_same16_seed44/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/disk_resume_checks.json": {
+      "bytes": 686,
+      "sha256": "801564035318d29fd0467329d11f0a12553f807d21b0c7ba2fd8380798ecdd46",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/disk_resume_checks.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/early_trained_CPU_and_metric_checks.json": {
+      "bytes": 364,
+      "sha256": "c2671c07537135bdc0f7111b824724cbb1ea633249975abbdb32dffae4f09b55",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/early_trained_CPU_and_metric_checks.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/evaluate.log": {
+      "bytes": 20293,
+      "sha256": "0273d46f0e41953cc93b2e44eba480bd56f6e9d075663d3cb51d064cc4eefe5f",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/evaluate.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/evaluate_source.json": {
+      "bytes": 212,
+      "sha256": "826d5a965217dd30ca6093f6025fcdc330192543f0de33dfdbe0b19edcc1cf6b",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/evaluate_source.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/evaluation_complete.json": {
+      "bytes": 67,
+      "sha256": "278c3b8b4d7381e47dbaa58acbdeddac462d87e8614eeb0048ddaa7934966eab",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/evaluation_complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/evaluation_protocol.json": {
+      "bytes": 1086,
+      "sha256": "68adb589be263a3bc33f9711f238ea25e64179c23124ec631b97dc40904f8bc2",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/evaluation_protocol.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/export.log": {
+      "bytes": 1097,
+      "sha256": "8a650ce010f1412b855aa1e3e2ab5ed2634f15e43936394e1c7c354513412a08",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/export.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/measured_budget_forecast.json": {
+      "bytes": 746,
+      "sha256": "91cd682fa10c2b80be561465ae691aacfd7505b63d7ec1989dc25ab0fcb767f4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/measured_budget_forecast.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/pip_freeze.txt": {
+      "bytes": 2683,
+      "sha256": "2442d7166cf70f7301871cca6288c42b166064e9023de1518c6f9007cf4ce238",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/pip_freeze.txt"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/portable_manifest.json": {
+      "bytes": 4025,
+      "sha256": "e3965955f4450a206b96f1342b5e6ad5d2b4c8e107fcf2d18941d8baeef8fb3e",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/portable_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/postprocessor.log": {
+      "bytes": 2125,
+      "sha256": "232660519d7b5805d1bcc92e29200f343f4cf2030a52344599a6ba6fd8645c36",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/postprocessor.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/protocol.json": {
+      "bytes": 31147,
+      "sha256": "5a1e8a72ce7960f83cfde3cd61be768f86e6c6bf23d3d8fa5bd37e9f4f90e0a0",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/protocol.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/raw_gate_seed42/complete.json": {
+      "bytes": 277,
+      "sha256": "a4494a206dc0761338ab60d144861b375b4f443368b0a0b47a1512c6745bbfa4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/raw_gate_seed42/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/raw_gate_seed42/history.json": {
+      "bytes": 4671,
+      "sha256": "dbd533e0d4c2ca64c7e7b63fe32cdc3dbcf6bb76cc47ed99b3a5c21bb9208914",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/raw_gate_seed42/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/raw_gate_seed43/complete.json": {
+      "bytes": 277,
+      "sha256": "de3253f1a9f51ed91d8e73bebad6e6d58bd1b7953129fa1a5841f4fac7f7e86a",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/raw_gate_seed43/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/raw_gate_seed43/history.json": {
+      "bytes": 4671,
+      "sha256": "92ea4361b2104187e81f327cb79420a2c440558a4965a17f25d488434b01093a",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/raw_gate_seed43/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/raw_gate_seed44/complete.json": {
+      "bytes": 276,
+      "sha256": "d82bf4962bb372922a5447ef87a7e1d1e1c0ba09bcf5a0de8c42d9cf903219df",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/raw_gate_seed44/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/raw_gate_seed44/history.json": {
+      "bytes": 4668,
+      "sha256": "612bb9e3120aaa71c1aaf67cabccb532caccf993857cf7a9b7ee5a349725541f",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/raw_gate_seed44/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/resume_check.log": {
+      "bytes": 625,
+      "sha256": "f7b82e0eca6f3c990b1665944f7473ddb0978e4983e67bad51885be1a5f7f9f3",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/resume_check.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb16_seed42/complete.json": {
+      "bytes": 277,
+      "sha256": "6602229efec701cc5263b0e75529d755249e82849fa229c618df9ab6dab5dcdb",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb16_seed42/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb16_seed42/history.json": {
+      "bytes": 9399,
+      "sha256": "c21ef095def63784b6d1d0772f016461824f32d133ff35d0f8cba7075fbc3454",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb16_seed42/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb16_seed43/complete.json": {
+      "bytes": 275,
+      "sha256": "bd0eb85b41232c0b4b45791f94e4abd5dfb647682d05fb98fc001a234bdfce1f",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb16_seed43/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb16_seed43/history.json": {
+      "bytes": 9402,
+      "sha256": "4b33f74469d5648fbe150337a677b401c6edc73e58edeafd1bec8f92a276c649",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb16_seed43/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb16_seed44/complete.json": {
+      "bytes": 276,
+      "sha256": "05a5298738136b894a7d7202dbe6f27c1c0bf766c7b280fa47c37fe573af96cf",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb16_seed44/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb16_seed44/history.json": {
+      "bytes": 9396,
+      "sha256": "d90a6d6fff8aa81ae1a4b6a6b2634441fc9a0faea164869d2ad59a3e6bc149cd",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb16_seed44/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb32_seed42/complete.json": {
+      "bytes": 277,
+      "sha256": "d9fbe91dc084a600fdd4632fcb541262c9b5c47402eebb2a272a20ae373c48da",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb32_seed42/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb32_seed42/history.json": {
+      "bytes": 9771,
+      "sha256": "a58eba28f3d9ec11e0405b37311c4e0a5839998a84cba7a8458a6b69f0da6c6d",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb32_seed42/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb32_seed43/complete.json": {
+      "bytes": 277,
+      "sha256": "3d37c7584581bfbbe014cafb0427fed7dd29b9ee47dc3def00b0e69e6220b9d9",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb32_seed43/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb32_seed43/history.json": {
+      "bytes": 9788,
+      "sha256": "8a83092b6f81d3d2303061590758d7372965282e85f5cf5efae96511e05406a0",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb32_seed43/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb32_seed44/complete.json": {
+      "bytes": 276,
+      "sha256": "435f9951f3e9faeb0c2d22c8c94050e5f1bfbd57f19f09e5a89370f93930fb58",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb32_seed44/complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/rgb32_seed44/history.json": {
+      "bytes": 9764,
+      "sha256": "d245cc4d03e2fd4b484642090d0ae2430f277ea2013904bd6a9bb6dcaeccc72a",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/rgb32_seed44/history.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/train_manifest.json": {
+      "bytes": 793594,
+      "sha256": "4ce31ed60727e262ebd08733f0f9402a9deed8b530f26c588a882aa985892fab",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/train_manifest.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/trained_inference_checks.json": {
+      "bytes": 1337,
+      "sha256": "2fefd7ffcb4ceaad23b999b5cec4ccc1a10e17590b88dff18c2a70c05f492c73",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/trained_inference_checks.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/training.log": {
+      "bytes": 80874,
+      "sha256": "a7db5f804c32b6731db760dc07237b83fc51fc91080a5bcf88aa3c3a9604dfad",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/training.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_fusion/training_complete.json": {
+      "bytes": 218,
+      "sha256": "caac0052ec44caed1af96bd336a000fb2e5c1c3e6e2a402bcf69b013b71435ed",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_fusion_20261102/training_complete.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_review/analysis.md": {
+      "bytes": 4226,
+      "sha256": "855d46bb4eb7298dc1e040535a97f5a2c3deeb0c46d9110829ab8558c609858a",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_review_20261102/analysis.md"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_review/integrity_audit.json": {
+      "bytes": 289,
+      "sha256": "20253d6c2c60ea0e49aad51e3acfcb5029bd8291db146f78b541afa061ad9db8",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_review_20261102/integrity_audit.json"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_review/projection.log": {
+      "bytes": 2335,
+      "sha256": "1ae7cc6dedc8e25c12c40544c9c3b04eb7a7668a16cc24dd349597b09b6da821",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_review_20261102/projection.log"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_review/projection_per_case.csv": {
+      "bytes": 410767,
+      "sha256": "38f0899f7dc96140fa6264e9bc2fecc7a248fb1a96be6eb8c9533694058fdebe",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_review_20261102/projection_per_case.csv"
+    },
+    "experiments/candidate_correction_delivery_20261102/matched_review/projection_summary.json": {
+      "bytes": 2608,
+      "sha256": "1b775d94d5b7211c3876a5324546fb95e2ccd878bdae427422475e974d36b7a4",
+      "cloud_origin": "/mnt/CrossModal-Defog-OVOD-matched-gate-20261102/experiments/matched_review_20261102/projection_summary.json"
+    },
+    "scripts/joint_correction/check_fast.py": {
+      "bytes": 4300,
+      "sha256": "ca18f242d247bf3fb2b7742ff5c9e7204de3938a6161f97622da53fa4b713c46"
+    },
+    "scripts/joint_correction/check_model.py": {
+      "bytes": 4531,
+      "sha256": "f4690bfa675ae159d21beb741bed25acbcde3bff657702531ef251b59d3f2721"
+    },
+    "scripts/joint_correction/cost_report.py": {
+      "bytes": 11559,
+      "sha256": "a50be8ba81813b2a1ede8d75e97409463398c1578a446a28fd1e2cf21b7ead86"
+    },
+    "scripts/joint_correction/evaluate.py": {
+      "bytes": 13327,
+      "sha256": "59bc2fff350e0f7ff7c09233a33bf77d349e4ae81677bd99a595d31f43f94087"
+    },
+    "scripts/joint_correction/predict.py": {
+      "bytes": 1664,
+      "sha256": "7229646653f4ffe73e02e15ea26026d31add13b2a6723f13bcbd86de6ce7eafb"
+    },
+    "scripts/joint_correction/run.py": {
+      "bytes": 10810,
+      "sha256": "97d714733400d39971dd01c457a3546328966228caf3d9f2ddb3ef4b26ce8def"
+    },
+    "scripts/joint_correction/status.py": {
+      "bytes": 1708,
+      "sha256": "a15c450a228d07c31bcc51ccc09f046ea71242631250af0b851d8075e2ecfef0"
+    },
+    "scripts/joint_review/review.py": {
+      "bytes": 16321,
+      "sha256": "82b669307e04033149135e1374005a88cca59503af6cff5d79d38bf8a4151184"
+    },
+    "scripts/joint_review/verify_delivery.py": {
+      "bytes": 1379,
+      "sha256": "623cf53fdb80e57c66dc8ef56403ff1f8bb0f48037a1ac3f0be326dc6a378ec7"
+    },
+    "scripts/matched_evaluation/export.py": {
+      "bytes": 3306,
+      "sha256": "d4fb6adc255c25e4ecc417457c4dbc544ec5a5b5f395f0fb416a3ce580aa0364"
+    },
+    "scripts/matched_evaluation/finish.py": {
+      "bytes": 13160,
+      "sha256": "66eeaf69399f9d7052f7cb58d632ba3abd8ccae8127fc9de0b1c044507dfa69b"
+    },
+    "scripts/matched_evaluation/predict.py": {
+      "bytes": 2996,
+      "sha256": "174fe3e6aac82acce0420816ce8226686414a8fe2e336f5bf6dfeba9f7b0e6c2"
+    },
+    "scripts/matched_evaluation/resume_check.py": {
+      "bytes": 3134,
+      "sha256": "5a1e1ee04f5cff37c9e23b4f2ef028337818196cdf49328b2e79b3c2b021a595"
+    },
+    "scripts/matched_evaluation/run.py": {
+      "bytes": 16791,
+      "sha256": "5a95c51ed466c188dd6bbfa607b4d6e5afaf94aa9353d842f85bde1ee71fbbb5"
+    },
+    "scripts/matched_fusion/run.py": {
+      "bytes": 13286,
+      "sha256": "3672daa7b88b7c2892e0ae0eba14ee86af4602e007be39ddc5859631e702a462"
+    },
+    "scripts/matched_fusion/test_contracts.py": {
+      "bytes": 3707,
+      "sha256": "29ae6c28c5a1f1a09615ffc93e703fdfd3d581f3051235c898df2f5c9b5a6db2"
+    },
+    "scripts/matched_review/analyze.py": {
+      "bytes": 3385,
+      "sha256": "84f5f030fb136b1e0b19c8a9064098557cf789a0397d7f5d24c9004857967b37"
+    },
+    "src/models/haze_density/fast_candidates.py": {
+      "bytes": 3319,
+      "sha256": "d18cddadfeb814b2aa101f42a9d0439310a8082435aedfc24af3383975b01fdc"
+    },
+    "src/models/haze_density/joint_correction.py": {
+      "bytes": 2286,
+      "sha256": "e2f77da8dae4938e3e1f876bcc4d600222581a64ff2e21ae463e151c11003b4e"
+    },
+    "src/models/haze_density/matched_fusion.py": {
+      "bytes": 3056,
+      "sha256": "b16c9d87312931a578b556efe4016083cecb3543cab3cfa14f7c2cc084471337"
+    },
+    "docs/candidate_correction_next_steps_20261102.md": {
+      "bytes": 4916,
+      "sha256": "fc63c0ef61c3e90b547455bb81a10ee30e2a8707e5d1fcf8cb2c0f8715ca17b9"
+    },
+    "experiments/candidate_correction_delivery_20261102/joint_review/original_review_report.md": {
+      "bytes": 8882,
+      "sha256": "536339e6e0d6d4bb751d8e0a415d7a432066e49fc8f04b172e4bd58fd4d8793c"
+    }
+  },
+  "excluded": [
+    "weights/latest/best",
+    "datasets/caches",
+    "duplicate source snapshots",
+    "transport helpers and receipts",
+    "backups and temporary build failures"
+  ],
+  "manifest_self_hash_excluded": true,
+  "encoding_clarification": "Current review corrects synthesis-domain interpretation; immutable earlier report preserved with receipt hash."
+}

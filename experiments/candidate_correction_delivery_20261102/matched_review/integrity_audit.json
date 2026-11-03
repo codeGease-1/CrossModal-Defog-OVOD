@@ -1,0 +1,11 @@
+{
+  "all_15_runs_complete": true,
+  "training_opportunity_updates": [
+    6912
+  ],
+  "old_checkpoints_unchanged": true,
+  "frozen_source_unchanged": true,
+  "per_case_CSV_recomputed_all_three_conditions": true,
+  "new_training_started_this_review": false,
+  "new_confirmation_scenes": 0
+}

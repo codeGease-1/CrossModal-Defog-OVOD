@@ -1,0 +1,41 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "new_modes": [
+    "raw_gate",
+    "corrected_gate",
+    "rgb16"
+  ],
+  "continued_controls": [
+    "direct_same16",
+    "rgb32"
+  ],
+  "gate_epochs": 18,
+  "total_RGB_epochs": 36,
+  "batch_size": 8,
+  "learning_rate": 0.001,
+  "amp": true,
+  "global_loss_weight": 0.5,
+  "clear_loss_extra_weight": 0.25,
+  "gate_hidden": 16,
+  "gate_initial_weights": [
+    0.9,
+    0.05,
+    0.05
+  ],
+  "selection": "Development task loss only, unchanged MSE+.5 mean MSE+.25 extra clear MSE; carry earlier best for continued RGB controls",
+  "opportunity": "Corrector 18 epochs + frozen-feature gate 18; every RGB control 36 total epochs. Same 1536 paired cases, 192 batches/epoch. No extra clean/semantic supervision.",
+  "fairness_limit": "Two-stage correction uses candidate auxiliary objectives then fusion; RGB has same targets/data exposure/updates but direct H objective. Raw gate shares correction-trained frozen features and is a controlled candidate-map intervention, not old v2.",
+  "relative_MAE_margin": 0.05,
+  "spatial_margin": 0.01,
+  "clear_response_margin": 0.005,
+  "physics": "off",
+  "semantic": "none; deterministic brightness/texture content descriptors only",
+  "confirmation": "No new confirmation in this structural screening round; existing old development originals only",
+  "budget": "Conservative initial estimate 40-55 V100 minutes, update after measured timing; no resource changes",
+  "old_output": "/mnt/CrossModal-Defog-OVOD/experiments/learned_correction_20261102/formal_amp",
+  "calibration": "/mnt/CrossModal-Defog-OVOD/experiments/v2_20261101/calibration.json"
+}

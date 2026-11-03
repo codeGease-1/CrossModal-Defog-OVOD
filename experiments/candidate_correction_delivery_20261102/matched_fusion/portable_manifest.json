@@ -1,0 +1,137 @@
+[
+  {
+    "file": "portable_weights/raw_gate_seed42.pth",
+    "sha256": "ce49d2213ecb529b225b8b494209f78ee9bf43f6d80e9d35deed52fc5e93f95c",
+    "bytes": 914410,
+    "selected_epoch": 18,
+    "mode": "raw_gate",
+    "seed": 42,
+    "state_tensor_elements": 221161
+  },
+  {
+    "file": "portable_weights/raw_gate_seed43.pth",
+    "sha256": "98a609a2f963d9b9ebcad5300783a296df3674570d59805f5d355e5c178b99a8",
+    "bytes": 914410,
+    "selected_epoch": 18,
+    "mode": "raw_gate",
+    "seed": 43,
+    "state_tensor_elements": 221161
+  },
+  {
+    "file": "portable_weights/raw_gate_seed44.pth",
+    "sha256": "d0706743658cd5a1cddcc78252ad217f5237ecfc0d247cdca069b582866040b8",
+    "bytes": 914410,
+    "selected_epoch": 17,
+    "mode": "raw_gate",
+    "seed": 44,
+    "state_tensor_elements": 221161
+  },
+  {
+    "file": "portable_weights/corrected_gate_seed42.pth",
+    "sha256": "0156a911b90543f4d6c179abe0b7286cd26b0868f79f7097a4b0a1d12dd8e564",
+    "bytes": 914650,
+    "selected_epoch": 18,
+    "mode": "corrected_gate",
+    "seed": 42,
+    "state_tensor_elements": 221161
+  },
+  {
+    "file": "portable_weights/corrected_gate_seed43.pth",
+    "sha256": "13cb4dbff6afbef081cefe3406a755d7b89cd79d0e281805413bf4acb6d09e1d",
+    "bytes": 914650,
+    "selected_epoch": 18,
+    "mode": "corrected_gate",
+    "seed": 43,
+    "state_tensor_elements": 221161
+  },
+  {
+    "file": "portable_weights/corrected_gate_seed44.pth",
+    "sha256": "537094f933df2bc7acf8c24212e0bf3536dfeb8a8209b77916a74cebe2f4bc8f",
+    "bytes": 914650,
+    "selected_epoch": 18,
+    "mode": "corrected_gate",
+    "seed": 44,
+    "state_tensor_elements": 221161
+  },
+  {
+    "file": "portable_weights/rgb16_seed42.pth",
+    "sha256": "e08e6bcf8477e013770d98e599d0d1785d0a6c6c63640f18c51910d151bfa57b",
+    "bytes": 898666,
+    "selected_epoch": 35,
+    "mode": "rgb16",
+    "seed": 42,
+    "state_tensor_elements": 217985
+  },
+  {
+    "file": "portable_weights/rgb16_seed43.pth",
+    "sha256": "16dfd67fc131314834f5576eb8c4b7224848c24d59723443712490ea3fdc12a9",
+    "bytes": 898666,
+    "selected_epoch": 33,
+    "mode": "rgb16",
+    "seed": 43,
+    "state_tensor_elements": 217985
+  },
+  {
+    "file": "portable_weights/rgb16_seed44.pth",
+    "sha256": "a342d2abdd4572058013f891e81a780333aaa9b051eb81046c5372d56d298508",
+    "bytes": 898666,
+    "selected_epoch": 29,
+    "mode": "rgb16",
+    "seed": 44,
+    "state_tensor_elements": 217985
+  },
+  {
+    "file": "portable_weights/direct_same16_seed42.pth",
+    "sha256": "f49c5f1306ec2ed5a458c4238fe7b4d03e6d66b0fe25b2a4109f889d25c22ee1",
+    "bytes": 903562,
+    "selected_epoch": 33,
+    "mode": "direct_same16",
+    "seed": 42,
+    "state_tensor_elements": 219137
+  },
+  {
+    "file": "portable_weights/direct_same16_seed43.pth",
+    "sha256": "0d35518f181973375703ef26ac3f9a6179ea63067723b9376a5c9d2c444f715c",
+    "bytes": 903562,
+    "selected_epoch": 36,
+    "mode": "direct_same16",
+    "seed": 43,
+    "state_tensor_elements": 219137
+  },
+  {
+    "file": "portable_weights/direct_same16_seed44.pth",
+    "sha256": "d3bec13b2b4128d79830cd98bb5a794c799d2553f906f3c39ea179a669abeabb",
+    "bytes": 903562,
+    "selected_epoch": 36,
+    "mode": "direct_same16",
+    "seed": 44,
+    "state_tensor_elements": 219137
+  },
+  {
+    "file": "portable_weights/rgb32_seed42.pth",
+    "sha256": "a3023dc819e0713491e76cda241381b90e763884890f3b5b862814cce1e04dc1",
+    "bytes": 3496234,
+    "selected_epoch": 32,
+    "mode": "rgb32",
+    "seed": 42,
+    "state_tensor_elements": 867377
+  },
+  {
+    "file": "portable_weights/rgb32_seed43.pth",
+    "sha256": "480cde1d68979a790938b5286e1d03c6ba209028a1027dd9b5089194b890ddac",
+    "bytes": 3496234,
+    "selected_epoch": 27,
+    "mode": "rgb32",
+    "seed": 43,
+    "state_tensor_elements": 867377
+  },
+  {
+    "file": "portable_weights/rgb32_seed44.pth",
+    "sha256": "c15b0bc6b953b9c58326626a071d01cb608a3a5c0187548deb47b9185f900439",
+    "bytes": 3496234,
+    "selected_epoch": 35,
+    "mode": "rgb32",
+    "seed": 44,
+    "state_tensor_elements": 867377
+  }
+]

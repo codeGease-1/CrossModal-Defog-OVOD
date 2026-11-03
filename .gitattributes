@@ -26,3 +26,25 @@
 # CRLF is archival data in JSON and frozen configuration, not trailing spaces.
 /experiments/**/*.json whitespace=cr-at-eol
 /configs/learned_correction_amp.json whitespace=cr-at-eol
+
+# Preserve matched/joint frozen research source bytes.
+/scripts/matched_fusion/** -text
+/scripts/matched_evaluation/** -text
+/scripts/matched_review/** -text
+/scripts/joint_correction/** -text
+/scripts/joint_review/** -text
+/configs/matched_fusion_20261102.json -text
+/configs/joint_correction_20261102.json -text
+
+# Preserve curated documentation/index hashes on Windows checkout.
+/.gitattributes -text
+/.gitignore -text
+/README.md -text
+/docs/guides/candidate_correction_submission_20261102.md -text
+/docs/joint_correction_results_20261102.md -text
+/docs/joint_correction_review_20261102.md -text
+/docs/匹配候选融合构建与训练协议_20261102.md -text
+/docs/匹配融合结果复核与下一步_20261102.md -text
+/docs/匹配训练机会的候选校正动态融合报告_20261102.md -text
+/docs/联合校正构建与运行协议_20261102.md -text
+/docs/candidate_correction_next_steps_20261102.md -text
